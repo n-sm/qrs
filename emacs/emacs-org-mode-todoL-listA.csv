@@ -1,0 +1,5 @@
+  ____COMANDO____   ,__DESCRIPCIÓN__
+M-S-RET,agregar TODO
+C-c C-t,TODO a DONE
+C-c C-s,poner fecha (Sheduled)
+M-x org-agenda,despliega menu con opciones de agenda

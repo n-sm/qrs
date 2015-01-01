@@ -1,0 +1,8 @@
+   ___  COMANDO   ___   ,   ___DESCRIPCION___ 
+
+M-S-RET,agregar TODO
+C-c C-t,TODO a DONE
+C-c C-s,poner fecha (Sheduled)
+(setq org-support-shift-select nil),deshabilitar shift-select en org
+C-c },dar referecias de frilas y columnas
+M-x org-agenda,despliega menu con opciones de agenda

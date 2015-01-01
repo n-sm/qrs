@@ -1,0 +1,9 @@
+COMMAND,   DESCRIPTION
+M-p or C-<UP>,Fetch the next earlier old shell command. 
+M-n or C-<DOWN>,Fetch the next later old shell command. 
+M-r,Begin an incremental regexp search of old shell commands. 
+C-c C-x,Fetch the next subsequent command from the history. 
+C-c .,Fetch one argument from an old shell command. 
+C-c C-l,Display the buffer's history of shell commands in another window
+
+C-u M-x shell,Abre otro terminal

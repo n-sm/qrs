@@ -1,0 +1,57 @@
+avanzar un caracter,C-f,(forward-char)
+avanzar una línea,C-n,(next-line)
+avanzar una palabra,M-f;C-<right>;M-<right>,(forward-word)
+cadena de comandos,,progn; prog1,prog2,?
+cambiar de ventana,C-x o
+capitalize word, M-c
+centrar; subir; bajat,M-r,(move-to-window-line-top-bottom)
+cerrar bufer (kill buffer),C-x k
+copiar text del buffer,,(copy-region-as-kill BEG END); (kill-ring-save BEG END)
+describe function,F1-f
+describe variable,F1-v
+end of buffer,,(point-max)
+end; Fin,M->,(end-of-buffer)
+evaluar e insertar,C-u C-x C-e
+fin de region,,(region-end)
+go to char,M-g c,Read a number n and move point to buffer position n. Position 1 is the beginning of the buffer. 
+go to column,M-g <TAB>,Read a number n and move to column n in the current line.
+go to line,M-g M-g;M-g g,(goto-line),Read a number n and move point to the beginning of line number n
+help menu,C-h t,
+home; Inicio,M-<,(beginning-of-buffer);With numeric argument n, move to n/10 of the way from the top.
+insert-file-content,C-x i
+insertar contenido de archivo,,(insert-file-contents myPath)
+insertar parte de un buffer,,(insert-buffer-substring-no-properties myBuffer myStartPos myEndPos)
+insertar texto (en buffer),,(insert "texto")
+instalar paquetes,M-x list-packages
+introducir caracteres UNICODE,C-x 8,
+ir al fin de línea,C-e,(move-end-of-line)
+ir al inicio de la línea,C-a,(move-beginning-of-line)
+lowercase region, C-x C-l
+lowercase word, M-l
+match parentesis,C-M-n (next); C-M-p (previous)
+mover cursor a lugar,,(goto-char n)
+mover cursor tantos lugares,,(forward-char n); (backward-char n)
+new line,C-q C-j
+pageDown,C-v
+pageUp,M-v
+posicion del cursor actual,,(point)
+principio de region,,(region-beginning)
+reemplazar TAB por SPACE,M-x replace-regex C-q C-i C-q C-j
+retroceder un caracter,C-b,(backward-char)
+retroceder una línea,C-p,(previous-line)
+retroceder una palabra,M-b;C-<left>;M-<left>,(backward-word)
+tab,C-q C-i
+tex formato fomula0,,http://piotrkazmierczak.com/2010/05/13/emacs-as-the-ultimate-latex-editor/
+tex formato fomula1,C-c C-q C-s,
+tex formato fomula2,C-c C-p C-s
+uppercase region, C-x C-u
+uppercase word, M-u
+kill (delete) to EOF,C-k
+kill to beggining of line, M-0 C-k
+delete word forward,M-d
+delete word backward,M-delete
+abrir ibuffer buffer,M-x ibuffer
+tildes,(require 'iso-transl)
+insertar Unicode,C-x 8 <RET> CODE
+insertar tildes,C-x 8 ' a
+insertar ñ,C-x 8 ~ n		  
