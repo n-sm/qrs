@@ -1,0 +1,15 @@
+* tasks
+** adding existing project to git
+links: 
+https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
+
+steps:
+0 crear repositorio en github.
+1 $ git init
+2 $ git add .
+3 $ git commit -m 'First commit'
+4 $ git remote add origin <remote repository URL>
+5 $ git remote -v # verifica el remote
+6 $ git push origin master
+
+
