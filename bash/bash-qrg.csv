@@ -1,6 +1,6 @@
            accion               ,   comando                 ,alguna opcion
            ------,   -------,-------------
-iformacion sobre discos,df,-h
+iformacion sobre discos,df -h
 grep recursivo,grep -R "string" /
 list files by size,ls -lhS
 list proceses,ps -e
@@ -8,3 +8,6 @@ list only directories,ls -d */
 change promt,export PS1="\u:\w\$ "
 list only files with find,find . -maxdepth 1 -type f
 list only files with ls,ls -l | grep -v '^d'
+list not matching2,shopt -s extglob; ls !(PATTERN)
+list not matching,ls -1|gredup -v '\.'
+tamaño ocupado por actual directorio,du -sh

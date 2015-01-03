@@ -1,15 +1,43 @@
-* tasks
 ** adding existing project to git
 links: 
 https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/
 
-steps:
-0 crear repositorio en github.
-1 $ git init
-2 $ git add .
-3 $ git commit -m 'First commit'
-4 $ git remote add origin <remote repository URL>
-5 $ git remote -v # verifica el remote
-6 $ git push origin master
+pasos:
+1. crear repositorio en github.
+2. $ git init
+3. $ git add .
+4. $ git commit -m 'First commit'
+5. $ git remote add origin <remote repository URL>
+6. $ git remote -v # verifica el remote
+7. $ git push origin master
 
+** Creating a new Git repository on a local file system
+http://treeleafmedia.be/blog/2011/03/creating-a-new-git-repository-on-a-local-file-system/
 
+First start with creating a new directory on the file system. This
+directory will be used as our working directory.
+
+1. ir al <working directory>
+2. $ git init
+3. $ cd <local-remote>
+4. $ git init --bare
+
+Note that we used the option –bare this time. The difference between a
+bare and non-bare directory is that in a “bare” directory no working
+copies are saved. Non-bare directory is your working directory (local
+repository) from where you will push your code into a bare repository
+(remote repository).
+
+We go back into the working dir and start editing code.
+
+5. $ git add hello.txt
+6. $ git commit -m "Initial import" # commit to the local repository
+7. $ git remote add origin <local-remote> # configure the path to
+the remote repository
+8. $ git push # push the code to the remote repository
+
+You can setup more copies of the git repository with git-clone. This
+will pull the code out of the remote repository into another
+directory.
+
+9. $ git clone /usr/local/remoteGit
