@@ -11,3 +11,4 @@ list only files with ls,ls -l | grep -v '^d'
 list not matching2,shopt -s extglob; ls !(PATTERN)
 list not matching,ls -1|gredup -v '\.'
 tamaño ocupado por actual directorio,du -sh
+borrar recursivamente archivos no directorios, find dir -type f -print0 | xargs -0 rm
