@@ -1,0 +1,434 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{parskip}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\newtheorem{mydef}{Definici\'on}[section]
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{ejs}{Ejemplo}[section]
+\begin{document}
+
+\section{Logaritmos}
+Veamos la siguiente \emph{regla del cambio de base}:
+
+Para todo \( x \)  se cumple \( x^{\log_x(M)} = M \). De esto se sigue
+\( a^{\log_a(b)} = b \) y \( b^{\log_b(M)} = M \). Sustituyendo
+obtenemos: \(M= \big(a^{\log_a b}\big)^{\log_b M} \) que es lo mismo que
+\(M= a^{(\log_a b)(\log_b M)}   \). Con lo cual, tenemos:
+
+
+\[a^{\log_a M} = a^{(\log_a b)(\log_b M)} \]
+
+De los cual se sigue \( \log_a M = (\log_a b)(\log_b M) \)  y
+finalmente:
+
+\begin{equation}
+\log_b(M) = \frac{\log_a(M)}{\log_a(b)}
+\end{equation}
+
+
+\section{L\'imites}
+
+\subsection{Primero, consideremos las definiciones siguientes.}
+\vspace{.5cm}
+
+
+\begin{align*}
+&\lim_{x \to a}f(x) = l  &  \equiv \qquad  &
+( \forall \epsilon > 0 \ \exists \delta > 0 \ \forall x)  \qquad   0<|x-a|< \delta  \to  |f(x) - l| <
+\epsilon  & \\
+&\lim_{x \to \infty}f(x) = l  &  \equiv  \qquad &
+(\forall \epsilon > 0 \ \exists N \ \forall x) \qquad  x > |N|  \to
+ |f(x) - l| < \epsilon & \\
+&\lim_{x \to a}f(x) = \infty  &  \equiv \qquad  &
+(\forall M > 0 \ \exists \delta > 0 \ \forall x \neq a) \qquad   0<|x-a| < \delta  \to  |f(x)| >
+M  & \\
+&\lim_{x \to a}f(x) = 0  &  \equiv   \qquad  &
+(\forall \epsilon > 0 \ \exists \delta > 0 \ \forall x) \qquad   0<|x-a| < \delta  \to  |f(x)| <
+\epsilon & \\
+&\lim_{x \to \infty}f(x) = 0  &  \equiv \qquad  &
+(\forall \epsilon > 0 \ \exists N \ \forall x) \qquad   x > N  \to
+ |f(x)| < \epsilon & \\
+\end{align*}
+
+
+\subsection{Algunos teoremas.}
+%\vspace{1.5cm}
+\begin{align*}
+& \lim_{x \to a} k + f(x) & =  \qquad & k + \lim f(x)& \\
+& \lim_{x \to 0} \frac{1}{x} & =   \qquad  & \infty & \\
+& \lim_{x \to a}\Big(f(x) + g(x)\Big) & =   \qquad  &   \lim_{x \to a} f(x) + \lim_{x  \to a} g(x)&  \\
+\end{align*}
+
+
+
+
+\begin{theorem}
+
+Si \( f(x) = c+g(x) \)  y  \(  \lim_{x \to  a}g(x)=0  \), luego \[ \lim_{x \to a} f(x) = c \].
+
+\end{theorem}
+
+
+\begin{theorem}
+\[\text{Si}\qquad\lim_{x \to a}f(x)=0\qquad\text{y}\qquad \lim_{x \to a}g(x)\neq0\qquad\text{y}\qquad\lim_{x \to a}g(x)\neq\infty\]
+\[\text{Luego:}\qquad\lim_{x \to a}\frac{f(x)}{g(x)}=0\]
+\end{theorem}
+
+\vspace{.5cm}
+
+\subsection{M\'as definiciones.}
+\begin{mydef}[Infinitesimales del mismo orden]
+Sean $f(x)$ y $g(x)$ infinitesimales, cuando $x \to a$. Luego, si la
+funci\'on:
+\[\lim_{x \to a}\frac{f(x)}{g(x)}\]
+tiene un l\'imite finito y distinto de cero, los infinitesimales
+$f(x)$ y $g(x)$ son llamados \emph{del mismo orden}.
+\end{mydef}
+\begin{mydef}[Infinitesimales el orden superior e inferior]
+Sean $f(x)$ y $g(x)$ infinitesimales, cuando $x \to a$. Luego, si la
+funci\'on:
+\[\lim_{x \to a}\frac{f(x)}{g(x)}=0\qquad\text{y}\qquad\lim_{x \to a}\frac{g(x)}{f(x)}=\infty\]
+entonces, la infinitesimal $f(x)$ se llama \emph{infinitesimal de
+  orden superior a} $g(x)$ y \'esta \'ultima se denomina
+\emph{infinitesimal de orden inferior a} $f(x)$
+\end{mydef}
+
+\begin{mydef}[Infinitesimal de orden k respecto de otra]
+Sean $f(x)$ y $g(x)$ infinitesimales, cuando $x \to a$. Luego, si la
+funci\'on:
+\[\lim_{x \to a}\frac{f(x)}{g(x)^k}=l\neq0\neq\infty\]
+entonces, la infinitesimal $f(x)$ se llama \emph{infinitesimal de
+  orden k respecto de} $g(x)$
+\end{mydef}
+
+
+\begin{mydef}[Infinitesimales equialentes]
+Sean $f(x)$ y $g(x)$ infinitesimales, cuando $x \to a$. Luego, si la
+funci\'on:
+\[\lim_{x \to a}\frac{f(x)}{g(x)}=1\]
+entonces, las infinitesimales $f(x)$ y $g(x)$ se llaman
+\emph{equivalentes}.
+\end{mydef}
+
+\section{Continuidad}
+
+\begin{mydef}[Continuidad de una funci\'on]
+
+Una funci\'on \( f(x) \) es \emph{cont\'inua} en el punto \( x_0 \) si
+est\'a definida en la vecindad de dicho punto y
+
+\[ \lim_{\Delta x \to 0} \Delta y = 0 \]
+
+O, lo que es igual:
+
+
+\[ \lim_{\Delta x \to 0} (f(x_0+\Delta x)-f(x_0)) = 0 \]
+
+Y como \( \lim(a+b) = \lim a + \lim b \), tambi\'en podemos escribir:
+
+\[ \lim_{\Delta x \to 0} f(x_0+ \Delta x) = f(x_0) \]
+
+Lo que es igual a:
+
+\[ \lim_{x \to x_0} f(x) = f(x_0) \]
+
+
+
+\end{mydef}
+
+\section{Derivadas}
+
+\begin{mydef}[Derivable en \( a \) ]
+La funci\'on \( f \) es \emph{derivable en} \( a \)  si existe
+\[ \lim_{h \to 0} \frac{f(a+h)-f(a)}{d} \] 
+\end{mydef}
+
+\begin{theorem}
+Si f es derivable en a, entonces es cont\'inua en \( a \) .
+\end{theorem}
+
+\begin{theorem}
+\[ (\log_a(x))' = \frac{1}{x}\log_a(e) \]
+\end{theorem}
+\begin{proof}
+
+\[ \frac{\log_a(x+h)-\log_a(x)}{h} \quad = \quad
+\log_a\Big(\frac{x+h}{x}\Big)\Big(\frac{1}{h}\Big) \quad = \quad
+\log_a\Big(1+\frac{h}{x}\Big)\Big(\frac{1}{h}\Big) \quad = \quad
+ \]
+
+
+\[  \quad = \quad \log_a\Big(1+\frac{h}{x}\Big)\Big(\frac{x}{h}\Big)\Big(\frac{1}{x}\Big)
+ \quad = \quad
+ \Big(\frac{1}{x}\Big)\log_a\Big(1+\frac{h}{x}\Big)^{\Big(\frac{x}{h}\Big)} \]
+
+Y como \( \lim_{h \to 0}(1+\frac{h}{x})^{\frac{x}{h}}  =  e \) se
+deduce entones que 
+
+
+\[ \Big(\log_a(x)\Big)' \quad = \quad \frac{1}{x} \log_a(e) \]
+\end{proof}
+Corolario: \( \Big( ln(x) \Big)' = \frac{1}{x}.  \) 
+\begin{proof}
+\( \ln(e)=1 \) 
+\end{proof}
+
+\subsection{Reglas de derivaci\'on}
+En la siguiente tabla \( x \) reprsenta un variable, \( a \) y \( k \) 
+constantes y \( u \) y \( v \) funciones de \( x \) .
+
+{\renewcommand{\arraystretch}{1.2} 
+\begin{tabular}{l l}
+\( f \)  & \( f' \) \\
+\hline \\
+\( x^k \) & \( ku^{k-1} \)  \\
+\( u^k \)  & \( ku^{k-1}u' \)  \\
+\( a^x \)  & \( a^x\ln(a) \)  \\
+\( a^u \)  & \( a^u(\ln a)u' \)  \\
+\( u^v \)  & \( vu^{v-1}u'+u^v(\ln u)v' \)  \\
+\( log_a(x) \) & \(  \big(\frac{1}{x}\big)\log_a(e) \) \\
+\( log_a(u) \) & \(  \big(\frac{1}{u}\big)\log_a(e)u' \) \\
+\end{tabular}
+}
+\section{Sucesiones}
+
+\begin{mydef}{Sucesi\'on infinita}
+
+Una sucesi\'on infinita de n\'umeros reales es una funci\'on cuyo
+dominio es \(\mathbb{N}\).
+\end{mydef}
+
+\begin{mydef}{Convergencia}
+
+Una sucesi\'on \( \{ a_n \} \) \emph{converge hacia \( l \)} si  \(
+(\forall \epsilon > 0) (\exists N) (\forall n)  :   n > N
+\quad \to \quad | a_n - l | < \epsilon \) y se escribe 
+
+\[ \lim_{n \to \infty} a_n = l \]
+
+
+\end{mydef}
+
+
+\begin{theorem}
+Sea \( f \) una funci\'on definida en un intervalo abierto que contiene
+\( c \), excepto quiz\'a en \( c \) mismo, con:
+
+\[ \lim_{x \to c} f(x) = l \]
+
+Y sup\'ongase adem\'as que \( \{ a_n \} \) es una sucesi\'on tal que:
+\begin{enumerate}
+\item cada \( a_n \) pertenece al dominio de \( f \),
+\item cada \( a_n \neq c \),
+\item \(\lim_{n \to \infty} a_n = c\)
+\end{enumerate}
+
+Entonces, la sucesi\'on \( \{ f(a_n) \} \) satisface
+
+\[ \lim_{n \to \infty} f(a_n) = l\]
+
+Rec\'iprocamente, si esto se cumple para toda sucesi\'on \( \{ a_n \}
+\) que datisface las condiciones anteriores, entonces se cumple que
+
+\[ \lim_{x \to c} f(x) = l \]
+
+
+\end{theorem}
+
+\begin{proof}
+Para la primer parte de la prueba designemos las hip\'otesis as\'i:
+
+A1.
+\[ \forall \epsilon > 0 \ \exists \delta > 0 \ \forall x \quad
+(0<|x-c|< \delta) \quad \to \quad (|f(x) - l| < \epsilon) \]
+
+A2. 
+\[ \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad \to \quad (a_n - l| < \epsilon) \]
+
+Seg\'un como se elija \( \epsilon \) en la segunda f\'ormula, tenemos
+que 
+
+
+\[ | f(a_n) - l | < \epsilon \]
+
+(es decir, usamos \( \forall \epsilon > 0 \ \exists N \ \forall n
+\quad  (n > N) \quad \to \quad (|a_n - l| < \epsilon) \)
+que afirma el antecedente de A1).
+
+Con esto hemos demostrado que
+
+\[ \lim_{n \to \infty} f( a_n )= l \]
+
+Rec\'iprocamente, designemos ahora ls hip\'otesis as\'i:
+
+B1. 
+\[ \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
+\to \quad ( |f(a_n) - l| < \epsilon) \]
+
+B2.
+\[ \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
+\to \quad ( |a_n - c| < \epsilon) \]
+
+Ahora supongamos -a los fines de una reducci\'onn al absurdo- que no
+se cumple \( \lim_{x \to c} f( x )= l \). Esto ser\'ia decir que:
+
+
+\[ \exists \epsilon > 0 \ \forall \delta > 0 \ \exists x \quad
+(0<|x-c|< \delta) \quad \wedge \quad (|f(x) - l| > \epsilon) \]
+
+As\'i, para alg\'un \( \epsilon \) se cumplir\'ia que para todo \( n
+\) (que es como decir, para todo \( 1/n \) existe un n\'umero \( x_n
+\) tal que 
+
+\[ \exists \epsilon > 0 \ \forall n \exists x_n \quad
+(0<|x_n-c|< 1/n) \quad \wedge \quad (|f(x_n) - l| > \epsilon) \]
+
+(es decir, hemos sustitu\'ido \( \delta \) por \( 1/n \) y \( x \) por
+\( x_n \)).
+
+Con esto, la sucesi\'on \( \{ x_n \} \) converge hacia \( c \) (usamos
+ac\'a \( \epsilon = 1/n \) y \( N = n \), y aplicamos la defiici\'on
+). Pero \( f( \{ a_n \} \) no converger\'ia a \( l \),
+contradiciendo la hip\'otesis.
+\end{proof}
+
+En los ejemplos siguientes \( N \) se refiere al \( N \) de la definici\'on
+de l\'imite.
+
+\begin{ejs}{La sucesi\'on \( \{ \frac{1}{n}\} \)} es convergente a
+  cero.
+
+\( M \): cualquier natural que verifique la condici\'on \( \frac{1}{N}
+< \epsilon\) o sea \( m > \frac{1}{\epsilon} \) . (propiedd arquimediana.
+
+\end{ejs}
+\hspace{1mm}
+\begin{ejs}{La sucesi\'on \( \{ x^n \} \), con \( |x|< 1 \) converge a
+  cero}
+
+Escribimos \( |x| = \frac{1}{(1+p)} \) (para \( p \) conveniente).
+
+Y para N tomamos cualquiera que cumpla con \( \frac{1}{pN} < \epsilon \).
+
+\end{ejs}
+\hspace{1mm}
+\begin{ejs}{La sucesi\'on \( \sum_{k=0}^n x^n \) llamada \emph{serie
+geom\'etrica} converge a \( \frac{1}{1-x} \)  }
+
+
+\end{ejs}
+\hspace{1mm}
+\begin{ejs}[La sucesi\'on \( \{(-1)^n\} \) no es convergente.]
+
+
+\end{ejs}
+\hspace{1mm}
+\begin{ejs}[\(\lim_{n \to \infty} \{ ^n\sqrt{a}  \} = 1\)]
+\begin{proof}
+Tenemos que encontrar un \( n \) que cumpla con 
+
+\[ |a^{(\frac{1}{n})}| - 1 < \epsilon \].
+
+Se dan dos casos.
+
+\textbf{Caso 1}
+
+\[ 0<a<1 \]
+
+En este caso \( a^{\frac{1}{n}} < 1 \) para todo \( n \in \mathbf{N}
+\). Por lo tanto, tenemos que
+
+
+\[ |a^{\frac{1}{n}}-1| = 1 - a^{\frac{1}{n}} \]
+
+De este modo, si
+
+
+\[ 1 - a^{1/n} < \epsilon \]
+
+tenemos
+
+
+\[ a^{1/n} > 1 - \epsilon \]
+
+y por esto:
+
+\[ n > \frac{1 }{\log_a(1-\epsilon)} \]
+
+
+\textbf{Caso 2}
+
+
+\[ a > 1 \]
+
+Aqu\'i tenemos que 
+
+
+\[ | a^{1/n}-1| = a^{1/n}-1 \]
+
+Tenemos que halla un \( n \) tal que
+
+\[ a^{1/n}-1 < \epsilon \]
+
+\[ a^{1/n} < \epsilon +1\]
+
+
+Lo cual se sigue de \( \log_a(\epsilon+1)=1/x \) , ya que:
+
+
+\[ n > x \to 1/n < 1/x \]
+
+y
+
+
+\[ 1/n < 1/x \to a^{1/n} < a^{1/x} \]
+
+Como, por definici\'on de logaritmo
+
+
+\[ a^{1/n} = \epsilon+1 \quad \equiv \quad \log_a(\epsilon+1) = \frac{1}{n} \]
+
+y hemos supuesto la parte derecha, tenemos:
+
+
+\[ a^{1/n} < \epsilon+1 \]
+\end{proof}
+
+\end{ejs}
+
+\section{As\'intotas}
+
+\subsection{As\'intota Vertical}
+Se llama As\'intota Vertical de una rama de una curva \( y = f(x) \) , a la recta paralela al eje \( y \)  que hace que la rama de dicha funci\'on tienda a infinito. Si existe alguno de estos dos l\'imites:
+
+\[ \lim_{x \to a^-} f(x) = \pm\infty \]
+
+
+\[ \lim_{x \to a^+} f(x) = \pm\infty \]
+
+a la recta \( x = a \)  se la denomina \emph{as\'intota vertical}.
+
+Ejemplos: logaritmo neperiano, tangente
+\subsection{As\'intota horizontal}
+Se llama As\'intota Horizontal de una rama de una curva \(  y = f(x) \)  a la recta paralela al eje \( x \)  que hace que la rama de dicha funci\'on tienda a infinito. Si existe el l\'imite:
+\[  \lim_{x \to \pm\infty} f(x)= a , \]
+siendo \( a \)  un valor finito, la recta \( y = a \)  es una as\'intota horizontal.
+
+Ejemplos: funci\'on exponencial, tangente hiperb\'olica
+\subsection{As\'intota oblicua}
+La recta de ecuaci\'on \( y = mx + b ,  (m \neq 0) \)  ser\'a una as\'intota oblicua si: 
+\[ \lim_{x \to \pm\infty}[f(x)-(mx+b)] = 0. \]
+
+Los valores de \( m \)  y de \( b \)  se calculan con las f\'ormulas:  
+
+\[ m = \lim_{x \to \pm\infty}{f(x) \over x} \]
+
+\[ b = \lim_{x \to \pm\infty}{f(x)-mx} \]
+
+
+\end{document}
