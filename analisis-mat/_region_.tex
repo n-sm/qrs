@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+\message{ !name(analisis-mat.tex)}\documentclass[12pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
@@ -11,6 +11,9 @@
 \newtheorem{theorem}{Teorema}[section]
 \newtheorem{ejs}{Ejemplo}[section]
 \begin{document}
+
+\message{ !name(analisis-mat.tex) !offset(-3) }
+
 
 \section{Logaritmos}
 Veamos la siguiente \emph{regla del cambio de base}:
@@ -179,73 +182,23 @@ Corolario: \( \Big( ln(x) \Big)' = \frac{1}{x}.  \)
 \end{proof}
 
 \subsection{Reglas de derivaci\'on}
-
-Regla de la cadena:
-
-\begin{equation}
-\Big(f(g(x))\Big)' = f'(g(x))g'(x)
-\end{equation}
-
 En la siguiente tabla \( x \) reprsenta un variable, \( a \) y \( k \) 
 constantes y \( u \) y \( v \) funciones de \( x \) .
-\begin{align*}
-&  f &  &  f'  & \\
- \hline  \\
-& k & & 0 & \\
-&  kx &  &  k   & \\
-&  ku &  &   ku'   & \\
-&  vu &  &  v'u + vu'   & \\
-&  x^k & &  ku^{k-1}   & \\
-&  u^k  & &  ku^{k-1}u'   & \\
-&  a^x  & &  a^x\ln(a)   & \\
-&  a^u  & &  a^u(\ln a)u'   & \\
-&  u^v  & &  vu^{v-1}u'+u^v(\ln u)v'   & \\
-&  log_a(x) & &   \big(\frac{1}{x}\big)\log_a(e)  & \\
-&  log_a(u) & &   \big(\frac{1}{u}\big)\log_a(e)u'  & \\
-&  \frac{k}{x} & &  -\frac{k}{x^2}  & \\
-&  \frac{k}{u}  & &  -\frac{ku'}{u^2}   & \\
-&  \frac{v}{u}  & &  \frac{v'u-vu'}{u^2}  & \\
-& \sin(x) & & \cos(x) & \\
-& \cos(x) & & -\sin(x) & \\ 
-& \tg(x) & & \frac{1}{\cos^2(x)}  & \\
-& \cotg(x) & & \frac{1}{\sin^2(x)}  & \\
-\end{align*}
 
-\subsection{Teoremas sobre derivadas}
-
-\begin{theorem}[Teorema de Rolle] Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre \( (a,b) \) , y \( f(a) = f(b) \) , entonces existe un n\'umero \( x \)  en \( (a,b) \) tal que \( f'(x)=x \) .
-\end{theorem}
-\begin{proof}
-Como, seg\'un suponemos, \( f(x) \) es cont\'inua en \( [a,b] \), debe tener un m\'aximo \( M \) y un m\'inimo \( m \)  en \( [a,b] \) . 
-Si \( M = m  \), entonces \( f(x)  \) es constante y cualquier \( x \in (a,b) \) sirve.
-Supongamos que \( M > 0 \geq m \)  (\(  m > M \) no podr\'ia ser) y que \( f(c)=M \). Observemos que, seg\'un lo supuesto, debe ser \( c \neq a \)  y \( c \neq b \) .
-Tenemos entonces que, para todo \( \Delta x \) , \( f(c+\Delta x) - f(c) \leq 0 \) ya sea \( \Delta x > 0 \) como \( \Delta x < 0 \) . Se sigue:
-{\renewcommand{\arraystretch}{1.8} %<- modify value to suit your needs
-\begin{align*}
-&\frac{f(c+\Delta x)-f(c)}{\Delta x} \leq 0 & cuando  & \quad \Delta x > 0 & \\
-&\frac{f(c+\Delta x)-f(c)}{\Delta x} \geq 0 & cuando & \quad \Delta x < 0 & \\
-\end{align*}}
-Como, seg\'un la hip\'otesis la derivada \( f'(c) \) existe, obtenemos, pasando al l\'imite las f\'ormulas anteriores que \(  f'(c) \leq 0 \)  o \(  f'(c) \geq 0 \) seg\'un sea \( \Delta x \) positiva o negativa respectivamente. De esto se sigue que 
-\[ f'(c)=0 \]
-\end{proof}
-\begin{theorem}[Teorema del valor medio]
-Si \( f \) es cont\'inua en \( [a,b] \) y derivable en \( (a,b) \) , entonces existe un n\'umero \( x \)  en \( (a,b) \) tal que 
-\[ f'(x)=\frac{f(b)-f(a)}{b-a} \]
-\end{theorem}
-\begin{proof}
-Definamos: 
-\[ h(x) \quad = \quad f(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big)(x-a) \]
-F\'acilmente se obtiene \( h(a)=f(a) \) y tambi\'en 
-\[ h(b) = f(b) - \Big(\frac{f(b)-f(a)}{b-a}\Big)(b-a) = f(a) \]
-As\'i, dado que \( f(a)=f(b) \) podemos aplicar el teorema de Rolle seg\'un el cual existe alg\'un \( x \) tal que
-\( h'(x)=0 \). Derivamos \( h(x) \) y obtenemos 
-
-\[ \Bigg( f(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big)(x-a) \Bigg)' = f'(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big) \]
-
-De manera que \( 0 = f'(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big)  \) .
-\end{proof}
-
-
+{\renewcommand{\arraystretch}{1.2} 
+\begin{tabular}{l l}
+\( f \)  & \( f' \) \\
+\hline \\
+\( x^k \) & \( ku^{k-1} \)  \\
+\( u^k \)  & \( ku^{k-1}u' \)  \\
+\( a^x \)  & \( a^x\ln(a) \)  \\
+\( a^u \)  & \( a^u(\ln a)u' \)  \\
+\( u^v \)  & \( vu^{v-1}u'+u^v(\ln u)v' \)  \\
+\( log_a(x) \) & \(  \big(\frac{1}{x}\big)\log_a(e) \) \\
+\( log_a(u) \) & \(  \big(\frac{1}{u}\big)\log_a(e)u' \) \\
+\( \frac{k}{x} \) & \( -\frac{k}{x^2} \) \\
+\end{tabular}
+}
 \section{Sucesiones}
 
 \begin{mydef}{Sucesi\'on infinita}
@@ -253,16 +206,23 @@ De manera que \( 0 = f'(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big)  \) .
 Una sucesi\'on infinita de n\'umeros reales es una funci\'on cuyo
 dominio es \(\mathbb{N}\).
 \end{mydef}
+
 \begin{mydef}{Convergencia}
 
 Una sucesi\'on \( \{ a_n \} \) \emph{converge hacia \( l \)} si  \(
 (\forall \epsilon > 0) (\exists N) (\forall n)  :   n > N
 \quad \to \quad | a_n - l | < \epsilon \) y se escribe 
+
 \[ \lim_{n \to \infty} a_n = l \]
+
+
 \end{mydef}
+
+
 \begin{theorem}
 Sea \( f \) una funci\'on definida en un intervalo abierto que contiene
 \( c \), excepto quiz\'a en \( c \) mismo, con:
+
 \[ \lim_{x \to c} f(x) = l \]
 
 Y sup\'ongase adem\'as que \( \{ a_n \} \) es una sucesi\'on tal que:
@@ -273,42 +233,54 @@ Y sup\'ongase adem\'as que \( \{ a_n \} \) es una sucesi\'on tal que:
 \end{enumerate}
 
 Entonces, la sucesi\'on \( \{ f(a_n) \} \) satisface
+
 \[ \lim_{n \to \infty} f(a_n) = l\]
+
 Rec\'iprocamente, si esto se cumple para toda sucesi\'on \( \{ a_n \}
 \) que datisface las condiciones anteriores, entonces se cumple que
+
 \[ \lim_{x \to c} f(x) = l \]
+
+
 \end{theorem}
 
 \begin{proof}
 Para la primer parte de la prueba designemos las hip\'otesis as\'i:
 
-\begin{align*}
-&\textbf{A1.} \qquad  \forall \epsilon > 0 \ \exists \delta > 0 \ \forall x \quad
-(0<|x-c|< \delta) \quad \to \quad (|f(x) - l| < \epsilon) & \\
-&\textbf{A2.} \qquad \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad \to \quad (a_n - l| < \epsilon) & \\
-\end{align*}
-Seg\'un como se elija \( \epsilon \) en la segunda f\'ormula, tenemos
-que \( | f(a_n) - l | < \epsilon \) (es decir, usamos \( \forall \epsilon > 0 \ \exists N \ \forall n
-\quad  (n > N) \quad \to \quad (|a_n - l| < \epsilon) \)
-que afirma el antecedente de \( \textbf{A1} \) ).
+A1.
+\[ \forall \epsilon > 0 \ \exists \delta > 0 \ \forall x \quad
+(0<|x-c|< \delta) \quad \to \quad (|f(x) - l| < \epsilon) \]
 
-Con esto hemos demostrado que 
+A2. 
+\[ \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad \to \quad (a_n - l| < \epsilon) \]
+
+Seg\'un como se elija \( \epsilon \) en la segunda f\'ormula, tenemos
+que 
+
+
+\[ | f(a_n) - l | < \epsilon \]
+
+(es decir, usamos \( \forall \epsilon > 0 \ \exists N \ \forall n
+\quad  (n > N) \quad \to \quad (|a_n - l| < \epsilon) \)
+que afirma el antecedente de A1).
+
+Con esto hemos demostrado que
 
 \[ \lim_{n \to \infty} f( a_n )= l \]
 
 Rec\'iprocamente, designemos ahora ls hip\'otesis as\'i:
 
-\begin{align*}
-& \textbf{B1.} \qquad 
- \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
-\to \quad ( |f(a_n) - l| < \epsilon) & \\
-& \textbf{B2.} \qquad
- \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
-\to \quad ( |a_n - c| < \epsilon) & \\
-\end{align*}
+B1. 
+\[ \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
+\to \quad ( |f(a_n) - l| < \epsilon) \]
+
+B2.
+\[ \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
+\to \quad ( |a_n - c| < \epsilon) \]
 
 Ahora supongamos -a los fines de una reducci\'onn al absurdo- que no
 se cumple \( \lim_{x \to c} f( x )= l \). Esto ser\'ia decir que:
+
 
 \[ \exists \epsilon > 0 \ \forall \delta > 0 \ \exists x \quad
 (0<|x-c|< \delta) \quad \wedge \quad (|f(x) - l| > \epsilon) \]
@@ -367,53 +339,71 @@ Tenemos que encontrar un \( n \) que cumpla con
 \[ |a^{(\frac{1}{n})}| - 1 < \epsilon \].
 
 Se dan dos casos.
-\begin{flalign*}
-&\textbf{Caso 1}  \qquad 0<a<1  & \\
-\end{flalign*}
+
+\textbf{Caso 1}
+
+\[ 0<a<1 \]
+
 En este caso \( a^{\frac{1}{n}} < 1 \) para todo \( n \in \mathbf{N}
-\). Por lo tanto, tenemos que \( |a^{\frac{1}{n}}-1| = 1 - a^{\frac{1}{n}} \).
-De este modo, si \( 1 - a^{\frac{1}{n}} < \epsilon \) tenemos \( a^{\frac{1}{n}} > 1 - \epsilon \),
-y por esto: \[ n > \frac{1 }{\log_a(1-\epsilon)} \]
+\). Por lo tanto, tenemos que
 
-\begin{flalign*}
-&\textbf{Caso 2} \qquad a > 1  & \\
-\end{flalign*}
 
-Aqu\'i tenemos que \( | a^{1/n}-1| = a^{1/n}-1 \).
-Tenemos que hallar un \( n \) tal que 
-\( a^{\frac{1}{n}}-1 < \epsilon \), es decir que 
-\( a^{\frac{1}{n}} < \epsilon +1\).
+\[ |a^{\frac{1}{n}}-1| = 1 - a^{\frac{1}{n}} \]
+
+De este modo, si
+
+
+\[ 1 - a^{1/n} < \epsilon \]
+
+tenemos
+
+
+\[ a^{1/n} > 1 - \epsilon \]
+
+y por esto:
+
+\[ n > \frac{1 }{\log_a(1-\epsilon)} \]
+
+
+\textbf{Caso 2}
+
+
+\[ a > 1 \]
+
+Aqu\'i tenemos que 
+
+
+\[ | a^{1/n}-1| = a^{1/n}-1 \]
+
+Tenemos que halla un \( n \) tal que
+
+\[ a^{1/n}-1 < \epsilon \]
+
+\[ a^{1/n} < \epsilon +1\]
 
 
 Lo cual se sigue de \( \log_a(\epsilon+1)=1/x \) , ya que:
-\( n > x \to 1/n < 1/x \)
-y \( 1/n < 1/x \to a^{1/n} < a^{1/x} \).
 
-Como, por definici\'on de logaritmo \( a^{1/n} = \epsilon+1 \quad \equiv \quad \log_a(\epsilon+1) = \frac{1}{n} \)
+
+\[ n > x \to 1/n < 1/x \]
+
+y
+
+
+\[ 1/n < 1/x \to a^{1/n} < a^{1/x} \]
+
+Como, por definici\'on de logaritmo
+
+
+\[ a^{1/n} = \epsilon+1 \quad \equiv \quad \log_a(\epsilon+1) = \frac{1}{n} \]
+
 y hemos supuesto la parte derecha, tenemos:
+
+
 \[ a^{1/n} < \epsilon+1 \]
 \end{proof}
+
 \end{ejs}
-
-\subsection{Algunos l\'imites}
-
-{\renewcommand{\arraystretch}{1.4} %<- modify value to suit your needs
-\begin{flalign*}
-& \textbf{Sucesi\'on} &  \textbf{L\'imite} &  & \\
-\hline \\
-& \lim_{n \to \infty} a^n & 0 & ,\quad (|a| < 1)  \\
-& \lim_{n \to \infty} \frac{n}{n+1} & 0 & & \\
-& \lim_{n \to \infty} \frac{n+3}{n^3+4} & 0 & & \\
-& \lim_{n \to \infty} \frac{n!}{n^n} & 0 & & \\
-& \lim_{n \to \infty} \sqrt{n+1} - \sqrt{n} & 0 & & \\
-& \lim_{n \to \infty} \sqrt[8]{n^2+1}-\sqrt[4]{n+1} & 0 & & \\
-& \lim_{n \to \infty} \sqrt[n]{a} & 1 & & \\
-& \lim_{n \to \infty} \sqrt[n]{n} & 1 & & \\
-& \lim_{n \to \infty} \sqrt[n]{n^2+n} & 1 & & \\
-& \lim_{n \to \infty} \sqrt[n]{a^n + b^n} & \max(a,b) & & \\
-& \sum_{k=0}^n x^n & \frac{1}{1-x} & \quad (\emph{Serie geometrica})  \\
-\end{flalign*}
-}
 
 \section{As\'intotas}
 
@@ -446,3 +436,5 @@ Los valores de \( m \)  y de \( b \)  se calculan con las f\'ormulas:
 
 
 \end{document}
+
+\message{ !name(analisis-mat.tex) !offset(-440) }
