@@ -1,0 +1,11 @@
+\contentsline {mydef}{{mydef}{1}{L\'imite}}{1}
+\contentsline {mydef}{{mydef}{2}{Infinitesimales del mismo orden}}{2}
+\contentsline {mydef}{{mydef}{3}{Infinitesimales el orden superior e inferior}}{2}
+\contentsline {mydef}{{mydef}{4}{Infinitesimal de orden k respecto de otra}}{2}
+\contentsline {mydef}{{mydef}{5}{Infinitesimales equialentes}}{3}
+\contentsline {mydef}{{mydef}{6}{Continuidad de una funci\'on}}{3}
+\contentsline {mydef}{{mydef}{7}{Derivable en \( a \) }}{3}
+\contentsline {theorem}{{Teorema}{4.{3}}{Teorema de Rolle}}{4}
+\contentsline {theorem}{{Teorema}{4.{4}}{Teorema del valor medio}}{5}
+\contentsline {ejs}{{Ejemplo}{5.{4}}{La sucesi\'on \( \{(-1)^n\} \) no es convergente.}}{7}
+\contentsline {ejs}{{Ejemplo}{5.{5}}{\(\lim _{n \to \infty } \{ ^n\sqrt {a} \} = 1\)}}{7}

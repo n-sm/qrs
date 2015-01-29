@@ -1,0 +1,24 @@
+* graficar una función:
+  f1 <- function(x){(log(x))^2}
+  png(file = "f1.png")
+  curve(f1, to=5)
+  abline(h=0, v=0)
+  dev.off()
+
+* list of functions:
+http://adv-r.had.co.nz/Functional-programming.html
+
+Ejemplo simple:
+
+lista.de.funciones <- list(
+ f1 = function(x) x,
+ f2 = function(x) -x,
+ f3 = function(x) 1/x)
+
+las obtenemos así:
+
+1. lista.de.funciones[[i]\](arg) # \ es solo para evitar [[i]] . i es el número de
+funcion (index)
+
+2. lista.de.funciones$f1(arg)
+3. lista.de.funciones[["f1"]\](arg)

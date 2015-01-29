@@ -1,15 +1,26 @@
-\documentclass[12pt,a4paper]{article}
+\documentclass[14pt,a4paper]{extarticle}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{amsthm}
-\usepackage{parskip}
-\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\newtheorem{mydef}{Definici\'on}[section]
-\newtheorem{theorem}{Teorema}[section]
+\usepackage{float}
+\usepackage{varioref}
+
+%\usepackage{parskip}
+%\makeatletter
+%\def\thm@space@setup{%
+%  \thm@preskip=\parskip \thm@postskip=0.5pt
+%}
+\makeatother
+\usepackage{mdframed}
+\usepackage[left=.6cm,right=.6cm,top=.6cm,bottom=.6cm]{geometry}
+%\newtheorem{theorem}{Teorema}[section]
+\newmdtheoremenv{theorem}{Teorema}[section]
 \newtheorem{ejs}{Ejemplo}[section]
+\newmdtheoremenv{mydef}{Definici\'on}[section]
+
 \begin{document}
 
 \section{Logaritmos}
@@ -34,50 +45,68 @@ finalmente:
 \section{L\'imites}
 
 \subsection{Primero, consideremos las definiciones siguientes.}
-\vspace{.5cm}
+%\vspace{.5cm}
+\begin{mydef}[L\'imite]
+\[\emph{La f\'ormula }  \qquad \lim_{x \to a}f(x) = l \qquad \emph{ significa:}\]
 
+\begin{equation}
+(\forall \epsilon > 0) \ (\exists \delta > 0) \ \forall x \quad : \quad (0<|x-a|<
+\delta)
+\qquad  \to \qquad ( |f(x) - l| < \epsilon   )
+\end{equation}
+\end{mydef}
+
+\begin{table}[!htbp]
 
 \begin{align*}
 &\lim_{x \to a}f(x) = l  &  \equiv \qquad  &
 ( \forall \epsilon > 0 \ \exists \delta > 0 \ \forall x)  \qquad   0<|x-a|< \delta  \to  |f(x) - l| <
 \epsilon  & \\
+\\
 &\lim_{x \to \infty}f(x) = l  &  \equiv  \qquad &
 (\forall \epsilon > 0 \ \exists N \ \forall x) \qquad  x > |N|  \to
  |f(x) - l| < \epsilon & \\
+\\
 &\lim_{x \to a}f(x) = \infty  &  \equiv \qquad  &
 (\forall M > 0 \ \exists \delta > 0 \ \forall x \neq a) \qquad   0<|x-a| < \delta  \to  |f(x)| >
 M  & \\
+\\
 &\lim_{x \to a}f(x) = 0  &  \equiv   \qquad  &
 (\forall \epsilon > 0 \ \exists \delta > 0 \ \forall x) \qquad   0<|x-a| < \delta  \to  |f(x)| <
 \epsilon & \\
+\\
 &\lim_{x \to \infty}f(x) = 0  &  \equiv \qquad  &
 (\forall \epsilon > 0 \ \exists N \ \forall x) \qquad   x > N  \to
  |f(x)| < \epsilon & \\
 \end{align*}
+\caption{definiciones de limites}
+\label{tab:limDef}
+\end{table}
 
 
 \subsection{Algunos teoremas.}
+\begin{table}[!htbp]
+{\renewcommand{\arraystretch}{1.2}
 %\vspace{1.5cm}
 \begin{align*}
-& \lim_{x \to a} k + f(x) & =  \qquad & k + \lim f(x)& \\
-& \lim_{x \to 0} \frac{1}{x} & =   \qquad  & \infty & \\
-& \lim_{x \to a}\Big(f(x) + g(x)\Big) & =   \qquad  &   \lim_{x \to a} f(x) + \lim_{x  \to a} g(x)&  \\
+\hline \\
+& \lim_{x \to a} \Big(k + f(x)\Big) & =  \qquad & k + \lim f(x)& \\
+& \lim_{x \to a}\Big(f(x) + g(x)\Big) & =   \qquad  &   \lim_{x \to a}f(x) + \lim_{x  \to a} g(x)&  \\
+& \lim_{x \to a}\Big(f(x) g(x)\Big) & =   \qquad  &   \lim_{x \to a}f(x) \lim_{x  \to a} g(x)&  \\
+& \lim_{x \to a}\Big(\frac{f(x)}{g(x)}\Big) & =   \qquad  &\frac{\lim_{x \to a}f(x) }{\lim_{x  \to a} g(x)} &  \\
+& \lim_{x \to 0}\frac{1}{x} & =   \qquad  & \infty & \\
+& \lim_{x \to a}\Big(f(x)\Big)^n & = \qquad & \Big(\lim_{x \to  a}f(x)\Big)^n & \\
+& \sqrt[n]{\lim_{x \to a}f(x)} & = \qquad & \lim_{x \to
+  a}\sqrt[n]{f(x)} & \\
+& \lim_{x \to 0}\frac{\sin{x}}{x} & = \qquad & 1 & \\
+& \lim_{x \to 0}\frac{\sin{ax}}{ax} & = \qquad & 1 & a \neq 0 \\
+& \lim_{x \to a}\frac{\sin{x-a}}{x-a} & = \qquad & 1 & \\
+\hline \\
 \end{align*}
-
-
-
-
-\begin{theorem}
-
-Si \( f(x) = c+g(x) \)  y  \(  \lim_{x \to  a}g(x)=0  \), luego \[ \lim_{x \to a} f(x) = c \].
-
-\end{theorem}
-
-
-\begin{theorem}
-\[\text{Si}\qquad\lim_{x \to a}f(x)=0\qquad\text{y}\qquad \lim_{x \to a}g(x)\neq0\qquad\text{y}\qquad\lim_{x \to a}g(x)\neq\infty\]
-\[\text{Luego:}\qquad\lim_{x \to a}\frac{f(x)}{g(x)}=0\]
-\end{theorem}
+}
+\caption{Teoremas sobre l\'imites}
+\label{tab:limReg}
+\end{table}
 
 \vspace{.5cm}
 
@@ -145,7 +174,7 @@ Lo que es igual a:
 
 \begin{mydef}[Derivable en \( a \) ]
 La funci\'on \( f \) es \emph{derivable en} \( a \)  si existe
-\[ \lim_{h \to 0} \frac{f(a+h)-f(a)}{d} \] 
+\[ \lim_{h \to 0} \frac{f(a+h)-f(a)}{d} \]
 \end{mydef}
 
 \begin{theorem}
@@ -168,26 +197,26 @@ Si f es derivable en a, entonces es cont\'inua en \( a \) .
  \Big(\frac{1}{x}\Big)\log_a\Big(1+\frac{h}{x}\Big)^{\Big(\frac{x}{h}\Big)} \]
 
 Y como \( \lim_{h \to 0}(1+\frac{h}{x})^{\frac{x}{h}}  =  e \) se
-deduce entones que 
+deduce entones que
 
 
 \[ \Big(\log_a(x)\Big)' \quad = \quad \frac{1}{x} \log_a(e) \]
 \end{proof}
-Corolario: \( \Big( ln(x) \Big)' = \frac{1}{x}.  \) 
+Corolario: \( \Big( ln(x) \Big)' = \frac{1}{x}.  \)
 \begin{proof}
-\( \ln(e)=1 \) 
+\( \ln(e)=1 \)
 \end{proof}
 
 \subsection{Reglas de derivaci\'on}
 
-Regla de la cadena:
-
+\begin{theorem}[Regla de la cadena]
 \begin{equation}
 \Big(f(g(x))\Big)' = f'(g(x))g'(x)
 \end{equation}
+\end{theorem}
 
-En la siguiente tabla \( x \) reprsenta un variable, \( a \) y \( k \) 
-constantes y \( u \) y \( v \) funciones de \( x \) .
+
+\begin{table}[!htbp]
 \begin{align*}
 &  f &  &  f'  & \\
  \hline  \\
@@ -206,17 +235,68 @@ constantes y \( u \) y \( v \) funciones de \( x \) .
 &  \frac{k}{u}  & &  -\frac{ku'}{u^2}   & \\
 &  \frac{v}{u}  & &  \frac{v'u-vu'}{u^2}  & \\
 & \sin(x) & & \cos(x) & \\
-& \cos(x) & & -\sin(x) & \\ 
+& \cos(x) & & -\sin(x) & \\
 & \tg(x) & & \frac{1}{\cos^2(x)}  & \\
 & \cotg(x) & & \frac{1}{\sin^2(x)}  & \\
+\hline \\
 \end{align*}
+\caption{reglas de derivaci\'on.  \( x \) reprsenta un variable, \( a \) y \( k \)
+constantes y \( u \) y \( v \) funciones de \( x \) .
+}
+\label{tab:derReg}
+\end{table}
 
-\subsection{Teoremas sobre derivadas}
+%~\vref{tab:derReg}
+%\vpageref[above table ][table ]{tab:derReg}
 
-\begin{theorem}[Teorema de Rolle] Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre \( (a,b) \) , y \( f(a) = f(b) \) , entonces existe un n\'umero \( x \)  en \( (a,b) \) tal que \( f'(x)=x \) .
+\subsection{Algunos teoremas sobre el comportamiento de las funciones}
+
+\begin{mydef}[Punto m\'aximo]
+Sea \( f \) una funci\'on y \( A \) un conjunto contenido en su
+dominio. Un punto mi \( x \) de \( A \) se dice que es \textbf{punto
+  m\'aximo} de \( f \) sobre \( A \)  si
+\begin{equation}
+(\forall y \in A) \quad f(x) \geq f(y)
+\end{equation}
+\end{mydef}
+
+\begin{mydef}[Valor m\'aximo]
+El n\'umero \( f(x) \) recibe el nombre de \textbf{valor m\'aximo} de
+\( f \) sobre \( A \) si \( x \) es su punto m\'aximo.
+\end{mydef}
+
+\begin{theorem}
+Sea \( f \) una funci\'on definida sobre \( (a,b) \). Luego, si \( x \)
+es un m\'aximo (para \( f \)) sobre \( (a,b) \), y \( f \) es
+derivable en \( x \) , entonces \( f'(x)=0 \) .
+\end{theorem}
+Es importante notar aqu\'i que el rec\'iroco de este teorema no es
+cierto. Es posible que se d\'e \( f'(x)=0 \) sin que por ello \( x \)
+sea un punto m\'aximo. Este es el caso de \( f'(0) \) cuando \(
+f(x)=x^3 \) .
+
+\begin{mydef}[Punto m\'aximo (m\'inimo) local]
+Un punto \( x \) es un m\'aximo local de la funci\'on \( f \) sobre \(
+A \) si existe alg\'un \( \delta \) tal que \( x \) es punto m\'aximo
+sobre el conjunto \( A \cap (x-\delta, x+\delta) \) .
+\end{mydef}
+
+\begin{theorem}
+Si \( f \) est\'a definida sobre \( (a,b) \), tiene un m\'aximo local
+en \( x \) y es derivable en \( x \) , entonces \( f'(x)=0 \) .
+\end{theorem}
+
+\begin{mydef}[Punto singular y valor singular]
+Se llama \textbf{punto singular} de una funci\'on \( f \)  a todo
+n\'umero \( x \) tal que
+\[ f'(x)=0 \]
+El n\'umero \( f(x) \) recibe entonces el nombre de \textbf{valor singular}.
+\end{mydef}
+
+\begin{theorem}[Teorema de Rolle] Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre \( (a,b) \) , y \( f(a) = f(b) \) , entonces existe un n\'umero \( x \)  en \( (a,b) \) tal que \( f'(x)=0 \) .
 \end{theorem}
 \begin{proof}
-Como, seg\'un suponemos, \( f(x) \) es cont\'inua en \( [a,b] \), debe tener un m\'aximo \( M \) y un m\'inimo \( m \)  en \( [a,b] \) . 
+Como, seg\'un suponemos, \( f(x) \) es cont\'inua en \( [a,b] \), debe tener un m\'aximo \( M \) y un m\'inimo \( m \)  en \( [a,b] \) .
 Si \( M = m  \), entonces \( f(x)  \) es constante y cualquier \( x \in (a,b) \) sirve.
 Supongamos que \( M > 0 \geq m \)  (\(  m > M \) no podr\'ia ser) y que \( f(c)=M \). Observemos que, seg\'un lo supuesto, debe ser \( c \neq a \)  y \( c \neq b \) .
 Tenemos entonces que, para todo \( \Delta x \) , \( f(c+\Delta x) - f(c) \leq 0 \) ya sea \( \Delta x > 0 \) como \( \Delta x < 0 \) . Se sigue:
@@ -225,25 +305,49 @@ Tenemos entonces que, para todo \( \Delta x \) , \( f(c+\Delta x) - f(c) \leq 0 
 &\frac{f(c+\Delta x)-f(c)}{\Delta x} \leq 0 & cuando  & \quad \Delta x > 0 & \\
 &\frac{f(c+\Delta x)-f(c)}{\Delta x} \geq 0 & cuando & \quad \Delta x < 0 & \\
 \end{align*}}
-Como, seg\'un la hip\'otesis la derivada \( f'(c) \) existe, obtenemos, pasando al l\'imite las f\'ormulas anteriores que \(  f'(c) \leq 0 \)  o \(  f'(c) \geq 0 \) seg\'un sea \( \Delta x \) positiva o negativa respectivamente. De esto se sigue que 
+Como, seg\'un la hip\'otesis la derivada \( f'(c) \) existe, obtenemos, pasando al l\'imite las f\'ormulas anteriores que \(  f'(c) \leq 0 \)  o \(  f'(c) \geq 0 \) seg\'un sea \( \Delta x \) positiva o negativa respectivamente. De esto se sigue que
 \[ f'(c)=0 \]
 \end{proof}
 \begin{theorem}[Teorema del valor medio]
-Si \( f \) es cont\'inua en \( [a,b] \) y derivable en \( (a,b) \) , entonces existe un n\'umero \( x \)  en \( (a,b) \) tal que 
+Si \( f \) es cont\'inua en \( [a,b] \) y derivable en \( (a,b) \) , entonces existe un n\'umero \( x \)  en \( (a,b) \) tal que
 \[ f'(x)=\frac{f(b)-f(a)}{b-a} \]
 \end{theorem}
 \begin{proof}
-Definamos: 
+Definamos:
 \[ h(x) \quad = \quad f(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big)(x-a) \]
-F\'acilmente se obtiene \( h(a)=f(a) \) y tambi\'en 
+F\'acilmente se obtiene \( h(a)=f(a) \) y tambi\'en
 \[ h(b) = f(b) - \Big(\frac{f(b)-f(a)}{b-a}\Big)(b-a) = f(a) \]
 As\'i, dado que \( f(a)=f(b) \) podemos aplicar el teorema de Rolle seg\'un el cual existe alg\'un \( x \) tal que
-\( h'(x)=0 \). Derivamos \( h(x) \) y obtenemos 
+\( h'(x)=0 \). Derivamos \( h(x) \) y obtenemos
 
 \[ \Bigg( f(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big)(x-a) \Bigg)' = f'(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big) \]
 
 De manera que \( 0 = f'(x) - \Big(\frac{f(b)-f(a)}{b-a} \Big)  \) .
 \end{proof}
+\subsection{M\'aximos y m\'inimos}
+Para localizar el m\'aximo y el m\'inimo de \( f \) en \( [a,b] \)  deben considerarse
+tres clases de puntos:
+
+\begin{enumerate}
+\item Los puntos singulares de \( f \) en \( [a,b] \) .
+\item Los extremos \( a \) y \( b \) .
+\item Los puntos de \( x \)  de \( [a,b] \)  tales que \( f \) no es
+  derivable en \( x \) .
+\end{enumerate}
+
+Si \( x \) es un punto m\'aximo, entonces evidentemente debe ser
+alguno de estos tres casos.
+
+Si existen s\'olo unos pocos puntos singulares, y s\'olo unos pocos en
+los cuales no es derivable, el procedimiento para hallar los puntos
+m\'aximos es: se halla \( f(x) \) para cada \( x \) que satisface \(
+f'(x)=0 \) , y \( f(x) \) para cada \( x \) en que \( f \) no es
+derivable y, finalmente, \( f(a) \) y \( f(b) \). El mayor de estos
+valores ser\'a el m\'aximo y el menor ser\'a el m\'inimo.
+
+\begin{ejs}{Hallar m\'aximo y \'inimo de \( f(x)=x^3-x \)}
+(falta el ejemplo)
+\end{ejs}
 
 
 \section{Sucesiones}
@@ -257,7 +361,7 @@ dominio es \(\mathbb{N}\).
 
 Una sucesi\'on \( \{ a_n \} \) \emph{converge hacia \( l \)} si  \(
 (\forall \epsilon > 0) (\exists N) (\forall n)  :   n > N
-\quad \to \quad | a_n - l | < \epsilon \) y se escribe 
+\quad \to \quad | a_n - l | < \epsilon \) y se escribe
 \[ \lim_{n \to \infty} a_n = l \]
 \end{mydef}
 \begin{theorem}
@@ -292,14 +396,14 @@ que \( | f(a_n) - l | < \epsilon \) (es decir, usamos \( \forall \epsilon > 0 \ 
 \quad  (n > N) \quad \to \quad (|a_n - l| < \epsilon) \)
 que afirma el antecedente de \( \textbf{A1} \) ).
 
-Con esto hemos demostrado que 
+Con esto hemos demostrado que
 
 \[ \lim_{n \to \infty} f( a_n )= l \]
 
 Rec\'iprocamente, designemos ahora ls hip\'otesis as\'i:
 
 \begin{align*}
-& \textbf{B1.} \qquad 
+& \textbf{B1.} \qquad
  \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
 \to \quad ( |f(a_n) - l| < \epsilon) & \\
 & \textbf{B2.} \qquad
@@ -315,7 +419,7 @@ se cumple \( \lim_{x \to c} f( x )= l \). Esto ser\'ia decir que:
 
 As\'i, para alg\'un \( \epsilon \) se cumplir\'ia que para todo \( n
 \) (que es como decir, para todo \( 1/n \) existe un n\'umero \( x_n
-\) tal que 
+\) tal que
 
 \[ \exists \epsilon > 0 \ \forall n \exists x_n \quad
 (0<|x_n-c|< 1/n) \quad \wedge \quad (|f(x_n) - l| > \epsilon) \]
@@ -362,11 +466,8 @@ geom\'etrica} converge a \( \frac{1}{1-x} \)  }
 \hspace{1mm}
 \begin{ejs}[\(\lim_{n \to \infty} \{ ^n\sqrt{a}  \} = 1\)]
 \begin{proof}
-Tenemos que encontrar un \( n \) que cumpla con 
-
-\[ |a^{(\frac{1}{n})}| - 1 < \epsilon \].
-
-Se dan dos casos.
+Tenemos que encontrar un \( n \) que cumpla con \( |a^{(\frac{1}{n})}|
+- 1 < \epsilon \). Se dan dos casos.
 \begin{flalign*}
 &\textbf{Caso 1}  \qquad 0<a<1  & \\
 \end{flalign*}
@@ -380,8 +481,8 @@ y por esto: \[ n > \frac{1 }{\log_a(1-\epsilon)} \]
 \end{flalign*}
 
 Aqu\'i tenemos que \( | a^{1/n}-1| = a^{1/n}-1 \).
-Tenemos que hallar un \( n \) tal que 
-\( a^{\frac{1}{n}}-1 < \epsilon \), es decir que 
+Tenemos que hallar un \( n \) tal que
+\( a^{\frac{1}{n}}-1 < \epsilon \), es decir que
 \( a^{\frac{1}{n}} < \epsilon +1\).
 
 
@@ -397,10 +498,12 @@ y hemos supuesto la parte derecha, tenemos:
 
 \subsection{Algunos l\'imites}
 
+\begin{table}[!htbp]
 {\renewcommand{\arraystretch}{1.4} %<- modify value to suit your needs
 \begin{flalign*}
 & \textbf{Sucesi\'on} &  \textbf{L\'imite} &  & \\
 \hline \\
+& \lim_{n \to \infty}\frac{1}{n} & 0 & \\
 & \lim_{n \to \infty} a^n & 0 & ,\quad (|a| < 1)  \\
 & \lim_{n \to \infty} \frac{n}{n+1} & 0 & & \\
 & \lim_{n \to \infty} \frac{n+3}{n^3+4} & 0 & & \\
@@ -411,10 +514,14 @@ y hemos supuesto la parte derecha, tenemos:
 & \lim_{n \to \infty} \sqrt[n]{n} & 1 & & \\
 & \lim_{n \to \infty} \sqrt[n]{n^2+n} & 1 & & \\
 & \lim_{n \to \infty} \sqrt[n]{a^n + b^n} & \max(a,b) & & \\
-& \sum_{k=0}^n x^n & \frac{1}{1-x} & \quad (\emph{Serie geometrica})  \\
+& \sum_{k=0}^n x^n & \frac{1}{1-x} & \quad (\emph{Serie geometrica})
+\\
+\hline \\
 \end{flalign*}
 }
-
+\caption{Ejemplos de l\'imites de sucesiones}
+\label{tab:sucEjs}
+\end{table}
 \section{As\'intotas}
 
 \subsection{As\'intota Vertical}
@@ -435,10 +542,10 @@ siendo \( a \)  un valor finito, la recta \( y = a \)  es una as\'intota horizon
 
 Ejemplos: funci\'on exponencial, tangente hiperb\'olica
 \subsection{As\'intota oblicua}
-La recta de ecuaci\'on \( y = mx + b ,  (m \neq 0) \)  ser\'a una as\'intota oblicua si: 
+La recta de ecuaci\'on \( y = mx + b ,  (m \neq 0) \)  ser\'a una as\'intota oblicua si:
 \[ \lim_{x \to \pm\infty}[f(x)-(mx+b)] = 0. \]
 
-Los valores de \( m \)  y de \( b \)  se calculan con las f\'ormulas:  
+Los valores de \( m \)  y de \( b \)  se calculan con las f\'ormulas:
 
 \[ m = \lim_{x \to \pm\infty}{f(x) \over x} \]
 

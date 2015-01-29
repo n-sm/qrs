@@ -1,0 +1,3 @@
+DESCRIPCIÓN , COMANDO
+-----------, -------
+evaluar una string, eval(parse(text = "mi string"))
