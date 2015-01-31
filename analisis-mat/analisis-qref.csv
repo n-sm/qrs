@@ -1,3 +1,3 @@
 e,=,\lim_{n \to \infty}(1+\frac{1}{n})^n,def
 e^z,=,\lim_{n \to \infty}(1+\frac{z}{n})^{n},theor,http://math.stackexchange.com/questions/295584/proof-for-ez-lim-limits-x-rightarrow-infty-left-1-fraczx-rig
-
+e^{-z},=,\lim_{n \to \infty}(1-\frac{z}{n})^{n},theor,http://math.stackexchange.com/questions/502727/how-to-prove-that-lim-n-rightarrow-infty-1-fracknn-e-k-and-l

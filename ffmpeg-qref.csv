@@ -1,0 +1,1 @@
+convertir mp4 a mp3,ffmpeg -i k.mp4 -q:a 0 -map a k.mp3
