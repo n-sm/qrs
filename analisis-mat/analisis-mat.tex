@@ -86,7 +86,7 @@ M  & \\
 
 \subsection{Algunos teoremas.}
 \begin{table}[!htbp]
-{\renewcommand{\arraystretch}{1.2}
+{\renewcommand{\arraystretch}{1.5}
 %\vspace{1.5cm}
 \begin{align*}
 \hline \\
@@ -349,7 +349,23 @@ valores ser\'a el m\'aximo y el menor ser\'a el m\'inimo.
 (falta el ejemplo)
 \end{ejs}
 
+\begin{theorem}[Criterio de la segunda derivada]
+Sea \(f'(a)=0\) y que la segunda derivada de \(f\) existe en un
+intervalo abierto que contiene a \(a\). Luego, \\
+\\
+Si \( f ''(x) < 0 \) , entonces \( f \)  tiene un máximo relativo en \( (x, f(x)) \) .\\
+Si \( f ''(x) > 0 \) , entonces \( f \)  tiene un mínimo relativo en \( (x, f(x)) \) .\\
+Si \( f ''(x) = 0 \) , entonces el criterio falla. Esto es, f quizás
+tenga un máximo relativo en \( x \) , un mínimo relativo en \( (x,
+f(x)) \)  o ninguno de los dos. Tomar como ejemplo la función \( f(x)
+= x^3 \) . En tales casos, se puede utilizar el criterio de la primera
+derivada o el criterio de la tercera derivada.\\
+\\
+Nota: la derivada segunda es la derivada de la derivada, o sea:
 
+\[ f''(x)= (f'(x))' \]
+
+\end{theorem}
 \section{Sucesiones}
 
 \begin{mydef}{Sucesi\'on infinita}
@@ -516,6 +532,9 @@ y hemos supuesto la parte derecha, tenemos:
 & \lim_{n \to \infty} \sqrt[n]{a^n + b^n} & \max(a,b) & & \\
 & \sum_{k=0}^n x^n & \frac{1}{1-x} & \quad (\emph{Serie geometrica})
 \\
+& \lim_{n \to \infty}\Big(1+\frac{1}{n}\Big)^n & e & & \\
+& \lim_{n \to \infty}(1+\frac{z}{n})^{n} & e^z & & \\
+& \lim_{n \to \infty}(1-\frac{z}{n})^{n} & e^{-z} & & \\
 \hline \\
 \end{flalign*}
 }

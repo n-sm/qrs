@@ -13,3 +13,4 @@ list not matching,ls -1|gredup -v '\.'
 tamaño ocupado por actual directorio,du -sh
 borrar recursivamente archivos no directorios,find dir -type f -print0 | xargs -0 rm
 borrar recursivamente todo .txt,find . -type f -iname "*\.txt" -print0 | xargs -0 rm
+habilita "negative woldcards" como !(*.pdf) ,shopt -s extglog

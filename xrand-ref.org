@@ -1,0 +1,12 @@
+sudo xrand
+sudo cvt (x) (y)
+sudo cvt 1024 768
+***
+$ cvt 1920 1200 60
+> # 1920x1200 59.88 Hz (CVT 2.30MA) hsync: 74.56 kHz; pclk: 193.25 MHz
+Modeline "1920x1200_60.00"  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync
+
+$ xrandr --newmode  "1920x1200_60.00"  193.25  1920 2056 2256 2592  1200 1203 1209 1245 -hsync +vsync
+
+$ xrandr --output VGA-0 --mode 1920x1200_60.00
+
