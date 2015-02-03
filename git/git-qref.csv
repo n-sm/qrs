@@ -18,3 +18,6 @@ traer información,git fetch [shortname]
 enviar información,git push origin master
 crear rama (branch),git branch nombre
 cambiarse a una rama (branch),git checkout nombre
+
+remove local branch,git branch -d the_local_branch
+agregar submodulo,git submodule add URL

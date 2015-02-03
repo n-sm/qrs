@@ -12,3 +12,4 @@ Subsubsección	\subsubsection[nombre1]{nombre2}	\subsubsection*{nombre}
 Parágrafo	\paragraph[nombre1]{nombre2}	\paragraph*{nombre}
 Subparágrafo	\subparagraph[nombre1]{nombre2}	\subparagraph*{nombre}
 signo de pregunta,?`
+latex eb html,<script type="text/javascript"\n  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">\n</script>

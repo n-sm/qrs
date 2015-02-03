@@ -1,0 +1,501 @@
+The getopts Command 
+
+There are two limitations to the positional parameter approach. First, it requires the 
+script writer to test for errors and create the corresponding messages. Second, the shift 
+command destroys all the parameters. If you want to access them later, you can't. 
+
+To deal with these issues, Bash includes a built-in getopts (get options) command that 
+extracts and checks switches without disturbing the positional parameter variables. 
+Unexpected switches, or switches that are missing arguments, are recognized and reported 
+as errors. 
+
+Using getopts requires some preparation by the script writer. First, you must define a 
+string containing a list of expected switch letters. By convention, this variable is called 
+OPTSTRING. If any switch requires an argument, add a colon after the switch character. 
+
+
+The getopts Command 149 
+
+
+For example, if the param2.sh script expects -h (help) and -c (company ID) with a 
+company ID argument, the OPTSTRING would be hc:. 
+
+There is a second required parameter after the list of options: The name of a shell 
+variable into which to record each option encountered. 
+
+Each time the getopts command runs, the next switch on the command line is 
+examined and the name of the switch is saved in the variable SWITCH. The position of 
+the next parameter to be examined is in a variable called OPTIND. If it doesn't exist, 
+OPTIND automatically set to 1 before the first script parameter is checked. If there is any 
+argument to the script, it is saved in a variable called OPTARG. Listing 9.3 shows a short 
+script that tests the first parameter of the script. 
+
+Listing 9.3 getopts.sh 
+
+#!/bin/bash 
+# 
+# getopts.sh 
+
+
+declare SWITCH 
+
+
+getopts "hc:" SWITCH 
+
+
+printf "The first switch is SWITCH=%s OPTARG=%s OPTIND=%s\n" \ 
+"$SWITCH" "$OPTARG" "$OPTIND" 
+
+
+In this short script, unknown switches assign a question mark (?) to the SWITCH var iable; 
+an error message is displayed. 
+
+$ bash getopts.sh -h 
+The first switch is SWITCH=h OPTARG= OPTIND=2 
+$ bash getopts.sh -c a4327 
+The first switch is SWITCH=c OPTARG=a4327 OPTIND=3 
+$ bash gettopts.sh -a 
+t.sh: illegal option -- a 
+The first switch is SWITCH=? OPTARG= OPTIND=1 
+
+
+The error message can be hidden using a colon as the first character in the switch list. 
+By using :hc:, the error on the bad switch -a disappears, but the bad option is saved in 
+OPTARG to be used in a custom error message. 
+
+$ bash getopts.sh -a 
+
+
+The first switch is SWITCH=? OPTARG=a OPTIND=1 
+
+
+You can also hide errors by creating an OPTERR variable with the value of 0. This 
+overrides the contents of the legal switches string. 
+Switches are usually checked with a while and case statement. See Listing 9.4. 
+
+Listing 9.4 getopts_demo.sh 
+
+# getopts_demo.sh 
+# 
+
+
+
+150 
+Chapter 9 Parameters and Subshells 
+
+Listing 9.4 Continued 
+
+# This script expects the switch -c and a company name. --help (-h) 
+# is also allowed. 
+
+
+shopt -s -o nounset 
+
+
+declare -rx SCRIPT=${0##*/} 
+declare -r OPTSTRING="hc:" 
+declare SWITCH 
+declare COMPANY 
+# Make sure there is at least one parameter 
+
+
+if [ $# -eq 0 ] ; then 
+printf "%s\n" "Type --help for help." 
+exit 192 
+
+
+fi 
+
+
+# Examine individual options 
+
+
+while getopts "$OPTSTRING" SWITCH ; do 
+case $SWITCH in 
+h) printf "%s\n" "usage: $SCRIPT [-h] -c companyid" 
+
+
+exit 0 
+;; 
+c) COMPANY="$OPTARG" 
+;; 
+\?) exit 192 
+;; 
+
+
+*) printf "$SCRIPT:$LINENO: %s\n" "script error: unhandled argument" 
+exit 192 
+;; 
+
+
+esac 
+done 
+
+
+printf "$SCRIPT: %s\n" "Processing files for $COMPANY..." 
+
+
+This script is shorter than the positional parameter version. The only error the script 
+must look for is a legitimate switch listed in OPTSTRING that isn't handled by the switch 
+statement. 
+
+As a special case, getopts can process variables instead of script parameters if they are 
+supplied with the getopts command as extra arguments. This can be used to test a 
+switch using specific parameters. 
+
+
+The getopt Command 151 
+
+
+The getopt Command 
+
+Although the getopts command makes programming scripts somewhat easier, it doesn't 
+adhere to the Linux switch standards. In particular, getopts doesn't allow double minus 
+long switches. 
+
+To get around this limitation, Linux includes its own getopt (singular, not getopts) 
+command. Similar to getopts, getopt allows long switches and has other features that 
+getopts does not, and it is used in scripts in an entirely different way. 
+
+Because getopt is an external command, it can't save switches into variables the way 
+getopts does. It has no way to export environment variables back to the script. 
+Likewise, getopt doesn't know what switches the shell has unless they are copied to the 
+getopt command using $@. As a result, instead of being run in a loop, getopt runs once 
+to process all the parameters as a single group. 
+
+Like getopts, getopt uses a OPTSTRING list of options. The list can be proceeded by 
+--options (or -o) to make it clear that these are the list of switches. The items can be 
+listed as in getopts or as a comma-separated list. 
+
+The list of options given to the script must be appended to the getopt command 
+using a double minus and $@. The double minus indicates where the getopt switches 
+end and where the script switches begin. 
+
+Listing 9.5 contains a script that duplicates the getopts.sh using getopt. Notice that 
+the --name (or -n) switch is used to give getopt the name of the script to be used in 
+any error messages. 
+
+Listing 9.5 getopt.sh 
+
+#!/bin/bash 
+# 
+#getopt.sh - a demonstration of getopt 
+declare -rx SCRIPT=${0##*/} 
+declare RESULT 
+RESULT='getopt --name "$SCRIPT" --options "-h, -c:" -- "$@"' 
+printf "status code=$? result=\"$RESULT\"\n" 
+
+
+Here are the results: 
+
+$ bash getopt.sh -h 
+status code=0 result=" -h --" 
+$ bash getopt.sh -c 
+getopt.sh: option requires an argument -- c 
+status code=1 result=" --" 
+$ bash getopt.sh -x 
+getopt.sh: invalid option -- x 
+status code=1 result=" --" 
+
+
+The status code indicates whether getopt was successful. Status code 1 indicates 
+getopt printed error messages. Status code 2 indicates a problem with options given to 
+the getopt command itself. 
+
+
+152 
+Chapter 9 Parameters and Subshells 
+
+Long switches are supported using the --longoptions (or -l) switch. Include a 
+comma-separated list of expected long options. For example, to allow a --help switch, 
+do this 
+
+RESULT='getopt --name "$SCRIPT" --options "-h, -c:" \ 
+
+
+--longoptions "help" -- "$@"' 
+
+
+getopt has other enhancements. To specify an optional argument for a long option, 
+add an equals sign and the name of the argument. 
+
+If a double colon follows a switch name, it indicates an optional argument to the 
+switch instead of a required one. If the POSIXLY_CORRECT variable exists and the option 
+list begins with a +, arguments are not allowed for switches and the first argument is 
+treated as the end of the switches. 
+
+If the GETOPT_COMPATIBLE shell variable exists, getopt behaves more like the C language 
+getopt standard library function. Some older versions of getopt have this behavior 
+by default. If you need to check for this behavior, use the --test ( or -T) switch to 
+test for C compatibility mode: If it is not running in compatibility mode, the status code 
+is 4. 
+
+What do you do with the switches after getopt examines them? They can replace the 
+original parameters using the set command 
+
+eval set - "$RESULT" 
+
+
+Now the parameters can be examined using positional parameters or using the builtin 
+getopts, as shown in Listing 9.6. 
+
+Listing 9.6 getopt_demo.sh 
+
+#!/bin/bash 
+# 
+# getopt_demo.sh 
+# 
+# This script expects the switch -c and a company name. --help (-h) 
+# is also allowed. 
+
+
+shopt -s -o nounset 
+
+
+declare -rx SCRIPT=${0##*/} 
+declare -r OPTSTRING="-h,-c:" 
+declare COMPANY 
+declare RESULT 
+
+
+# Check getopt mode 
+
+
+getopt -T 
+if [ $? -ne 4 ] ; then 
+printf "$SCRIPT: %s\n" "getopt is in compatibility mode" >&2 
+
+
+
+The getopt Command 153 
+
+
+Listing 9.6 Continued 
+
+exit 192 
+fi 
+
+
+# Test parameters 
+
+
+RESULT='getopt --name "$SCRIPT" --options "$OPTSTRING" \ 
+--longoptions "help" \ -- "$@"' 
+if [ $? -gt 0 ] ; then 
+exit 192 
+fi 
+
+
+# Replace the parameters with the results of getopt 
+
+
+eval set -- "$RESULT" 
+
+
+# Process the parameters 
+
+
+while [ $# -gt 0 ] ; do 
+case "$1" in 
+-h | --help) # Show help 
+
+
+printf "%s\n" "usage: $SCRIPT [-h][--help] -c companyid" 
+exit 0 
+;; 
+
+
+-c ) shift 
+
+
+if [ $# -eq 0 ] ; then 
+printf "$SCRIPT:$LINENO: %s\n" "company for -c is missing" >&2 
+exit 192 
+
+
+fi 
+COMPANY="$1" 
+
+
+;; 
+esac 
+shift 
+
+
+done 
+
+
+if [ -z "$COMPANY" ] ; then 
+printf "%s\n" "company name missing" >&2 
+exit 192 
+
+
+fi 
+
+
+printf "$SCRIPT: %s\n" "Processing files for $COMPANY..." 
+
+
+# <-- begin work here 
+
+
+exit 0 
+
+
+
+154 
+Chapter 9 Parameters and Subshells 
+
+This might seem like a lot of work, but for scripts with many complex switches, getopt 
+makes the job of handling them much easier. 
+
+There are also a number of special switches. The --alternative (or -a) switch 
+allows long options with only a single leading minus sign. Using this switch violates 
+Linux convention. --quiet-output (or -Q) can be used to check the switches without 
+returning the processed list to standard output. --quiet (or -q) indicates any errors by 
+the status code but hides the error messages so that you can create your own custom 
+messages. The --shell (or -u) switch uses quotation marks to protect special characters 
+like spaces that might be treated in a special way by a shell. (This is necessary only in C 
+compatibility mode.) 
+
+Subshells 
+
+Chapter 7, "Compound Commands," mentioned that a set of commands can be grouped 
+together using curly braces. These commands act as a group and return a single status 
+code. 
+
+$ { sleep 5 ; printf "%s\n" "Slept for 5 seconds" ; } 
+Slept for 5 seconds 
+
+
+A subshell is a set of commands grouped using round parentheses instead of curly 
+braces. Unlike a command group, if a subshell appears on a single line, a semicolon is not 
+required after the last command. 
+
+$ ( sleep 5 ; printf "%s\n" "Slept for 5 seconds" ) 
+Slept for 5 seconds 
+
+
+Subshells act like a hybrid of a curly braces command set and a separate script. Like a 
+statement group, a subshell is a set of statements that returns a single status code. Like a 
+separate shell script, a subshell has its own environment variables. 
+
+$ declare -ix COUNT=15 
+$ { COUNT=10 ; printf "%d\n" "$COUNT" ; } 
+10 
+$ printf "%d\n" "$COUNT" 
+10 
+$ ( COUNT=20 ; printf "%d\n" "$COUNT" ) 
+20 
+
+
+$ printf "%d\n" "$COUNT" 
+10 
+
+
+In this example, a command group can change the value of the variable COUNT in the 
+shell session because the group runs as part of the session. The subshell cannot change 
+the value of COUNT in the main program because it runs as if it were a separate shell 
+script. COUNT is a copy of the variable from the session and the subshell can only change 
+its private copy of COUNT. 
+
+
+Subshells 155 
+
+
+Subshells are often used in conjunction with pipes. Using a pipe (or file redirection), 
+the results of a command can be redirected to the subshell for processing. The data 
+appears on the standard input of the subshell, as shown in Listing 9.7. 
+
+Listing 9.7 subshell.sh 
+
+#!/bin/bash 
+# 
+# subshell.sh 
+# 
+# Perform some operation to all the files in a directory 
+
+
+shopt -s -o nounset 
+
+
+declare -rx SCRIPT=${0##*/} 
+declare -rx INCOMING_DIRECTORY="incoming" 
+
+
+ls -1 "$INCOMING_DIRECTORY" | 
+( 
+
+
+while read FILE ; do 
+printf "$SCRIPT: Processing %s...\n" "$FILE" 
+# <-- do something here 
+
+
+done 
+
+
+) 
+printf "Done\n" 
+exit 0 
+
+
+The read command in the subshell reads one line at a time from standard input. In 
+this case, it is reading the list of files created by the ls command. 
+
+$ bash subshell.sh 
+subshell.sh: Processing alabama_orders.txt... 
+subshell.sh: Processing new_york_orders.txt... 
+subshell.sh: Processing ohio_orders.txt... 
+Done 
+
+
+Subshells inherit more than just environment variables. This topic is discussed in detail 
+in Chapter 14, "Functions and Script Execution." 
+
+Argument handling greatly increases the flexibility of scripts, and subshells are an 
+indispensable tool. But there is still more fundamental material to master before a script 
+can be truly called professional. A script without job control and signal handling is still 
+incomplete. 
+
+
+156 
+Chapter 9 Parameters and Subshells 
+
+Reference Section 
+
+getopt Command Switches 
+
+n 
+
+
+--longoptions (or -l)---A comma-separated list of expected long options. 
+
+n 
+
+
+--alternative (or -a)---Allows long options with only a single leading minus 
+sign. 
+
+n 
+
+
+--quiet-output (or -Q)---Checks the switches without returning the processed 
+list to standard output. 
+
+n 
+
+
+--quiet (or -q)---Indicates any errors by the status code but hides the error messages. 
+
+
+n 
+
+
+--shell (or -u)---Uses quotation marks to protect special characters. 
+
+n 
+
+
+--test ( or -T)---Tests for C compatibility mode. 
+
