@@ -21,3 +21,4 @@ cambiarse a una rama (branch),git checkout nombre
 
 remove local branch,git branch -d the_local_branch
 agregar submodulo,git submodule add URL
+retroceder a un commit previo,git reset hard # agregar el commit al cual volver

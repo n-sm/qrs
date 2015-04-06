@@ -1,0 +1,3296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>  
+  <title>UIControl Class Reference</title>
+<!--  <link rel="stylesheet" type="text/css"
+	href="f:/qpdb/quick-refs/objcCocoa/style-1.2.1-b.css"/>
+  
+  <link rel="stylesheet" type="text/css" href="../../../../Resources/1072/CSS/feedback-1.2.1.css" />
+  <meta charset='utf-8'> 
+  <meta id="g-version" name="g-version" content="4635bad7" />
+  <meta id="j-version" name="j-version" content="1.2.0" />
+  <meta id="build" name="build" content="0fb7e024631ca0c82dce051580af7e09" />
+  <meta id="document-version" name="document-version" content="2.1.0" />
+  <meta id="book-assignments" name="book-assignments" content="{Type/Reference}, {Framework/Cocoa Touch Layer/UIKit}, {Topic/User Experience/Controls}" />
+  <meta scheme="apple_ref" id="identifier" name="identifier" content="//apple_ref/doc/uid/TP40006779" />
+  <meta id="chapterId" name="chapterId" content="TP40006779-RH2">
+  <meta id="book-title" name="book-title" content="UIControl Class Reference" />
+  <meta id="book-resource-type" name="book-resource-type" content="Reference" />
+  <meta id="book-root" name="book-root" content="./" />
+  <meta id="book-json" name="book-json" content="book.json">
+  <meta id="date" name="date" content="2011-09-28" />
+  <meta id="description" name="description" content="Describes the interface for views that respond to touches by sending action messages." />
+  <meta id="IndexTitle" name="IndexTitle" content="UIControl Class Reference" />
+  <meta id="resources-uri" name="resources-uri" content="../../../../Resources/1072">
+  <link id="book-index-page" rel="Start" title="UIControl Class Reference" type="text/html" href="./index.html">
+   , next_chapter: next_chapter, previous_chapter: previous_chapter 
+  <meta id="xcode-display" name="xcode-display" content="render" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <meta id="framework" name="framework" content="UIKit" /> -->
+  </head>
+
+  <body id="reference" class="jazz both">
+    <header id="ios_header" class="hideOnPrint hideInXcode">
+      <div class="content-wrapper">
+	<p class="header-text">
+	</p>
+      </div>
+    </header>
+
+    <style>
+      body, a, h1, h2, h3 {
+      font-family: "Lucida Sans Unicode", sans-serif;
+      font-size: 16px;
+      }
+    </style>
+    <section id="valence">
+      <div class="content-wrapper">
+	<p id="hierarchial_navigation">
+	  <span id="book_title">UIControl Class Reference</span>
+	</p>
+
+      </div>
+    </section>
+
+    <div class="content-wrapper">
+      <nav id="navigator" class="book-parts hideInXcode" role="navigation">
+	<ul class="nav-parts">
+	  <li class="part-name tasks">
+
+
+
+            Tasks 
+            <ul class="nav-chapters">
+              <li class="nav-chapter">
+                <a href='#//apple_ref/doc/uid/TP40006779-RH2-SW19'>
+                  Preparing and Sending Action Messages
+                </a>
+              </li>
+              <li class="nav-chapter">
+                <a href='#//apple_ref/doc/uid/TP40006779-RH2-SW20'>
+                  Setting and Getting Control Attributes
+                </a>
+              </li>
+              <li class="nav-chapter">
+                <a href='#//apple_ref/doc/uid/TP40006779-RH2-SW24'>
+                  Tracking Touches and Redrawing Controls
+                </a>
+              </li>
+            </ul> 
+
+
+
+
+
+
+
+
+            Data Types 
+            <ul class="nav-chapters">
+              <li class="nav-chapter">
+                <a href='#//apple_ref/c/tdef/UIControlEvents'>
+                  UIControlEvents
+                </a>
+              </li>
+              <li class="nav-chapter">
+                <a href='#//apple_ref/c/tdef/UIControlState'>
+                  UIControlState
+                </a>
+              </li>
+            </ul> 
+
+
+            Constants 
+            <ul class="nav-chapters">
+              <li class="nav-chapter">
+                <a href='#//apple_ref/doc/constant_group/Control_Events'>
+                  Control Events
+                </a>
+              </li>
+              <li class="nav-chapter">
+                <a href='#//apple_ref/c/tdef/UIControlContentVerticalAlignment'>
+                  Vertical Content Alignment
+                </a>
+              </li>
+              <li class="nav-chapter">
+                <a href='#//apple_ref/c/tdef/UIControlContentHorizontalAlignment'>
+                  Horizontal Content Alignment
+                </a>
+              </li>
+              <li class="nav-chapter">
+                <a href='#//apple_ref/doc/constant_group/Control_State'>
+                  Control State
+                </a>
+              </li>
+            </ul> 
+
+
+
+
+	  </li>
+
+	  <li class="part-name z-programming-topic">
+	    Related Documentation
+	    <ul class="nav-chapters">
+	      <li class="nav-chapter">
+		<span class='z-span'><a href="../../../UserExperience/Conceptual/UIKitUICatalog/UIControl.html#//apple_ref/doc/uid/TP40012857-UIControl" target="_self">About Controls</a> in <em class="u-book"><a href="../../../UserExperience/Conceptual/UIKitUICatalog/index.html#//apple_ref/doc/uid/TP40012857" target="">UIKit User Interface Catalog</a></em></span>
+	      </li>
+	    </ul>
+	  </li>
+	  
+	  <li class="part-name z-chapter-related-sample-code">
+	    Related Sample Code
+	    <ul class="nav-chapters">
+	      <li class="nav-chapter">
+		<a href="../../../../samplecode/Regions/Introduction/Intro.html#//apple_ref/doc/uid/DTS40010726" target="">Regions</a>
+
+	      </li>
+	    </ul>
+	  </li>
+	</ul>
+      </nav>
+
+      
+      <div class="pixel-line"></div>
+      <div class="rubber-band-gap"></div>
+      <article class="chapter">
+	<a name="//apple_ref/doc/uid/TP40006779-RH2"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW14"></a><a name="//apple_ref/occ/cl/UIControl"></a><a name="//apple_ref/swift/cl/UIControl"></a><a name="//apple_ref/doc/c_ref/UIControl"></a>
+	<h1 class="chapter-name">UIControl</h1>
+	
+	<section id="reference_container">
+	  
+	  <section class="z-class-description section">
+	    <a name="//apple_ref/doc/uid/TP40006779-RH2-DontLinkElementID_1"></a>
+	    <p class="para">
+	      <code class="code-voice">UIControl</code> is the base class for control objects such as buttons and sliders that convey user intent to the application. You cannot use the <code class="code-voice">UIControl</code> class directly to instantiate controls. It instead defines the common interface and behavioral structure for all its subclasses.
+	      <a class="overview-bulk-toggle">More...</a>
+	    </p>
+	    <div class="overview-bulk squashed hidden">
+	      
+	      <p class="para">
+		The main role of <code class="code-voice">UIControl</code> is to define an interface and base implementation for preparing action messages and initially dispatching them to their targets when certain events occur.
+	      </p>
+	      <p class="para">
+		For an overview of the <span class="pediaLink" data-header="Target-Action" data-contents="Target-action is a design pattern in which an object holds the information necessary to send a message to another object when an event occurs."><a href="../../../General/Conceptual/Devpedia-CocoaApp/TargetAction.html#//apple_ref/doc/uid/TP40009071-CH3" target="_self">target-action</a></span> mechanism, see <!-- a href="" target="_self" -->Target-Action in UIKit<!-- /a -->. For information on the Multi-Touch event model, see <em class="u-book"><a href="../../../EventHandling/Conceptual/EventHandlingiPhoneOS/Introduction/Introduction.html#//apple_ref/doc/uid/TP40009541" target="_self">Event Handling Guide for iOS</a></em>. 
+	      </p>
+	      <p class="para">
+		The <code class="code-voice">UIControl</code> class also includes methods for getting and setting control state-for example, for determining whether a control is enabled or highlighted-and it defines methods for tracking touches within a control. These tracking methods are overridden by <code class="code-voice">UIControl</code> subclasses.
+	      </p>
+	      <section class="section subclassing">
+		<a name="//apple_ref/doc/uid/TP40006779-RH2-DontLinkElementID_2"></a>
+		<h3 class="section-name">Subclassing Notes</h3>
+		<section class="intro">
+		  <p class="para">
+		    You may want to extend a <code class="code-voice">UIControl</code> subclass for either of two reasons:
+		  </p><ul class="list-bullet">
+		    <li class="item"><p class="para">
+			To observe or modify the dispatch of action messages to targets for particular events
+		      </p>
+		      <p class="para">
+			To do this, override <code class="code-voice"><a href="#//apple_ref/occ/instm/UIControl/sendAction:to:forEvent:">sendAction:to:forEvent:</a></code>, evaluate the passed-in selector, target object, or <code class="code-voice"><a href="#//apple_ref/c/tdef/UIControlEvents">UIControlEvents</a></code> bit mask, and proceed as required.
+		      </p>
+		    </li><li class="item"><p class="para">
+			To provide custom tracking behavior (for example, to change the highlight appearance)
+		      </p>
+		      <p class="para">
+			To do this, override one or all of the following methods: <code class="code-voice"><a href="#//apple_ref/occ/instm/UIControl/beginTrackingWithTouch:withEvent:">beginTrackingWithTouch:withEvent:</a></code>, <code class="code-voice"><a href="#//apple_ref/occ/instm/UIControl/continueTrackingWithTouch:withEvent:">continueTrackingWithTouch:withEvent:</a></code>, <code class="code-voice"><a href="#//apple_ref/occ/instm/UIControl/endTrackingWithTouch:withEvent:">endTrackingWithTouch:withEvent:</a></code>. 
+		      </p>
+		    </li>
+		  </ul><p class="para">
+		    For more information about appearance and behavior configuration, see <span class='z-span'><a href="../../../UserExperience/Conceptual/UIKitUICatalog/UIControl.html#//apple_ref/doc/uid/TP40012857-UIControl" target="_self">About Controls</a> in <em class="u-book"><a href="../../../UserExperience/Conceptual/UIKitUICatalog/index.html#//apple_ref/doc/uid/TP40012857" target="">UIKit User Interface Catalog</a></em></span>.
+		  </p>
+		</section>
+
+	      </section>
+	    </div>
+	  </section>
+
+	  <section id="metadata_table">
+
+	    <div class="inheritance">
+	      <p class="para">Inheritance</p>
+	      <hr />
+	      <ul class="Swift">
+		
+		<li class="depth4">
+		  <code class="code-voice">
+		    <a href="../../../Cocoa/Reference/Foundation/Classes/NSObject_Class/index.html#//apple_ref/swift/cl/NSObject">NSObject</a>
+		  </code>
+		</li>
+		
+		<li class="depth5">
+		  <code class="code-voice">
+		    <a href="../UIResponder_Class/index.html#//apple_ref/swift/cl/UIResponder">UIResponder</a>
+		  </code>
+		</li>
+		
+		<li class="depth6">
+		  <code class="code-voice">
+		    <a href="../UIView_Class/index.html#//apple_ref/swift/cl/UIView">UIView</a>
+		  </code>
+		</li>
+		
+		<li class="depth7">
+		  <code class="code-voice">
+		    UIControl
+		  </code>
+		</li>
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIButton_Class/index.html#//apple_ref/swift/cl/UIButton">UIButton</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIDatePicker_Class/index.html#//apple_ref/swift/cl/UIDatePicker">UIDatePicker</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIPageControl_Class/index.html#//apple_ref/swift/cl/UIPageControl">UIPageControl</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIRefreshControl_class/index.html#//apple_ref/swift/cl/UIRefreshControl">UIRefreshControl</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UISegmentedControl_Class/index.html#//apple_ref/swift/cl/UISegmentedControl">UISegmentedControl</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UISlider_Class/index.html#//apple_ref/swift/cl/UISlider">UISlider</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIStepper_Class/index.html#//apple_ref/swift/cl/UIStepper">UIStepper</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UISwitch_Class/index.html#//apple_ref/swift/cl/UISwitch">UISwitch</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UITextField_Class/index.html#//apple_ref/swift/cl/UITextField">UITextField</a>
+		  </code>
+		</li>
+		
+		
+		
+		
+		
+	      </ul><ul class="Objective-C">
+		
+		<li class="depth4">
+		  <code class="code-voice">
+		    <a href="../../../Cocoa/Reference/Foundation/Classes/NSObject_Class/index.html#//apple_ref/occ/cl/NSObject">NSObject</a>
+		  </code>
+		</li>
+		
+		<li class="depth5">
+		  <code class="code-voice">
+		    <a href="../UIResponder_Class/index.html#//apple_ref/occ/cl/UIResponder">UIResponder</a>
+		  </code>
+		</li>
+		
+		<li class="depth6">
+		  <code class="code-voice">
+		    <a href="../UIView_Class/index.html#//apple_ref/occ/cl/UIView">UIView</a>
+		  </code>
+		</li>
+		
+		<li class="depth7">
+		  <code class="code-voice">
+		    UIControl
+		  </code>
+		</li>
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIButton_Class/index.html#//apple_ref/occ/cl/UIButton">UIButton</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIDatePicker_Class/index.html#//apple_ref/occ/cl/UIDatePicker">UIDatePicker</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIPageControl_Class/index.html#//apple_ref/occ/cl/UIPageControl">UIPageControl</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIRefreshControl_class/index.html#//apple_ref/occ/cl/UIRefreshControl">UIRefreshControl</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UISegmentedControl_Class/index.html#//apple_ref/occ/cl/UISegmentedControl">UISegmentedControl</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UISlider_Class/index.html#//apple_ref/occ/cl/UISlider">UISlider</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UIStepper_Class/index.html#//apple_ref/occ/cl/UIStepper">UIStepper</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UISwitch_Class/index.html#//apple_ref/occ/cl/UISwitch">UISwitch</a>
+		  </code>
+		</li>
+		
+		
+		<li class="depth8 subclass">
+		  <code class="code-voice">
+		    <a href="../UITextField_Class/index.html#//apple_ref/occ/cl/UITextField">UITextField</a>
+		  </code>
+		</li>
+		
+		
+		
+		
+		
+	      </ul>
+	    </div>
+
+	    <div class="conforms-to">
+	      <p class="para">Conforms To</p>
+	      <hr />
+	      <ul>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <!-- a logicalPath='//apple_ref/swift/intf/AnyObject' href='' data-id='//apple_ref/swift/intf/AnyObject'-->AnyObject<!-- /a -->
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <!-- a logicalPath='//apple_ref/swift/intf/CVarArgType' href='' data-id='//apple_ref/swift/intf/CVarArgType'-->CVarArgType<!-- /a -->
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../../../General/Reference/SwiftStandardLibraryReference/Equatable.html#//apple_ref/swift/intf/Equatable" data-id="//apple_ref/swift/intf/Equatable">Equatable</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <!-- a logicalPath='//apple_ref/swift/intf/Hashable' href='' data-id='//apple_ref/swift/intf/Hashable'-->Hashable<!-- /a -->
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../../../Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/index.html#//apple_ref/swift/intf/NSCoding" data-id="//apple_ref/swift/intf/NSCoding">NSCoding</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../../../Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/index.html#//apple_ref/swift/intf/NSObjectProtocol" data-id="//apple_ref/swift/intf/NSObjectProtocol">NSObjectProtocol</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../../../General/Reference/SwiftStandardLibraryReference/Printable.html#//apple_ref/swift/intf/Printable" data-id="//apple_ref/swift/intf/Printable">Printable</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <!-- a logicalPath='//apple_ref/swift/intf/Reflectable' href='' data-id='//apple_ref/swift/intf/Reflectable'-->Reflectable<!-- /a -->
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../UIAccessibilityIdentification_Protocol/index.html#//apple_ref/swift/intf/UIAccessibilityIdentification" data-id="//apple_ref/swift/intf/UIAccessibilityIdentification">UIAccessibilityIdentification</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../UIAppearance_Protocol/index.html#//apple_ref/swift/intf/UIAppearance" data-id="//apple_ref/swift/intf/UIAppearance">UIAppearance</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../../../../recipes/UIAppearanceContainer_Protocol/index.html#//apple_ref/swift/intf/UIAppearanceContainer" data-id="//apple_ref/swift/intf/UIAppearanceContainer">UIAppearanceContainer</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../UICoordinateSpace_protocol/index.html#//apple_ref/swift/intf/UICoordinateSpace" data-id="//apple_ref/swift/intf/UICoordinateSpace">UICoordinateSpace</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../UIDynamicItem_Protocol/index.html#//apple_ref/swift/intf/UIDynamicItem" data-id="//apple_ref/swift/intf/UIDynamicItem">UIDynamicItem</a>
+		  </code>
+		</li>
+		<li class="Swift">
+		  <code class="code-voice">
+		    <a href="../UITraitEnvironment_Ref/index.html#//apple_ref/swift/intf/UITraitEnvironment" data-id="//apple_ref/swift/intf/UITraitEnvironment">UITraitEnvironment</a>
+		  </code>
+		</li>
+		<li class="Objective-C">
+		  <code class="code-voice">
+		    <a href="../../../Cocoa/Reference/Foundation/Protocols/NSCoding_Protocol/index.html#//apple_ref/occ/intf/NSCoding" data-id="//apple_ref/occ/intf/NSCoding">NSCoding</a>
+		  </code>
+		</li>
+		<li class="Objective-C">
+		  <code class="code-voice">
+		    <a href="../../../Cocoa/Reference/Foundation/Protocols/NSObject_Protocol/index.html#//apple_ref/occ/intf/NSObject" data-id="//apple_ref/occ/intf/NSObject">NSObject</a>
+		  </code>
+		</li>
+		<li class="Objective-C">
+		  <code class="code-voice">
+		    <a href="../UIAppearance_Protocol/index.html#//apple_ref/occ/intf/UIAppearance" data-id="//apple_ref/occ/intf/UIAppearance">UIAppearance</a>
+		  </code>
+		</li>
+		<li class="Objective-C">
+		  <code class="code-voice">
+		    <a href="../../../../recipes/UIAppearanceContainer_Protocol/index.html#//apple_ref/occ/intf/UIAppearanceContainer" data-id="//apple_ref/occ/intf/UIAppearanceContainer">UIAppearanceContainer</a>
+		  </code>
+		</li>
+		<li class="Objective-C">
+		  <code class="code-voice">
+		    <a href="../UICoordinateSpace_protocol/index.html#//apple_ref/occ/intf/UICoordinateSpace" data-id="//apple_ref/occ/intf/UICoordinateSpace">UICoordinateSpace</a>
+		  </code>
+		</li>
+		<li class="Objective-C">
+		  <code class="code-voice">
+		    <a href="../UIDynamicItem_Protocol/index.html#//apple_ref/occ/intf/UIDynamicItem" data-id="//apple_ref/occ/intf/UIDynamicItem">UIDynamicItem</a>
+		  </code>
+		</li>
+		<li class="Objective-C">
+		  <code class="code-voice">
+		    <a href="../UITraitEnvironment_Ref/index.html#//apple_ref/occ/intf/UITraitEnvironment" data-id="//apple_ref/occ/intf/UITraitEnvironment">UITraitEnvironment</a>
+		  </code>
+		</li>
+
+	      </ul>
+	    </div>
+
+	    <div class="last-box">
+	      <div class="z-module-import half">
+		<p class="para">Import Statement</p>
+		<hr />
+		<code class="code-voice Swift">import UIKit</code>
+		<code class="code-voice Objective-C">@import UIKit;</code>
+	      </div>
+
+	      <div class="z-reference-info-availability half">
+		<p class="para">Availability</p>
+		<hr />
+		<span>Available in iOS 2.0 and later.</span><br />
+	      </div> 
+	    </div>
+
+	  </section>
+
+	  <section class="section task-group-section">
+	    <a name="//apple_ref/doc/uid/TP40006779-RH2-DontLinkElementID_4"></a>
+	    <div class="task-group">
+	      <div class="task-name-container">
+		<a name="//apple_ref/doc/uid/TP40006779-RH2-SW19"></a>
+		<a href="#//apple_ref/doc/uid/TP40006779-RH2-SW19">
+		  <h3 class="section-name">Preparing and Sending Action Messages</h3>
+		</a>
+	      </div>
+	      <ul class="task-group-list">
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/sendAction:to:forEvent:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW2"></a><a name="//apple_ref/swift/instm/UIControl/sendAction(Selector)to(AnyObject?)forEvent(UIEvent?)"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/sendAction:to:forEvent:" title="In response to a given event, forwards an action message to the application object for dispatching to a target.">sendAction(_:to:forEvent:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/sendAction:to:forEvent:" title="In response to a given event, forwards an action message to the application object for dispatching to a target.">sendAction:to:forEvent:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  In response to a given event, forwards an action message to the application object for dispatching to a target.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">sendAction</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">action</em></code>: <span class="n"><!-- a href="" -->Selector<!-- /a --></span>, <span class="nl">to</span> <code class="code-voice"><em class="parameter-name">target</em></code>: <span class="n"><!-- a href="" -->AnyObject<!-- /a --></span>?, <span class="nl">forEvent</span> <code class="code-voice"><em class="parameter-name">event</em></code>: <span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/swift/cl/UIEvent">UIEvent</a></span>?)</code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt">void</span>)<span class="nl">sendAction:</span>(<span class="n">SEL</span>)<code class="code-voice"><em class="parameter-name">action</em></code> <span class="nl">to:</span>(<span class="n">id</span>)<code class="code-voice"><em class="parameter-name">target</em></code> <span class="nl">forEvent:</span>(<span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/doc/c_ref/UIEvent" data-id="//apple_ref/doc/c_ref/UIEvent">UIEvent</a> *</span>)<code class="code-voice"><em class="parameter-name">event</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">action</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A selector identifying an action message. It cannot be <code class="code-voice">NULL</code>.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">target</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    The target object-that is, the object to which the action message is sent. If this is <code class="code-voice">nil</code>, the receiver traverses the responder chain and sends the action message to the first object willing to respond to it.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">event</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    An object representing the event (typically in a <code class="code-voice">UIControl</code> object) that originated the action message. The event can be <code class="code-voice">nil</code> if the action is invoked directly instead of being caused by an event. For example, a value-changed message might be sent for programmatic reasons rather than as a result of the user touching the control.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  <code class="code-voice">UIControl</code> implements this method to forward an action message to the singleton <code class="code-voice u-api"><a href="../UIApplication_Class/index.html#//apple_ref/occ/cl/UIApplication">UIApplication</a></code> object (in its <code class="code-voice">sendAction:to:fromSender:forEvent:</code> method) for dispatching it to the target or, if there is no specified target, to the first object in the responder chain that is willing to handle it. Subclasses may override this method to observe or modify action-forwarding behavior. The implementation of <code class="code-voice"><a href="#//apple_ref/occ/instm/UIControl/sendActionsForControlEvents:">sendActionsForControlEvents:</a></code> might call this method repeatedly, once for each specified control event.
+			</p>
+
+		      </div>
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/sendActionsForControlEvents:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW1"></a><a name="//apple_ref/swift/instm/UIControl/sendActionsForControlEvents(UIControlEvents)"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/sendActionsForControlEvents:" title="Sends action messages for the given control events.">sendActionsForControlEvents(_:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/sendActionsForControlEvents:" title="Sends action messages for the given control events.">sendActionsForControlEvents:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Sends action messages for the given control events.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">sendActionsForControlEvents</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">controlEvents</em></code>: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span>)</code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt">void</span>)<span class="nl">sendActionsForControlEvents:</span>(<span class="n"><a href="#//apple_ref/doc/c_ref/UIControlEvents" data-id="//apple_ref/doc/c_ref/UIControlEvents">UIControlEvents</a></span>)<code class="code-voice"><em class="parameter-name">controlEvents</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">controlEvents</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A bitmask whose set flags specify the control events for which action messages are sent. See <span class="x-name"><a href="#//apple_ref/doc/constant_group/Control_Events" data-id="//apple_ref/doc/constant_group/Control_Events">Control Events</a></span> for bitmask constants.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  <code class="code-voice">UIControl</code> implements this method to send all action messages associated with <code class="code-voice"><em class="parameter-name">controlEvents</em></code>, repeatedly invoking <code class="code-voice"><a href="#//apple_ref/occ/instm/UIControl/sendAction:to:forEvent:">sendAction:to:forEvent:</a></code> in the process. The list of targets and actions it looks up is constructed from prior invocations of  <code class="code-voice"><a href="#//apple_ref/occ/instm/UIControl/addTarget:action:forControlEvents:">addTarget:action:forControlEvents:</a></code>.
+			</p>
+
+		      </div>
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/addTarget:action:forControlEvents:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW4"></a><a name="//apple_ref/swift/instm/UIControl/addTarget(AnyObject?)action(Selector)forControlEvents(UIControlEvents)"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/addTarget:action:forControlEvents:" title="Adds a target and action for a particular event (or events) to an internal dispatch table.">addTarget(_:action:forControlEvents:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/addTarget:action:forControlEvents:" title="Adds a target and action for a particular event (or events) to an internal dispatch table.">addTarget:action:forControlEvents:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Adds a target and action for a particular event (or events) to an internal dispatch table.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">addTarget</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">target</em></code>: <span class="n"><!-- a href="" -->AnyObject<!-- /a --></span>?, <span class="nl">action</span> <code class="code-voice"><em class="parameter-name">action</em></code>: <span class="n"><!-- a href="" -->Selector<!-- /a --></span>, <span class="nl">forControlEvents</span> <code class="code-voice"><em class="parameter-name">controlEvents</em></code>: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span>)</code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt">void</span>)<span class="nl">addTarget:</span>(<span class="n">id</span>)<code class="code-voice"><em class="parameter-name">target</em></code> <span class="nl">action:</span>(<span class="n">SEL</span>)<code class="code-voice"><em class="parameter-name">action</em></code> <span class="nl">forControlEvents:</span>(<span class="n"><a href="#//apple_ref/doc/c_ref/UIControlEvents" data-id="//apple_ref/doc/c_ref/UIControlEvents">UIControlEvents</a></span>)<code class="code-voice"><em class="parameter-name">controlEvents</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">target</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    The target object-that is, the object to which the action message is sent. If this is <code class="code-voice">nil</code>, the responder chain is searched for an object willing to respond to the action message.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">action</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A selector identifying an action message. It cannot be <code class="code-voice">NULL</code>.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">controlEvents</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A bitmask specifying the control events for which the action message is sent. See <span class="x-name"><a href="#//apple_ref/doc/constant_group/Control_Events" data-id="//apple_ref/doc/constant_group/Control_Events">Control Events</a></span> for bitmask constants.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  You may call this method multiple times, and you may specify multiple target-action pairs for a particular event. The action message may optionally include the sender and the event as parameters, in that order.
+			</p>
+			<p class="para">
+			  When you call this method, <code class="code-voice"><em class="parameter-name">target</em></code> is not retained.
+			</p>
+
+		      </div>
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/removeTarget:action:forControlEvents:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW5"></a><a name="//apple_ref/swift/instm/UIControl/removeTarget(AnyObject?)action(Selector)forControlEvents(UIControlEvents)"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/removeTarget:action:forControlEvents:" title="Removes a target and action for a particular event (or events) from an internal dispatch table.">removeTarget(_:action:forControlEvents:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/removeTarget:action:forControlEvents:" title="Removes a target and action for a particular event (or events) from an internal dispatch table.">removeTarget:action:forControlEvents:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Removes a target and action for a particular event (or events) from an internal dispatch table.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">removeTarget</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">target</em></code>: <span class="n"><!-- a href="" -->AnyObject<!-- /a --></span>?, <span class="nl">action</span> <code class="code-voice"><em class="parameter-name">action</em></code>: <span class="n"><!-- a href="" -->Selector<!-- /a --></span>, <span class="nl">forControlEvents</span> <code class="code-voice"><em class="parameter-name">controlEvents</em></code>: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span>)</code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt">void</span>)<span class="nl">removeTarget:</span>(<span class="n">id</span>)<code class="code-voice"><em class="parameter-name">target</em></code> <span class="nl">action:</span>(<span class="n">SEL</span>)<code class="code-voice"><em class="parameter-name">action</em></code> <span class="nl">forControlEvents:</span>(<span class="n"><a href="#//apple_ref/doc/c_ref/UIControlEvents" data-id="//apple_ref/doc/c_ref/UIControlEvents">UIControlEvents</a></span>)<code class="code-voice"><em class="parameter-name">controlEvents</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">target</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    The target object-that is, the object to which the action message is sent. Pass <code class="code-voice">nil</code> to remove all targets paired with <code class="code-voice"><em class="parameter-name">action</em></code> and the specified control events.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">action</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A selector identifying an action message. Pass <code class="code-voice">NULL</code> to remove all action messages paired with <code class="code-voice"><em class="parameter-name">target</em></code>.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">controlEvents</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A bitmask specifying the control events associated with <code class="code-voice"><em class="parameter-name">target</em></code> and <code class="code-voice"><em class="parameter-name">action</em></code>. See <span class="x-name"><a href="#//apple_ref/doc/constant_group/Control_Events" data-id="//apple_ref/doc/constant_group/Control_Events">Control Events</a></span> for bitmask constants.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      
+		      
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/actionsForTarget:forControlEvent:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW6"></a><a name="//apple_ref/swift/instm/UIControl/actionsForTarget(AnyObject)forControlEvent(UIControlEvents)-&gt;[AnyObject]?"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/actionsForTarget:forControlEvent:" title="Returns the actions that are associated with a target and a particular control event.">actionsForTarget(_:forControlEvent:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/actionsForTarget:forControlEvent:" title="Returns the actions that are associated with a target and a particular control event.">actionsForTarget:forControlEvent:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Returns the actions that are associated with a target and a particular control event.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">actionsForTarget</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">target</em></code>: <span class="n"><!-- a href="" -->AnyObject<!-- /a --></span>, <span class="nl">forControlEvent</span> <code class="code-voice"><em class="parameter-name">controlEvent</em></code>: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span>) -&gt; [<span class="n"><!-- a href="" -->AnyObject<!-- /a --></span>]?</code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt"><a href="../../../Cocoa/Reference/Foundation/Classes/NSArray_Class/index.html#//apple_ref/doc/c_ref/NSArray" data-id="//apple_ref/doc/c_ref/NSArray">NSArray</a> *</span>)<span class="nl">actionsForTarget:</span>(<span class="n">id</span>)<code class="code-voice"><em class="parameter-name">target</em></code> <span class="nl">forControlEvent:</span>(<span class="n"><a href="#//apple_ref/doc/c_ref/UIControlEvents" data-id="//apple_ref/doc/c_ref/UIControlEvents">UIControlEvents</a></span>)<code class="code-voice"><em class="parameter-name">controlEvent</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">target</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    The target object-that is, the object to which an action message is sent. 
+				  </p>
+				  <p class="para">
+				    You must pass an explicit match for the target. Do not pass a value of <code class="code-voice">nil</code>.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">controlEvent</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A single constant of type <code class="code-voice"><a href="#//apple_ref/c/tdef/UIControlEvents">UIControlEvents</a></code> that specifies a particular user action on the control; for a list of these constants, see <span class="x-name"><a href="#//apple_ref/doc/constant_group/Control_Events" data-id="//apple_ref/doc/constant_group/Control_Events">Control Events</a></span>. 
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      <div class="result-description">
+			<h4>Return Value</h4>
+			<p class="para">
+			  An array of selector names as <code class="code-voice u-api"><a href="../../../Cocoa/Reference/Foundation/Classes/NSString_Class/index.html#//apple_ref/occ/cl/NSString">NSString</a></code> objects or <code class="code-voice">nil</code> if there are no action selectors associated with the control event.
+			</p>
+		      </div>
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  Pass in a selector name to the <code class="code-voice u-api"><a href="../../../Cocoa/Reference/Foundation/Miscellaneous/Foundation_Functions/index.html#//apple_ref/c/func/NSSelectorFromString">NSSelectorFromString</a></code> function to obtain the selector (<code class="code-voice">SEL</code>) value.
+			</p>
+
+		      </div>
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/allTargets"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW9"></a><a name="//apple_ref/swift/instm/UIControl/allTargets()-&gt;NSSet"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/allTargets" title="Returns all target objects associated with the receiver.">allTargets()</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/allTargets" title="Returns all target objects associated with the receiver.">allTargets</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Returns all target objects associated with the receiver.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">allTargets</span>() -&gt; <span class="n"><a href="../../../Cocoa/Reference/Foundation/Classes/NSSet_Class/index.html#//apple_ref/swift/cl/NSSet">NSSet</a></span></code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt"><a href="../../../Cocoa/Reference/Foundation/Classes/NSSet_Class/index.html#//apple_ref/doc/c_ref/NSSet" data-id="//apple_ref/doc/c_ref/NSSet">NSSet</a> *</span>)<span class="nl">allTargets</span></code>
+			  </p>
+			</div>
+		      </div>
+
+		      
+		      <div class="result-description">
+			<h4>Return Value</h4>
+			<p class="para">
+			  A set of all targets-that is, the objects to which action messages are sent-for the receiver. The set may include <code class="code-voice">NSNull</code> to indicate at least one <code class="code-voice">nil</code> target (meaning, the responder chain is searched for a target).
+			</p>
+		      </div>
+		      
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/allControlEvents"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW8"></a><a name="//apple_ref/swift/instm/UIControl/allControlEvents()-&gt;UIControlEvents"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/allControlEvents" title="Returns all control events associated with the receiver.">allControlEvents()</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/allControlEvents" title="Returns all control events associated with the receiver.">allControlEvents</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Returns all control events associated with the receiver.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">allControlEvents</span>() -&gt; <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span></code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt"><a href="#//apple_ref/doc/c_ref/UIControlEvents" data-id="//apple_ref/doc/c_ref/UIControlEvents">UIControlEvents</a></span>)<span class="nl">allControlEvents</span></code>
+			  </p>
+			</div>
+		      </div>
+
+		      
+		      <div class="result-description">
+			<h4>Return Value</h4>
+			<p class="para">
+			  One or more <code class="code-voice"><a href="#//apple_ref/c/tdef/UIControlEvents">UIControlEvents</a></code> constants that specify the current control events associated with the receiver; for a list of these constants, see <span class="x-name"><a href="#//apple_ref/doc/constant_group/Control_Events" data-id="//apple_ref/doc/constant_group/Control_Events">Control Events</a></span>list of all events that have at least one action. 
+			</p>
+		      </div>
+		      
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+		<li class="hiding-symbol-counts"><p><em class="hiding-swift"></em></p><p><em class="hiding-obj-c"></em></p><p><em class="hiding-dep"></em></p><p><em class="hiding-dt"></em></p></li></ul>
+	    </div><div class="task-group">
+	      <div class="task-name-container">
+		<a name="//apple_ref/doc/uid/TP40006779-RH2-SW20"></a>
+		<a href="#//apple_ref/doc/uid/TP40006779-RH2-SW20">
+		  <h3 class="section-name">Setting and Getting Control Attributes</h3>
+		</a>
+	      </div>
+	      <ul class="task-group-list">
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instp/UIControl/state"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW18"></a><a name="//apple_ref/swift/instp/UIControl/state"></a><a name="//apple_ref/occ/instm/UIControl/state"></a>
+		      <a class="x-api-property-task-list Swift" href="#//apple_ref/occ/instp/UIControl/state" title="A bitmask value that indicates the state of the receiver. (read-only)">state</a>
+		      <a class="x-api-property-task-list Objective-C" href="#//apple_ref/occ/instp/UIControl/state" title="A bitmask value that indicates the state of the receiver. (read-only)">state</a>
+		    </code>
+		    <span class='indicator'>Property</span>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section property-obj-c">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  A bitmask value that indicates the state of the receiver. (read-only)
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="kt">var</span> state: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			    </code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">)</span> 
+
+			      <a href="#//apple_ref/doc/c_ref/UIControlState"><span class="n">UIControlState</span>
+			      </a>
+			      <span class="n">state</span>
+
+			    </code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  One or more <code class="code-voice"><a href="#//apple_ref/c/tdef/UIControlState">UIControlState</a></code> bit-mask constants that specify the state of the <code class="code-voice">UIControl</code> object; for information on these constants, see <span class="x-name"><a href="#//apple_ref/doc/constant_group/Control_State" data-id="//apple_ref/doc/constant_group/Control_State">Control State</a></span>. Note that the control can be in more than one state, for example, both disabled and selected <code class="code-voice">(</code><code class="code-voice"><a href="#//apple_ref/c/econst/UIControlStateDisabled">UIControlStateDisabled</a></code><code class="code-voice"> | </code><code class="code-voice"><a href="#//apple_ref/c/econst/UIControlStateSelected">UIControlStateSelected</a></code><code class="code-voice">)</code>.This attribute is read only-there is no corresponding setter method.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instp/UIControl/enabled"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW17"></a><a name="//apple_ref/swift/instp/UIControl/enabled"></a><a name="//apple_ref/occ/instm/UIControl/setEnabled:"></a><a name="//apple_ref/occ/instm/UIControl/isEnabled"></a>
+		      <a class="x-api-property-task-list Swift" href="#//apple_ref/occ/instp/UIControl/enabled" title="A Boolean value that determines whether the receiver is enabled.">enabled</a>
+		      <a class="x-api-property-task-list Objective-C" href="#//apple_ref/occ/instp/UIControl/enabled" title="A Boolean value that determines whether the receiver is enabled.">enabled</a>
+		    </code>
+		    <span class='indicator'>Property</span>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section property-obj-c">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  A Boolean value that determines whether the receiver is enabled.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="kt">var</span> enabled: <span class="n"><!-- a href="" -->Bool<!-- /a --></span>
+			    </code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">isEnabled</span><span class="p">)</span> <span class="kt">BOOL</span> <span class="n">enabled</span>
+
+			    </code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  Specify <code class="k-constant-name code-voice Objective-C">YES</code><code class="k-constant-name code-voice Swift">true</code> to make the control enabled; otherwise, specify <code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code> to make it disabled. The default value is <code class="k-constant-name code-voice Objective-C">YES</code><code class="k-constant-name code-voice Swift">true</code>. If the enabled state is <code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code>, the control ignores touch events and subclasses may draw differently.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instp/UIControl/selected"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW15"></a><a name="//apple_ref/swift/instp/UIControl/selected"></a><a name="//apple_ref/occ/instm/UIControl/setSelected:"></a><a name="//apple_ref/occ/instm/UIControl/isSelected"></a>
+		      <a class="x-api-property-task-list Swift" href="#//apple_ref/occ/instp/UIControl/selected" title="A Boolean value that determines the receiver’s selected state.">selected</a>
+		      <a class="x-api-property-task-list Objective-C" href="#//apple_ref/occ/instp/UIControl/selected" title="A Boolean value that determines the receiver’s selected state.">selected</a>
+		    </code>
+		    <span class='indicator'>Property</span>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section property-obj-c">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  A Boolean value that determines the receiver’s selected state.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="kt">var</span> selected: <span class="n"><!-- a href="" -->Bool<!-- /a --></span>
+			    </code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">isSelected</span><span class="p">)</span> <span class="kt">BOOL</span> <span class="n">selected</span>
+
+			    </code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  Specify <code class="k-constant-name code-voice Objective-C">YES</code><code class="k-constant-name code-voice Swift">true</code> if the control is selected; otherwise <code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code>. The default is <code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code>. For many controls, this state has no effect on behavior or appearance. But other subclasses (for example, UISwitchControl) or the application object might read or set this control state.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instp/UIControl/highlighted"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW16"></a><a name="//apple_ref/swift/instp/UIControl/highlighted"></a><a name="//apple_ref/occ/instm/UIControl/setHighlighted:"></a><a name="//apple_ref/occ/instm/UIControl/isHighlighted"></a>
+		      <a class="x-api-property-task-list Swift" href="#//apple_ref/occ/instp/UIControl/highlighted" title="A Boolean value that determines whether the receiver is highlighted.">highlighted</a>
+		      <a class="x-api-property-task-list Objective-C" href="#//apple_ref/occ/instp/UIControl/highlighted" title="A Boolean value that determines whether the receiver is highlighted.">highlighted</a>
+		    </code>
+		    <span class='indicator'>Property</span>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section property-obj-c">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  A Boolean value that determines whether the receiver is highlighted.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="kt">var</span> highlighted: <span class="n"><!-- a href="" -->Bool<!-- /a --></span>
+			    </code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">isHighlighted</span><span class="p">)</span> <span class="kt">BOOL</span> <span class="n">highlighted</span>
+
+			    </code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  Specify <code class="k-constant-name code-voice Objective-C">YES</code><code class="k-constant-name code-voice Swift">true</code> if the control is highlighted; otherwise <code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code>. By default, a control is not highlighted. <code class="code-voice">UIControl</code> automatically sets and clears this state automatically when a touch enters and exits during tracking and when there is a touch up.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instp/UIControl/contentVerticalAlignment"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW23"></a><a name="//apple_ref/swift/instp/UIControl/contentVerticalAlignment"></a><a name="//apple_ref/occ/instm/UIControl/setContentVerticalAlignment:"></a><a name="//apple_ref/occ/instm/UIControl/contentVerticalAlignment"></a>
+		      <a class="x-api-property-task-list Swift" href="#//apple_ref/occ/instp/UIControl/contentVerticalAlignment" title="The vertical alignment of content (text or image) within the receiver.">contentVerticalAlignment</a>
+		      <a class="x-api-property-task-list Objective-C" href="#//apple_ref/occ/instp/UIControl/contentVerticalAlignment" title="The vertical alignment of content (text or image) within the receiver.">contentVerticalAlignment</a>
+		    </code>
+		    <span class='indicator'>Property</span>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section property-obj-c">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  The vertical alignment of content (text or image) within the receiver.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="kt">var</span> contentVerticalAlignment: <span class="n"><a href="#//apple_ref/swift/enum/UIControlContentVerticalAlignment">UIControlContentVerticalAlignment</a></span>
+			    </code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> 
+
+			      <a href="#//apple_ref/doc/c_ref/UIControlContentVerticalAlignment"><span class="n">UIControlContentVerticalAlignment</span>
+			      </a>
+			      <span class="n">contentVerticalAlignment</span>
+
+			    </code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  This value of this property is a constant that specifies the alignment of text or image within the receiver. The default is <code class="code-voice"><a href="#//apple_ref/c/econst/UIControlContentVerticalAlignmentTop">UIControlContentVerticalAlignmentTop</a></code>.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instp/UIControl/contentHorizontalAlignment"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW57"></a><a name="//apple_ref/swift/instp/UIControl/contentHorizontalAlignment"></a><a name="//apple_ref/occ/instm/UIControl/setContentHorizontalAlignment:"></a><a name="//apple_ref/occ/instm/UIControl/contentHorizontalAlignment"></a>
+		      <a class="x-api-property-task-list Swift" href="#//apple_ref/occ/instp/UIControl/contentHorizontalAlignment" title="The horizontal alignment of content (text or image) within the receiver.">contentHorizontalAlignment</a>
+		      <a class="x-api-property-task-list Objective-C" href="#//apple_ref/occ/instp/UIControl/contentHorizontalAlignment" title="The horizontal alignment of content (text or image) within the receiver.">contentHorizontalAlignment</a>
+		    </code>
+		    <span class='indicator'>Property</span>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section property-obj-c">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  The horizontal alignment of content (text or image) within the receiver.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="kt">var</span> contentHorizontalAlignment: <span class="n"><a href="#//apple_ref/swift/enum/UIControlContentHorizontalAlignment">UIControlContentHorizontalAlignment</a></span>
+			    </code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">)</span> 
+
+			      <a href="#//apple_ref/doc/c_ref/UIControlContentHorizontalAlignment"><span class="n">UIControlContentHorizontalAlignment</span>
+			      </a>
+			      <span class="n">contentHorizontalAlignment</span>
+
+			    </code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  The value of this property is a constant that specifies the alignment of text or image within the receiver. The default is <code class="code-voice"><a href="#//apple_ref/c/econst/UIControlContentHorizontalAlignmentLeft">UIControlContentHorizontalAlignmentLeft</a></code>.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		      
+
+		    </section>
+		  </div>
+		</li>
+		<li class="hiding-symbol-counts"><p><em class="hiding-swift"></em></p><p><em class="hiding-obj-c"></em></p><p><em class="hiding-dep"></em></p><p><em class="hiding-dt"></em></p></li></ul>
+	    </div><div class="task-group">
+	      <div class="task-name-container">
+		<a name="//apple_ref/doc/uid/TP40006779-RH2-SW24"></a>
+		<a href="#//apple_ref/doc/uid/TP40006779-RH2-SW24">
+		  <h3 class="section-name">Tracking Touches and Redrawing Controls</h3>
+		</a>
+	      </div>
+	      <ul class="task-group-list">
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/beginTrackingWithTouch:withEvent:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW25"></a><a name="//apple_ref/swift/instm/UIControl/beginTrackingWithTouch(UITouch)withEvent(UIEvent)-&gt;Bool"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/beginTrackingWithTouch:withEvent:" title="Sent to the control when a touch related to the given event enters the control’s bounds.">beginTrackingWithTouch(_:withEvent:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/beginTrackingWithTouch:withEvent:" title="Sent to the control when a touch related to the given event enters the control’s bounds.">beginTrackingWithTouch:withEvent:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Sent to the control when a touch related to the given event enters the control’s bounds.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">beginTrackingWithTouch</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">touch</em></code>: <span class="n"><a href="../UITouch_Class/index.html#//apple_ref/swift/cl/UITouch">UITouch</a></span>, <span class="nl">withEvent</span> <code class="code-voice"><em class="parameter-name">event</em></code>: <span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/swift/cl/UIEvent">UIEvent</a></span>) -&gt; <span class="n"><!-- a href="" -->Bool<!-- /a --></span></code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt">BOOL</span>)<span class="nl">beginTrackingWithTouch:</span>(<span class="n"><a href="../UITouch_Class/index.html#//apple_ref/doc/c_ref/UITouch" data-id="//apple_ref/doc/c_ref/UITouch">UITouch</a> *</span>)<code class="code-voice"><em class="parameter-name">touch</em></code> <span class="nl">withEvent:</span>(<span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/doc/c_ref/UIEvent" data-id="//apple_ref/doc/c_ref/UIEvent">UIEvent</a> *</span>)<code class="code-voice"><em class="parameter-name">event</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">touch</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A <code class="code-voice u-api"><a href="../UITouch_Class/index.html#//apple_ref/occ/cl/UITouch">UITouch</a></code> object that represents a touch on the receiving control during tracking.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">event</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    An event object encapsulating the information specific to the user event.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      <div class="result-description">
+			<h4>Return Value</h4>
+			<p class="para">
+			  <code class="k-constant-name code-voice Objective-C">YES</code><code class="k-constant-name code-voice Swift">true</code> if the receiver is set to respond continuously or set to respond when a touch is dragged; otherwise <code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code>.
+			</p>
+		      </div>
+		      
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/continueTrackingWithTouch:withEvent:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW26"></a><a name="//apple_ref/swift/instm/UIControl/continueTrackingWithTouch(UITouch)withEvent(UIEvent)-&gt;Bool"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/continueTrackingWithTouch:withEvent:" title="Sent continuously to the control as it tracks a touch related to the given event within the control’s bounds.">continueTrackingWithTouch(_:withEvent:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/continueTrackingWithTouch:withEvent:" title="Sent continuously to the control as it tracks a touch related to the given event within the control’s bounds.">continueTrackingWithTouch:withEvent:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Sent continuously to the control as it tracks a touch related to the given event within the control’s bounds.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">continueTrackingWithTouch</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">touch</em></code>: <span class="n"><a href="../UITouch_Class/index.html#//apple_ref/swift/cl/UITouch">UITouch</a></span>, <span class="nl">withEvent</span> <code class="code-voice"><em class="parameter-name">event</em></code>: <span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/swift/cl/UIEvent">UIEvent</a></span>) -&gt; <span class="n"><!-- a href="" -->Bool<!-- /a --></span></code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt">BOOL</span>)<span class="nl">continueTrackingWithTouch:</span>(<span class="n"><a href="../UITouch_Class/index.html#//apple_ref/doc/c_ref/UITouch" data-id="//apple_ref/doc/c_ref/UITouch">UITouch</a> *</span>)<code class="code-voice"><em class="parameter-name">touch</em></code> <span class="nl">withEvent:</span>(<span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/doc/c_ref/UIEvent" data-id="//apple_ref/doc/c_ref/UIEvent">UIEvent</a> *</span>)<code class="code-voice"><em class="parameter-name">event</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">touch</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A <code class="code-voice u-api"><a href="../UITouch_Class/index.html#//apple_ref/occ/cl/UITouch">UITouch</a></code> object that represents a touch on the receiving control during tracking.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">event</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    An event object encapsulating the information specific to the user event
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      <div class="result-description">
+			<h4>Return Value</h4>
+			<p class="para">
+			  <code class="k-constant-name code-voice Objective-C">YES</code><code class="k-constant-name code-voice Swift">true</code> if touch tracking should continue; otherwise <code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code>.
+			</p>
+		      </div>
+		      
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/endTrackingWithTouch:withEvent:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW27"></a><a name="//apple_ref/swift/instm/UIControl/endTrackingWithTouch(UITouch)withEvent(UIEvent)"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/endTrackingWithTouch:withEvent:" title="Sent to the control when the last touch for the given event completely ends, telling it to stop tracking.">endTrackingWithTouch(_:withEvent:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/endTrackingWithTouch:withEvent:" title="Sent to the control when the last touch for the given event completely ends, telling it to stop tracking.">endTrackingWithTouch:withEvent:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Sent to the control when the last touch for the given event completely ends, telling it to stop tracking.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">endTrackingWithTouch</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">touches</em></code>: <span class="n"><a href="../UITouch_Class/index.html#//apple_ref/swift/cl/UITouch">UITouch</a></span>, <span class="nl">withEvent</span> <code class="code-voice"><em class="parameter-name">event</em></code>: <span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/swift/cl/UIEvent">UIEvent</a></span>)</code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt">void</span>)<span class="nl">endTrackingWithTouch:</span>(<span class="n"><a href="../UITouch_Class/index.html#//apple_ref/doc/c_ref/UITouch" data-id="//apple_ref/doc/c_ref/UITouch">UITouch</a> *</span>)<code class="code-voice"><em class="parameter-name">touches</em></code> <span class="nl">withEvent:</span>(<span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/doc/c_ref/UIEvent" data-id="//apple_ref/doc/c_ref/UIEvent">UIEvent</a> *</span>)<code class="code-voice"><em class="parameter-name">event</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">touches</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    A <code class="code-voice u-api"><a href="../UITouch_Class/index.html#//apple_ref/occ/cl/UITouch">UITouch</a></code> object that represents a touch on the receiving control during tracking.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr><tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">event</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    An event object encapsulating the information specific to the user event.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      
+		      
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instm/UIControl/cancelTrackingWithEvent:"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW32"></a><a name="//apple_ref/swift/instm/UIControl/cancelTrackingWithEvent(UIEvent?)"></a>
+		      <a class="x-instance-method Swift" href="#//apple_ref/occ/instm/UIControl/cancelTrackingWithEvent:" title="Tells the control to cancel tracking related to the given event.">cancelTrackingWithEvent(_:)</a>
+		      <a class="x-instance-method Objective-C" href="#//apple_ref/occ/instm/UIControl/cancelTrackingWithEvent:" title="Tells the control to cancel tracking related to the given event.">cancelTrackingWithEvent:</a>
+		    </code>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section instance-method">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  Tells the control to cancel tracking related to the given event.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">func</span> <span class="nl">cancelTrackingWithEvent</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">event</em></code>: <span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/swift/cl/UIEvent">UIEvent</a></span>?)</code>
+			  </p>
+			</div>
+			
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">- (<span class="kt">void</span>)<span class="nl">cancelTrackingWithEvent:</span>(<span class="n"><a href="../UIEvent_Class/index.html#//apple_ref/doc/c_ref/UIEvent" data-id="//apple_ref/doc/c_ref/UIEvent">UIEvent</a> *</span>)<code class="code-voice"><em class="parameter-name">event</em></code></code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="parameters">
+			<h4>Parameters</h4>
+			<table class="graybox" border="0" cellspacing="0" cellpadding="5">
+			  <tbody>
+			    <tr>
+			      <td scope="row">
+				<code class="code-voice">
+				  <em class="term">event</em>
+				</code>
+			      </td>  <td>
+				<div class="definition">
+				  <p class="para">
+				    An event object encapsulating the information specific to the user event. This parameter might be <code class="code-voice">nil</code>, indicating that the cancelation was caused by something other than an event, such as the view being removed from the window.
+				  </p>
+
+				</div>
+			      </td>
+			    </tr>
+			  </tbody>
+			</table>
+		      </div>
+		      
+		      
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+		      
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instp/UIControl/tracking"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW33"></a><a name="//apple_ref/swift/instp/UIControl/tracking"></a><a name="//apple_ref/occ/instm/UIControl/isTracking"></a>
+		      <a class="x-api-property-task-list Swift" href="#//apple_ref/occ/instp/UIControl/tracking" title="A Boolean value that indicates whether the receiver is currently tracking touches related to an event. (read-only)">tracking</a>
+		      <a class="x-api-property-task-list Objective-C" href="#//apple_ref/occ/instp/UIControl/tracking" title="A Boolean value that indicates whether the receiver is currently tracking touches related to an event. (read-only)">tracking</a>
+		    </code>
+		    <span class='indicator'>Property</span>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section property-obj-c">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  A Boolean value that indicates whether the receiver is currently tracking touches related to an event. (read-only)
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="kt">var</span> tracking: <span class="n"><!-- a href="" -->Bool<!-- /a --></span> { get }<br/>
+			    </code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">isTracking</span><span class="p">)</span> <span class="kt">BOOL</span> <span class="n">tracking</span>
+
+			    </code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  The value is <code class="k-constant-name code-voice Objective-C">YES</code><code class="k-constant-name code-voice Swift">true</code> if the receiver is tracking touches; otherwise<code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code>.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		      
+
+		    </section>
+		  </div>
+		</li>
+
+		<li class="item symbol" data-availability="2.0">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/occ/instp/UIControl/touchInside"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW34"></a><a name="//apple_ref/swift/instp/UIControl/touchInside"></a><a name="//apple_ref/occ/instm/UIControl/isTouchInside"></a>
+		      <a class="x-api-property-task-list Swift" href="#//apple_ref/occ/instp/UIControl/touchInside" title="A Boolean value that indicates whether a touch is inside the bounds of the receiver. (read-only)">touchInside</a>
+		      <a class="x-api-property-task-list Objective-C" href="#//apple_ref/occ/instp/UIControl/touchInside" title="A Boolean value that indicates whether a touch is inside the bounds of the receiver. (read-only)">touchInside</a>
+		    </code>
+		    <span class='indicator'>Property</span>
+		  </div>
+
+		  <div class="height-container">
+		    <div class="pointy-thing-container"></div>
+		    <section class="section property-obj-c">
+		      <div class="pointy-thing"></div>
+
+		      <div class="abstract">
+			<p class="para">
+			  A Boolean value that indicates whether a touch is inside the bounds of the receiver. (read-only)
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="kt">var</span> touchInside: <span class="n"><!-- a href="" -->Bool<!-- /a --></span> { get }<br/>
+			    </code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice">
+			      <span class="k">@property</span><span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">readonly</span><span class="p">,</span> <span class="n">getter</span><span class="o">=</span><span class="n">isTouchInside</span><span class="p">)</span> <span class="kt">BOOL</span> <span class="n">touchInside</span>
+
+			    </code>
+			  </p>
+			</div>
+		      </div>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  The value is <code class="k-constant-name code-voice Objective-C">YES</code><code class="k-constant-name code-voice Swift">true</code> if a touch is inside the receiver’s bounds; otherwise the value is <code class="k-constant-name code-voice Objective-C">NO</code><code class="k-constant-name code-voice Swift">false</code>.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+
+		      
+
+		    </section>
+		  </div>
+		</li>
+		<li class="hiding-symbol-counts"><p><em class="hiding-swift"></em></p><p><em class="hiding-obj-c"></em></p><p><em class="hiding-dep"></em></p><p><em class="hiding-dt"></em></p></li></ul>
+	    </div>
+	  </section>
+
+	  <section class="section task-group-section">
+	    <a name="//apple_ref/doc/uid/TP40006779-RH2-DontLinkElementID_3"></a>
+
+	    <div class="task-group">
+	      <div class="task-name-container">
+		<h3 class="section-name">Data Types</h3>
+	      </div>
+	      <ul class="task-group-list">
+		<li class="item symbol">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/c/tdef/UIControlEvents"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW65"></a><a name="//apple_ref/swift/struct/UIControlEvents"></a><a name="//apple_ref/doc/c_ref/UIControlEvents"></a>
+		      <a class="data-type Swift" href="#//apple_ref/c/tdef/UIControlEvents" title="The type for the enum constants listed in Control Events .">UIControlEvents</a>
+		      <a class="data-type Objective-C" href="#//apple_ref/c/tdef/UIControlEvents" title="The type for the enum constants listed in Control Events .">UIControlEvents</a>
+		    </code>
+		  </div>
+		  <div class="height-container">
+		    <div class="pointy-thing-container">
+		    </div>
+		    <section class="section type-def">
+		      <div class="pointy-thing"></div>
+		      <div class="abstract">
+			<p class="para">
+			  The type for the <code class="code-voice">enum</code> constants listed in <span class="x-name"><a href="#//apple_ref/doc/constant_group/Control_Events" data-id="//apple_ref/doc/constant_group/Control_Events">Control Events</a></span>.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">struct</span> UIControlEvents : <span class="n"><!-- a href="" -->RawOptionSetType<!-- /a --></span> {<br/>
+			      <span class="kt">init</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">rawValue</em></code>: <span class="n"><!-- a href="" -->UInt<!-- /a --></span>)
+			      <span class="kt">init</span>(<span class="nl">rawValue</span> <code class="code-voice"><em class="parameter-name">rawValue</em></code>: <span class="n"><!-- a href="" -->UInt<!-- /a --></span>)
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDown: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDownRepeat: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDragInside: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDragOutside: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDragEnter: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDragExit: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchUpInside: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchUpOutside: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchCancel: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> ValueChanged: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> EditingDidBegin: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> EditingChanged: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> EditingDidEnd: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> EditingDidEndOnExit: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> AllTouchEvents: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> AllEditingEvents: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> ApplicationReserved: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> SystemReserved: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> AllEvents: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      }</code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="k">typedef</span> <span class="n">NSUInteger</span> <span class="n">UIControlEvents</span><span class="p">;</span>
+			    </code>
+			  </p>
+			</div>
+		      </div>
+		      
+		      
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		    </section>
+		  </div>
+		</li>
+		<li class="item symbol">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/c/tdef/UIControlState"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW10"></a><a name="//apple_ref/swift/struct/UIControlState"></a><a name="//apple_ref/doc/c_ref/UIControlState"></a>
+		      <a class="data-type Swift" href="#//apple_ref/c/tdef/UIControlState" title="The bit-mask type for control-state constants.">UIControlState</a>
+		      <a class="data-type Objective-C" href="#//apple_ref/c/tdef/UIControlState" title="The bit-mask type for control-state constants.">UIControlState</a>
+		    </code>
+		  </div>
+		  <div class="height-container">
+		    <div class="pointy-thing-container">
+		    </div>
+		    <section class="section type-def">
+		      <div class="pointy-thing"></div>
+		      <div class="abstract">
+			<p class="para">
+			  The bit-mask type for control-state constants. 
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">struct</span> UIControlState : <span class="n"><!-- a href="" -->RawOptionSetType<!-- /a --></span> {
+			      <span class="kt">init</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">rawValue</em></code>: <span class="n"><!-- a href="" -->UInt<!-- /a --></span>)
+			      <span class="kt">init</span>(<span class="nl">rawValue</span> <code class="code-voice"><em class="parameter-name">rawValue</em></code>: <span class="n"><!-- a href="" -->UInt<!-- /a --></span>)
+			      <span class="kt">static</span> <span class="kt">var</span> Normal: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Highlighted: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Disabled: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Selected: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Application: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Reserved: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      }</code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="k">typedef</span> <span class="n">NSUInteger</span> <span class="n">UIControlState</span><span class="p">;</span>
+			    </code>
+			  </p>
+			</div>
+		      </div>
+		      
+		      
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  The constants are listed in <span class="x-name"><a href="#//apple_ref/doc/constant_group/Control_State" data-id="//apple_ref/doc/constant_group/Control_State">Control State</a></span>. Use the <code class="code-voice"><a href="#//apple_ref/occ/instp/UIControl/state">state</a></code> property to retrieve the current state bits set for a control.
+			</p>
+
+		      </div>
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		    </section>
+		  </div>
+		</li>
+
+		<li class="hiding-symbol-counts"><p><em class="hiding-swift"></em></p><p><em class="hiding-obj-c"></em></p><p><em class="hiding-dep"></em></p><p><em class="hiding-dt"></em></p></li>
+	      </ul>
+	    </div>
+
+	    <div class="task-group">
+	      <div class="task-name-container">
+		<a href="#//apple_ref/doc/uid/TP40006779-RH2-DontLinkElementID_3">
+		  <h3 class="section-name">Constants</h3>
+		</a>
+	      </div>
+	      <ul class="task-group-list">
+		<li class="item symbol">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/doc/constant_group/Control_Events"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW3"></a>
+		      <a class="constant-group" href="#//apple_ref/doc/constant_group/Control_Events" title="Kinds of events possible for control objects.">Control Events</a>
+		    </code>
+		  </div>
+		  <div class="height-container">
+		    <div class="pointy-thing-container">
+		    </div>
+		    <section class="section constant-group">
+		      <div class="pointy-thing"></div>
+		      <div class="abstract">
+			<p class="para">
+			  Kinds of events possible for control objects.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">struct</span> UIControlEvents : <span class="n"><!-- a href="" -->RawOptionSetType<!-- /a --></span> {
+			      <span class="kt">init</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">rawValue</em></code>: <span class="n"><!-- a href="" -->UInt<!-- /a --></span>)
+			      <span class="kt">init</span>(<span class="nl">rawValue</span> <code class="code-voice"><em class="parameter-name">rawValue</em></code>: <span class="n"><!-- a href="" -->UInt<!-- /a --></span>)
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDown: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDownRepeat: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDragInside: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDragOutside: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDragEnter: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchDragExit: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchUpInside: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchUpOutside: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> TouchCancel: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> ValueChanged: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> EditingDidBegin: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> EditingChanged: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> EditingDidEnd: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> EditingDidEndOnExit: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> AllTouchEvents: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> AllEditingEvents: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> ApplicationReserved: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> SystemReserved: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> AllEvents: <span class="n"><a href="#//apple_ref/swift/struct/UIControlEvents">UIControlEvents</a></span> { get }<br/>
+			      }</code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="k">enum</span> <span class="p">{</span>
+			      <span class="n">UIControlEventTouchDown</span>           <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">0</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventTouchDownRepeat</span>     <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">1</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventTouchDragInside</span>     <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">2</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventTouchDragOutside</span>    <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">3</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventTouchDragEnter</span>      <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">4</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventTouchDragExit</span>       <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">5</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventTouchUpInside</span>       <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">6</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventTouchUpOutside</span>      <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">7</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventTouchCancel</span>         <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span>  <span class="mi">8</span><span class="p">,<br/></span>
+			      
+			      <span class="n">UIControlEventValueChanged</span>        <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">12</span><span class="p">,<br/></span>
+			      
+			      <span class="n">UIControlEventEditingDidBegin</span>     <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">16</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventEditingChanged</span>      <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">17</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventEditingDidEnd</span>       <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">18</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventEditingDidEndOnExit</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">19</span><span class="p">,<br/></span>
+			      
+			      <span class="n">UIControlEventAllTouchEvents</span>      <span class="o">=</span> <span class="mh">0x00000FFF</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventAllEditingEvents</span>    <span class="o">=</span> <span class="mh">0x000F0000</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventApplicationReserved</span> <span class="o">=</span> <span class="mh">0x0F000000</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventSystemReserved</span>      <span class="o">=</span> <span class="mh">0xF0000000</span><span class="p">,<br/></span>
+			      <span class="n">UIControlEventAllEvents</span>           <span class="o">=</span> <span class="mh">0xFFFFFFFF</span> 
+			      <span class="p">};</span>
+			    </code>
+			  </p>
+			</div>
+		      </div>
+		      
+		      <h4>Constants</h4>
+		      <ul class="list-bullet">
+			
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchDown"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW30"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchDown"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchDown"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchDown</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchDown</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A touch-down event in the control.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchDownRepeat"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW35"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchDownRepeat"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchDownRepeat"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchDownRepeat</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchDownRepeat</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A repeated touch-down event in the control; for this event the value of the UITouch <code class="code-voice">tapCount</code> method is greater than one.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchDragInside"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW36"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchDragInside"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchDragInside"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchDragInside</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchDragInside</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      An event where a finger is dragged inside the bounds of the control.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchDragOutside"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW37"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchDragOutside"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchDragOutside"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchDragOutside</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchDragOutside</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      An event where a finger is dragged just outside the bounds of the control. 
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchDragEnter"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW31"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchDragEnter"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchDragEnter"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchDragEnter</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchDragEnter</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      An event where a finger is dragged into the bounds of the control.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchDragExit"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW38"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchDragExit"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchDragExit"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchDragExit</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchDragExit</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      An event where a finger is dragged from within a control to outside its bounds.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchUpInside"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW39"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchUpInside"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchUpInside"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchUpInside</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchUpInside</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A touch-up event in the control where the finger is inside the bounds of the control. 
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchUpOutside"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW40"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchUpOutside"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchUpOutside"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchUpOutside</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchUpOutside</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A touch-up event in the control where the finger is outside the bounds of the control. 
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventTouchCancel"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW41"></a><a name="//apple_ref/swift/structdata/UIControlEvents/TouchCancel"></a><a name="//apple_ref/doc/c_ref/UIControlEventTouchCancel"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">TouchCancel</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventTouchCancel</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A system event canceling the current touches for the control.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventValueChanged"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW29"></a><a name="//apple_ref/swift/structdata/UIControlEvents/ValueChanged"></a><a name="//apple_ref/doc/c_ref/UIControlEventValueChanged"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">ValueChanged</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventValueChanged</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A touch dragging or otherwise manipulating a control, causing it to emit a series of different values.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventEditingDidBegin"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW42"></a><a name="//apple_ref/swift/structdata/UIControlEvents/EditingDidBegin"></a><a name="//apple_ref/doc/c_ref/UIControlEventEditingDidBegin"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">EditingDidBegin</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventEditingDidBegin</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A touch initiating an editing session in a <code class="code-voice u-api"><a href="../UITextField_Class/index.html#//apple_ref/occ/cl/UITextField">UITextField</a></code> object by entering its bounds.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventEditingChanged"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW43"></a><a name="//apple_ref/swift/structdata/UIControlEvents/EditingChanged"></a><a name="//apple_ref/doc/c_ref/UIControlEventEditingChanged"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">EditingChanged</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventEditingChanged</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A touch making an editing change in a <code class="code-voice u-api"><a href="../UITextField_Class/index.html#//apple_ref/occ/cl/UITextField">UITextField</a></code> object.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventEditingDidEnd"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW44"></a><a name="//apple_ref/swift/structdata/UIControlEvents/EditingDidEnd"></a><a name="//apple_ref/doc/c_ref/UIControlEventEditingDidEnd"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">EditingDidEnd</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventEditingDidEnd</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A touch ending an editing session in a <code class="code-voice u-api"><a href="../UITextField_Class/index.html#//apple_ref/occ/cl/UITextField">UITextField</a></code> object by leaving its bounds.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventEditingDidEndOnExit"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW45"></a><a name="//apple_ref/swift/structdata/UIControlEvents/EditingDidEndOnExit"></a><a name="//apple_ref/doc/c_ref/UIControlEventEditingDidEndOnExit"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">EditingDidEndOnExit</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventEditingDidEndOnExit</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A touch ending an editing session in a <code class="code-voice u-api"><a href="../UITextField_Class/index.html#//apple_ref/occ/cl/UITextField">UITextField</a></code> object.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventAllTouchEvents"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW46"></a><a name="//apple_ref/swift/structdata/UIControlEvents/AllTouchEvents"></a><a name="//apple_ref/doc/c_ref/UIControlEventAllTouchEvents"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">AllTouchEvents</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventAllTouchEvents</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      All touch events.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventAllEditingEvents"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW47"></a><a name="//apple_ref/swift/structdata/UIControlEvents/AllEditingEvents"></a><a name="//apple_ref/doc/c_ref/UIControlEventAllEditingEvents"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">AllEditingEvents</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventAllEditingEvents</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      All editing touches for <code class="code-voice u-api"><a href="../UITextField_Class/index.html#//apple_ref/occ/cl/UITextField">UITextField</a></code> objects.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventApplicationReserved"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW48"></a><a name="//apple_ref/swift/structdata/UIControlEvents/ApplicationReserved"></a><a name="//apple_ref/doc/c_ref/UIControlEventApplicationReserved"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">ApplicationReserved</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventApplicationReserved</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A range of control-event values available for application use.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventSystemReserved"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW49"></a><a name="//apple_ref/swift/structdata/UIControlEvents/SystemReserved"></a><a name="//apple_ref/doc/c_ref/UIControlEventSystemReserved"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">SystemReserved</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventSystemReserved</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      A range of control-event values reserved for internal framework use.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlEventAllEvents"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW50"></a><a name="//apple_ref/swift/structdata/UIControlEvents/AllEvents"></a><a name="//apple_ref/doc/c_ref/UIControlEventAllEvents"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">AllEvents</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlEventAllEvents</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      All events, including system events.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+		      </ul>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  You set up a control so that it sends an action message to a target object by associating both target and action with one or more control events. To do this, send <code class="code-voice"><a href="#//apple_ref/occ/instm/UIControl/addTarget:action:forControlEvents:">addTarget:action:forControlEvents:</a></code>: to the control for each <span class="pediaLink" data-header="Target-Action" data-contents="Target-action is a design pattern in which an object holds the information necessary to send a message to another object when an event occurs."><a href="../../../General/Conceptual/Devpedia-CocoaApp/TargetAction.html#//apple_ref/doc/uid/TP40009071-CH3" target="_self">target-action</a></span> pair you want to specify.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  
+			</p>
+		      </div>
+
+		      
+		    </section>
+		  </div>
+		</li><li class="item symbol">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/c/tdef/UIControlContentVerticalAlignment"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW22"></a><a name="//apple_ref/swift/enum/UIControlContentVerticalAlignment"></a><a name="//apple_ref/doc/c_ref/UIControlContentVerticalAlignment"></a>
+		      <a class="constant-group" href="#//apple_ref/c/tdef/UIControlContentVerticalAlignment" title="The vertical alignment of content (text and images) within a control.">Vertical Content Alignment</a>
+		    </code>
+		  </div>
+		  <div class="height-container">
+		    <div class="pointy-thing-container">
+		    </div>
+		    <section class="section constant-group">
+		      <div class="pointy-thing"></div>
+		      <div class="abstract">
+			<p class="para">
+			  The vertical alignment of content (text and images) within a control. 
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">enum</span> UIControlContentVerticalAlignment : <span class="n"><a href="../../../General/Reference/SwiftStandardLibraryReference/NumericTypes.html#//apple_ref/swift/struct/Int">Int</a></span> {
+			      <span class="kt">case</span> Center
+			      <span class="kt">case</span> Top
+			      <span class="kt">case</span> Bottom
+			      <span class="kt">case</span> Fill
+			      }</code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="k">typedef</span> <span class="k">enum</span> <span class="p">{</span>
+			      <span class="n">UIControlContentVerticalAlignmentCenter</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">,<br/></span>
+			      <span class="n">UIControlContentVerticalAlignmentTop</span>     <span class="o">=</span> <span class="mi">1</span><span class="p">,<br/></span>
+			      <span class="n">UIControlContentVerticalAlignmentBottom</span>  <span class="o">=</span> <span class="mi">2</span><span class="p">,<br/></span>
+			      <span class="n">UIControlContentVerticalAlignmentFill</span>    <span class="o">=</span> <span class="mi">3</span><span class="p">,<br/></span>
+			      <span class="p">}</span> <span class="n">UIControlContentVerticalAlignment</span><span class="p">;</span>
+			    </code>
+			  </p>
+			</div>
+		      </div>
+		      
+		      <h4>Constants</h4>
+		      <ul class="list-bullet">
+			
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlContentVerticalAlignmentCenter"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW51"></a><a name="//apple_ref/swift/enumelt/UIControlContentVerticalAlignment/Center"></a><a name="//apple_ref/doc/c_ref/UIControlContentVerticalAlignmentCenter"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Center</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlContentVerticalAlignmentCenter</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Aligns the content vertically in the center of the control.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlContentVerticalAlignmentTop"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW52"></a><a name="//apple_ref/swift/enumelt/UIControlContentVerticalAlignment/Top"></a><a name="//apple_ref/doc/c_ref/UIControlContentVerticalAlignmentTop"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Top</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlContentVerticalAlignmentTop</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Aligns the content vertically at the top in the control (the default).
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlContentVerticalAlignmentBottom"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW53"></a><a name="//apple_ref/swift/enumelt/UIControlContentVerticalAlignment/Bottom"></a><a name="//apple_ref/doc/c_ref/UIControlContentVerticalAlignmentBottom"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Bottom</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlContentVerticalAlignmentBottom</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Aligns the content vertically at the bottom in the control
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlContentVerticalAlignmentFill"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW54"></a><a name="//apple_ref/swift/enumelt/UIControlContentVerticalAlignment/Fill"></a><a name="//apple_ref/doc/c_ref/UIControlContentVerticalAlignmentFill"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Fill</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlContentVerticalAlignmentFill</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Aligns the content vertically to fill the content rectangle; images may be stretched.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+		      </ul>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  You use these constants as the value of the <code class="code-voice"><a href="#//apple_ref/occ/instp/UIControl/contentVerticalAlignment">contentVerticalAlignment</a></code> property. 
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		    </section>
+		  </div>
+		</li><li class="item symbol">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/c/tdef/UIControlContentHorizontalAlignment"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW55"></a><a name="//apple_ref/swift/enum/UIControlContentHorizontalAlignment"></a><a name="//apple_ref/doc/c_ref/UIControlContentHorizontalAlignment"></a>
+		      <a class="constant-group" href="#//apple_ref/c/tdef/UIControlContentHorizontalAlignment" title="The horizontal alignment of content (text and images) within a control.">Horizontal Content Alignment</a>
+		    </code>
+		  </div>
+		  <div class="height-container">
+		    <div class="pointy-thing-container">
+		    </div>
+		    <section class="section constant-group">
+		      <div class="pointy-thing"></div>
+		      <div class="abstract">
+			<p class="para">
+			  The horizontal alignment of content (text and images) within a control.
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">enum</span> UIControlContentHorizontalAlignment : <span class="n"><a href="../../../General/Reference/SwiftStandardLibraryReference/NumericTypes.html#//apple_ref/swift/struct/Int">Int</a></span> {
+			      <span class="kt">case</span> Center
+			      <span class="kt">case</span> Left
+			      <span class="kt">case</span> Right
+			      <span class="kt">case</span> Fill
+			      }</code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="k">typedef</span> <span class="k">enum</span> <span class="p">{</span>
+			      <span class="n">UIControlContentHorizontalAlignmentCenter</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,<br/></span>
+			      <span class="n">UIControlContentHorizontalAlignmentLeft</span>    <span class="o">=</span> <span class="mi">1</span><span class="p">,<br/></span>
+			      <span class="n">UIControlContentHorizontalAlignmentRight</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,<br/></span>
+			      <span class="n">UIControlContentHorizontalAlignmentFill</span>   <span class="o">=</span> <span class="mi">3</span><span class="p">,<br/></span>
+			      <span class="p">}</span> <span class="n">UIControlContentHorizontalAlignment</span><span class="p">;</span>
+			    </code>
+			  </p>
+			</div>
+		      </div>
+		      
+		      <h4>Constants</h4>
+		      <ul class="list-bullet">
+			
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlContentHorizontalAlignmentCenter"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW56"></a><a name="//apple_ref/swift/enumelt/UIControlContentHorizontalAlignment/Center"></a><a name="//apple_ref/doc/c_ref/UIControlContentHorizontalAlignmentCenter"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Center</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlContentHorizontalAlignmentCenter</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Aligns the content horizontally in the center of the control.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlContentHorizontalAlignmentLeft"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW58"></a><a name="//apple_ref/swift/enumelt/UIControlContentHorizontalAlignment/Left"></a><a name="//apple_ref/doc/c_ref/UIControlContentHorizontalAlignmentLeft"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Left</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlContentHorizontalAlignmentLeft</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Aligns the content horizontally from the left of the control (the default).
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlContentHorizontalAlignmentRight"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW63"></a><a name="//apple_ref/swift/enumelt/UIControlContentHorizontalAlignment/Right"></a><a name="//apple_ref/doc/c_ref/UIControlContentHorizontalAlignmentRight"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Right</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlContentHorizontalAlignmentRight</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Aligns the content horizontally from the right of the control
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlContentHorizontalAlignmentFill"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW64"></a><a name="//apple_ref/swift/enumelt/UIControlContentHorizontalAlignment/Fill"></a><a name="//apple_ref/doc/c_ref/UIControlContentHorizontalAlignmentFill"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Fill</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlContentHorizontalAlignmentFill</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Aligns the content horizontally to fill the content rectangles; text may wrap and images may be stretched.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+		      </ul>
+
+		      <div class="discussion">
+			<h4>Discussion</h4>
+			<p class="para">
+			  You use these constants as the value of the <code class="code-voice"><a href="#//apple_ref/occ/instp/UIControl/contentHorizontalAlignment">contentHorizontalAlignment</a></code> property.
+			</p>
+
+		      </div>
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  <code class="code-voice Swift">import UIKit</code>
+			</p>
+		      </div>
+
+		      <div class="availability">
+			<h4>Availability</h4>
+			<p class="para availability-item">Available in iOS 2.0 and later.</p>
+		      </div>
+		    </section>
+		  </div>
+		</li><li class="item symbol">
+		  <div class="task-group-term">
+		    <code class="code-voice">
+		      <a name="//apple_ref/doc/constant_group/Control_State"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW11"></a>
+		      <a class="constant-group" href="#//apple_ref/doc/constant_group/Control_State" title="The state of a control; a control can have more than one state at a time. States are recognized differently depending on the control. For example, a UIButton instance may be configured (using the setImage:forState: method) to display one image when it is in its normal state and a different image when it is highlighted.">Control State</a>
+		    </code>
+		  </div>
+		  <div class="height-container">
+		    <div class="pointy-thing-container">
+		    </div>
+		    <section class="section constant-group">
+		      <div class="pointy-thing"></div>
+		      <div class="abstract">
+			<p class="para">
+			  The state of a control; a control can have more than one state at a time. States are recognized differently depending on the control. For example, a UIButton instance may be configured (using the <code class="code-voice u-api"><a href="../UIButton_Class/index.html#//apple_ref/occ/instm/UIButton/setImage:forState:">setImage:forState:</a></code> method) to display one image when it is in its normal state and a different image when it is highlighted. 
+			</p>
+
+		      </div>
+
+
+		      <div class="declaration">
+			<h4>Declaration</h4>
+			<div class="Swift">
+			  <p class="aside-title">Swift</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="kt">struct</span> UIControlState : <span class="n"><!-- a href="" -->RawOptionSetType<!-- /a --></span> {
+			      <span class="kt">init</span>(<span class="nl">_</span> <code class="code-voice"><em class="parameter-name">rawValue</em></code>: <span class="n"><!-- a href="" -->UInt<!-- /a --></span>)
+			      <span class="kt">init</span>(<span class="nl">rawValue</span> <code class="code-voice"><em class="parameter-name">rawValue</em></code>: <span class="n"><!-- a href="" -->UInt<!-- /a --></span>)
+			      <span class="kt">static</span> <span class="kt">var</span> Normal: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Highlighted: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Disabled: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Selected: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Application: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      <span class="kt">static</span> <span class="kt">var</span> Reserved: <span class="n"><a href="#//apple_ref/swift/struct/UIControlState">UIControlState</a></span> { get }<br/>
+			      }</code>
+			  </p>
+			</div>
+			<div class="Objective-C">
+			  <p class="aside-title">Objective-C</p>
+			  <p class="para">
+			    <code class="code-voice"><span class="k">enum</span> <span class="p">{</span>
+			      <span class="n">UIControlStateNormal</span>               <span class="o">=</span> <span class="mi">0</span><span class="p">,<br/></span>
+			      <span class="n">UIControlStateHighlighted</span>          <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">0</span><span class="p">,<br/></span>
+			      <span class="n">UIControlStateDisabled</span>             <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">,<br/></span>
+			      <span class="n">UIControlStateSelected</span>             <span class="o">=</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="mi">2</span><span class="p">,<br/></span>
+			      <span class="n">UIControlStateApplication</span>          <span class="o">=</span> <span class="mh">0x00FF0000</span><span class="p">,<br/></span>
+			      <span class="n">UIControlStateReserved</span>             <span class="o">=</span> <span class="mh">0xFF000000</span> 
+			      <span class="p">};</span>
+			    </code>
+			  </p>
+			</div>
+		      </div>
+		      
+		      <h4>Constants</h4>
+		      <ul class="list-bullet">
+			
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlStateNormal"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW59"></a><a name="//apple_ref/swift/structdata/UIControlState/Normal"></a><a name="//apple_ref/doc/c_ref/UIControlStateNormal"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Normal</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlStateNormal</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      The normal, or default state of a control-that is, enabled but neither selected nor highlighted.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlStateHighlighted"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW60"></a><a name="//apple_ref/swift/structdata/UIControlState/Highlighted"></a><a name="//apple_ref/doc/c_ref/UIControlStateHighlighted"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Highlighted</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlStateHighlighted</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Highlighted state of a control. A control enters this state when a touch enters and exits during tracking and when there is a touch up event. You can retrieve and set this value through the <code class="code-voice"><a href="#//apple_ref/occ/instp/UIControl/highlighted">highlighted</a></code> property.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlStateDisabled"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW12"></a><a name="//apple_ref/swift/structdata/UIControlState/Disabled"></a><a name="//apple_ref/doc/c_ref/UIControlStateDisabled"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Disabled</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlStateDisabled</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Disabled state of a control.  This state indicates that the control is currently disabled. You can retrieve and set this value through the <code class="code-voice"><a href="#//apple_ref/occ/instp/UIControl/enabled">enabled</a></code> property.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlStateSelected"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW13"></a><a name="//apple_ref/swift/structdata/UIControlState/Selected"></a><a name="//apple_ref/doc/c_ref/UIControlStateSelected"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Selected</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlStateSelected</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Selected state of a control. For many controls, this state has no effect on behavior or appearance. But other subclasses (for example, the <code class="code-voice u-api"><a href="../UISegmentedControl_Class/index.html#//apple_ref/occ/cl/UISegmentedControl">UISegmentedControl</a></code> class) may have different appearance depending on their selected state. You can retrieve and set this value through the <code class="code-voice"><a href="#//apple_ref/occ/instp/UIControl/selected">selected</a></code> property.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlStateApplication"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW61"></a><a name="//apple_ref/swift/structdata/UIControlState/Application"></a><a name="//apple_ref/doc/c_ref/UIControlStateApplication"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Application</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlStateApplication</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Additional control-state flags available for application use.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+			<li class="constant">
+			  <a name="//apple_ref/c/econst/UIControlStateReserved"></a><a name="//apple_ref/doc/uid/TP40006779-RH2-SW62"></a><a name="//apple_ref/swift/structdata/UIControlState/Reserved"></a><a name="//apple_ref/doc/c_ref/UIControlStateReserved"></a>
+			  <p class="para Swift">
+			    <code class="code-voice">Reserved</code>
+			  </p>
+			  <p class="para Objective-C">
+			    <code class="code-voice">UIControlStateReserved</code>
+			  </p>
+			  <div class="definition">
+			    <p class="para">
+			      Control-state flags reserved for internal framework use.
+			    </p>
+			    <p class="para">
+			      Available in iOS 2.0 and later.
+			    </p>
+
+			  </div>
+			</li>
+		      </ul>
+
+		      
+
+		      
+
+		      <div class="z-module-import">
+			<h4>Import Statement</h4>
+			<p class="para">
+			  
+			</p>
+		      </div>
+
+		      
+		    </section>
+		  </div>
+		</li>
+		<li class="hiding-symbol-counts"><p><em class="hiding-swift"></em></p><p><em class="hiding-obj-c"></em></p><p><em class="hiding-dep"></em></p><p><em class="hiding-dt"></em></p></li>
+	      </ul>
+	    </div>
+	  </section>
+	</section>
+      </article>
+
+    </div>
+
+    
+  </body>
+</html>
