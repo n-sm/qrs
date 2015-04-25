@@ -1,0 +1,119 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\pagenumbering{gobble}
+\newtheorem{mydef}{Definici\'on}[section]
+
+\setlength{\parindent}{0pt}
+\begin{document}
+
+\section{Cap. 1}
+
+\begin{mydef}[Vector posici\'on]
+Este vector parte del or\'igen de coordenadasy llega al punto que
+se quiere identificar.
+
+Sus componente son las coordenadas de dicho punto. Se escribe as\'i:
+
+\[ \vec{r}= r_x \hat{x} + r_y \hat{y} + r_z \hat{z} \]
+
+\end{mydef}
+\begin{mydef}[Trayectoria]
+Es la curva que recorri\'o el m\'ovil al desplazarse.
+\end{mydef}
+
+\begin{mydef}[Vector desplazamiento]
+Si una part\'icula se mueve del punto \(P_1\) al \(P_2\) llamamos
+\emph{vector desplazamiento} al que tiene origen en \(P_1\) y extremo
+en \(P_2\).
+
+El vector desplazamiento es independiente del recorrido de la
+part\'icula.
+
+Se calcula restanto al vector posici\'on de \(P_2\) el de \(P_1\), es
+decir:
+\[ \Delta \vec{r} = \vec{r}_2 - \vec{r}_1 \]
+\end{mydef}
+\begin{mydef}[Lapso o intervalo temporal]
+Es el tiempo transcurrido  entre los instantes en que el vector
+posici\'on es \(\vec{r}_1\) y  \( \vec{r}_2\) respectivamente. O sea:
+\[\Delta t = t_2 - t_1\]
+\end{mydef}
+\begin{mydef}[Vector velocidad media]
+\[ \vec{v}_m = \frac{\Delta \vec{r}}{\Delta t } \]
+La direcci\'on y el sentido de este vector son las del desplazamiento.
+\end{mydef}
+\begin{mydef}[Vector velocidad instant\'anea]
+Este vector tiene siempre la direcci\'on de la recta tangente a la
+trayectoria.
+El sentido del vector velocidad instant\'anea es el mismo que el del
+movimiento.
+\[ \vec{v} = \lim_{\Delta t \to 0} \frac{\Delta \vec{r}}{\Delta t} \]
+\end{mydef}
+\begin{mydef}[Vector aceleraci\'on media]
+\[ \vec{a}_m =  \frac{\Delta \vec{v}}{\Delta t} = \frac{\vec{v}_2 -
+  \vec{v}_1}{t_2 - t_1} \]
+\end{mydef}
+\begin{mydef}[Vector aceleraci\'on instant\'anea]
+\[ \vec{a} = \lim_{\Delta t \to 0} \frac{\Delta \vec{v}}{\Delta t} 
+ \]
+\end{mydef}
+
+\subsection{Movimiento Rectilineo Uniforme}
+Es un movimiento rectil\'inea con velocidad constante. O, lo que es lo
+mismo, movimiento co naceleraci\'on nula. Queda pues caracterizado por:
+
+\[
+\vec{a}(t) = 0 \]
+\[
+\vec{v}(t) = \vec{v}_0 \]
+
+
+
+\begin{mydef}[Ecuaci\'on horaria]
+\[
+x(t) = x_0 + v_0(t - t_0)\]
+La posici\'on en en \(x\) el tiempo \(t\) es igual a la posici\'on inicial
+\(x_0\) m\'as el producto de la velocidad por el lapso temporal. Como la
+velocidad es constante basta tomas \(v_0\).
+\end{mydef}
+
+\subsection{Movimiento Rectil\'ineo Uniformemente Variado}
+En este caso la aceleraci\'on media es constante. De este modo, la
+funci\'on de la velocidad en funci\'on del tiempo es:
+
+\[ v(t) = v_0 + a(t-t) \]
+
+La \textbf{\textit{ecuaci\'on horaria}} es:
+
+\[
+x(t) = x_0 + v_0(t-t_0) + \frac{1}{2} a (t-t_0)^2\]
+
+\subsubsection{Caida libre y Tiro vertical}
+Son casos particulares del \textbf{MRUV} con \( a = |\vec{g}| \) y
+\(a=- |\vec{g}|\) seg\'un el caso y el marco de referencia.
+
+\subsection{Movimiento relativo}
+
+\begin{mydef}[Traslaci\'on uniforme]
+Es el que se da cuando hay dados dos sistemas de referencia
+\textbf{A} y \textbf{B}, uno de los cuales se mueve con respecto al otro
+ de modo que su or\'igen hace un \textbf{MRU} y sus ejes mantienen
+ siempre la misma orientaci\'on.
+
+Todos los puntos de \textbf{B} se mueven con respecto a \textbf{A} con
+velocidad:
+\[ \vec{v}_{BA}\]
+que es la velocidad de \textbf{B} con respecto a \textbf{A}. Se cumple
+que:
+
+\[ \vec{v}_{AB} = -\vec{v}_{BA}\]
+\end{mydef}
+
+Supongamos que hay ubna partícula ubicada en el punto \(P\) cuya
+posición es \(\vec{r}_{PB}\)
+\end{document}

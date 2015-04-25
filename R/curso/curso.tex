@@ -1,0 +1,39 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\pagenumbering{gobble}
+
+\title{R}
+
+\begin{document}
+\maketitle
+
+\section{Instalaci\'on y obtenci\'on de ayuda}
+La instalaci\'on de paquetes se realiza mediante el siguiente comando:
+\begin{verbatim}
+> install.packages(``nombreDelPaquete'')
+\end{verbatim}
+Tras lo cual se despliega un men\'u para elegir el mirror.
+Para usar el paquete, luego de su instalaci\'onm escribimos:
+\begin{verbatim}
+library(``nombreDelPaquete'')
+\end{verbatim}
+
+\section{Importar y exportar datos}
+Para archivos de excel (.xls) usamos el paquete \texttt{RODBC}.
+Supongamos que en nuestro directorio de trabajo tenemos un archivo
+de nombre \texttt{personalidad.xls}, que es un documento de Excel, y
+que tiene una hoja llamada \texttt{16pf} donde hay una tabla de \(n\)
+por \(m\) datos, con \(n\) sujetos y los \(m\) \'items del test 16pf de
+Cattell (\(185\)). Entonces, para acceder a dicha base desde
+\texttt{R} escribimos:
+\begin{verbatim}
+> library("RODBC")
+> cnct <- odbcConnectExcel("personalidad.xls")
+> datos <- sqlQuery(cnct, "select * from \"16pf$\"")
+\end{verbatim}
+\end{document}

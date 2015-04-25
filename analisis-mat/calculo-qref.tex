@@ -37,7 +37,9 @@
 &\log_a{\frac{p}{q}} &&=&& \log_a{p} - \log_a{q} &\\[0.7em]
 &\log_a{p^q} &&=&& q\log_a{p} &\\[0.7em]
 &\log_a{p} &&=&& \frac{\log_b{p}}{\log_b{a}}&\\[0.7em]
-&a^{\log_a{x}} &&=&& x&\\[0.7em]
+&a^{\log_a{x}} &&=&& x &\\[0.7em]
+&log_a{a^x} &&=&& x &\\[0.7em]
+%&log_a{a^x} &&=&& x &\\[0.7em]
 \hline \\
 \end{align*}
 \label{tab:loga}
@@ -62,7 +64,26 @@ finalmente:
 \log_b(M) = \frac{\log_a(M)}{\log_a(b)}
 \end{equation}
 
+\section{Funciones cuadr\'aticas}
 
+El eje de simetr\'ia de una funcione cuadr\'atica est\'a dado por:
+\[
+-\frac{b}{2a} = x_v\]
+
+El valor extremo est\'a dado por \(f(-\frac{b}{2a})\), es decir:
+\[
+\frac{4ac-b^2}{4a} = y_v \]
+
+El v\'ertice de la par\'abola est\'a dado por el punto \( (x_v, y_v)
+\)
+
+Los ceros de la funci\'on se obtienen con la f\'ormula:
+\[
+\frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
+
+Se cumple la ecuaci\'on:
+\[
+ax^2+bx+c = a(x-x_v)^2+\frac{4ac-b2}{4a} \]
 \section{L\'imites}
 
 \subsection{Definiciones}
@@ -116,7 +137,8 @@ M
                                  & \text{\footnotesize \(f \) y \( g\)   \ cont\'inuas,
                                    definidas en \([a,b]\).}\\[-0.4cm]
 &&&& \text{\footnotesize \( c \in (a,b) ,  f(a) = f(a) = 0\) o bien
-     \(\pm \infty\)}\\[0.7em]
+     \(\pm \infty\)}\\[-0.4em]
+&&&& \text{\footnotesize (L'Hopital)}\\[1em]
 & \text{ Si  } b_n, c_n \to L
                   & \quad \text{ luego } &  a_n \to L
                              &  \text{ (Sandwich) } &\\
@@ -135,19 +157,22 @@ M
 & \lim_{x \to 0}\frac{1}{x} && =     && \infty  &\\[1em]
 & \lim_{x \to \infty}\Big(\frac{x+1}{x}\Big)&&=  && 1 &\\[1em]
 &\lim_{x \to 1}\Big(\frac{x^n-1}{x-1}\Big)
-                            && =  && n & \text{L'Hopital}\\[1em]
-&\lim_{x \to \infty}\Big(\frac{x^n-1}{x-1}\Big)&& =  && \infty &\text{L'Hopital}\\[1em]
+                            && =  && n & \text{por L'Hopital}\\[1em]
+&\lim_{x \to \infty}\Big(\frac{x^n-1}{x-1}\Big)&& =  && \infty
+                                                &\text{por L'Hopital}\\[1em]
 &\lim_{x \to \infty}\Big(\frac{x}{1+x}\Big)^x&& =   && e^{-1} &\\[1em]
 &\lim_{x \to 0} \sen{x} &&= && 0 &\\[1em]
 &\lim_{x \to 0} \cos{x} &&= && 1 &\\[1em]
 & \lim_{x \to 0}\frac{\sen{x}}{x}
-                            && = && 1 & \text{L'Hopital}\\[1em]
-& \lim_{x \to 0}\frac{\sen{4x}}{x} && = && 4 & \text{L'Hopital}\\[1em]
-& \lim_{x \to 0}\frac{\sen{ax}}{ax} && = && 1 , \ a \neq 0 & \ \text{L'Hopital} \\[1em]
-& \lim_{x \to a}\frac{\sen{x-a}}{x-a} && = && 1  &\\%[1em]
-& \limi{x}{0}{\ln(x) &&}{ && - \infty} &\\
-& \limi{x}{\infty}{\ln(x) &&}{ && \infty} &\\
-& \limi{x}{0}{\frac{\ln(x)}{x} &&}{ && 0} &\ \text{L'Hopital}\\[1em]
+                            && = && 1 & \text{por L'Hopital}\\[1em]
+& \lim_{x \to 0}\frac{\sen{4x}}{x} && = && 4 & \text{por L'Hopital}\\[1em]
+& \lim_{x \to 0}\frac{\sen{ax}}{ax} && = && 1 , \ a \neq 0 & \
+                                                             \text{por
+                                                             L'Hopital} \\[1em]
+& \lim_{x \to a}\frac{\sen{x-a}}{x-a} && = && 1  &\\[1em]
+& \limi{x}{0}{\ln(x) &&}{ && - \infty} &\\[1em]
+& \limi{x}{\infty}{\ln(x) &&}{ && \infty} &\\[1em]
+& \limi{x}{0}{\frac{\ln(x)}{x} &&}{ && 0} &\ \text{por L'Hopital}\\[1em]
 \vspace{1cm}\\
 \hline \\
 \end{align*}
@@ -161,7 +186,7 @@ M
 %\vspace{1.5cm}
 \begin{align*}
 \hline \\
-&\lim_{x \to 0}\sen{x} &\\[0.7em]
+&\lim_{x \to \infty}\sen{x} &\\[0.7em]
 &\lim_{x \to 0}\sen{\frac{1}{x}} &\\
 \vspace{1cm}\\
 \hline \\
@@ -320,6 +345,7 @@ n\'umero \( x \) tal que
 El n\'umero \( f(x) \) recibe entonces el nombre de \textbf{valor singular}.
 \end{mydef}
 
+% teorema de Rolle
 \begin{theorem}[Teorema de Rolle] Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre \( (a,b) \) , y \( f(a) = f(b) \) , entonces existe un n\'umero \( x \)  en \( (a,b) \) tal que \( f'(x)=0 \) .
 \end{theorem}
 \begin{proof}
@@ -386,6 +412,27 @@ Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables dentrode
 
 \[ \exists c \in (a,b) \quad . \quad \frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(c)}{g'(c)} \]
 \end{theorem}
+
+
+\begin{tabular}{|c|c|}
+  \hline
+  & \\
+  Rolle &
+          Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre
+          \( (a,b) \) , y \( f(a) = f(b) \), entonces  \\[0.5em]
+        & \(\exists  x \in (a,b) \quad f'(x)=0 \) . \\[2.5em]
+
+  Valor medio &
+                Si \( f \) es cont\'inua en \( [a,b] \) y derivable en
+                \( (a,b) \) , entonces\\[0.5em]
+  & \(\exists  x \in (a,b) \quad f'(x)=\frac{f(b)-f(a)}{b-a} \) \\[2.5em]
+  Cauchy
+        & Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables
+          dentro de \([a,b]\).\\[0.5em]
+ &  Si \(g'(x)\) no adquiere el valor cero en \([a,b]\), luego:\\[0.5em]
+ & \( \exists c \in (a,b) \quad . \quad \frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(c)}{g'(c)} \) \\[1em]
+\hline
+\end{tabular}
 \subsection{M\'aximos y m\'inimos}
 Para localizar el m\'aximo y el m\'inimo de \( f \) en \( [a,b] \)  deben considerarse
 tres clases de puntos:
@@ -512,55 +559,6 @@ Rec\'iprocamente, si esto se cumple para toda sucesi\'on \( \{ a_n \}
 \[ \lim_{x \to c} f(x) = l \]
 \end{theorem}
 
-\begin{proof}
-Para la primer parte de la prueba designemos las hip\'otesis as\'i:
-
-\begin{align*}
-&\textbf{A1.} \qquad  \forall \epsilon > 0 \ \exists \delta > 0 \ \forall x \quad
-(0<|x-c|< \delta) \quad \to \quad (|f(x) - l| < \epsilon) & \\
-&\textbf{A2.} \qquad \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad \to \quad (a_n - l| < \epsilon) & \\
-\end{align*}
-Seg\'un como se elija \( \epsilon \) en la segunda f\'ormula, tenemos
-que \( | f(a_n) - l | < \epsilon \) (es decir, usamos \( \forall \epsilon > 0 \ \exists N \ \forall n
-\quad  (n > N) \quad \to \quad (|a_n - l| < \epsilon) \)
-que afirma el antecedente de \( \textbf{A1} \) ).
-
-Con esto hemos demostrado que
-
-\[ \lim_{n \to \infty} f( a_n )= l \]
-
-Rec\'iprocamente, designemos ahora ls hip\'otesis as\'i:
-
-\begin{align*}
-& \textbf{B1.} \qquad
- \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
-\to \quad ( |f(a_n) - l| < \epsilon) & \\
-& \textbf{B2.} \qquad
- \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
-\to \quad ( |a_n - c| < \epsilon) & \\
-\end{align*}
-
-Ahora supongamos -a los fines de una reducci\'onn al absurdo- que no
-se cumple \( \lim_{x \to c} f( x )= l \). Esto ser\'ia decir que:
-
-\[ \exists \epsilon > 0 \ \forall \delta > 0 \ \exists x \quad
-(0<|x-c|< \delta) \quad \wedge \quad (|f(x) - l| > \epsilon) \]
-
-As\'i, para alg\'un \( \epsilon \) se cumplir\'ia que para todo \( n
-\) (que es como decir, para todo \( 1/n \) existe un n\'umero \( x_n
-\) tal que
-
-\[ \exists \epsilon > 0 \ \forall n \exists x_n \quad
-(0<|x_n-c|< 1/n) \quad \wedge \quad (|f(x_n) - l| > \epsilon) \]
-
-(es decir, hemos sustitu\'ido \( \delta \) por \( 1/n \) y \( x \) por
-\( x_n \)).
-
-Con esto, la sucesi\'on \( \{ x_n \} \) converge hacia \( c \) (usamos
-ac\'a \( \epsilon = 1/n \) y \( N = n \), y aplicamos la defiici\'on
-). Pero \( f( \{ a_n \} \) no converger\'ia a \( l \),
-contradiciendo la hip\'otesis.
-\end{proof}
 
 En los ejemplos siguientes \( N \) se refiere al \( N \) de la definici\'on
 de l\'imite.
@@ -648,6 +646,64 @@ y hemos supuesto la parte derecha, tenemos:
 }
 \label{tab:sucEjs}
 \end{table}
+\section{Series}
+\begin{theorem}
+Si una serie \(s_n\) converge y \(u_n\) se obtiene en base a ella
+suprimiendo un n\'umero finito de t\'erminos en ella, luego \(u_n\) converge.
+\end{theorem}
+\begin{theorem}
+Si \(s_n\) converge y suma \(s\)  y \(u_n\) se obtiene multimplicando cada t\'ermino
+de \(s\) por \(c\), luego \(u_n\) converge en y suma \(cs\).
+\end{theorem}
+\begin{theorem}
+Si las series \(s_n\) y \(u_n\) convergen y suman \(s\) y \(u\)
+respectivamente, tambi\'en lo hace la serie que resulta de sumar cada
+en\'esimo t\'ermino de una con el de la otra y su suma es \(s + u\).
+\end{theorem}
+\vspace{1em}
+
+\begin{theorem}[Condici\'on necesaria para la convergencia]
+Si una serie converge, entonce si en'esimo t\'ermino tiende a cero
+cuando \(n \to 0\).
+\end{theorem}
+\begin{corol}
+Si el en\'esimo t\'ermino de una serie \(s_n\) no tiende a cero,
+entonces \(s_n\) no converge.
+\end{corol}
+\vspace{1em}
+\begin{theorem}
+Si \(u_n \leq v_n, \forall n\) y \(v_n\) converge, luego \(u_n\) converge.
+\end{theorem}
+\begin{theorem}
+Si \(u_n \geq v_n,  \forall n\) y \(v_n\) diverge, luego \(u_n\) diverge.
+\end{theorem}
+\begin{theorem}[Criterio de D'Alembert]
+Sea \(s_1\) una serie con t\'erminos positivos. Y sea \[
+\limi{n}{\infty}{\frac{u_{n+1}}{u_n}}{l} \]
+entonces:\\
+1) La serie converge cuando \(l < 1\)\\
+2) La serie diverge cuando \(l > 1\)\\
+(Cuando \(l = 1\) pueden darse los dos casos).
+\end{theorem}
+\begin{theorem}[Criterio de Cauchy]
+Sea \(s_1\) una serie con t\'erminos positivos. Y sea \[
+\limi{n}{\infty}{\sqrt[n]{u_n}}{l}\]
+entonces:\\
+1) La serie converge cuando \(l < 1\)\\
+2) La serie diverge cuando \(l > 1\)\\
+(Cuando \(l = 1\) pueden darse los dos casos).
+\end{theorem}
+\begin{theorem}[Criterio Integral]
+Sea \(s_n\) una serie tal que 
+\[
+s_1 \geq s_2 \geq s_3 ... 
+\]
+Y sea \(f \) una funci\'on cont\'inua tal que \( f(i) = s_i \). Entonces se
+cumple:\\
+1) Si \( \int_1^{\infty} f(x) \ dx \) converge, tambi\'en converge \(s_n\)
+\end{theorem}
+
+
 \section{As\'intotas}
 
 \subsection{As\'intota Vertical}
@@ -776,5 +832,24 @@ entonces \( F \) es cont\'inua sobre \( [a,b] \)
 \end{flalign*}
 }
 \end{table}
+
+\section{Agregar:}
+\subsection{F\'ormula de Taylor}
+
+Teorema: si \(a_k\) son los coeficientes de un polinomio,
+\[
+P_n, a, f = \sum_{k=0}^n (0)^k
+\]
+
+(buscar Spivak)
+
+\[
+P_n, a, f = \sum_{k=0}^n (x - a)^k
+\]
+Donde:
+\[
+a_k = \frac{f^{(k)}(a)}{k!}
+\]
+
 
 \end{document}

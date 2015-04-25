@@ -7,6 +7,7 @@
 \usepackage{amsthm}
 \usepackage{float}
 \usepackage{varioref}
+\usepackage{currfile}
 \title{}
 \makeatother
 \usepackage{mdframed}
@@ -17,10 +18,35 @@
 \newtheorem{mydef}{Definici\'on}[section]
 \newtheorem{corol}{Corolario}[theorem]
 %\newmdtheoremenv{mydef}{Definici\'on}[section]
+
+\newcommand{\limi}[4]{
+  \lim_{#1 \to #2} #3 = #4
+}
+
 \begin{document}
 \maketitle
-
+\begin{center}\currfilename\end{center}
 \section{Logaritmos}
+\begin{table}[!htbp]
+\caption{Propiedades de los logaritmos}
+\begin{align*}
+\hline\\[0.5em]
+&\log_a{a} &&=&& 1 &\\[0.7em]
+&\log_a{1} &&=&& 0 &\\[0.7em]
+&\log_a{pq} &&=&& \log_a{p} + \log_a{q}&\\[0.7em]
+&\log_a{\frac{p}{q}} &&=&& \log_a{p} - \log_a{q} &\\[0.7em]
+&\log_a{p^q} &&=&& q\log_a{p} &\\[0.7em]
+&\log_a{p} &&=&& \frac{\log_b{p}}{\log_b{a}}&\\[0.7em]
+&a^{\log_a{x}} &&=&& x &\\[0.7em]
+&log_a{a^x} &&=&& x &\\[0.7em]
+%&log_a{a^x} &&=&& x &\\[0.7em]
+\hline \\
+\end{align*}
+\label{tab:loga}
+\end{table}
+
+Adem\'as, \(p \neq q \quad \to  \log_a(p) \neq \log_a(q)\) \\
+
 Veamos la siguiente \emph{regla del cambio de base}:
 
 Para todo \( x \)  se cumple \( x^{\log_x(M)} = M \). De esto se sigue
@@ -38,66 +64,37 @@ finalmente:
 \log_b(M) = \frac{\log_a(M)}{\log_a(b)}
 \end{equation}
 
-\begin{table}[!htbp]
-\caption{Propiedades de los logaritmos}
-\begin{align*}
-\hline\\[0.5em]
-&\log_a{a} &&=&& 1 &\\[0.7em]
-&\log_a{1} &&=&& 0 &\\[0.7em]
-&\log_a{pq} &&=&& \log_a{p} + \log_a{q}&\\[0.7em]
-&\log_a{\frac{p}{q}} &&=&& \log_a{p} - \log_a{q} &\\[0.7em]
-&\log_a{p^q} &&=&& q\log_a{p} &\\[0.7em]
-&\log_a{p} &&=&& \frac{\log_b{p}}{\log_b{a}}&\\[0.7em]
-&a^{\log_a{x}} &&=&& x&\\[0.7em]
-\hline \\
-\end{align*}
-\label{tab:loga}
-\end{table}
-
-Adem\'as, \(p \neq q \quad \to  \log_a(p) \neq \log_a(q)\) \\
 
 \section{L\'imites}
 
-\subsection{Primero, consideremos las definiciones siguientes.}
-%\vspace{.5cm}
-\begin{mydef}[L\'imite]
-\[\emph{La f\'ormula }  \qquad \lim_{x \to a}f(x) = l \qquad \emph{ significa:}\]
+\subsection{Definiciones}
+\begin{minipage}{16cm}
+\textbf{Definici\'on de l\'imite:}
+\vspace{1em}
+\hrule
+\vspace{1em}
+\[\lim_{x \to a}f(x) = l \qquad \emph{ significa:}\]
+\[
+(\forall \epsilon > 0) \ (\exists \delta > 0) \ \forall x \quad : \quad 0<|x-a|<
+\delta
+\qquad  \to \qquad  |f(x) - l| < \epsilon
+\]
 
-\begin{equation}
-(\forall \epsilon > 0) \ (\exists \delta > 0) \ \forall x \quad : \quad (0<|x-a|<
-\delta)
-\qquad  \to \qquad ( |f(x) - l| < \epsilon   )
-\end{equation}
-\end{mydef}
+\vspace{0.5em}
+\[ \lim_{x \to a}f(x) = \infty \qquad \emph{ significa:}\]
+\[ (\forall M > 0 \ \exists \delta > 0 \ \forall x \neq a) \qquad   0<|x-a| < \delta  \to  |f(x)| >
+M
+ \]
+\vspace{0.5em}
 
-\begin{table}[!htbp]
-\caption{definiciones de limites}
-\begin{align*}
-&\lim_{x \to a}f(x) = l  &  \equiv \qquad  &
-( \forall \epsilon > 0 \ \exists \delta > 0 \ \forall x)  \qquad   0<|x-a|< \delta  \to  |f(x) - l| <
-\epsilon  & \\
-\\
-&\lim_{x \to \infty}f(x) = l  &  \equiv  \qquad &
-(\forall \epsilon > 0 \ \exists N \ \forall x) \qquad  x > |N|  \to
- |f(x) - l| < \epsilon & \\
-\\
-&\lim_{x \to a}f(x) = \infty  &  \equiv \qquad  &
-(\forall M > 0 \ \exists \delta > 0 \ \forall x \neq a) \qquad   0<|x-a| < \delta  \to  |f(x)| >
-M  & \\
-\\
-&\lim_{x \to a}f(x) = 0  &  \equiv   \qquad  &
-(\forall \epsilon > 0 \ \exists \delta > 0 \ \forall x) \qquad   0<|x-a| < \delta  \to  |f(x)| <
-\epsilon & \\
-\\
-&\lim_{x \to \infty}f(x) = 0  &  \equiv \qquad  &
-(\forall \epsilon > 0 \ \exists N \ \forall x) \qquad   x > N  \to
- |f(x)| < \epsilon & \\
-\end{align*}
-\label{tab:limDef}
-\end{table}
+\[ \lim_{x \to \infty}f(x) = l \emph{ significa:} \]
+\[ (\forall \epsilon > 0 \ \exists N \ \forall x) \qquad  x > |N|  \to
+ |f(x) - l| < \epsilon
+ \]
+\hrule
+\vspace{1em}
+\end{minipage}
 
-
-\subsection{Algunos teoremas.}
 \begin{table}[!htbp]
 \caption{Reglas sobre l\'imites}
 \begin{align*}
@@ -107,19 +104,28 @@ M  & \\
 & \lim_{x \to a}\Big(k + f(x)\Big) & =  \qquad & k + \lim f(x)& \\[0.7em]
 & \lim_{x \to a}\Big(f(x) + g(x)\Big) & =   \qquad  &   \lim_{x \to a}f(x) + \lim_{x  \to a} g(x)&  \\[0.7em]
 & \lim_{x \to a}\Big(f(x) g(x)\Big) & =   \qquad  &   \lim_{x \to a}f(x) \lim_{x  \to a} g(x)&  \\[0.7em]
-& \lim_{x \to a}\Big(\frac{f(x)}{g(x)}\Big) & =   \qquad  &\frac{\lim_{x \to a}f(x) }{\lim_{x  \to a} g(x)} &  \\[0.7em]
+& \lim_{x \to a}\Big(\frac{f(x)}{g(x)}\Big) & =   \qquad
+&\frac{\lim_{x \to a}f(x) }{\lim_{x  \to a} g(x)} &
+\text{\footnotesize \(\lim_{x \to a}g(x) \neq 0\)} \\[0.7em]
 & \lim_{x \to a}f(x)^{g(x)} & =   \qquad  & \lim_{x \to
-  a}f(x)^{\lim_{x \to a}g(x)} &\\[0.7em]
+                                            a}f(x)^{\lim_{x \to a}g(x)} &\\[0.7em]
 & \lim_{x \to a} \log{(f(x))} & =   \qquad  & \log{\big(\lim_{x \to a} f(x)\big)} &\\[0.7em]
 & \lim_{x \to a}\Big(f(x)\Big)^n & = \qquad & \Big(\lim_{x \to  a}f(x)\Big)^n & \\[0.7em]
 & \sqrt[n]{\lim_{x \to a}f(x)} & = \qquad & \lim_{x \to
-  a}\sqrt[n]{f(x)} & \\[1.1em]
-& \lim_{x \to a}\frac{f(x)}{g(x)} & = \qquad & \lim_{x \to
-  a}\frac{f'(x)}{g'(x)} \qquad * & \\[0.7em]
+                                            a}\sqrt[n]{f(x)} & \\[1.1em]
+& \lim_{x \to c}\frac{f(x)}{g(x)} & = \qquad
+                             & \lim_{x \to  c} \frac{f'(x)}{g'(x)}  \qquad
+                                 & \text{\footnotesize \(f \) y \( g\)   \ cont\'inuas,
+                                   definidas en \([a,b]\).}\\[-0.4cm]
+&&&& \text{\footnotesize \( c \in (a,b) ,  f(a) = f(a) = 0\) o bien
+     \(\pm \infty\)}\\[-0.4em]
+&&&& \text{\footnotesize (L'Hopital)}\\[1em]
+& \text{ Si  } b_n, c_n \to L
+                  & \quad \text{ luego } &  a_n \to L
+                             &  \text{ (Sandwich) } &\\
+& \text{ y } b_n \leq a_n \leq c_n&&&\\[0.7em]
 \hline\\
 \end{align*}
-* \( f\) y \( g \) son cont\'inuas, est\'an definias en \( [a,b]\)
- con \( a \in (a,b) \) y \( f(a) = f(a) = 0 \) o \( \pm \infty\)\\
 \label{tab:limReg}
 \end{table}
 
@@ -131,15 +137,23 @@ M  & \\
 \hline \\
 & \lim_{x \to 0}\frac{1}{x} && =     && \infty  &\\[1em]
 & \lim_{x \to \infty}\Big(\frac{x+1}{x}\Big)&&=  && 1 &\\[1em]
-&\lim_{x \to 1}\Big(\frac{x^n-1}{x-1}\Big)&& =  && n &\\[1em]
-&\lim_{x \to \infty}\Big(\frac{x^n-1}{x-1}\Big)&& =  && \infty &\\[1em]
+&\lim_{x \to 1}\Big(\frac{x^n-1}{x-1}\Big)
+                            && =  && n & \text{por L'Hopital}\\[1em]
+&\lim_{x \to \infty}\Big(\frac{x^n-1}{x-1}\Big)&& =  && \infty
+                                                &\text{por L'Hopital}\\[1em]
 &\lim_{x \to \infty}\Big(\frac{x}{1+x}\Big)^x&& =   && e^{-1} &\\[1em]
 &\lim_{x \to 0} \sen{x} &&= && 0 &\\[1em]
 &\lim_{x \to 0} \cos{x} &&= && 1 &\\[1em]
-& \lim_{x \to 0}\frac{\sen{x}}{x} && = && 1 &\\[1em]
-& \lim_{x \to 0}\frac{\sen{4x}}{x} && = && 4 &\\[1em]
-& \lim_{x \to 0}\frac{\sen{ax}}{ax} && = && 1 , \ a \neq 0 \\[1em]
+& \lim_{x \to 0}\frac{\sen{x}}{x}
+                            && = && 1 & \text{por L'Hopital}\\[1em]
+& \lim_{x \to 0}\frac{\sen{4x}}{x} && = && 4 & \text{por L'Hopital}\\[1em]
+& \lim_{x \to 0}\frac{\sen{ax}}{ax} && = && 1 , \ a \neq 0 & \
+                                                             \text{por
+                                                             L'Hopital} \\[1em]
 & \lim_{x \to a}\frac{\sen{x-a}}{x-a} && = && 1  &\\[1em]
+& \limi{x}{0}{\ln(x) &&}{ && - \infty} &\\[1em]
+& \limi{x}{\infty}{\ln(x) &&}{ && \infty} &\\[1em]
+& \limi{x}{0}{\frac{\ln(x)}{x} &&}{ && 0} &\ \text{por L'Hopital}\\[1em]
 \vspace{1cm}\\
 \hline \\
 \end{align*}
@@ -153,7 +167,7 @@ M  & \\
 %\vspace{1.5cm}
 \begin{align*}
 \hline \\
-&\lim_{x \to 0}\sen{x} &\\[0.7em]
+&\lim_{x \to \infty}\sen{x} &\\[0.7em]
 &\lim_{x \to 0}\sen{\frac{1}{x}} &\\
 \vspace{1cm}\\
 \hline \\
@@ -164,39 +178,6 @@ M  & \\
 
 \vspace{.5cm}
 
-\subsection{M\'as definiciones.}
-\begin{mydef}[Infinitesimales del mismo orden]
-Sean $f(x)$ y $g(x)$ infinitesimales, cuando $x \to a$. Luego, si la
-funci\'on:
-\[\lim_{x \to a}\frac{f(x)}{g(x)}\]
-tiene un l\'imite finito y distinto de cero, los infinitesimales
-$f(x)$ y $g(x)$ son llamados \emph{del mismo orden}.
-\end{mydef}
-\begin{mydef}[Infinitesimales el orden superior e inferior]
-Sean $f(x)$ y $g(x)$ infinitesimales, cuando $x \to a$. Luego, si la
-funci\'on:
-\[\lim_{x \to a}\frac{f(x)}{g(x)}=0\qquad\text{y}\qquad\lim_{x \to a}\frac{g(x)}{f(x)}=\infty\]
-entonces, la infinitesimal $f(x)$ se llama \emph{infinitesimal de
-  orden superior a} $g(x)$ y \'esta \'ultima se denomina
-\emph{infinitesimal de orden inferior a} $f(x)$
-\end{mydef}
-
-\begin{mydef}[Infinitesimal de orden k respecto de otra]
-Sean $f(x)$ y $g(x)$ infinitesimales, cuando $x \to a$. Luego, si la
-funci\'on:
-\[\lim_{x \to a}\frac{f(x)}{g(x)^k}=l\neq0\neq\infty\]
-entonces, la infinitesimal $f(x)$ se llama \emph{infinitesimal de
-  orden k respecto de} $g(x)$
-\end{mydef}
-
-
-\begin{mydef}[Infinitesimales equialentes]
-Sean $f(x)$ y $g(x)$ infinitesimales, cuando $x \to a$. Luego, si la
-funci\'on:
-\[\lim_{x \to a}\frac{f(x)}{g(x)}=1\]
-entonces, las infinitesimales $f(x)$ y $g(x)$ se llaman
-\emph{equivalentes}.
-\end{mydef}
 
 \section{Continuidad}
 
@@ -219,9 +200,6 @@ Y como \( \lim(a+b) = \lim a + \lim b \), tambi\'en podemos escribir:
 Lo que es igual a:
 
 \[ \lim_{x \to x_0} f(x) = f(x_0) \]
-
-
-
 \end{mydef}
 
 \section{Derivadas}
@@ -308,7 +286,7 @@ constantes y \( u \) y \( v \) funciones de \( x \) .
 
 \begin{mydef}[Punto m\'aximo]
 Sea \( f \) una funci\'on y \( A \) un conjunto contenido en su
-dominio. Un punto mi \( x \) de \( A \) se dice que es \textbf{punto
+dominio. Un punto  \( x \) de \( A \) se dice que es \textbf{punto
   m\'aximo} de \( f \) sobre \( A \)  si
 \begin{equation}
 (\forall y \in A) \quad f(x) \geq f(y)
@@ -348,6 +326,7 @@ n\'umero \( x \) tal que
 El n\'umero \( f(x) \) recibe entonces el nombre de \textbf{valor singular}.
 \end{mydef}
 
+% teorema de Rolle
 \begin{theorem}[Teorema de Rolle] Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre \( (a,b) \) , y \( f(a) = f(b) \) , entonces existe un n\'umero \( x \)  en \( (a,b) \) tal que \( f'(x)=0 \) .
 \end{theorem}
 \begin{proof}
@@ -386,7 +365,7 @@ del itnervalo, entonces \(f\) es constante en el intervalo.
 \end{corol}
 \begin{proof}
 Sean \(a\) y \(b\) dos puntos distintos del inervalo. Luego debe haber alg\'un
-\(x\) tal que 
+\(x\) tal que
 
 \[f'(x)=\frac{f(b)-f(a)}{b-a}\]
 
@@ -414,6 +393,27 @@ Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables dentrode
 
 \[ \exists c \in (a,b) \quad . \quad \frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(c)}{g'(c)} \]
 \end{theorem}
+
+
+\begin{tabular}{|c|c|}
+  \hline
+  & \\
+  Rolle &
+          Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre
+          \( (a,b) \) , y \( f(a) = f(b) \), entonces  \\[0.5em]
+        & \(\exists  x \in (a,b) \quad f'(x)=0 \) . \\[2.5em]
+
+  Valor medio &
+                Si \( f \) es cont\'inua en \( [a,b] \) y derivable en
+                \( (a,b) \) , entonces\\[0.5em]
+  & \(\exists  x \in (a,b) \quad f'(x)=\frac{f(b)-f(a)}{b-a} \) \\[2.5em]
+  Cauchy
+        & Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables
+          dentro de \([a,b]\).\\[0.5em]
+ &  Si \(g'(x)\) no adquiere el valor cero en \([a,b]\), luego:\\[0.5em]
+ & \( \exists c \in (a,b) \quad . \quad \frac{f(b)-f(a)}{g(b)-g(a)} = \frac{f'(c)}{g'(c)} \) \\[1em]
+\hline
+\end{tabular}
 \subsection{M\'aximos y m\'inimos}
 Para localizar el m\'aximo y el m\'inimo de \( f \) en \( [a,b] \)  deben considerarse
 tres clases de puntos:
@@ -456,10 +456,10 @@ Nota: la derivada segunda es la derivada de la derivada, o sea:
 \[ f''(x)= (f'(x))' \]
 
 \end{theorem}
-
 \begin{table}[!htbp]
 \caption{M\'inimos y m\'aximos}
-\begin{tabular}{ l c }
+\begin{center}
+\begin{tabular}{ l c}
 \hline & \\[0.25em]
 \(f(c)\)  es valor m\'inimo o m\'aximo &   \(f'(x) = 0 \) \\[1em]
 \( f'(x) > 0 \quad \forall x \in \mathbf{I} \) &  \(f\)  es creciente en \textbf{I}\\[1em]
@@ -475,6 +475,7 @@ en \textbf{I}\\[1em]
 \textbf{I}\\[1em]
 \hline\\
 \end{tabular}
+\end{center}
 \label{tab:minmax}
 \end{table}
 \vspace{0.5em}
@@ -484,15 +485,16 @@ en \textbf{I}\\[1em]
 \emph{Criterio de la primera derivada:}
 \end{center}
 \hrule
-\vspace{1em}
-Si \(f'(x)>0 \forall \ x \in (a,c)\) y \(f'(x)<0 \forall \ x \in
-(c,b)\) entonces \(f(c)\) es valor m\'aximo relativo \\[1em]
-Si \(f'(x)<0 \forall \ x \in (a,c)\) y \(f'(x)>0 \forall \ x \in
-(c,b)\) entonces \(f(c)\) es valor m\'inimo relativo \\[1em]
+\vspace{1cm}
+Si \(f'(x)>0 \ \forall \ x \in (a,c)\) y \(f'(x)<0 \ \forall \ x \in
+(c,b)\) \textbf{entonces} \(f(c)\) es valor m\'aximo relativo \\[1em]
+Si \(f'(x)<0 \ \forall \ x \in (a,c)\) y \(f'(x)>0 \ \forall \ x \in
+(c,b)\) \textbf{entonces} \(f(c)\) es valor m\'inimo relativo \\[1em]
 Si \(f'(x)\) tiene el mismo valor a ambos lados de \(c\) entocnes \(c\) no es
 valor extremo\\
 \vspace{0.5em}
 \end{minipage}
+\vspace{2em}
 
 \begin{minipage}{16cm}
 \begin{center}
@@ -501,10 +503,9 @@ valor extremo\\
 \hrule
 \vspace{1em}
 Sup\'ongase que \(f'\) y \(f''\) existen en todo punto de un intervalo
-abierto (a,b) que contiene a \(c\) y\\
- sup\'ongase que \(f'(c)=0\).\\[1em]
-\(f''(c) < 0\) entonces \(f(c)\) es m\'aximo relativo \\[1em]
-\(f''(c) > 0\) entonces \(f(c)\) es m\'inimo relativo \\[1em]
+abierto (a,b) que contiene a \(c\) y sup\'ongase que \(f'(c)=0\).\\[1em]
+\(f''(c) < 0\) \textbf{entonces} \(f(c)\) es m\'aximo relativo. \\[1em]
+\(f''(c) > 0\) \textbf{entonces} \(f(c)\) es m\'inimo relativo .\\[1em]
 \end{minipage}
 \section{Sucesiones}
 
@@ -592,14 +593,6 @@ contradiciendo la hip\'otesis.
 En los ejemplos siguientes \( N \) se refiere al \( N \) de la definici\'on
 de l\'imite.
 
-\begin{ejs}{La sucesi\'on \( \{ \frac{1}{n}\} \)} es convergente a
-  cero.
-
-\( M \): cualquier natural que verifique la condici\'on \( \frac{1}{N}
-< \epsilon\) o sea \( m > \frac{1}{\epsilon} \) . (propiedd arquimediana.
-
-\end{ejs}
-\hspace{1mm}
 \begin{ejs}{La sucesi\'on \( \{ x^n \} \), con \( |x|< 1 \) converge a
   cero}
 
@@ -733,7 +726,7 @@ Y se llama \emph{suma superio} de \( f \)  para \( P \) a :
 \end{mydef}
 
 \begin{theorem}
-Sean \( P_1 \) y \( P_2 \) particiones de \( [a,b] \). Entonces: 
+Sean \( P_1 \) y \( P_2 \) particiones de \( [a,b] \). Entonces:
 \[ L(f,P_1)\leq U(f,P_2) \]
 \end{theorem}
 
@@ -750,7 +743,7 @@ sobre \( [a,b] \) si
 \begin{theorem}
 Si \( f \) est\'a acotada sobre \( [a,b] \) , entonces \( f \) es
 integrable sobre \( [a,b] \) si y s\'olo si para todo \( \epsilon >0
-\) existe una partici\'on \( P \) de \( [a,b] \) tal que 
+\) existe una partici\'on \( P \) de \( [a,b] \) tal que
 
 \[U(f,P)-L(f,P) < \epsilon  \]
 \end{theorem}
@@ -760,18 +753,18 @@ Si \(f\) es cont\'inua en \([a,b]\), entonces \(f\) es integrable en \([a,b]\).
 \end{theorem}
 
 \begin{theorem}
-Sea \( f \) integrable sobre \( [a,b] \) y 
+Sea \( f \) integrable sobre \( [a,b] \) y
 \[ \forall x \in [a,b] : m \leq f(X) \leq M \]
 
-Luego 
+Luego
 \[ m(b-a) \leq \int_a^b f \leq M(b-a) \]
 \end{theorem}
 
 \begin{theorem}
 Se \( f \) es integrable sobre \( [a,b] \)  y \( F \) est\'a definida
-sobre \( [a,b] \) por 
+sobre \( [a,b] \) por
 \[ F(x) = \int_a^x f \]
-entonces \( F \) es cont\'inua sobre \( [a,b] \) 
+entonces \( F \) es cont\'inua sobre \( [a,b] \)
 
 \end{theorem}
 
@@ -812,4 +805,38 @@ entonces \( F \) es cont\'inua sobre \( [a,b] \)
 }
 \end{table}
 
+\section{Agregar:}
+\subsection{F\'ormula de Taylor}
+
+Teorema: si \(a_k\) son los coeficientes de un polinomio,
+\[
+P_n, a, f = \sum_{k=0}^n (0)^k
+\]
+
+(buscar Spivak)
+
+\[
+P_n, a, f = \sum_{k=0}^n (x - a)^k
+\]
+Donde:
+\[
+a_k = \frac{f^{(k)}(a)}{k!}
+\]
+
+\subsection{Funciones cuadr\'aticas}
+
+El eje de simetr\'ia de una funcione cuadr\'atica est\'a dado por:
+\[
+-\frac{b}{2a} 0 x_v\]
+
+El valor extremo est\'a dado por \(f(-\frac{b}{2a})\), es decir:
+\[
+\frac{4ac-b^2}{4a} = y_v \]
+
+El v\'ertice de la par\'abokla est\'a dado por el punto \( (x_v, y_v)
+\)
+
+Los ceros de la funci\'on se obtienen con la f\'ormula:
+\[
+\frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
 \end{document}
