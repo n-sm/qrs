@@ -17,3 +17,5 @@ habilita "negative woldcards" como !(*.*) ,shopt -s extglog
 get partition structure of hard drive,lsblk
 for en archivos con espacios en blanco,IFS=$\'\n\'
 sort by names length , ls | perl -e 'print sort { length() <=> length() } <>'
+encontrar video youtube,lsof | grep Flash
+copiar video youtube Flash,cp /proc/2222/fd/19 #ejemplo
