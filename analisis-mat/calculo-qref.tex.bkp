@@ -197,18 +197,7 @@ M
 
 \vspace{.5cm}
 
-\subsection{Regla de L'Hopital}
-\begin{minipage}{16cm}
-Sean \(f(x)\) y \(g(x)\) tales que son
-\begin{itemize}
-\item funciones cont\'inuas en un entorno de \(a\),
-\item con derivadas en dicho entorno,
-\item siendo \(g(x) \neq 0\) cerca de \(a\),
-\item con \[\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0,\]
-\item y existe el \[\lim_{x \to a} \frac{f'(x)}{g'(x)},\]
-\end{itemize}
-entonces: \[\lim_{x \to a} \frac{f(x)}{g(x)}= \lim_{x \to a} \frac{f'(x)}{g'(x)}\]
-\end{minipage}
+
 \section{Continuidad}
 
 \begin{mydef}[Continuidad de una funci\'on]
@@ -277,13 +266,6 @@ Corolario: \( \Big( ln(x) \Big)' = \frac{1}{x}.  \)
 \end{equation}
 \end{theorem}
 
-\begin{theorem}
-\[(y^u)'=y^u\Big(u'\ln y+\frac{uy'}{y}\Big)\]
-\end{theorem}
-
-\begin{theorem}[Teorema de la func\'on inversa]
-\[(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}\]
-\end{theorem}
 
 \begin{table}[!htbp]
 \caption{reglas de derivaci\'on.  \( x \) reprsenta un variable, \( a \) y \( k \)
@@ -302,7 +284,6 @@ constantes y \( u \) y \( v \) funciones de \( x \) .
 &  a^x  & &  a^x\ln(a)   & \\[0.75em]
 &  a^u  & &  a^u(\ln a)u'   & \\[0.75em]
 &  u^v  & &  vu^{v-1}u'+u^v(\ln u)v'   & \\[0.75em]
-&  y^v  & &  y^v(v'\ln y + \frac{vy'}{y})   & \\[0.75em]
 &  log_a(x) & &   \Big(\frac{1}{x}\Big)\log_a(e)  & \\[0.75em]
 &  log_a(u) & &   \Big(\frac{1}{u}\Big)\log_a(e)u'  & \\[0.75em]
 &  \frac{k}{x} & &  -\frac{k}{x^2}  & \\[0.75em]
@@ -312,7 +293,6 @@ constantes y \( u \) y \( v \) funciones de \( x \) .
 & \cos(x) & & -\sen(x) & \\[0.75em]
 & \tg(x) & & \frac{1}{\cos^2(x)}  & \\[0.75em]
 & \cotg(x) & & \frac{1}{\sen^2(x)}  & \\[0.75em]
-& (f^{-1})'(x) & & \frac{1}{f'(f^{-1}(x))} &\\[0.75em]
 \hline \\
 \end{align*}
 \label{tab:derReg}
@@ -634,26 +614,6 @@ y hemos supuesto la parte derecha, tenemos:
 \[ a^{1/n} < \epsilon+1 \]
 \end{proof}
 \end{ejs}
-\subsection{Criterio de Cauchy o de la ra\'iz en\'esima}
-Si \[ \lim_{n \to \infty} \sqrt[n]{a_n} = L \] entonces vale que: \\
-\[ 0 \leq L \leq 1  \quad \rightarrow \quad \lim_{n \to \infty} a_n =
-0 \]
-
-\[ L \geq 1  \quad \rightarrow \quad \lim_{n \to \infty} a_n =
-\infty \]
-
-\[ L = 1  \quad \rightarrow \quad \text{Indeterminado} \]
-
-
-\subsection{Criterio de D'Alembert o del cociente}
-Si \[ \lim_{n \to \infty} |\frac{a_{n + 1}}{a_n}| = L \] entonces vale que: \\
-\[ 0 \leq L \leq 1  \quad \rightarrow \quad \lim_{n \to \infty} a_n =
-0 \]
-
-\[ L \geq 1  \quad \rightarrow \quad \lim_{n \to \infty} a_n =
-\infty \]
-
-\[ L = 1  \quad \rightarrow \quad \text{Indeterminado} \]
 
 \subsection{Algunos l\'imites}
 

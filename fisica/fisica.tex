@@ -5,16 +5,16 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\pagenumbering{gobble}
+%\pagenumbering{gobble}
 \newtheorem{mydef}{Definici\'on}[section]
-
+\newtheorem{theorem}{Teorema}[section]
 \setlength{\parindent}{0pt}
 \begin{document}
 
-\section{Cap. 1}
+\section{Cinem\'atica}
 
 \begin{mydef}[Vector posici\'on]
-Este vector parte del or\'igen de coordenadasy llega al punto que
+Este vector parte del or\'igen de coordenadas y llega al punto que
 se quiere identificar.
 
 Sus componente son las coordenadas de dicho punto. Se escribe as\'i:
@@ -64,8 +64,8 @@ movimiento.
 \end{mydef}
 
 \subsection{Movimiento Rectilineo Uniforme}
-Es un movimiento rectil\'inea con velocidad constante. O, lo que es lo
-mismo, movimiento co naceleraci\'on nula. Queda pues caracterizado por:
+Es un movimiento rectil\'ineo con velocidad constante. O, lo que es lo
+mismo, movimiento con aceleraci\'on nula. Queda pues caracterizado por:
 
 \[
 \vec{a}(t) = 0 \]
@@ -116,4 +116,76 @@ que:
 
 Supongamos que hay ubna partícula ubicada en el punto \(P\) cuya
 posición es \(\vec{r}_{PB}\)
+
+\begin{mydef}[Sistemas de refererencia inerciales]
+Se denominan \emph{sistemas de referencia inerciales} aquellos que
+est\'an en reposo o bien se mueven con velocidad rectil\'inea y
+uiforme.
+
+El estado de reposo asoluto no existe (o no tiene sentido hablar de
+\'el)
+
+Adem\'as: 
+\begin{itemize}
+\item Las velocidades de los objetos son magnitudes relativas, cuyo
+  valor depende del sistema de referencia inercial en el que se midan
+  (medidas desde sistemas de referencai inerciales, las velocidades
+  son relativas).
+\item Dos sistemas de referencia inerciales obtendr\'an la misma
+  aceleraci\'on para un objeto externo (o sea, medidas desde sistemas
+  inerciales, las aceleraciones son absolutas, no relativas).
+\end{itemize}
+\end{mydef}
+
+\section{Din\'amica}
+\begin{mydef}[Peso]
+El peso de un objeto de masa \(m\) es la fuerza con que la Tierra lo
+atrae, y vale \[\vec{P} = m\vec{g}\]
+ La aceleraci\'on de la gravedad est\'a siempre dirigida hacia el
+ centro de la tierra.
+\end{mydef}
+\begin{mydef}[Inercia]
+La inercia es la dificultad que presenta un objeto para moerlo o para
+deternerlo.
+\end{mydef}
+\begin{mydef}[Fuerza]
+Una fuerza es cualquier acci\'on, ejercida desde el exterior de un
+cuerpo, que modifica su velocidad o estado de reposo.
+\end{mydef}
+\begin{theorem}
+[Ley de inercia o Primer Ley de Newton]
+Todo cuerpo contin\'ua en su estado de reposo o movimiento uniforme y
+en l\'inea recta, si sobre su cuerpo no act\'ua ninguna fuerza.
+
+De otro modo, esta ley puede interpretarse diciendo que:\\
+Una fuerza es cualquier acci\'on que permite alterar la velocidad de
+una part\'icula.
+\end{theorem}
+\begin{theorem}[Segunda Ley de Newton]
+Si sobre una part\'icula de masa \(m\) act\'ua una fuerza \(F\),
+\'esta le comunica una aceleraci\'on que viene dada por el cociente de
+la fuerza por la masa.
+\[\vec{a}=\frac{\vec{F}}{m}\]
+O sea \[\vec{F}=m\vec{a}\], lo quem descompuesto quivale a:
+\[F_x=ma_x,\quad  F_y=ma_y, \quad F_z=ma_z\]
+\end{theorem}
+
+\begin{mydef}[Principio de superposici\'on de fuerzas]
+Este principio afirma que el efecto de un conjunto de fuerzas es el
+mismo que ejerce la fuerza resultante.
+Por ejemplo, si tenemos dos fuerzas \(\vec{F_1}\) y \(\vec{F_2}\),
+aplicadas sobre un objeto, la aceleraci\'on resultante es la suma de
+las aceleraciones que le provocar\'ia cada fuerza por separado:
+\[\vec{a}=\frac{\vec{F_1}+\vec{F_2}}{m}=\frac{\vec{F_1}}{m}+\frac{\vec{F_2}}{m}= \vec{a_1}+\vec{a_2}\]
+\end{mydef}
+
+\begin{theorem}[Tercera Ley de Newton (principio de acci\'on y reacci\'on)]
+Las fuerzas siempre se ejercen por pares: si un cuerpo \(A\) ejerce
+una fuerza \(\vec{F}_{A \to B}\) sobre un cuerpo \(B\), entonces el
+cuerpo \(B\) ejerce una fuerza igual y contraria sobre el cuerpo
+\(A\), \(\vec{F}_{b \to A}\).
+\[\vec{F}_{B \to A} = -\vec{F}_{A \to B}\]
+
+\end{theorem}
+
 \end{document}

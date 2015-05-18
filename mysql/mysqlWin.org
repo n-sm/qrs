@@ -1,0 +1,8 @@
+* error 2003: Can't connect to MySQL server on 'localhost' (10061)
+ver:
+http://stackoverflow.com/questions/8565597/error-2003-cant-connect-to-mysql-server-on-localhost-10061
+
+Start MySql service from Control panel.
+
+Enabling MySql service in windows 7 Control Panel\All Control Panel Items\Administrative Tools Open "Services" then enable "MySql56" service
+From command prompt mysql -u root -p mysql and enter the password as admin, which is the default password.
