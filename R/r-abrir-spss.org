@@ -1,0 +1,17 @@
+ABRIR UNA ARCHIVO .sav DE SPSS
+
+* Con foeign library
+http://www.r-bloggers.com/how-to-open-an-spss-file-into-r/
+library(foreign)
+data <- read.spss("file.sav", to.data.frame=TRUE)
+
+* Con Hmisc library
+http://www.statmethods.net/input/importingdata.html
+
+IN SPSS
+get file='c:\mydata.sav'.
+export outfile='c:\mydata.por'. 
+
+IN R
+library(Hmisc)
+data <- spss.get("c:/mydata.por", use.value.labels=TRUE)

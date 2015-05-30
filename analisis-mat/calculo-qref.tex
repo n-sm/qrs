@@ -437,6 +437,9 @@ Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables dentrode
 \begin{tabular}{|c|c|}
   \hline
   & \\
+  Fermat & Sea \(f\) definida en \((a,b)\) con extremo local en \(x_0
+           \in (a,b)\)\\[0.5em]
+  & Si \(f\) es derivable en \(x_0\) entonces \(f'(x_0) = 0\)\\[2.5em]
   Rolle &
           Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre
           \( (a,b) \) , y \( f(a) = f(b) \), entonces  \\[0.5em]
@@ -445,7 +448,7 @@ Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables dentrode
   Valor medio &
                 Si \( f \) es cont\'inua en \( [a,b] \) y derivable en
                 \( (a,b) \) , entonces\\[0.5em]
-  & \(\exists  x \in (a,b) \quad f'(x)=\frac{f(b)-f(a)}{b-a} \) \\[2.5em]
+  (Lagrange) & \(\exists  x \in (a,b) \quad f'(x)=\frac{f(b)-f(a)}{b-a} \) \\[2.5em]
   Cauchy
         & Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables
           dentro de \([a,b]\).\\[0.5em]
@@ -546,6 +549,29 @@ abierto (a,b) que contiene a \(c\) y sup\'ongase que \(f'(c)=0\).\\[1em]
 \(f''(c) < 0\) \textbf{entonces} \(f(c)\) es m\'aximo relativo. \\[1em]
 \(f''(c) > 0\) \textbf{entonces} \(f(c)\) es m\'inimo relativo .\\[1em]
 \end{minipage}
+\begin{theorem}[Teorema de Bolzano]
+Sea \(f\) cont\'inua en \([a,b]\), con \(f(a) < 0\) (o \(f(a) > 0\)) y
+\(f(a) > 0 \) (o \(f(a) < 0\)). Luego
+\[\exists x \in (a,b) : f(x) = 0\]
+\end{theorem}
+\begin{theorem}[Teorema de los valores intermedios]
+Sea \(f\) cont\'inua en \([a,b]\) Luego:
+\[\forall u : f(a) < u < f(b) \quad \to \quad \exists x  f(x) = u \]
+\end{theorem}
+Como corolario tenemos que:
+\[\not \exists x f(x) = 0 \quad \to \quad  \neg (f(a) < 0 < f(b))\]
+Con lo cual, si tenemos que en un intervalo una función no se anula y
+toma alg\'un valor positivo, entonces es positiva en ese intervalo.
+
+\subsection{Construcci\'on de curvas}
+Para la construcci\'on de un gr\'afico de una funci\'on nos valdremos
+esencialmente de la siguiente informaci\'on:
+\begin{itemize}
+  \item Dominio \(f\).
+  \item Intervalos de crecimiento y decrecimiento, y extremos locales.
+  \item Intervalos de concavidad positiva y negativa, y puntos de inflexi\'on.
+  \item Existencia de as\'intotas verticales, horizontales y obl\'icuas.
+\end{itemize}
 \section{Sucesiones}
 
 \begin{mydef}{Sucesi\'on infinita}
@@ -734,9 +760,9 @@ entonces:\\
 (Cuando \(l = 1\) pueden darse los dos casos).
 \end{theorem}
 \begin{theorem}[Criterio Integral]
-Sea \(s_n\) una serie tal que 
+Sea \(s_n\) una serie tal que
 \[
-s_1 \geq s_2 \geq s_3 ... 
+s_1 \geq s_2 \geq s_3 ...
 \]
 Y sea \(f \) una funci\'on cont\'inua tal que \( f(i) = s_i \). Entonces se
 cumple:\\
@@ -872,7 +898,6 @@ entonces \( F \) es cont\'inua sobre \( [a,b] \)
 \end{flalign*}
 }
 \end{table}
-
 \section{Agregar:}
 \subsection{F\'ormula de Taylor}
 
@@ -890,6 +915,5 @@ Donde:
 \[
 a_k = \frac{f^{(k)}(a)}{k!}
 \]
-
 
 \end{document}

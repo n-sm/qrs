@@ -14,5 +14,5 @@ numeric column types,int; tinyint; mediumint; bigint; float; double/real; decima
 eliminar columnas,alter table mi_tabla drop column la_columna
 cambiar definicion de columnas,alter table mi_table change old_col_name new_name sus_attr; 
 agregar filas a tabla,insert into mi_tabla (text_col, int col, ...) values ('texto', 23, ...)
-
+update statement,update mi_tabla set col1=value, col3=value2 where col=val_ident
 

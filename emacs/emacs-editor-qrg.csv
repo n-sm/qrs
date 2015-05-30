@@ -55,3 +55,4 @@ tildes,(require 'iso-transl)
 insertar Unicode,C-x 8 <RET> CODE
 insertar tildes,C-x 8 ' a
 insertar ñ,C-x 8 ~ n		  
+change encoding system,M-x set-buffer-file-coding-system
