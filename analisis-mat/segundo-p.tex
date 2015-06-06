@@ -1,0 +1,214 @@
+\documentclass[12pt,a4paper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{varioref}
+\usepackage{currfile}
+\title{}
+\makeatother
+\usepackage{mdframed}
+\usepackage[left=1.6cm,right=1.6cm,top=1.6cm,bottom=1.6cm]{geometry}
+\newtheorem{theorem}{Teorema}[section]
+%\newmdtheoremenv{theorem}{Teorema}[section]
+\newtheorem{ejs}{Ejemplo}[section]
+\newtheorem{mydef}{Definici\'on}[section]
+\newtheorem{corol}{Corolario}[theorem]
+%\newmdtheoremenv{mydef}{Definici\'on}[section]
+
+\newcommand{\limi}[4]{
+  \lim_{#1 \to #2} #3 = #4
+}
+
+\begin{document}
+\maketitle
+\begin{center}\currfilename\end{center}
+
+\section{F\'ormula de Taylor}
+
+Teorema: si \(a_k\) son los coeficientes de un polinomio,
+\[
+P_{n, a, f} = \sum_{k=0}^n \frac{f^{(n)} (x-a)^k}{k!}
+\]
+
+\[
+\exists c \qquad R_{n,a} =  \frac{f^{(n+1)}(c)}{(n+1)!}(x-a)^{n+1}
+\]
+
+\section{Integrales}
+
+
+\begin{mydef}[Partici\'on]
+Sea \( a < b \) . Recibe el nombre de \emph{partici\'on} del itnervalo
+\( [a,b] \) toda colecci\'on finita de puntos \( [a,b] \), de los
+cuales uno es \( a \) y el otro es \( b \) .
+\end{mydef}
+
+\begin{mydef}[Suma Inferior (Superior)]
+Sea \( f \) acotada sobre \( [a,b] \) y \( P = {t_0, \dots, t_n} \)
+una partici\'on de \( [a,b] \) . Sea adem\'as
+\[ m_i= \inf\{f(x):t_{i-1} \leq x \leq t_i\} \]
+\[ M_i= \sup\{f(x):t_{i-1} \leq x \leq t_i\} \]
+Luego, se llama \emph{suma inferior} de \( f \)  para \( P \) a :
+\[ L(f,P)= \sum_{i=1}^n m_i(t_i-t_{i-1}) \]
+Y se llama \emph{suma superio} de \( f \)  para \( P \) a :
+\[ U(f,P)= \sum_{i=1}^n M_i(t_i-t_{i-1}) \]
+\end{mydef}
+
+\begin{theorem}
+Sean \( P_1 \) y \( P_2 \) particiones de \( [a,b] \). Entonces:
+\[ L(f,P_1)\leq U(f,P_2) \]
+\end{theorem}
+
+\begin{mydef}[Integrable]
+Una funci\'on \( f \) acotada sobre \( [a,b] \)  es \emph{integrable}
+sobre \( [a,b] \) si
+
+\[
+\sup\{L(f,P): P \text{ es partici\'on de } [a,b] \} =
+\inf\{U(f,P) : P \text{ es partici\'on de } [a,b] \}
+\]
+\end{mydef}
+
+\begin{theorem}
+Si \( f \) est\'a acotada sobre \( [a,b] \) , entonces \( f \) es
+integrable sobre \( [a,b] \) si y s\'olo si para todo \( \epsilon >0
+\) existe una partici\'on \( P \) de \( [a,b] \) tal que
+
+\[U(f,P)-L(f,P) < \epsilon  \]
+\end{theorem}
+
+\begin{theorem}
+Si \(f\) es cont\'inua en \([a,b]\), entonces \(f\) es integrable en \([a,b]\).
+\end{theorem}
+
+\begin{theorem}
+Sea \( f \) integrable sobre \( [a,b] \) y
+\[ \forall x \in [a,b] : m \leq f(X) \leq M \]
+
+Luego
+\[ m(b-a) \leq \int_a^b f \leq M(b-a) \]
+\end{theorem}
+
+\begin{theorem}
+Se \( f \) es integrable sobre \( [a,b] \)  y \( F \) est\'a definida
+sobre \( [a,b] \) por
+\[ F(x) = \int_a^x f \]
+entonces \( F \) es cont\'inua sobre \( [a,b] \)
+
+\end{theorem}
+
+\begin{table}[!htbp]
+\caption{Reglas de integrales}
+{\renewcommand{\arraystretch}{1.6} %<- modify value to suit your needs
+\begin{flalign*}
+\hline \\
+& \int_b^a f(x) \ dx & = & &-\int_a^b f(x) \ dx \\
+& \int_a^a f(x) \ dx & = & & 0 \\
+& \int_a^b kf(x) \ dx &  = & & k\int_a^b f(x) \ dx \\
+& \int_a^b f(x)+g(x) \ dx &  = & & \int_a^b f(x) \ dx + \int_a^b g(x)
+\ dx \\
+& \int_a^b f(x) \ dx + \int_b^c f(x) \ dx &  = & & \int_a^c f(x) \ dx
+\\
+\vspace{1cm}\\
+\hline \\
+\end{flalign*}
+}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{Tabla de integrales inmediatas}
+{\renewcommand{\arraystretch}{1.9} %<- modify value to suit your needs
+\begin{flalign*}
+\hline\\
+& \int a \ dx && ax &\\
+& \int x^n \ dx && \frac{x^{n+1}}{n+1} \qquad , n \neq -1 & \\
+& \int a^x \ dx && \frac{a^x}{\ln(a)} &\\
+& \int \frac{1}{x} \ dx \quad  = \quad \int \frac{dx}{x} && \ln(x) &\\
+& \int \frac{dx}{2\sqrt{x}}  && \sqrt{x} &\\
+& \int e^x \ dx && e^x &\\
+& \int \sen(x) \ dx && -\cos(x) &\\
+& \int \cos(x) \ dx && \sen(x) &\\
+& \int \frac{1}{1+x^2} \ dx && \arctan(x) &\\
+& \int \frac{1}{\sqrt{1+x^2}} \ dx && \arcsin(x) &\\
+\vspace{1cm}\\
+\hline \\
+\end{flalign*}
+}
+\end{table}
+
+\section{Series}
+\begin{theorem}
+Si una serie \(s_n\) converge y \(u_n\) se obtiene en base a ella
+suprimiendo un n\'umero finito de t\'erminos en ella, luego \(u_n\) converge.
+\end{theorem}
+\begin{theorem}
+Si \(s_n\) converge y suma \(s\)  y \(u_n\) se obtiene multimplicando cada t\'ermino
+de \(s\) por \(c\), luego \(u_n\) converge en y suma \(cs\).
+\end{theorem}
+\begin{theorem}
+Si las series \(s_n\) y \(u_n\) convergen y suman \(s\) y \(u\)
+respectivamente, tambi\'en lo hace la serie que resulta de sumar cada
+en\'esimo t\'ermino de una con el de la otra y su suma es \(s + u\).
+\end{theorem}
+\vspace{1em}
+
+\begin{theorem}[Condici\'on necesaria para la convergencia]
+Si una serie converge, entonce si en'esimo t\'ermino tiende a cero
+cuando \(n \to 0\).
+\end{theorem}
+\begin{corol}
+Si el en\'esimo t\'ermino de una serie \(s_n\) no tiende a cero,
+entonces \(s_n\) no converge.
+\end{corol}
+\vspace{1em}
+\begin{theorem}
+Si \(u_n \leq v_n, \forall n\) y \(v_n\) converge, luego \(u_n\) converge.
+\end{theorem}
+\begin{theorem}
+Si \(u_n \geq v_n,  \forall n\) y \(v_n\) diverge, luego \(u_n\) diverge.
+\end{theorem}
+\begin{theorem}[Criterio de D'Alembert]
+Sea \(s_1\) una serie con t\'erminos positivos. Y sea \[
+\limi{n}{\infty}{\frac{u_{n+1}}{u_n}}{l} \]
+entonces:\\
+1) La serie converge cuando \(l < 1\)\\
+2) La serie diverge cuando \(l > 1\)\\
+(Cuando \(l = 1\) pueden darse los dos casos).
+\end{theorem}
+\begin{theorem}[Criterio de Cauchy]
+Sea \(s_1\) una serie con t\'erminos positivos. Y sea \[
+\limi{n}{\infty}{\sqrt[n]{u_n}}{l}\]
+entonces:\\
+1) La serie converge cuando \(l < 1\)\\
+2) La serie diverge cuando \(l > 1\)\\
+(Cuando \(l = 1\) pueden darse los dos casos).
+\end{theorem}
+\begin{theorem}[Criterio Integral]
+Sea \(s_n\) una serie tal que
+\[
+s_1 \geq s_2 \geq s_3 ...
+\]
+Y sea \(f \) una funci\'on cont\'inua tal que \( f(i) = s_i \). Entonces se
+cumple:\\
+1) Si \( \int_1^{\infty} f(x) \ dx \) converge, tambi\'en converge \(s_n\)
+\end{theorem}
+
+\subsection{Teorema fundamental del c\'alculo}
+Sea \(f\) integrable sobre \([a,b]\), luego su integral es derivable y
+\[
+\frac{d}{dx} \int_a^x f(t) \ dt = f(x)
+\]
+
+\[
+\frac{d}{dx} \int_{a(x)}^{b(x)} \ dt = f(b(x))b'(x) - f(a(x))a'(x)
+\]
+\subsection{Regal de Barrow}
+\subsection{M\'etodo de sustituci\'on}
+\subsection{M\'etodo de integraci\'on por partes}
+\subsection{M\'etodode integraci\'on por fraccinoes simples}
+
+\end{document}

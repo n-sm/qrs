@@ -1,0 +1,2 @@
+info,http://www.r-bloggers.com/using-r-as-a-computer-algebra-system-with-ryacas/
+iniciar,require('ryacas')

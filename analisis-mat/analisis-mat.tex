@@ -64,7 +64,26 @@ finalmente:
 \log_b(M) = \frac{\log_a(M)}{\log_a(b)}
 \end{equation}
 
+\section{Funciones cuadr\'aticas}
 
+El eje de simetr\'ia de una funcione cuadr\'atica est\'a dado por:
+\[
+-\frac{b}{2a} = x_v\]
+
+El valor extremo est\'a dado por \(f(-\frac{b}{2a})\), es decir:
+\[
+\frac{4ac-b^2}{4a} = y_v \]
+
+El v\'ertice de la par\'abola est\'a dado por el punto \( (x_v, y_v)
+\)
+
+Los ceros de la funci\'on se obtienen con la f\'ormula:
+\[
+\frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
+
+Se cumple la ecuaci\'on:
+\[
+ax^2+bx+c = a(x-x_v)^2+\frac{4ac-b2}{4a} \]
 \section{L\'imites}
 
 \subsection{Definiciones}
@@ -178,7 +197,18 @@ M
 
 \vspace{.5cm}
 
-
+\subsection{Regla de L'Hopital}
+\begin{minipage}{16cm}
+Sean \(f(x)\) y \(g(x)\) tales que son
+\begin{itemize}
+\item funciones cont\'inuas en un entorno de \(a\),
+\item con derivadas en dicho entorno,
+\item siendo \(g(x) \neq 0\) cerca de \(a\),
+\item con \[\lim_{x \to a} f(x) = \lim_{x \to a} g(x) = 0,\]
+\item y existe el \[\lim_{x \to a} \frac{f'(x)}{g'(x)},\]
+\end{itemize}
+entonces: \[\lim_{x \to a} \frac{f(x)}{g(x)}= \lim_{x \to a} \frac{f'(x)}{g'(x)}\]
+\end{minipage}
 \section{Continuidad}
 
 \begin{mydef}[Continuidad de una funci\'on]
@@ -247,6 +277,13 @@ Corolario: \( \Big( ln(x) \Big)' = \frac{1}{x}.  \)
 \end{equation}
 \end{theorem}
 
+\begin{theorem}
+\[(y^u)'=y^u\Big(u'\ln y+\frac{uy'}{y}\Big)\]
+\end{theorem}
+
+\begin{theorem}[Teorema de la func\'on inversa]
+\[(f^{-1})'(x) = \frac{1}{f'(f^{-1}(x))}\]
+\end{theorem}
 
 \begin{table}[!htbp]
 \caption{reglas de derivaci\'on.  \( x \) reprsenta un variable, \( a \) y \( k \)
@@ -265,6 +302,7 @@ constantes y \( u \) y \( v \) funciones de \( x \) .
 &  a^x  & &  a^x\ln(a)   & \\[0.75em]
 &  a^u  & &  a^u(\ln a)u'   & \\[0.75em]
 &  u^v  & &  vu^{v-1}u'+u^v(\ln u)v'   & \\[0.75em]
+&  y^v  & &  y^v(v'\ln y + \frac{vy'}{y})   & \\[0.75em]
 &  log_a(x) & &   \Big(\frac{1}{x}\Big)\log_a(e)  & \\[0.75em]
 &  log_a(u) & &   \Big(\frac{1}{u}\Big)\log_a(e)u'  & \\[0.75em]
 &  \frac{k}{x} & &  -\frac{k}{x^2}  & \\[0.75em]
@@ -274,6 +312,7 @@ constantes y \( u \) y \( v \) funciones de \( x \) .
 & \cos(x) & & -\sen(x) & \\[0.75em]
 & \tg(x) & & \frac{1}{\cos^2(x)}  & \\[0.75em]
 & \cotg(x) & & \frac{1}{\sen^2(x)}  & \\[0.75em]
+& (f^{-1})'(x) & & \frac{1}{f'(f^{-1}(x))} &\\[0.75em]
 \hline \\
 \end{align*}
 \label{tab:derReg}
@@ -398,6 +437,9 @@ Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables dentrode
 \begin{tabular}{|c|c|}
   \hline
   & \\
+  Fermat & Sea \(f\) definida en \((a,b)\) con extremo local en \(x_0
+           \in (a,b)\)\\[0.5em]
+  & Si \(f\) es derivable en \(x_0\) entonces \(f'(x_0) = 0\)\\[2.5em]
   Rolle &
           Si \( f \) es cont\'inua sobre \( [a,b] \) y derivable sobre
           \( (a,b) \) , y \( f(a) = f(b) \), entonces  \\[0.5em]
@@ -406,7 +448,7 @@ Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables dentrode
   Valor medio &
                 Si \( f \) es cont\'inua en \( [a,b] \) y derivable en
                 \( (a,b) \) , entonces\\[0.5em]
-  & \(\exists  x \in (a,b) \quad f'(x)=\frac{f(b)-f(a)}{b-a} \) \\[2.5em]
+  (Lagrange) & \(\exists  x \in (a,b) \quad f'(x)=\frac{f(b)-f(a)}{b-a} \) \\[2.5em]
   Cauchy
         & Sean \(f(x)\) y \(g(x)\) funciones cont\'inuas y derivables
           dentro de \([a,b]\).\\[0.5em]
@@ -507,6 +549,29 @@ abierto (a,b) que contiene a \(c\) y sup\'ongase que \(f'(c)=0\).\\[1em]
 \(f''(c) < 0\) \textbf{entonces} \(f(c)\) es m\'aximo relativo. \\[1em]
 \(f''(c) > 0\) \textbf{entonces} \(f(c)\) es m\'inimo relativo .\\[1em]
 \end{minipage}
+\begin{theorem}[Teorema de Bolzano]
+Sea \(f\) cont\'inua en \([a,b]\), con \(f(a) < 0\) (o \(f(a) > 0\)) y
+\(f(a) > 0 \) (o \(f(a) < 0\)). Luego
+\[\exists x \in (a,b) : f(x) = 0\]
+\end{theorem}
+\begin{theorem}[Teorema de los valores intermedios]
+Sea \(f\) cont\'inua en \([a,b]\) Luego:
+\[\forall u : f(a) < u < f(b) \quad \to \quad \exists x  f(x) = u \]
+\end{theorem}
+Como corolario tenemos que:
+\[\not \exists x f(x) = 0 \quad \to \quad  \neg (f(a) < 0 < f(b))\]
+Con lo cual, si tenemos que en un intervalo una función no se anula y
+toma alg\'un valor positivo, entonces es positiva en ese intervalo.
+
+\subsection{Construcci\'on de curvas}
+Para la construcci\'on de un gr\'afico de una funci\'on nos valdremos
+esencialmente de la siguiente informaci\'on:
+\begin{itemize}
+  \item Dominio \(f\).
+  \item Intervalos de crecimiento y decrecimiento, y extremos locales.
+  \item Intervalos de concavidad positiva y negativa, y puntos de inflexi\'on.
+  \item Existencia de as\'intotas verticales, horizontales y obl\'icuas.
+\end{itemize}
 \section{Sucesiones}
 
 \begin{mydef}{Sucesi\'on infinita}
@@ -540,55 +605,6 @@ Rec\'iprocamente, si esto se cumple para toda sucesi\'on \( \{ a_n \}
 \[ \lim_{x \to c} f(x) = l \]
 \end{theorem}
 
-\begin{proof}
-Para la primer parte de la prueba designemos las hip\'otesis as\'i:
-
-\begin{align*}
-&\textbf{A1.} \qquad  \forall \epsilon > 0 \ \exists \delta > 0 \ \forall x \quad
-(0<|x-c|< \delta) \quad \to \quad (|f(x) - l| < \epsilon) & \\
-&\textbf{A2.} \qquad \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad \to \quad (a_n - l| < \epsilon) & \\
-\end{align*}
-Seg\'un como se elija \( \epsilon \) en la segunda f\'ormula, tenemos
-que \( | f(a_n) - l | < \epsilon \) (es decir, usamos \( \forall \epsilon > 0 \ \exists N \ \forall n
-\quad  (n > N) \quad \to \quad (|a_n - l| < \epsilon) \)
-que afirma el antecedente de \( \textbf{A1} \) ).
-
-Con esto hemos demostrado que
-
-\[ \lim_{n \to \infty} f( a_n )= l \]
-
-Rec\'iprocamente, designemos ahora ls hip\'otesis as\'i:
-
-\begin{align*}
-& \textbf{B1.} \qquad
- \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
-\to \quad ( |f(a_n) - l| < \epsilon) & \\
-& \textbf{B2.} \qquad
- \forall \epsilon > 0 \ \exists N \ \forall n \quad  (n > N) \quad
-\to \quad ( |a_n - c| < \epsilon) & \\
-\end{align*}
-
-Ahora supongamos -a los fines de una reducci\'onn al absurdo- que no
-se cumple \( \lim_{x \to c} f( x )= l \). Esto ser\'ia decir que:
-
-\[ \exists \epsilon > 0 \ \forall \delta > 0 \ \exists x \quad
-(0<|x-c|< \delta) \quad \wedge \quad (|f(x) - l| > \epsilon) \]
-
-As\'i, para alg\'un \( \epsilon \) se cumplir\'ia que para todo \( n
-\) (que es como decir, para todo \( 1/n \) existe un n\'umero \( x_n
-\) tal que
-
-\[ \exists \epsilon > 0 \ \forall n \exists x_n \quad
-(0<|x_n-c|< 1/n) \quad \wedge \quad (|f(x_n) - l| > \epsilon) \]
-
-(es decir, hemos sustitu\'ido \( \delta \) por \( 1/n \) y \( x \) por
-\( x_n \)).
-
-Con esto, la sucesi\'on \( \{ x_n \} \) converge hacia \( c \) (usamos
-ac\'a \( \epsilon = 1/n \) y \( N = n \), y aplicamos la defiici\'on
-). Pero \( f( \{ a_n \} \) no converger\'ia a \( l \),
-contradiciendo la hip\'otesis.
-\end{proof}
 
 En los ejemplos siguientes \( N \) se refiere al \( N \) de la definici\'on
 de l\'imite.
@@ -644,6 +660,26 @@ y hemos supuesto la parte derecha, tenemos:
 \[ a^{1/n} < \epsilon+1 \]
 \end{proof}
 \end{ejs}
+\subsection{Criterio de Cauchy o de la ra\'iz en\'esima}
+Si \[ \lim_{n \to \infty} \sqrt[n]{a_n} = L \] entonces vale que: \\
+\[ 0 \leq L \leq 1  \quad \rightarrow \quad \lim_{n \to \infty} a_n =
+0 \]
+
+\[ L \geq 1  \quad \rightarrow \quad \lim_{n \to \infty} a_n =
+\infty \]
+
+\[ L = 1  \quad \rightarrow \quad \text{Indeterminado} \]
+
+
+\subsection{Criterio de D'Alembert o del cociente}
+Si \[ \lim_{n \to \infty} |\frac{a_{n + 1}}{a_n}| = L \] entonces vale que: \\
+\[ 0 \leq L \leq 1  \quad \rightarrow \quad \lim_{n \to \infty} a_n =
+0 \]
+
+\[ L \geq 1  \quad \rightarrow \quad \lim_{n \to \infty} a_n =
+\infty \]
+
+\[ L = 1  \quad \rightarrow \quad \text{Indeterminado} \]
 
 \subsection{Algunos l\'imites}
 
@@ -676,6 +712,64 @@ y hemos supuesto la parte derecha, tenemos:
 }
 \label{tab:sucEjs}
 \end{table}
+\section{Series}
+\begin{theorem}
+Si una serie \(s_n\) converge y \(u_n\) se obtiene en base a ella
+suprimiendo un n\'umero finito de t\'erminos en ella, luego \(u_n\) converge.
+\end{theorem}
+\begin{theorem}
+Si \(s_n\) converge y suma \(s\)  y \(u_n\) se obtiene multimplicando cada t\'ermino
+de \(s\) por \(c\), luego \(u_n\) converge en y suma \(cs\).
+\end{theorem}
+\begin{theorem}
+Si las series \(s_n\) y \(u_n\) convergen y suman \(s\) y \(u\)
+respectivamente, tambi\'en lo hace la serie que resulta de sumar cada
+en\'esimo t\'ermino de una con el de la otra y su suma es \(s + u\).
+\end{theorem}
+\vspace{1em}
+
+\begin{theorem}[Condici\'on necesaria para la convergencia]
+Si una serie converge, entonce si en'esimo t\'ermino tiende a cero
+cuando \(n \to 0\).
+\end{theorem}
+\begin{corol}
+Si el en\'esimo t\'ermino de una serie \(s_n\) no tiende a cero,
+entonces \(s_n\) no converge.
+\end{corol}
+\vspace{1em}
+\begin{theorem}
+Si \(u_n \leq v_n, \forall n\) y \(v_n\) converge, luego \(u_n\) converge.
+\end{theorem}
+\begin{theorem}
+Si \(u_n \geq v_n,  \forall n\) y \(v_n\) diverge, luego \(u_n\) diverge.
+\end{theorem}
+\begin{theorem}[Criterio de D'Alembert]
+Sea \(s_1\) una serie con t\'erminos positivos. Y sea \[
+\limi{n}{\infty}{\frac{u_{n+1}}{u_n}}{l} \]
+entonces:\\
+1) La serie converge cuando \(l < 1\)\\
+2) La serie diverge cuando \(l > 1\)\\
+(Cuando \(l = 1\) pueden darse los dos casos).
+\end{theorem}
+\begin{theorem}[Criterio de Cauchy]
+Sea \(s_1\) una serie con t\'erminos positivos. Y sea \[
+\limi{n}{\infty}{\sqrt[n]{u_n}}{l}\]
+entonces:\\
+1) La serie converge cuando \(l < 1\)\\
+2) La serie diverge cuando \(l > 1\)\\
+(Cuando \(l = 1\) pueden darse los dos casos).
+\end{theorem}
+\begin{theorem}[Criterio Integral]
+Sea \(s_n\) una serie tal que
+\[
+s_1 \geq s_2 \geq s_3 ...
+\]
+Y sea \(f \) una funci\'on cont\'inua tal que \( f(i) = s_i \). Entonces se
+cumple:\\
+1) Si \( \int_1^{\infty} f(x) \ dx \) converge, tambi\'en converge \(s_n\)
+\end{theorem}
+
+
 \section{As\'intotas}
 
 \subsection{As\'intota Vertical}
@@ -804,7 +898,6 @@ entonces \( F \) es cont\'inua sobre \( [a,b] \)
 \end{flalign*}
 }
 \end{table}
-
 \section{Agregar:}
 \subsection{F\'ormula de Taylor}
 
@@ -823,20 +916,4 @@ Donde:
 a_k = \frac{f^{(k)}(a)}{k!}
 \]
 
-\subsection{Funciones cuadr\'aticas}
-
-El eje de simetr\'ia de una funcione cuadr\'atica est\'a dado por:
-\[
--\frac{b}{2a} 0 x_v\]
-
-El valor extremo est\'a dado por \(f(-\frac{b}{2a})\), es decir:
-\[
-\frac{4ac-b^2}{4a} = y_v \]
-
-El v\'ertice de la par\'abokla est\'a dado por el punto \( (x_v, y_v)
-\)
-
-Los ceros de la funci\'on se obtienen con la f\'ormula:
-\[
-\frac{-b \pm \sqrt{b^2-4ac}}{2a} \]
 \end{document}
