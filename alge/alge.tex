@@ -1,0 +1,110 @@
+\documentclass[12pt,a4paper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{varioref}
+\usepackage{currfile}
+\title{\'Algebra}
+\makeatother
+%\usepackage{mdframed}
+\usepackage[left=1.6cm,right=1.6cm,top=1.6cm,bottom=1.6cm]{geometry}
+\newtheorem{teo}{Teorema}[section]
+%\newmdtheoremenv{theorem}{Teorema}[section]
+\newtheorem{ejs}{Ejemplo}[section]
+\newtheorem{mydef}{Definici\'on}[section]
+\newtheorem{corol}{Corolario}[teo]
+%\newmdtheoremenv{mydef}{Definici\'on}[section]
+\begin{document}
+\maketitle
+\section{Matrices}
+\begin{teo}
+Sean \(A\), \(B\) y \(C\) matrices de \(m \times n\) y sea \(\alpha\)
+un escalar. Entonces:
+\begin{enumerate}
+\item \(A + \mathbf{0} = A\)
+\item \(0A = \mathbf{0}\)
+\item \(A + B = B + A\)
+\item \((A + B) + C = A + (B + C)\)
+\item \(\alpha(A+B)=\alpha A + \alpha B\)
+\item \(1A=A\)
+\end{enumerate}
+\end{teo}
+
+\begin{teo}
+Sean \(\mathbf{a}\), \(\mathbf{b}\) y \(\mathbf{c}\) n-vectores y sea
+\(\alpha\) un escalar.
+\begin{enumerate}
+\item \( \mathbf{a \cdot 0} = 0 \)
+\item \( \mathbf{a \cdot b} = \mathbf{b \cdot a}\)
+\item \( \mathbf{a \cdot} ( \mathbf{b} + \mathbf{c}) = \mathbf{a \cdot
+    b} + \mathbf{ a \cdot c}\)
+\item \((\alpha \mathbf{a}) \cdot \mathbf{b} = \alpha (\mathbf{a}
+  \cdot \mathbf{b})\)
+\end{enumerate}
+\end{teo}
+
+\begin{teo}[Ley asociativa para multiplicaci\'on de matrices]
+Sea \(A_{n \times m}, B_{m \times p} \mbox{ y }  C_{p \times q}\)
+matrices. Entonces:
+
+\[ A(BC) = (AB)C\]
+
+\end{teo}
+
+\begin{teo}[Leyes distibutivas para la multiplicaci\'on de matrices]
+Si todas las sumas y productos est\'an definidos, entonces:
+\[A(B+C)=AB+AC \]
+\[(A+B)C=AC+BC \]
+\end{teo}
+\fbox{
+\begin{minipage}{15cm}
+\vspace{.25cm}
+Operaciones elementales entre filas.
+\begin{enumerate}
+\item Multiplicar (o dividir) una fila por un n\'umero distinto de
+  cero.
+\item Sumar un m\'ultiplo de una fila a otra.
+\item Intercambiar dos filas.
+\end{enumerate}
+\vspace{.25cm}
+\end{minipage}
+}
+\vspace{.25cm}
+
+\fbox{
+\begin{minipage}{15cm}
+\vspace{.25cm}
+Notaci\'on:
+\begin{enumerate}
+\item \(M_i(c)\) indica: multiplicar la i-\'esima fila de una matriz por el n\'umero c.
+\item \(A_{i,j}(C)\) indica: multiplicar la i-\'esima fila opr c y
+  sum\'arsela a la j.
+\item \(P_{i,j}\) indoca: permutar las filas \(i\) y \(j\).
+\end{enumerate}
+\vspace{.25cm}
+\end{minipage}
+}
+
+\begin{mydef}[Forma escalonada reducida]
+Una matriz est\'a en forma escalonada reducida si se cumplen:
+\begin{enumerate}
+\item Todas las filas que consisten en \'unicamente ceros (si existen)
+  aparecen en la parte de abajo de la matriz.
+\item El primer n\'umero distino de cero (empezando por la izquierda)
+  en cualquier fila que no consista \'unicamente en ceros, es 1.
+\item Si dos filas sucesivas no consisten \'unicamente en ceros,
+  entonces el primer 1 en la fila inferior est\'a m\'as a la derecha
+  que el primer 1 de la fila superior.
+\item Cualquier columnna que contenga el primer 1 de una fila tendr\'a
+  cero en los dem\'as lugares.
+\end{enumerate}
+\end{mydef}
+
+\begin{mydef}
+\end{mydef}
+
+\end{document}

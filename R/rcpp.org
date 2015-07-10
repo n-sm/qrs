@@ -1,0 +1,16 @@
+#// fibonacci (ej) de Dirk Eddelbuettel "A Gentle Introduction to Rcpp", p.14
+fibRcppIter <- cxxfunction(signature(xs="int"),
+                           plugin="Rcpp",
+                           body='
+int n = Rcpp::as<int>(xs);
+double first = 0;
+double second = 1;
+double thirf = 0;
+for (i = 0; i < n; i++) {
+   third = first + second;
+   first = second;
+   second = third;
+}
+
+return Rcpp::wrap(first);
+')
