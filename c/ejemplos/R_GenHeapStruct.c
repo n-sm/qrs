@@ -98,63 +98,13 @@ static struct {
 #endif
     int OldCount[NUM_OLD_GENERATIONS], AllocCount, PageCount;
     PAGE_HEADER *pages;
-} R_GenHeap[NUM_NODE_CLASSES], tgh;
-
-static SEXPREC UnmarkedNodeTemplate;
-
-void impr(SEXPREC sexpr) 
-{
-
-  printf("sexpr.sxpinfo.type: %d\n", sexpr.sxpinfo.type);
-  printf("sexpr.sxpinfo.obj: %d\n", sexpr.sxpinfo.obj);
-  printf("sexpr.sxpinfo.named: %d\n", sexpr.sxpinfo.named);
-  printf("sexpr.sxpinfo.gp: %d\n", sexpr.sxpinfo.gp);
-  printf("sexpr.sxpinfo.mark: %d\n", sexpr.sxpinfo.mark);
-  printf("sexpr.sxpinfo.debug: %d\n", sexpr.sxpinfo.debug);
-  printf("sexpr.sxpinfo.trace: %d\n", sexpr.sxpinfo.trace);
-  printf("sexpr.sxpinfo.spare: %d\n", sexpr.sxpinfo.spare);
-  printf("sexpr.sxpinfo.gcgen: %d\n", sexpr.sxpinfo.gcgen);
-  printf("sexpr.sxpinfo.gccls: %d\n", sexpr.sxpinfo.gccls);
-}
-
-void imprp(SEXPREC *sexprp)
-{
-  printf("sexprp->sxpinfo.type: %d\n", sexprp->sxpinfo.type);
-  printf("sexprp->sxpinfo.obj: %d\n", sexprp->sxpinfo.obj);
-  printf("sexprp->sxpinfo.named: %d\n", sexprp->sxpinfo.named);
-  printf("sexprp->sxpinfo.gp: %d\n", sexprp->sxpinfo.gp);
-  printf("sexprp->sxpinfo.mark: %d\n", sexprp->sxpinfo.mark);
-  printf("sexprp->sxpinfo.debug: %d\n", sexprp->sxpinfo.debug);
-  printf("sexprp->sxpinfo.trace: %d\n", sexprp->sxpinfo.trace);
-  printf("sexprp->sxpinfo.spare: %d\n", sexprp->sxpinfo.spare);
-  printf("sexprp->sxpinfo.gcgen: %d\n", sexprp->sxpinfo.gcgen);
-  printf("sexprp->sxpinfo.gccls: %d\n", sexprp->sxpinfo.gccls);
-
-}
-void main () 
-{
-
-  static SEXPREC testse;
-  int tmp =  testse.sxpinfo.type;
-  SEXPREC * ptrse = &testse;
-  R_GenHeap[0].Free = &UnmarkedNodeTemplate;
-  //  impr(testse);
-
-  //impr(tgh.NewPeg);
-  printf("\n\n\n");
-  impr(R_GenHeap[0].NewPeg);
-  printf("======\n=====\n");
-  imprp(R_GenHeap[0].Free);
-=======
 } R_GenHeap[NUM_NODE_CLASSES];
 
-static SEXPREC UnmarkedNodeTemplate;
-static SEXPREC testse;
-
 
 void main () 
 {
 
-  int tmp =  testse.sxpinfo.type;
-  printf("testse.sxpinfo.type: %d\n", testse.sxpinfo.type);
+
+  //  printf("R_GenHeap[0].New.sxpinfo", 
+  printf("R_GenHeap[0]: %d\n", R_GenHeap[0].Free);
 }

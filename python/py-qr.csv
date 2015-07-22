@@ -5,6 +5,6 @@ usar funciones mathmaticas (math),import math
 comandos de os ('os.'),import os
 cambiar directorio,os.chdir("PATH")
 get current dir directorio actual,os.getcwd()
-ejecutar script,execfile("PATH")
+90ejecutar script,execfile("PATH")
 derivar,"x=symbols('x'); diff(3*x**3,x)"
 derivar ej2,"x,y=symbols('x y'); diff((x-y)**(1/y), x)"
