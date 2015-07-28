@@ -26,10 +26,10 @@ nodo* nuevo()
   return tmp;
 }
 
-void anodo(char* argch, nodo *argnod)
+void str2nodo(char* str, nodo *nod)
 {
-  argnod->next=NULL;
-  argnod->data.key.c = argch;
+  nod->next=NULL;
+  nod->data.key.c = str;
 }
 
 void printnodo(nodo* arg)
@@ -37,18 +37,36 @@ void printnodo(nodo* arg)
   printf("%s\n", arg->data.key.c);
 }
 
-
+void str2strgs(char* str, nodo *nod)
+{
+  int i;
+  char *p = str;
+  for(i=0; *p != '\0', *p != ' ' ; i++, p++)
+    ;
+  
+  printf("primer espacio o null: %d\n", i);
+}
 
 int main(int arc, char *argv[])
 {
   nodo *unnodo = nuevo();
-  printf("arc = %d\n",arc);
-
-
-  if (arc < 2) return 0;
-  //  printf("%s\n",argv[1]);
-  anodo(argv[1], unnodo);
+  nodo arr[5];
+  char *str = "Cstring";
+  int i;
+  for(i=0; i<5; i++)
+    str2nodo(str, &arr[i]);
+  str = "otraCString";
+  str2nodo(str, unnodo);
   printnodo(unnodo);
+  for(i=0; i<5;i++)
+    printnodo(&arr[i]);
+  char str2[11] = "otra string";
+  for(i=0; str2[i] != '\0'; i++)
+    printf("char: %c, i:%d",str2[i], i);
+  printf("str2[0]: %c", str2[0]);
+  printf("\n");
   free(unnodo);
+
+
   return 0;
 }
