@@ -6,7 +6,38 @@ f <- cxxfunction(signature(x="numeric"),
                  body=src,
                  plugin="Rcpp")
 
+g <- cxxfunction(signature(x="numeric"),
+                 body='
+std::cout << "asd";
+Rcpp::NumericVector xa(x);
+return xa;',
+                 plugin="Rcpp")
 
+h <- cxxfunction(signature(),
+                 body='std::cout << "Hello World!!" << std::endl;',
+                 plugin="Rcpp")
+
+
+
+h2 <- cfunction(signature(),
+                 body='printf("HW");')
+
+
+
+h3 <- cfunction(signature(),
+                "
+SEXP ret = PROTECT(allocVector(REALSXP, 1));
+REAL(ret)[0] = 2;
+UNPROTECT(1);
+return ret;")
+
+add <- cfunction(c(a = "integer", b = "integer"), "
+  SEXP result = PROTECT(allocVector(REALSXP, 1));
+  REAL(result)[0] = asReal(a) + asReal(b);
+  UNPROTECT(1);
+
+  return result;
+")
 #====
 
 src <- '
