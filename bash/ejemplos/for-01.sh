@@ -1,4 +1,7 @@
 #!/bin/bash
+# IFS='\n' es para que no tome los espacios en blanco de los nombres
+# como separadores de lineas.
+
 IFS=$'\n'
 for f in `ls *3` 
 do 

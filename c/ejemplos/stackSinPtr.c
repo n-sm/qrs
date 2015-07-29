@@ -1,8 +1,8 @@
 /* Una pila en C */
 #include <stdio.h>
 
-#define VACIA (top == pila[0] ? 1 : 0)
-#define LLENA (top == pila[25] ? 1 : 0)
+#define VACIA (top == 0 ? 1 : 0)
+#define LLENA (top == 25 ? 1 : 0)
 
 unsigned char pila[25];
 unsigned int top = 0;
@@ -23,12 +23,14 @@ char pop()
 
 int main()
 {
-
+ 
   printf("vacia? %d\n", VACIA);
   printf("push('a');\n");
   push('a');
+ 
   printf("vacia? %d\n", VACIA);
   printf("pop(): %c\n", pop());
+  /*
   printf("pop(): %c\n", pop());
   int i;
   for (i=0; i < 25; i++) {
@@ -38,6 +40,6 @@ int main()
   for (i=0; i < 25; i++)
       printf("pop(): %c\n", pop());
 
-             
+  */             
 
 }
