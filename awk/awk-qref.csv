@@ -1,0 +1,5 @@
+DESCRIPCION    ,PROGRAMA
+awk path:,/usr/bin/awk
+Hello World,awk 'BEGIN { print "Hello world!" }'
+cat en awk,awk ' { print }'
+cat en awk file input,awk ' { print }' < file
