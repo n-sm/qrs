@@ -1,3 +1,4 @@
+## funciona en linux
 src <- '
 Rcpp::NumericVector xa(x);
 return xa;'
@@ -5,6 +6,7 @@ return xa;'
 f <- cxxfunction(signature(x="numeric"),
                  body=src,
                  plugin="Rcpp")
+
 
 
 #====
@@ -22,6 +24,4 @@ return xab;
 '
 fun <- cxxfunction(signature(a = "numeric", b = "numeric"),src, plugin = "Rcpp")
 
-R> fun(1:3, 1:4)
-[1] 1 4 10 16 17 12
-With one assignment to the R
+fun(1:3, 1:4)
