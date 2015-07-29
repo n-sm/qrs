@@ -1,15 +1,17 @@
+# ayuda para agregar mirror de CRAN a /etc/apt/sources.list
+
 * links:
 http://stackoverflow.com/questions/10255082/installing-r-from-cran-ubuntu-repository-no-public-key-error
 http://cran.r-project.org/bin/linux/ubuntu/#secure-apt
 
 * 1:
 http://cran.r-project.org/bin/linux/ubuntu/README.html
-agregar mirrir a:
+agregar mirror a:
 /etc/apt/sources.list
 en mi caso use:
 http://mirror.fcaglp.unlp.edu.ar/CRAN/
 
 * 2:
 http://cran.r-project.org/bin/linux/ubuntu/#secure-apt
-Desp'es:
+Después:
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
