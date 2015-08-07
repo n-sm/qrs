@@ -22,3 +22,13 @@ echo {a..k}
 echo
 echo Ej siete: 'echo 1{{a..k},}'
 echo echo 1{{a..k},}
+echo
+echo Ej ocho: '{0..9}{a..f}'
+echo {0..9}{a..f}
+echo
+echo Ej nueve: 'echo {{0..9},{a..f}}'
+echo {{0..9},{a..f}}
+echo
+echo Ej diez '{{0..9},{a..f}}{{0..9},{a..f}}'
+echo {{0..9},{a..f}}{{0..9},{a..f}}
+
