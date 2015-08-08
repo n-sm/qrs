@@ -5,3 +5,5 @@
 *.blg
 *.log
 a.out
+.*
+!.gitignore

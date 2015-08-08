@@ -10,7 +10,8 @@ agregar mirror a:
 /etc/apt/sources.list
 en mi caso use:
 http://mirror.fcaglp.unlp.edu.ar/CRAN/
-
+Enotones queda:
+deb http://mirror.fcaglp.unlp.edu.ar/CRAN/bin/linux/ubuntu trusty/
 * 2:
 http://cran.r-project.org/bin/linux/ubuntu/#secure-apt
 Después:
