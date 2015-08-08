@@ -5,3 +5,4 @@ comillas,awk 'BEGIN { print "Here is a single quote <'"'"'>" }'
 cat en awk,awk ' { print }'
 cat en awk file input,awk ' { print }' < file
 grep pattern en awk,awk '/pattern/ { print $0 }' mail-list
+sum pipe input,awk ' { s+=$1 } END { print s } '
