@@ -1,7 +1,6 @@
            accion               ,   comando                 ,alguna opcion
            ------,   -------,-------------
 iformacion sobre discos,df -h
-grep recursivo,grep -R "string" /
 list files by size,ls -lhS
 list proceses,ps -e
 list only directories,ls -d */
