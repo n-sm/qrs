@@ -1,0 +1,20 @@
+* create a bootable USB with ubuntu from mac os
+http://computers.tutsplus.com/tutorials/how-to-create-a-bootable-ubuntu-usb-drive-for-pc-on-a-mac--cms-21187
+lo mismo dice aca:
+http://www.ubuntu.com/download/desktop/create-a-usb-stick-on-mac-osx
+
+** 1. Download ubuntu
+** 2. Convert .iso to .img
+This is done by hdiutil
+hdiutil convert -format UDRW -o ~/path/to/target.img ~/path/to/ubuntu.iso
+** 3. Determine the Device Node for the USB drive (?)
+** 4. Create a bootable USB drive
+this is done with de dd command (be carefull)
+s
+sudo dd if=/path/to/ubuntu-14.04-desktop-i386.dmg of=/dev/rdiskN bs=1m
+
+nota: en lugar de rdiskN hay q poner el identificador que surja de diskutil (ver paso 3)
+
+** 5. prepare to remobe USB
+
+* http://askubuntu.com/questions/372607/how-to-create-a-bootable-ubuntu-usb-flash-drive-from-terminal

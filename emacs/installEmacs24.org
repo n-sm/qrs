@@ -1,0 +1,4 @@
+http://askubuntu.com/questions/297170/how-to-install-emacs-24-3-on-ubuntu
+sudo add-apt-repository ppa:ubuntu-elisp/ppa
+sudo apt-get update
+sudo apt-get install emacs-snapshot emacs-snapshot-el

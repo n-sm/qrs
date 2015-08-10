@@ -9,6 +9,7 @@
 
 typedef unsigned int nat;
 nat nats[NAT_MAX];
+
 typedef struct nodo nodo;
 
 struct nodo {

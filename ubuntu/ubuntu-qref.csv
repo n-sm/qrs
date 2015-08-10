@@ -1,0 +1,5 @@
+check version,lsb_release -a
+
+check version,lsb_release -a
+boot in text mode,vim -M /etc/defaul/grub ## to get help
+sacar "System program problem detected",rm /var/crash/*
