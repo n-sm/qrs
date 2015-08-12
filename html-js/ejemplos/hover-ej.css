@@ -1,0 +1,8 @@
+body {
+    font-family:  "Lucida Sans Unicode", Helvetica, Aria, sans-serif;
+    font-size: 18px;
+}
+
+p:hover {
+    font-style: italic;
+}

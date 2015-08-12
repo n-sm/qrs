@@ -20,3 +20,5 @@ sort by names length , ls | perl -e 'print sort { length() <=> length() } <>'
 encontrar video youtube,lsof | grep Flash
 copiar video youtube Flash,cp /proc/2222/fd/19 #ejemplo
 rsync push current dir,rsync -avz .  /dir/subdir1/subdirN/dest
+separate by comma 1(awk),awk -F'COMMA' 
+separate by comma 2(cut),cut -d'COMMA'
