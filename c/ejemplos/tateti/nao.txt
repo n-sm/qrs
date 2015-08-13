@@ -1,0 +1,49 @@
+
+                    _______
+                    | | | |
+                    | | | |
+                    | | | |
+                    -------
+
+3 3
+                    _______
+                    | | | |
+                    | | | |
+                    | | |x|
+                    -------
+
+                    _______
+                    | | | |
+                    | |o| |
+                    | | |x|
+                    -------
+
+2 1
+                    _______
+                    | | | |
+                    |x|o| |
+                    | | |x|
+                    -------
+
+                    _______
+                    | | |o|
+                    |x|o| |
+                    | | |x|
+                    -------
+
+         Ingrese numero de FILA 1, 2 o 3 (q para salir):  3 1
+         Ingrese numero de COLUMNA 1 2 o 3:  
+                    _______
+                    |o| |o|
+                    |x|o| |
+                    |x| |x|
+                    -------
+
+         Ingrese numero de FILA 1, 2 o 3 (q para salir):  3 2
+         Ingrese numero de COLUMNA 1 2 o 3:  
+                    _______
+                    |o| |o|
+                    |x|o| |
+                    |x|x|x|
+                    -------
+

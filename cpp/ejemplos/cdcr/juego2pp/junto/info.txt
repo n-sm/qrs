@@ -1,0 +1,25 @@
+Cosos.h
+Cosos.cpp
+Tablero.h
+Tablero.cpp
+Main.cpp 
+
+
+int main()
+
+{
+
+   Tablero *elTablero = new Tablero(); 
+
+   elTablero.mostrar_cosos();
+
+    while(elTablero.revisar_tablero()){
+
+        elTablero.hacer_jugada();
+
+    }
+
+    cout << endl;
+    return 0;
+
+}

@@ -1,0 +1,19 @@
+Number of bits in a char object (byte),8, or greater*,CHAR_BIT
+min signed char,-127, (-2^7+1) or less*,SCHAR_MIN
+max signed char,127, (2^7-1) or greater*,SCHAR_MAX
+max unsigned char,255, (2^8-1) or greater*,UCHAR_MAX
+min char,,either SCHAR_MIN or 0,CHAR_MIN
+max char,,either SCHAR_MAX or UCHAR_MAX,CHAR_MAX
+max number of bytes in a multibyte character, ,for any locale 1 or greater*,MB_LEN_MAX
+min short int,-32767, (-2^15+1) or less*,SHRT_MIN
+max short int,32767, (2^15-1) or greater*,SHRT_MAX
+max unsigned short int,65535, (2^16-1) or greater*,USHRT_MAX
+min int,-32767, (-2^15+1) or less*,INT_MIN
+max int,32767, (2^15-1) or greater*,INT_MAX
+max unsigned int,65535, (2^16-1) or greater*,UINT_MAX
+min long int,-2147483647, (-2^31+1) or less*,LONG_MIN
+max long int,2147483647, (2^31-1) or greater*,LONG_MAX
+max unsigned long int,4294967295, (2^32-1) or greater*,ULONG_MAX
+min long long int,-9223372036854775807, (-2^63+1) or less*,LLONG_MIN
+max long long int,9223372036854775807, (2^63-1) or greater*,LLONG_MAX
+max unsigned long long int,18446744073709551615, (2^64-1) or greater*,ULLONG_MAX

@@ -1,0 +1,3 @@
+/usr/include/GNUstep/Foundation
+/usr/include/GNUstep/Foundation/Foundation.h
+/usr/include/GNUstep/Foundation/FoundationErrors.h
