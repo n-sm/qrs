@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Convert sea level pressure to station pressure.</title>
+   </head>
+  <body>
+
+    
+    <style>
+      p {
+      font-family: sans-serif;
+      }
+    </style>
+
+     <p>Convert sea level pressure to station pressure
+	(true pressure)</p>
+     <p>
+
+    This application converts sea level pressure to
+    station pressure.<br />
+    Station pressure is the actual pressure at an
+    observer's observing site.<br />
+    It is always less than or equal to sea level pressure
+    (unless you are below<br />
+    sea level).
+     </p>
+    
+    <form>
+      Fill in elevation and sea-level pressure:
+      <input type="text" name="elevation" value="0" size="8"
+	     maxlength="7" /> (m)
+      <input type="text" name="sea_level_pressure"
+	     value="1013.25" size="8" maxlength="7" /> (mbar) <br />
+      <input type="button" name="Calculate"
+	     value="Click here to get station pressure: "
+	     onclick=
+	     "result.value=
+	      parseFloat(sea_level_pressure.value)-
+	      parseFloat(elevation.value)/9.2; " />
+      <input type="text" name="result" value="1013.25"
+	     size="8" maxlength="7" /> (mbar)<br />
+      <input
+	 type="reset"
+	 value="Reset
+		all fields."
+	 />
+    </form>
+  </body>
+</html>
