@@ -1,0 +1,28 @@
+/* Lo que sigue puede incluirse entre <style> </style> tagas 
+en el body de un archivo html para mandarlo al eReader*/
+
+body {
+    font-family: sans-serif, arial;
+    font-size: 16px;
+    margin: .2em .2em .2em .2em;
+}
+
+p {
+    text-align: justify;
+    text-justify:inter-word;
+}
+table, tr {
+     border: 1px solid black;
+} 
+
+table {
+   border-collapse: collapse;
+   margin: 1em 1em 1em 1em ;
+   width:60%;
+}
+th,td, table {
+    padding: 0.35em;
+}
+a, u { 
+    text-decoration: none;
+}

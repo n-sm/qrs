@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>onclick event example</title>
+    <script>
+      function initElement() {
+      var p = document.getElementById("foo");
+      // NOTE: showAlert(); or showAlert(param); will NOT work here.
+      // Must be a reference to a function name, not a function call.
+      p.onclick =  showAlert;
+              };
+
+      function showAlert() {
+      /*alert("onclick Event detected!")*/
+      document.write('escruibo un text ademas');
+      }
+    </script>
+    <style>
+      #foo {
+      border: solid blue 2px;
+      }
+    </style>
+  </head>
+  <body onload="initElement()";>
+    <span id="foo">My Event Element</span>
+    
+    <p>click on the above element.</p>
+    <p>
+      The @distinctUnionOfArrays operator returns an array containing the distinct objects in the property specified by the key path to the right of the operator.
+The following code example will return the distinct values of the payee property in all the arrays witharrayOfTransactionsArrays:
+NSArray *payees = [arrayOfTransactionsArrays valueForKeyPath:@"@distinctUnionOfArrays.payee"];
+The resulting payees array contains the following values: Hobby Shop, Mortgage, Animal Hospital, Second Mortgage, Car Loan, General Cable - Cottage, General Cable, Green Power.
+The @unionOfArrays operator is similar, but does not remove duplicate objects.
+Important: This operator raises an exception if any of the leaf objects is nil.
+@unionOfArrays
+The @unionOfArrays operator returns an array containing the objects in the property specified by the key path to the right of the operator. Unlike @distinctUnionOfArrays, duplicate objects are not removed.
+The following code example will return the values of the payee property in all the arrays witharrayOfTransactionsArrays:
+NSArray *payees = [arrayOfTransactionsArrays valueForKeyPath:@"@unionOfArrays.payee"];
+The resulting payees array contains the following values: Green Power, Green Power, Green Power, Car Loan, Car Loan, Car Loan, General Cable, General Cable, General Cable, Mortgage, Mortgage, Mortgage, Animal Hospital, General Cable - Cottage, General Cable - Cottage, General Cable - Cottage, Second Mortgage, Second Mortgage, Second Mortgage, Hobby Shop.
+Important: This operator raises an exception if any of the leaf objects is nil.
+@distinctUnionOfSets
+The @distinctUnionOfSets operator returns a set containing the distinct objects in the property specified by the key path to the right of the operator.
+This operator works the same as @distinctUnionOfArrays, except that it expects an NSSet instance containing NSSetinstances of Transaction objects rather than arrays. It returns an NSSet instance. Using the example data set, the returned set would contain the results as those shown in @distinctUnionOfArrays.
+Important: This operator raises an exception if any of the leaf objects is nil.
+Accessor Search Implementation Details
+Key-value coding attempts to use accessor methods to get and set values, before resorting to directly accessing the instance variable. This article describes how the key-value coding methods determine how the value is accessed.
+Accessor Search Patterns for Simple Attributes
+Default Search Pattern for setValue:forKey:
+When the default implementation of setValue:forKey: is invoked for a property the following search pattern is used:
+1.	The receiver’s class is searched for an accessor method whose name matches the pattern set<Key>:.
+2.	If no accessor is found, and the receiver’s class method accessInstanceVariablesDirectly returns YES, the receiver is searched for an instance variable whose name matches the pattern _<key>, _is<Key>, <key>, or is<Key>, in that order.
+3.	If a matching accessor or instance variable is located, it is used to set the value. If necessary, the value is extracted from the object as described in Representing Non-Object Values.
+4.	If no appropriate accessor or instance variable is found, setValue:forUndefinedKey: is invoked for the receiver.
+Default Search Pattern for valueForKey:
+When the default implementation of valueForKey: is invoked on a receiver, the following search pattern is used:
+1.	Searches the class of the receiver for an accessor method whose name matches the pattern get<Key>, <key>, oris<Key>, in that order. If such a method is found it is invoked. If the type of the method's result is an object pointer type the result is simply returned. If the type of the result is one of the scalar types supported by NSNumber conversion is done and an NSNumber is returned. Otherwise, conversion is done and an NSValue is returned. Results of arbitrary types are converted to NSValue objects, not just NSPoint, NSRange, NSRect, and NSSize types).
+2.	Otherwise (no simple accessor method is found), searches the class of the receiver for methods whose names match the patterns countOf<Key> and objectIn<Key>AtIndex: (corresponding to the primitive methods defined by theNSArray class) and <key>AtIndexes: (corresponding to the NSArray method objectsAtIndexes:).
+If the countOf<Key> method and at least one of the other two possible methods are found, a collection proxy object that responds to all NSArray methods is returned. Each NSArray message sent to the collection proxy object will result in some combination of countOf<Key>, objectIn<Key>AtIndex:, and <key>AtIndexes: messages being sent to the original receiver of valueForKey:. If the class of the receiver also implements an optional method whose name matches the pattern get<Key>:range: that method will be used when appropriate for best performance.
+3.	Otherwise (no simple accessor method or set of array access methods is found), searches the class of the receiver for a threesome of methods whose names match the patterns countOf<Key>, enumeratorOf<Key>, and memberOf<Key>:(corresponding to the primitive methods defined by the NSSet class).
+If all three methods are found, a collection proxy object that responds to all NSSet methods is returned. Each NSSetmessage sent to the collection proxy object will result in some combination of countOf<Key>, enumeratorOf<Key>, and memberOf<Key>: messages being sent to the original receiver of valueForKey:.
+4.	Otherwise (no simple accessor method or set of collection access methods is found), if the receiver's class methodaccessInstanceVariablesDirectly returns YES, the class of the receiver is searched for an instance variable whose name matches the pattern _<key>, _is<Key>, <key>, or is<Key>, in that order. If such an instance variable is found, the value of the instance variable in the receiver is returned. If the type of the result is one of the scalar types supported by NSNumber conversion is done and an NSNumber is returned. Otherwise, conversion is done and anNSValue is returned. Results of arbitrary types are converted to NSValue objects, not just NSPoint, NSRange, NSRect, and NSSize types.
+5.	If none of the above situations occurs, returns a result the default implementation invokes valueForUndefinedKey:.
+Accessor Search Pattern for Ordered Collections
+The default search pattern for mutableArrayValueForKey: is as follows:
+1.	The receiver's class is searched for a pair of methods whose names match the patternsinsertObject:in<Key>AtIndex: and removeObjectFrom<Key>AtIndex: (corresponding to the NSMutableArrayprimitive methods insertObject:atIndex: and removeObjectAtIndex: respectively), or methods matching the pattern insert<Key>:atIndexes: and remove<Key>AtIndexes: (corresponding to theNSMutableArrayinsertObjects:atIndexes: and removeObjectsAtIndexes: methods).
+If at least one insertion method and at least one removal method are found each NSMutableArray message sent to the collection proxy object will result in some combination of insertObject:in<Key>AtIndex:,removeObjectFrom<Key>AtIndex:, insert<Key>:atIndexes:, and remove<Key>AtIndexes: messages being sent to the original receiver of mutableArrayValueForKey:.
+If receiver's class also implements the optional replace object method matching the patternreplaceObjectIn<Key>AtIndex:withObject: or replace<Key>AtIndexes:with<Key>: that method will be used when appropriate for best performance.
+2.	Otherwise, the receiver's class is searched for an accessor method whose name matches the pattern set<Key>:. If such a method is found each NSMutableArray message sent to the collection proxy object will result in a set<Key>:message being sent to the original receiver of mutableArrayValueForKey:. It is much more efficient to implement the indexed accessor methods discussed in the previous step.
+3.	Otherwise, if the receiver's class responds YES to accessInstanceVariablesDirectly, the receiver's class is searched for an instance variable whose name matches the pattern _<key> or <key>, in that order.
+If such an instance variable is found, each NSMutableArray message sent to the collection proxy object will be forwarded to the instance variable's value, which typically will be an instance of NSMutableArray or a subclass ofNSMutableArray.
+4.	Otherwise, returns a mutable collection proxy object that results in a setValue:forUndefinedKey: message being sent to the original receiver of the mutableArrayValueForKey: message whenever the proxy receives anNSMutableArray message.
+The default implementation of setValue:forUndefinedKey: raises an NSUndefinedKeyException, but you can override it in your application.
+Note: The repetitive set<Key>: messages implied by the description in step 2 are a potential performance problem. For better performance, implement methods that fulfill the requirements for Step 1 in your key-value coding-compliant class.
+Accessor Search Pattern for Uniquing Ordered Collections
+The default implementation of mutableOrderedSetValueForKey: recognizes the same simple accessor methods and ordered set accessor methods as valueForKey (see Default Search Pattern for valueForKey:), and follows the same direct instance variable access policies, but always returns a mutable collection proxy object instead of the immutable collection that valueForKey: would return. It also:
+1.	Searches the class of the receiver for methods whose names match the patterns insertObject:in<Key>AtIndex:and removeObjectFrom<Key>AtIndex: (corresponding to the two most primitive methods defined by theNSMutableOrderedSet class), and also insert<Key>:atIndexes: and remove<Key>AtIndexes: (corresponding toinsertObjects:atIndexes:] and removeObjectsAtIndexes:).
+If at least one insertion method and at least one removal method are found each NSMutableOrderedSet message sent to the collection proxy object will result in some combination of insertObject:in<Key>AtIndex:,removeObjectFrom<Key>AtIndex:, insert<Key>:atIndexes:, and remove<Key>AtIndexes: messages being sent to the original receiver of mutableOrderedSetValueForKey:.
+If the class of the receiver also implements an optional method whose name matches the patternreplaceObjectIn<Key>AtIndex:withObject: or replace<Key>AtIndexes:with<Key>: that method will be used when appropriate for best performance.
+2.	Otherwise, searches the class of the receiver for an accessor method whose name matches the pattern set<Key>:. If such a method is found each NSMutableOrderedSet message sent to the collection proxy object will result in aset<Key>: message being sent to the original receiver of mutableOrderedSetValueForKey:.
+3.	Otherwise, if the receiver’s class’s accessInstanceVariablesDirectly method returns YES, searches the class of the receiver for an instance variable whose name matches the pattern _<key> or <key>, in that order. If such an instance variable is found, each NSMutableOrderedSet message sent to the collection proxy object will be forwarded to the instance variable’s value, which therefore must typically be an instance of NSMutableOrderedSet or of a subclass of NSMutableOrderedSet.
+4.	Otherwise, returns a mutable collection proxy object anyway. Each NSMutableOrderedSet message sent to the collection proxy object will result in a setValue:forUndefinedKey: message being sent to the original receiver ofmutableOrderedSetValueForKey:. The default implementation of setValue:forUndefinedKey: raises anNSUndefinedKeyException, but you can override it in your application.
+Note: The repetitive set<Key>: messages implied by Step 2's description are a potential performance problem. For better performance, implement insertion and removal methods that fulfill the requirements for Step 1 in your KVC-compliant class. For best performance implement a replacement method as well.
+Accessor Search Pattern for Unordered Collections
+The default search pattern for mutableSetValueForKey: is as follows:
+1.	Searches the receiver's class for methods whose names match the patterns add<Key>Object: andremove<Key>Object: (corresponding to the NSMutableSet primitive methods addObject: and removeObject:respectively) and also add<Key>: and remove<Key>: (corresponding to NSMutableSet methods unionSet: andminusSet:). If at least one addition method and at least one removal method are found each NSMutableSet message sent to the collection proxy object will result in some combination of add<Key>Object:, remove<Key>Object:,add<Key>:, and remove<Key>: messages being sent to the original receiver of mutableSetValueForKey:.
+If the class of the receiver also implements an optional method whose name matches the pattern intersect<Key>: orset<Key>:, that method will be used when appropriate for best performance.
+2.	If the receiver is a managed object, the search pattern does not continue as it would for non-managed objects. SeeManaged Object Accessor Methods in Core Data Programming Guide for more information.
+3.	Otherwise, the receiver's class is searched for an accessor method whose name matches the pattern set<Key>:. If such a method is found, each NSMutableSet message sent to the collection proxy object will result in a set<Key>:message being sent to the original receiver of mutableSetValueForKey:.
+4.	Otherwise, if the receiver's class method accessInstanceVariablesDirectly returns YES, the class is searched for an instance variable whose name matches the pattern _<key> or <key>, in that order. If such an instance variable is found, each NSMutableSet message sent to the collection proxy object will be forwarded to the instance variable's value, which therefore must typically be an instance of NSMutableSet or a subclass of NSMutableSet.
+5.	Otherwise, returns a mutable collection proxy object anyway. Each NSMutableSet message sent to the collection proxy object will result in a setValue:forUndefinedKey: message being sent to the original receiver ofmutableSetValueForKey:.
+Note: The repetitive set<Key>: messages implied by the description in step 3 are a potential performance problem. For better performance implement methods that fulfill the requirements for Step 1 in your key-value coding-compliant class.
+Describing Property Relationships
+Class descriptions provide a method of describing the to-one and to-many properties in a class. Defining these relationships between class properties allows for more intelligent and flexible manipulation of these properties with key-value coding.
+Class Descriptions
+NSClassDescription is a base class that provides the interface for obtaining meta-data about classes. A class description object records the available attributes of objects of a particular class and the relationships (one-to-one, one-to-many, and inverse) between objects of that class and other objects. For example the attributes method returns the list of all attributes defined for a class; the methods toManyRelationshipKeys and toOneRelationshipKeys return arrays of keys that define to-many and to-one relationships; and inverseRelationshipKey: returns the name of the relationship pointing back to the receiver from the destination of the relationship for the provided key.
+NSClassDescription does not define methods for defining the relationships. Concrete subclasses must define these methods. Once created, you register a class description with the NSClassDescriptionregisterClassDescription:forClass: class method.
+NSScriptClassDescription is the only concrete subclass of NSClassDescription provided in Cocoa. It encapsulates an application’s scripting information.
+Performance Considerations
+Though key-value coding is efficient, it adds a level of indirection that is slightly slower than direct method invocations. You should use key-value coding only when you can benefit from the flexibility that it provides.
+Additional optimization opportunities may be added in the future, but these will not change basic methods for key-value coding compliance.
+Overriding Key-Value Coding Methods
+The default implementations of the key-value coding methods, such as valueForKey:, cache Objective-C runtime information to increase efficiency. You should take care when overriding these implementations to ensure that you do not adversely affect application performance.
+Optimizing To-Many Relationships
+To-many relationships that are implemented using the indexed form of the accessors will provide significant performance gains in many cases.
+It’s recommended that you implement at least the minimum indexed accessors for your to-many collections. See Collection Accessor Patterns for To-Many Properties for further information.
+</p>
+  </body>
+</html>

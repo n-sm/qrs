@@ -1,4 +1,4 @@
-                DESCRIPCIÓN                           ,|     COMANDO    
+              DESCRIPCION                     ,|     COMANDO    
 setear nombre de usuario,git config --global user.name "El nombre"
 setear mail,git config --global user.email user@mail.com
 setear editor de texto,git config --global core.editor emacs
@@ -18,7 +18,8 @@ traer información,git fetch [shortname]
 enviar información,git push origin master
 crear rama (branch),git branch nombre
 cambiarse a una rama (branch),git checkout nombre
-
 remove local branch,git branch -d the_local_branch
 agregar submodulo,git submodule add URL
 retroceder a un commit previo,git reset hard # agregar el commit al cual volver
+undo remove file rm,git checkout -- FILE
+
