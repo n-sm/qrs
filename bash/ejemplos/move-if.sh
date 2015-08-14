@@ -1,7 +1,7 @@
 #! /bin/bash
 #
-# Aplica mv los archivos del presente directorio si tienen un tamaño menor al
-# especificado en el parámetro provisto por el usuario.
+# Aplica mv los archivos del presente directorio si tienen un tama~no menor al
+# especificado en el para'metro provisto por el usuario.
 
 tamano="$1"
 filePath="$2"
