@@ -1,0 +1,6 @@
+ACCION,COMANDO
+insert string in line,sed 'LINEs/^/STR/' FILE
+insert string in line and column,sed -r 'LINEs/^.{COL}/STR/' FILE
+insert string in last column of line,sed -r 'LINE/.$/STR/' FILE
+Edit file in place,sed -i 'COMANDO' FILE
+replace string,sed 's/PATTERfrom/PATTERNto/g'

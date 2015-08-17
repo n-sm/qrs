@@ -1,0 +1,21 @@
+Using "while read..." in a linux script - Ask Ubuntu
+uno
+dos
+askubuntu.com/questions/604626/using-while-read-in-a-linux-script
+Could somebody please explain how the following code works? echo '1 2 3 4 5 6' | while read a b c do echo $c $b $a done`. Specifically, I'd like to know why the ...
+tres
+How to read a file line by line - CCM.net uno
+
+ccm.netuno/faq/1757-how-to-read-a-file-line-by-line
+... help of examples and tips along with a guided tour of initiating a loop. The article discusses the errors committed while reading a file line by line on the Linux...
+‎Example - ‎Tips - ‎Initiate a Loop - ‎Bash while read
+"while reados LINE do" and grep problems - Stack Overflow
+stackoverflow.com/questions/.../while-read-line-do-and-grep-problems
+Apr 11, 2011 - I have two files. file1.txt: Afghans Africans Alaskans ... file2.txt contains ... @OP, First, use dos2unix as advised. Then use awk ... As well as the ...
+The while reaunod loop
+fog.ccsf.edu/~gboyd/cs160b/online/7-loops2/whileread.html
+The while read loop. In introductory Unix, we experimented with standard input and standard output. Probably, one of the experiments you did was with the cat ...
+bash shell script read file line by line. - LinuxQuestions.org
+www.linuxquestions.org › Forums › Non-*NIX Forums › Programming
+Jan 20, 2004 - 15 posts - ‎11 authors
+while read line do value=`expr $value + 1`; echo $value; done < "myfile" echo $value; Note: This example just counts the number of lines, ...
