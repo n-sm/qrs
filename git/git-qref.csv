@@ -9,7 +9,7 @@ clonar un repositorio existente,git clone [url]
 ver status de archivos,git status
 ver status 'short' de archivos,git status -s
 ver lo que cambio pero no fue 'staged',git diff
-commitear los cambios,git commmit
+commitear los cambios,git commmit -m 'MENSAJE'
 sacar archivos (remove) de git y de working dir,git rm archivo.txt
 sacar archivos (remove) de git y no de working dir,git rm --cached archivo.txt
 mostrar los remotos,git remote -v
@@ -22,4 +22,4 @@ remove local branch,git branch -d the_local_branch
 agregar submodulo,git submodule add URL
 retroceder a un commit previo,git reset hard # agregar el commit al cual volver
 undo remove file rm,git checkout -- FILE
-
+get commit history,git log
