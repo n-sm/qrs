@@ -1,0 +1,16 @@
+DESCRIPCION    	PROGRAMA
+awk path:	/usr/bin/awk
+Hello World	awk 'BEGIN { print "Hello world!" }'
+comillas	awk 'BEGIN { print "Here is a single quote <'"'"'>" }'
+cat en awk	awk ' { print }'
+cat en awk file input	awk ' { print }' < file
+grep pattern en awk	awk '/pattern/ { print $0 }' mail-list
+sum pipe input	awk ' { s+=$1 } END { print s } '
+separate by comma	awk -F',' { print $3 } '#TB: cut -d, -f3
+replace string	awk '{ gsub(/PATTERnfrom/, "PATTERNto"); print} ' FILE 
+replace regexp	awk '{ gsub(/REGEXP/, "PATTERNto"); print} ' FILE 
+grep with awk 1	awk ' /PATTERN/ ' FILE
+grep with awk 2	awk ' /PATTERN/ { print } ' FILE
+grep with awk 3	awk ' /PATTERN/ { print bash } ' FILE
+print every line that is longer than 50	awk { length($0) > 50 }' FILE
+print length of largest line	awk '{ if (length($0) > max) max = length($0) } END { print max }' data
