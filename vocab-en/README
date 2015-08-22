@@ -1,0 +1,29 @@
+
+En esta carpeta hay un glosario de terminos encontrados en diferentes libros.
+Puede usarse con bash, mediante:
+
+$ cat PALABRA.en
+
+El resultado ser´an n+2 l´ineas:
+
+1:   PALABRA (EN INGLES), (TIPO DE PALABRA).
+2:   SINONIMO EN CASTELLANO, (TIPO DE PALABRA); [, SINONIMO EN CASTELLANO ...].
+3:   (TIPO  DE PALABRA): ACEPCION 1
+4:   (TIPO  DE PALABRA): ACEPCION 2
+...
+n+2: (TIPO  DE PALABRA): ACEPCION N
+
+
+Para obtener las acepciones puede escribirse:
+
+$ sed -n 2p PALABRA.en
+
+o bien
+
+$ awk 'FNR==2' PALABRA.en
+
+
+Si se quiere que las acepciones aparezcan una por linea puede emplearse `tr`.
+
+$ sed -n 2p PALABRA.en  | tr \| '\n'
+

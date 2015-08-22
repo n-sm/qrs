@@ -1,4 +1,4 @@
-                DESCRIPCIÃ“N                           ,|     COMANDO
+                DESCRIPCIO´N                           ,|     COMANDO
 salir (quit),:q
 Move to the end of a word.,e
 Move forward to the beginning of a word.,w
@@ -105,3 +105,4 @@ switch between windows,ctrl+ww
 Quit a window,ctrl+wq 
 Split windows vertically,ctrl+wv 
 open read only,vim -M /path/to/file
+set default fonts,set guifont=*

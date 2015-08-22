@@ -8,5 +8,4 @@
 a.out
 .*
 !.gitignore
-glosario-en
 *.npush

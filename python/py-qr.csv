@@ -1,10 +1,14 @@
-         ACCION             ,   COMANDO 
-iniciar python desde bash,pyhton
-iniciar sympy desde pyhton,from sympy import *
-usar funciones mathmaticas (math),import math
-comandos de os ('os.'),import os
-cambiar directorio,os.chdir("PATH")
-get current dir directorio actual,os.getcwd()
-90ejecutar script,execfile("PATH")
-derivar,"x=symbols('x'); diff(3*x**3,x)"
-derivar ej2,"x,y=symbols('x y'); diff((x-y)**(1/y), x)"
+         ACCION             	COMANDO 
+iniciar python desde bash	pyhton
+iniciar sympy desde pyhton	from sympy import *
+usar funciones mathmaticas (math)	import math
+comandos de os ('os.')	import os
+cambiar directorio	os.chdir("PATH")
+get current dir directorio actual	os.getcwd()
+ejecutar script 1	execfile("PATH")
+ejecutar script 2	exec(open("PATH").read())
+derivar	x=symbols('x'); diff(3*x**3,x)
+derivar ej2	x,y=symbols('x y'); diff((x-y)**(1/y), x)
+get variables defined	dir() | globals() | locals()
+decimal to binary	format(2, '08b')
+apply function to elemnts in list,[ FOO(x) for x in LIST ]

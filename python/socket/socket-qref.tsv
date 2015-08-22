@@ -1,0 +1,7 @@
+# para simplificr la esritur avamos a definir:
+# s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+get the computer's host name  	socket.gethostname()
+get IP of computer 1	socket.gethostbyname(socket.gethostname())
+get IP of computer 2	s.connect(("gmail.com",80));print(s.getsockname()[0])
+get mac address	from uuid import getnode ; getnode()	
+decimal IP to binary	' ' .join(format(int(x), '08b') for x in ip.split('.'))

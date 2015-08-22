@@ -1,0 +1,36 @@
+\documentclass[12pt,a4paper]{extarticle}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+\def\fl#1{\flx#1\empty\empty\empty}
+\def\flx#1#2#3\empty{%
+\edef\fst{#1}%
+ \edef\cdar{#2}%
+ \edef\cddr{#3}%
+  \ifx\cddr\empty
+    \let\lst\cdar
+  \else
+     \expandafter\flxx
+   \fi
+  #3}
+\def\flxx#1#2\empty{%
+ \edef\car{#1}%
+  \ifx\car\empty
+  \else
+     \let\lst\car
+     \expandafter\flxx
+   \fi
+  #2\empty}
+
+\immediate\write20{===}
+\fl{}\immediate\write20{[\fst][\lst]}
+\immediate\write20{===1}
+\fl{1}\immediate\write20{[\fst][\lst]}
+\immediate\write20{===12}
+\fl{12}\immediate\write20{[\fst][\lst]}
+\immediate\write20{===123}
+\fl{123}\immediate\write20{[\fst][\lst]}
+\immediate\write20{===1234}
+\fl{1234}\immediate\write20{[\fst][\lst]}
+
+\end{document}

@@ -1,4 +1,4 @@
-___DESCRIPCIÓN___,___COMANDO_1__ , ___COMANDO_2___,
+___DESCRIPCIÓN___,___COMANDO_1__ , ___COMANDO_2___
 
 fecha,\date
 autor,\author
@@ -12,4 +12,6 @@ Subsubsección	\subsubsection[nombre1]{nombre2}	\subsubsection*{nombre}
 Parágrafo	\paragraph[nombre1]{nombre2}	\paragraph*{nombre}
 Subparágrafo	\subparagraph[nombre1]{nombre2}	\subparagraph*{nombre}
 signo de pregunta,?`
-latex eb html,<script type="text/javascript"\n  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">\n</script>
+cross referencing,\label{MiLabel} THEN \ref{MiLabel}
+newcommand,\newcommand{cmd}[args]{def}
+renewcommand,\renewcommand{cmd}[args]{def}
