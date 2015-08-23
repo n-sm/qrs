@@ -1,0 +1,284 @@
+\documentclass[alge.tex]{subfiles}
+%\documentclass[12pt,a4paper]{extarticle}
+\makeatother
+
+\begin{document}
+\maketitle
+\section{Matrices}
+\begin{teo}
+  Sean \(A\), \(B\) y \(C\) matrices de \(m \times n\) y sea \(\alpha\)
+  un escalar. Entonces:
+  \begin{enumerate}
+  \item \(A + \b{0} = A\)
+  \item \(0A = \b{0}\)
+  \item \(A + B = B + A\)
+  \item \((A + B) + C = A + (B + C)\)
+  \item \(\alpha(A+B)=\alpha A + \alpha B\)
+  \item \(1A=A\)
+  \end{enumerate}
+\end{teo}
+
+\begin{teo}
+  Sean \(\b{a}\), \(\b{b}\) y \(\b{c}\) n-vectores y sea
+  \(\alpha\) un escalar.
+  \begin{enumerate}
+  \item \( \b{a \cdot 0} = 0 \)
+  \item \( \b{a \cdot b} = \b{b \cdot a}\)
+  \item \( \b{a \cdot} ( \b{b} + \b{c}) = \b{a \cdot
+      b} + \b{ a \cdot c}\)
+  \item \((\alpha \b{a}) \cdot \b{b} = \alpha (\b{a}
+    \cdot \b{b})\)
+  \end{enumerate}
+\end{teo}
+
+\begin{teo}[Ley asociativa para multiplicaci\'on de matrices]\label{teoAsoc}
+  Sea \(A_{n \times m}, B_{m \times p} \mbox{ y }  C_{p \times q}\)
+  matrices. Entonces:
+
+  \[ A(BC) = (AB)C\]
+
+\end{teo}
+
+\begin{teo}[Leyes distibutivas para la multiplicaci\'on de matrices]\label{teoDistM}
+  Si todas las sumas y productos est\'an definidos, entonces:
+  \[A(B+C)=AB+AC \]
+  \[(A+B)C=AC+BC \]
+\end{teo}
+\fbox{
+  \begin{minipage}{\mplen}
+    \vspace{.25cm}
+    Operaciones elementales entre filas.
+    \begin{enumerate}
+    \item Multiplicar (o dividir) una fila por un n\'umero distinto de
+      cero.
+    \item Sumar un m\'ultiplo de una fila a otra.
+    \item Intercambiar dos filas.
+    \end{enumerate}
+    \vspace{.25cm}
+  \end{minipage}
+}
+\vspace{.25cm}
+
+\fbox{
+  \begin{minipage}{\mplen}
+    \vspace{.25cm}
+    Notaci\'on:
+    \begin{enumerate}
+    \item \(M_i(c)\) indica: multiplicar la i-\'esima fila de una matriz por el n\'umero c.
+    \item \(A_{i,j}(C)\) indica: multiplicar la i-\'esima fila opr c y
+      sum\'arsela a la j.
+    \item \(P_{i,j}\) indoca: permutar las filas \(i\) y \(j\).
+    \end{enumerate}
+    \vspace{.25cm}
+  \end{minipage}
+}
+
+\begin{mydef}[Forma escalonada reducida]\label{defFormEsc}
+  Una matriz est\'a en \emph{forma escalonada reducida} si se cumplen:
+  \begin{enumerate}
+  \item Todas las filas que consisten en \'unicamente ceros (si existen)
+    aparecen en la parte de abajo de la matriz.
+  \item El primer n\'umero distino de cero (empezando por la izquierda)
+    en cualquier fila que no consista \'unicamente en ceros, es 1.
+  \item Si dos filas sucesivas no consisten \'unicamente en ceros,
+    entonces el primer 1 en la fila inferior est\'a m\'as a la derecha
+    que el primer 1 de la fila superior.
+  \item Cualquier columnna que contenga el primer 1 de una fila tendr\'a
+    cero en los dem\'as lugares.
+  \end{enumerate}
+\end{mydef}
+
+\begin{mydef}[Forma escalonada]
+  Una matriz est\'a en \emph{forma escalonada} si se cumplen los \'items
+  (1), (2) y (3) de la Definici\'on \ref{defFormEsc}.
+\end{mydef}
+
+
+\vspace{.25cm}
+\fbox{
+  \begin{minipage}{\mplen}
+    \vspace{.25cm}
+    M\'etodos para resolver sistemas de ecuaciones:\\
+    \begin{enumerate}
+    \item Eliminaci\'on de Gauss-Jordan:\\
+      Reducir la matriz a la forma escalonada reducida.
+    \item Eliminaci\'on Gaussiana:
+      Reducir la matriz a la forma escalonada, despejar la \'ultima inc\'ognita y luego usarsustituci\'on hacia atr\'as para despejar las otras inc\'ognitas.
+    \end{enumerate}
+    \vspace{.25cm}
+  \end{minipage}
+}
+
+\begin{mydef}[Sistema homog\'eneo de ecuaciones]
+  Un sistema de ecuaciones se llama \emph{homog\'eneo} si todas las
+  constates \(b_1, b_2, ..., b_m\) son cero, es decir:
+  \[
+  \begin{matrix}
+    a_{11}x_1 & + & a_{12}x_2 & + & ... & + & a_{1n}x_x & = & 0\\
+    a_{21}x_1 & + & a_{22}x_2 & + & ... & + & a_{2n}x_x & = & 0\\
+    . &  & . & & & & . & & .\\
+    . &  & . & & & & . & & .\\
+    . &  & . & & & & . & & .\\
+    a_{m1}x_1 & + & a_{m2}x_2 & + & ... & + & a_{mn}x_x & = & 0\\
+  \end{matrix}  
+  \]
+  Lo cual puede expresarse tambi\'en:
+  \[A\b{x}=\b{0}\]
+  donde \(A\) es la matriz de coeficientes \(\b{x}\) el vector
+  \((x_1, ..., x_n)\) y \(\b{0}\) el vector de \(m\) ceros.
+\end{mydef}
+
+\begin{mydef}[Sistema homg\'eneo asociado]
+  Dado el sistema de ecuaciones \se{b}, se llama
+  \emph{sistema homog\'eneo asociado} a \se{b} al sistema:
+  \[A\b{x}=\b{0}\]
+\end{mydef}
+
+\begin{teo}
+  Si \(n > m\), el sistema homog\'eneo de \(m\) ecuaciones con \(n\)
+  inc\'ognitas tiene un n\'umero infinito de soluciones.
+\end{teo}
+
+\begin{teo}
+  Sean \(\b{x_1}\) y \(\b{x_1}\) soluciones al sistema no
+  homog\'eneo \se{b}. Entonces su diferencia
+  \(\b{x_1}\ -\b{x_1}\) es una soluci\'on del sistema homo
+  g\'eneo asociado \se{0}.
+\end{teo}
+\begin{proof}
+  Por la ley distributiva (teorema \ref{teoDistM}), tenemos: 
+  \[A(\b{x_1} - \b{x_2}) = A\b{x_1} - A\b{x_2}\]
+  Pero como \(\b{x_1}\) y \(\b{x_1}\) son soluciones al
+  sistema, tenemos:
+  \[ A\b{x_1} - A\b{x_2} = \b{b} - \b{b} = \b{0}\]
+\end{proof}
+
+Corolario: Sean \(b{x}\) e \(b{y}\) dos soluciones del sistema no
+homog\'eneo \se{b}. Entoces existe un vector \(\b{h}\) que es
+soluci\'on del sistema homog\'eneo tal que:
+\[ \b{y} = \b{x} + \b{h}\]
+
+La prueba se obtiene facilmente para \(\b{h} = \b{y} - \b{x}\).
+
+\vspace{.25cm}
+\fbox{
+  \begin{minipage}{\mplen}
+    \vspace{.25cm}
+    De este modo, para encontrar todas las soluciones del sistma no
+    homog\'eneo \se{b}, es necesario encontrar s\'olo \emph{una} soluci\'on
+    a \se{b} y todas las coluciones asociadas a \se{0}.
+    \vspace{.25cm}
+  \end{minipage}
+  \vspace{.25cm}
+}
+
+\begin{mydef}[Matriz identidad] \label{defMatInv}
+  La \emph{matriz identidad} de \(n \times n\) es ma matriz \(M_{n
+    \times n}\) en la que las componentes de la \emph{diagonal
+    principal} son todos \(1\) y \(0\) los restantes.
+\end{mydef}
+
+\begin{teo}
+  Sea \(A\) una matriz cuadrada de \(n \times n\). Entonces:
+  \[AI_n = I_nA = A\]
+\end{teo}
+\begin{proof}
+  Sea \(c_{ij}\) el i-j\'esimo elemento de \(AI_n\), de modo que:
+  \[c_{ij}= \sum_{k=1}^n a_{ik}b_{kj}\]
+  donde \(a_{ij}\) son los elementos de \(A\) y \(b_{ij}\) son los de
+  \(I_n\). Es evidente por la definici\'on \ref{defMatInv} que 
+  \[c_{ij} = a_{ij}\]
+  Lo mismo puede oservarse respecto de \(I_nA\).
+\end{proof}
+
+\begin{mydef}[Inversa de una matriz]\label{defInv}
+  Sean \(A\) y \(B\) matrices de \(n \times n\). Si 
+  \[AB = BA = I\]
+  Entonces \(B\) es \emph{la inversa de} \(A\) y se escribe
+  \(A^{-1}\). De este modo:
+  \[ AA^{-1} = A^{-1}A = I\]
+  Si \(A\) tiene inversa, entonce decimos que es \emph{invertible}.
+\end{mydef}
+
+\begin{teo} \label{teoMatInvUni}
+  Si una matriz cuadrada es invertible, entonces su inversa es \'unica.
+\end{teo}
+\begin{proof}
+  Debemos mostrar que si \(B\) y \(C\) son dos inversas de \(A\),
+  entonces \(B = C\).\\
+  Por hip\'otesis tenemos:
+  \[(i) \ AB=BA=I\]
+  y
+  \[(ii) \ AC=CA=I\]
+  Sustituyendo, usando (ii), tenemos:
+  \[B(AC) = BI = B\]
+  Usando (i):
+  \[(BA)C = IC = C\]
+  Por la ley asociativa (teorema \ref{teoAsoc}), tenemos:
+  \[B(AC)=(BA)C\]
+  Sustituyendo, tenemos pues:
+  \[B=C\]
+\end{proof}
+
+\begin{teo}
+  Sean \(A\) y \(B\) matrices invertibles de \(n\times n\). Entonces,
+  \(AB\) es invertible y
+  \[(AB)^{-1}=B^{-1}A^{-1}\]
+\end{teo}
+
+\begin{proof}
+  Por la definici\'on \ref{defInv}, tenemos que \(AB\) es la inversa de
+  \(B^{-1}A^{-1}\) (es decir \(B^{-1}A^{-1} = (AB)^{-1}\)) si y s\'olo
+  si \((B^{-1}A^{-1})(AB)=(AB)(B^{-1}A^{-1}) = I\), que es lo que
+  probaremos.
+
+  Por la ley asociativa (teorema \ref{teoAsoc}) podemos probar:
+  \[(\inv{B}\inv{A})(AB)=\inv{B}(\inv{A} A)B = \inv{B}IB=I\]
+  as\'i como:
+  \[(AB)(\inv{B}\inv{A})=A(B\inv{B})\inv{A}) AI\inv{A}=A\inv{A} = I\]
+\end{proof}
+Consid\'erese ahora el sistema de \(n \times n\) \se{b}. Supo\'ongase
+que \(A\) es invertible, luego:
+\begin{align*}
+  \inv{A}A\b{x} &=\inv{A}\b{b}\\
+  I\b{x} &=\inv{A}\b{b}\\
+  \b{x} &=\inv{A}\b{b}\\
+\end{align*}
+
+\vspace{.25cm}
+\fbox{
+  \begin{minipage}{\mplen}
+    \vspace{.25cm}
+    De este modo, si \(A\) es invertible, el sistema \se{b} tiene la
+    soluci\'on \'unica \(\b{x}=\inv{A}\b{b}\).
+    \vspace{.25cm}
+  \end{minipage}
+}
+
+\vspace{1cm}
+\fbox{
+  \begin{minipage}{\mplen}
+    \vspace{.25cm}
+    \textbf{Procedimiento para calcular la inversa de una matriz cuadrada A}
+    \begin{enumerate}
+    \item Escribir la matriz aumentada \((A|I)\).
+    \item Utilizar redicci\'on por renglones para reducir la matriz A a su
+      forma escalonada.
+    \item Decidir si la matriz A es invertible.
+      \begin{enumerate}
+      \item Si \(A\) puede ser reducida a la matriz identidad \(I\),
+        entonces \(A\) es la matriz a la derecha de la barra vertical.
+      \item Si la reducci\'on por renglones conduce a alg\'un
+        rengl\'on de ceros a la izquierda de la barra vertical, la
+        matriz \(A\) no es invertible.
+      \end{enumerate}
+    \end{enumerate}
+    \vspace{.25cm}
+  \end{minipage}
+}
+
+\vspace{1cm}
+Observaci\'on: podemos expresar (a) y (b) diciendo que una matriz
+cuadrada \(A\) es invertible si y s\'olo si su forma escalonada,
+reducida por renglones, es la matriz identidad.
+\end{document}

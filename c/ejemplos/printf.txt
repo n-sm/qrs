@@ -1,0 +1,18 @@
+# include <stdio.h>
+
+char a, b, c;
+int x, y, z, *p, *p1;
+int main(void)
+{
+  a = 1;
+  x = 3;
+  printf("char a = 1");
+  printf("c: %c", a); 
+  printf("d: %d", a); 
+  printf("e: %e", a); 
+  printf("f: %f", a); 
+  printf("g: %g", a); 
+  printf("s: %s", a); 
+
+  return 0;
+}

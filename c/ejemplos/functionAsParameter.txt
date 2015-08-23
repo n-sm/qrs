@@ -1,0 +1,3 @@
+http://stackoverflow.com/questions/9410/how-do-you-pass-a-function-as-a-parameter-in-c
+
+http://www.cprogramming.com/tutorial/function-pointers.html

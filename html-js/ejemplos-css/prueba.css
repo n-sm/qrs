@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'), url(https://fonts.gstatic.com/s/playfairdisplay/v10/9MkijrV-dEJ0-_NWV7E6Nx-06087kkDBCd_rtr1khsE.woff) format('woff');
+}
+
+body {
+    font-family:  Helvetica, Aria, sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    line-height: 125%;
+    margin: 3em 3em 3em 3em;
+}
+
+h1 {
+    font-family: "Playfair Display";
+    letter-spacing: 0.1em;
+/*    font-family: monospace;*/
+}
+
+
+ul {
+    list-style-type: square;
+    font-family: arial;
+}
+
+p.primero {
+    font-family: "Playfair Display", sans-serif, serif;
+    margin: 1em 1em 1em 1em;
+}
+

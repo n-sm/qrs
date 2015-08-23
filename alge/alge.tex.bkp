@@ -1,0 +1,177 @@
+\documentclass[12pt,a4paper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{varioref}
+\usepackage{currfile}
+\title{\'Algebra}
+\makeatother
+% \usepackage{mdframed}
+\usepackage[left=1.6cm,right=1.6cm,top=1.6cm,bottom=1.6cm]{geometry}
+\newtheorem{teo}{Teorema}[section]
+% \newmdtheoremenv{theorem}{Teorema}[section]
+\newtheorem{ejs}{Ejemplo}[section]
+\newtheorem{mydef}{Definici\'on}[section]
+\newtheorem{corol}{Corolario}[teo]
+% \newmdtheoremenv{mydef}{Definici\'on}[section]
+\newcommand{\se}[1]{\(A\mathbf{x}=\mathbf{#1}\)}
+%\renewcommand{\b}[1]{\mathbf{#1}}
+\begin{document}
+\maketitle
+\section{Matrices}
+\begin{teo}
+  Sean \(A\), \(B\) y \(C\) matrices de \(m \times n\) y sea \(\alpha\)
+  un escalar. Entonces:
+  \begin{enumerate}
+  \item \(A + \mathbf{0} = A\)
+  \item \(0A = \mathbf{0}\)
+  \item \(A + B = B + A\)
+  \item \((A + B) + C = A + (B + C)\)
+  \item \(\alpha(A+B)=\alpha A + \alpha B\)
+  \item \(1A=A\)
+  \end{enumerate}
+\end{teo}
+
+\begin{teo}
+  Sean \(\mathbf{a}\), \(\mathbf{b}\) y \(\mathbf{c}\) n-vectores y sea
+  \(\alpha\) un escalar.
+  \begin{enumerate}
+  \item \( \mathbf{a \cdot 0} = 0 \)
+  \item \( \mathbf{a \cdot b} = \mathbf{b \cdot a}\)
+  \item \( \mathbf{a \cdot} ( \mathbf{b} + \mathbf{c}) = \mathbf{a \cdot
+      b} + \mathbf{ a \cdot c}\)
+  \item \((\alpha \mathbf{a}) \cdot \mathbf{b} = \alpha (\mathbf{a}
+    \cdot \mathbf{b})\)
+  \end{enumerate}
+\end{teo}
+
+\begin{teo}[Ley asociativa para multiplicaci\'on de matrices]
+  Sea \(A_{n \times m}, B_{m \times p} \mbox{ y }  C_{p \times q}\)
+  matrices. Entonces:
+
+  \[ A(BC) = (AB)C\]
+
+\end{teo}
+
+\begin{teo}[Leyes distibutivas para la multiplicaci\'on de matrices]\label{leyDistM}
+  Si todas las sumas y productos est\'an definidos, entonces:
+  \[A(B+C)=AB+AC \]
+  \[(A+B)C=AC+BC \]
+\end{teo}
+\fbox{
+  \begin{minipage}{15cm}
+    \vspace{.25cm}
+    Operaciones elementales entre filas.
+    \begin{enumerate}
+    \item Multiplicar (o dividir) una fila por un n\'umero distinto de
+      cero.
+    \item Sumar un m\'ultiplo de una fila a otra.
+    \item Intercambiar dos filas.
+    \end{enumerate}
+    \vspace{.25cm}
+  \end{minipage}
+}
+\vspace{.25cm}
+
+\fbox{
+  \begin{minipage}{15cm}
+    \vspace{.25cm}
+    Notaci\'on:
+    \begin{enumerate}
+    \item \(M_i(c)\) indica: multiplicar la i-\'esima fila de una matriz por el n\'umero c.
+    \item \(A_{i,j}(C)\) indica: multiplicar la i-\'esima fila opr c y
+      sum\'arsela a la j.
+    \item \(P_{i,j}\) indoca: permutar las filas \(i\) y \(j\).
+    \end{enumerate}
+    \vspace{.25cm}
+  \end{minipage}
+}
+
+\begin{mydef}[Forma escalonada reducida]\label{form-esc}
+  Una matriz est\'a en \emph{forma escalonada reducida} si se cumplen:
+  \begin{enumerate}
+  \item Todas las filas que consisten en \'unicamente ceros (si existen)
+    aparecen en la parte de abajo de la matriz.
+  \item El primer n\'umero distino de cero (empezando por la izquierda)
+    en cualquier fila que no consista \'unicamente en ceros, es 1.
+  \item Si dos filas sucesivas no consisten \'unicamente en ceros,
+    entonces el primer 1 en la fila inferior est\'a m\'as a la derecha
+    que el primer 1 de la fila superior.
+  \item Cualquier columnna que contenga el primer 1 de una fila tendr\'a
+    cero en los dem\'as lugares.
+  \end{enumerate}
+\end{mydef}
+
+\begin{mydef}[Forma escalonada]
+  Una matriz est\'a en \emph{forma escalonada} si se cumplen los \'items
+  (1), (2) y (3) de la Definici\'on \ref{form-esc}.
+\end{mydef}
+
+\fbox{
+  \begin{minipage}{15cm}
+    \vspace{.25cm}
+    M\'etodos para resolver sistemas de ecuaciones:\\
+    \begin{enumerate}
+    \item Eliminaci\'on de Gauss-Jordan:\\
+      Reducir la matriz a la forma escalonada reducida.
+    \item Eliminaci\'on Gaussiana:
+      Reducir la matriz a la forma escalonada, despejar la \'ultima inc\'ognita y luego usarsustituci\'on hacia atr\'as para despejar las otras inc\'ognitas.
+    \end{enumerate}
+    \vspace{.25cm}
+  \end{minipage}
+}
+
+\begin{mydef}[Sistema homog\'eneo de ecuaciones]
+Un sistema de ecuaciones se llama \emph{homog\'eneo} si todas las
+constates \(b_1, b_2, ..., b_m\) son cero, es decir:
+\[
+\begin{matrix}
+a_{11}x_1 & + & a_{12}x_2 & + & ... & + & a_{1n}x_x & = & 0\\
+a_{21}x_1 & + & a_{22}x_2 & + & ... & + & a_{2n}x_x & = & 0\\
+. &  & . & & & & . & & .\\
+. &  & . & & & & . & & .\\
+. &  & . & & & & . & & .\\
+a_{m1}x_1 & + & a_{m2}x_2 & + & ... & + & a_{mn}x_x & = & 0\\
+\end{matrix}  
+\]
+Lo cual puede expresarse tambi\'en:
+\[A\mathbf{x}=\mathbf{0}\]
+donde \(A\) es la matriz de coeficientes \(\mathbf{x}\) el vector
+\((x_1, ..., x_n)\) y \(\mathbf{0}\) el vector de \(m\) ceros.
+\end{mydef}
+
+\begin{mydef}[Sistema homg\'eneo asociado]
+Dado el sistema de ecuaciones \se{b}, se llama
+\emph{sistema homog\'eneo asociado} a \se{b} al sistema:
+\[A\mathbf{x}=\mathbf{0}\]
+\end{mydef}
+
+\begin{teo}
+Si \(n > m\), el sistema homog\'eneo de \(m\) ecuaciones con \(n\)
+inc\'ognitas tiene un n\'umero infinito de soluciones.
+\end{teo}
+
+\begin{teo}
+Sean \(\mathbf{x_1}\) y \(\mathbf{x_1}\) soluciones al sistema no
+homog\'eneo \se{b}. Entonces su diferencia
+\(\mathbf{x_1}\ -\mathbf{x_1}\) es una soluci\'on del sistema homo
+g\'eneo asociado \se{0}.
+\end{teo}
+\begin{proof}
+Por la ley distributiva (teorema \ref{leyDistM}), tenemos: 
+\[A(\mathbf{x_1} - \mathbf{x_2}) = A\mathbf{x_1} - A\mathbf{x_2}\]
+Pero como \(\mathbf{x_1}\) y \(\mathbf{x_1}\) son soluciones al
+sistema, tenemos:
+\[ A\mathbf{x_1} - A\mathbf{x_2} = \mathbf{b} - \mathbf{b} = \mathbf{0}\]
+\end{proof}
+
+Corolario: Sean \(mathbf{x}\) e \(mathbf{y}\) dos soluciones del sistema no
+homog\'eneo \se{b}. Entoces existe un vector \(\mathbf{h}\) que es
+soluci\'on del sistema homog\'eneo tal que:
+\[ \b{y} = \b{x} + \b{h}\]
+
+\end{document}

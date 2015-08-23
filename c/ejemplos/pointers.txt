@@ -1,0 +1,20 @@
+void main()
+{
+ char name[]="siva";
+ printf("name = %p", name); /* name = 0xbff5391b */
+
+ printf("&name[0] = %p", &name[0]);	/* &name[0] = 0xbff5391b */
+
+ printf("name printed as %%s is %s",name);	/* name printed as %s is siva */
+
+ printf("*name = %c\n",*name);	/* *name = s */
+
+ printf("name[0] = %c\n", name[0]);	/* name[0] = s */
+}
+
+Output is:
+
+  
+
+
+
