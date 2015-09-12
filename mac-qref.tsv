@@ -1,0 +1,1 @@
+change host name	scutil --set LocalHostName EL_NOMBRE
