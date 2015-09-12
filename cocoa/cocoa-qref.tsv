@@ -1,0 +1,3 @@
+__	__
+get the view herarchie	po [[self view] recursiveDescription]
+get class from hex address in lldb	po [(id)(0x7fe8dbde71a0) class]
