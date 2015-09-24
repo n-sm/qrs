@@ -1,0 +1,164 @@
+\documentclass[12pt,a4paper]{extarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{subfiles}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{varioref}
+\usepackage{currfile}
+\usepackage[left=1.6cm,right=1.6cm,top=1.6cm,bottom=1.6cm]{geometry}
+\newtheorem{teo}{Teorema}[section]
+\newtheorem{ejs}{Ejemplo}[section]
+\newtheorem{mydef}{Definici\'on}[section]
+\newtheorem{corol}{Corolario}[teo]
+\def\mplen{16.7cm}
+\def\inv#1{{#1}^{-1}}
+\newcommand{\se}[1]{\(A\mathbf{x}=\mathbf{#1}\)}
+\renewcommand{\b}[1]{\mathbf{#1}}
+\title{\'Algebra}
+\makeatother
+
+\begin{document}
+\maketitle
+\section{Vectores en \(R^2\) y en \(R^3\)}
+Esta seccion habla sobre vectores.
+\begin{mydef}[Vectores equivalentes]
+  Dos vectores \(AB\) y \(CD\) son \emph{equivalente} sii 
+  \[ B - A = D - C \]
+\end{mydef}
+
+\begin{mydef}[Vectores paralelos]
+  Dos vectores \(AB\) y \(CD\) son paralelos sii
+  \[\exists k / \quad B - A = k(D-C)\]
+\end{mydef}
+
+\begin{mydef}[Punto Medio de \(A\) y \(B\)]
+  El punto medio de \(A\) y \(B\) se define:
+  \[\frac{A+B}{2}\]
+\end{mydef}
+
+\begin{mydef}[Norma de un vector]
+  Sea \(A = (a_1, a_2, a_3)\). Se llama \emph{norma} o \emph{longitud} o
+  \emph{m\'odulo} del vector \(A\) a \(\sqrt{a_1^2 + a_2^2}\) y se
+  escribe \(||A||\). Es decir:
+  \[||A|| = \sqrt{a_1^2 + a_2^2}\]
+\end{mydef}
+Se cumple:
+\begin{teo}
+  \[||\overrightarrow{AB}|| = || A-B ||\]
+\end{teo}
+\begin{teo}
+  \[||k \cdot A|| = |k| \cdot ||A||\]
+\end{teo}
+
+\begin{teo}[Desigualdad trangular]
+  \[||A+B|| \leq ||A|| + ||B||\]
+\end{teo}
+\begin{mydef}[Distancia entre dos puntos]
+  Sean \(A\) y \(B\) vectores. Se llama \emph{distancia entre dos
+    puntos} al n\'umero \(d(A,B)\) definido como \(||B-A||\). Es decir:
+  \[d(A,B) = ||B-A||\]
+\end{mydef}
+
+\begin{mydef}[Versor (o vector unitario)]
+  Un vector \(V\) es unitario (o versor) si \(||V||=1\).
+\end{mydef}
+Dado un vector \(A\), el vector de igual direcci\'on y sentido, pero de
+norma 1 que \(A\) se escribe \(\check{A}\).
+\begin{teo}
+  \[\check{A}=\frac{1}{||A||} A\]
+\end{teo}
+
+\begin{mydef}[Producto escalar entre vectores (Producto interno)]
+  \[A \cdot B = ||A|| \ ||B|| \ \cos{\theta (A,B)}\]
+\end{mydef}
+\begin{teo}[Propiedades]
+
+  \begin{align}
+    A \cdot B \quad &= \quad  \frac{1}{2}(||A||^2 + ||B||^2 - ||B - A||)\\
+    A \cdot B \quad &= \quad  B \cdot A\\
+    A \cdot ( B + C ) \quad &= \quad  A \cdot B + A \cdot C \\
+    k (A \cdot B) \quad &= \quad  (kA) \cdot B \quad = \quad A \cdot (kB) \\
+    A \cdot A \quad &= \quad  ||A||^2
+  \end{align}
+\end{teo}
+
+\begin{mydef}[Vectores ortogonales]
+  Dos vectores \(A\) y \(B\) son ortogonales si \(A \cdot B = 0\). Esto
+  ocurre cuando:
+  \begin{enumerate}
+  \item alguno (\(A\) o \(B\)) es nulo.
+  \item \(\cos{\theta} = 0\) (i.e. \(\theta = \pi/2\)).
+  \end{enumerate}
+\end{mydef}
+
+\begin{mydef}[Forma param\'etrica de una recta]
+  Sea \(L\) la recta tal que:
+  \[ L = \{ (x, y) \in \mathbb{R}^2 / (x,y) = \lambda \b{v} + P \}, \quad
+  \forall \lambda \in \mathbb{R}
+  \]
+  Donde \(\b{v}\) es el \emph{vector director} y \(P\) es un \emph{punto
+    de paso}. Lo mismo que antes los escribimos:
+  \[L = \lambda \b{v} + P\]
+\end{mydef}
+
+\begin{teo}
+  Sean \(\b{v}_k\) el vector director de \(L_k\) y \(P_k\) punto de paso de \(L_k\).
+
+  \begin{align}
+    L_1 // L_2 \quad &\equiv \quad  \b{v}_1 // \b{v}_2  \\
+    L_1 \perp \L_2 \quad &\equiv \quad \b{v}_1 \cdot \b{v}_2\\
+    L_1 \subset _2 \quad &\equiv \quad   \b{v}_1 // \b{v}_2 \wedge P_1 \in
+                           L_2 \\
+    L_1 \cap L_2 \quad &\equiv \quad  k \b{v}_1 + P_1 = l \b{v}_2 + P_2 
+  \end{align}
+\end{teo}
+\begin{mydef}[Producto Vectorial]
+  Sean \(A=(x_a, y_a, z_a)\) y \(B=(x_b,y_b,z_b)\). Luego:
+  \[A \times B = (y_az_b-z_ay_b, z_ax_b-x_ay_b, x_ay_b-y_ay_b)\]
+\end{mydef}
+\begin{teo}[Propiedades] \label{teoCrossProps}
+  \begin{align}
+    A \times B \quad &\neq \quad  B \times A   \\
+    A \times B \quad &= \quad -(B \times A) \nonumber \\
+    A \times (B+C) \quad &= \quad  A \times B + A \times C \\
+    (A+B) \times C \quad &= \quad  A \times B + B \times C \nonumber \\
+    A \times B + C \times B  \quad &= \quad  A \times C - B \times C
+                                     \quad = \quad (A-B)C\\
+    k \in \mathbb{R}: \quad k(A \times B) \quad &= \quad (kA) \times B (kB)\\
+    A \times A \quad &= \quad  \b{0} \nonumber \\
+    ||A \times B||^2 \quad &= \quad  ||A||^2||B||^2 - (AB)^2\\
+    (A \times B) \cdot A \quad &= \quad  0\\
+    (B \times A) \cdot B \quad &= \quad  0 \nonumber 
+  \end{align}
+\end{teo}
+\begin{teo}
+De la propiedad 16 (teorema \ref{teoCrossProps}) se sigue:
+\[||A \times B|| = ||A|| \ ||B|| \  \sin{\theta}\]
+Obs: \(||A \times B||\) da el \emph{\'area del paralelogramo} de
+v\'ertices   \( \b{0}, A, (A+B), B\).
+\end{teo}
+
+
+\begin{mydef}[Ecuaci\'on del plano]
+\[\Pi: ax+by+cz=k\]
+Es la ecuaci\'on de un plano, donde:
+\(N=(a,b,c)\) es la \emph{normal} del plano y \(P\) es un punto de paso.
+\end{mydef}
+Se cumple por lo tanto: 
+\[N \cdot (x, y, z) = N \cdot P\]
+y \(k = N \cdot P\)
+
+\begin{mydef}[Distancia de un punto a un plano]
+Sean \(P\) un punto, \(\Pi\) un plano, \(N\) un vector y \(k\) un
+n\'umero real. Luego se cumple:
+\[ d(P,\Pi) \ = \ \frac{|P \cdot N - k|}{||N||} \ = \ 
+\frac{|ax+by+cz-k|}{\sqrt{a^2+b^2+c^2}} \]
+donde \(d(P,\Pi\) es la distancia entre el punto \(P\) y el plano \(\Pi\).
+
+\end{mydef}
+
+\end{document}

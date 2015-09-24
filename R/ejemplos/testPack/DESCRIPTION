@@ -1,0 +1,16 @@
+Package: tPck
+Type: Package
+Title: Test Package
+Version: 0.1
+Date: 2015-09-01
+Authors@R: c(person(given="Nombre", family="Apellido", email="mimail@mail.com", role=c("cre","aut")))
+Description: tPck es meramente un paquete de prueba, no tiene utilidad intri`nseca, sino que muestra la etructura mi`nima que puede tener un packete de R.
+License: GPL-2
+Depends: R (>= 3.0.0)
+Encoding: UTF-8
+LazyData: no
+LazyLoad: no
+ByteCompile: no
+NeedsCompilation: no
+Author: Nombre Apellido [cre, aut]
+Maintainer: Nombre Apellido <mimail@mail.com>

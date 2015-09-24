@@ -1,10 +1,92 @@
 \documentclass[alge.tex]{subfiles}
-%\documentclass[12pt,a4paper]{extarticle}
+% \documentclass[12pt,a4paper]{extarticle}
 \title{\'Algebra}
 \makeatother
 
 \begin{document}
 \maketitle
 \section{Vectores en \(R^2\) y en \(R^3\)}
-Esta seccion habla sobre vectopres.
+Esta seccion habla sobre vectores.
+\begin{mydef}[Vectores equivalentes]
+  Dos vectores \(AB\) y \(CD\) son \emph{equivalente} sii 
+  \[ B - A = D - C \]
+\end{mydef}
+
+\begin{mydef}[Vectores paralelos]
+  Dos vectores \(AB\) y \(CD\) son paralelos sii
+  \[\exists k / \quad B - A = k(D-C)\]
+\end{mydef}
+
+\begin{mydef}[Punto Medio de \(A\) y \(B\)]
+  El punto medio de \(A\) y \(B\) se define:
+  \[\frac{A+B}{2}\]
+\end{mydef}
+
+\begin{mydef}[Norma de un vector]
+  Sea \(A = (a_1, a_2, a_3)\). Se llama \emph{norma} o \emph{longitud} o
+  \emph{m\'odulo} del vector \(A\) a \(\sqrt{a_1^2 + a_2^2}\) y se
+  escribe \(||A||\). Es decir:
+  \[||A|| = \sqrt{a_1^2 + a_2^2}\]
+\end{mydef}
+Se cumple:
+\begin{teo}
+  \[||\overrightarrow{AB}|| = || A-B ||\]
+\end{teo}
+\begin{teo}
+  \[||k \cdot A|| = |k| \cdot ||A||\]
+\end{teo}
+
+\begin{teo}[Desigualdad trangular]
+  \[||A+B|| \leq ||A|| + ||B||\]
+\end{teo}
+\begin{mydef}[Distancia entre dos puntos]
+  Sean \(A\) y \(B\) vectores. Se llama \emph{distancia entre dos
+    puntos} al n\'umero \(d(A,B)\) definido como \(||B-A||\). Es decir:
+  \[d(A,B) = ||B-A||\]
+\end{mydef}
+
+\begin{mydef}[Versor (o vector unitario)]
+  Un vector \(V\) es unitario (o versor) si \(||V||=1\).
+\end{mydef}
+Dado un vector \(A\), el vector de igual direcci\'on y sentido, pero de
+norma 1 que \(A\) se escribe \(\check{A}\).
+\begin{teo}
+  \[\check{A}=\frac{1}{||A||} A\]
+\end{teo}
+
+\begin{mydef}[Producto escalar entre vectores (Producto interno)]
+  \[A \cdot B = ||A|| \ ||B|| \ \cos{\theta (A,B)}\]
+\end{mydef}
+\begin{teo}[Propiedades]
+  \[ A \cdot B = \frac{1}{2}(||A||^2 + ||B||^2 - ||B - A||)\]
+  \[ A \cdot B = B \cdot A\]
+  \[ A \cdot ( B + C ) = A \cdot B + A \cdot C \]
+  \[ k (A \cdot B) = (kA) \cdot B = A \cdot (kB) \]
+  \[A \cdot A = ||A||^2\]
+\end{teo}
+
+\begin{mydef}[Vectores ortogonales]
+  Dos vectores \(A\) y \(B\) son ortogonales si \(A \cdot B = 0\). Esto
+  ocurre cuando:
+  \begin{enumerate}
+  \item alguno (\(A\) o \(B\)) es nulo.
+  \item \(\cos{\theta} = 0\) (i.e. \(\theta = \pi/2\)).
+  \end{enumerate}
+\end{mydef}
+
+\begin{mydef}[Forma param\'etrica de una recta]
+  Sea \(L\) la recta tal que:
+  \[ L = \{ (x, y) \in \mathbb{R}^2 / (x,y) = \lambda \b{v} + P \}, \quad
+  \forall \lambda \in \mathbb{R}
+  \]
+  Donde \(\b{v}\) es el \emph{vector director} y \(P\) es un \emph{punto
+    de paso}. Lo mismo que antes los escribimos:
+  \[L = \lambda \b{v} + P\]
+\end{mydef}
+
+\begin{teo}
+  Sean \(V_k\) el vector director de \(L_k\) y \(P_k\) punto de paso de \(L_k\).
+  \[ L_1 || L_2 \equiv V_1 || V_2  \]
+  \[ L_1 \cap L_2 \equiv k V_1 + P_1 = l V_2 + P_2 \] 
+\end{teo}
 \end{document}

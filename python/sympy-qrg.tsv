@@ -1,0 +1,6 @@
+      __                __ 	
+derivar	x = symbols('x'); diff(x**3,x)
+resultados mas legibles,init_printing(use_unicode=False,wrap_line=False, no_global=True)
+integrar	
+
+

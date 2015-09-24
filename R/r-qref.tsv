@@ -1,0 +1,9 @@
+# -*- mode:csv  -*-
+DESCRIPCIÓN 	 COMANDO
+-----------	 -------
+evaluar una string	eval(parse(text = "mi string"))
+abrir .sav (archivo spss)	cf.: ./orggds/r-abrir-spss.org
+Rcpp	http://stackoverflow.com/questions/22798234/error-in-sourcecpp-after-installing-rtools
+install package from source  	install.packages(path_to_file, repos = NULL, type="source")
+list functions in package	ls(package:PACKAGE_NAME)
+uninstal package	remove.packages('PACKAGE_NAME')
