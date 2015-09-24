@@ -8,8 +8,11 @@
 declare FILE1=$1
 declare FILE2=$2
 
+olsIFS=$IFS
+
 while IFS= read -r LINE; do 
   grep "$LINE" $FILE2
 done < $FILE1
 
+IFS=$oldIFS
 
