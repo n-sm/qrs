@@ -1,0 +1,25 @@
+           accion               	   comando                 	alguna opcion
+           ------	   -------	-------------
+iformacion sobre discos	df -h
+list files by size	ls -lhS
+list proceses	ps -e
+list only directories	ls -d */
+change promt	export PS1="\u:\w\$ "
+list only files with find	find . -maxdepth 1 -type f
+list only files with ls	ls -l | grep -v '^d'
+list not matching2	shopt -s extglob; ls !(PATTERN)
+list not matching	ls -1|gredup -v '\.'
+tamaño ocupado por actual directorio	du -sh
+borrar recursivamente archivos no directorios	find dir -type f -print0 | xargs -0 rm
+borrar recursivamente todo .txt	find . -type f -iname "*\.txt" -print0 | xargs -0 rm
+habilita "negative woldcards" como !(*.*) 	shopt -s extglog
+get partition structure of hard drive	lsblk
+for en archivos con espacios en blanco	IFS=$\'\n\'
+sort by names length 	 ls | perl -e 'print sort { length() <=> length() } <>'
+encontrar video youtube	lsof | grep Flash
+copiar video youtube Flash	cp /proc/2222/fd/19 #ejemplo
+rsync push current dir	rsync -avz .  /dir/subdir1/subdirN/dest
+separate by comma 1(awk)	awk -F'COMMA' 
+separate by comma 2(cut)	cut -d'COMMA'
+ejecutar linea por linea un archivo	while read -r LINE; do "$LINE"; done < ARCHIVO
+
