@@ -1,0 +1,10 @@
+# -*- mode:csv -*-
+	python manage.py migrate
+iniciar proyecto	django-admin startproject mysite
+correr servidor	python manage.py runserver
+correr servidor network	python manage.py runserver 0.0.0.0:8000
+crear app (ej: polls)	python manage.py startapp polls
+update installed apps	python manage.py makemigrations polls
+get sql command of migration	python manage.py sqlmigrate polls 0001
+run migrate	python manage.py migrate
+django shell	python manage.py shell

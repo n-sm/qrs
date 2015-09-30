@@ -1,0 +1,3 @@
+* leido hasta
+https://docs.djangoproject.com/en/1.8/intro/tutorial03/
+https://docs.djangoproject.com/en/1.8/intro/tutorial03/#raising-a-404-error
