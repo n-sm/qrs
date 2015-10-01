@@ -1,0 +1,396 @@
+<html>
+  <!--http://www.surveysoftware.net/sscalce.htm-->
+  <head>
+    <TITLE>Sample Size Calculator</TITLE>
+    <META NAME="Author" CONTENT="Hank Zucker">
+    <META name="resource-type" content=document>
+    <META NAME="description" CONTENT="This site tells you how many people to interview to get a desired plus or minus figure for your survey's answers.">
+    <META name="keywords" content="sample size, confidence interval, plus or minus, sampling, survey samples">
+    <!-- Copyright 1998 Creative Research Systems -->
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+
+      <!-- 
+      body { 
+      font-family: Georgia, sans-serif;
+      }
+      TABLE, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+      width: 100%;
+      table-layout: fixed;
+      }
+      -->
+      
+    <SCRIPT language="JavaScript">
+      <!-- to hide script from older bowsers
+	   conInt = 0;
+	   conLev=1;
+	   zVal=1.96;
+	   zValC=3.8416;
+	   ss=0;
+	   pop=0;
+	   perc=0;
+	   pf = 0;
+
+	   function to(obj) {
+
+	   if (obj.box.value == "") {
+	   conInt=0
+	   }
+	   else {
+	   conInt = eval(obj.box.value)
+	   }
+
+	   if (obj.popbox.value == "") { 
+	   pop=0
+	   }
+	   else {
+	   pop = eval(obj.popbox.value)
+	   }
+
+	   if (conInt == 0) {
+	   alert("Hay que ingresar un intervalo de confianza entre .1 y 50.")
+	   }
+	   else {  
+	   if (pop == 0) {
+           ss = ((zVal *zVal) * 0.25) / ((conInt / 100) *(conInt / 100))
+	   }
+	   else {
+	   ss = ((zVal *zVal) * 0.25) / ((conInt / 100) *(conInt / 100));
+	   ss=ss/(1+(ss-1)/pop)
+	   }
+           
+	   obj.ssbox.value=parseInt(ss+.5)
+
+	   }
+	   }
+
+	   function ConLevButF1(obj){
+	   zVal=1.96
+	   }
+	   function ConLevButF2(obj){
+	   zVal=2.58
+	   }
+	   function ConLevButFC1(obj){
+	   zValC=3.8416 ;
+	   }
+	   function ConLevButFC2(obj){
+	   zValC=6.6564 ;
+	   }
+
+	   //   conf int calc --
+	   function ci(obj) {
+
+	   if (obj.ssbox.value == "") {
+	   ss=0
+	   }
+	   else {
+	   ss = eval(obj.ssbox.value)
+	   }
+
+	   if (obj.popbox.value == "") { 
+	   pop=0
+	   }
+	   else {
+	   pop = eval(obj.popbox.value)
+	   }
+
+	   if (obj.popbox.value == "") { 
+	   pop=0}
+	   else {
+	   pop = eval(obj.popbox.value)}
+
+	   if (obj.perbox.value == "") { 
+	   perc=0}
+	   else {
+	   perc = eval(obj.perbox.value)}
+
+	   if (ss == 0 || perc < 1 || perc >99) {
+	   alert("Hay que ingresar un tamaño de muestra y un porcentaje entre 1 y 99")
+	   }
+	   else {  
+	   if (pop == 0) {
+           pf = 1 }
+	   else {
+	   pf = (pop - ss) / (pop - 1) }
+	   conInt = Math.sqrt(zValC * (perc / 100) * (1 - perc / 100) / ss * pf) * 100   
+	   // round and display
+	   pf=parseInt(conInt);
+	   conInt=Math.round((conInt-pf)*100);
+	   obj.cibox.value=pf+conInt/100
+	   //obj.cibox.value=pf
+	   }
+	   }
+
+
+	   function cler(obj, string) {
+	   obj.box.value = string;
+	   obj.popbox.value = string;
+	   obj.ssbox.value = string;
+	   }
+	   function clerC(obj, string) {
+	   obj.cibox.value = string;
+	   obj.popbox.value = string;
+	   obj.ssbox.value = string;
+	   obj.perbox.value = string;
+	   }
+
+	   // end hiding script from old browsers -->
+    </SCRIPT>
+
+    <script language="JavaScript">
+      <!-- Begin
+	   function iVal(val) {  var sTmp=""; var sAllow="1234567890"
+	   for(i=0;i<val.length;i++) if(sAllow.indexOf(val.charAt(i))>=0) sTmp+=val.charAt(i);
+	   return sTmp;}  // End -->
+    </script>
+  </head>
+<!--`n</head>-->
+
+<body topmargin="0" leftmargin="0">
+
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <p align="center">&nbsp; <H1><font color="#0033CC" face="Arial"><b>
+	    Calculadora de Tamaño de Muestras </b> </font>
+	<hr color="#FF6600">      </h1>      
+    <P>
+      
+      Esta Calculadora de Tamaño de Muestras es un servicio público de Creative Research Systems. Se utiliza para determinar cuántas personas se deben entrevistar para obtener resultados representativos de la población objetivo con la precisión necesaria. Además permite determinar el nivel de confianza de una determinada muestra.<P>
+      
+      Antes de utilizar la calculadora de tamaño de muestras, usted debe entender el significado de dos tÃ©rminos. Éstos son: intervalo de confianza (confidence interval) y nivel de confianza (confidence level). Si desconoce el useo de dichas definiciones, oprima 
+      <A HREF="#terminologye">aquí</A>. Para más información acerca de los factores que afectan el tamaño de los intervalos de confianza, oprima <A HREF="#factores">aquí</A>aquí. <P>
+
+      Esta calculadora requiere mínimo Internet Explorer 3.0 o Netscape 3.0 o versiones actualizadas o navegador compatible. Deje en blanco la casilla de población si la población se desconoce o es grande. 
+
+    <P ALIGN=Center>
+      <FORM name="calc">
+	<CENTER>
+	  <TABLE BORDER="1" CELLPADDING="2" BGCOLOR=white>
+	    <TR>
+	      <TD><TABLE CELLSPACING="5" CELLPADDING="2" ALIGN="Center" BGCOLOR="white">
+		  <CAPTION>
+		    <A NAME="ssneeded"><!-- --></A>
+		    <p><BIG><b>Precisar Tamaño de Muestra</b></BIG>
+		  </CAPTION>
+		  <TR>
+		    <TD>Nivel de Confianza:</TD>
+		    <TD>
+		      <INPUT TYPE="RADIO" NAME="ConLevBut" VALUE="1" BGCOLOR=silver onclick="ConLevButF1(this.form)"
+			     Checked >95%
+		      <INPUT TYPE="RADIO" NAME="ConLevBut" VALUE="2" onclick="ConLevButF2(this.form)"
+			     >99%</TD>
+		  </TR>
+		  <TR>
+		    <TD> Intervalo de Confianza:</TD>
+		    <TD>
+		      <INPUT type="text" name="box" size=15></TD>
+		  </TR>
+		  <TR>
+		    <TD>Población:</TD>
+		    <TD>
+		      <INPUT type="text" name="popbox" size=15 onKeyUp="this.value=iVal(this.value)"></TD>
+		  </TR>
+		  <TR>
+		    <TD></TD>
+		    <TD></TD>
+		  </TR>
+		  <TR>
+		    <TD>
+		      &nbsp;&nbsp;&nbsp;&nbsp;<INPUT type = "button" name = "Calculate" value = "Calcular" onClick ="to(this.form)">
+		    </TD>
+		    <TD>
+		      &nbsp;&nbsp;&nbsp;&nbsp;		<INPUT type = "button" name = "Clear" value = "  Borrar  " onClick ="cler(this.form,'')">
+		    </TD>
+		  </TR>
+		  <TR>
+		    <TD></TD>
+		    <TD></TD>
+		  </TR>
+		  <TR>
+		    <TD>Tamaño de Muestra preciso:</TD>
+		    <TD>
+		      <INPUT type="text" name="ssbox" BGCOLOR=silver size=15></TD>
+		  </TR>
+		</TABLE>
+	      </TD>
+	    </TR>
+	  </TABLE>
+	</CENTER>
+      </FORM>
+    <P>
+    <P ALIGN=Center>
+      <FORM name="cicalc">
+	<CENTER>
+	  <TABLE BORDER="3" CELLPADDING="2" BGCOLOR=silver>
+	    <TR>
+	      <TD><TABLE CELLSPACING="5" CELLPADDING="2" ALIGN="Center" BGCOLOR="silver">
+		  <CAPTION>
+		    <A NAME="cineeded"><!-- --></A>
+		    <p><BIG><b>Buscar Nivel de Confianza</b></BIG>
+		  </CAPTION>
+		  <TR>
+		    <TD>Nivel de Confianza:</TD>
+		    <TD>
+		      <INPUT TYPE="RADIO" NAME="ConLevButC" VALUE="1" onclick="ConLevButFC1(this.form)"
+			     Checked >95%
+		      <INPUT TYPE="RADIO" NAME="ConLevButC" VALUE="2" onclick="ConLevButFC2(this.form)"
+			     >99%</TD>
+		  </TR>
+		  <TR>
+		    <TD>Tamaño de Muestra:</TD>
+		    <TD>
+		      <INPUT type="text" name="ssbox" size=15></TD>
+		  </TR>
+		  <TR>
+		    <TD>Población:</TD>
+		    <TD>
+		      <INPUT type="text" name="popbox" size=15 onKeyUp="this.value=iVal(this.value)"></TD>
+		  </TR>
+		  <TR>
+		    <TD>Porcentaje:</TD>
+		    <TD>
+		      <INPUT TYPE="text" NAME="perbox" VALUE="50" size=15></TD>
+		  </TR>
+		  <TR>
+		    <TD></TD>
+		    <TD></TD>
+		  </TR>
+		  <TR>
+		    <TD>
+		      &nbsp;&nbsp;&nbsp;&nbsp;			<INPUT type = "button" name = "Calculate" value = "Calcular" onClick ="ci(this.form)">
+		    </TD>
+		    <TD>
+		      &nbsp;&nbsp;&nbsp;&nbsp;			<INPUT type = "button" name = "Clear" value = "  Borrar  " onClick ="clerC(this.form,'')">
+		    </TD>
+		  </TR>
+		  <TR>
+		    <TD></TD>
+		    <TD></TD>
+		  </TR>
+		  <TR>
+		    <TD> Intervalo de Confianza:</TD>
+		    <TD>
+		      <INPUT type="text" name="cibox" BGCOLOR=silver size=15></TD>
+		  </TR>
+		</TABLE>
+	      </TD>
+	    </TR>
+	  </TABLE>
+	</CENTER>
+      </FORM>
+    <P>
+
+      <A NAME="terminology">                     <!-- --></A>
+      <h2><br>
+	<B><font color="#0033CC" face="Arial">
+	    Terminología de los Tamaños de Muestra </font></B>  
+	<HR>      </h2>
+
+    <P>
+</h2>
+El intervalo de confianza es la cifra  que suele publicarse en los resultados de las encuestas de opinión de periódicos o de televisión u otras que reflejan una estimación de los límites de confianza de una proporción los cuales son dados por un recorrido o desviación +-. Por ejemplo, si se utiliza un intervalo de confianza de 4, y el 47% de la muestra elige una respuesta, usted puede estar "seguro" de que si hubiera hecho esa pregunta a toda la población relevante, entre un 43% (47-4) y un 51% (47+4) habría elegido esa respuesta. 
+El nivel de confianza indica el grado de certeza que usted puede tener. Se expresa como un porcentaje y representa con cuánta frecuencia el porcentaje real de la población que elegiría una respuesta se encuentra dentro del intervalo de confianza. <br>Un nivel de confianza del 95% quiere decir que se puede tener un 95% de probabilidad de exactitud; un nivel de confianza del 99% implica que se puede tener un 99%. La mayoría de los investigadores utilizan el nivel de confianza del 95% y se ha convertido como un estándar. 
+Cuando se combinan el nivel de confianza y el intervalo de confianza, se puede hablar de un 95% de certeza de que el porcentaje real de la población se encuentra entre el 43% y el 51% (según ejemplo señalado anteriormente). 
+Cuanto más amplio sea el intervalo de confianza que usted estÃ© dispuesto a aceptar, más exactitud podrá tener de que las respuestas de toda la población se ubicarían dentro de ese rango. Por ejemplo, si usted preguntó a una muestra de 1000 personas de una ciudad quÃ© marca de refresco de cola prefieren y un 60% eligió la Marca A, podrá tener la certeza de que entre un 40 y un 80% de todas las personas de la ciudad prefieren esa misma marca, pero no podrá estar tan seguro de que entre un 59 y un 61% de las personas de la ciudad prefieren esa marca. 
+<P ALIGN=Center>
+  <A HREF="#ssneeded">Calculadora de Tamaño de Muestra</A> | <A HREF="#cineeded">Calculadora de Nivel de Confianza </A>
+<P ALIGN=Center><br>
+  <h2>
+    <A NAME="factors"><!-- --></A><font face="Arial"><font color="#0033CC"><B>Factores que afectan los intervalos de confianzas</B></FONT> 
+    </font> 
+    <HR>      </h2>
+  
+<p>
+</h2>
+Existen tres factores que determinan el tamaño del intervalo de confianza para un determinado nivel de confianza. Éstos son: tamaño de la muestra, porcentaje y tamaño de la población. 
+
+Tamaño de la muestra
+Cuanto más grande sea la muestra, mayor precisión podrá tener de que las respuestas reflejan autÃ©nticamente la población. Esto indica que para un determinado nivel de confianza, cuanto mayor sea el tamaño de la muestra, menor será el intervalo de confianza. Sin embargo, la relación es no linear (es decir, duplicar el tamaño de la muestra no reduce a la mitad el nivel de confianza). 
+
+Porcentaje
+La precisión tambiÃ©n depende del porcentaje de la muestra que elige una determinada respuesta. Si el 99% de la muestra dijo "Sí" y el 1% dijo "No", las probabilidades de error son remotas, independientemente del tamaño de la muestra. Sin embargo, si los porcentajes son 51% y 49%, las probabilidades de error son mucho más grandes. Es más fácil estar seguro de las respuestas extremas que de las moderadas. 
+Cuando se determina el tamaño de la muestra que se necesita para un determinado nivel de precisión, se debe usar el porcentaje del "peor" caso posible (50%). TambiÃ©n se debe utilizar este porcentaje si se desea determinar un nivel general de precisión para una muestra ya existente. Para determinar el intervalo de confianza para una respuesta específica de la muestra, se puede usar el porcentaje que eligió esa respuesta y obtener un intervalo más pequeño. 
+
+Tamaño de la población
+Es importante observar cuántas personas forman parte del grupo que representa la muestra. Puede tratarse del número de personas de una ciudad que se está estudiando, del número de personas que compran automóviles nuevos, etc. Por lo general, se desconoce el tamaño exacto de la población. Esto no representa un problema. Los cálculos de probabilidad demuestran que el tamaño de la población es irrelevante, a menos que el tamaño de la muestra supere un porcentaje bajo del total de la población que se está examinando. Esto quiere decir que una muestra de 500 personas resulta igualmente útil para examinar la opinión de un estado que tiene 10,000,000 personas como para una ciudad de 100,000. Por este motivo, el Survey System ignora el tamaño de población cuando es "grande" o desconocido. Sólo es probable que el tamaño de la población sea relevante cuando se trabaja con un grupo de personas relativamente pequeño y conocido (por ejemplo, los miembros de una asociación). 
+Los cálculos de intervalo de confianza dan por sentado que hay una muestra aleatoria genuina de la población correspondiente. Si la muestra no es aleatoria, no se puede confiar en los intervalos. Las muestras no aleatorias suelen generarse por alguna falla en el procedimiento de muestreo. Un ejemplo de tal falla podría ser sólo llamar a personas en casa durante el día, y entonces no contactarse con la mayoría de los que trabajan. Para la mayor parte de los propósitos, la población que no trabaja no se considera un representante ideal de toda la población (tanto la que trabaja como la que no). 
+
+
+<p align="center">&nbsp;&nbsp;<a href="ssformue.htm">Formulas de Tamaño de Muestra<br>
+  </a><br>
+<p align="center">&nbsp;&nbsp;<a href="#top">Regresar al Inicio<br>
+  </a><br>
+
+  
+  <TABLE CELLPADDING="2" width="100%" ALIGN="Center">
+    <TR>
+      <TD > <P ALIGN=Center>
+	  <small>
+	    <A HREF="indexe.html">Hogar</A> 
+            | <A HREF="broe.htm">Productos</A> 
+	    | <a href="servicios.htm">Servicios</a> 
+            | <a href="descargar.htm">Descargar</a>
+            | <a href="usde.htm">Pedidios</a>
+            <br> <a href="recursos.htm">Ayuda para Peritos</a>
+            | <a href="cliente.htm"> Lista de Clientes</a>
+            | <a href="companye.htm">Nosotros</a> 
+	  </small>
+      </TD>
+    </TR>
+  </table>
+  <!-- end bottom menu -->      
+
+<P>
+  <table border="0" align="center">
+    <tr>
+      <td width="20" valign="top" align="center"><img border="0" src="logos.gif" width="25" height="35"></td>
+      <td nowrap nowrap>
+        <p align="center">  <SMALL>&nbsp;Copyright &copy; 2006 &nbsp;Creative Research Systems <br>&nbsp;(707) 765-1001 &nbsp;<A HREF="mailto:info@surveysystem.com">info@surveysystem.com</A></SMALL> </td>
+    </tr>
+  </table>
+<p align="center">
+  <BR>
+  <SMALL>&nbsp; </SMALL>
+
+</p>
+
+</td>
+
+<td valign="top" align="left">
+  
+</td>
+</tr>
+
+</table>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

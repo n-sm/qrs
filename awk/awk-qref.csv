@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+# -*- mode:csv -*-
+>>>>>>> 0ee6c1a5bffb6f1f7020eff01abfae60e033bc66
 DESCRIPCION    	PROGRAMA
 awk path:	/usr/bin/awk
 Hello World	awk 'BEGIN { print "Hello world!" }'
@@ -6,9 +10,15 @@ cat en awk	awk ' { print }'
 cat en awk file input	awk ' { print }' < file
 grep pattern en awk	awk '/pattern/ { print $0 }' mail-list
 sum pipe input	awk ' { s+=$1 } END { print s } '
+<<<<<<< HEAD
 separate by comma	awk -F'COMMA' ' { print $3 } '#TB: cut -d, -f3
 replace string	awk '{ gsub(/PATTERnfrom/, "PATTERNto"); print} ' FILE 
 replace regexp	awk '{ gsub(/REGEXP/, "PATTERNto"); print} ' FILE 
+=======
+separate by comma	awk -F'COMMA' ' { print $3 } '#TB: cut -d	 -f3
+replace string	awk '{ gsub(/PATTERnfrom/	 "PATTERNto"); print} ' FILE 
+replace regexp	awk '{ gsub(/REGEXP/	 "PATTERNto"); print} ' FILE 
+>>>>>>> 0ee6c1a5bffb6f1f7020eff01abfae60e033bc66
 grep with awk 1	awk ' /PATTERN/ ' FILE
 grep with awk 2	awk ' /PATTERN/ { print } ' FILE
 grep with awk 3	awk ' /PATTERN/ { print bash } ' FILE

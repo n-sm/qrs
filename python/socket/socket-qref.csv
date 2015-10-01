@@ -1,7 +1,7 @@
+# -*- mode:csv -*-
 # para simplificr la esritur avamos a definir:
 # s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-# nota: sustituir Ñ por ,
-get the computer's host name  ,socket.gethostname()
-get IP of computer 1,socket.gethostbyname(socket.gethostname())
-get IP of computer 2,s.connect(("gmail.com"Ñ80));print(s.getsockname()[0])
-get mac address,from uuid import getnode ; getnode()
+get the computer's host name  	socket.gethostname()
+get IP of computer 1	socket.gethostbyname(socket.gethostname())
+get IP of computer 2	s.connect(("gmail.com",80)); print(s.getsockname()[0])
+get mac address	from uuid import getnode ; getnode()

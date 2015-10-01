@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Prueba de PHP</title>
+  </head>
+  <body>
+    <?php
+      function foo() {
+      echo '<p>Hola a Mundo</p>';
+      }
+
+      function foo2($par) {
+      echo "$par";
+      }
+      function listItem($preg, $op1, $op2, $op3, $op4) {
+      echo '
+	<li>      <!--item-->
+	  <table>
+	    <th colspan=4>';
+	      echo "$preg</th>";
+	    echo '
+	    <tr>
+	      <td>
+		<input type="radio" name="p002" value="op1"
+		       checked>';
+		echo "$op1</td>";
+	      echo '
+	      <td>
+		<input type="radio" name="p002" value="op2"
+		       checked>';
+		echo "$op2</td>";
+	      echo '
+	      <td>
+		<input type="radio" name="p002" value="op3"
+		       checked>';
+		echo "$op3</td>";
+	      echo '
+	      <td>
+		<input type="radio" name="p002" value="op4"
+		       checked>';
+		echo "$op4</td>";
+	      echo '
+	    </tr>
+	  </table>
+	</li>
+	';
+	}
+	
+      foo();
+      
+      foo2("second foo...");
+	echo date("r");
+
+	listItem("la primer pregunta...",
+	"la opcion 1",
+	"opcion seg",
+	"op terc",
+	"opcion numero cuatroo");
+	  ?>
+  </body>
+</html>
