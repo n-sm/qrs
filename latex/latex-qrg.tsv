@@ -1,9 +1,9 @@
-___DESCRIPCIÓN___,___COMANDO_1__ , ___COMANDO_2___
+___DESCRIPCIÓN___	___COMANDO_1__ 	 ___COMANDO_2___
 
-fecha,\date
-autor,\author
-título,\title{...} [...] \maketitle
-iniciar sección,\section{...}
+fecha	\date
+autor	\author
+título	\title{...} [...] \maketitle
+iniciar sección	\section{...}
 Parte	\part[nombre1]{nombre2}	\part*{nombre}
 Capítulo	\chapter[nombre1]{nombre2}	\chapter*{nombre}
 Sección	\section[nombre1]{nombre2}	\section*{nombre}
@@ -11,7 +11,8 @@ Subsección	\subsection[nombre1]{nombre2}	\subsection*{nombre}
 Subsubsección	\subsubsection[nombre1]{nombre2}	\subsubsection*{nombre}
 Parágrafo	\paragraph[nombre1]{nombre2}	\paragraph*{nombre}
 Subparágrafo	\subparagraph[nombre1]{nombre2}	\subparagraph*{nombre}
-signo de pregunta,?`
-cross referencing,\label{MiLabel} THEN \ref{MiLabel}
-newcommand,\newcommand{cmd}[args]{def}
-renewcommand,\renewcommand{cmd}[args]{def}
+signo de pregunta	?`
+cross referencing	\label{MiLabel} THEN \ref{MiLabel}
+newcommand	\newcommand{cmd}[args]{def}
+renewcommand	\renewcommand{cmd}[args]{def}
+instalar	texlive, texlive-lang-spanish, texlive-latex-extra
