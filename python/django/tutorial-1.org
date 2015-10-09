@@ -1,0 +1,29 @@
+* start a proyect
+sjango-admin startproject mysite
+
+* start shell
+pyhton manage.py shell
+
+* imports
+from polls.models import Question, Choice
+from django.utils import timezone
+
+* get the questions:
+Question.objects.all()
+
+* create new question
+q = Question(question_text="TEXT", pub_date=timezone.now())
+
+* save the question
+q.save()
+
+* acces question text and date
+q.question_text
+q.pub_date
+
+* para adoptar los cambios
+solo guardar y reiniciar shell
+
+* para obtener una Question de las Questions.objects:
+q = question.objects.get(pk=1) # 1 es un id
+

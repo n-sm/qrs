@@ -1,0 +1,18 @@
+#!/bin/bash
+
+declare -a arr=("quick-refs", "tef", "elisp-functions", "r-functions")
+
+for DIR in "$arr[@]"
+do
+    echo $DIR
+#    git -C $DIR
+    
+#STATUS_OUT=$(git status --porcelain)
+#LOG_OUT=$(git log origin/master..HEAD)
+#
+#[[ -z $STATUS_OUT ]] && echo "Nothing to commit" &&\
+#    [[ -z $LOG_OUT ]] && echo "Nothing to push" ; return 0;
+
+
+
+done
