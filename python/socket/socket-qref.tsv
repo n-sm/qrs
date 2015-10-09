@@ -1,3 +1,4 @@
+# -*- mode:csv -*-
 # para simplificr la esritur avamos a definir:
 # s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 get the computer's host name  	socket.gethostname()
