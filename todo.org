@@ -1,2 +1,3 @@
 * tutorial de mutt
   http://www.andrews-corner.org/mutt.html
+ http://superuser.com/questions/384499/how-is-mail-actually-sent-when-i-use-the-linux-mail-command
