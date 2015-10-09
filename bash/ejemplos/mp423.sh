@@ -13,12 +13,12 @@ then
 else
     printf "extrayendo:\n%s\n\nde:\n%s\n\n" "$HASTA"  "$DESDE"
     avconv -i "$DESDE" -vn -ar 44100 -ac 2 -ab 192 -f mp3 "$HASTA" && echo ok ;\
-    printf "Borramos %s?\n(S/n)\n" $DESDE
+    printf "Borramos %s?\n(S/n)\n" "$DESDE"
     read INPUT
     if	[[ "$INPUT" == "S" ]] ;
     then
-	echo Borramos "$INPUT"
-	rm "$INPUT"
+	echo Borramos "$DESDE"
+	rm "$DESDE"
     else
 	echo No borramos $DESDE
     fi

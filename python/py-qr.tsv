@@ -1,4 +1,6 @@
          ACCION             	COMANDO 
+iniciar python desde bash	pyhton
+iniciar sympy desde pyhton	from sympy import *
 usar funciones mathmaticas (math)	import math
 comandos de os ('os.')	import os
 cambiar directorio	os.chdir("PATH")
@@ -11,5 +13,3 @@ get variables defined	dir() | globals() | locals()
 decimal to binary	format(2, '08b')
 apply function FOO() to elemnts in list	[ FOO(x) for x in LIST ]
 lambda ej	(lambda x, y: x*y)(2,5)
-apply function to elemnts in list	[ FOO(x) for x in LIST ]
-install module from source	python setup.py install

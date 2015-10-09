@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+           accion               	   comando                 	alguna opcion
+=======
 # -*- mode:csv -*-
 accion               	   comando                 	alguna opcion
+>>>>>>> 0ee6c1a5bffb6f1f7020eff01abfae60e033bc66
            ------	   -------	-------------
 iformacion sobre discos	df -h
 list files by size	ls -lhS
@@ -22,3 +26,8 @@ copiar video youtube Flash	cp /proc/2222/fd/19 #ejemplo
 rsync push current dir	rsync -avz .  /dir/subdir1/subdirN/dest
 separate by comma 1(awk)	awk -F'COMMA' 
 separate by comma 2(cut)	cut -d'COMMA'
+<<<<<<< HEAD
+ejecutar linea por linea un archivo	while read -r LINE; do "$LINE"; done < ARCHIVO
+
+=======
+>>>>>>> 0ee6c1a5bffb6f1f7020eff01abfae60e033bc66
