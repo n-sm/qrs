@@ -1,6 +1,6 @@
 # -*- mode:csv -*-
-           accion               	   comando
-           ------	   -------
+accion               	   comando                 	alguna opcion
+           ------	   -------	-------------
 iformacion sobre discos	df -h
 list files by size	ls -lhS
 list proceses	ps -e
@@ -16,13 +16,12 @@ borrar recursivamente todo .txt	find . -type f -iname "*\.txt" -print0 | xargs -
 habilita "negative woldcards" como !(*.*) 	shopt -s extglob
 get partition structure of hard drive	lsblk
 for en archivos con espacios en blanco	IFS=$\'\n\'
-sort by names length with perl	ls | perl -e 'print sort { length() <=> length() } <>'
-sort by names length with awk	ls | awk '{ print length, $0 }' | sort -n -s | cut -d" " -f2-
+sort by names length 	 ls | perl -e 'print sort { length() <=> length() } <>'
 encontrar video youtube	lsof | grep Flash
 copiar video youtube Flash	cp /proc/2222/fd/19 #ejemplo
 rsync push current dir	rsync -avz .  /dir/subdir1/subdirN/dest
-separate by comma 1(awk)	awk -F,
-separate by comma 2(cut)	cut -d,
+separate by comma 1(awk)	awk -F'COMMA' 
+separate by comma 2(cut)	cut -d'COMMA'
 ejecutar linea por linea un archivo	while read -r LINE; do "$LINE"; done < ARCHIVO
 win's crlf to unix	tr -d '\015' <DOS-file >UNIX-file
 print repeated files recursuvely	find -type f | awk -F/ ' { print $(NF) } ' | uniq -d
