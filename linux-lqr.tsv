@@ -1,5 +1,7 @@
 # -*- mode:csv -*-
+instalar arch	http://www.linuxveda.com/2014/06/07/arch-linux-tutorial/
 get ubuntu version	lsb_release -a
 crear live usb booteable	dd if=$laiso of=/dev/sdb1
 obtener nombre etiqueta usb(sdf1 es el lugar donde esta)	sudo mlabel -i /dev/sdf1 -s ::
 cambiar nombre etiqueta usb	sudo mlabel -i /dev/sdf1 ::NOMBRE
+enabling root in ubuntu	sudo passwd http://askubuntu.com/questions/44418/how-to-enable-root-login
