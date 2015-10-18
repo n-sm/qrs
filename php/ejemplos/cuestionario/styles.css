@@ -1,0 +1,17 @@
+body { 
+    font-family: Georgia, sans-serif;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 18px;
+    width: 90%;
+    table-layout: fixed;
+}
+td, th {
+    border: 0;
+    padding: 18px;
+}
+th {
+    padding: 22px;
+}
