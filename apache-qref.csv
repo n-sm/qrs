@@ -3,3 +3,5 @@ parar apache	apachectl -k stop
 reiniciar apache	sudo /etc/init.d/apache2 restart || sudo service apache2 restart	?apachectl -k restart
 guia instalacion	https://help.ubuntu.com/community/ApacheMySQLPHP
 instalar lamp-server	sudo apt-get install lamp-server^
+iniciar apache\tservice apache2 start
+parar apache\tservice apache2 stop
