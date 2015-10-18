@@ -1,5 +1,0 @@
-           accion               ,   comando                 ,alguna opcion
-           ------,   -------,-------------
-grep recursivo,grep -R "string" FOLDER
-grep recursivo certain files,grep -r --include='PATTERN' "string" FOLDER
-grep print line number,grep -n FILE
