@@ -48,4 +48,4 @@ def send_psimail(user, pwd, recipient, subject, body):
     except:
         print "failed to send mail"
 
-print("usage:\nsend_email(user, pwd, recipient, subject, body)")
+print("usage:\nsend_gmail(user, pwd, recipient, subject, body)")

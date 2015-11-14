@@ -7,3 +7,4 @@ Rcpp	http://stackoverflow.com/questions/22798234/error-in-sourcecpp-after-instal
 install package from source  	install.packages(path_to_file, repos = NULL, type="source")
 list functions in package	ls(package:PACKAGE_NAME)
 uninstal package	remove.packages('PACKAGE_NAME')
+parsear fechas tipo 2015/02/14	as.Date(as.character(x[[1]]), format="%Y/%m/%d")
