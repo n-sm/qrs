@@ -1,0 +1,9604 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<title>Cronista.com</title>
+	<!-- Carrousel -->
+	<script type="text/javascript" language="javascript" src="/__export/1385062076472/system/modules/com.tfsla.diario.elcronista/resources/js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" language="javascript" src="/__export/1385062076541/system/modules/com.tfsla.diario.elcronista/resources/js/jquery.carrusel.js"></script>
+	<script type="text/javascript" language="javascript" src="/__export/1429890600000/system/modules/com.tfsla.diario.elcronista/resources/js/functions.js"></script>
+	<script type="text/javascript" language="javascript" src="/__export/1409671002752/system/modules/com.tfsla.diario.elcronista/resources/js/openauthorization.js"></script>
+	
+	
+	<!-- Slides -->
+	<script src="/__export/1385062076911/system/modules/com.tfsla.diario.elcronista/resources/js/slides.min.jquery.js"></script>
+	<script>
+	    $(function(){
+	        $('#slides,#slidesVideos').slides({
+	            preload: true,
+	            play: false,
+	            generateNextPrev: true
+	        });
+	    });
+	</script>
+	
+	<!-- Custom  Google Seach Results -->
+	
+	<script type="application/ld+json">
+	{
+	   "@context": "http://schema.org",
+	   "@type": "WebSite",
+	   "url": "http://www.cronista.com/",
+	   "potentialAction": {
+	     "@type": "SearchAction",
+	     "target": "http://www.cronista.com/buscador.html?search={search_term_string}",
+	     "query-input": "required name=search_term_string"
+	   }
+	}
+	</script>
+	
+	<!-- Custom  Google Seach Results -->
+	
+	
+	<!--******* LIGHTBOX *******-->
+	<script src="/__export/1385062076761/system/modules/com.tfsla.diario.elcronista/resources/js/lightbox.js"></script>
+	
+	<!--Tabs-->
+	<script type="text/javascript" src="/__export/1385062077025/system/modules/com.tfsla.diario.elcronista/resources/js/tabs.min.jquery.js"></script>	
+	
+	<!-- calendario -->
+	
+	<script type="text/javascript" src="/__export/1385062077173/system/modules/com.tfsla.diario.elcronista/resources/js/tcal.js"></script> 
+	
+	<!--rankings -->
+	<script type="text/javascript" src="/__export/1426602252000/system/modules/com.tfsla.diario.newsTags/resources/js/rankTagsFiller.js"></script>
+	
+	
+	
+	
+	
+	
+	<script src="http://jwpsrv.com/library/zWZ70OICEeSUygp+lcGdIw.js"></script> 
+		
+		
+		
+		
+
+
+
+
+
+
+		
+		<!-- Google Analytics -->
+	    	
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-489926-7', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Begin Tag DFP Google --> 
+<script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  (function() {
+    var gads = document.createElement('script');
+    gads.async = true;
+    gads.type = 'text/javascript';
+    var useSSL = 'https:' == document.location.protocol;
+    gads.src = (useSSL ? 'https:' : 'http:') +
+      '//www.googletagservices.com/tag/js/gpt.js';
+    var node = document.getElementsByTagName('script')[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script>
+<script type='text/javascript'>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/54299349/Cronista_Notas_320x100_Derecha', [320, 100], 'div-gpt-ad-1429213074192-0').addService(googletag.pubads());
+    googletag.defineSlot('/54299349/Cronista_Notas_320x100_Izquierda', [320, 100], 'div-gpt-ad-1429213074192-1').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+<!-- End Tag DFP Google-->
+	</head>
+
+	<body >
+
+	  <!-- Script1 PianoMedia1-->
+		<!--
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="piano-root"></div>
+<script type="text/javascript">
+    var pianoVariables = {
+        service_id: '72',
+        mode: 'bar_hidden'
+    };
+    var pianoHostProtocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+    (function() {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = pianoHostProtocol + 'bar.pianomedia.biz/bar.js';
+        var p = document.getElementsByTagName('script')[0];
+        p.parentNode.insertBefore(s, p);
+    })();
+</script>  -->
+
+		<!-- DAX TOP-->
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Begin Digital Analytix Tag --> 
+<script type="text/javascript"> 
+// <![CDATA[
+function udm_(a){var b="comScore=",c=document,d=c.cookie,e="",f="indexOf",g="substring",h="length",i=2048,j,k="&ns_",l="&",m,n,o,p,q=window,r=q.encodeURIComponent||escape;if(d[f](b)+1)for(o=0,n=d.split(";"),p=n[h];o<p;o++)m=n[o][f](b),m+1&&(e=l+unescape(n[o][g](m+b[h])));a+=k+"_t="+ +(new Date)+k+"c="+(c.characterSet||c.defaultCharset||"")+"&c8="+r(c.title)+e+"&c7="+r(c.URL)+"&c9="+r(c.referrer),a[h]>i&&a[f](l)>0&&(j=a[g](0,i-8).lastIndexOf(l),a=(a[g](0,j)+k+"cut="+r(a[g](j+1)))[g](0,i)),c.images?(m=new Image,q.ns_p||(ns_p=m),m.src=a):c.write("<","p","><",'img src="',a,'" height="1" width="1" alt="*"',"><","/p",">")}
+udm_('http'+(document.location.href.charAt(4)=='s'?'s://sb':'://b')+'.scorecardresearch.com/b?c1=2&c2=6906413&ns_site=cronista&name=cronista.home');
+// ]]>
+</script>
+<noscript><p><img src="http://b.scorecardresearch.com/p?c1=2&c2=6906413&ns_site=cronista&name=cronista.home" height="1" width="1" alt="*"></p></noscript> 
+<!-- End Digital Analytix Tag -->
+	
+
+		
+
+<!-- Inicio cod seccion AJAX V4 -->
+
+<script language="JavaScript" type="text/javascript"><!--
+var eplDoc = document; var eplLL = false;
+var eS1 = 'us.img.e-planning.net';var eplArgs = { iIF:1,sV:"http://ads.e-planning.net/",vV:"4",sI:"525a",sec:"Home_V4",eIs:["V4_Cronista_Home_Takeover","V4_Cronista_Home_Right2","V4_Cronista_Home_Header","V4_Cronista_Home_TopHeader","V4_Cronista_Home_Middle","V4_Cronista_Home_Right1","V4_Cronista_Home_Right3","V4_Cronista_Home_Right4","V4_Cronista_Home_Right5","V4_Cronista_Home_Middle1","V4_Cronista_Home_Footer","V4_Cronista_Home_Skinderecho","V4_Cronista_Home_Skinizquierdo","V4_Cronista_Home_LayeraBoton","V4_Cronista_Home_Right6","V4_Cronista_Home_FlyAd", "V4_Cronista_Home_Zocalo", "V4_Cronista_Home_UnionDeLayer", "V4_Cronista_Home_Filmstrip"] };
+function eplCheckStart() {
+	if (document.epl) {
+		var e = document.epl;
+		if (e.eplReady()) {
+			return true;
+		} else {
+			e.eplInit(eplArgs);
+			if (eplArgs.custom) {
+				for (var s in eplArgs.custom) {
+					document.epl.setCustomAdShow(s, eplArgs.custom[s]);
+				}
+			}
+			return e.eplReady();		
+		}
+	} else {
+		if (eplLL) return false;
+		if (!document.body) return false; var eS2; var dc = document.cookie; var ci = dc.indexOf("EPLSERVER=");
+		if (ci != -1) {
+			ci += 10; var ce = dc.indexOf(';', ci);
+			if (ce == -1) ce = dc.length;
+			eS2 = dc.substring(ci, ce);
+		}
+		var eIF = document.createElement('IFRAME');
+		eIF.src = 'about:blank'; eIF.id = 'epl4iframe'; eIF.name = 'epl4iframe';
+		eIF.width=0; eIF.height=0; eIF.style.width='0px'; eIF.style.height='0px';
+		eIF.style.display='none'; document.body.appendChild(eIF);
+		
+		var eIFD = eIF.contentDocument ? eIF.contentDocument : eIF.document;
+		eIFD.open();eIFD.write('<html><head><title>e-planning</title></head><bo'+'dy></bo'+'dy></html>');eIFD.close();
+		var s = eIFD.createElement('SCRIPT'); s.src = 'http://' + (eS2?eS2:eS1) +'/layers/epl-41.js';
+		eIFD.body.appendChild(s);
+		if (!eS2) {
+			var ss = eIFD.createElement('SCRIPT');
+			ss.src = 'http://ads.e-planning.net/egc/4/51f5';
+			eIFD.body.appendChild(ss);
+		}
+		eplLL = true;
+		return false;
+	}
+}
+eplCheckStart();
+function eplSetAdM(eID,custF) {
+	if (eplCheckStart()) {
+		if (custF) { document.epl.setCustomAdShow(eID,eplArgs.custom[eID]); }
+		document.epl.showSpace(eID);
+	} else {
+		var efu = 'eplSetAdM("'+eID+'", '+ (custF?'true':'false') +');';
+		setTimeout(efu, 250);	
+	}
+}
+
+function eplAD4M(eID,custF) {
+	document.write('<div id="eplAdDiv'+eID+'"></div>');
+	if (custF) {
+	    if (!eplArgs.custom) { eplArgs.custom = {}; }
+	    eplArgs.custom[eID] = custF;
+	}
+	eplSetAdM(eID, custF?true:false);
+}
+function eplSetAd(eID) {
+	if (eplCheckStart()) {
+		var opts = (eplArgs.sOpts && eplArgs.sOpts[eID]) ? eplArgs.sOpts[eID] : {};
+		if (opts.custF) { document.epl.setCustomAdShow(eID,opts.custF); }
+		document.epl.setSpace(eID, opts);
+	} else {
+		setTimeout('eplSetAd("'+eID+'");', 250);	
+	}
+}
+function eplAD4(eID, opts) {
+	document.write('<div id="eplAdDiv'+eID+'"></div>');
+	if (!opts) opts = {t:1};
+	if (!eplArgs.sOpts) { eplArgs.sOpts = {}; }
+	eplArgs.sOpts[eID] = opts;
+	eplSetAd(eID);
+}
+//--></script>
+
+<!-- Fin cod seccion AJAX V4 -->
+		
+		<!-- Espacios layers -->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+  
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_FlyAd");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+  
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_LayeraBoton");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+  
+		    
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Takeover");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+ 
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_UnionDeLayer");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+  
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Filmstrip");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+  
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Zocalo");</script>
+
+			 
+				
+
+			
+		
+		
+			
+ 
+		<!-- FIN Espacios layers -->
+ 
+		
+			
+			<div class="bg-toppopup" style="display: none;"></div>
+			<!-- Beta -->
+			<div id="contenedor">
+				<!--BANNER-->
+				<div class="b980x80">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_TopHeader");</script>
+
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+				</div>
+			    	<div class="b160x600 b-izq">
+			    		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Skinizquierdo");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+			    	</div>
+			    	<div class="b160x600 b-der">
+			    		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<div id="epl_impact_div"> </div>
+<script type="text/javascript">eplAD4M("V4_Cronista_Home_Skinderecho");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+			    	</div>
+				<!--FIN BANNER-->
+ 
+				<div id="contHeader">
+					
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+		<div class="top">
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="news-popup">
+		<img src="/arte/popup-btn-news.jpg" class="news" />
+		<div class="tt-popup">Suscripción al Newsletter</div>
+		<div class="validarForm"> Ingreso mal su mail!</div>
+		Recibí las noticias más relevantes del día en tu correo electrónico.
+		<form id="regNl" name="regNl" method="post" action="http://www.cronista.com/index.html" >
+			<input class="news" type="text" id="calNewsletter" name="cal_registration_email_newsletter" onclick="this.value='';" onblur="this.value=!this.value?'E-mail':this.value;" value="E-mail." />
+			<input class="news-btn" type="submit" value="Enviar" />
+		</form>
+	</div><!--news-popup-->		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://s.ppjol.net/lightbox/pp4.js"></script>
+<script>
+    var pp = {
+        client: {
+            config: {
+                'zone': "iN07kyfMUjM3LlCx7PaKcG",
+                'mode': "meter",
+                'debug': 0,
+                'precheck': function () {
+                    return 1;
+                }
+            }
+        }
+    };
+</script>
+<!-- Cxense script begin -->
+<script type="text/javascript">
+var cX = cX || {}; cX.callQueue = cX.callQueue || [];
+cX.callQueue.push(['setSiteId', '1128283233824901944']);
+cX.callQueue.push(['sendPageViewEvent']);
+</script>
+<script type="text/javascript">
+(function(d,s,e,t){e=d.createElement(s);e.type='text/java'+s;e.async='async';
+e.src='http'+('https:'===location.protocol?'s://s':'://')+'cdn.cxense.com/cx.js';
+t=d.getElementsByTagName(s)[0];t.parentNode.insertBefore(e,t);})(document,'script');
+</script>
+<!-- Cxense script end -->			
+			
+			<a href="http://www.apertura.com/?utm_source=cronista&utm_medium=link&utm_campaign=Header" target="_blank" class="link apertura"></a>
+		    	<a href="http://www.infotechnology.com/?utm_source=cronista&utm_medium=link&utm_campaign=Header" target="_blank" class="link infotech"></a>
+		    	<!--<a href="http://www.apertura.com/clase/?utm_source=cronista&utm_medium=link&utm_campaign=Header" target="_blank" class="link clase"></a>-->
+		    	<a href="http://www.elgolfista.com/?utm_source=cronista&utm_medium=link&utm_campaign=Header" target="_blank" class="link golfista"></a>
+		        <a href="http://www.facebook.com/Cronistacomercial" target="_blank" class="redface"></a>
+		        <a href="http://twitter.com/cronistacom" target="_blank" class="redtwit"></a>
+		        <a href="http://www.linkedin.com/company/el-cronista-comercial" target="_blank" class="redlink"></a>
+		        <a href="http://www.cronista.com/rss.html" target="_blank" class="redrss"></a>
+		        <ul>
+		        	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" language="javascript" src="/__export/1409671002752/system/modules/com.tfsla.diario.elcronista/resources/js/openauthorization.js"></script>
+
+
+
+  	
+  	<SCRIPT LANGUAGE="JavaScript">
+  		$(document).ready(function() {
+			getPopUps();
+		});
+  	
+		function getPopUps(){
+			$.get("http://www.cronista.com/usuarios/login_header.html", 
+				{R:'/index.html'}, function(data){
+				$('#login').html(data);
+			});
+			$.get("http://www.cronista.com/usuarios/registration_header.html", function(data){
+				$('#register').html(data);
+			});
+		}
+	</script>
+  	      	
+	<div id="register"></div>
+	<div id="login"></div>
+	 	
+	<li><a id="pop-reg" href="#">Regístrate</a></li>
+	<li><a id="pop-ing" href="#">Ingresá</a></li>
+
+
+ 
+		        	
+		        	<li><a href="http://www.cronista.com/suscripcion/suscripcion-form.html" target="_blank"> Suscribite </a></li>
+		        	
+		        </ul>
+		</div><!--TOP-->
+		    	
+		<div class="header">
+			<a href="http://www.cronista.com">
+				<img class="logo" src="/__export/1379349870181/sites/diarioelcronista/arte/cronista_logo.jpg" width="318" height="33" alt="Cronista.com" />
+			</a>
+		        <div class="date">
+		           	<strong> Viernes </strong> 23.10.2015 | 09:29 <br />
+		        </div>
+		        <div class="search">
+		        	<form id="buscar" method="POST" action="/buscador.html" target="_top">
+					<input type="text" id="search" name="search" class="buscar" onclick="this.value='';" onblur="this.value=!this.value?'&raquo; Buscar':this.value;"  />
+		                   	<input id="buscarbtn"  class="buscarbtn" type="submit" value="" />
+		             	</form>
+		            	<a href="/buscador.html" class="searchAdv">Búsqueda Avanzada >></a>
+			</div>
+		</div><!--HEADER-->
+		
+		 <div class="nav">
+			<div class="mask-nav" id="mask"></div>
+				<ul class="tags">
+					<li class="hoy"><a href="http://www.cronista.com"><img src="/__export/1374500796000/sites/diarioelcronista/arte/stick_nav.png" width="72" height="37" alt="HOY" /></a></li>
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+				
+		
+			
+				
+    				
+    				
+				
+    				
+						<span class="tags-list-1">
+
+
+							<li><a href="/tags/dolar-blue">dólar blue</a></li>
+
+			
+				
+    				
+    				
+				
+    				
+
+							<li><a href="/tags/elecciones">elecciones</a></li>
+
+			
+				
+    				
+    				
+				
+    				
+
+							<li><a href="/tags/Brasil">Brasil</a></li>
+
+			
+				
+    				
+    				
+				
+    				
+
+							<li><a href="/tags/exportaciones">exportaciones</a></li>
+
+			
+				
+    				
+    				
+				
+    				
+
+							<li><a href="/tags/Ganancias">Ganancias</a></li>
+
+			
+				
+    				
+    				
+				
+    				
+
+							<li><a href="/tags/Los-Pumas">Los Pumas</a></li>
+
+			
+				
+    				
+    				
+				
+    				
+
+							<li><a href="/tags/Mundial-de-Rugby">Mundial de Rugby</a></li>
+
+			
+		
+				
+
+					
+					<!--<li class="guiadecompras"><a href="http://www.cronista.com/GuiaDeCompras/">Guía de Compras</a></li>-->
+					<li class="btmercados"><a href="http://www.cronista.com/MercadosOnline/mercados.html">Mercados OnLine</a></li>
+					<li class="newsletter"><a href="#" id="pop-news">Newsletter</a></li>
+					<li class="secciones"><a class="" id="sec">secciones</a></li>
+				</ul>
+			<div class="nav-secciones" id="nav-sec">
+				<ul>
+					
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+<li>
+<a href="/seccion/economia_politica/" title="Economía & Política"> Economía & Política</a>
+</li>
+<li>
+<a href="/seccion/finanzas_mercados/" title="Finanzas"> Finanzas</a>
+</li>
+<li>
+<a href="/seccion/negocios/" title="Negocios"> Negocios</a>
+</li>
+<li>
+<a href="/seccion/internacionales/" title="Internacionales"> Internacionales</a>
+</li>
+<li>
+<a href="/seccion/financial_times/" title="Financial Times"> Financial Times</a>
+</li>
+<li>
+<a href="/seccion/columnistas/" title="Columnistas"> Columnistas</a>
+</li>
+<li>
+<a title="Suplementos"> Suplementos</a>
+<ul>
+<li><a href="/suplemento/3dias/" target="_self" title="3Días">3Días</a></li>
+<li><a href="/suplemento/Itbusiness/" target="_self" title="Itbusiness">Itbusiness</a></li>
+<li><a href="/suplemento/TransportyCargo/" target="_self" title="Transport & Cargo">Transport & Cargo</a></li>
+<li><a href="/suplemento/pymes/" target="_self" title="Pymes">Pymes</a></li>
+<li><a href="/suplemento/fiscal/" target="_self" title="Fiscal & Previsional">Fiscal & Previsional</a></li>
+<li><a href="/suplemento/management/" target="_self" title="Management & RRHH">Management & RRHH</a></li>
+<li><a href="/suplemento/responsabilidad/" target="_self" title="Responsabilidad Social">Responsabilidad Social</a></li>
+<li><a href="/suplemento/seguros/" target="_self" title="Seguros">Seguros</a></li>
+<li><a href="/suplemento/legales/" target="_self" title="Legales">Legales</a></li>
+<li><a href="/suplemento/especiales/" target="_self" title="Especiales">Especiales</a></li>
+<li><a href="/suplemento/realestate/" target="_self" title="Real Estate">Real Estate</a></li>
+<li><a href="/suplemento/weekend/" target="_self" title="WE">WE</a></li>
+<li><a href="/suplemento/rpm/" target="_self" title="RPM">RPM</a></li>
+</ul>
+</li>
+<li>
+<a href="/seccion/ripe/" title="RIPE"> RIPE</a>
+</li>
+<li>
+<a href="/seccion/ultimas_noticias/" title="Ultimas Noticias"> Ultimas Noticias</a>
+</li>
+
+		            	</ul>
+			</div>
+			<!--nav-secciones--> 
+		
+		</div>
+		<!--NAV-->	
+		
+	 	
+		
+<script type="text/javascript">
+
+(function(a){a.fn.validateField=function(b){a(this).on({keypress:function(a){var c=a.which,d=a.keyCode,e=String.fromCharCode(c).toLowerCase(),f=b;(-1!=f.indexOf(e)||9==d||37!=c&&37==d||39==d&&39!=c||8==d||46==d&&46!=c)&&161!=c||a.preventDefault()}})}})(jQuery);
+
+$(function(){
+	$('#nombre').validateField(' abcdefghijklmnñopqrstuvwxyzáéiou');
+	$('#apellido').validateField(' abcdefghijklmnñopqrstuvwxyzáéiou');
+	$('#tel').validateField(' 0123456789');
+});
+
+$(document).ready(function() {
+	$("#mandar").click(function() {
+		
+		var errorCampos = false;
+		var errorMail = false;
+		
+		_nombre = $('#nombre').val();
+		_apellido = $('#apellido').val();
+		_email = $('#mail').val();
+		_telefono = $('#tel').val();
+		_comentario = document.getElementById('comentario').value; 
+		_dirigido = $('#to:checked').val();
+		
+		if( _nombre.length < 1 || _apellido.length < 1 || _email.length < 1 || _telefono.length < 1 || _comentario.length < 1 ) 
+			errorCampos = true;
+		
+		if( !isValidEmailAddress( _email ) ) 
+			errorMail = true;
+		
+		if ( !errorMail && !errorCampos  ) {
+		
+		        $.get("/system/modules/com.tfsla.diario.elcronista/elements/CC_Common_SendMail.jsp",
+		        	{ nombre:_nombre, apellido:_apellido, email:_email, telefono:_telefono, dirigido:_dirigido, comentario:_comentario }, function(data){
+		          	$(".form-popup").html(data);
+		        });
+		        
+		} else {
+			if ( errorCampos ) alert("Complete todos los campos."); 
+			if ( errorMail ) alert("Ingrese una dirección de correo válida.");
+        	}
+	});
+});
+
+function isValidEmailAddress( emailAddress ) {
+	var pattern = new RegExp(/^((([a-z]|\d|[!#$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);
+	return pattern.test( emailAddress );
+};
+
+
+</script>
+
+
+<!-- POPUPS -->
+<div class="wp-popup pop-cont">
+	<div class="form-popup">
+		<div class="tt-popup">Contáctenos</div>
+		A través de este formulario podrá dejarnos sus comentarios, sugerencias o inquietudes.
+		<form id="contactenos" name="Contacto" action="">
+			<input class="nom input" name="nombre" id="nombre" placeholder="Nombre" type="text" />
+			<input class="ape input" name="apellido" id="apellido" placeholder="Apellido" type="text"  />
+			<input class="ema input" name="mail" id="mail" placeholder="E-mail" type="text"  />
+			<input class="tel input" name="tel" id="tel" placeholder="Teléfono" type="text" />
+			
+			<div class="radio-popup">
+				<span><strong>Dirigido a:</strong></span>	
+				<input type="radio" name="to" id="to" value="redaccion" checked="checked" /> Redacción
+				<input type="radio" name="to" id="to" value="comercial" /> Comercial
+				<input type="radio" name="to" id="to" value="sistemas" /> Sistemas
+				<input type="radio" name="to" id="to" value="suscripciones" /> Suscripciones
+			</div>
+			
+			<textarea name="comentario" id="comentario"></textarea>
+			<span>Todos los campos son obligatorios.</span>
+			<input type="button" class="send-popup" name="enviar" id="mandar" value="Enviar" />
+		</form>
+	</div>
+	<div class="bg-popup"></div>
+</div>
+<!-- POPUPS -->
+				
+		<!--BANNER-->
+		<div class="b950x50">
+
+		</div>
+		<!--FIN BANNER-->
+					<div class="b950x50">
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Header");</script>
+
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+					</div>
+					
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+			
+					
+	
+ 
+					
+				</div><!--CONTHEADER-->
+ 				
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+				<div id="contDest">
+					
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+	
+		<div class="dst  " >
+	
+
+<!-- destacado general -->
+				
+						<div id="newBox">
+							<!-- Principal -->
+							<div id="NewsBox1" class="nota-big" maxItems="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+	
+	
+    <!-- Nota Grande -->
+<div class="notaXL">
+	
+	            	
+	            		<a href="/finanzasmercados/Economistas-y-financistas-enumeran-cuales-seran-las-prioridades-del-proximo-Presidente-20151023-0074.html" title="Economistas y financistas enumeran cuáles serán las prioridades del próximo Presidente">
+					<img src='/__export/1445603027263/sites/diarioelcronista/img/finanzas_mercados/2015/10/23/sillonrivadavia.jpg_2134360654.jpg'  title='Economistas y financistas enumeran cuáles serán las prioridades del próximo Presidente' alt='Economistas y financistas enumeran cuáles serán las prioridades del próximo Presidente'  />
+				</a>
+			
+            	
+            	
+            	
+	<div class="txt-nota">
+		<h2><a href="/finanzasmercados/Economistas-y-financistas-enumeran-cuales-seran-las-prioridades-del-proximo-Presidente-20151023-0074.html" target="_self">Economistas y financistas enumeran cuáles serán las prioridades del próximo Presidente</a></h2>
+		
+		
+		
+		<p>Los expertos consultados por Cronista.com detallan las tres medidas, que seg&uacute;n su criterio, son urgentes a partir del 10 de diciembre. Todos coinciden en que son necesarios cambios y las reservas es el tema en donde todos hacen foco. POR FRANCISCO GALIZIA</p>	
+	</div>
+</div>
+</div>
+							<div class='overflow'>
+								<!-- Mercados -->
+								
+										
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="notaMer">
+        <div id="Mercados">
+          <div class="head"><a href="http://www.cronista.com/MercadosOnline/mercados.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome" target="_blank">Mercados Online</a></div>
+            <ul class="idTabs">
+              <li><a href="#moneda" class="monedas"><img src="/arte/btn-monedas.png" alt="Monedas" title="Monedas" /></a></li>
+              <li><a href="#tasas" class="tasas"><img src="/arte/btn-tasas.png" alt="Tasas" title="Tasas" /></a></li>
+              <li><a href="#bonos" class="bonos"><img src="/arte/btn-bonos.png" alt="Bonos" title="Bonos" /></a></li>
+              <li><a href="#bolsas" class="bolsas"><img src="/arte/btn-bolsas.png" alt="Bolsas" title="Bolsas" /></a></li>
+              <li><a href="#commodities" class="commodities"><img src="/arte/btn-commodities.png" alt="Commodities" title="Commodities" /></a></li>
+            </ul>
+            <div class="box" id="moneda">
+              <table class="tablaHomeEncabezados">
+                <thead>
+                  <tr>
+                    <th class="alineadoIzquierdo"><a href="http://www.cronista.com/MercadosOnline/monedas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome" target="_blank">MONEDAS</a></th>
+                    <!-- <th>Varia.</th>--><th></th>
+                    <th>Compra</th>
+                    <th>Venta</th>
+                  </tr>
+                </thead>
+                <tbody>
+<tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/monedas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>D&OacuteLAR</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,0525</span></td><td class='tablaHomeCompraVenta'><span>9,4200</span></td><td class='tablaHomeCompraVenta'><span>9,5200</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/monedas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>D&OacuteLAR BLUE</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,9446</span></td><td class='tablaHomeCompraVenta'><span>15,9800</span></td><td class='tablaHomeCompraVenta'><span>16,0300</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/monedas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>D&OacuteLAR TURISTA</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,0525</span></td><td class='tablaHomeCompraVenta'><span>-</span></td><td class='tablaHomeCompraVenta'><span>12,8520</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/monedas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>D&OacuteLAR AHORRO</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,0525</span></td><td class='tablaHomeCompraVenta'><span>-</span></td><td class='tablaHomeCompraVenta'><span>11,4240</span></td></tr><tr><td><span class='menos'> <span class='down'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/monedas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>D&OacuteLAR CDO C/LIQ</a></span></td><td class='tablaHomeCompraVenta'><span class='menos'>-1,2760</span></td><td class='tablaHomeCompraVenta'><span>-</span></td><td class='tablaHomeCompraVenta'><span>14,0583</span></td></tr><tr><td><span class='menos'> <span class='down'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/monedas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>REAL</a></span></td><td class='tablaHomeCompraVenta'><span class='menos'>-0,5093</span></td><td class='tablaHomeCompraVenta'><span>3,8869</span></td><td class='tablaHomeCompraVenta'><span>3,8874</span></td></tr><tr><td><span class='menos'> <span class='down'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/monedas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>EURO</a></span></td><td class='tablaHomeCompraVenta'><span class='menos'>-0,0826</span></td><td class='tablaHomeCompraVenta'><span>10,5471</span></td><td class='tablaHomeCompraVenta'><span>10,5544</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="box" id="tasas">
+              <table class="tablaHomeEncabezados">
+                <thead>
+                  <tr>
+                    <th class="alineadoIzquierdo"><a href="http://www.cronista.com/MercadosOnline/tasas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome" target="_blank">TASAS</a></th>
+                    <th>Varia.</th>
+                    <th>Ultimo</th>
+                  </tr>
+                </thead>
+                <tbody>
+<tr><td><span class='menos'> <span class='down'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/tasas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>BADLAR PRIV. Pr. ARS</a></span></td><td class='tablaHomeCompraVenta'><span class='menos'>-0,5714</span></td><td class='tablaHomeCompraVenta'><span>21,7500</span></td></tr><tr><td><span class='menos'> <span class='down'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/tasas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>C.MONEY PRIV 1RA 1D</a></span></td><td class='tablaHomeCompraVenta'><span class='menos'>-7,1429</span></td><td class='tablaHomeCompraVenta'><span>26,0000</span></td></tr><tr><td><span class='menos'> <span class='down'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/tasas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>C.MONEY PRIV 1RA 7D</a></span></td><td class='tablaHomeCompraVenta'><span class='menos'>-6,8966</span></td><td class='tablaHomeCompraVenta'><span>27,0000</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/tasas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>LIBOR</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,4290</span></td><td class='tablaHomeCompraVenta'><span>0,2341</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/tasas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>PLAZO FIJO</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>21,5000</span></td></tr><tr><td><span class='menos'> <span class='down'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/tasas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>PRESTAMO 1RA $ 30D</a></span></td><td class='tablaHomeCompraVenta'><span class='menos'>-2,2561</span></td><td class='tablaHomeCompraVenta'><span>30,7600</span></td></tr><tr><td><span class='menos'> <span class='down'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/tasas.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>TNA 7 DIAS</a></span></td><td class='tablaHomeCompraVenta'><span class='menos'>-3,9301</span></td><td class='tablaHomeCompraVenta'><span>19,8000</span></td></tr>
+ 
+ </tbody>
+              </table>
+            </div>
+            <div class="box" id="bonos">
+              <table class="tablaHomeEncabezados">
+                <thead>
+                  <tr>
+                    <th class="alineadoIzquierdo"><a href="http://www.cronista.com/MercadosOnline/bonos.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome" target="_blank">BONOS</a></th>
+                    <th>Varia.</th>
+                    <th>&Uacute;ltimo</th>
+                    <th>Cierre D&iacute;a Anterior</th>
+                  </tr>
+                </thead>
+                <tbody>
+<tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/bonos.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>BODEN 2015</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>1.424,50</span></td><td class='tablaHomeCompraVenta'><span>1.424,50</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/bonos.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>BOGAR 2018</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>127,25</span></td><td class='tablaHomeCompraVenta'><span>127,25</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/bonos.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>BONAR X</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>1.369,00</span></td><td class='tablaHomeCompraVenta'><span>1.369,00</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/bonos.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>CUP�N PBI EN D�LARES (LEY NY)</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>117,00</span></td><td class='tablaHomeCompraVenta'><span>117,00</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/bonos.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>CUP�N PBI EN PESOS</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>6,60</span></td><td class='tablaHomeCompraVenta'><span>6,60</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/bonos.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>DISC USD NY</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>1,4393</span></td><td class='tablaHomeCompraVenta'><span>148,00</span></td><td class='tablaHomeCompraVenta'><span>145,90</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/bonos.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>GLOBAL 2017</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>1.470,00</span></td><td class='tablaHomeCompraVenta'><span>1.470,00</span></td></tr>
+               
+                </tbody>
+              </table>
+            </div>
+            <div class="box" id="bolsas">
+              <table class="tablaHomeEncabezados">
+                <thead>
+                  <tr>
+                    <th class="alineadoIzquierdo"><a href="http://www.cronista.com/MercadosOnline/indices.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome" target="_blank">BOLSAS</a></th>
+                    <th>Varia.</th>
+                    <th>Puntos</th>
+                  </tr>
+                </thead>
+                <tbody>
+<tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/indices.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>MERVAL</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>11.132,0690</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/indices.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>BOVESPA</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>47.772,1407</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/indices.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>DOW JONES</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>1,8700</span></td><td class='tablaHomeCompraVenta'><span>17.168,6100</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/indices.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>S&P 500 INDEX</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>2.052,5100</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/indices.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>NASDAQ</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>4.503,2160</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/indices.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>FTSE 100</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,6200</span></td><td class='tablaHomeCompraVenta'><span>6.338,6700</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/indices.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>NIKKEI</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>2,1100</span></td><td class='tablaHomeCompraVenta'><span>18.435,8700</span></td></tr>
+               
+                </tbody>
+              </table>
+            </div>
+            <div class="box" id="commodities">
+              <table class="tablaHomeEncabezados">
+                <thead>
+                  <tr>
+                    <th class="alineadoIzquierdo"><a href="http://www.cronista.com/MercadosOnline/commodities.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome" target="_blank">COMMODITIES</a></th>
+                    <th>Varia.</th>
+                    <th>&Uacute;ltimo</th>
+                    <th>Cierre D&iacute;a Anterior</th>
+                  </tr>
+                </thead>
+                <tbody>
+<tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/commodities.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>SOJA CHICAGO</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,1391</span></td><td class='tablaHomeCompraVenta'><span>330,6934</span></td><td class='tablaHomeCompraVenta'><span>330,2341</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/commodities.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>TRIGO CHICAGO</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,6113</span></td><td class='tablaHomeCompraVenta'><span>181,4221</span></td><td class='tablaHomeCompraVenta'><span>180,3198</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/commodities.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>MAIZ CHICAGO</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,1322</span></td><td class='tablaHomeCompraVenta'><span>149,1082</span></td><td class='tablaHomeCompraVenta'><span>148,9114</span></td></tr><tr><td><span class='igual'> <span class='equal'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/commodities.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>SOJA ROSARIO</a></span></td><td class='tablaHomeCompraVenta'><span class='igual'>0,0000</span></td><td class='tablaHomeCompraVenta'><span>239,0000</span></td><td class='tablaHomeCompraVenta'><span>239,0000</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/commodities.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>PETROLEO BRENT</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,9151</span></td><td class='tablaHomeCompraVenta'><span>48,5200</span></td><td class='tablaHomeCompraVenta'><span>48,0800</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/commodities.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>PETROLEO WTI</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>0,7052</span></td><td class='tablaHomeCompraVenta'><span>45,7000</span></td><td class='tablaHomeCompraVenta'><span>45,3800</span></td></tr><tr><td><span class='mas'> <span class='up'></span> </span> <span><a href='http://www.cronista.com/MercadosOnline/commodities.html?utm_source=cronista&utm_medium=link&utm_campaign=MercadosHome' target='_blank'>ORO</a></span></td><td class='tablaHomeCompraVenta'><span class='mas'>1,0372</span></td><td class='tablaHomeCompraVenta'><span>1.178,7000</span></td><td class='tablaHomeCompraVenta'><span>1.166,6000</span></td></tr>
+                
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+<!--
+<span>
+  &Uacute;ltima actualizaci&oacute;n 
+23/10/2015 9:22:16
+</span>
+-->
+								<!-- Nota Media -->
+								<div id="NewsBox3" class="nota-small" maxItems="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+        <!-- Nota Media -->
+        <div class="notaM">
+        	<h2><a href="/elecciones2015/Ganancias-planes-sociales-e-inflacion-los-ejes-finales-de-la-campana-para-una-eleccion-clave-20151023-0070.html" target="_self" >Ganancias, planes sociales e inflación: los ejes finales de la campaña para una elección clave</a></h2>
+        	
+        	
+        	
+		
+			
+				<a href="/elecciones2015/Ganancias-planes-sociales-e-inflacion-los-ejes-finales-de-la-campana-para-una-eleccion-clave-20151023-0070.html" title="Ganancias, planes sociales e inflación: los ejes finales de la campaña para una elección clave">
+					<img title='Ganancias, planes sociales e inflación: los ejes finales de la campaña para una elección clave' alt='Ganancias, planes sociales e inflación: los ejes finales de la campaña para una elección clave' src='/__export/1445602248651/sites/diarioelcronista/img/scioli_macri_massa_candidatos.jpg_1797076140.jpg'  />
+				</a>
+			
+		
+		
+		
+        </div>
+	
+
+</div>
+							</div>						
+	
+					
+						<div id="NewsBox4" class="box-carrusel" maxItems="1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+ 
+
+	<div class="box_carrusel">      		
+                <ul id="foo_dest">
+
+                    	<li>
+                    		
+	                    	
+	              	 	
+		              	 	
+						
+		      				
+		      					<a href="/elecciones2015/Donde-voto--Padron-Electoral---Elecciones-presidenciales-20150710-0080.html" alt="padron electoral,elecciones nacionales,PASO">
+		      						<img  src="/__export/1436535634415/sites/diarioelcronista/img/padron_nacional.jpg_1216697720.jpg" width='170' height='98' alt="padron electoral,elecciones nacionales,PASO" title="padron electoral,elecciones nacionales,PASO" />
+							</a>
+						
+						
+					
+				
+				
+                    		<span class="tit_carru"><a href="/elecciones2015/Donde-voto--Padron-Electoral---Elecciones-presidenciales-20150710-0080.html" target="_self" >Padrón electoral: consultá dónde votás en las elecciones del 25 de octubre</a></span>
+           			
+           			
+                    	</li>  
+	
+
+
+	
+
+                    	<li>
+                    		
+	                    		<div class="ico"><img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" /></div>
+	                    	
+	                    	
+	              	 	
+		              	 	
+						
+		      				
+						
+							<a href="/3dias/Dolar-ahorro-una-deformacion-del-cepo-en-la-mira-de-los-candidatos-20151023-0007.html" alt="Dólar ahorro: una deformación del cepo en la mira de los candidatos">
+								<img  src="/__export/1445545809432/sites/diarioelcronista/img/2015/10/23/cc231015v007f14.jpg_1216697720.jpg" width='170' height='98' alt='Dólar ahorro: una deformación del cepo en la mira de los candidatos' title='Dólar ahorro: una deformación del cepo en la mira de los candidatos'/>
+							</a>
+						
+					
+				
+				
+                    		<span class="tit_carru"><a href="/3dias/Dolar-ahorro-una-deformacion-del-cepo-en-la-mira-de-los-candidatos-20151023-0007.html" target="_self" >Dólar ahorro: una deformación del cepo en la mira de los candidatos</a></span>
+           			
+           			
+                    	</li>  
+	
+
+
+	
+
+                    	<li>
+                    		
+	                    		<div class="ico"><img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" /></div>
+	                    	
+	                    	
+	              	 	
+		              	 	
+						
+		      				
+						
+							<a href="/3dias/Hector-Magnetto-La-Argentina-ha-quedado-inconclusa-20151023-0008.html" alt="Héctor Magnetto: "La Argentina ha quedado inconclusa"">
+								<img  src="/__export/1445557712500/sites/diarioelcronista/img/magnetto.jpg_1216697720.jpg" width='170' height='98' alt='Héctor Magnetto: "La Argentina ha quedado inconclusa"' title='Héctor Magnetto: "La Argentina ha quedado inconclusa"'/>
+							</a>
+						
+					
+				
+				
+                    		<span class="tit_carru"><a href="/3dias/Hector-Magnetto-La-Argentina-ha-quedado-inconclusa-20151023-0008.html" target="_self" >Héctor Magnetto: "La Argentina ha quedado inconclusa"</a></span>
+           			
+           			
+                    	</li>  
+	
+
+
+	
+
+                    	<li>
+                    		
+	                    		<div class="ico"><img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" /></div>
+	                    	
+	                    	
+	              	 	
+		              	 	
+						
+		      				
+		      					<a href="/columnistas/La-ultima-encuesta-20151023-0029.html" alt="Marcelo_Zlotogwiazda_Cronista_dia">
+		      						<img  src="/__export/1431952545085/sites/diarioelcronista/img/Marcelo_Zlotogwiazda_Cronista_dia.jpg_1216697720.jpg" width='170' height='98' alt="Marcelo_Zlotogwiazda_Cronista_dia" title="Marcelo_Zlotogwiazda_Cronista_dia" />
+							</a>
+						
+						
+					
+				
+				
+                    		<span class="tit_carru"><a href="/columnistas/La-ultima-encuesta-20151023-0029.html" target="_self" >La última encuesta</a></span>
+           			
+           			
+                    	</li>  
+	
+
+
+	
+
+                    	<li>
+                    		
+	                    		<div class="ico"><img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" /></div>
+	                    	
+	                    	
+	              	 	
+		              	 	
+						
+		      				
+						
+							<a href="/economiapolitica/Que-hacer-si-faltan-boletas-de-algun-partido-en-su-mesa-20151022-0109.html" alt="Qué hacer si faltan boletas de algún partido en su mesa">
+								<img  src="/__export/1431804121636/sites/diarioelcronista/img/2011/10/18/cc181011e009f07.jpg_1216697720.jpg" width='170' height='98' alt='Qué hacer si faltan boletas de algún partido en su mesa' title='Qué hacer si faltan boletas de algún partido en su mesa'/>
+							</a>
+						
+					
+				
+				
+                    		<span class="tit_carru"><a href="/economiapolitica/Que-hacer-si-faltan-boletas-de-algun-partido-en-su-mesa-20151022-0109.html" target="_self" >Qué hacer si faltan boletas de algún partido en su mesa</a></span>
+           			
+           			
+                    	</li>  
+	
+
+
+	
+
+                    	<li>
+                    		
+	                    	
+	              	 	
+		              	 	
+						
+		      				
+						
+							<a href="http://www.cronista.com/biografias/presidenciales/index.html" alt="Todo sobre los seis candidatos que quieren gobernar la Argentina">
+								<img  src="/__export/1444835144494/sites/diarioelcronista/img/foto_candidatos.jpg_1216697720.jpg" width='170' height='98' alt='Todo sobre los seis candidatos que quieren gobernar la Argentina' title='Todo sobre los seis candidatos que quieren gobernar la Argentina'/>
+							</a>
+						
+					
+				
+				
+                    		<span class="tit_carru"><a href="http://www.cronista.com/biografias/presidenciales/index.html" target="_blank" >Todo sobre los seis candidatos que quieren gobernar la Argentina</a></span>
+           			
+           			
+                    	</li>  
+	
+
+
+	
+
+                    	<li>
+                    		
+	                    	
+	              	 	
+		              	 	
+						
+		      				
+						
+							<a href="/finanzasmercados/El-paso-a-paso-para-comprar-dolares-ahorro-por-internet-20140430-0112.html" alt="El paso a paso para comprar dólares ahorro por internet">
+								<img  src="/__export/1431952642686/sites/diarioelcronista/img/paso-a-paso-dolar.jpg_1216697720.jpg" width='170' height='98' alt='El paso a paso para comprar dólares ahorro por internet' title='El paso a paso para comprar dólares ahorro por internet'/>
+							</a>
+						
+					
+				
+				
+                    		<span class="tit_carru"><a href="/finanzasmercados/El-paso-a-paso-para-comprar-dolares-ahorro-por-internet-20140430-0112.html" target="_self" >El paso a paso para comprar dólares ahorro por internet</a></span>
+           			
+           			
+                    	</li>  
+
+
+                </ul>
+                <a id="prev3" class="prev" href="#">&lt;</a>
+                <a id="next3" class="next" href="#">&gt;</a>
+	</div><!--box_carrusel-->
+	
+</div>
+			  			</div>		
+  					</div><!-- destacado general -->
+				</div><!--CONTDEST-->
+				
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Inicio Banner Home-->
+
+<!-- <div style="background-color:#fcfaf9;border-left:1px solid #e7dace; border-right:1px solid #e7dace;"><a href="/elecciones2015/?utm_source=cronista&utm_medium=link&utm_campaign=EleccionesBannerHome
+"><img style="margin:0 25px 25px 25px;" src="/arte/arelige.jpg" border="0" /></a></div> -->
+
+<!-- <div style="background-color:#fcfaf9;border-left:1px solid #e7dace; border-right:1px solid #e7dace;"><a href="/seccion/especiales/?utm_source=home&utm_medium=banner&utm_campaign=Copa_America
+"><img style="margin:0 25px 25px 25px;" src="/arte/BannerCopaAmerica.jpg" border="0" /></a></div>-->
+
+<div style="background-color:#fcfaf9;border-left:1px solid #e7dace; border-right:1px solid #e7dace;"><a href="/mundialrugby2015/?utm_source=cronista&utm_medium=link&utm_campaign=MundialRugby
+"><img style="margin:0 25px 25px 25px;" src="/arte/cabezal_rugby.jpg" border="0" /></a></div>
+
+<!-- Fin Banner Home-->
+				
+								
+	 			<!-- CUERPO -->
+				<div id="contBody">
+					<div class="clear"></div>
+					<div class="cuerpo">
+						
+						<div class="col-left">
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+	
+	<div class="col-left-dest post-
+ ">
+
+
+			
+	            	<div class="volanta"> 
+	            	    			            	
+	            		<a href="/suplemento/3dias/">3dias</a> 
+	            		
+		            	
+		            		<span class="datenota">23.10.15 | 00:00</span>
+		            	
+	            	</div>
+	            	
+	                <h1><a href="/3dias/Los-desafios-del-nuevo-lider-para-la-Argentina-que-viene-20151023-0012.html" target="_self">Qué rasgos debería tener el futuro presidente para consolidar un liderazgo exitoso</a></h1>
+			
+	             
+	                
+				<a href="/3dias/Los-desafios-del-nuevo-lider-para-la-Argentina-que-viene-20151023-0012.html" target="_self" >
+					<img src="/__export/1445558956750/sites/diarioelcronista/img/liderazgo-casa-rosada.jpg_1277201298.jpg" alt="Qué rasgos debería tener el futuro presidente para consolidar un liderazgo exitoso" title="Qué rasgos debería tener el futuro presidente para consolidar un liderazgo exitoso" />
+				</a>
+			
+			
+			
+			 
+	 
+			
+				
+		    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> FACUNDO MANES  </a>
+		</div>
+		
+
+		            	
+	            	
+                    	
+	            	
+			<div class="rel-link" >
+				
+					
+					<a href="/3dias/Cuatro-caracteristicas-del-buen-liderazgo-segun-Manes-20151023-0023.html">Cuatro características del buen liderazgo, según Manes</a>
+					
+				
+					
+					<a href="/3dias/Manes-un-distinto-que-coquetea-con-la-politica-20151023-0015.html">Manes, un distinto que coquetea con la política</a>
+					
+				
+	              	</div>
+	              
+	              	<div class="tags-nota-big" > 
+				
+					 
+						<div class="list-tag"> 
+					
+							 <a href="/tags/elecciones 2015">elecciones 2015</a>,  
+					
+			 	
+					
+							 <a href="/tags/liderazgo">liderazgo</a>,  
+					
+			 	
+					
+							 <a href="/tags/Manes">Manes</a> 
+					
+						</div>	
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/3dias/Los-desafios-del-nuevo-lider-para-la-Argentina-que-viene-20151023-0012.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	             		
+			</div>	<!-- tags nota big-->		
+	
+	 </div><!--TemplateType-->
+	
+
+	
+	
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+	
+	<div class="col-left-dest post-
+ ">
+
+
+			
+	            	<div class="volanta"> 
+	            	    			            	
+	            		<a href="/seccion/finanzas_mercados/">Finanzas y mercados</a> 
+	            		
+		            	
+		            		<span class="datenota">23.10.15 | 00:00</span>
+		            	
+	            	</div>
+	            	
+	                <h1><a href="/finanzasmercados/Manos-oficiales-impiden-escalada-del-blue-pero-no-evitan-que-vuelva-a--16-20151023-0043.html" target="_self">Manos oficiales impiden escalada del blue pero no evitan que vuelva a $ 16</a></h1>
+			
+	             
+	                
+				<a href="/finanzasmercados/Manos-oficiales-impiden-escalada-del-blue-pero-no-evitan-que-vuelva-a--16-20151023-0043.html" target="_self" >
+					<img src="/__export/1444933969932/sites/diarioelcronista/img/dolar_blue_billetes.jpg_1276277777.jpg" alt="Manos oficiales impiden escalada del blue pero no evitan que vuelva a $ 16" title="Manos oficiales impiden escalada del blue pero no evitan que vuelva a $ 16" />
+				</a>
+			
+			
+			
+			
+				<div class="copete"><p>Estiman en el mercado que cooperativas, casas de cambio, sociedades de bolsa y cuevas ubicadas en Puerto Madero y ligadas a La C&aacute;mpora destinaron durante esta semana m&aacute;s de u$s 5 millones para impedir la disparada del d&oacute;lar paralelo que, de lo contrario, hubiera trepado hasta $ 17. Lo llamativo es que proveen de billetes f&iacute;sicos nuevos y con faja de bancos</p>
+</div>
+	                 
+	 
+			
+				
+		    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> MARIANO GORODISCH  </a>
+		</div>
+		
+
+		            	
+		    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+		            	
+	            	
+                    	
+	            	
+			<div class="rel-link" >
+				
+	              	</div>
+	              
+	              	<div class="tags-nota-big" > 
+				
+					 
+						<div class="list-tag"> 
+					
+							 <a href="/tags/blue">blue</a>,  
+					
+			 	
+					
+							 <a href="/tags/dolar">dolar</a> 
+					
+						</div>	
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/finanzasmercados/Manos-oficiales-impiden-escalada-del-blue-pero-no-evitan-que-vuelva-a--16-20151023-0043.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	             		
+			</div>	<!-- tags nota big-->		
+	
+	 </div><!--TemplateType-->
+	
+
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/economiapolitica/Elecciones-presidenciales-ya-rige-la-veda-electoral-en-todo-el-pais-20151023-0073.html" target="_self">
+						<img src="/__export/1431953193379/sites/diarioelcronista/img/Internacionales/Peru_urnas.jpg_576559557.jpg" alt="Peru_urnas" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/seccion/economia_politica/">Economía y política</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/economiapolitica/Elecciones-presidenciales-ya-rige-la-veda-electoral-en-todo-el-pais-20151023-0073.html" target="_self">Elecciones presidenciales: ya rige la veda electoral en todo el país</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete"><p style="line-height: 20.8px;">Desde las 8 de hoy comenz&oacute; a regir la veda en todo&nbsp;el pa&iacute;s de cara a los comicios generales del pr&oacute;ximo domingo.</p>
+</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> CRONISTA.COM  </a>
+		</div>
+		
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/veda electoral">veda electoral</a>,  
+					
+			 	
+					
+							 <a href="/tags/elecciones presidenciales">elecciones presidenciales</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/economiapolitica/Elecciones-presidenciales-ya-rige-la-veda-electoral-en-todo-el-pais-20151023-0073.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/elecciones2015/Tullio-advirtio-que-Cambiemos-aun-no-distribuyo-boletas-en-21-municipios-de-Provincias-20151023-0072.html" target="_self">
+						<img src="/__export/1438780672399/sites/diarioelcronista/img/alejandro_tullio.jpg_552548011.jpg" alt="Imagenes para contenidos" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/elecciones2015/">Elecciones 2015</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/elecciones2015/Tullio-advirtio-que-Cambiemos-aun-no-distribuyo-boletas-en-21-municipios-de-Provincias-20151023-0072.html" target="_self">Tullio advirtió que Cambiemos aún no distribuyó boletas en 21 municipios de Provincias</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete">El Director Nacional Electoral se mostr&oacute; &ldquo;sorprendido&rdquo; por la situaci&oacute;n y dijo que en horas de la ma&ntilde;ana convocar&aacute; a los apoderados de esa alianza.&nbsp;</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> CRONISTA.COM  </a>
+		</div>
+		
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/Cambiemos">Cambiemos</a>,  
+					
+			 	
+					
+							 <a href="/tags/boletas">boletas</a>,  
+					
+			 	
+					
+							 <a href="/tags/faltantes">faltantes</a>,  
+					
+			 	
+					
+							 <a href="/tags/elecciones 2015">elecciones 2015</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/elecciones2015/Tullio-advirtio-que-Cambiemos-aun-no-distribuyo-boletas-en-21-municipios-de-Provincias-20151023-0072.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/elecciones2015/Sostienen-que-el-precio-de-las-acciones-refleja-una-victoria-de-Scioli-en-primera-vuelta-20151023-0030.html" target="_self">
+						<img src="/__export/1445555700064/sites/diarioelcronista/img/2015/10/23/cc231015f004f07.jpg_574712515.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/elecciones2015/">Elecciones 2015</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/elecciones2015/Sostienen-que-el-precio-de-las-acciones-refleja-una-victoria-de-Scioli-en-primera-vuelta-20151023-0030.html" target="_self">Sostienen que el precio de las acciones refleja una victoria de Scioli en primera vuelta</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete">Raymond James advierte que las cotizaciones de los activos adem&aacute;s reflejan que el pr&oacute;ximo gobierno implementar&aacute; una pol&iacute;tica de corte gradualista.</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/acciones">acciones</a>,  
+					
+			 	
+					
+							 <a href="/tags/Merval">Merval</a>,  
+					
+			 	
+					
+							 <a href="/tags/Scioli">Scioli</a>,  
+					
+			 	
+					
+							 <a href="/tags/primera vuelta">primera vuelta</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/elecciones2015/Sostienen-que-el-precio-de-las-acciones-refleja-una-victoria-de-Scioli-en-primera-vuelta-20151023-0030.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/finanzasmercados/Debuto-pagare-bursatil-y-apuntan-a-que-Pymes-estiren-plazos-de-financiacion-20151023-0046.html" target="_self">
+						<img src="/__export/1445559300074/sites/diarioelcronista/img/2015/10/23/cc231015f003i07.jpg_2073241294.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/seccion/finanzas_mercados/">Finanzas y mercados</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/finanzasmercados/Debuto-pagare-bursatil-y-apuntan-a-que-Pymes-estiren-plazos-de-financiacion-20151023-0046.html" target="_self">Debutó pagaré bursátil y apuntan a que Pymes estiren plazos de financiación</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete"></div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> JULIAN GUARINO  </a>
+		</div>
+		
+
+			            	
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/pagare">pagare</a>,  
+					
+			 	
+					
+							 <a href="/tags/pymes">pymes</a>,  
+					
+			 	
+					
+							 <a href="/tags/financiación">financiación</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/finanzasmercados/Debuto-pagare-bursatil-y-apuntan-a-que-Pymes-estiren-plazos-de-financiacion-20151023-0046.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/elecciones2015/Macri-pidio-hacer-juntos-un-cordobazo-20151023-0058.html" target="_self">
+						<img src="/__export/1431952535260/sites/diarioelcronista/img/Macri_Mauricio1.jpg_574712515.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/elecciones2015/">Elecciones 2015</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/elecciones2015/Macri-pidio-hacer-juntos-un-cordobazo-20151023-0058.html" target="_self">Macri pidió "hacer juntos un cordobazo"</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete"><p>Rodeado por sus socios radicales y Elisa Carri&oacute;, el jefe de gobierno porte&ntilde;o prometi&oacute; en C&oacute;rdoba que si gana no habr&aacute; &quot;enfrentamientos y divisiones&quot;</p>
+</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> GISELLE RUMEAU  / Enviada especial
+ </a>
+		</div>
+		
+
+			            	
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/Macri">Macri</a>,  
+					
+			 	
+					
+							 <a href="/tags/De la Sota">De la Sota</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/elecciones2015/Macri-pidio-hacer-juntos-un-cordobazo-20151023-0058.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+	         	<div class="b600x250">
+	         		
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Middle");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+   
+	         	</div><!--banner-->
+	         	
+	         	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/economiapolitica/Se-va-a-ir-normalizando-los-tipos-de-cambio-20151023-0060.html" target="_self">
+						<img src="/__export/1431952713164/sites/diarioelcronista/img/Scioli_prensa.jpg_574712515.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/seccion/economia_politica/">Economía y política</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/economiapolitica/Se-va-a-ir-normalizando-los-tipos-de-cambio-20151023-0060.html" target="_self">"Se va a ir normalizando los tipos de cambio"</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete"></div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> S.I.  </a>
+		</div>
+		
+
+			            	
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/elecciones2015/Junto-a-Binner-Stolbizer-cito-a-Alfonsin-y-propuso-no-ir-a-votar-tapandose-la-nariz-20151023-0061.html" target="_self">
+						<img src="/__export/1445559300321/sites/diarioelcronista/img/2015/10/23/cc231015e004f14.jpg_574712515.jpg" alt="Stolbizer dijo que la fuerza que lidera "no tiene fecha de vencimiento"" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/elecciones2015/">Elecciones 2015</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/elecciones2015/Junto-a-Binner-Stolbizer-cito-a-Alfonsin-y-propuso-no-ir-a-votar-tapandose-la-nariz-20151023-0061.html" target="_self">Junto a Binner, Stolbizer citó a Alfonsín y propuso no ir a votar "tapándose la nariz"</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete"></div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/elecciones2015/Vamos-a-garantizarle-a-la-gente-el-fin-del-kirchnerismo-20151023-0066.html" target="_self">
+						<img src="/__export/1445439510616/sites/diarioelcronista/img/wimassa2.jpg_2076935378.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/elecciones2015/">Elecciones 2015</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/elecciones2015/Vamos-a-garantizarle-a-la-gente-el-fin-del-kirchnerismo-20151023-0066.html" target="_self">"Vamos a garantizarle a la gente el fin del kirchnerismo"</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete"></div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> MARTÍN TORINO  </a>
+		</div>
+		
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/Sergio Massa">Sergio Massa</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/elecciones2015/Vamos-a-garantizarle-a-la-gente-el-fin-del-kirchnerismo-20151023-0066.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/elecciones2015/Gremios-K-esperan-que-rebaja-en-Ganancias-se-apruebe-antes-del-recambio-de-Gobierno-20151023-0068.html" target="_self">
+						<img src="/__export/1445600405164/sites/diarioelcronista/img/3dias/2015/10/23/cc231015e008f06_crop1445600366755.jpg_572865473.jpg" alt="Caló y Lingeri apoyaron los anuncios de Scioli por Ganancias" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/elecciones2015/">Elecciones 2015</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/elecciones2015/Gremios-K-esperan-que-rebaja-en-Ganancias-se-apruebe-antes-del-recambio-de-Gobierno-20151023-0068.html" target="_self">Gremios K esperan que rebaja en Ganancias se apruebe antes del recambio de Gobierno</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete">Sindicalistas destacaron que el proyecto exceptuar&aacute; del tributo a la mitad de los trabajadores hoy alcanzados. Apoyaron la actualizaci&oacute;n autom&aacute;tica del piso</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> ELIZABETH PEGER  </a>
+		</div>
+		
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/Cristina">Cristina</a>,  
+					
+			 	
+					
+							 <a href="/tags/Kirchnerismo">Kirchnerismo</a>,  
+					
+			 	
+					
+							 <a href="/tags/Daniel Scioli">Daniel Scioli</a>,  
+					
+			 	
+					
+							 <a href="/tags/Caló">Caló</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/elecciones2015/Gremios-K-esperan-que-rebaja-en-Ganancias-se-apruebe-antes-del-recambio-de-Gobierno-20151023-0068.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/3dias/Dorit-Shavit-La-investigacion-del-fiscal-Nisman-sobre-el-atentado-a-la-AMIA-fue-muy-seria-20151023-0004.html" target="_self">
+						<img src="/__export/1445545803069/sites/diarioelcronista/img/2015/10/23/cc231015v008f07.jpg_574712515.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/suplemento/3dias/">3dias</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/3dias/Dorit-Shavit-La-investigacion-del-fiscal-Nisman-sobre-el-atentado-a-la-AMIA-fue-muy-seria-20151023-0004.html" target="_self">La embajadora de Israel defiende la investigación de Nisman sobre la AMIA: "Fue muy seria"</a></h2>
+	                    	
+				
+			  	
+			  	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> ANA GERSCHENSON  </a>
+		</div>
+		
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+						
+						<a href="/3dias/Dixit-20151023-0016.html">Dixit</a>
+						
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/Nisman">Nisman</a>,  
+					
+			 	
+					
+							 <a href="/tags/AMIA">AMIA</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/3dias/Dorit-Shavit-La-investigacion-del-fiscal-Nisman-sobre-el-atentado-a-la-AMIA-fue-muy-seria-20151023-0004.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/elecciones2015/A-Cristina-le-preguntaria-si-cree-que-Scioli-la-va-a-traicionar-20151023-0024.html" target="_self">
+						<img src="/__export/1445560846401/sites/diarioelcronista/img/cc231015c020f16_crop1445560846346.jpg_572865473.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/elecciones2015/">Elecciones 2015</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/elecciones2015/A-Cristina-le-preguntaria-si-cree-que-Scioli-la-va-a-traicionar-20151023-0024.html" target="_self">"A Cristina le preguntaría si cree que Scioli la va a traicionar"</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete"><p>La conductora estrella de la cadena internacional de noticias CNN Espa&ntilde;ol se encuentra en Buenos Aires trabajando en una cobertura especial por las elecciones nacionales</p>
+</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> JORGE SOSA  / Editor de jefe de Cronista.com
+ </a>
+		</div>
+		
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/Patricia Janiot">Patricia Janiot</a>,  
+					
+			 	
+					
+							 <a href="/tags/Elecciones 2015">Elecciones 2015</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/elecciones2015/A-Cristina-le-preguntaria-si-cree-que-Scioli-la-va-a-traicionar-20151023-0024.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/internacionales/Evo-para-rato-la-justicia-avala-reforma-constitucional-que-habilita-su-reeleccion-20151023-0025.html" target="_self">
+						<img src="/__export/1445560459681/sites/diarioelcronista/img/cc231015x011f05_crop1445560415356.jpg_572865473.jpg" alt="Evo festejó en el sitio sagrado de Tiahuanacu su récord como presidente" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/seccion/internacionales/">Internacionales</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/internacionales/Evo-para-rato-la-justicia-avala-reforma-constitucional-que-habilita-su-reeleccion-20151023-0025.html" target="_self">Evo para rato: la justicia avala reforma constitucional que habilita su reelección</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete">El Tribunal Constitucional respald&oacute; el llamado a plebiscito para modificar el art&iacute;culo de la Constituci&oacute;n que ampl&iacute;a el n&uacute;mero de mandatos consecutivos</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/Bolivia">Bolivia</a>,  
+					
+			 	
+					
+							 <a href="/tags/Evo Morales">Evo Morales</a>,  
+					
+			 	
+					
+							 <a href="/tags/reelección en Bolivia">reelección en Bolivia</a>,  
+					
+			 	
+					
+							 <a href="/tags/reforma constitucional">reforma constitucional</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/internacionales/Evo-para-rato-la-justicia-avala-reforma-constitucional-que-habilita-su-reeleccion-20151023-0025.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/finanzasmercados/Con-el-oficial-en-su-menor-valor-en-doce-anos-el-BCRA-sigue-vendiendo-20151023-0031.html" target="_self">
+						<img src="/__export/1445553900618/sites/diarioelcronista/img/2015/10/23/cc231015f001i23.jpg_2073241294.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/seccion/finanzas_mercados/">Finanzas y mercados</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/finanzasmercados/Con-el-oficial-en-su-menor-valor-en-doce-anos-el-BCRA-sigue-vendiendo-20151023-0031.html" target="_self">Con el oficial en su menor valor en doce años, el BCRA sigue vendiendo</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete"></div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> MATÍAS BARBERÍA  </a>
+		</div>
+		
+
+			            	
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/Banco Central">Banco Central</a>,  
+					
+			 	
+					
+							 <a href="/tags/BCRA">BCRA</a>,  
+					
+			 	
+					
+							 <a href="/tags/Vanoli">Vanoli</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/finanzasmercados/Con-el-oficial-en-su-menor-valor-en-doce-anos-el-BCRA-sigue-vendiendo-20151023-0031.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/finanzasmercados/Fondos-no-cumplen-con-cupo-inciso-ky-prorrogan-otra-vez-la-fecha-limite-20151023-0034.html" target="_self">
+						<img src="/__export/1445558400525/sites/diarioelcronista/img/2015/10/23/cc231015f002f12.jpg_574712515.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/seccion/finanzas_mercados/">Finanzas y mercados</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/finanzasmercados/Fondos-no-cumplen-con-cupo-inciso-ky-prorrogan-otra-vez-la-fecha-limite-20151023-0034.html" target="_self">Fondos no cumplen con cupo "inciso k"y prorrogan otra vez la fecha límite</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete">Pospusieron hasta el 13 de noviembre la fecha de cumplimiento para que los fondos de infraestructura alcancen el 30% de su cartera en activos k y los pyme, 25%</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+	
+	
+	 
+		<div itemscope itemtype="http://schema.org/Person" itemclass="firma" class="firma"> 
+			por <a itemprop="name" href="#"> VERONICA DALTO  </a>
+		</div>
+		
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/kirchnerismo">kirchnerismo</a>,  
+					
+			 	
+					
+							 <a href="/tags/K">K</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/finanzasmercados/Fondos-no-cumplen-con-cupo-inciso-ky-prorrogan-otra-vez-la-fecha-limite-20151023-0034.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+		
+		
+		
+        	<div class="col-left-big">
+
+        	
+	            	 
+	            	 	<div class="img-nota-big">
+					<a href="/finanzasmercados/Europa-estudia-aplicar-mas-estimulos-y-las-bolsas-festejaron-por-anticipado-20151023-0036.html" target="_self">
+						<img src="/__export/1445555701227/sites/diarioelcronista/img/2015/10/23/cc231015f012i15.jpg_2073241294.jpg" alt="" />
+					</a>
+				</div>
+			
+		
+			
+		
+                
+	              	<div class="overflow">
+	              		
+				 
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="volanta ">
+				           	  	
+					
+						
+							<a href="/seccion/finanzas_mercados/">Finanzas y mercados</a> 
+						
+						
+						
+						
+				            	
+		            		</div>
+				
+
+	                    	<h2><a href="/finanzasmercados/Europa-estudia-aplicar-mas-estimulos-y-las-bolsas-festejaron-por-anticipado-20151023-0036.html" target="_self">Europa estudia aplicar más estímulos y las bolsas festejaron por anticipado</a></h2>
+	                    	
+				
+			  	
+			  	
+				  	<div class="copete">Mario Draghi, presidente del BCE, asegur&oacute; que el organismo monetario analiza nuevas medidas de est&iacute;mulo, un plan que podr&iacute;a conocerse en diciembre. Las bolsas de Europa, Estados Unidos y tambi&eacute;n el Merval respondieron con subas que rondaron entre el 1,8% y casi 3%. En tanto, el euro perdi&oacute; cerca de 2% frente al d&oacute;lar: cerr&oacute; 1,11 por cada billete verde</div>
+	                    	
+	                    	
+	                    	
+					
+			    			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+
+
+
+
+
+
+
+
+
+			            	
+		            	
+	                    	
+		                <div class="rel-link" >
+					
+		              	</div>
+		              
+			</div>
+
+			
+	              		<div class="clear"></div>
+	              	
+	              	
+	              	<div class="tags-nota-big" >
+				
+					 
+						<div class="list-tag">
+					
+							 <a href="/tags/BCE">BCE</a>,  
+					
+			 	
+					
+							 <a href="/tags/Banco Central Europeo">Banco Central Europeo</a>,  
+					
+			 	
+					
+							 <a href="/tags/Europa">Europa</a> 
+					
+						</div>
+					
+			 	
+			 	
+	                    	
+
+	                    	
+	                    	
+
+	                    	
+	                    	
+	                    	 
+				
+	                    		 <span class="foto"><a href="/finanzasmercados/Europa-estudia-aplicar-mas-estimulos-y-las-bolsas-festejaron-por-anticipado-20151023-0036.html#fotos">Foto</a></span>
+	                    	
+	                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              		              	
+         	</div>
+         
+         	
+         	
+         	
+         	
+         	
+	
+						
+						
+						
+						<div class="b600x250">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Middle1");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+						</div>	
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	 
+		<!-- BOX REVISTAS -->
+            	<div class="col-left-rev apertura">
+            		<div class="head-rev">
+                		<a href="http://www.apertura.com/" target="_blank"><span class="title">apertura</span></a>
+                		
+                    		<a href="http://www.apertura.com/" target="_blank" class="vertodas">Ver todas >> </a>
+                	</div>
+	
+                	<div class="wp-rev">
+                		<div class="rev-left">
+                		
+                		
+					 
+							<a href="http://www.apertura.com/economia/Quienes-son-los-economistas-rockstars-los-chicos-rebeldes-de-los-numeros-20151022-0003.html" target="_blank" >
+								<img src="/__export/1445540442485/sites/diarioelcronista/img/ZApertura/Rock_manos.jpg_1814032907.jpg" alt="Quiénes son los economistas rockstars, los chicos rebeldes de los números " title="Quiénes son los economistas rockstars, los chicos rebeldes de los números "/>
+							</a>
+					
+				
+				
+				
+				
+				
+                    			<div class="volanta"><a href="http://www.apertura.com/economia/Quienes-son-los-economistas-rockstars-los-chicos-rebeldes-de-los-numeros-20151022-0003.html" target="_blank"></a></div>
+                    		
+                    			
+                    			<h2><a href="http://www.apertura.com/economia/Quienes-son-los-economistas-rockstars-los-chicos-rebeldes-de-los-numeros-20151022-0003.html" target="_blank" >Quiénes son los economistas rockstars, los chicos rebeldes de los números </a></h2>
+                    			
+                    			
+                    			
+				  	<div class="clear"></div>
+                    		</div><!--rev-left-->
+         
+        
+                   
+              
+		        
+           
+
+
+	
+
+	 
+         
+                    		<div class="rev-right">   
+                    			<div class="rev-box-r up">
+        
+                   
+              
+		            
+				               
+			                
+			                	<a href="http://www.apertura.com/style/Cuanto-cuesta-alquilar-para-el-verano-casas-en-San-Isidro-Vicente-Lopez-y-countries-20151020-0007.html" target="_blank" >
+							<img src="/__export/1445535933378/sites/diarioelcronista/img/ZApertura/pileta_img_tres.jpg_1071730578.jpg" alt="Cuánto cuesta alquilar para el verano casas en San Isidro, Vicente López y countries " title="Cuánto cuesta alquilar para el verano casas en San Isidro, Vicente López y countries " />
+						</a>
+					
+				
+				
+						
+		   			<div class="overflow">
+		      				
+		                    			<div class="volanta"><a href="http://www.apertura.com/style/Cuanto-cuesta-alquilar-para-el-verano-casas-en-San-Isidro-Vicente-Lopez-y-countries-20151020-0007.html" target="_blank"></a></div>
+		                    		
+		                    		
+		                    		<h3><a href="http://www.apertura.com/style/Cuanto-cuesta-alquilar-para-el-verano-casas-en-San-Isidro-Vicente-Lopez-y-countries-20151020-0007.html" target="_blank" >Cuánto cuesta alquilar para el verano casas en San Isidro, Vicente López y countries </a></h3>
+		            			
+		            			
+					  	
+		                  	</div>
+		                  	<div class="clear"></div>
+				</div> 
+		         
+           
+
+
+	
+
+	 
+        
+         
+                    			<div class="rev-box-r mid">
+                   
+              
+		            
+				               
+			                
+			                	<a href="http://www.apertura.com/emprendedores/Hamburguesas-gourmet-la-opcion-para-tener-una-franquicia-low-cost--20151020-0006.html" target="_blank" >
+							<img src="/__export/1445436354764/sites/diarioelcronista/img/ZApertura/hamburguesa_img_tres.jpg_1099436208.jpg" alt="Hamburguesas gourmet, la opción para tener una franquicia low cost" title="Hamburguesas gourmet, la opción para tener una franquicia low cost" />
+						</a>
+					
+				
+				
+						
+		   			<div class="overflow">
+		      				
+		                    			<div class="volanta"><a href="http://www.apertura.com/emprendedores/Hamburguesas-gourmet-la-opcion-para-tener-una-franquicia-low-cost--20151020-0006.html" target="_blank"></a></div>
+		                    		
+		                    		
+		                    		<h3><a href="http://www.apertura.com/emprendedores/Hamburguesas-gourmet-la-opcion-para-tener-una-franquicia-low-cost--20151020-0006.html" target="_blank" >Hamburguesas gourmet, la opción para tener una franquicia low cost</a></h3>
+		            			
+		            			
+					  	
+		                  	</div>
+		                  	<div class="clear"></div>
+				</div> 
+		         
+           
+
+
+	
+
+	 
+        
+                   
+         
+                    			<div class="rev-box-r bot">
+              
+		            
+				               
+			                
+			                	<a href="http://www.apertura.com/economia/La-dupla-preferida-de-los-inversores-para-manejar-la-economia-argentina-20151020-0005.html" target="_blank" >
+							<img src="/__export/1445009809707/sites/diarioelcronista/img/ZApertura/dolar_billete_bis.jpg_1099436208.jpg" alt="A quiénes quieren los inversores como ministro de Economía" title="A quiénes quieren los inversores como ministro de Economía" />
+						</a>
+					
+				
+				
+						
+		   			<div class="overflow">
+		      				
+		                    			<div class="volanta"><a href="http://www.apertura.com/economia/La-dupla-preferida-de-los-inversores-para-manejar-la-economia-argentina-20151020-0005.html" target="_blank"></a></div>
+		                    		
+		                    		
+		                    		<h3><a href="http://www.apertura.com/economia/La-dupla-preferida-de-los-inversores-para-manejar-la-economia-argentina-20151020-0005.html" target="_blank" >A quiénes quieren los inversores como ministro de Economía</a></h3>
+		            			
+		            			
+					  	
+		                  	</div>
+		                  	<div class="clear"></div>
+				</div> 
+		         
+          
+                    		 
+                    		</div><!--rev-right-->
+                    		
+                    		<div class="clear"></div>
+                	</div>
+		</div><!-- col-left-rev APERTURA -->
+          
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	 
+		<!-- BOX REVISTAS INFOTECHNOLOGY -->
+            	<div class="col-left-rev infotech">
+            		<div class="head-rev">
+                		<a href="http://www.infotechnology.com/" target="_blank"><span class="title">infotechnology</span></a>
+                		
+                    		<a href="http://www.infotechnology.com/" target="_blank" class="vertodas">Ver todas >> </a>
+                	</div>
+	
+                	<div class="wp-rev">
+                		<div class="rev-left">
+
+                		
+					 
+						<a href="http://www.infotechnology.com/mobile/Si-tenes-un-celular-roto-o-viejo-esta-empresa-argentina-lo-arregla-y-lo-vende-por-vos-20151021-0002.html" target="_blank" >
+							<img src="/__export/1441398367456/sites/diarioelcronista/img/3dias/2015/09/04/celular_crop1441395520013.jpg_71382434.jpg_1841738537.jpg" alt="Si tenés un celular roto o viejo, esta empresa argentina lo arregla y lo vende por vos" title="Si tenés un celular roto o viejo, esta empresa argentina lo arregla y lo vende por vos" /> 
+						</a>
+					
+				
+				
+				
+				
+				
+                    			<div class="volanta"> <a href="http://www.infotechnology.com/mobile/Si-tenes-un-celular-roto-o-viejo-esta-empresa-argentina-lo-arregla-y-lo-vende-por-vos-20151021-0002.html" target="_blank"></a> </div>
+                    		
+                    		
+                    				<h2><a href="http://www.infotechnology.com/mobile/Si-tenes-un-celular-roto-o-viejo-esta-empresa-argentina-lo-arregla-y-lo-vende-por-vos-20151021-0002.html" target="_blank">Si tenés un celular roto o viejo, esta empresa argentina lo arregla y lo vende por vos</a></h2>
+                    			
+                    			
+                    			
+                    			<div class="clear"></div>
+                    		
+                    		</div><!--rev-left-->
+         
+        
+                   
+              
+        
+           
+	
+
+	
+	
+
+	 
+         
+                    		<div class="rev-right">          
+                    			<div class="rev-box-r up">
+        
+                   
+              
+           
+        				                
+				                
+							<a href="http://www.infotechnology.com/negocios/La-empresa-detras-del-Angry-Birds-despedira-al-25-por-ciento-de-su-equipo-20151021-0004.html" target="_blank" >
+								<img src="/__export/1431953917353/sites/diarioelcronista/img/ZInfotechnology/angrybirdssmartphone.JPG_1092971561.jpg" alt="La empresa detrás del Angry Birds echará al 25 por ciento de su equipo" title="La empresa detrás del Angry Birds echará al 25 por ciento de su equipo"/>
+							</a>
+						
+					
+					
+					
+                           			<div class="overflow">
+                           			
+                              				
+			                    			<div class="volanta"> <a href="http://www.infotechnology.com/negocios/La-empresa-detras-del-Angry-Birds-despedira-al-25-por-ciento-de-su-equipo-20151021-0004.html" target="_blank"></a> </div>
+			                    		
+			                    		
+			                    		<h3><a href="http://www.infotechnology.com/negocios/La-empresa-detras-del-Angry-Birds-despedira-al-25-por-ciento-de-su-equipo-20151021-0004.html" target="_blank" >La empresa detrás del Angry Birds echará al 25 por ciento de su equipo</a></h3>
+			                    		
+			                    		
+			                  	</div>
+			                  	<div class="clear"></div>
+					</div> 
+         
+           
+	
+
+	
+	
+
+	 
+        
+         
+                    			<div class="rev-box-r mid">
+                   
+              
+           
+        				                
+				                
+							<a href="http://f2.infotechnology.com/internet/YouTube-tendra-una-version-paga-sin-avisos-y-con-reproduccion-de-videos-offline-20151021-0006.html" target="_blank" >
+								<img src="/__export/1431954007550/sites/diarioelcronista/img/ZInfotechnology/youtube2.JPG_1071730578.jpg" alt="Cómo funciona la versión paga de YouTube sin publicidad" title="Cómo funciona la versión paga de YouTube sin publicidad"/>
+							</a>
+						
+					
+					
+					
+                           			<div class="overflow">
+                           			
+                              				
+			                    			<div class="volanta"> <a href="http://f2.infotechnology.com/internet/YouTube-tendra-una-version-paga-sin-avisos-y-con-reproduccion-de-videos-offline-20151021-0006.html" target="_blank"></a> </div>
+			                    		
+			                    		
+			                    		<h3><a href="http://f2.infotechnology.com/internet/YouTube-tendra-una-version-paga-sin-avisos-y-con-reproduccion-de-videos-offline-20151021-0006.html" target="_blank" >Cómo funciona la versión paga de YouTube sin publicidad</a></h3>
+			                    		
+			                    		
+			                  	</div>
+			                  	<div class="clear"></div>
+					</div> 
+         
+           
+	
+
+	
+	
+
+	 
+        
+                   
+         
+                    			<div class="rev-box-r bot">
+              
+           
+        				                
+				                
+							<a href="http://www.infotechnology.com/internet/Diez-preguntas-para-conocer-cuanto-sabes-sobre-Volver-al-futuro-20151020-0002.html" target="_blank" >
+								<img src="/__export/1445354599668/sites/diarioelcronista/img/3dias/2015/10/20/volver_al_futuro.jpg_1069883536.jpg" alt="Diez preguntas para conocer cuánto sabés sobre Volver al Futuro" title="Diez preguntas para conocer cuánto sabés sobre Volver al Futuro"/>
+							</a>
+						
+					
+					
+					
+                           			<div class="overflow">
+                           			
+                              				
+			                    			<div class="volanta"> <a href="http://www.infotechnology.com/internet/Diez-preguntas-para-conocer-cuanto-sabes-sobre-Volver-al-futuro-20151020-0002.html" target="_blank"></a> </div>
+			                    		
+			                    		
+			                    		<h3><a href="http://www.infotechnology.com/internet/Diez-preguntas-para-conocer-cuanto-sabes-sobre-Volver-al-futuro-20151020-0002.html" target="_blank" >Diez preguntas para conocer cuánto sabés sobre Volver al Futuro</a></h3>
+			                    		
+			                    		
+			                  	</div>
+			                  	<div class="clear"></div>
+					</div> 
+         
+          
+                    		 
+                    		</div><!--rev-right-->
+                    		
+                    		
+                    		<div class="clear"></div>
+            		</div><!--wp-rev-->
+        	</div><!-- col-left-rev INFOTECHNOLOGY-->
+	  
+	
+
+
+            
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+
+	 
+		<!-- BOX REVISTAS El GOLFISTA-->
+            	<div class="col-left-rev elgolfista">
+            		<div class="head-rev">
+                		<a href="http://www.elgolfista.com/" target="_blank"><span class="title">El Golfista</span></a>
+                		
+                    		<a href="http://www.elgolfista.com/" target="_blank" class="vertodas">Ir a El Golfista >> </a>
+                	</div>
+	
+                	<div class="wp-rev">
+                		<div class="rev-left">
+
+                		
+					 
+						<a href="http://www.elgolfista.com/tours/contenidos/41664/2015-09-15/ko-consiguio-su-primer-major-y-a-los-18-anos-sigue-rompiendo-records.html" target="_blank" >
+							<img src="/__export/1442858015771/sites/diarioelcronista/img/3dias/2015/09/21/ko.jpg_1817726991.jpg" alt="Quién es Lydia Ko, la jugadora más joven en ganar un Major" title="Quién es Lydia Ko, la jugadora más joven en ganar un Major" /> 
+						</a>
+					
+				
+				
+				
+				
+				
+                    			<div class="volanta"> <a href="http://www.elgolfista.com/tours/contenidos/41664/2015-09-15/ko-consiguio-su-primer-major-y-a-los-18-anos-sigue-rompiendo-records.html" target="_blank"></a> </div>
+                    		
+                    		
+                    				<h2><a href="http://www.elgolfista.com/tours/contenidos/41664/2015-09-15/ko-consiguio-su-primer-major-y-a-los-18-anos-sigue-rompiendo-records.html" target="_blank">Quién es Lydia Ko, la jugadora más joven en ganar un Major</a></h2>
+                    			
+                    			
+                    			
+                    			<div class="clear"></div>
+                    		
+                    		</div><!--rev-left-->
+         
+        
+                   
+              
+        
+           
+	
+
+	
+	
+
+	 
+         
+                    		<div class="rev-right">          
+                    			<div class="rev-box-r up">
+        
+                   
+              
+           
+        				                
+				                
+							<a href="http://www.elgolfista.com/exclusivo/contenidos/66404/2015-09-02/que-es-el-footgolf,-el-deporte-que-gana-adeptos-entre-amigos-y-empresas.html" target="_blank" >
+								<img src="/__export/1441221840950/sites/diarioelcronista/img/3dias/2015/09/02/futgolf.jpg_1066189452.jpg" alt="Qué es el footgolf, el deporte que gana adeptos entre amigos y empresas" title="Qué es el footgolf, el deporte que gana adeptos entre amigos y empresas"/>
+							</a>
+						
+					
+					
+					
+                           			<div class="overflow">
+                           			
+                              				
+			                    			<div class="volanta"> <a href="http://www.elgolfista.com/exclusivo/contenidos/66404/2015-09-02/que-es-el-footgolf,-el-deporte-que-gana-adeptos-entre-amigos-y-empresas.html" target="_blank"></a> </div>
+			                    		
+			                    		
+			                    		<h3><a href="http://www.elgolfista.com/exclusivo/contenidos/66404/2015-09-02/que-es-el-footgolf,-el-deporte-que-gana-adeptos-entre-amigos-y-empresas.html" target="_blank" >Qué es el footgolf, el deporte que gana adeptos entre amigos y empresas</a></h3>
+			                    		
+			                    		
+			                  	</div>
+			                  	<div class="clear"></div>
+					</div> 
+         
+           
+	
+
+	
+	
+
+	 
+        
+         
+                    			<div class="rev-box-r mid">
+                   
+              
+           
+        				                
+				                
+							<a href="http://www.elgolfista.com/tours/contenidos/62633/2015-08-23/davis-love-iii-gano-en-el-pga-tour-a-los-51-anos.html" target="_blank" >
+								<img src="/__export/1440779024265/sites/diarioelcronista/img/3dias/2015/08/28/davislove3.jpg_1098512687.jpg" alt="Davis Love III ganó en el PGA Tour a los 51 años" title="Davis Love III ganó en el PGA Tour a los 51 años"/>
+							</a>
+						
+					
+					
+					
+                           			<div class="overflow">
+                           			
+                              				
+			                    			<div class="volanta"> <a href="http://www.elgolfista.com/tours/contenidos/62633/2015-08-23/davis-love-iii-gano-en-el-pga-tour-a-los-51-anos.html" target="_blank"></a> </div>
+			                    		
+			                    		
+			                    		<h3><a href="http://www.elgolfista.com/tours/contenidos/62633/2015-08-23/davis-love-iii-gano-en-el-pga-tour-a-los-51-anos.html" target="_blank" >Davis Love III ganó en el PGA Tour a los 51 años</a></h3>
+			                    		
+			                    		
+			                  	</div>
+			                  	<div class="clear"></div>
+					</div> 
+         
+          
+                    		 
+                    		</div><!--rev-right-->
+                    		
+                    		
+                    		<div class="clear"></div>
+            		</div><!--wp-rev-->
+        	</div><!-- col-left-rev INFOTECHNOLOGY-->
+	  
+	
+
+
+            
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	 
+		<!-- BOX Mundia Rugby-->
+            	<div class="col-left-rev mundialrugby2015">
+            		<div class="head-rev">
+                		<a href="http://www.cronista.com/mundialrugby2015/" target="_blank"><span class="title">Mundial Rugby</span></a>
+                		
+                    		<a href="http://www.cronista.com/mundialrugby2015/" target="_blank" class="vertodas">Ir a Mundial Rugby >> </a>
+                	</div>
+	
+                	<div class="wp-rev">
+                		<div class="rev-left">
+
+                		
+					 
+						<a href="/mundialrugby/Australia-esta-pasando-un-gran-momento-20151022-0103.html" target="_self" >
+							<img src="/__export/1444424856290/sites/diarioelcronista/img/ZApertura/pumas_img_equipo.jpg_1906385007.jpg" alt=""Australia está pasando un gran momento"" title=""Australia está pasando un gran momento"" /> 
+						</a>
+					
+				
+				
+				
+				
+				
+                    			<div class="volanta"> <a href="/mundialrugby/Australia-esta-pasando-un-gran-momento-20151022-0103.html" target="_self">Rugby</a> </div>
+                    		
+                    		
+                    				<h2><a href="/mundialrugby/Australia-esta-pasando-un-gran-momento-20151022-0103.html" target="_self">"Australia está pasando un gran momento"</a></h2>
+                    			
+                    			
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+                    			<div class="clear"></div>
+                    		
+                    		</div><!--rev-left-->
+         
+        
+                   
+              
+        
+           
+	
+
+	
+
+	 
+         
+                    		<div class="rev-right">          
+                    			<div class="rev-box-r up">
+        
+                   
+              
+           
+        				                
+				                
+							<a href="/mundialrugby/All-Blacks-y-Springboks-prometen-un-partido-inolvidable-20151022-0096.html" target="_self" >
+								<img src="/__export/1445535795565/sites/diarioelcronista/img/ZApertura/all_blacks_img_rugby_crop_1445535795022.jpg_1097589166.jpg" alt="All Blacks y Springboks prometen un partido inolvidable" title="All Blacks y Springboks prometen un partido inolvidable"/>
+							</a>
+						
+					
+					
+					
+                           			<div class="overflow">
+                           			
+                              				
+			                    			<div class="volanta"> <a href="/mundialrugby/All-Blacks-y-Springboks-prometen-un-partido-inolvidable-20151022-0096.html" target="_self">duelo de titanes</a> </div>
+			                    		
+			                    		
+			                    		<h3><a href="/mundialrugby/All-Blacks-y-Springboks-prometen-un-partido-inolvidable-20151022-0096.html" target="_self" >All Blacks y Springboks prometen un partido inolvidable</a></h3>
+			                    		
+			                    		
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+			                  	</div>
+			                  	<div class="clear"></div>
+					</div> 
+         
+           
+	
+
+	
+
+	 
+        
+         
+                    			<div class="rev-box-r mid">
+                   
+              
+           
+        				                
+				                
+							<a href="/mundialrugby/Juan-Imhoff-Australia-es-un-rival-muy-complicado-20151021-0119.html" target="_self" >
+								<img src="/__export/1445254142891/sites/diarioelcronista/img/2015/10/19/cc191015w023f06.jpg_1098512687.jpg" alt="Juan Imhoff: "Australia es un rival muy complicado"" title="Juan Imhoff: "Australia es un rival muy complicado""/>
+							</a>
+						
+					
+					
+					
+                           			<div class="overflow">
+                           			
+                              				
+			                    			<div class="volanta"> <a href="/mundialrugby/Juan-Imhoff-Australia-es-un-rival-muy-complicado-20151021-0119.html" target="_self">Rugby</a> </div>
+			                    		
+			                    		
+			                    		<h3><a href="/mundialrugby/Juan-Imhoff-Australia-es-un-rival-muy-complicado-20151021-0119.html" target="_self" >Juan Imhoff: "Australia es un rival muy complicado"</a></h3>
+			                    		
+			                    		
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+			                  	</div>
+			                  	<div class="clear"></div>
+					</div> 
+         
+           
+	
+
+	
+
+	 
+        
+                   
+         
+                    			<div class="rev-box-r bot">
+              
+           
+        				                
+				                
+							<a href="/mundialrugby/Quienes-dirigiran-las-semifinales-del-Mundial-de-Rugby-20151020-0097.html" target="_self" >
+								<img src="/__export/1445369026234/sites/diarioelcronista/img/3dias/2015/10/20/arbitro.jpg_1071730578.jpg" alt="Quiénes dirigirán las semifinales del Mundial de Rugby" title="Quiénes dirigirán las semifinales del Mundial de Rugby"/>
+							</a>
+						
+					
+					
+					
+                           			<div class="overflow">
+                           			
+                              				
+			                    			<div class="volanta"> <a href="/mundialrugby/Quienes-dirigiran-las-semifinales-del-Mundial-de-Rugby-20151020-0097.html" target="_self">Novedades</a> </div>
+			                    		
+			                    		
+			                    		<h3><a href="/mundialrugby/Quienes-dirigiran-las-semifinales-del-Mundial-de-Rugby-20151020-0097.html" target="_self" >Quiénes dirigirán las semifinales del Mundial de Rugby</a></h3>
+			                    		
+			                    		
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+			                  	</div>
+			                  	<div class="clear"></div>
+					</div> 
+         
+          
+                    		 
+                    		</div><!--rev-right-->
+                    		
+                    		
+                    		<div class="clear"></div>
+            		</div><!--wp-rev-->
+        	</div><!-- col-left-rev INFOTECHNOLOGY-->
+	  
+	
+
+       
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	 
+               <div class="col-left-suple">
+               
+                 <div class="suple-box-l">
+                 	
+                	<div class="head-suple">
+                		<span class="title">suplementos</span>
+                    		<!--<a href="#" class="vertodas">Ver todas >> </a>-->
+                	</div>
+                	
+			<div class="wp-suple">
+		
+		
+		
+		
+                    		<div class="suple-box-b">
+                    		
+                    		
+                    			 
+						<a href="/3dias/Miguel-Angel-Sola-La-clase-dirigente-sin-tanto-fuero-haria-un-mejor-trabajo-20151023-0006.html" target="_self" >
+							<img src="/__export/1445560102294/sites/diarioelcronista/img/3dias/2015/10/22/cc231015v012f26_crop1445560102215.jpg_430428016.jpg" alt="Miguel Angel Solá: "La clase dirigente, sin tanto fuero, haría un mejor trabajo"" title="Miguel Angel Solá: "La clase dirigente, sin tanto fuero, haría un mejor trabajo""/>
+					 	</a>
+					
+				
+					
+				
+				
+			
+			
+			
+			
+				
+	                            	<div class="volanta"> <a href="/3dias/Miguel-Angel-Sola-La-clase-dirigente-sin-tanto-fuero-haria-un-mejor-trabajo-20151023-0006.html">OUTSIDER</a> </div>
+				
+				
+	                    		<h2><a href="/3dias/Miguel-Angel-Sola-La-clase-dirigente-sin-tanto-fuero-haria-un-mejor-trabajo-20151023-0006.html" target="_self" >Miguel Angel Solá: "La clase dirigente, sin tanto fuero, haría un mejor trabajo"</a></h2>
+                        		
+                        		
+				  	
+                        	</div><!--box-->
+                        	
+	
+
+
+	
+
+	
+		
+		
+			
+			
+			
+                    		<div class="suple-box-s">
+                    		
+                    		
+                    			 
+						<a href="/rpm/Un-clasico-que-se-reinventa-20151022-0008.html" target="_self" >
+							<img src="/__export/1445509393950/sites/diarioelcronista/img/rpm/2015/10/22/clasico.jpg_679002905.jpg" alt="Un clásico que se reinventa" title="Un clásico que se reinventa" />
+					 	</a>
+					
+				
+				
+				
+			 	
+			
+			
+				
+	                            	<div class="volanta"> <a href="/rpm/Un-clasico-que-se-reinventa-20151022-0008.html"></a> </div>
+				
+				
+	                    		<h2><a href="/rpm/Un-clasico-que-se-reinventa-20151022-0008.html" target="_self" >Un clásico que se reinventa</a></h2>
+                        		
+                        		
+				  	
+                        	</div><!--box-->
+                        	
+	
+
+
+	
+
+	
+		
+		
+			
+			
+			
+                    		<div class="suple-box-s">
+                    		
+                    		
+                    			 
+						<a href="/3dias/Quitoen-la-mitad-del-mundo-20151023-0002.html" target="_self" >
+							<img src="/__export/1445545810028/sites/diarioelcronista/img/2015/10/23/cc231015v009f10.jpg_679002905.jpg" alt="Quito,en la mitad del mundo" title="Quito,en la mitad del mundo" />
+					 	</a>
+					
+				
+				
+				
+			 	
+			
+			
+				
+	                            	<div class="volanta"> <a href="/3dias/Quitoen-la-mitad-del-mundo-20151023-0002.html"></a> </div>
+				
+				
+	                    		<h2><a href="/3dias/Quitoen-la-mitad-del-mundo-20151023-0002.html" target="_self" >Quito,en la mitad del mundo</a></h2>
+                        		
+                        		
+				  	
+                        	</div><!--box-->
+                        	
+	 
+			</div>
+			
+		  </div>
+		  
+		</div>
+	
+     	
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	 
+        
+        <div class="col-left-suple">
+               	<div class="suple-box-r">
+                	<div class="head-suple">
+                		<span class="title">Economia Creativa</span>
+                    		<a href="http://www.apertura.com/economiacreativa" target="_blank" class="vertodas">Ver todas >> </a>
+                	</div>
+			<div class="wp-suple">
+			
+	
+	
+			
+			
+	            		<div class="suple-box-b">
+	            		
+	                    		
+	                    			 
+							<a href="http://www.apertura.com/negocios/Kicillof-dijo-que-hace-plazos-fijos-y-que-quiere-invertir-desde-el-pozo-pero-es-buena-idea-20151020-0004.html" target="_blank">
+								<img src="/__export/1445358769470/sites/diarioelcronista/img/ZApertura/kicillof_img_ministro.jpg_1203415093.jpg" alt="Kicillof dijo que hace plazos fijos y que quiere invertir desde el pozo pero ¿es buena idea? " />
+						 	</a>
+						
+					
+					
+					
+					
+			
+			
+			
+				
+				
+	                            	
+	                    		<h2><a href="http://www.apertura.com/negocios/Kicillof-dijo-que-hace-plazos-fijos-y-que-quiere-invertir-desde-el-pozo-pero-es-buena-idea-20151020-0004.html" target="_blank">Kicillof dijo que hace plazos fijos y que quiere invertir desde el pozo pero ¿es buena idea? </a></h2>
+                        		
+                        		
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+				  	
+                        	</div><!--box-->
+                        	
+	
+
+
+	
+	
+	
+	
+	
+			
+			
+			
+			
+                    		<div class="suple-box-s">
+                    		
+                    		
+                    			 
+						<a href="http://www.apertura.com/negocios/Pergolini-Es-muy-dificil-generar-dinero-si-lo-haces-para-afuera-20151019-0003.html" target="_blank" >
+							<img src="/__export/1431953880474/sites/diarioelcronista/img/ZApertura/pergolini.png_671614737.png" alt="Cómo sacó Guillermo Moreno a Mario Pergolini de su oficina" />
+					 	</a>
+					
+				
+				
+				
+				
+			
+				
+				
+	                            	
+	                    		<h2><a href="http://www.apertura.com/negocios/Pergolini-Es-muy-dificil-generar-dinero-si-lo-haces-para-afuera-20151019-0003.html" target="_blank">Cómo sacó Guillermo Moreno a Mario Pergolini de su oficina</a></h2>
+                        		
+                        		
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+				  	
+                        	</div><!--box-->
+                        	
+	
+
+
+	
+	
+	
+	
+	
+			
+			
+			
+			
+                    		<div class="suple-box-s">
+                    		
+                    		
+                    			 
+						<a href="http://www.apertura.com/economia/Uno-de-los-hombres-mas-ricos-del-mundo-dice-que-hay-que-trabajar-solo-tres-dias-a-la-semana-20151016-0001.html" target="_blank" >
+							<img src="/__export/1431953892901/sites/diarioelcronista/img/ZApertura/Slim_-_Carlos_crop_1358867104873.jpg_678079384.jpg" alt=""Hay que trabajar sólo tres días a la semana", dice uno de los hombres más ricos del mundo " />
+					 	</a>
+					
+				
+				
+				
+				
+			
+				
+				
+	                            	
+	                    		<h2><a href="http://www.apertura.com/economia/Uno-de-los-hombres-mas-ricos-del-mundo-dice-que-hay-que-trabajar-solo-tres-dias-a-la-semana-20151016-0001.html" target="_blank">"Hay que trabajar sólo tres días a la semana", dice uno de los hombres más ricos del mundo </a></h2>
+                        		
+                        		
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+				  	
+                        	</div><!--box-->
+                        	
+	 
+			</div>
+			
+		</div>	
+		
+	</div>
+	
+ 
+			
+					
+	
+  
+				
+																								
+					        </div><!--COLUMNA IZQUIERDA -->
+
+															
+					  	<div class="col-right">
+
+					
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+		      			
+		      				<div class="b300x250">
+
+	      				<div id="takeover_div" style="overflow:hidden;"></div>
+<div id="epl_ws_div"></div>
+<script type="text/javascript">eplAD4M("V4_Cronista_Home_Right1");</script>
+
+					</div>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="col-right-editorial">
+	
+	  	<div class="head-right">
+	  			<img src="/__export/1374500798000/sites/diarioelcronista/arte/ico-head-editorial.jpg" alt="Zoom Editorial" />ZOOM EDITORIAL
+	  	</div>
+
+	        <div class="col-right-small">
+	        
+		      	
+		  		<a href="/economiapolitica/El-Papa-Francisco-Messi-el-Che-Guevara-y-el-personalismo-que-paraliza-a-la-Argentina-20151023-0065.html" title="El Papa Francisco, Messi, el Che Guevara y el personalismo que paraliza a la Argentina">
+				      	
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1445567701229/sites/diarioelcronista/img/fernando_gonzalez_2015.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+				</a>
+			
+	      		<div class="overflow">
+				<h3><a href="/economiapolitica/El-Papa-Francisco-Messi-el-Che-Guevara-y-el-personalismo-que-paraliza-a-la-Argentina-20151023-0065.html">El Papa Francisco, Messi, el Che Guevara y el personalismo que paraliza a la Argentina</a></h3>
+
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+        			
+        				<div class="firma">por <a href="#">FERNANDO GONZALEZ</a> Director Period&iacute;stico</div>        
+	              		
+	              	</div>
+	              	<div class="clear"></div><!--clear--> 
+	         </div>
+				
+	</div>
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+		      			
+		      				<div class="b300x250">
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Right2");</script>
+
+					</div>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	 
+            	
+            	
+            	<div class="col-right-videos">
+            	
+            		<div class="head-videos">
+                		<img src="/__export/1374500797000/sites/diarioelcronista/arte/ico-head-videos.jpg" alt="videos" />VIDEOS <!-- <a href="http://www.youtube.com/user/Cronista?feature=watch">Ir al canal >></a>-->
+                	</div>
+	            
+	                <div class="col-right-small">
+	                	
+				
+				 
+					<a href="/elecciones2015/Scioli-y-Karina-cierre-de-campana-en-el-programa-de-Tinelli-20151023-0071.html" title="Scioli y Karina, cierre de campaña en el programa de Tinelli">
+						<img src="//i1.ytimg.com/vi/6lapwvcSeZg/hqdefault.jpg" width="270" data-group-key="thumb-group-"/>
+					</a>
+				
+				
+	                	<h2><a href="/elecciones2015/Scioli-y-Karina-cierre-de-campana-en-el-programa-de-Tinelli-20151023-0071.html">Scioli y Karina, cierre de campaña en el programa de Tinelli</a></h2>
+	                	
+	                	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+			  	
+			  	
+	                	<div class="clear"></div><!--clear-->
+
+	                </div><!--col-right-small-->
+
+	
+	
+	
+	
+	
+	
+	
+
+
+	
+
+	
+	
+	 
+            	
+	                <div class="sinPaddingSup col-right-small">
+	                	
+	                	        
+		                	        <a href="/elecciones2015/Nestor-y-Cristina-hacen-campana-por-Scioli-20151022-0066.html" title="Néstor y Cristina hacen campaña por Scioli">
+							<img src="/__export/1431953804680/sites/diarioelcronista/img/ZApertura/cristina_nestor_img.jpg_2143495340.jpg" alt="Zoom_Economia_Argento" />
+						</a>
+					
+				
+				
+				
+				
+	                	<h2><a href="/elecciones2015/Nestor-y-Cristina-hacen-campana-por-Scioli-20151022-0066.html">Néstor y Cristina hacen campaña por Scioli</a></h2>
+	                	
+	                	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+			  	
+			  	
+	                	<div class="clear"></div><!--clear-->
+
+	                </div><!--col-right-small-->
+	                
+	              	 
+				<div class="mas-videos">más videos</div>
+			
+	              	
+	
+	
+	
+	
+	
+
+
+	
+
+	
+	
+	
+	
+	 
+	                <div class="col-right-video-small">
+	                	
+		                          
+		                         	<a href="http://www.apertura.com/negocios/Honor-Gorila-la-insolita-reunion-anti-K-que-tiene-su-propia-cancion-20151021-0010.html" title=""Honor Gorila", la insólita reunión anti K que tiene su propia canción">
+							<img src="/__export/1445457013450/sites/diarioelcronista/img/ZApertura/ESPERT.jpg_1092048040.jpg" alt=""Honor Gorila", la insólita reunión anti K que tiene su propia canción" title=""Honor Gorila", la insólita reunión anti K que tiene su propia canción" />
+						</a>
+					
+				
+				
+				
+				
+	                	<div class="overflow">
+	                        	<h3><a href="http://www.apertura.com/negocios/Honor-Gorila-la-insolita-reunion-anti-K-que-tiene-su-propia-cancion-20151021-0010.html">"Honor Gorila", la insólita reunión anti K que tiene su propia canción</a></h3>
+	                        	
+	                        	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+				  	
+	                        	
+	                    	</div>
+	                    	<div class="clear"></div><!--clear-->             
+	                </div><!--col-right-video-small-->
+	
+	
+	
+
+
+	
+
+	
+	
+	
+	
+	 
+	                <div class="col-right-video-small">
+	                	
+		                          
+		                         	<a href="/economiapolitica/Scioli-paga-casi-todas-las-encuestas-conocidas-y-ni-asi-supera-el-40-20151021-0072.html" title=""Scioli paga casi todas las encuestas conocidas y ni así supera el 40%"">
+							<img src="/__export/1445381287425/sites/diarioelcronista/img/stolbizer_entrevista.jpg_1100359729.jpg" alt=""Scioli paga casi todas las encuestas conocidas y ni así supera el 40%"" title=""Scioli paga casi todas las encuestas conocidas y ni así supera el 40%"" />
+						</a>
+					
+				
+				
+				
+				
+	                	<div class="overflow">
+	                        	<h3><a href="/economiapolitica/Scioli-paga-casi-todas-las-encuestas-conocidas-y-ni-asi-supera-el-40-20151021-0072.html">"Scioli paga casi todas las encuestas conocidas y ni así supera el 40%"</a></h3>
+	                        	
+	                        	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+				  	
+	                        	
+	                    	</div>
+	                    	<div class="clear"></div><!--clear-->             
+	                </div><!--col-right-video-small-->
+	
+	
+	
+
+
+	
+
+	
+	
+	
+	
+	 
+	                <div class="col-right-video-small">
+	                	
+		                          
+		                         	<a href="http://www.apertura.com/economia/Referentes-del-FPV-el-PRO-y-el-FR-se-sacaron-chispas-en-un-debate-economico-20151021-0008.html" title="Referentes del FPV, el PRO y el FR se sacaron chispas en un debate económico">
+							<img src="/__export/1438798399978/sites/diarioelcronista/img/ZApertura/CANDIDATOS_PRESIDENTE.jpg_1099436208.jpg" alt="Referentes del FPV, el PRO y el FR se sacaron chispas en un debate económico" title="Referentes del FPV, el PRO y el FR se sacaron chispas en un debate económico" />
+						</a>
+					
+				
+				
+				
+				
+	                	<div class="overflow">
+	                        	<h3><a href="http://www.apertura.com/economia/Referentes-del-FPV-el-PRO-y-el-FR-se-sacaron-chispas-en-un-debate-economico-20151021-0008.html">Referentes del FPV, el PRO y el FR se sacaron chispas en un debate económico</a></h3>
+	                        	
+	                        	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+				  	
+	                        	
+	                    	</div>
+	                    	<div class="clear"></div><!--clear-->             
+	                </div><!--col-right-video-small-->
+	
+	
+	
+
+
+	
+
+	
+	
+	
+	
+	 
+	                <div class="col-right-video-small">
+	                	
+		                          
+		                         	<a href="/elecciones2015/El-fuerte-contrapunto-de-Aldo-Pignanelli-y-Patricia-Bullrich-en-Cronista-TV-20151021-0090.html" title="El fuerte contrapunto de Aldo Pignanelli y Patricia Bullrich en Cronista TV">
+							<img src="/__export/1445434530478/sites/diarioelcronista/img/pignanelli_bullrich.jpg_1100359729.jpg" alt="El fuerte contrapunto de Aldo Pignanelli y Patricia Bullrich en Cronista TV" title="El fuerte contrapunto de Aldo Pignanelli y Patricia Bullrich en Cronista TV" />
+						</a>
+					
+				
+				
+				
+				
+	                	<div class="overflow">
+	                        	<h3><a href="/elecciones2015/El-fuerte-contrapunto-de-Aldo-Pignanelli-y-Patricia-Bullrich-en-Cronista-TV-20151021-0090.html">El fuerte contrapunto de Aldo Pignanelli y Patricia Bullrich en Cronista TV</a></h3>
+	                        	
+	                        	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+				  	
+	                        	
+	                    	</div>
+	                    	<div class="clear"></div><!--clear-->             
+	                </div><!--col-right-video-small-->
+	
+	
+	 
+            	</div><!--col-right-videos--> 
+	
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	 
+		<div class="col-right-impresa">
+		  	<div class="head-right">
+		  		<img src="/__export/1379282451399/sites/diarioelcronista/arte/ico-head-opinion.jpg" alt="Edición Impresa" />Hoy en la Edición Impresa
+		  	</div>
+	
+	          
+	              	<div class="col-right-small">
+	                	
+	                    	
+	                    		<div class="volanta"><a href="/seccion/economia_politica/">Economía y política</a></div>
+	                   	
+	                    	
+	                    	<h3><a href="/economiapolitica/Fondos-buitre-Griesa-acepto-otros-15-reclamos-y-la-deuda-sube-a-us-10.000-millones-20151023-0049.html">Fondos buitre: Griesa aceptó otros 15 reclamos y la deuda sube a u$s 10.000 millones</a></h3>
+	                    	
+	                    	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	                    	
+	                    	
+		                    	
+		                    		 
+			                    		
+						
+		                    	
+	                    	
+	                    	
+	                    	 
+		                    	
+			                    	
+			                    		<a href="/economiapolitica/Fondos-buitre-Griesa-acepto-otros-15-reclamos-y-la-deuda-sube-a-us-10.000-millones-20151023-0049.html" title="Fondos buitre: Griesa aceptó otros 15 reclamos y la deuda sube a u$s 10.000 millones">
+				                    		<img src="/__export/1445595902519/sites/diarioelcronista/img/3dias/2015/10/23/cc231015e010f06_crop1445595845104.jpg_137859759.jpg" />
+				                    	</a>
+			                    	
+		              		
+		              		
+		              		
+		              	
+	              	</div>
+	              	
+	
+
+	
+	
+	
+	
+	          
+	              	<div class="col-right-small">
+	                	
+	                    	
+	                    		<div class="volanta"><a href="/seccion/negocios/">Negocios</a></div>
+	                   	
+	                    	
+	                    	<h3><a href="/negocios/Un-grupo-espanol-se-quedara-conmas-del-40-de-SOL-Lineas-Aereas-20151023-0050.html">Un grupo español se quedará conmás del 40% de SOL Líneas Aéreas</a></h3>
+	                    	
+	                    	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	                    	
+	                    	
+		                    	
+		                    		 
+			                    		
+								<div class="firma">por <a href="#">MATÍAS BONELLI</a></div>	
+							
+						
+		                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              	
+	
+
+	
+	
+	
+	
+	          
+	              	<div class="col-right-small">
+	                	
+	                    	
+	                    		<div class="volanta"><a href="/seccion/finanzas_mercados/">Finanzas y mercados</a></div>
+	                   	
+	                    	
+	                    	<h3><a href="/finanzasmercados/Crean-nuevas-gerencias-en-la-CNV-para-ubicar-a-militantes-de-La-Campora-20151023-0045.html">Crean nuevas gerencias en la CNV para ubicar a militantes de La Cámpora</a></h3>
+	                    	
+	                    	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	                    	
+	                    	
+		                    	
+		                    		 
+			                    		
+								<div class="firma">por <a href="#">MARIANO GORODISCH</a></div>	
+							
+						
+		                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              	
+	
+
+	
+	
+	
+	
+	          
+	              	<div class="col-right-small">
+	                	
+	                    	
+	                    		<div class="volanta"><a href="/seccion/financial_times/ ">Financial Times</a></div>
+	                   	
+	                    	
+	                    	<h3><a href="/financialtimes/La-recuperacion-de-Europa-no-recae-solo-en-el-BCE-20151023-0018.html">La recuperación de Europa no recae sólo en el BCE</a></h3>
+	                    	
+	                    	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	                    	
+	                    	
+		                    	
+		                    		 
+			                    		
+						
+		                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              	
+	
+
+	
+	
+	
+	
+	          
+	              	<div class="col-right-small">
+	                	
+	                    	
+	                    		<div class="volanta"><a href="/seccion/financial_times/ ">Financial Times</a></div>
+	                   	
+	                    	
+	                    	<h3><a href="/financialtimes/El-futuro-de-Rousseff-depende-del-destino-de-su-rival-politico-20151023-0011.html">El futuro de Rousseff depende del destino de su rival político</a></h3>
+	                    	
+	                    	
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	                    	
+	                    	
+		                    	
+		                    		 
+			                    		
+								<div class="firma">por <a href="#">JOE LEAHY</a></div>	
+							
+						
+		                    	
+		                    		
+		                    	
+	                    	
+	                    	
+	                    	
+	              	</div>
+	              	
+	 
+		</div>
+	
+
+
+
+        
+
+
+
+	<div class="bEdImp"> 
+		<a id="pop-ingEI" href="#">
+			<img src="/__export/1381931023236/sites/diarioelcronista/arte/remplazables/banner-edicion-impresa.jpg" alt="Edición Impresa" />
+		</a>
+	</div><!--Banner Edición Impresa-->
+
+
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+	
+		
+			
+			
+			
+		
+			
+			
+			
+		
+			
+			
+			
+		
+			
+			
+			
+		
+			
+			
+			
+		
+			
+			
+			
+		
+			
+			
+			
+		
+			
+			
+			
+		
+			
+			
+			
+		
+			
+			
+			
+		
+	  
+	
+	
+	<!--BOX OPINION-->
+	<div class="col-right-opinion">
+		
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+
+
+		<div class="head-right ">
+			<img src="/__export/1379282451399/sites/diarioelcronista/arte/ico-head-opinion.jpg" alt="opinion" />COLUMNISTAS 
+		</div>
+
+
+            	
+            	
+            	
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/La-ultima-encuesta-20151023-0029.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/img/lanata_zlotogwiazda_crop1445560559211.jpg_1794061651.jpg?__scale=w:64,h:64,t:2" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/La-ultima-encuesta-20151023-0029.html">La última encuesta</a></h3>
+		                        <div class="firma">por <a href="#">Marcelo Zlotogwiazda  / Periodista y economista</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/Se-olvidaron-de-Penny-20151023-0037.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1431952814780/sites/diarioelcronista/img/autores/Zanoni_Lalo.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/Se-olvidaron-de-Penny-20151023-0037.html">Se olvidaron de Penny</a></h3>
+		                        <div class="firma">por <a href="#">Leandro Zanoni / Periodista especializado en tecnología</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/Frente-a-las-promesas-electorales-20151022-0023.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1431952839679/sites/diarioelcronista/img/caras_columnistas/Muchnik-Daniel_Cara.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/Frente-a-las-promesas-electorales-20151022-0023.html">Frente a las promesas electorales</a></h3>
+		                        <div class="firma">por <a href="#">Daniel Muchnik / Periodista</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/Tiempo-de-recambio-en-Naciones-Unidas-20151022-0004.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1431952839587/sites/diarioelcronista/img/caras_columnistas/Moritan-Roberto_Cara.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/Tiempo-de-recambio-en-Naciones-Unidas-20151022-0004.html">Tiempo de recambio en Naciones Unidas</a></h3>
+		                        <div class="firma">por <a href="#">Roberto García Moritán / Ex vicecanciller</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/La-conjura-de-los-necios-20151021-0024.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1431952837074/sites/diarioelcronista/img/caras_columnistas/Lejtman-Roman_Cara.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/La-conjura-de-los-necios-20151021-0024.html">La conjura de los necios</a></h3>
+		                        <div class="firma">por <a href="#">Roman Lejtman / Periodista</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/Lavado-de-dinero-la-variable-oculta-de-la-economia-20151021-0042.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1445432555539/sites/diarioelcronista/img/zenon_biagosch.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/Lavado-de-dinero-la-variable-oculta-de-la-economia-20151021-0042.html">Lavado de dinero, la variable oculta de la economía </a></h3>
+		                        <div class="firma">por <a href="#">Zenón Biagosch / FIDEnet</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/El-mismo-sol-peronista-70-octubres-despues-20151019-0008.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1431952830613/sites/diarioelcronista/img/caras_columnistas/de_Diego_Julian.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/El-mismo-sol-peronista-70-octubres-despues-20151019-0008.html">La Afip ratificó que una gratificación por ese no está alcanzada por Ganancias</a></h3>
+		                        <div class="firma">por <a href="#">Julián A. de Diego / Director del Posgrado en Dirección Estratégica RR.HH. U.C.A.</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/opinion/El-dia-que-mataron-a-Scioli-20151020-0027.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1431952832339/sites/diarioelcronista/img/caras_columnistas/ernesto_tenembaum_cara.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/opinion/El-dia-que-mataron-a-Scioli-20151020-0027.html">El día que mataron a Scioli</a></h3>
+		                        <div class="firma">por <a href="#">Ernesto Tenembaum / Periodista</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/Los-momentos-que-importan-20151020-0042.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1445362767700/sites/diarioelcronista/img/adriana_norexa.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/Los-momentos-que-importan-20151020-0042.html">Los momentos que importan</a></h3>
+		                        <div class="firma">por <a href="#">Adriana Noreña / Directora General de Google para Hispanoamérica</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+                		
+		                <div class="col-right-small">
+ 		                	<a href="/columnistas/Violencia-y-sociedad-20151020-0043.html">
+			                	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<img src="/__export/1445362767457/sites/diarioelcronista/img/carlos_camean_ariza_.png_758203735.png" width="64" height="64" alt="" align="" border="0"/>
+
+ 
+		                	</a>
+		                	<div class="overflow">
+		                        <h3><a href="/columnistas/Violencia-y-sociedad-20151020-0043.html">Violencia y sociedad</a></h3>
+		                        <div class="firma">por <a href="#">Carlos Camean / Director del Centro de Estudios para las Relaciones Interpersonales Universidad Austral</a></div>        
+		                    </div> 
+		                    <div class="clear"></div><!--clear-->    
+		                </div><!--col-right-small--> 
+		               
+              		
+            	     
+	</div><!--FIN BOX OPINION-->
+	
+
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-right-notidest">
+	<div class="head-right">Lo m&aacute;s visto</div>
+	<ul class="idTabs"> 
+		<li class="tick"><a class="selected" href="#leidas">+Leidas</a></li> 
+		
+		<li><a href="#compartidas">+Compartidas</a></li>
+	</ul>	
+	<div style="display: block;" id="leidas">
+			
+			
+			<div class="col-right-small">
+				
+				
+				
+			
+				<div class="volanta"><a href="/elecciones2015/">Elecciones 2015</a></div>
+				
+				
+				
+						
+				<h3><a href="/elecciones2015/Scioli-dos-promesas-distintas-sobre-Ganancias-y-final-anticipado-para-una-entrevista-incomoda-20151022-0108.html">Scioli: dos promesas distintas sobre Ganancias y final anticipado para una entrevista inc&oacute;moda</a></h3>
+				
+			</div><!--col-right-small--> 
+			
+			
+			<div class="col-right-small">
+				
+				
+				
+			
+				<div class="volanta"><a href="/elecciones2015/">Elecciones 2015</a></div>
+				
+				
+				
+						
+				<h3><a href="/elecciones2015/Donde-voto--Padron-Electoral---Elecciones-presidenciales-20150710-0080.html">Padr&oacute;n electoral: consult&aacute; d&oacute;nde vot&aacute;s en las elecciones del 25 de octubre</a></h3>
+				
+			</div><!--col-right-small--> 
+			
+			
+			<div class="col-right-small">
+				
+				
+				
+			
+				<div class="volanta"><a href="/elecciones2015/">Elecciones 2015</a></div>
+				
+				
+				
+						
+				<h3><a href="/elecciones2015/Scioli-prometio-subir-el-piso-del-Impuesto-a-las-Ganancias-a--25-mil-20151022-0084.html">Scioli prometi&oacute; subir el piso del Impuesto a las Ganancias a $ 25 mil</a></h3>
+				
+			</div><!--col-right-small--> 
+			
+			
+			<div class="col-right-small">
+				
+				
+				
+			
+				<div class="volanta"><a href="/seccion/economia_politica/">Econom&iacute;a y pol&iacute;tica</a></div>
+				
+				
+				
+						
+				<h3><a href="/economiapolitica/Buitres-bonistas-exigen-al-BONY-que-transfiera-los-fondos-o-renuncie-como-agente-de-pago-20151022-0106.html">Buitres: bonistas exigen al BONY que transfiera los fondos o renuncie como agente de pago</a></h3>
+				
+			</div><!--col-right-small--> 
+			
+			
+			<div class="col-right-small">
+				
+				
+				
+			
+				<div class="volanta"><a href="/seccion/finanzas_mercados/">Finanzas y mercados</a></div>
+				
+				
+				
+						
+				<h3><a href="/finanzasmercados/En-el-ultimo-dia-de-campana-el-dolar-blue-pego-un-salto-y-volvio-a-cruzar-los--16-20151022-0083.html">En el &uacute;ltimo d&iacute;a de campa&ntilde;a, el d&oacute;lar blue peg&oacute; un salto y volvi&oacute; a cruzar los $ 16</a></h3>
+				
+			</div><!--col-right-small--> 
+		
+	</div><!-- +leidas -->
+	
+	
+	<div style="display: none;" id="compartidas">
+		
+					
+			<div class="col-right-small">
+				
+				
+			
+				<div class="volanta"><a href="/seccion/finanzas_mercados/">Finanzas y mercados</a></div>
+				
+				
+				
+						
+				<h3><a href="/finanzasmercados/Al-borde-del-default-deuda-del-BCRA-con-importadores-trepa-a-us-9.000-millones-20151022-0051.html">Al borde del default: deuda del BCRA con importadores trepa a u$s 9.000 millones</a></h3>
+				
+			</div><!--col-right-small-->
+		
+					
+			<div class="col-right-small">
+				
+				
+			
+				<div class="volanta"><a href="/elecciones2015/">Elecciones 2015</a></div>
+				
+				
+				
+						
+				<h3><a href="/elecciones2015/Donde-voto--Padron-Electoral---Elecciones-presidenciales-20150710-0080.html">Padr&oacute;n electoral: consult&aacute; d&oacute;nde vot&aacute;s en las elecciones del 25 de octubre</a></h3>
+				
+			</div><!--col-right-small-->
+		
+					
+			<div class="col-right-small">
+				
+				
+			
+				<div class="volanta"><a href="/suplemento/3dias/">3dias</a></div>
+				
+				
+				
+						
+				<h3><a href="/3dias/Dolar-ahorro-una-deformacion-del-cepo-en-la-mira-de-los-candidatos-20151023-0007.html">D&oacute;lar ahorro: una deformaci&oacute;n del cepo en la mira de los candidatos</a></h3>
+				
+			</div><!--col-right-small-->
+		
+					
+			<div class="col-right-small">
+				
+				
+			
+				<div class="volanta"><a href="/seccion/finanzas_mercados/">Finanzas y mercados</a></div>
+				
+				
+				
+						
+				<h3><a href="/finanzasmercados/Otra-vez-los-cambistas-de-las-DJAI-operaron-con-el-Gobierno-para-llevar-al-blue-abajo-de-los--16-20151021-0093.html">Otra vez, &ldquo;los cambistas de las DJAI&rdquo; operaron con el Gobierno para llevar al blue abajo de los $ 16</a></h3>
+				
+			</div><!--col-right-small-->
+		
+					
+			<div class="col-right-small">
+				
+				
+			
+				<div class="volanta"><a href="/elecciones2015/">Elecciones 2015</a></div>
+				
+				
+				
+						
+				<h3><a href="/elecciones2015/Ganancias-planes-sociales-e-inflacion-los-ejes-finales-de-la-campana-para-una-eleccion-clave-20151023-0070.html">Ganancias, planes sociales e inflaci&oacute;n: los ejes finales de la campa&ntilde;a para una elecci&oacute;n clave</a></h3>
+				
+			</div><!--col-right-small-->
+		
+	</div><!-- +recomendadas-->
+</div>
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	<div class="col-right-ultimo">
+		<div class="head-right">ULTIMO MOMENTO</div>
+	
+	
+		
+		<div class="col-right-small">
+			<div class="volanta"><a href="/seccion/economia_politica/">Economía y política</a></div>
+				<h3><a href="/economiapolitica/Elecciones-presidenciales-ya-rige-la-veda-electoral-en-todo-el-pais-20151023-0073.html">Elecciones presidenciales: ya rige la veda electoral en todo el país</a></h3>
+				
+				<div class="tags-nota-small">
+		
+				<div class="list-tag">
+						
+							<a href="/tags/veda electoral">veda electoral</a>,  
+					 	
+							<a href="/tags/elecciones presidenciales">elecciones presidenciales</a> 
+					 		 
+				 </div>
+						
+				<span class="coment"><a href="#"><div style="display:inline" type="ranking" mode="comments" path="/contenidos/2015/10/23/noticia_0073.html">0</div></a></span>
+				
+			</div>  
+		</div><!--col-right-small-->
+
+	
+	
+	
+	
+	
+		
+		<div class="col-right-small">
+			<div class="volanta"><a href="/elecciones2015/">Elecciones 2015</a></div>
+				<h3><a href="/elecciones2015/Tullio-advirtio-que-Cambiemos-aun-no-distribuyo-boletas-en-21-municipios-de-Provincias-20151023-0072.html">Tullio advirtió que Cambiemos aún no distribuyó boletas en 21 municipios de Provincias</a></h3>
+				
+				<div class="tags-nota-small">
+		
+				<div class="list-tag">
+						
+							<a href="/tags/Cambiemos">Cambiemos</a>,  
+					 	
+							<a href="/tags/boletas">boletas</a>,  
+					 	
+							<a href="/tags/faltantes">faltantes</a>,  
+					 	
+							<a href="/tags/elecciones 2015">elecciones 2015</a> 
+					 		 
+				 </div>
+						
+				<span class="coment"><a href="#"><div style="display:inline" type="ranking" mode="comments" path="/contenidos/2015/10/23/noticia_0072.html">0</div></a></span>
+				
+			</div>  
+		</div><!--col-right-small-->
+
+	
+	
+	
+	
+	
+		
+		<div class="col-right-small">
+			<div class="volanta"><a href="/elecciones2015/">Elecciones 2015</a></div>
+				<h3><a href="/elecciones2015/Scioli-y-Karina-cierre-de-campana-en-el-programa-de-Tinelli-20151023-0071.html">Scioli y Karina, cierre de campaña en el programa de Tinelli</a></h3>
+				
+				<div class="tags-nota-small">
+		
+				<div class="list-tag">
+						
+							<a href="/tags/Tinelli">Tinelli</a>,  
+					 	
+							<a href="/tags/Scioli">Scioli</a>,  
+					 	
+							<a href="/tags/Karina Rabollini">Karina Rabollini</a> 
+					 		 
+				 </div>
+						
+				<span class="coment"><a href="#"><div style="display:inline" type="ranking" mode="comments" path="/contenidos/2015/10/23/noticia_0071.html">0</div></a></span>
+				
+			</div>  
+		</div><!--col-right-small-->
+
+	
+	</div>
+	
+		
+	
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<div class="col-right-editorial">
+	
+	  	<div class="head-right head-agenda">
+	  			
+	  			<a href="/seccion/agenda_impositiva">Agenda Impositiva </a>
+	  	</div>
+
+	        <div class="col-right-small">
+	        
+		      	
+					 
+							<a href="/economiapolitica/La-Justicia-fallo-a-favor-de-una-empresa-para-que-no-pague-Ganancias-20151021-0065.html" target="_blank" >
+							<img src="/__export/1445425021883/sites/diarioelcronista/img/3dias/2015/10/21/cc211015e005f09_crop1445425021794.jpg_842244144.jpg" alt="La Justicia falló a favor de una empresa para que no pague Ganancias" title="La Justicia falló a favor de una empresa para que no pague Ganancias"/>
+							</a>
+					
+				
+				
+				
+	      		<div class="overflow">
+				<h3><a href="/economiapolitica/La-Justicia-fallo-a-favor-de-una-empresa-para-que-no-pague-Ganancias-20151021-0065.html?utm_source=cronista&utm_medium=AgendaImpositiva&utm_campaign=destacada" target="_blank">La Justicia falló a favor de una empresa para que no pague Ganancias</a></h3>
+
+				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+        			
+	              	</div>
+	              	<div class="clear"></div><!--clear--> 
+	         </div>
+				
+	</div>
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+		      			
+		      				<div class="b300x250">
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Right3");</script>
+
+
+					</div>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+			
+		
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/__export/1423870835000/system/modules/com.tfsla.diario.newsTags/resources/js/pollsFunctions.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+ 
+	
+	<div  id="poolBox_1445603399960" path="/encuestas/Encuesta1445368745200">
+
+
+
+	<div class="col-right-encuesta" id="encuestaAbierta">
+            	
+            	<div class="head-right">
+            		<img src="/__export/1374500797000/sites/diarioelcronista/arte/ico-head-encuesta.jpg" alt="opinion" />ENCUESTA
+            	</div>
+               
+                <div class="col-right-small"> 
+                	
+                	<div class="pr-encuesta">Pregunta</div>
+                       
+                        <div class="tt-encuesta">¿A cuánto cree que estará el dólar blue el lunes próximo, tras las elecciones?</div>
+                       
+                        <div class="radio-btn">
+	                      	<form id="encuesta" name="form1" method="post" action="">
+		                       				
+						
+						
+						
+							<input type="radio" name="respuesta" value="0"  id="opt0"/> 
+						
+							<span for='opt0' id="opt0"> Más de $ 20 </span>
+							<br/>
+									
+						
+						
+						
+							<input type="radio" name="respuesta" value="1"  id="opt1"/> 
+						
+							<span for='opt1' id="opt1"> Entre $ 17 y $ 20 </span>
+							<br/>
+									
+						
+						
+						
+							<input type="radio" name="respuesta" value="2"  id="opt2"/> 
+						
+							<span for='opt2' id="opt2"> En torno a $ 16 </span>
+							<br/>
+									
+						
+						
+						
+							<input type="radio" name="respuesta" value="3"  id="opt3"/> 
+						
+							<span for='opt3' id="opt3"> A $ 15 o menos </span>
+							<br/>
+					
+	                            	<div class="btns_encuesta">
+	                            		<a href="#encuestaAbierta" onclick="submitPool('poolBox_1445603399960','DiarioElCronista');" class="btn_votar"> VOTAR </a>
+	                            		<a style="margin-left:85px" href="#encuestaResultados" onclick="viewPopupResultPoll('poolBox_1445603399960','DiarioElCronista');"  class="ver_res">Ver Resultados</a>
+	                            	</div>
+	                        </form>
+                        </div>        
+                        
+                    <div class="clear"></div><!--clear-->    
+                
+                </div><!--col-right-small-->                          
+	</div><!--col-right-encuesta-->           
+</div>
+
+
+		<div class="bcaptcha">
+<h3>Responda la consigna para confirmar su voto</h3>
+<form id="captchaForm" action="/system/modules/com.tfsla.diario.elcronista/elements/CC_Common_PollCaptcha.jsp" method="post">
+<script src="//s3.amazonaws.com/brandcaptcha-st1/js/bcaptcha.js" ></script>
+<div id="captchaContainer">
+
+</div>
+	<!--input type="submit" value="Enviar voto" / -->
+	<a href="#" class="enviar_voto">Enviar voto</a>
+ </form>
+</div>
+
+<script>
+if(typeof String.prototype.trim !== 'function') {
+  String.prototype.trim = function() {
+    return this.replace(/^\s+|\s+$/g, ''); 
+  }
+}
+$(document).ready(function(){
+// Quitar la funcionalidad de encuesta.
+var form_encuesta = $("#encuesta");
+var btn_submit = $("#encuesta .btns_encuesta a.btn_votar");
+var on_click = btn_submit.attr("onclick");
+btn_submit.onclick = undefined;
+btn_submit.removeAttr('onclick');
+/*
+$(".bcaptcha")
+    .appendTo("#encuesta");*/
+$(".bcaptcha").hide();
+$(".enviar_voto").click(function(e){
+	e.preventDefault();
+	$("#captchaForm").submit();
+	
+});
+$("#encuesta .btns_encuesta a.btn_votar").click(function(e){
+	e.stopImmediatePropagation();    		
+	e.preventDefault();
+	e.stopPropagation();
+	var rta = $('input:radio[name=respuesta]:checked').val();
+	if( rta == undefined || rta == null){
+		alert("Por favor, seleccione una respuesta");
+		return false;
+	}
+	//$.get( "/system/modules/com.tfsla.diario.elcronista/elements/CC_Common_BrandCaptcha_Async.jsp", function( data ) {
+	//  $( "#captchaContainer" ).append( data );
+	  	 BrandCaptcha.initAsync("22d06b1623386ad8bf7512942ec8d9c5481dc3ef", "captchaContainer");	
+	  	$("#encuesta").hide();
+		$(".bcaptcha").show();
+	//});	
+	
+	return false;
+});
+$( "#captchaForm" ).submit(function( event ) {
+ 
+  // Stop form from submitting normally
+  event.preventDefault();
+ 	
+	$.post( $("#captchaForm").attr("action"), $( "#captchaForm" ).serialize(), function( data ) {
+	//console.log(data);
+	  if(data.trim() == "ok"){
+	  	sbtPoll();
+	  }else{
+	 	BrandCaptcha.reload()
+	  	alert("Por favor vuelva a ingresar el captcha");
+	  }
+	} );
+});
+
+	
+	function sbtPoll(){
+		
+		//console.log(":: :  :  : Encusta : : : : : : ::");
+		
+		//btn_submit[on_click ](); 
+		var regExp = /\(([^)]+)\)/;
+		var matches = regExp.exec(on_click);
+		//console.log(matches[1]);
+		var find = '\'';
+		var re = new RegExp(find, 'g');
+		
+		var  params = matches[1].replace(re, '');
+		
+		params = params.split(",");
+		
+		submitPool(params[0], params[1]);
+		$(".bcaptcha").hide();
+		$("#encuesta").show();
+		
+		
+		/*var fn = window["submitPool"];
+		fn(Array.prototype.slice(matches[1]));
+		$(".bcaptcha").hide();
+		$("#encuesta").show();
+		*/
+
+	}
+	
+});
+</script> 
+		
+			
+					
+	
+  	
+
+					      	</div><!-- COLUMNA DERECHA -->
+					        
+				      		<div class="clear"></div><!--clear-->
+						
+						<div class="b950x50">
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+  	
+
+
+
+ 	
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+	      				<script type="text/javascript">eplAD4M("V4_Cronista_Home_Footer");</script>
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			 
+				
+
+			
+		
+		
+			
+
+						</div>	
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script language="javascript">
+	function recargaTagsCarrucel(elemento){   
+		$.post("/system/modules/com.tfsla.diario.elcronista/elements/CC_Common_TagsCarrusel.jsp",{ palabraClave: elemento}, function(data){
+			$("#tagsRecargados").html(data);
+			$('#foo').carouFredSel({
+				width: 890,
+				height: 'auto',
+				prev: '#prev',
+				next: '#next',
+				auto: false
+			});
+		});
+	}
+</script>
+
+
+<div id="tagsRecargados" class="wp_carrusel">
+
+
+<script>
+	$(document).ready(function(){
+		$('#foo').carouFredSel({
+			width: 890,
+			height: 'auto',
+			prev: '#prev',
+			next: '#next',
+			auto: false
+		});
+	});
+</script>
+
+
+
+				
+	
+	
+		
+			
+			
+			
+			
+			
+				
+		
+			
+			
+			
+			
+			
+				
+		
+			
+			
+			
+			
+			
+				
+		
+			
+			
+			
+			
+			
+				
+		
+			
+			
+			
+			
+			
+				
+		
+			
+			
+			
+			
+			
+				
+		
+			
+			
+			
+			
+			
+				
+		
+		 
+
+	
+
+	
+		
+				
+	
+	
+	
+
+    	<div class="clear"></div><!--clear-->
+</div><!--wp_carrusel--> 
+						
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+	
+	
+	<div class="wp_carrusel" style="margin-top:20px">
+	  	<div class="box_carrusel">     		
+	        	<ul id="foo">
+	     		
+	     			
+	     			<li>
+	     			
+	     				
+		     				<div class="ico">
+			     				<img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" />
+			     			</div>
+		     			
+		     			
+		     			
+		     			
+		     			
+			              	 	
+			              	 	<a href="/financialtimes/Cualquier-resultado-electoral-es-mejor-que-CFK-20151022-0020.html" title="Editorial del FT: Cualquier resultado electoral es mejor que CFK">
+							<img src="/__export/1445462100073/sites/diarioelcronista/img/2015/10/22/cc221015t013f04.jpg_1216697720.jpg" alt="" />
+						</a>
+						
+					
+					
+					
+					
+		     			<span class="tit_carru"><a href="/financialtimes/Cualquier-resultado-electoral-es-mejor-que-CFK-20151022-0020.html">Editorial del FT: Cualquier resultado electoral es mejor que CFK</a></span>
+	     				
+	     				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	     			</li>
+	     		
+	 
+ 
+	
+	     		
+	     			
+	     			<li>
+	     			
+	     				
+		     				<div class="ico">
+			     				<img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" />
+			     			</div>
+		     			
+		     			
+		     			
+		     			
+		     			
+			              	 	
+			              	 	<a href="/finanzasmercados/Otra-vez-los-cambistas-de-las-DJAI-operaron-con-el-Gobierno-para-llevar-al-blue-abajo-de-los--16-20151021-0093.html" title="Otra vez, “los cambistas de las DJAI” operaron con el Gobierno para llevar al blue abajo de los $ 16">
+							<img src="/__export/1436812815193/sites/diarioelcronista/img/Mercados/fajodolar_blue_en_mano.jpg_1217621241.jpg" alt="fajodolar_blue_en_mano" />
+						</a>
+						
+					
+					
+					
+					
+		     			<span class="tit_carru"><a href="/finanzasmercados/Otra-vez-los-cambistas-de-las-DJAI-operaron-con-el-Gobierno-para-llevar-al-blue-abajo-de-los--16-20151021-0093.html">Otra vez, “los cambistas de las DJAI” operaron con el Gobierno para llevar al blue abajo de los $ 16</a></span>
+	     				
+	     				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	     			</li>
+	     		
+	 
+ 
+	
+	     		
+	     			
+	     			<li>
+	     			
+	     				
+		     			
+		     			
+		     			
+		     			
+			              	 	
+			              	 	<a href="/economiapolitica/Mauricio-Daniel-y-Sergio-dejemos-traicionar-en-paz-20151021-0091.html" title="Mauricio, Daniel y Sergio: dejemos traicionar en paz">
+							<img src="/__export/1431952485692/sites/diarioelcronista/img/jorge_asis_columna.jpg_1217621241.jpg" alt="jorge_asis_columna" />
+						</a>
+						
+					
+					
+					
+					
+		     			<span class="tit_carru"><a href="/economiapolitica/Mauricio-Daniel-y-Sergio-dejemos-traicionar-en-paz-20151021-0091.html">Mauricio, Daniel y Sergio: dejemos traicionar en paz</a></span>
+	     				
+	     				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	     			</li>
+	     		
+	 
+ 
+	
+	     		
+	     			
+	     			<li>
+	     			
+	     				
+		     				<div class="ico">
+			     				<img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" />
+			     			</div>
+		     			
+		     			
+		     			
+		     			
+		     			
+			              	 	
+			              	 	<a href="/elecciones2015/Desde-panqueque-a-gorila-el-glosario-que-armo-BBC-sobre-las-elecciones-argentinas-20151021-0089.html" title="Desde panqueque a gorila, el glosario que armó BBC sobre las elecciones argentinas">
+							<img src="/__export/1445434506093/sites/diarioelcronista/img/chorizo.jpg_1216697720.jpg" alt="" />
+						</a>
+						
+					
+					
+					
+					
+		     			<span class="tit_carru"><a href="/elecciones2015/Desde-panqueque-a-gorila-el-glosario-que-armo-BBC-sobre-las-elecciones-argentinas-20151021-0089.html">Desde panqueque a gorila, el glosario que armó BBC sobre las elecciones argentinas</a></span>
+	     				
+	     				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	     			</li>
+	     		
+	 
+ 
+	
+	     		
+	     			
+	     			<li>
+	     			
+	     				
+		     				<div class="ico">
+			     				<img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" />
+			     			</div>
+		     			
+		     			
+		     			
+		     			
+		     			
+			              	 	
+			              	 	<a href="/finanzasmercados/Desde-Wall-Street-el-Citi-asigna-60-de-probabilidad-a-una-victoria-de-Scioli-20151021-0041.html" title="Para el Citibank, hay 60% de posibilidades de que gane Scioli">
+							<img src="/__export/1445384834567/sites/diarioelcronista/img/2015/10/21/cc211015f003f05.jpg_1216697720.jpg" alt="" />
+						</a>
+						
+					
+					
+					
+					
+		     			<span class="tit_carru"><a href="/finanzasmercados/Desde-Wall-Street-el-Citi-asigna-60-de-probabilidad-a-una-victoria-de-Scioli-20151021-0041.html">Para el Citibank, hay 60% de posibilidades de que gane Scioli</a></span>
+	     				
+	     				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	     			</li>
+	     		
+	 
+ 
+	
+	     		
+	     			
+	     			<li>
+	     			
+	     				
+		     				<div class="ico">
+			     				<img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" />
+			     			</div>
+		     			
+		     			
+		     			
+		     			
+		     			
+			              	 	
+			              	 	<a href="/economiapolitica/En-que-invierte-sus-ahorros-Kicillof-20151020-0085.html" title="¿En qué invierte sus ahorros Kicillof?">
+							<img src="/__export/1432811215060/sites/diarioelcronista/img/3dias/2015/05/28/cc280515e003f14_crop1432811173857.jpg_1218544762.jpg" alt="Kicillof intervino en las negociaciones salariales de bancarios y aceiteros" />
+						</a>
+						
+					
+					
+					
+					
+		     			<span class="tit_carru"><a href="/economiapolitica/En-que-invierte-sus-ahorros-Kicillof-20151020-0085.html">¿En qué invierte sus ahorros Kicillof?</a></span>
+	     				
+	     				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	     			</li>
+	     		
+	 
+ 
+	
+	     		
+	     			
+	     			<li>
+	     			
+	     				
+		     				<div class="ico">
+			     				<img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" />
+			     			</div>
+		     			
+		     			
+		     			
+		     			
+		     			
+			              	 	
+			              	 	<a href="/elecciones2015/El-gabinete-economico-de-Scioli-Batakis-Dominguez-Rodriguez-Bossio-Vanoli-Marangoni-y-Peirano-20151020-0082.html" title="Los nombres del gabinete económico de Scioli">
+							<img src="/__export/1445363901687/sites/diarioelcronista/img/equipo-scioli-cancha.jpg_1216697720.jpg" alt="" />
+						</a>
+						
+					
+					
+					
+					
+		     			<span class="tit_carru"><a href="/elecciones2015/El-gabinete-economico-de-Scioli-Batakis-Dominguez-Rodriguez-Bossio-Vanoli-Marangoni-y-Peirano-20151020-0082.html">Los nombres del gabinete económico de Scioli</a></span>
+	     				
+	     				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	     			</li>
+	     		
+	 
+ 
+	
+	     		
+	     			
+	     			<li>
+	     			
+	     				
+		     				<div class="ico">
+			     				<img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_carrousel_img.jpg" alt="carrusel" />
+			     			</div>
+		     			
+		     			
+		     			
+		     			
+		     			
+			              	 	
+			              	 	<a href="/finanzasmercados/Dujovne-Se-viene-la-correccion-cambiaria-mas-anunciada-de-la-Argentina-20151020-0072.html" title="Dujovne: “Se viene la corrección cambiaria más anunciada de la Argentina”">
+							<img src="/__export/1431952606422/sites/diarioelcronista/img/nicolas_dujovne02.jpg_1217621241.jpg" alt="Imagenes para contenidos" />
+						</a>
+						
+					
+					
+					
+					
+		     			<span class="tit_carru"><a href="/finanzasmercados/Dujovne-Se-viene-la-correccion-cambiaria-mas-anunciada-de-la-Argentina-20151020-0072.html">Dujovne: “Se viene la corrección cambiaria más anunciada de la Argentina”</a></span>
+	     				
+	     				
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+	     			</li>
+	     		
+	     		
+		       		</ul> 
+			        <a id="prev" class="prev" href="#">&lt;</a>
+			        <a id="next" class="next" href="#">&gt;</a>
+		    	</div><!--box_carrusel-->
+		    	<div class="clear"></div><!--clear-->
+		</div><!--wp_carrusel-->
+	
+  
+						
+						<div class="clear"></div><!--clear-->
+						
+				    	</div><!--cuerpo-->
+				    					    	
+				    	<div class="clear"></div><!--clear-->
+				    	
+				    	
+				    	
+				    	<div class="clear"></div><!--clear-->
+				    	
+				</div><!--CONTBODY-->
+				
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+<div id="footer">
+	<div class="nav-footer">
+	        <a href="http://www.cronista.com/?utm_source=cronista&utm_medium=link&utm_campaign=Footer"><img src="/__export/1374500798000/sites/diarioelcronista/arte/foot_btn_cronista.jpg" alt="cronista.com"  /></a>
+	        <a href="http://www.apertura.com/?utm_source=cronista&utm_medium=link&utm_campaign=Footer"><img src="/__export/1374500798000/sites/diarioelcronista/arte/foot_btn_apertura.jpg" alt="apertura.com"  /></a>
+	        <a href="http://www.infotechnology.com/?utm_source=cronista&utm_medium=link&utm_campaign=Footer"><img src="/__export/1374500798000/sites/diarioelcronista/arte/foot_btn_infotech.jpg" alt="infotechnology.com"  /></a>
+	        
+	        <a href="http://www.cronista.com/Marketing/ElCronistaAperturaItechnologyEventosCorporativos2015.pdf" target="_blank"><img src="/__export/1381263873776/sites/diarioelcronista/arte/foot_btn_eecc.jpg" alt="Eventos Corporativos"  /></a> 
+	        <a href="#"><img src="/__export/1380222969998/sites/diarioelcronista/arte/foot_btn_iab.jpg" alt="cronista.com"  /></a>   
+	        <div class="links-footer">
+	            	<ul>
+	            	        <li><a id="pop-cont" href="#">contáctenos</a></li>
+		                <li><a href="http://www.cronista.com/documentos/mediakit/ECC_MEDIAKIT_PAPEL_2015.pdf" target="_blank">mediakit papel | <a href="http://www.cronista.com/documentos/mediakit/MEDIAKIT_WEB_ECC_2015.pdf" target="_blank">&nbsp;online</a></li>
+		                <li><a href="http://www.cronista.com/documentos/tarifario/TARIFARIO_ECC_2015.pdf" target="_blank">Tarifario papel | <a href="http://www.cronista.com/documentos/tarifario/TARIFARIO_ECC_ONE_SHOT_2015" target="_blank">&nbsp;one shot</a></a></li>		               
+		                <li><a href="http://cronista.com/pages/mapaDelSitio.html">mapa del sitio</a></li>
+		                <li><a href="http://cronista.com/pages/quienesSomos.html">quiénes somos</a></li>
+		                <li class="red"><a href="http://www.cronista.com/rss.html" target="_blank"><img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_foot_rss.jpg" alt="rss" /></a></li>
+		                <li class="red"><a href="http://twitter.com/cronistacom" target="_blank"><img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_foot_twitter.jpg" alt="Twitter" /></a></li>
+		                <li class="red"><a href="http://www.facebook.com/Cronistacomercial" target="_blank"><img src="/__export/1374500798000/sites/diarioelcronista/arte/ico_foot_facebook.jpg" alt="Facebook" /></a></li>
+		                <li class="red"><a href="http://www.linkedin.com/company/el-cronista-comercial" target="_blank"><img src="/__export/1380223584920/sites/diarioelcronista/arte/ico_foot_in.jpg" alt="Linkedin" /></a></li>
+	            	</ul>
+	        </div>
+	</div>
+	<div class="copy-footer">
+	        <span><strong>Copyright 2014 Cronista.com</strong>. Todos los derechos reservados.</span>
+	        <span><a style="color:#fff;" href="http://cronista.com/pages/terminosYcondiciones.html"><strong>Términos y Condiciones<strong></a></span>
+	       <!-- <span>Posicionamiento web por <strong><a style="color:#fff;" href="http://puntorojomarketing.com" target="_blank" rel="nofollow">Punto Rojo</a></strong></span>-->
+	        <span>Powered by <strong><a style="color:#fff;" href="http://www.cms-medios.com" target="_blank">@cmsmedios de Technology for Solutions</strong></span>
+	        <a class="logo-indigo" href="http://www.indigo.com.ar" target="_blank"><img src="/__export/1374500796000/sites/diarioelcronista/arte/logo-indogo-foot.png" alt="INDIGO.COM.AR" /></a>	        
+	</div>
+</div><!--FOOTER-->
+
+<!-- Google Code para etiquetas de remarketing -->
+<!--------------------------------------------------
+Es posible que las etiquetas de remarketing todavía no estén asociadas a la información de identificación personal o que estén en páginas relacionadas con las categorías delicadas. Para obtener más información e instrucciones sobre cómo configurar la etiqueta, consulte http://google.com/ads/remarketingsetup.
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1001886715;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1001886715/?value=0&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+			
+			</div><!-- CONTENEDOR -->
+		 
+		
+		
+		<!-- DAX Bottom -->
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Begin DAx ct.js import -->
+<script type="text/javascript" language="JavaScript1.3" src="http://b.scorecardresearch.com/c2/6906413/ct.js"></script>
+<!-- End DAx ct.js import -->
+
+	<img src="/_req/sites/diarioelcronista/1/L2luZGV4Lmh0bWw=" /></body>
+</html>
