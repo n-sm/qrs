@@ -1,6 +1,0 @@
-DESCRIPCIÓN , COMANDO
------------, -------
-evaluar una string,eval(parse(text = "mi string"))
-abrir .sav (archivo spss),cf.: ./orggds/r-abrir-spss.org
-Rcpp,http://stackoverflow.com/questions/22798234/error-in-sourcecpp-after-installing-rtools
-instalar devtools,update/apt-get -y build-dep libcurl4-gnutls-dev/...  

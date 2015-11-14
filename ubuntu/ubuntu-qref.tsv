@@ -5,3 +5,4 @@ boot in text mode	vim -M /etc/defaul/grub ## to get help
 sacar "System program problem detected"	rm /var/crash/*
 instalar avconv	sudo apt-get install libav-tools
 disable auto openning window after auto mount	gsettings set org.gnome.desktop.media-handling automount-open false
+abrir imagen desde terminal	xdg-open IMAGEN
