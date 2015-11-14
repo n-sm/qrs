@@ -207,7 +207,7 @@ def agrup(pag):
             if ctr == 0:
                 hasta = i
                 #if test
-                if desde >= hasta - 2:
+                if desde > hasta - 2:
                     pares.append(pag)
                     print("desde: %s, hasta:%s" % (desde, hasta))
                     continue

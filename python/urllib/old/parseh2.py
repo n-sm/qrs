@@ -11,9 +11,8 @@ def getHtml(url, isFile=False):
                 html = f.read()
     else:
         if(not re.match(r'https?://', url)):
-            url       = 'http://' + url
-            response  = urllib.request.urlopen(url)
-            charset   = response.headers.get_param('charset')
+            url = 'http://' + url
+            response = urllib.request.urlopen(url)
             htmlBytes = response.read()
             try:
                 html = htmlBytes.decode('utf-8')

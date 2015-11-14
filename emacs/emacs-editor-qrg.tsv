@@ -1,5 +1,4 @@
 # -*- mode:csv -*-
-cadena de comandos		progn; prog1	prog2	?
 capitalize word	M-c
 centrar, subir, bajar	M-r	(move-to-window-line-top-bottom)
 copiar text del buffer		(copy-region-as-kill BEG END); (kill-ring-save BEG END)
@@ -39,10 +38,10 @@ abrir ibuffer buffer	M-x ibuffer
 tildes	(require 'iso-transl)
 insertar Unicode	C-x 8 <RET> CODE
 insertar tildes	C-x 8 ' a
-insertar ñ	C-x 8 ~ n
+insertar Ã±	C-x 8 ~ n
 change encoding system	M-x set-buffer-file-coding-system
-dired - mostrar menos info	(
 configurar python interpret	(setq python-shell-interpreter "c:/python34/python.exe")
 espacios en vez de tabs	M-x set-variable RET indent-tabs-mode (to nil)
 set indentation with	set-variable RET tab-with NUMBER-OF-CHARS
-
+REPL	M-x ielm
+refresh buffer	C-x C-v

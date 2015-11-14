@@ -1,6 +1,7 @@
 import urllib.request, re
 
 def getHtml(url, isFile=False):
+    # Obtiene una string de una url o archivo.
     if isFile:
         try:
             with open(url, 'r', encoding='utf-8') as f:
@@ -10,16 +11,15 @@ def getHtml(url, isFile=False):
                 html = f.read()
     else:
         if(not re.match(r'https?://', url)):
-            url = 'http://' + url
-            response = urllib.request.urlopen(url)
+            url       = 'http://' + url
+            response  = urllib.request.urlopen(url)
+            charset   = response.headers.get_param('charset')
             htmlBytes = response.read()
-            try:
-                html = htmlBytes.decode('utf-8')
-            except:
-                html = htmlBytes.decode('latin-1')
+            html = htmlBytes.decode(charset)
     return(html)
 
 def parse1(html):
+    # obtiene pares que delimitan una string.
     ctr=0
     pares = []
     desde = 0
@@ -41,7 +41,6 @@ def parse1(html):
                 else:
                     script = False
                     continue
-            
             # elemento en nivel = 0:
             if not ctr:
                 hasta = i
@@ -64,10 +63,14 @@ def parse1(html):
                 desde = i + 1
     return pares
 
+def substr(string, pares):
+    # devuelve una pagina, en estado 'atomico'
+    return [string[par[0]:par[1]] for par in pares]
+
 def desplegarScriptTags(pagina):
     ret = []
     for e in pagina:
-        m = re.match('(<script[^>]*?>)(.*?)(</script>)',e,re.I)
+        m = re.match('(<script[^>]*?>)(.*?)(</script>)',e,re.I|re.S)
         if m:
             g = list(m.groups())
             if '' in g:
@@ -75,125 +78,147 @@ def desplegarScriptTags(pagina):
             ret.extend(g)
         else: ret.append(e)
     return ret
-
-def substr(string, pares):
-    return [string[par[0]:par[1]] for par in pares]
-
-def getTags(pagina, tag):
-    # Falta resolver el caso de <script> que viene dado
-    # en una unica string.
-    ret = []
-    subret = []
-    match = False
-    for i in range(len(pagina)):
-        if match:
-            if re.match("</%s" % tag, pagina[i]):
-                subret.append(pagina[i])
-                ret.append(subret)
-                match = False
-                continue
-            subret.append(pagina[i])
-        if re.match("<%s" % tag, pagina[i]):
-            subret = []
-            subret.append(pagina[i])
-            match = True
-            continue
-    return ret
-
-def reagruparTags(pagina):
-    ## esta falta corregir...
-    ret = []
-    subret = []
-    currentTag = ''
-    for i in range(len(pagina)):
-        m = re.match('<([^ >]+)',pagina[i])
-        if not m:
-            #            print(0, end='')
-            subret.append(pagina[i])
-            #            if i == len(pagina) - 1:
-            #                print(0, end='')
-            #                ret.append(subret)
-            continue
-        #        ret.append(subret) #
-        if re.match('!DOCTYPE', m.group(1), re.I):
-            ret.append(subret)
-            ret.append(pagina[i])
-            subret=[]
-            continue
-        if not currentTag:
-            print(2)
-            currentTag = m.group(1)
-            ret.append(subret)
-            subret = []
-            subret.append(pagina[i])
-            #subret.append(pagina[i])
-            continue
-#        print(ret)
-#        print(subret)
-#        break
-        if m.group(1) == 'link':
-            print(1, end='')
-            # debugg
-            if not currentTag:
-                ret.append(subret)
-                subret = []
-                ret.append(pagina[i])
-            else:
-                subret.append(pagina[i])
-            continue
-        if m.group(1) == "/%s" % currentTag:
-            print(3)
-            currentTag = ''
-            subret.append(pagina[i])
-            ret.append(subret)
-            subret = []
-            continue
-        # default
-        # match == T != !DOCTYPE != link; currenTag == T; != /%s
-        subret.append(pagina[i])
-    return ret
         
 def getpag(url):
     g = getHtml(url,1)
     p = parse1(g)
     s = substr(g,p)
-    r=reagruparTags(s)
-    return r
+    d = desplegarScriptTags(s)
+    return d
 
-def testt(url):
-    g = getHtml(url,1)
-    p = parse1(g)
-    s = substr(g,p)
-    r=test(s)
-    return r
+g = getpag('html1')
 
 print('''
 funciones definidas:
 getHtml(url, isFile=0)
 parse1(html)
-desplegarScriptTags(pagina)
 substr(string, pares)
-getTags(pagina, tag)
-reagruparTags()
 
-getpag(url):
-testt(url)
+g = getpag(url):
+
 ''')
 
+def agrupar(pag, fstIndx=0):
+    desde = 0; pares = []; currentTag = ''; ctr = 0 # es necesario??
+    for i in range(len(pag)):
+        match = re.match('<([^! >]+)',pag[i])
+        if not match:
+            if not currentTag: pares.append(i)
+            continue
+        # Hubo match.
+        m = match.group(1)
+        if m[0] is not '/':
+            # Es beggining.
+            if not currentTag:
+                currentTag = m
+                desde = i
+                ctr += 1
+            continue
+        # En end.
+        if m == "/%s" % currentTag:
+            ctr -= 1
+            if ctr == 0:
+                hasta = i
+                #if test
+                #recursive = agrupar(pag[desde + 1:hasta], desde +1)
+                #recursive[0:0] = [desde + fstIndx + 1]
+                #recursive.append(hasta + 1 + fstIndx) #ok!
+                #pares.append(recursive)
+                #else
+                pares.append([desde + fstIndx, hasta + fstIndx])
+                #endif
+                currentTag = ''
+    return pares
 
-def test(pagina):
-    ## esta falta corregir...
-    ret = []
-    ret1 = []
-    ret2 = []
-    subret = []
-    currentTag = ''
-    for i in range(len(pagina)):
-        m = re.match('<([^ >]+)',pagina[i])
-        if not m:
-            ret1.append(pagina[i])
-        else:
-            ret2.append(pagina[i])
-    ret.append(ret1)
-    ret.append(ret2)
-    return ret
+def mchi(string):
+    return re.match('<([^ >]+)', string)
+
+def mchf(string):
+    return re.match('<([^ >]+)', string)
+
+def agrupar2(pag, fstIndx=None):
+    desde = 0; pares = []; currentTag = ''; ctr = 0 # es necesario??
+    if not fstIndx: fstIndx = 0
+    for i in range(len(pag)):
+        match = re.match('<([^! >]+)',pag[i])
+        if not match:
+        ####__PARES
+            if not currentTag: pares.append(i + fstIndx + 1)
+            continue
+        # Hubo match.
+        m = match.group(1)
+        if m[0] is not '/':
+            # Es beggining.
+            if not currentTag:
+                currentTag = m
+                desde = i
+                ctr += 1
+            continue
+        # En end.
+        if m == "/%s" % currentTag:
+            ctr -= 1
+            if ctr == 0:
+                hasta = i
+                #if test
+                recursive = agrupar2(pag[desde + 1:hasta], desde + 1)# este ok,
+                #tiene que estarlo si no no haria el anidamiento
+                recursive[0:0] = [desde + fstIndx]
+                recursive.append(hasta + 1 + fstIndx) #ok!
+                pares.append(recursive)
+                #else
+                #pares.append([desde + fstIndx, hasta + fstIndx])
+                #endif
+                currentTag = ''
+    return pares
+
+
+def listaOK(l):
+    i = 0
+    length = len(l)
+    while ( i + 1 < length ):
+        if l[i] + 1 is not l[i + 1]:
+            return False
+        i += 1
+    return True
+
+def agrup(pag):
+    if type(pag) is str: print("error!, no llamar con str como arg!")
+    desde = 0; pares = []; currentTag = ''; ctr = 0 # es necesario??
+    for i in range(len(pag)):
+        match = re.match('<([^! >]+)', pag[i])
+        if not currentTag:
+            if not match:
+                pares.append(pag[i])
+            else:
+                m = match.group(1)
+                if m[0] is not '/':
+                    currentTag = m
+                    desde = i
+                    ctr += 1
+                    print("match beg")
+            continue
+        # En end.
+        if not match: continue
+        m = match.group(1)
+        if m == "/%s" % currentTag:
+            ctr -= 1
+            if ctr == 0:
+                hasta = i
+                #if test
+                if desde > hasta:
+                    pares.append(pag)
+                    print("desde: %s, hasta:%s" % (desde, hasta))
+                    continue
+                recursive = agrup(pag[desde + 1:hasta])
+                print("pag desde(%s): %s" % (desde,  pag[desde]))
+                print("pag hasta(%s): %s" % (hasta, pag[hasta]))
+                recursive[0:0] = [pag[desde]]
+                recursive.append(pag[hasta])
+                pares.append(recursive)
+                #else
+#                pares.append([pag[desde],pag[hasta]])
+                #endif
+                currentTag = ''
+    return pares
+        
+        
