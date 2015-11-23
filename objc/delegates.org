@@ -1,0 +1,10 @@
+delegates
+
+http://stackoverflow.com/questions/31236893/get-notified-when-a-presented-viewcontroller-is-dismisse
+http://stackoverflow.com/questions/626898/how-do-i-create-delegates-in-objective-c
+http://www.alexefish.com/post/522641eb31fa2a0015000002
+http://www.tutorialspoint.com/ios/ios_delegates.htm
+
+https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Notifications/Articles/Notifications.html#//apple_ref/doc/uid/20000215-BCICIHGE
+https://developer.apple.com/library/ios/documentation/General/Conceptual/DevPedia-CocoaCore/Delegation.html
+

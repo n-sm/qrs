@@ -1,0 +1,2955 @@
+nsm@qpdb:~/quick-refs/c/ejemplos$ gcc precomp.c
+precomp.c: In function ‘main’:
+precomp.c:9:3: warning: incompatible implicit declaration of built-in function ‘printf’ [enabled by default]
+   printf("ret is: %d", ret);
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos$ gcc precomp.c
+nsm@qpdb:~/quick-refs/c/ejemplos$ ./a.out 
+ret is: 8nsm@qpdb:~/quick-refs/c/ejemplos$ gcc precomp.c
+/tmp/ccmZ0hnh.o: In function `main':
+precomp.c:(.text+0x13): undefined reference to `rec'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos$ gcc precomp.c
+/tmp/ccB773BF.o: In function `main':
+precomp.c:(.text+0x13): undefined reference to `rec'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos$ gcc precomp.c
+precomp.c: In function ‘main’:
+precomp.c:10:15: error: macro "rec0" requires 2 arguments, but only 1 given
+   ret = rec1(9);
+               ^
+precomp.c:5:23: error: ‘rec0’ undeclared (first use in this function)
+ #define rec1(X) (X) ? rec0((X) - 1) : X
+                       ^
+precomp.c:10:9: note: in expansion of macro ‘rec1’
+   ret = rec1(9);
+         ^
+precomp.c:5:23: note: each undeclared identifier is reported only once for each function it appears in
+ #define rec1(X) (X) ? rec0((X) - 1) : X
+                       ^
+precomp.c:10:9: note: in expansion of macro ‘rec1’
+   ret = rec1(9);
+         ^
+nsm@qpdb:~/quick-refs/c/ejemplos$ cd types/
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c 
+limites.c:1:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+ #import <limits.h>
+  ^
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 0 has invalid symbol index 11
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 1 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 2 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 3 has invalid symbol index 2
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 4 has invalid symbol index 11
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 5 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 6 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 7 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 8 has invalid symbol index 12
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 9 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 10 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 11 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 12 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 13 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 14 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 15 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 16 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 17 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 18 has invalid symbol index 13
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_info): relocation 19 has invalid symbol index 21
+/usr/bin/ld: /usr/lib/debug/usr/lib/x86_64-linux-gnu/crt1.o(.debug_line): relocation 0 has invalid symbol index 2
+/usr/lib/gcc/x86_64-linux-gnu/4.8/../../../x86_64-linux-gnu/crt1.o: In function `_start':
+(.text+0x20): undefined reference to `main'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c 
+limites.c:1:2: warning: #import is a deprecated GCC extension [-Wdeprecated]
+ #import <limits.h>
+  ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ cd ../printf/
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ls
+#table.c#
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ls
+table.c
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:10: warning: missing terminating " character [enabled by default]
+   printf("
+          ^
+table.c:5:3: error: missing terminating " character
+   printf("
+   ^
+table.c:6:1: error: ‘specifier’ undeclared (first use in this function)
+ specifier Output Example\n
+ ^
+table.c:6:1: note: each undeclared identifier is reported only once for each function it appears in
+table.c:6:11: error: expected ‘)’ before ‘Output’
+ specifier Output Example\n
+           ^
+table.c:6:11: error: stray ‘\’ in program
+table.c:7:1: error: stray ‘\’ in program
+ d or i Signed decimal integer 392\n
+ ^
+table.c:8:1: error: stray ‘\’ in program
+ u Unsigned decimal integer 7235\n
+ ^
+table.c:9:1: error: stray ‘\’ in program
+ o Unsigned octal 610\n
+ ^
+table.c:10:32: error: invalid suffix "fa" on integer constant
+ x Unsigned hexadecimal integer 7fa\n
+                                ^
+table.c:10:1: error: stray ‘\’ in program
+ x Unsigned hexadecimal integer 7fa\n
+ ^
+table.c:11:44: error: invalid suffix "FA" on integer constant
+ X Unsigned hexadecimal integer (uppercase) 7FA\n
+                                            ^
+table.c:11:1: error: stray ‘\’ in program
+ X Unsigned hexadecimal integer (uppercase) 7FA\n
+ ^
+table.c:12:1: error: stray ‘\’ in program
+ f Decimal floating point, lowercase 392.65\n
+ ^
+table.c:13:1: error: stray ‘\’ in program
+ F Decimal floating point, uppercase 392.65\n
+ ^
+table.c:14:1: error: stray ‘\’ in program
+ e Scientific notation (mantissa/exponent), lowercase 3.9265e+2\n
+ ^
+table.c:15:1: error: stray ‘\’ in program
+ E Scientific notation (mantissa/exponent), uppercase 3.9265E+2\n
+ ^
+table.c:16:1: error: stray ‘\’ in program
+ g Use the shortest representation: %e or %f 392.65\n
+ ^
+table.c:17:1: error: stray ‘\’ in program
+ G Use the shortest representation: %E or %F 392.65\n
+ ^
+table.c:18:1: error: stray ‘\’ in program
+ a Hexadecimal floating point, lowercase -0xc.90fep-2\n
+ ^
+table.c:19:1: error: stray ‘\’ in program
+ A Hexadecimal floating point, uppercase -0XC.90FEP-2\n
+ ^
+table.c:20:1: error: stray ‘\’ in program
+ c Character a\n
+ ^
+table.c:21:1: error: stray ‘\’ in program
+ s String of characters sample\n
+ ^
+table.c:22:1: error: stray ‘\’ in program
+ p Pointer address b8000000\n
+ ^
+table.c:23:1: error: stray ‘\’ in program
+ n Nothing printed.\n
+ ^
+table.c:24:3: error: stray ‘\’ in program
+   The corresponding argument must be a pointer to a signed int.\n
+   ^
+table.c:25:2: error: stray ‘\’ in program
+  The number of characters written so far is stored in the pointed location. \n
+  ^
+table.c:26:1: error: stray ‘\’ in program
+ % A % followed by another % character will write a single % to the stream. % \n
+ ^
+table.c:27:1: warning: missing terminating " character [enabled by default]
+ ");
+ ^
+table.c:27:1: error: missing terminating " character
+table.c:29:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:10: warning: missing terminating " character [enabled by default]
+   printf("
+          ^
+table.c:5:3: error: missing terminating " character
+   printf("
+   ^
+table.c:6:1: error: ‘specifier’ undeclared (first use in this function)
+ specifier Output Example\n\
+ ^
+table.c:6:1: note: each undeclared identifier is reported only once for each function it appears in
+table.c:6:11: error: expected ‘)’ before ‘Output’
+ specifier Output Example\n\
+           ^
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:10:32: error: invalid suffix "fa" on integer constant
+ x Unsigned hexadecimal integer 7fa\n\
+                                ^
+table.c:6:11: error: stray ‘\’ in program
+ specifier Output Example\n\
+           ^
+table.c:11:44: error: invalid suffix "FA" on integer constant
+ X Unsigned hexadecimal integer (uppercase) 7FA\n\
+                                            ^
+table.c:6:11: error: stray ‘\’ in program
+ specifier Output Example\n\
+           ^
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:6:11: error: stray ‘\’ in program
+table.c:27:1: warning: missing terminating " character [enabled by default]
+ ");
+ ^
+table.c:6:11: error: missing terminating " character
+ specifier Output Example\n\
+           ^
+table.c:29:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:3: warning: format ‘%e’ expects a matching ‘double’ argument [-Wformat=]
+   printf("\
+   ^
+table.c:5:3: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: format ‘%E’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: format ‘%F’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: unknown conversion type character 0x9 in format [-Wformat=]
+table.c:5:3: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: ' ' flag used with ‘%c’ gnu_printf format [-Wformat=]
+table.c:5:3: warning: format ‘%c’ expects a matching ‘int’ argument [-Wformat=]
+table.c:5:3: warning: ' ' flag used with ‘%o’ gnu_printf format [-Wformat=]
+table.c:5:3: warning: format ‘%to’ expects a matching ‘unsigned ptrdiff_t’ argument [-Wformat=]
+table.c:5:3: warning: unknown conversion type character 0xa in format [-Wformat=]
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+una tab	alnsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:3: warning: format ‘%e’ expects a matching ‘double’ argument [-Wformat=]
+   printf("\
+   ^
+table.c:5:3: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: format ‘%E’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: format ‘%F’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: unknown conversion type character 0x9 in format [-Wformat=]
+table.c:5:3: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: ' ' flag used with ‘%c’ gnu_printf format [-Wformat=]
+table.c:5:3: warning: format ‘%c’ expects a matching ‘int’ argument [-Wformat=]
+table.c:5:3: warning: ' ' flag used with ‘%o’ gnu_printf format [-Wformat=]
+table.c:5:3: warning: format ‘%to’ expects a matching ‘unsigned ptrdiff_t’ argument [-Wformat=]
+table.c:5:3: warning: unknown conversion type character 0xa in format [-Wformat=]
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:3: warning: format ‘%e’ expects a matching ‘double’ argument [-Wformat=]
+   printf("\
+   ^
+table.c:5:3: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: format ‘%E’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: format ‘%F’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: unknown conversion type character 0x9 in format [-Wformat=]
+table.c:5:3: warning: format ‘%f’ expects a matching ‘double’ argument [-Wformat=]
+table.c:5:3: warning: ' ' flag used with ‘%c’ gnu_printf format [-Wformat=]
+table.c:5:3: warning: format ‘%c’ expects a matching ‘int’ argument [-Wformat=]
+table.c:5:3: warning: ' ' flag used with ‘%o’ gnu_printf format [-Wformat=]
+table.c:5:3: warning: format ‘%to’ expects a matching ‘unsigned ptrdiff_t’ argument [-Wformat=]
+table.c:5:3: warning: unknown conversion type character 0xa in format [-Wformat=]
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:3: warning: zero-length gnu_printf format string [-Wformat-zero-length]
+   printf("");
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:3: warning: spurious trailing ‘%’ in format [-Wformat=]
+   printf("\%");
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:3: warning: spurious trailing ‘%’ in format [-Wformat=]
+   printf("\\%");
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+table.c: In function ‘main’:
+table.c:5:3: warning: conversion lacks type at end of format [-Wformat=]
+   printf("\% ");
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+% nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+% nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+% nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+% nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+specifier			Output		Example
+d or i		Signed decimal integer		392
+u		Unsigned decimal integer		7235
+o		Unsigned octal		610
+x		Unsigned hexadecimal integer		7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase		392.65
+F		Decimal floating point, uppercase		392.65
+e		Scientific notation (mantissa/exponent), lowercase		3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase		3.9265E+2
+g		Use the shortest representation: %e or %f		392.65
+G		Use the shortest representation: %E or %F		392.65
+a		Hexadecimal floating point, lowercase		-0xc.90fep-2
+A		Hexadecimal floating point, uppercase		-0XC.90FEP-2
+c		Character		a
+s		String of characters		sample
+p		Pointer address		b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.		
+%		A % followed by another % character will write a single % to the stream.		% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+
+specifier			Output		Example
+
+d or i		Signed decimal integer		392
+u		Unsigned decimal integer		7235
+o		Unsigned octal		610
+x		Unsigned hexadecimal integer		7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase		392.65
+F		Decimal floating point, uppercase		392.65
+e		Scientific notation (mantissa/exponent), lowercase		3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase		3.9265E+2
+g		Use the shortest representation: %e or %f		392.65
+G		Use the shortest representation: %E or %F		392.65
+a		Hexadecimal floating point, lowercase		-0xc.90fep-2
+A		Hexadecimal floating point, uppercase		-0XC.90FEP-2
+c		Character		a
+s		String of characters		sample
+p		Pointer address		b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.		
+%		A % followed by another % character will write a single % to the stream.		% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output				Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer					7235
+o		Unsigned octal					610
+x		Unsigned hexadecimal integer					7fa
+X		Unsigned hexadecimal integer (uppercase)					7FA
+f		Decimal floating point, lowercase					392.65
+F		Decimal floating point, uppercase					392.65
+e		Scientific notation (mantissa/exponent), lowercase					3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase					3.9265E+2
+g		Use the shortest representation: %e or %f					392.65
+G		Use the shortest representation: %E or %F					392.65
+a		Hexadecimal floating point, lowercase					-0xc.90fep-2
+A		Hexadecimal floating point, uppercase					-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.					% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)			7FA
+f		Decimal floating point, lowercase				392.65
+F		Decimal floating point, uppercase				392.65
+e		Scientific notation (mantissa/exponent), lowercase			3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase			3.9265E+2
+g		Use the shortest representation: %e or %f				392.65
+G		Use the shortest representation: %E or %F				392.65
+a		Hexadecimal floating point, lowercase					-0xc.90fep-2
+A		Hexadecimal floating point, uppercase					-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.					% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)			7FA
+f		Decimal floating point, lowercase				392.65
+F		Decimal floating point, uppercase				392.65
+e		Scientific notation (mantissa/exponent), lowercase			3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase			3.9265E+2
+g		Use the shortest representation: %e or %f				392.65
+G		Use the shortest representation: %E or %F				392.65
+a		Hexadecimal floating point, lowercase				-0xc.90fep-2
+A		Hexadecimal floating point, uppercase				-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)			7FA
+f		Decimal floating point, lowercase				392.65
+F		Decimal floating point, uppercase				392.65
+e		Scientific notation (mantissa/exponent), lowercase			3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase			3.9265E+2
+g		Use the shortest representation: %e or %f				392.65
+G		Use the shortest representation: %E or %F				392.65
+a		Hexadecimal floating point, lowercase				-0xc.90fep-2
+A		Hexadecimal floating point, uppercase				-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)			7FA
+f		Decimal floating point, lowercase				392.65
+F		Decimal floating point, uppercase				392.65
+e		Scientific notation (mantissa/exponent), lowercase			3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase			3.9265E+2
+g		Use the shortest representation: %e or %f				392.65
+G		Use the shortest representation: %E or %F				392.65
+a		Hexadecimal floating point, lowercase				-0xc.90fep-2
+A		Hexadecimal floating point, uppercase				-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)			7FA
+f		Decimal floating point, lowercase				392.65
+F		Decimal floating point, uppercase				392.65
+e		Scientific notation (mantissa/exponent), lowercase			3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase			3.9265E+2
+g		Use the shortest representation: %e or %f				392.65
+G		Use the shortest representation: %E or %F				392.65
+a		Hexadecimal floating point, lowercase				-0xc.90fep-2
+A		Hexadecimal floating point, uppercase				-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)	7FA
+f		Decimal floating point, lowercase			392.65
+F		Decimal floating point, uppercase			392.65
+e		Scientific notation (mantissa/exponent), lowercase		3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase		3.9265E+2
+g		Use the shortest representation: %e or %f			392.65
+G		Use the shortest representation: %E or %F			392.65
+a		Hexadecimal floating point, lowercase			-0xc.90fep-2
+A		Hexadecimal floating point, uppercase			-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase			392.65
+F		Decimal floating point, uppercase			392.65
+e		Scientific notation (mantissa/exponent), lowercase		3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase		3.9265E+2
+g		Use the shortest representation: %e or %f			392.65
+G		Use the shortest representation: %E or %F			392.65
+a		Hexadecimal floating point, lowercase			-0xc.90fep-2
+A		Hexadecimal floating point, uppercase			-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase			392.65
+F		Decimal floating point, uppercase			392.65
+e		Scientific notation (mantissa/exponent), lowercase	3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase	3.9265E+2
+g		Use the shortest representation: %e or %f		392.65
+G		Use the shortest representation: %E or %F		392.65
+a		Hexadecimal floating point, lowercase			-0xc.90fep-2
+A		Hexadecimal floating point, uppercase			-0XC.90FEP-2
+c		Character					a
+s		String of characters					sample
+p		Pointer address					b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase			392.65
+F		Decimal floating point, uppercase			392.65
+e		Scientific notation (mantissa/exponent), lowercase	3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase	3.9265E+2
+g		Use the shortest representation: %e or %f		392.65
+G		Use the shortest representation: %E or %F		392.65
+a		Hexadecimal floating point, lowercase			-0xc.90fep-2
+A		Hexadecimal floating point, uppercase			-0XC.90FEP-2
+c		Character						a
+s		String of characters					sample
+p		Pointer address						b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character 			will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase			392.65
+F		Decimal floating point, uppercase			392.65
+e		Scientific notation (mantissa/exponent), lowercase	3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase	3.9265E+2
+g		Use the shortest representation: %e or %f		392.65
+G		Use the shortest representation: %E or %F		392.65
+a		Hexadecimal floating point, lowercase			-0xc.90fep-2
+A		Hexadecimal floating point, uppercase			-0XC.90FEP-2
+c		Character						a
+s		String of characters					sample
+p		Pointer address						b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character 
+			will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ gcc table.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ ./a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase			392.65
+F		Decimal floating point, uppercase			392.65
+e		Scientific notation (mantissa/exponent), lowercase	3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase	3.9265E+2
+g		Use the shortest representation: %e or %f		392.65
+G		Use the shortest representation: %E or %F		392.65
+a		Hexadecimal floating point, lowercase			-0xc.90fep-2
+A		Hexadecimal floating point, uppercase			-0XC.90FEP-2
+c		Character						a
+s		String of characters					sample
+p		Pointer address						b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character 
+		will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/printf$ cd ../
+nsm@qpdb:~/quick-refs/c/ejemplos$ ls
+a.exe                    getchar2.c            stack01-w.c
+arrowOperator.c          getchar.c             stack02-w.c
+bajados                  int.txt               stackConLista.c
+bit.c                    miniR.c               stackConListaSinPtr.c
+bit.c~                   parserPlis.c          stackConPtr.c
+calloc-malloc.c          pilaInts.c            stackEj01.c
+callStack1.c             plis                  stackListtest.c
+callStack2.c             plis.c                stackll01-w.c
+callStack3.c             pointers.txt          stackSinPtr.c
+callStack.c              precomp.c             strlng-01.c
+char0.txt                precomp.c~            struct02.c
+char1.txt                primer0.c             struct.c
+char.csv                 primer.c              swap.c
+char.txt                 printf                tateti
+cues2.c                  printf.csv            test1.c
+cuestio                  printf.txt            test.c
+cuestionario.c           print-line-of-file.c  texto.txt
+c.zip                    R01.c                 tmp.txt
+devolver-array.c         r-do_length.c         types
+espolindromo.c           R_GenHeapStruct.c     types_int2.c
+EST-Rinternals.h         Rtest.c               types_int.c
+fgets-01.c               shiftop.c             union2.c
+functionAsParameter.txt  sizeof.c              union.c
+getchar1.c               stack01.c
+nsm@qpdb:~/quick-refs/c/ejemplos$ cd types/
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ls
+a.out  limites.c  limites.c~
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+limites.c: In function ‘main’:
+limites.c:5:1: error: stray ‘\’ in program
+ printf("\n\
+ ^
+limites.c:21:4: error: ‘n’ undeclared (first use in this function)
+ ",\n\
+    ^
+limites.c:21:4: note: each undeclared identifier is reported only once for each function it appears in
+limites.c:22:8: error: expected ‘)’ before numeric constant
+        CHAR_BIT,\
+        ^
+limites.c:39:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+limites.c: In function ‘main’:
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘long int’ [-Wformat=]
+        CHAR_BIT,\
+        ^
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘long int’ [-Wformat=]
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 15 has type ‘long unsigned int’ [-Wformat=]
+limites.c:39:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ../printf/a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase			392.65
+F		Decimal floating point, uppercase			392.65
+e		Scientific notation (mantissa/exponent), lowercase	3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase	3.9265E+2
+g		Use the shortest representation: %e or %f		392.65
+G		Use the shortest representation: %E or %F		392.65
+a		Hexadecimal floating point, lowercase			-0xc.90fep-2
+A		Hexadecimal floating point, uppercase			-0XC.90FEP-2
+c		Character						a
+s		String of characters					sample
+p		Pointer address						b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character 
+		will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./../printf/a.out 
+From http://www.cplusplus.com
+
+specifier			Output					Example
+
+d or i		Signed decimal integer					392
+u		Unsigned decimal integer				7235
+o		Unsigned octal						610
+x		Unsigned hexadecimal integer				7fa
+X		Unsigned hexadecimal integer (uppercase)		7FA
+f		Decimal floating point, lowercase			392.65
+F		Decimal floating point, uppercase			392.65
+e		Scientific notation (mantissa/exponent), lowercase	3.9265e+2
+E		Scientific notation (mantissa/exponent), uppercase	3.9265E+2
+g		Use the shortest representation: %e or %f		392.65
+G		Use the shortest representation: %E or %F		392.65
+a		Hexadecimal floating point, lowercase			-0xc.90fep-2
+A		Hexadecimal floating point, uppercase			-0XC.90FEP-2
+c		Character						a
+s		String of characters					sample
+p		Pointer address						b8000000
+n		Nothing printed.
+ 		The corresponding argument must be a pointer to a signed int.
+		The number of characters written so far is stored in the pointed location.					
+%		A % followed by another % character 
+		will write a single % to the stream.				% 
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+limites.c: In function ‘main’:
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘long int’ [-Wformat=]
+        CHAR_BIT,\
+        ^
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘long int’ [-Wformat=]
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 15 has type ‘long unsigned int’ [-Wformat=]
+limites.c:39:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+limites.c: In function ‘main’:
+limites.c:22:8: warning: unknown conversion type character 0xa in format [-Wformat=]
+        CHAR_BIT,\
+        ^
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘long int’ [-Wformat=]
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘long int’ [-Wformat=]
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 15 has type ‘long unsigned int’ [-Wformat=]
+limites.c:22:8: warning: too many arguments for format [-Wformat-extra-args]
+limites.c:39:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+limites.c: In function ‘main’:
+limites.c:22:8: warning: format ‘%li’ expects argument of type ‘long int’, but argument 2 has type ‘int’ [-Wformat=]
+        CHAR_BIT,\
+        ^
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘long int’ [-Wformat=]
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘long int’ [-Wformat=]
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 15 has type ‘long unsigned int’ [-Wformat=]
+limites.c:39:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+limites.c: In function ‘main’:
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 7 has type ‘long int’ [-Wformat=]
+        CHAR_BIT,\
+        ^
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 8 has type ‘long int’ [-Wformat=]
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 15 has type ‘long unsigned int’ [-Wformat=]
+limites.c:39:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+limites.c: In function ‘main’:
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 15 has type ‘long unsigned int’ [-Wformat=]
+        CHAR_BIT,\
+        ^
+limites.c:39:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+limites.c: In function ‘main’:
+limites.c:22:8: warning: format ‘%d’ expects argument of type ‘int’, but argument 15 has type ‘long unsigned int’ [-Wformat=]
+        CHAR_BIT,\
+        ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc limites.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ l
+a.out*  char_max.c  char_max.c~  limites.c  limites.c~
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc char_max.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+i = 128
+c = 1 es  
+printf %d de (char) i es: -128
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc char_max.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+i = 130
+c = 1 es  
+printf %d de (char) i es: -126
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc char_max.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+i = 1300
+c = 1 es  
+printf %d de (char) i es: 20
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc char_max.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1300
+c = 1 es  
+printf %d de (char) i es: 20
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc char_max.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+Hago cast de int to char donde int > CHAR_MAX
+i = 1300
+c = 1 es  
+printf %d de (char) i es: 20
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1300, c = 1
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+i & 1 es 1, c & 1 es 1nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+i & 1 es 1		 c & 1 es 1
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 255, c = -1
+
+i & 1 es 1		 c & 1 es 1
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 254, c = -2
+
+i & 1 es 0		 c & 1 es 0
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 127, c = 127
+
+i & 1 es 1		 c & 1 es 1
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 126, c = 126
+
+i & 1 es 0		 c & 1 es 0
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+
+i & 128 es 0		 c & 128 es 0
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+
+i & 128 es 0		 c & 128 es 0
+esto es  una nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+bitwise1.c:4:19: error: '#' is not followed by a macro parameter
+ #define XeYES(x, y) printf( # (x) "&" # (y) "es %d", (x) & (y))
+                   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+
+i & 128 es 0		 c & 128 es 0
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+bitwise1.c: In function ‘main’:
+bitwise1.c:48:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+
+i & 128 es 0		 c & 128 es 0
+i&12es 0nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+
+i & 128 es 0		 c & 128 es 0
+i&12es 0
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+
+i & 128 es 0		 c & 128 es 0
+i & 128 es 0
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+
+i & 128 es 0		 c & 128 es 0
+12 & 128 es 0
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+i = 1, c = 1
+
+i & 128 es 0		 c & 128 es 0
+128 & 128 es 128
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+128 & 128 es 128
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+129 & 128 es 128
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bitwise1.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+CHAR_BIT 8
+CHAR_MAX 127
+CHAR_MIN -128
+INT_MAX 2147483647
+INT_MIN -2147483648
+LONG_MAX 9223372036854775807
+LONG_MIN -9223372036854775808
+SCHAR_MAX 127
+SCHAR_MIN -128
+SHRT_MAX 32767
+SHRT_MIN -32768
+UCHAR_MAX 255
+UINT_MAX -1
+ULONG_MAX -1
+USHRT_MAX 65535
+
+130 & 128 es 128
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+   printf ("Leading text "BYTETOBINPATTERN, BYTETOBINARY(255));  
+   ^
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+/tmp/ccYX1Wbm.o: In function `main':
+bytetobinary.c:(.text+0xf): undefined reference to `BYTETOBINARY'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:18:57: error: ‘x0255’ undeclared (first use in this function)
+   printf ("Leading text "BYTETOBINPATTERN, BYTETOBINARY(x0255));  
+                                                         ^
+bytetobinary.c:18:57: note: each undeclared identifier is reported only once for each function it appears in
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:20:3: error: expected ‘;’ before ‘return’
+   return 0;
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+1nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+   printf ("Leading text "BYTETOBINPATTERN, BYTETOBINARY(3));
+   ^
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+bytetobinary.c:18:3: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+/tmp/ccUu8uEe.o: In function `main':
+bytetobinary.c:(.text+0xf): undefined reference to `BYTETOBINARY'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+Leading text 000000111nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:6:3: error: called object is not a function or function pointer
+   (byte & 0x80 ? 1 : 0), \
+   ^
+bytetobinary.c:14:36: note: in expansion of macro ‘BYTETOBIN’
+ #define PRBIN(x) printf(# x " es " BYTETOBIN(x) "\n")
+                                    ^
+bytetobinary.c:20:3: note: in expansion of macro ‘PRBIN’
+   PRBIN(2);
+   ^
+bytetobinary.c:14:49: error: expected ‘)’ before string constant
+ #define PRBIN(x) printf(# x " es " BYTETOBIN(x) "\n")
+                                                 ^
+bytetobinary.c:20:3: note: in expansion of macro ‘PRBIN’
+   PRBIN(2);
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+Leading text 0000001112 es 00000010
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+12 es 00000010
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+1
+2 es 00000010
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+i es 00000000
+
+i es 00000001
+
+i es 00000010
+
+i es 00000011
+
+i es 00000100
+
+i es 00000101
+
+i es 00000110
+
+i es 00000111
+
+i es 00001000
+
+i es 00001001
+
+i es 00001010
+
+i es 00001011
+
+i es 00001100
+
+i es 00001101
+
+i es 00001110
+
+i es 00001111
+
+i es 00010000
+
+i es 00010001
+
+i es 00010010
+
+i es 00010011
+
+i es 00010100
+
+i es 00010101
+
+i es 00010110
+
+i es 00010111
+
+i es 00011000
+
+i es 00011001
+
+i es 00011010
+
+i es 00011011
+
+i es 00011100
+
+i es 00011101
+
+i es 00011110
+
+i es 00011111
+
+i es 00100000
+
+i es 00100001
+
+i es 00100010
+
+i es 00100011
+
+i es 00100100
+
+i es 00100101
+
+i es 00100110
+
+i es 00100111
+
+i es 00101000
+
+i es 00101001
+
+i es 00101010
+
+i es 00101011
+
+i es 00101100
+
+i es 00101101
+
+i es 00101110
+
+i es 00101111
+
+i es 00110000
+
+i es 00110001
+
+i es 00110010
+
+i es 00110011
+
+i es 00110100
+
+i es 00110101
+
+i es 00110110
+
+i es 00110111
+
+i es 00111000
+
+i es 00111001
+
+i es 00111010
+
+i es 00111011
+
+i es 00111100
+
+i es 00111101
+
+i es 00111110
+
+i es 00111111
+
+i es 01000000
+
+i es 01000001
+
+i es 01000010
+
+i es 01000011
+
+i es 01000100
+
+i es 01000101
+
+i es 01000110
+
+i es 01000111
+
+i es 01001000
+
+i es 01001001
+
+i es 01001010
+
+i es 01001011
+
+i es 01001100
+
+i es 01001101
+
+i es 01001110
+
+i es 01001111
+
+i es 01010000
+
+i es 01010001
+
+i es 01010010
+
+i es 01010011
+
+i es 01010100
+
+i es 01010101
+
+i es 01010110
+
+i es 01010111
+
+i es 01011000
+
+i es 01011001
+
+i es 01011010
+
+i es 01011011
+
+i es 01011100
+
+i es 01011101
+
+i es 01011110
+
+i es 01011111
+
+i es 01100000
+
+i es 01100001
+
+i es 01100010
+
+i es 01100011
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+
+i es 00000000
+i es 00000001
+i es 00000010
+i es 00000011
+i es 00000100
+i es 00000101
+i es 00000110
+i es 00000111
+i es 00001000
+i es 00001001
+i es 00001010
+i es 00001011
+i es 00001100
+i es 00001101
+i es 00001110
+i es 00001111
+i es 00010000
+i es 00010001
+i es 00010010
+i es 00010011
+i es 00010100
+i es 00010101
+i es 00010110
+i es 00010111
+i es 00011000
+i es 00011001
+i es 00011010
+i es 00011011
+i es 00011100
+i es 00011101
+i es 00011110
+i es 00011111
+i es 00100000
+i es 00100001
+i es 00100010
+i es 00100011
+i es 00100100
+i es 00100101
+i es 00100110
+i es 00100111
+i es 00101000
+i es 00101001
+i es 00101010
+i es 00101011
+i es 00101100
+i es 00101101
+i es 00101110
+i es 00101111
+i es 00110000
+i es 00110001
+i es 00110010
+i es 00110011
+i es 00110100
+i es 00110101
+i es 00110110
+i es 00110111
+i es 00111000
+i es 00111001
+i es 00111010
+i es 00111011
+i es 00111100
+i es 00111101
+i es 00111110
+i es 00111111
+i es 01000000
+i es 01000001
+i es 01000010
+i es 01000011
+i es 01000100
+i es 01000101
+i es 01000110
+i es 01000111
+i es 01001000
+i es 01001001
+i es 01001010
+i es 01001011
+i es 01001100
+i es 01001101
+i es 01001110
+i es 01001111
+i es 01010000
+i es 01010001
+i es 01010010
+i es 01010011
+i es 01010100
+i es 01010101
+i es 01010110
+i es 01010111
+i es 01011000
+i es 01011001
+i es 01011010
+i es 01011011
+i es 01011100
+i es 01011101
+i es 01011110
+i es 01011111
+i es 01100000
+i es 01100001
+i es 01100010
+i es 01100011nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+i es 00000000
+i es 00000001
+i es 00000010
+i es 00000011
+i es 00000100
+i es 00000101
+i es 00000110
+i es 00000111
+i es 00001000
+i es 00001001
+i es 00001010
+i es 00001011
+i es 00001100
+i es 00001101
+i es 00001110
+i es 00001111
+i es 00010000
+i es 00010001
+i es 00010010
+i es 00010011
+i es 00010100
+i es 00010101
+i es 00010110
+i es 00010111
+i es 00011000
+i es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:21:22: error: ‘SHOW_HASTA’ undeclared (first use in this function)
+   for(i = DESDE; i < SHOW_HASTA + 1; i++) PRBIN(i);
+                      ^
+bytetobinary.c:21:22: note: each undeclared identifier is reported only once for each function it appears in
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:20:6: error: ‘argc’ undeclared (first use in this function)
+   if(argc == 2) {
+      ^
+bytetobinary.c:20:6: note: each undeclared identifier is reported only once for each function it appears in
+bytetobinary.c:21:13: error: ‘argv’ undeclared (first use in this function)
+     desde = argv[1];
+             ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:21:11: warning: assignment makes integer from pointer without a cast [enabled by default]
+     desde = argv[1];
+           ^
+bytetobinary.c:22:11: warning: assignment makes integer from pointer without a cast [enabled by default]
+     hasta = argv[2];
+           ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 2 9
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 2 9
+argc es 30 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 2 9
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 2 93
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+26 es 00011010
+27 es 00011011
+28 es 00011100
+29 es 00011101
+30 es 00011110
+31 es 00011111
+32 es 00100000
+33 es 00100001
+34 es 00100010
+35 es 00100011
+36 es 00100100
+37 es 00100101
+38 es 00100110
+39 es 00100111
+40 es 00101000
+41 es 00101001
+42 es 00101010
+43 es 00101011
+44 es 00101100
+45 es 00101101
+46 es 00101110
+47 es 00101111
+48 es 00110000
+49 es 00110001
+50 es 00110010
+51 es 00110011
+52 es 00110100
+53 es 00110101
+54 es 00110110
+55 es 00110111
+56 es 00111000
+57 es 00111001
+58 es 00111010
+59 es 00111011
+60 es 00111100
+61 es 00111101
+62 es 00111110
+63 es 00111111
+64 es 01000000
+65 es 01000001
+66 es 01000010
+67 es 01000011
+68 es 01000100
+69 es 01000101
+70 es 01000110
+71 es 01000111
+72 es 01001000
+73 es 01001001
+74 es 01001010
+75 es 01001011
+76 es 01001100
+77 es 01001101
+78 es 01001110
+79 es 01001111
+80 es 01010000
+81 es 01010001
+82 es 01010010
+83 es 01010011
+84 es 01010100
+85 es 01010101
+86 es 01010110
+87 es 01010111
+88 es 01011000
+89 es 01011001
+90 es 01011010
+91 es 01011011
+92 es 01011100
+93 es 01011101
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 2
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 2
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 2
+2 es 00000010
+nsm@qpdb:~/quick-refs/c/ejemplos/types
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ 
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+bytetobinary.c: In function ‘main’:
+bytetobinary.c:31:8: error: invalid type argument of unary ‘*’ (have ‘int’)
+     2 ** 8
+        ^
+bytetobinary.c:32:3: error: expected ‘;’ before ‘int’
+   int i;
+   ^
+bytetobinary.c:33:7: error: ‘i’ undeclared (first use in this function)
+   for(i = desde; i < hasta + 1; i++) PRBIN(i);
+       ^
+bytetobinary.c:33:7: note: each undeclared identifier is reported only once for each function it appears in
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc hex1.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ rm hex1.c 
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc bytetobinary.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out -1
+-1 es 11111111
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out -25 -1
+-25 es 11100111
+-24 es 11101000
+-23 es 11101001
+-22 es 11101010
+-21 es 11101011
+-20 es 11101100
+-19 es 11101101
+-18 es 11101110
+-17 es 11101111
+-16 es 11110000
+-15 es 11110001
+-14 es 11110010
+-13 es 11110011
+-12 es 11110100
+-11 es 11110101
+-10 es 11110110
+-9 es 11110111
+-8 es 11111000
+-7 es 11111001
+-6 es 11111010
+-5 es 11111011
+-4 es 11111100
+-3 es 11111101
+-2 es 11111110
+-1 es 11111111
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:38:3: warning: format ‘%i’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   for(i = desde; i < hasta + 1; i++) PRBIN(i);
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:37:3: warning: conversion lacks type at end of format [-Wformat=]
+   printf("size of desde: %l",sizeof(desde));
+   ^
+dectobin.c:37:3: warning: too many arguments for format [-Wformat-extra-args]
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:37:3: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   printf("size of desde: %d",sizeof(desde));
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of desde: 40 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of desde: 40 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of desde: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010(
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc sizes.c
+sizes.c: In function ‘main’:
+sizes.c:7:3: warning: format ‘%u’ expects argument of type ‘unsigned int’, but argument 2 has type ‘long unsigned int’ [-Wformat=]
+   PR_SIZE(int);
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc sizes.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+Size of int is 4
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc sizes.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+Size of char is 1
+Size of long is 8
+Size of short is 2
+Size of int is 4
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc sizes.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+Size of char is 1
+Size of short is 2
+Size of int is 4
+Size of long is 8
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:41:35: error: expected ‘)’ before ‘;’ token
+   printf("pow 2 ^ 0: %d", pow(2,0);
+                                   ^
+dectobin.c:43:1: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+ }
+ ^
+dectobin.c:43:1: error: expected ‘;’ before ‘}’ token
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:41:3: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘double’ [-Wformat=]
+   printf("pow 2 ^ 0: %d", pow(2,0));
+   ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+pow 2 ^ 0: 1.000000nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+/tmp/ccwLqe2I.o: In function `main':
+dectobin.c:(.text+0x158): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+/tmp/cc3wXINc.o: In function `main':
+dectobin.c:(.text+0x158): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000pow 2 ^ 1: 2.000000nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+pow 2 ^ 1: 2.000000
+pow 2 ^ 1: 2.000000
+pow 2 ^ 1: 2.000000
+pow 2 ^ 1: 2.000000
+pow 2 ^ 1: 2.000000
+pow 2 ^ 1: 2.000000
+pow 2 ^ 1: 2.000000
+pow 2 ^ 1: 2.000000
+pow 2 ^ 1: 2.000000
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+/tmp/ccg0B3vk.o: In function `main':
+dectobin.c:(.text+0x158): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:45:5: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int’ [-Wformat=]
+     printf("pow 2 ^ 1: %f\n", potx(2,i));
+     ^
+/tmp/ccCwvjJ3.o: In function `main':
+dectobin.c:(.text+0x14b): undefined reference to `potx'
+collect2: error: ld returned 1 exit status
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:45:5: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int’ [-Wformat=]
+     printf("pow 2 ^ 1: %f\n", pot(2,i));
+     ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+pow 2 ^ 1: 1
+pow 2 ^ 1: 2
+pow 2 ^ 1: 4
+pow 2 ^ 1: 8
+pow 2 ^ 1: 16
+pow 2 ^ 1: 32
+pow 2 ^ 1: 64
+pow 2 ^ 1: 128
+pow 2 ^ 1: 256
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+2 ^ 0: 1
+2 ^ 1: 2
+2 ^ 2: 4
+2 ^ 3: 8
+2 ^ 4: 16
+2 ^ 5: 32
+2 ^ 6: 64
+2 ^ 7: 128
+2 ^ 8: 256
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:46:5: error: expected ‘)’ before ‘BITETOBINPATTERN’
+     BITETOBINPATTERN BYTETOBIN(i)"\n",i,  pot(2,i));
+     ^
+dectobin.c:46:5: warning: format ‘%i’ expects a matching ‘int’ argument [-Wformat=]
+dectobin.c:46:5: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:45:35: error: expected ‘)’ before ‘BITETOBINPATTERN’
+     printf("2 ^ %i: %d\ten bin: " BITETOBINPATTERN BYTETOBIN(i)"\n",i, 
+                                   ^
+dectobin.c:45:35: warning: format ‘%i’ expects a matching ‘int’ argument [-Wformat=]
+dectobin.c:45:35: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:45:35: error: expected ‘)’ before ‘BITETOBINPATTERN’
+     printf("2 ^ %i: %d\ten bin: " BITETOBINPATTERN BYTETOBIN(i),i,  pot
+                                   ^
+dectobin.c:45:35: warning: format ‘%i’ expects a matching ‘int’ argument [-Wformat=]
+dectobin.c:45:35: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:45:35: error: expected ‘)’ before ‘BITETOBINPATTERN’
+     printf("2 ^ %i: %d\ten bin: " BITETOBINPATTERN"\n",\
+                                   ^
+dectobin.c:45:35: warning: format ‘%i’ expects a matching ‘int’ argument [-Wformat=]
+dectobin.c:45:35: warning: format ‘%d’ expects a matching ‘int’ argument [-Wformat=]
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:46:25: error: expected ‘)’ before ‘BITETOBINPATTERN’
+     printf("\ten bin: " BITETOBINPATTERN"\n", BYTETOBIN(i));
+                         ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:47:12: error: ‘BITETOBINPATTERN’ undeclared (first use in this function)
+     printf(BITETOBINPATTERN, BYTETOBIN(1));
+            ^
+dectobin.c:47:12: note: each undeclared identifier is reported only once for each function it appears in
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+2 ^ 0: 1	en bin: 00000000
+2 ^ 1: 2	en bin: 00000001
+2 ^ 2: 4	en bin: 00000010
+2 ^ 3: 8	en bin: 00000011
+2 ^ 4: 16	en bin: 00000100
+2 ^ 5: 32	en bin: 00000101
+2 ^ 6: 64	en bin: 00000110
+2 ^ 7: 128	en bin: 00000111
+2 ^ 8: 256	en bin: 00001000
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+2 ^ 0: 1	en bin: 00000000
+2 ^ 1: 2	en bin: 00000001
+2 ^ 2: 4	en bin: 00000010
+2 ^ 3: 8	en bin: 00000011
+2 ^ 4: 16	en bin: 00000100
+2 ^ 5: 32	en bin: 00000101
+2 ^ 6: 64	en bin: 00000110
+2 ^ 7: 128	en bin: 00000111
+2 ^ 8: 256	en bin: 00001000
+2 ^ 9: 512	en bin: 00001001
+2 ^ 10: 1024	en bin: 00001010
+2 ^ 11: 2048	en bin: 00001011
+2 ^ 12: 4096	en bin: 00001100
+2 ^ 13: 8192	en bin: 00001101
+2 ^ 14: 16384	en bin: 00001110
+2 ^ 15: 32768	en bin: 00001111
+2 ^ 16: 65536	en bin: 00010000
+2 ^ 17: 131072	en bin: 00010001
+2 ^ 18: 262144	en bin: 00010010
+2 ^ 19: 524288	en bin: 00010011
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:46:7: error: too few arguments to function ‘pot’
+       printf("2 ^ %i: %d",i,  pot(2,pot(i)));
+       ^
+dectobin.c:24:5: note: declared here
+ int pot(int x, int y);
+     ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+2 ^ 0: 2	en bin: 00000000
+2 ^ 1: 4	en bin: 00000001
+2 ^ 2: 16	en bin: 00000010
+2 ^ 3: 256	en bin: 00000011
+2 ^ 4: 65536	en bin: 00000100
+2 ^ 5: 0	en bin: 00000101
+2 ^ 6: 0	en bin: 00000110
+2 ^ 7: 0	en bin: 00000111
+2 ^ 8: 0	en bin: 00001000
+2 ^ 9: 0	en bin: 00001001
+2 ^ 10: 0	en bin: 00001010
+2 ^ 11: 0	en bin: 00001011
+2 ^ 12: 0	en bin: 00001100
+2 ^ 13: 0	en bin: 00001101
+2 ^ 14: 0	en bin: 00001110
+2 ^ 15: 0	en bin: 00001111
+2 ^ 16: 0	en bin: 00010000
+2 ^ 17: 0	en bin: 00010001
+2 ^ 18: 0	en bin: 00010010
+2 ^ 19: 0	en bin: 00010011
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+2 ^ (2 ^ 0): 2	en bin: 00000000
+2 ^ (2 ^ 1): 4	en bin: 00000001
+2 ^ (2 ^ 2): 16	en bin: 00000010
+2 ^ (2 ^ 3): 256	en bin: 00000011
+2 ^ (2 ^ 4): 65536	en bin: 00000100
+2 ^ (2 ^ 5): 0	en bin: 00000101
+2 ^ (2 ^ 6): 0	en bin: 00000110
+2 ^ (2 ^ 7): 0	en bin: 00000111
+2 ^ (2 ^ 8): 0	en bin: 00001000
+2 ^ (2 ^ 9): 0	en bin: 00001001
+2 ^ (2 ^ 10): 0	en bin: 00001010
+2 ^ (2 ^ 11): 0	en bin: 00001011
+2 ^ (2 ^ 12): 0	en bin: 00001100
+2 ^ (2 ^ 13): 0	en bin: 00001101
+2 ^ (2 ^ 14): 0	en bin: 00001110
+2 ^ (2 ^ 15): 0	en bin: 00001111
+2 ^ (2 ^ 16): 0	en bin: 00010000
+2 ^ (2 ^ 17): 0	en bin: 00010001
+2 ^ (2 ^ 18): 0	en bin: 00010010
+2 ^ (2 ^ 19): 0	en bin: 00010011
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+2 ^ (2 ^ 0): 2	en bin: 00000010
+2 ^ (2 ^ 1): 4	en bin: 00000100
+2 ^ (2 ^ 2): 16	en bin: 00010000
+2 ^ (2 ^ 3): 256	en bin: 00000000
+2 ^ (2 ^ 4): 65536	en bin: 00000000
+2 ^ (2 ^ 5): 0	en bin: 00000000
+2 ^ (2 ^ 6): 0	en bin: 00000000
+2 ^ (2 ^ 7): 0	en bin: 00000000
+2 ^ (2 ^ 8): 0	en bin: 00000000
+2 ^ (2 ^ 9): 0	en bin: 00000000
+2 ^ (2 ^ 10): 0	en bin: 00000000
+2 ^ (2 ^ 11): 0	en bin: 00000000
+2 ^ (2 ^ 12): 0	en bin: 00000000
+2 ^ (2 ^ 13): 0	en bin: 00000000
+2 ^ (2 ^ 14): 0	en bin: 00000000
+2 ^ (2 ^ 15): 0	en bin: 00000000
+2 ^ (2 ^ 16): 0	en bin: 00000000
+2 ^ (2 ^ 17): 0	en bin: 00000000
+2 ^ (2 ^ 18): 0	en bin: 00000000
+2 ^ (2 ^ 19): 0	en bin: 00000000
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+dectobin.c: In function ‘main’:
+dectobin.c:48:7: error: expected ‘;’ before ‘printf’
+       printf("2 ^ (2 ^ %i): %d",i, j);
+       ^
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+i es 0 2 ^ (2 ^ 0): 2	en bin: 00000010
+i es 1 2 ^ (2 ^ 1): 4	en bin: 00000100
+i es 2 2 ^ (2 ^ 2): 16	en bin: 00010000
+i es 3 2 ^ (2 ^ 3): 256	en bin: 00000000
+i es 4 2 ^ (2 ^ 4): 65536	en bin: 00000000
+i es 5 2 ^ (2 ^ 5): 0	en bin: 00000000
+i es 6 2 ^ (2 ^ 6): 0	en bin: 00000000
+i es 7 2 ^ (2 ^ 7): 0	en bin: 00000000
+i es 8 2 ^ (2 ^ 8): 0	en bin: 00000000
+i es 9 2 ^ (2 ^ 9): 0	en bin: 00000000
+i es 10 2 ^ (2 ^ 10): 0	en bin: 00000000
+i es 11 2 ^ (2 ^ 11): 0	en bin: 00000000
+i es 12 2 ^ (2 ^ 12): 0	en bin: 00000000
+i es 13 2 ^ (2 ^ 13): 0	en bin: 00000000
+i es 14 2 ^ (2 ^ 14): 0	en bin: 00000000
+i es 15 2 ^ (2 ^ 15): 0	en bin: 00000000
+i es 16 2 ^ (2 ^ 16): 0	en bin: 00000000
+i es 17 2 ^ (2 ^ 17): 0	en bin: 00000000
+i es 18 2 ^ (2 ^ 18): 0	en bin: 00000000
+i es 19 2 ^ (2 ^ 19): 0	en bin: 00000000
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+i es 0 2 ^ (2 ^ 0): 2	en bin: 00000010
+i es 1 2 ^ (2 ^ 1): 4	en bin: 00000100
+i es 2 2 ^ (2 ^ 2): 16	en bin: 00010000
+i es 3 2 ^ (2 ^ 3): 256	en bin: 00000000
+i es 4 2 ^ (2 ^ 4): 65536	en bin: 00000000
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ gcc dectobin.c
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ ./a.out 
+size of int: 4
+0 es 00000000
+1 es 00000001
+2 es 00000010
+3 es 00000011
+4 es 00000100
+5 es 00000101
+6 es 00000110
+7 es 00000111
+8 es 00001000
+9 es 00001001
+10 es 00001010
+11 es 00001011
+12 es 00001100
+13 es 00001101
+14 es 00001110
+15 es 00001111
+16 es 00010000
+17 es 00010001
+18 es 00010010
+19 es 00010011
+20 es 00010100
+21 es 00010101
+22 es 00010110
+23 es 00010111
+24 es 00011000
+25 es 00011001
+i es 0 2 ^ (2 ^ 0):                2	en bin: 00000010
+i es 1 2 ^ (2 ^ 1):                4	en bin: 00000100
+i es 2 2 ^ (2 ^ 2):               16	en bin: 00010000
+i es 3 2 ^ (2 ^ 3):              256	en bin: 00000000
+i es 4 2 ^ (2 ^ 4):            65536	en bin: 00000000
+nsm@qpdb:~/quick-refs/c/ejemplos/types$ 

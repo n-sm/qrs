@@ -15,3 +15,4 @@ decimal to binary	format(2, '08b')
 apply function FOO() to elemnts in list	[ FOO(x) for x in LIST ]
 lambda ej	(lambda x, y: x*y)(2,5)
 create dictionary with 2 lists	d = dict(zip(keys, values))
+install a package	python setup.py install

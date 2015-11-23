@@ -41,3 +41,6 @@ will pull the code out of the remote repository into another
 directory.
 
 9. $ git clone /usr/local/remoteGit
+
+** rename branch in origin
+http://stackoverflow.com/questions/1526794/rename-master-branch-for-both-local-and-remote-git-repositories

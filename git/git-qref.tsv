@@ -1,4 +1,5 @@
-              DESCRIPCION                     	|     COMANDO    
+# -*- mode:csv -*-
+DESCRIPCION                     	|     COMANDO    
 setear nombre de usuario	git config --global user.name "El nombre"
 setear mail	git config --global user.email user@mail.com
 setear editor de texto	git config --global core.editor emacs
@@ -25,3 +26,6 @@ revert uncommited changes to file or dir	git checkout -- FILE
 get commit history	git log
 unstage all files  staged with git add	git rese
 revert all local uncommitted changes	git checkout .
+delete remote branch	git push origin --delete <BRANCHNAME>
+delete remote branch 2	git push origin :<BRANCHNAME>
+delete local branch	git branch -d the_local_branch
