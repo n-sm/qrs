@@ -1,7 +1,9 @@
+
+
 import urllib.request, re
 
 def getHtml(url, isFile=False):
-    '''Obtiene una string de una url o archivo.'''
+    '''getHtml: Obtiene una string de una url o archivo.'''
     if isFile:
         try:
             with open(url, 'r', encoding='utf-8') as f:
@@ -24,11 +26,11 @@ def getHtml(url, isFile=False):
 
 def delimitar(html):
     '''
-Dado una string como argumento (se espera un docuento html),
-devuelve una lista de pares que delimitan cada uno de los 
-elementos que la componen. El caso de los scripts se deja
-para la función desplegarScriptTags().'''
-    
+    Dado una string como argumento (se espera un docuento html),
+    devuelve una lista de pares que delimitan cada uno de los 
+    elementos que la componen. El caso de los scripts se deja
+    para la función desplegarScriptTags().
+    '''
     ctr=0
     pares = []
     desde = 0
@@ -102,20 +104,24 @@ inicio, un contenido y una de fin.
         else: ret.append(e)
     return ret
 
+
 def agrupar(pag):
     '''
-Esta función recibe una pagina bajo la forma de una lista de strings,
-cada una de las cuales es un elemento atómico de la misma.
+    Esta función recibe una pagina bajo la forma de una lista de strings,
+    cada una de las cuales es un elemento atómico de la misma.
 
-Devuelve una lista con los elementos, con los sub elementos anidados
-en sublistas.
-'''
+    Devuelve un `tree' con los elementos, con los sub elementos anidados
+    en sublistas.
+    '''
     if type(pag) is str: print("error!, no llamar con str como arg!")
-    desde = 0; pares = []; currentTag = ''; ctr = 0 # es necesario??
+    desde = 0;
+    pares = []; # pares?? que quise decir?
+    currentTag = '';
+    ctr = 0 # es necesario??
     for i in range(len(pag)):
-        match = re.match('<([^! >]+)', pag[i])
+        match = re.match('<([^! >]+)', pag[i], re.I)
         if not currentTag:
-            if not match:
+            if not match or re.match('meta|link', match.group(1), re.T):
                 pares.append(pag[i])
             else:
                 m = match.group(1)
