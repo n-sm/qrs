@@ -1,5 +1,3 @@
-
-
 import urllib.request, re
 
 def getHtml(url, isFile=False):
@@ -304,4 +302,82 @@ def flatten(lista):
 
 #def searchTree(tree):
 #    if type(tree) is not tree:
+        
+class Atom():
+    def parseAttr(self,string):
+        tag         = False
+        nombre      = False
+        valor       = False
+        desde       = 0
+        currentName = ''
+        currentVal  = ''
+        dictio      = {}
+        
+        if string[0] is '<': tag = True
+        for i in range(len(string)):
+            c = string[i]
+            # Esto es solo para el tag inicial.
+            if tag:
+                if c is ' ': tag = False
+                continue
+            if c is ' ': continue
+            if c is '"':
+                # Empieza valor:
+                if not valor:
+                    valor = True
+                    desde = i
+                    #nombre = False
+                    continue
+                # Cierra Valor:
+                currentVal = string[desde:i]
+                dictio[currentName] = currentVal
+                valor = False
+                nombre = False
+                desde = i
+                continue
+            if c is '=' and not valor:
+                currentName = string[desde:i]
+                #desde = 0
+                #nombre = False
+                continue
+            # Aca llega si c no es ' ' ni '"' ni '='
+            # Empieza nombre:
+            if not nombre:
+                nombre = True
+                desde = i
+        return dictio
+        
+    def __init__(self, arg):
+        # Un 'Atom' tiene una string con tag al inicio, una string
+        # con cierre al final y algun contenido en el medio.
+        self.tagname = None
+        # self.content = None
+        self.attribs = {}
+        # Este if hay que sacarlo, pues lo maneja Elem.
+        if type(arg) is str:
+            self.string = arg 
+            match = re.match('<([^! >]+) *?([^ ].*)>', arg, re.I)
+            # No es Tag:
+            if not match:
+                self.name  = 'text'
+                return
+            # Es Tag:
+            self.tagname = match.group(1)
+            self.attribs = self.parseAttr(arg)
+            #self.attribs = match.group(2)
+            #self.rest = match.group(2)
+            #match = re.search('([^ ]+)="(.+)"', arg, re.T)
+            return
+
+class Elem():
+    def __init__(self, arg):
+        self.lista = []
+        self.tag
+        for elm in arg:
+            if type(elm) is str:
+                e = Atom(elm)
+                if e.tagname:
+                    self.tag = e.tagname
+            
+                
         
