@@ -1,0 +1,73 @@
+# -*- mode:csv -*-
+#
+# C Operator Precedence Table
+# http://www.difranco.net/compsci/C_Operator_Precedence_Table.htm
+# This page lists C operators in order of precedence (highest to
+# lowest).
+# Their associativity indicates in what order operators of equal
+# precedence in an expression are applied.
+
+Operator	Description	Associativity
+
+( )	Parentheses (function call)	left-to-right
+[ ]	Brackets (array subscript)
+.	Member selection via object name
+->	Member selection via pointer
+++ --	Postfix increment/decrement
+_____	_______________________________________________	_________
+++ --	Prefix increment/decrement	right-to-left
++ -	Unary plus/minus
+! ~	Logical negation/bitwise complement
+(type)	Cast (convert value to temporary value of type)
+*	Dereference
+&	Address (of operand)
+sizeof	Determine size in bytes on this implementation	
+_____	_______________________________________________	_________
+*  /  %	Multiplication/division/modulus	left-to-right
+_____	_______________________________________________	_________
++  -	Addition/subtraction	left-to-right
+_____	_______________________________________________	_________
+<<  >>	Bitwise shift left, Bitwise shift right	left-to-right
+_____	_______________________________________________	_________
+<  <=	Relational less than/less than or equal to
+_____	_______________________________________________	_________
+>  >=	Relational greater than/greater than or equal to	left-to-right
+_____	_______________________________________________	_________
+==  !=	Relational is equal to/is not equal to	left-to-right
+_____	_______________________________________________	_________
+&	Bitwise AND	left-to-right
+_____	_______________________________________________	_________
+^	Bitwise exclusive OR	left-to-right
+_____	_______________________________________________	_________
+|	Bitwise inclusive OR	left-to-right
+_____	_______________________________________________	_________
+&&	Logical AND	left-to-right
+_____	_______________________________________________	_________
+||	Logical OR	left-to-right
+_____	_______________________________________________	_________
+? :	Ternary conditional	right-to-left
+_____	_______________________________________________	_________
+=	Assignment
++=  -=	Addition/subtraction assignment
+*=  /=	Multiplication/division assignment
+%=  &=	Modulus/bitwise AND assignment
+^=  |=	Bitwise exclusive/inclusive OR assignment
+<<=  >>=	Bitwise shift left/right assignment	right-to-left
+_____	_______________________________________________	_________
+,	Comma (separate expressions)	left-to-right
+
+# Note 1:
+# Parentheses are also used to group sub-expressions to force a different
+# precedence; such parenthetical expressions can be nested and are
+# evaluated from inner to outer.
+#
+# Note 2:
+# Postfix increment/decrement have high precedence, but the actual
+# increment or decrement of the operand is delayed (to be accomplished
+# sometime before the statement completes execution). So in the
+# statement
+# y = x * z++; the current value of z is used to evaluate the
+# expression
+# (i.e., z++ evaluates to z) and z only incremented after all else is
+# done.
+# See postinc.c for another example.
