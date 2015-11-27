@@ -48,7 +48,8 @@ int main(int argc, char ** argv)
   test = 1L << decimal;
   //  printf("lmax %s\n", ltobin(9223372036854775807, 8));
   for(decimal = desde; decimal < hasta; decimal++){
-    printf("\n%ld l to\n%s", decimal, ltobin(decimal, 18));
+    //printf("\n%ld l to\n%s", decimal, ltobin(decimal, 18));
+    printf("\nhex: %lx\n", decimal);
     printf("\n%ld d to\n%s", decimal, dtobin(decimal, 18));
     //    printf("\n%d\n%s", decimal, dtobin(decimal, 18));
   }

@@ -1,0 +1,6 @@
+# -*- mode:csv -*-
+list tables	.tables
+filas	select * from TABLA;
+info de tabla	.schema TABLA
+ver encabezados / headers	.headers on/off
+delete row	DELETE FROM COMPANY WHERE ID = 7;
