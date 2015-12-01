@@ -5,8 +5,58 @@ navegar por internet desde la linea de comando.
 import urllib.request
 import re
 
+def flatten(lista):
+    '''
+    Combina todos los elementos de las sublistas del la list original
+    en una única lista de elementos atomicos. Esta funcion imita otra
+    hecha mas natulamente en elisp (ver tef).
+    '''
+    if type(lista) is not list:
+        return [lista]
+    if len(lista) is 0:
+        return []
+    if len(lista) is 1:
+        return flatten(lista[0])
+    elem = lista[0]
+    resto = lista[1:]
+    if type(elem) is list:
+        return flatten(elem) + flatten(resto)
+    return [elem] + flatten(resto)
+def noSubLists(lista):
+    for e in lista:
+        if type(e) is list:
+            return False
+    return True
+
+def findin(que, donde):
+    '''Encuentra QUE en DONDE
+    DONDE es una lista de strings
+    '''
+    ret = []
+    if not noSubLists(donde):
+        print("Error: DONDE no debe tener sublistas")
+        return
+    for i in range(len(donde)):
+        if not isinstance(donde[i], str): continue
+        if re.match('<%s[^a-z]' % que, donde[i], re.I):
+            ret.append([i, donde[i]])
+    return ret
+
+def atoms(htmltree):
+    ret = []
+    if noSubLists(htmltree): # htmltree es atom
+        return htmltree
+    for i in range(len(htmltree)):
+        iatomp = atoms(htmltree[i])
+        if iatomp:
+            ret.append(iatomp)
+        else:
+            print("13456")
+    return ret
+
 def getHtml(url, isFile=False):
     '''getHtml: Obtiene una string de una url o archivo.'''
+    html = None
     if isFile:
         try:
             with open(url, 'r', encoding='utf-8') as f:
@@ -16,15 +66,32 @@ def getHtml(url, isFile=False):
                 html = f.read()
     else:
         if(not re.match(r'https?://', url)):
-            url = 'http://' + url
-            response = urllib.request.urlopen(url)
-            htmlBytes = response.read()
+            url       = 'http://' + url
+        response  = urllib.request.urlopen(url)
+        #
+        # Otro dia habria que emprolojar esto:
+        charset   = response.info().get_content_charset()
+        if not charset:
+            charset = response.headers.get_param('charset')
+            if charset: print("response.headers.get_param('charset')")
+        else: print("anduvo response.info().get_content_charset()")
+        htmlBytes = response.read()
+        if charset:
+            html = htmlBytes.decode(charset)
+        if not html:
+            print("No pudo obtenerse charset de:")
+            print(url)
+            print("probando utf-8 y latin-1")
             try:
                 html = htmlBytes.decode('utf-8')
+                if html: print("Se uso utf-8")
             except:
                 html = htmlBytes.decode('latin-1')
+                if html: print("Se uso latin-1")
+        if not html:
+            print("aborting")
+            return
     return(html)
-
 
 
 def delimitar(html):
@@ -74,6 +141,8 @@ def delimitar(html):
                 # agrego bordes de elemento a la lista.
                 pares.append([desde, hasta])
                 desde = i + 1
+
+    if pares and pares[0]: pares[0][0] = 0
     return pares
 
 def substr(string, pares):
@@ -143,42 +212,13 @@ def agrupar(pag):
                 hasta = i
                 if desde > hasta:
                     pares.append(pag)
-x                    continue
+                    continue
                 recursive = agrupar(pag[desde + 1:hasta])
                 recursive[0:0] = [pag[desde]]
                 recursive.append(pag[hasta])
                 pares.append(recursive)
                 currentTag = ''
     return pares
-    
-def listHtml(htmlString):
-    d   = delimitar(htmlString)
-    s   = substr(htmlString, d)
-    dst = desplegarScriptTags(s)
-    return dst
-
-
-        
-def treeHtml(url):
-
-    g = getHtml(url)
-    p = parseHtml(g)
-    a = agrupar(p)
-    return a
-
-print('''
-
-testeo: 
-x = getHtml(URL)
-pagina = listHtml(x)
-
-en 'g' ejemplo.\nPAra loadear: ld()\n\n
-''')
-
-## cada lista devuelta por parseHtml() tiene:
-## elementos atomicos tales como whitespace
-## otros elementos
-
 ## Creamos una clase para repersentar mejor esto.
 
 class Docu:
@@ -248,136 +288,131 @@ class Docu:
                         self.tags[tag].append(e)
         self.__dict__.update(self.tags)
 
-def noSubLists(lista):
-    for e in lista:
-        if type(e) is list:
-            return False
-    return True
-
-def findin(que, donde):
-    '''Encuentra QUE en DONDE
-    DONDE es una lista de strings
-    '''
-    ret = []
-    if not noSubLists(donde):
-        print("Error: DONDE no debe tener sublistas")
-        return 0
-    for i in range(len(donde)):
-        if not isinstance(donde[i], str): continue
-        if re.match('<%s[^a-z]' % que, donde[i], re.I):
-            ret.append([i, donde[i]])
-    return ret
-
-def atoms(htmltree):
-    ret = []
-    if noSubLists(htmltree): # htmltree es atom
-        return htmltree
-    for i in range(len(htmltree)):
-        iatomp = atoms(htmltree[i])
-        if iatomp:
-            ret.append(iatomp)
-        else:
-            print("13456")
-    return ret
         
-    return ret
-
-def flatten(lista):
-    '''
-    Combina todos los elementos de las sublistas del la list original
-    en una única lista de elementos atomicos. Esta funcion imita otra
-    hecha mas natulamente en elisp (ver tef).
-    '''
-    if type(lista) is not list:
-        return [lista]
-    if len(lista) is 0:
-        return []
-    if len(lista) is 1:
-        return flatten(lista[0])
-    elem = lista[0]
-    resto = lista[1:]
-    if type(elem) is list:
-        return flatten(elem) + flatten(resto)
-    return [elem] + flatten(resto)
 
 #def searchTree(tree):
 #    if type(tree) is not tree:
         
 class Atom():
-    def parseAttr(self,string):
-        tag         = False
-        nombre      = False
-        valor       = False
-        desde       = 0
-        currentName = ''
-        currentVal  = ''
-        dictio      = {}
-        
-        if string[0] is '<': tag = True
-        for i in range(len(string)):
-            c = string[i]
-            # Esto es solo para el tag inicial.
-            if tag:
-                if c is ' ': tag = False
-                continue
-            if c is ' ': continue
-            if c is '"':
-                # Empieza valor:
-                if not valor:
-                    valor = True
-                    desde = i+1
-                    #nombre = False
-                    continue
-                # Cierra Valor:
-                currentVal = string[desde:i]
-                dictio[currentName] = currentVal
-                valor = False
-                nombre = False
-                desde = i
-                continue
-            if c is '=' and not valor:
-                currentName = string[desde:i]
-                #desde = 0
-                #nombre = False
-                continue
-            # Aca llega si c no es ' ' ni '"' ni '='
-            # Empieza nombre:
-            if not nombre:
-                nombre = True
-                desde = i
-        return dictio
-        
     def __init__(self, arg):
         # Un 'Atom' tiene una string con tag al inicio, una string
         # con cierre al final y algun contenido en el medio.
-        self.tagname = None
-        # self.content = None
-        self.attribs = {}
-        # Este if hay que sacarlo, pues lo maneja Elem.
-        if type(arg) is str:
-            self.string = arg 
-            match = re.match('<([^! >]+) *?([^ ].*)>', arg, re.I)
-            # No es Tag:
-            if not match:
-                self.name  = 'text'
-                return
-            # Es Tag:
-            self.tagname = match.group(1)
-            self.attribs = self.parseAttr(arg)
-            #self.attribs = match.group(2)
-            #self.rest = match.group(2)
-            #match = re.search('([^ ]+)="(.+)"', arg, re.T)
+        #
+        # Todos los Atoms tienen tipo. Puede ser:
+        # tag (start y end)
+        # espacio
+        # texto
+        # Un sub elmento ya no es Atom.
+        self.tipo = ''
+        self.string = arg
+        #match = re.match('<([^! >]+) *?([^ ].*)>', arg, re.I)
+        match = re.match('<([^! >]+) *?([^ ]|.*)>', arg, re.I)
+        # No es Tag:
+        if not match:
+            espacio = re.match('^\s*$', arg)
+            self.tipo =  'space' if espacio else 'text'
             return
+        # Es Tag:
+        if arg[1] == '/': self.tipo = 'etag'
+        else:
+            self.tipo = 'stag'
+            self.attribs = parseAttr(arg)
+        self.name = match.group(1)
+        #self.attribs = match.group(2)
+        #self.rest = match.group(2)
+        #match = re.search('([^ ]+)="(.+)"', arg, re.T)
+        return
 
 class Elem():
     def __init__(self, arg):
-        self.lista = []
-        self.tag
-        for elm in arg:
-            if type(elm) is str:
-                e = Atom(elm)
-                if e.tagname:
-                    self.tag = e.tagname
+        self.contenido = []
+        self.cont = {'tagged': [] , 'untagged' : [] }
+        self.stag = Atom(arg[0])
+        self.etag = Atom(arg[-1])
+        
+        for i in range(1, len(arg)-1):
+            if type(arg[i]) is str:
+                at = Atom(arg[i])
+                self.contenido.append(at)
+                self.cont['untagged'].append(el)
+            elif type(arg[i]) is list:
+                el = Elem(arg[i])
+                self.contenido.append(el)
+                self.cont['tagged'].append(el)
+                
             
                 
         
+def parseAttr(string):
+    tag         = False
+    nombre      = False
+    valor       = False
+    desde       = 0
+    currentName = ''
+    currentVal  = ''
+    dictio      = {}
+
+    if string[0] is '<': tag = True
+    for i in range(len(string)):
+        c = string[i]
+        # Esto es solo para el tag inicial.
+        if tag:
+            if c is ' ': tag = False
+            continue
+        if c is ' ': continue
+        if c is '"':
+            # Empieza valor:
+            if not valor:
+                valor = True
+                desde = i+1
+                #nombre = False
+                continue
+            # Cierra Valor:
+            currentVal = string[desde:i]
+            dictio[currentName] = currentVal
+            valor = False
+            nombre = False
+            desde = i
+            continue
+        if c is '=' and not valor:
+            currentName = string[desde:i]
+            #desde = 0
+            #nombre = False
+            continue
+        # Aca llega si c no es ' ' ni '"' ni '='
+        # Empieza nombre:
+        if not nombre:
+            nombre = True
+            desde = i
+    return dictio
+
+
+    
+def listHtml(htmlString):
+    d   = delimitar(htmlString)
+    s   = substr(htmlString, d)
+    dst = desplegarScriptTags(s)
+    return dst
+
+
+        
+def treeHtml(lista):
+    a = agrupar(lista)
+    return a
+
+print('''
+
+testeo: 
+x = getHtml(URL)
+pagina = listHtml(x)
+
+''')
+
+## cada lista devuelta por parseHtml() tiene:
+## elementos atomicos tales como whitespace
+## otros elementos
+
+
+    
+# to reload:
+#importlib.reload(MODULE)

@@ -1,0 +1,15 @@
+# -*- mode:csv -*-
+___HELP___	h
+show matching files (regex) brief	C-x C-d REGEX
+sort with ls command	C-u s
+mark a file	m
+umark file	u
+unmark all files	U
+mark files with gievn extension	*.
+mark all directories	*/
+mark all symbolic links	*@
+mark all executables	**
+invert marking	*t
+mark all	*s
+mark files matching regex	*%
+delete marked filed	D

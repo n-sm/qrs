@@ -5,56 +5,6 @@ navegar por internet desde la linea de comando.
 import urllib.request
 import re
 
-def flatten(lista):
-    '''
-    Combina todos los elementos de las sublistas del la list original
-    en una única lista de elementos atomicos. Esta funcion imita otra
-    hecha mas natulamente en elisp (ver tef).
-    '''
-    if type(lista) is not list:
-        return [lista]
-    if len(lista) is 0:
-        return []
-    if len(lista) is 1:
-        return flatten(lista[0])
-    elem = lista[0]
-    resto = lista[1:]
-    if type(elem) is list:
-        return flatten(elem) + flatten(resto)
-    return [elem] + flatten(resto)
-
-def noSubLists(lista):
-    for e in lista:
-        if type(e) is list:
-            return False
-    return True
-
-def findtagin(que, donde):
-    '''Encuentra QUE en DONDE
-    DONDE es una lista de strings
-    '''
-    ret = []
-    if not noSubLists(donde):
-        print("Error: DONDE no debe tener sublistas")
-        return
-    for i in range(len(donde)):
-        if not isinstance(donde[i], str): continue
-        if re.match('<%s[^a-z]' % que, donde[i], re.I):
-            ret.append([i, donde[i]])
-    return ret
-
-##def atoms(htmltree):
-##    ret = []
-##    if noSubLists(htmltree): # htmltree es atom
-##        return htmltree
-##    for i in range(len(htmltree)):
-##        iatomp = atoms(htmltree[i])
-##        if iatomp:
-##            ret.append(iatomp)
-##        else:
-##            print("13456")
-##    return ret
-
 def getHtml(url, isFile=False):
     '''getHtml: Obtiene una string de una url o archivo.'''
     html = None
@@ -142,7 +92,7 @@ def delimitar(html):
                 # agrego bordes de elemento a la lista.
                 pares.append([desde, hasta])
                 desde = i + 1
- 
+
     if pares and pares[0]: pares[0][0] = 0
     return pares
 
@@ -189,8 +139,8 @@ def agrupar(pag):
     if type(pag) is str: print("error!, no llamar con str como arg!")
     desde = 0;
     pares = []; # pares?? que quise decir?
-    currentTag = ''
-    ctr = 0 
+    currentTag = '';
+    ctr = 0 # es necesario??
     for i in range(len(pag)):
         match = re.match('<([^! >]+)', pag[i], re.I)
         if not currentTag:
@@ -289,7 +239,57 @@ class Docu:
                         self.tags[tag].append(e)
         self.__dict__.update(self.tags)
 
+def noSubLists(lista):
+    for e in lista:
+        if type(e) is list:
+            return False
+    return True
+
+def findin(que, donde):
+    '''Encuentra QUE en DONDE
+    DONDE es una lista de strings
+    '''
+    ret = []
+    if not noSubLists(donde):
+        print("Error: DONDE no debe tener sublistas")
+        return 0
+    for i in range(len(donde)):
+        if not isinstance(donde[i], str): continue
+        if re.match('<%s[^a-z]' % que, donde[i], re.I):
+            ret.append([i, donde[i]])
+    return ret
+
+def atoms(htmltree):
+    ret = []
+    if noSubLists(htmltree): # htmltree es atom
+        return htmltree
+    for i in range(len(htmltree)):
+        iatomp = atoms(htmltree[i])
+        if iatomp:
+            ret.append(iatomp)
+        else:
+            print("13456")
+    return ret
         
+    return ret
+
+def flatten(lista):
+    '''
+    Combina todos los elementos de las sublistas del la list original
+    en una única lista de elementos atomicos. Esta funcion imita otra
+    hecha mas natulamente en elisp (ver tef).
+    '''
+    if type(lista) is not list:
+        return [lista]
+    if len(lista) is 0:
+        return []
+    if len(lista) is 1:
+        return flatten(lista[0])
+    elem = lista[0]
+    resto = lista[1:]
+    if type(elem) is list:
+        return flatten(elem) + flatten(resto)
+    return [elem] + flatten(resto)
 
 #def searchTree(tree):
 #    if type(tree) is not tree:
@@ -312,7 +312,6 @@ class Atom():
         if not match:
             espacio = re.match('^\s*$', arg)
             self.tipo =  'space' if espacio else 'text'
-            self.name = self.tipo
             return
         # Es Tag:
         if arg[1] == '/': self.tipo = 'etag'
@@ -324,9 +323,6 @@ class Atom():
         #self.rest = match.group(2)
         #match = re.search('([^ ]+)="(.+)"', arg, re.T)
         return
-##    def __repr__(self):
-##        return("Atom name: %s -- Atts: %s"\
-##               % (self.name ,str(self.__dict__.keys())))
 
 class Elem():
     def __init__(self, arg):
@@ -337,17 +333,14 @@ class Elem():
         
         for i in range(1, len(arg)-1):
             if type(arg[i]) is str:
-                atom = Atom(arg[i])
-                self.contenido.append(atom)
-                self.cont['untagged'].append(atom)
+                at = Atom(arg[i])
+                self.contenido.append(at)
+                self.cont['untagged'].append(el)
             elif type(arg[i]) is list:
-                elem = Elem(arg[i])
-                self.contenido.append(elem)
-                self.cont['tagged'].append(elem)
-##    def __repr__(self):
-##        return ("Elem tag: %s -- Atts: %s" % (self.stag.name,\
-##                                        str(self.__dict__.keys())))
-
+                el = Elem(arg[i])
+                self.contenido.append(el)
+                self.cont['tagged'].append(el)
+                
             
                 
         

@@ -5,6 +5,7 @@
 *.bbl
 *.blg
 *.log
+*.pyc
 a.out
 .*
 !.gitignore
