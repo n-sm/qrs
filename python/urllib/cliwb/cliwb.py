@@ -1,4 +1,9 @@
-import urllib.request, re
+"""Estas funciones estan destinadas servir para
+navegar por internet desde la linea de comando.
+"""
+
+import urllib.request
+import re
 
 def getHtml(url, isFile=False):
     '''getHtml: Obtiene una string de una url o archivo.'''
@@ -146,7 +151,7 @@ def agrupar(pag):
                 currentTag = ''
     return pares
     
-def parseHtml(htmlString):
+def listHtml(htmlString):
     d   = delimitar(htmlString)
     s   = substr(htmlString, d)
     dst = desplegarScriptTags(s)
@@ -154,23 +159,18 @@ def parseHtml(htmlString):
 
 
         
-def getpag(url):
+def treeHtml(url):
 
     g = getHtml(url)
     p = parseHtml(g)
-    a   = agrupar(p)
+    a = agrupar(p)
     return a
 
-#g = getpag('html1')
-
-def ld():
-    exec(open('parseHtml-w.py').read())
-    
 print('''
 
 testeo: 
 x = getHtml(URL)
-pagina = parseHtml(x)
+pagina = listHtml(x)
 
 en 'g' ejemplo.\nPAra loadear: ld()\n\n
 ''')

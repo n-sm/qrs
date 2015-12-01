@@ -25,3 +25,5 @@ separate by comma 1(awk)	awk -F,
 separate by comma 2(cut)	cut -d,
 sort by names length 	ls | perl -e 'print sort { length() <=> length() } <>'
 win's crlf to unix	tr -d '\015' <DOS-file >UNIX-file
+create TAG file	find . -name "*.[hc]" -exec etags --append {} \;
+get files modified last day	find . -ctime -1
