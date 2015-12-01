@@ -1,0 +1,7 @@
+* este es un ejemplo
+ sigue una lista:
+
+** lista
+*** primer item
+*** segundo item
+*** tercer item
