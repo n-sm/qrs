@@ -1,9 +1,25 @@
+# to reload:
+# importlib.reload(htmlinspW); from htmlinspW import *
+print('''
+
+testeo: 
+x = getHtml(URL)
+pagina = listHtml(x)
+O directamente:
+
+t = getTree(URL)
+
+''')
+
+
 """Estas funciones estan destinadas servir para
 navegar por internet desde la linea de comando.
 """
 
 import urllib.request
 import re
+import sys
+sys.setrecursionlimit(1500)
 
 def flatten(lista):
     '''
@@ -29,7 +45,7 @@ def noSubLists(lista):
             return False
     return True
 
-def findtagin(que, donde):
+def findtaginArr(que, donde):
     '''Encuentra QUE en DONDE
     DONDE es una lista de strings
     '''
@@ -42,6 +58,54 @@ def findtagin(que, donde):
         if re.match('<%s[^a-z]' % que, donde[i], re.I):
             ret.append([i, donde[i]])
     return ret
+
+def findtag(que, donde):
+    # Asumo que donde es list:
+    if type(donde) is str:
+        print("DONDE es STR!!")
+        return []
+    if len(donde) == 0: return []
+    car = donde[0]
+    if type(car) is str:
+        if re.match('<%s[^a-z]' % que, car, re.I):
+            return [donde]
+        else:
+            #if noSubLists(donde):
+            #    return []
+            cdr = donde[1:]
+            if noSubLists(cdr): return []
+            else: return findtag(que, donde[1:])
+    elif type(car) is list:
+        car = findtag(que, car)
+        return car + findtag(que, donde[1:])
+
+## La funcion findtag habria qeu hacerla iterativa en lugar de recursiva.
+## Otro dia.
+##def findtag11(que, donde):
+##    # Asumo que donde es list:
+##    ret = []
+##    for i in range(donde):
+##        if type(donde) is str:
+##            print("DONDE es STR!!")
+##            return []
+##        if len(donde) == 0: return []
+##        
+##        elem = donde[i]
+##        if type(elem) is str:
+##            if re.match('<%s[^a-z]' % que, car, re.I):
+##                ret.append(donde)
+##            else:
+##                cdr = donde[1:]
+##                if type(cdr) is list:
+##                    return findtag(que, donde[1:])
+##                else: return []
+##        elif type(car) is list:
+##            car = findtag(que, car)
+##            return car + findtag(que, donde[1:]) 
+       
+        
+
+
 
 ##def atoms(htmltree):
 ##    ret = []
@@ -408,19 +472,9 @@ def treeHtml(lista):
     a = agrupar(lista)
     return a
 
-print('''
 
-testeo: 
-x = getHtml(URL)
-pagina = listHtml(x)
-
-''')
-
-## cada lista devuelta por parseHtml() tiene:
-## elementos atomicos tales como whitespace
-## otros elementos
-
-
-    
-# to reload:
-#importlib.reload(MODULE)
+def getTree(url):
+    x=getHtml(url)
+    l=listHtml(x)
+    t=treeHtml(l)
+    return t

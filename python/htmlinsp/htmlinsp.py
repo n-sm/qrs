@@ -1,9 +1,17 @@
+# to reload:
+# importlib.reload(htmlinspW); from htmlinspW import *
+
+print('testeo: x = getHtml(URL)\npagina = listHtml(x)\nO directamente:\n\nt = getTree(URL)\n')
+
+
 """Estas funciones estan destinadas servir para
 navegar por internet desde la linea de comando.
 """
 
 import urllib.request
 import re
+import sys
+sys.setrecursionlimit(1500)
 
 def flatten(lista):
     '''
@@ -22,15 +30,16 @@ def flatten(lista):
     if type(elem) is list:
         return flatten(elem) + flatten(resto)
     return [elem] + flatten(resto)
+
 def noSubLists(lista):
     for e in lista:
         if type(e) is list:
             return False
     return True
 
-def findin(que, donde):
-    '''Encuentra QUE en DONDE
-    DONDE es una lista de strings
+def findtagArr(que, donde):
+    '''Encuentra QUE en DONDE DONDE es una lista de strings pero 
+    sin sublistas (por eso Arr).
     '''
     ret = []
     if not noSubLists(donde):
@@ -39,20 +48,68 @@ def findin(que, donde):
     for i in range(len(donde)):
         if not isinstance(donde[i], str): continue
         if re.match('<%s[^a-z]' % que, donde[i], re.I):
-            ret.append([i, donde[i]])
+            ret.append(donde[i])
     return ret
 
-def atoms(htmltree):
-    ret = []
-    if noSubLists(htmltree): # htmltree es atom
-        return htmltree
-    for i in range(len(htmltree)):
-        iatomp = atoms(htmltree[i])
-        if iatomp:
-            ret.append(iatomp)
+def findtag(que, donde):
+    # Asumo que donde es list:
+    if type(donde) is str:
+        print("DONDE es STR!!")
+        return []
+    if len(donde) == 0: return []
+    car = donde[0]
+    if type(car) is str:
+        if re.match('<%s[^a-z]' % que, car, re.I):
+            return [donde]
         else:
-            print("13456")
-    return ret
+            #if noSubLists(donde):
+            #    return []
+            cdr = donde[1:]
+            if noSubLists(cdr): return []
+            else: return findtag(que, donde[1:])
+    elif type(car) is list:
+        car = findtag(que, car)
+        return car + findtag(que, donde[1:])
+
+## La funcion findtag habria qeu hacerla iterativa en lugar de recursiva.
+## Otro dia.
+##def findtag11(que, donde):
+##    # Asumo que donde es list:
+##    ret = []
+##    for i in range(donde):
+##        if type(donde) is str:
+##            print("DONDE es STR!!")
+##            return []
+##        if len(donde) == 0: return []
+##        
+##        elem = donde[i]
+##        if type(elem) is str:
+##            if re.match('<%s[^a-z]' % que, car, re.I):
+##                ret.append(donde)
+##            else:
+##                cdr = donde[1:]
+##                if type(cdr) is list:
+##                    return findtag(que, donde[1:])
+##                else: return []
+##        elif type(car) is list:
+##            car = findtag(que, car)
+##            return car + findtag(que, donde[1:]) 
+       
+        
+
+
+
+##def atoms(htmltree):
+##    ret = []
+##    if noSubLists(htmltree): # htmltree es atom
+##        return htmltree
+##    for i in range(len(htmltree)):
+##        iatomp = atoms(htmltree[i])
+##        if iatomp:
+##            ret.append(iatomp)
+##        else:
+##            print("13456")
+##    return ret
 
 def getHtml(url, isFile=False):
     '''getHtml: Obtiene una string de una url o archivo.'''
@@ -141,7 +198,7 @@ def delimitar(html):
                 # agrego bordes de elemento a la lista.
                 pares.append([desde, hasta])
                 desde = i + 1
-
+ 
     if pares and pares[0]: pares[0][0] = 0
     return pares
 
@@ -188,8 +245,8 @@ def agrupar(pag):
     if type(pag) is str: print("error!, no llamar con str como arg!")
     desde = 0;
     pares = []; # pares?? que quise decir?
-    currentTag = '';
-    ctr = 0 # es necesario??
+    currentTag = ''
+    ctr = 0 
     for i in range(len(pag)):
         match = re.match('<([^! >]+)', pag[i], re.I)
         if not currentTag:
@@ -311,6 +368,7 @@ class Atom():
         if not match:
             espacio = re.match('^\s*$', arg)
             self.tipo =  'space' if espacio else 'text'
+            self.name = self.tipo
             return
         # Es Tag:
         if arg[1] == '/': self.tipo = 'etag'
@@ -322,6 +380,9 @@ class Atom():
         #self.rest = match.group(2)
         #match = re.search('([^ ]+)="(.+)"', arg, re.T)
         return
+##    def __repr__(self):
+##        return("Atom name: %s -- Atts: %s"\
+##               % (self.name ,str(self.__dict__.keys())))
 
 class Elem():
     def __init__(self, arg):
@@ -332,14 +393,17 @@ class Elem():
         
         for i in range(1, len(arg)-1):
             if type(arg[i]) is str:
-                at = Atom(arg[i])
-                self.contenido.append(at)
-                self.cont['untagged'].append(el)
+                atom = Atom(arg[i])
+                self.contenido.append(atom)
+                self.cont['untagged'].append(atom)
             elif type(arg[i]) is list:
-                el = Elem(arg[i])
-                self.contenido.append(el)
-                self.cont['tagged'].append(el)
-                
+                elem = Elem(arg[i])
+                self.contenido.append(elem)
+                self.cont['tagged'].append(elem)
+##    def __repr__(self):
+##        return ("Elem tag: %s -- Atts: %s" % (self.stag.name,\
+##                                        str(self.__dict__.keys())))
+
             
                 
         
@@ -400,19 +464,48 @@ def treeHtml(lista):
     a = agrupar(lista)
     return a
 
-print('''
 
-testeo: 
-x = getHtml(URL)
-pagina = listHtml(x)
-
-''')
-
-## cada lista devuelta por parseHtml() tiene:
-## elementos atomicos tales como whitespace
-## otros elementos
+def getTree(url):
+    x=getHtml(url)
+    l=listHtml(x)
+    t=treeHtml(l)
+    return t
 
 
-    
-# to reload:
-#importlib.reload(MODULE)
+##################################################################
+#### funciones para manejar listas de anchors.
+##################################################################
+
+def tieneContenido(lista, n=4):
+    '''El argumento LISTA es una lista con string para las tag y el\
+    contenido, pero puede tener sublistas (sol sub elementos).
+    n es el numero minimo de palabras que se considera como 'contenido'.
+    '''
+    if len(lista) < 3: return False
+    count = 0
+    for elem in lista[1:-1]:
+        if type(elem) is not str: continue
+        if len(re.findall(r'\b\w+\b', elem)) < n: continue
+        return True
+    return False
+
+def which(condicion, lista):
+    '''Esta función devuelve un subconjunto de una lista con aquellos
+    elementos que cumplen la condicion. La condicion es una función'''
+    ret = []
+    for e in lista:
+        if condicion(e): ret.append(e)
+    return ret
+
+def solotexto(arg):
+    '''Devuelve solo el texto, si es que hay.'''
+    tmp = []
+    for e in arg[1:-1]:
+        if type(e) is str: tmp.append(e)
+    return '|\n'.join(tmp)
+
+def grepl(rege, lista):
+    ret = []
+    for e in lista:
+        if re.search(rege,e, re.I): ret.append(e)
+    return ret
