@@ -1,0 +1,17 @@
+# -*- mode:csv -*-
+Conversion char	 How is printed
+c	as a char
+d; i	as a decimal int
+dl	long int
+u	as an unsigned decimal int
+o	as an unsigned octal int
+x; X	as an unsigned hexadecimal int
+e	as a floating-point number
+E	as a floating-point number
+f	as a floating-point number
+g	e or f; whichever is shorter
+G	E or f; whichever is shorter
+s	as string
+p	pointer to void...
+n	pointer to int...
+%	%% se impime '%'
