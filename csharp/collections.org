@@ -1,0 +1,27 @@
+* IColection Iterface
+
+_Sintax:
+[ComVisibleAttribute(true)]
+public interface ICollection : IEnumerable
+_
+_Properties:
+Count
+	Gets the number of elements contained in the ICollection.
+IsSyncronized
+	Gets a value indicating whether access to the ICollection is synchronized (thread safe).
+SyncRoot
+	Gets an object that can be used to synchronize access to the ICollection.
+
+_Methods:
+CopyTo(Array, Int32)	
+	Copies the elements of the ICollection to an Array, starting at a particular Array index.
+GetEnumerator()	
+	Returns an enumerator that iterates through a collection.(Inherited from IEnumerable.)
+
+Contains
+ToArray
+IsReadOnly
+// only if not read only:
+Add
+Remove
+Clear

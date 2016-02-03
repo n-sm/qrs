@@ -1,0 +1,56 @@
+Busca cadenas en los archivos.
+
+FINDSTR [/B] [/E] [/L] [/R] [/S] [/I] [/X] [/V] [/N] [/M] [/O] [/P]
+        [/F:archivo] [/C:cadena] [/G:archivo] [/D:lista_directorios] 
+        [/A:atrib_color] [/OFF[LINE]] cadenas [[unidad:][ruta]archivo[ ...]]
+
+  /B          Hace coincidir los modelos si est n al principio de la l¡nea.
+  /E          Hace coincidir los modelos si est n al final de la l¡nea.
+  /L          Literalmente usa cadenas de b£squeda.
+  /R          Usa cadenas de b£squeda como expresiones regulares.
+  /S          Busca archivos que coinciden en el directorio actual y en todos
+              los subdirectorios.
+  /I          Especifica que la b£squeda no distingue may£sculas de min£sculas.
+  /X          Imprime l¡neas que coinciden con exactitud.
+  /V          Solo imprime l¡neas que no contienen una correspondencia.
+  /N          Imprime el n£mero de la l¡nea antes de la l¡nea que coincide.
+  /M          Solo imprime el nombre de archivo si el archivo contiene una
+              correspondencia.
+  /O          Imprime un car cter de desplazamiento antes de las l¡neas que
+              coinciden.
+  /P          Omite archivos con caracteres que no son imprimibles
+  /OFF[LINE]  No omite archivos con el atributo "sin conexi¢n" establecido.
+  /A:atr      Especifica atributos de color con dos d¡gitos hexadecimales. 
+              Consulte "color /?"
+  /F:archivo  Lee la lista de archivos desde el archivo especificado
+              (/ significa consola).
+  /C:cadena   Usa una cadena especificada como una b£squeda de cadena
+              literal.
+  /G:archivo  Toma la b£squeda de archivos desde el archivo especificado
+              (/ significa consola).
+  /D:dir      Busca un signo de punto y coma de la lista delimitada de
+              directorios
+  cadenas     Texto que se va a buscar.
+  [unidad:][ruta]archivo
+              Especifica el archivo o archivos que se van a buscar.
+
+Usa espacios para separar m£ltiples cadenas de b£squeda a no ser que
+el argumento lleve un prefijo con /C.  Por ejemplo, 'FINDSTR "qu‚ tal" x.y'
+busca "qu‚" o "tal" en el archivo x.y.  'FINDSTR /C:"qu‚ tal" x.y' busca
+"qu‚ tal" en el archivo x.y.
+
+Expresi¢n regular de referencia r pida:
+  .        Comod¡n: cualquier car cter
+  *        Repetir: cero o m s ocurrencias de un car cter previo o de clase
+  ^        Posici¢n de l¡nea: comienzo de la l¡nea
+  $        Posici¢n de l¡nea: fin de l¡nea
+  [clase]  Clase de car cter: cualquier car cter en la serie
+  [^class] Clase inversa: cualquier car cter que no est‚ en la serie
+  [x-y]    Intervalo: cualquier car cter que est‚ dentro del intervalo
+           especificado
+  \x      Escape: uso literal de un metacar cter x
+  \<xyz   Posici¢n de palabra: principio de palabra
+  xyz\>   Posici¢n de palabra: fin de palabra
+
+Para obtener una informaci¢n m s completa sobre expresiones regulares de
+FINDSTR referirse al Comando de referencia Command en l¡nea.

@@ -1,0 +1,8 @@
+* eww en windows
+Para hacer funcionar eww en Windows hay que tener en Emacs\bin los
+archivos:
+
+iconv.dll
+libxml2.dll
+libXpm.dll
+zlib1.dll

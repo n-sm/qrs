@@ -1,0 +1,10 @@
+# -*- mode:csv -*-
+find file PATTERN dir and subdirs	dir PATTERN /b/s
+grep recursive	findstr /s "PATTERN" *
+cat FILE	type FILE
+for f in *c;do  cat $f; echo;done	for %f in (*.c) do type %f & echo.
+cat *.c text files in FILE	(for %f in (*.c) do @more +1 "%f" & echo.) > FILE
+list only dirs	dir /a:d
+copiar recursivamente directorio	xcopy SOURCE DEST /e
+compilar c o c++	vcvars32 & cl.exe FILE
+compilar c sharp	csc.exe
