@@ -21,7 +21,7 @@ class Linq3
 	var linqtest = todos.Where(x => subset.Contains(x));
 	var dt1 = DateTime.Now;
 	Console.WriteLine("Versión 1: ");
-	foreach (var n in linqtest) Console.Write("{0}, ", n);
+	//foreach (var n in linqtest) Console.Write("{0}, ", n);
 	var dt2 = DateTime.Now;
 	var delta1 = dt2 - dt1;
 	Console.WriteLine("\tTardó: {0}", delta1.ToString());
@@ -29,8 +29,7 @@ class Linq3
 
 	
 	// VERSION 2
-	linqtest = todos.Where(x => x == 1 || x == 2 || x == 4 || x == 5 ||
-				   x == 6 || x == 7 || x == 8);
+	linqtest = todos.Where(x => x >= 1 && x <= 8 );
 	dt1 = DateTime.Now;
 	Console.WriteLine("Versión 2: ");
 	foreach (var n in linqtest) Console.Write("{0}, ", n);

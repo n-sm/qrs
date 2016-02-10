@@ -111,3 +111,4 @@ set default fonts `consolas` size=11	set guifont=consolas:h11
 set colors (in .vimrc file)	colorscheme slate
 paste in echo area (vim command line)	C-r "
 replace in all buffer	:%s/FROM-STR/TO-STR/g
+set the 'mode' for editing certain kind of file	:set filetype=FILETYPE	

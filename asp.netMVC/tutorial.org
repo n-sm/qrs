@@ -1,0 +1,65 @@
+From: Pro ASP.NET MVC 4, Adam Freeman
+* chap. 7: SportsStore--A Real Application
+
+* 1: Create Visual Studio Solution
+File > New > Proyect
+ > Installed > Templates > Other Project Types > Visual Studio Solutions
+  > Blank Solution
+
+* 2: Create Proyects
+RightClick Solution in Solution explorer
+ > Add > New Project
+  > Class Library
+
+Delete Class1.cs
+
+RigthClick Solution in Solution explorer
+ > Add > New Project
+  > ASP.NET Web Application
+   > MVC
+
+* 3: Debbug:
+RightClick SportsStore.WebUI in Solution explorer
+ > Set as Startup Project
+
+* 4: Adding References
+
+RightClick SportsStore.WebUI in Solution Explorer
+ > Manage Nuget Packages
+   Browse :
+           Ninject
+           Moq
+
+RightClick SportsStore.WebUI in Solution Explorer
+ > Build Dependencies > Project Reference
+   > SportsStore.Domain OK
+
+RightClick SportsStore.WebUI in Solution Explorer
+ > Add > Reference
+(Esto no hizo falta "already...")
+* 5: Setting Up the DI Container
+Create new folder within the SportsStore.WebUI project called
+Infrastructure.
+
+Create a class called NinjectControllerFactory:
+RightClick in Infrastructure (SolExp)
+ > Add > New Item > C# Class
+
+with the content (p.165 [164]).
+
+* 6: Register Ninject Controller Factory
+In thy Application_Start methon of Global.asax.cs in SportsStore.WebUI
+modify as shown in  [165].
+(tuve que instalar una libreria)
+
+* 7: Starting the Domain Model
+Create the folder Entities inside the SportsStore.Domain project.
+Add a C# class called Product in it.
+
+content: [p.168]
+
+* 8: Creating Anstract Repository
+Create a top-level folder indise SportsStore.Domain folder called
+Abstract.
+
+Create interface  called IProductsRepository
