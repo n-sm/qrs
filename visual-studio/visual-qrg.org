@@ -1,0 +1,15 @@
+* subir los cambios.
+Boton derecho en Nivel Solución (a la derechaarriba)
+Opcion check-in
+* ver history (de 'git')
+Team Explorer - Home
+  Project
+    Source Control Explorer
+      click dcho en carpeta
+        view History
+
+* obtener ultima version
+Click derecho en "Solution '...'"
+Get Last Version (Recursive)
+* Linea de comandos
+Package Manager Console (abajo a la derecha)

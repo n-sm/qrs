@@ -1,0 +1,41 @@
+este es el output de dir /s csc.exe:
+
+* output
+ El volumen de la unidad C no tiene etiqueta.
+ El n£mero de serie del volumen es: 38CB-2346
+
+ Directorio de C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Stack 5\Packages\Microsoft.Net.Compilers.1.0.0\tools
+
+18/06/2015  08:19 p.m.            41.608 csc.exe
+               1 archivos         41.608 bytes
+
+ Directorio de C:\Program Files (x86)\Microsoft Web Tools\Packages\Microsoft.Net.Compilers.1.0.0\tools
+
+18/06/2015  08:19 p.m.            41.608 csc.exe
+               1 archivos         41.608 bytes
+
+ Directorio de C:\Program Files (x86)\MSBuild\12.0\Bin
+
+01/11/2014  12:46 a.m.         2.070.160 csc.exe
+               1 archivos      2.070.160 bytes
+
+ Directorio de C:\Program Files (x86)\MSBuild\12.0\Bin\amd64
+
+31/10/2014  08:44 p.m.         2.630.800 csc.exe
+               1 archivos      2.630.800 bytes
+
+ Directorio de C:\Program Files (x86)\MSBuild\14.0\Bin
+
+08/12/2015  06:47 p.m.            46.216 csc.exe
+               1 archivos         46.216 bytes
+
+ Directorio de C:\Program Files (x86)\MSBuild\14.0\Bin\amd64
+
+08/12/2015  06:39 p.m.            46.216 csc.exe
+               1 archivos         46.216 bytes
+
+     Total de archivos en la lista:
+               6 archivos      4.876.608 bytes
+               0 dirs  119.102.857.216 bytes libres
+
+* usar: C:\Program Files (x86)\MSBuild\12.0\Bin

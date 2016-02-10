@@ -11,5 +11,7 @@ mark all symbolic links	*@
 mark all executables	**
 invert marking	*t
 mark all	*s
-mark files matching regex	*%
+mark files matching regex (== %m)	*%
 delete marked filed	D
+mark files prompting regex	%m
+dont show marked lines	dired-do-kill-lines

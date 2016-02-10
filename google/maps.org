@@ -1,0 +1,3 @@
+
+https://maps.googleapis.com/maps/api/geocode/json?address=Toledo&region=es&key=KEY
+https://maps.googleapis.com/maps/api/geocode/json?address=BuenosAires&region=ar&key=KEY

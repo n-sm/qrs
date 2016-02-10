@@ -1,0 +1,76 @@
+https://msdn.microsoft.com/en-us/library/system.web.mvc.html.linkextensions.actionlink.aspx
+
+LinkExtensions.ActionLink Method
+
+
+* Overload List
+
+ActionLink(HtmlHelper, String, String)	
+ActionLink(HtmlHelper, String, String, Object)	
+ActionLink(HtmlHelper, String, String, Object, Object)	
+ActionLink(HtmlHelper, String, String, RouteValueDictionary)	
+ActionLink(HtmlHelper, String, String, RouteValueDictionary,
+           IDictionary<String>, Object>)
+ActionLink(HtmlHelper, String, String, String)	
+ActionLink(HtmlHelper, String, String, String, Object, Object)	
+ActionLink(HtmlHelper, String, String, String, RouteValueDictionary,
+           IDictionary<String, Object>)
+ActionLink(HtmlHelper, String, String, String, String, String, String,
+           Object, Object)	
+ActionLink(HtmlHelper, String, String, String, String, String, String,
+           RouteValueDictionary, IDictionary<String, Object>)
+
+
+* Syntax
+
+public static MvcHtmlString ActionLink(
+	this HtmlHelper htmlHelper,
+	string linkText,
+	string actionName
+)
+
+
+* Parameters
+htmlHelper
+ Type: System.Web.Mvc.HtmlHelper
+
+linkText
+ Type: System.String
+
+actionName
+ Type: System.String
+
+Return Value
+ Type: System.Web.Mvc.MvcHtmlString
+
+
+* stackoverflow
+http://stackoverflow.com/questions/200476/html-actionlink-method
+
+Html.ActionLink(article.Title, 
+                "Item",   // <-- ActionMethod
+                "Login",  // <-- Controller Name.
+                new { article.ArticleID }, // <-- Route arguments.
+                null  // <-- htmlArguments .. which are none. You need this value
+                      //     otherwise you call the WRONG method ...
+                      //     (refer to comments, below).
+                )
+
+* clasificacionInicial
+
+@Html.ActionLink("Internos",
+                 "Index",
+                 "Internos",
+                 new {},
+                 new { @class = "showLoading" })
+
+Syntax
+
+public static MvcHtmlString ActionLink(
+	this HtmlHelper htmlHelper,
+	string linkText,
+	string actionName,
+	string controllerName,
+	RouteValueDictionary routeValues,
+	IDictionary<string, object> htmlAttributes
+)

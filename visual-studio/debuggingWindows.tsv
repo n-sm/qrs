@@ -1,0 +1,30 @@
+# -*- mode:csv -*-
+# Debugger Windows
+# Visual Studio 2015
+# You can open most debugger windows while you are debugging your program. To see a list of debugger windows, set a breakpoint and start debugging. When you hit the breakpoint and execution stops, click Debug / Windows.
+# https://msdn.microsoft.com/en-us/library/mt599640.aspx
+Window	Hotkey	See Topic
+Breakpoints	CTRL+ALT+B	Using Breakpoints
+Exception Settings	CTRL+ALT+E	Managing Exceptions with the Debugger
+Output	CTRL+ALT+O	Output Window
+GPU Threads	-	How to: Use the GPU Threads Window
+Tasks	CTR:+SHIFT+D, K	Using the Tasks Window
+Parallel Stacks	CTR:+SHIFT+D, S	Using the Parallel Stacks Window
+Parallel Watch	CTR:+SHIFT+D, (1, 2, 3, 4)	Using the Parallel Stacks Window
+Watch	CTRL+ALT+W, (1, 2, 3, 4)	Watch and QuickWatch Windows
+QuickWatch	SHIFT+F9	Watch and QuickWatch Windows
+Auto	CTRL+ALT+V, A	Variable Windows
+Locals	CTRL+ALT+V, L	Variable Windows
+Immediate	CTRL+ALT+I	Immediate Window
+Python Debug Interactive	SHIFT+ALT+I	Getting Started with PTVS: Interactive Python
+JavaScript Console	CTRL+ALT+V, C	QuickStart: Debug JavaScript using the console
+DOM Explorer	CTRL+ALT+V, D	Debug layout using DOM Explorer
+Live Visual Tree	-	Inspect XAML properties while debugging
+Live Property Explorer	-	Inspect XAML properties while debugging
+Call Stacks	CTRL+ALT+C	How to: Use the Call Stack Window
+Threads	CTRL+ALT+H	How to: Use the Threads Window
+Modules	CTRL+ALT+U	How to: Use the Modules Window
+Processes	CTRL+ALT+Z	Debug Threads and Processes
+Memory	CTRL+ALT+M, (1, 2, 3, 4)	Memory Windows
+Disassembly	CTRL+ALT+D	How to: Use the Disassembly Window
+Registers	CTRL+ALT+G	How to: Use the Registers Window	
