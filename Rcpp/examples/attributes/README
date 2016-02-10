@@ -1,0 +1,24 @@
+## -*- mode:r -*-
+
+library(Rcpp)
+
+## Attributes se puede usar mediante sourceCpp. Ejemplo:
+
+sourceCpp("byte2bin.cpp")
+
+for (i in 1:32) byte2bin(i)
+
+## También puede usarse cppFunction. Por ejemplo así:
+cppFunction('
+void f() {
+std::cout << "Hello World!" << std::endl;
+}')
+
+
+cppFunction('
+void g() {
+int n;
+std::cin >> n;
+std::cout << "Hello World!" << std::endl;
+}')
+

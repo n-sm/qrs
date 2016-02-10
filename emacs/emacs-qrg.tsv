@@ -1,0 +1,2 @@
+# -*- mode:csv -*-
+create etags table  find . | grep  ".*\.\(h\|cc\)$" | xargs etags -f TAGS

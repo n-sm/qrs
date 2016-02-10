@@ -1,0 +1,374 @@
+* http://www.hermetic.ch/cfunlib/ast_amp2.htm
+
+C++ uses a type of variable called a "reference" variable (or simply a
+"reference") which is not available in C (although the same effect can
+be achieved using pointers).
+
+References, pointers and addresses are closely related
+concepts. Addresses are addresses in computer memory (typically the
+address in memory where the value of some variable is stored),
+e.g. (in hexadecimal) 0xAB32C2. Pointers are variables which hold
+addresses, and so "point to" memory locations (and thus to the values
+of variables). Conceptually, reference variables are basically
+pointers by another name (but may not be instantiated as such by the
+compiler).
+
+It is possible to declare a reference within a function, like other variables, e.g.
+
+void main(void)
+{
+int i;
+int& r = i;
+...
+}
+
+but this is pointless, since the use of the reference is equivalent to
+the use of the variable it references.
+
+References are designed to be used as parameters (arguments) to functions, e.g.
+
+#include <iostream.h>
+
+void f(int& r);
+
+void main(void)
+{
+  int i=3;
+
+  f(i);
+  cout << i;
+}
+
+void f(int& r)
+{
+  r = 2*r;
+}
+
+This program prints "6" (2*r doubles the value of the variable
+referenced by r, namely, i).
+
+We could do the same in C by declaring f() as void f(int *r), in which
+case r is a pointer to an int, then calling f() with argument &i
+(address-of i), and using de-referencing of r within f(), but clearly
+C++ provides a more elegant way of passing values to functions (by
+reference) and returning (perhaps multiple) values from functions
+(without use of a return statement). 
+
+* http://stackoverflow.com/questions/57483/what-are-the-differences-between-a-pointer-variable-and-a-reference-variable-in
+
+** PREGUNTA:What are the differences between a pointer variable and a reference variable in C++
+
+
+
+I know references are syntactic sugar, so code is easier to read and write.
+
+But what are the differences?
+
+Summary from answers and links below:
+
+    A pointer can be re-assigned any number of times while a reference
+    can not be re-seated after binding.
+    Pointers can point nowhere (NULL), whereas reference always refer
+    to an object.
+    You can't take the address of a reference like you can with pointers.
+    There's no "reference arithmetics" (but you can take the address
+    of an object pointed by a reference and do pointer arithmetics on
+    it as in &obj + 5).
+
+To clarify a misconception:
+
+    The C++ standard is very careful to avoid dictating how a compiler
+    must implement references, but every C++ compiler implements
+    references as pointers. That is, a declaration such as:
+
+    int &ri = i;
+
+    if it's not optimized away entirely, allocates the same amount of
+    storage as a pointer, and places the address of i into that
+    storage.
+
+So, a pointer and a reference both occupy the same amount of memory.
+
+As a general rule,
+
+    Use references in function parameters and return types to define
+    useful and self-documenting interfaces.
+    Use pointers to implement algorithms and data structures.
+
+Interesting read:
+
+    My alltime favorite C++ FQA lite.
+    References vs. Pointers.
+    An Introduction to References.
+    References and const.
+
+** res from Brian R. Bondy
+
+
+    A pointer can be re-assigned:
+
+    int x = 5;
+    int y = 6;
+    int *p;
+    p =  &x;
+    p = &y;
+    *p = 10;
+    assert(x == 5);
+    assert(y == 10);
+
+    A reference cannot, and must be assigned at initialization:
+
+    int x = 5;
+    int y = 6;
+    int &r = x;
+
+    A pointer has its own memory address and size on the stack (4
+    bytes on x86), whereas a reference shares the same memory address
+    (with the original variable) but also takes up some space on the
+    stack. Since a reference has the same address as the original
+    variable itself, it is safe to think of a reference as another
+    name for the same variable. Note: What a pointer points to can be
+    on the stack or heap. Ditto a reference. My claim in this
+    statement is not that a pointer must point to the stack. A pointer
+    is just a variable that holds a memory address. This variable is
+    on the stack. Since a reference has its own space on the stack,
+    and since the address is the same as the variable it
+    references. More on stack vs heap. This implies that there is a
+    real address of a reference that the compiler will not tell you.
+
+    int x = 0;
+    int &r = x;
+    int *p = &x;
+    int *p2 = &r;
+    assert(p == p2);
+
+    You can have pointers to pointers to pointers offering extra
+    levels of indirection. Whereas references only offer one level of
+    indirection.
+
+    int x = 0;
+    int y = 0;
+    int *p = &x;
+    int *q = &y;
+    int **pp = &p;
+    pp = &q;//*pp = q
+    **pp = 4;
+    assert(y == 4);
+    assert(x == 0);
+
+    Pointer can be assigned NULL directly, whereas reference
+    cannot. If you try hard enough, and you know how, you can make the
+    address of a reference NULL. Likewise, if you try hard enough you
+    can have a reference to a pointer, and then that reference can
+    contain NULL.
+
+    int *p = NULL;
+    int &r = NULL; <--- compiling error
+
+    Pointers can iterate over an array, you can use ++ to go to the
+    next item that a pointer is pointing to, and + 4 to go to the 5th
+    element. This is no matter what size the object is that the
+    pointer points to.
+
+    A pointer needs to be dereferenced with * to access the memory
+    location it points to, whereas a reference can be used directly. A
+    pointer to a class/struct uses -> to access it's members whereas a
+    reference uses a ..
+
+    A pointer is a variable that holds a memory address. Regardless of
+    how a reference is implemented, a reference has the same memory
+    address as the item it references.
+
+    References cannot be stuffed into an array, whereas pointers can
+    be (Mentioned by user @litb)
+
+    Const references can be bound to temporaries. Pointers cannot (not
+    without some indirection):
+
+    const int &x = int(12); //legal C++
+    int *y = &int(12); //illegal to dereference a temporary.
+
+    This makes const& safer for use in argument lists and so forth.
+
+** ref from Christoph
+What's a C++ reference (for C programmers)
+A reference can be thought of as a constant pointer (not to be
+confused with a pointer to a constant value!) with automatic
+indirection, ie the compiler will apply the * operator for you.
+
+All references must be initialized with a non-null value or
+compilation will fail. It's neither possible to get the address of a
+reference - the address operator will return the address of the
+referenced value instead - nor is it possible to do arithmetics on
+references.
+
+C programmers might dislike C++ references as it will no longer be
+obvious when indirection happens or if an argument gets passed by
+value or by pointer without looking at function signatures.
+
+C++ programmers might dislike using pointers as they are considered
+unsafe - although references aren't really any safer than constant
+pointers except in the most trivial cases - lack the convenience of
+automatic indirection and carry a different semantic connotation.
+
+Consider the following statement from the C++ FAQ:
+
+    Even though a reference is often implemented using an address in
+    the underlying assembly language, please do not think of a
+    reference as a funny looking pointer to an object. A reference is
+    the object. It is not a pointer to the object, nor a copy of the
+    object. It is the object.
+
+But if a reference really were the object, how could there be dangling
+references? In unmanaged languages, it's impossible for references to
+be any 'safer' than pointers - there generally just isn't a way to
+reliably alias values across scope boundaries!
+Why I consider C++ references useful
+
+Coming from a C background, C++ references may look like a somewhat
+silly concept, but one should still use them instead of pointers where
+possible: Automatic indirection is convenient, and references become
+especially useful when dealing with RAII - but not because of any
+perceived safety advantage, but rather because they make writing
+idiomatic code less awkward.
+
+RAII is one of the central concepts of C++, but it interacts
+non-trivially with copying semantics. Passing objects by reference
+avoids these issues as no copying is involved. If references were not
+present in the language, you'd have to use pointers instead, which are
+more cumbersome to use, thus violating the language design principle
+that the best-practice solution should be easier than the
+alternatives.
+
+* http://www.cprogramming.com/tutorial/references.html
+Basic Syntax
+Declaring a variable as a reference rather than a normal variable
+simply entails appending an ampersand to the type name, such as this
+"reference to an int"
+
+int& foo = ....;
+
+Did you notice the "...."? (Probably, right? After all, it's 25% of
+the example.) When a reference is created, you must tell it which
+variable it will become an alias for. After you create the reference,
+whenever you use the variable, you can just treat it as though it were
+a regular integer variable. But when you create it, you must
+initialize it with another variable, whose address it will keep around
+behind the scenes to allow you to use it to modify that variable.
+
+In a way, this is similar to having a pointer that always points to
+the same thing. One key difference is that references do not require
+dereferencing in the same way that pointers do; you just treat them as
+normal variables. A second difference is that when you create a
+reference to a variable, you need not do anything special to get the
+memory address. The compiler figures this out for you:
+
+int x;
+int& foo = x;
+
+// foo is now a reference to x so this sets x to 56
+foo = 56;
+std::cout << x <<std::endl;
+
+Functions taking References Parameters
+Here's a simple example of setting up a function to take an argument
+"by reference", implementing the swap function:
+
+void swap (int& first, int& second)
+{
+        int temp = first;
+        first = second;
+        second = temp;
+}
+
+Both arguments are passed "by reference"--the caller of the function
+need not even be aware of it:
+
+int a = 2;
+int b = 3;
+swap( a, b );
+
+After the swap, a will be 3 and b will be 2. The fact that references
+require no extra work can lead to confusion at times when variables
+magically change after being passed into a function. Bjarne Stroustrup
+suggests that for arguments that the function is expected to change,
+using a pointer instead of a reference helps make this clear--pointers
+require that the caller explicitly pass in the memory address.
+Efficiency Gains
+You might wonder why you would ever want to use references other than
+to change the value--well, the answer is that passing by reference
+means that the variable need not be copied, yet it can still be passed
+into a function without doing anything special. This gives you the
+most bang for your buck when working with classes. If you want to pass
+a class into a function, it almost always makes sense for the function
+to take the class "by reference"--but generally, you want to use a
+const reference.
+
+This might look something like this:
+
+int workWithClass( const MyClass& a_class_object )
+{
+}
+
+The great thing about using const references is that you can be sure
+that the variable isn't modified, so you can immediately change all of
+your functions that take large objects--no need to make a copy
+anymore. And even you were conscientious and used pointers to pass
+around large objects, using references in the future can still make
+your code that much cleaner.
+References and Safety
+You're probably noticing a similarity to pointers here--and that's
+true, references are often implemented by the compiler writers as
+pointers. A major difference is that references are "safer". In
+general, references should always be valid because you must always
+initialize a reference. This means that barring some bizarre
+circumstances (see below), you can be certain that using a reference
+is just like using a plain old non-reference variable. You don't need
+to check to make sure that a reference isn't pointing to NULL, and you
+won't get bitten by an uninitialized reference that you forgot to
+allocate memory for.
+References and Safety: the Exceptions
+For the sake of full disclosure, it is possible to have an invalid
+references in one minor and one major case.
+
+First, if you explicitly assign a reference to a dereferenced NULL
+pointer, your reference will be invalid:
+
+int *x = 0;
+int& y = *x;
+
+Now when you try to use the reference, you'll get a segmentation fault
+since you're trying to access invalid memory (well, on most systems
+anyhow).
+
+By the way, this actually does work: since you're not actually
+accessing the value stored in *x when you make the reference to it,
+this will compile just fine.
+
+A more pressing issue is that it is possible to "invalidate" a
+reference in the sense that it is possible that a reference to a block
+of memory can live on past the time when the memory is valid. The most
+immediate example is that you shouldn't return a reference to local
+memory:
+
+int& getLocalVariable()
+{
+        int x;
+        return x;
+}
+
+Once the stack frame containing the memory for getLocalVariable is
+taken off the stack, then the reference returned by this function will
+no longer be valid. Oops.
+References and Dynamically Allocated Memory
+Finally, beware of references to dynamically allocated memory. One
+problem is that when you use references, it's not clear that the
+memory backing the reference needs to be deallocated--it usually
+doesn't, after all. This can be fine when you're passing data into a
+function since the function would generally not be responsible for
+deallocating the memory anyway.
+
+On the other hand, if you return a reference to dynamically allocated
+memory, then you're asking for trouble since it won't be clear that
+there is something that needs to be cleaned up by the function
+caller. 

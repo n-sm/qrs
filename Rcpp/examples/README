@@ -1,0 +1,5 @@
+## -*- mode:r: -*-
+
+## Attributes e inline son dos formas de usar Rcpp en una sesión de R.
+
+vignette("Rcpp-package")

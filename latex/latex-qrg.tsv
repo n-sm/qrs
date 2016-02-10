@@ -1,3 +1,4 @@
+# -*- mode:csv -*-
 ___DESCRIPCIÓN___	___COMANDO_1__ 	 ___COMANDO_2___
 
 fecha	\date
@@ -16,3 +17,4 @@ cross referencing	\label{MiLabel} THEN \ref{MiLabel}
 newcommand	\newcommand{cmd}[args]{def}
 renewcommand	\renewcommand{cmd}[args]{def}
 instalar	texlive, texlive-lang-spanish, texlive-latex-extra
+source code listing	\lstinputlisting

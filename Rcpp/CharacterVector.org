@@ -1,0 +1,9 @@
+`CharacterVector' is a typedef for `Vector<STRSXP>' defined in
+the file Rcpp/inst/include/Rcpp/vector/instantiation.h
+while STRSXP is just an int (16) defined in Rinternals.h. `StringVector'
+is another typedef for `Vector<STRSXP>' in `instantiation.h'.
+
+The Vector class template is defined in
+Rcpp/inst/include/Rcpp/vector/Vector.h
+
+

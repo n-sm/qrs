@@ -1,0 +1,11 @@
+-*- mode:csv -*-
+___  COMANDO   ___   ,   ___DESCRIPCION___ 
+
+deshabilitar shift-select en org	(setq org-support-shift-select nil)	
+tabldar referecias de filas y columnas	C-c }
+insertar una columna	M-S-<right>
+kill column	M-S-<left>
+move column
+M-<rigth> | M-<left>
+update table (recalculate row)	C-c *
+update table (recalculate table)	C-uc *

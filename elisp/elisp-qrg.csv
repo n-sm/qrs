@@ -1,3 +1,0 @@
-list to string, (format "%s" mi_lista)
-write string in file, (write-region  "string" nil "archivo.txt" 'append)
-crear lista vacia, (make-list n nil)

@@ -1,0 +1,2 @@
+#-*- mode:csv -*-
+convertir un pdf	gs -sPAPERSIZE=a4 -sDEVICE=pnmraw -r300 -dNOPAUSE -dBATCH -sOutputFile=- -q filename.ps

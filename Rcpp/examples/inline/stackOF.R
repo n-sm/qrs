@@ -1,5 +1,5 @@
 # http://stackoverflow.com/questions/31617804/rccp-quicksort-error-in-r
-
+library(inline)
 incl <- 'int quicksort(int xx[], int left, int right) {
 
 int i = left;

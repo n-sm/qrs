@@ -1,3 +1,4 @@
+library(inline)
 src <- '
 Rcpp::NumericVector xa(x);
 return xa;'
@@ -38,7 +39,7 @@ add <- cfunction(c(a = "integer", b = "integer"), "
 
   return result;
 ")
-#====
+##====
 
 src <- '
 Rcpp::NumericVector xa(a);
@@ -53,6 +54,7 @@ return xab;
 '
 fun <- cxxfunction(signature(a = "numeric", b = "numeric"),src, plugin = "Rcpp")
 
-R> fun(1:3, 1:4)
-[1] 1 4 10 16 17 12
-With one assignment to the R
+##R
+##> fun(1:3, 1:4)
+##[1] 1 4 10 16 17 12
+##With one assignment to the R

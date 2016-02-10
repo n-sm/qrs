@@ -1,0 +1,23 @@
+## -*- mode:r -*-
+## vignette("Rcpp-introduction"):
+
+## 2.2.1   Using inline The inline package (Sklyar, Murdoch, Smith,
+## Eddelbuettel, and François, 2015) provides the functions cfunction
+## and cxxfunction. Below is a simple function that uses accumulate
+## from the (C++) Standard Template Library to sum the elements of a
+## numeric vector.
+
+fx <- cxxfunction(signature(x = "numeric"),
+                  'NumericVector xx(x);
+                    return wrap(std::accumulate(xx.begin(), xx.end(), 0.0));',
+                  plugin = "Rcpp")
+res <- fx(seq(1, 10, by=0.5))
+res
+## [1] 104.5
+
+## One might want to use code that lives in a C++ file instead of
+## writing the code in a character string in R. This is easily
+## achieved by using readLines:
+
+fx <- cxxfunction(signature(), paste(readLines("myfile.cpp"), collapse="\n"),
+                  plugin = "Rcpp")

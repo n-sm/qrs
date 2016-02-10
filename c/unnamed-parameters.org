@@ -1,0 +1,44 @@
+* http://stackoverflow.com/questions/12186698/on-unnamed-parameters-to-functions-c
+
+** PREGUNTA: On unnamed parameters to functions, C++
+
+The following is a perfectly legal C++ code
+
+void foo (int) {
+    cout << "Yo!" << endl;
+}
+
+int main (int argc, char const *argv[]) {
+    foo(5); 
+    return 0;
+}
+
+I wonder, if there a value to ever leave unnamed parameters in
+functions, given the fact that they can't be referenced from within
+the function.
+
+
+Why is this legal to begin with?
+
+
+** res1
+
+
+Yes, this is legal. This is useful for implementations of virtuals
+from the base class in implementations that do not intend on using the
+corresponding parameter: you must declare the parameter to match the
+signature of the virtual function in the base class, but you are not
+planning to use it, so you do not specify the name.
+
+
+The other common case is when you provide a callback to some library,
+and you must conform to a signature that the library has established
+(thanks, Aasmund Eldhuset for bringing this up).
+
+
+There is also a special case for defining your own post-increment and
+post-decrement operators: they must have a signature with an int
+parameter, but that parameter is always unused. This convention is
+bordering on a hack in the language design, though.
+
+

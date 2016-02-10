@@ -1,5 +1,0 @@
-   ___  COMANDO   ___   ,   ___DESCRIPCION___ 
-
-(setq org-support-shift-select nil),deshabilitar shift-select en org
-C-c },tabldar referecias de frilas y columnas
-
