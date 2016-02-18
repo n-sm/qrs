@@ -1,8 +1,15 @@
 # -*- mode:csv -*-
-run sqlite script from sqlite	sqlite> base.db < script.sql;
+run sqlite script from sqlite	sqlite> .read script.sql;
 run sqlite script from bash	$ sqlite3 auction.db < create.sql
 show tables	.tables
 get number or rows in table	SELECT Count(*) FROM tblName
 create table	CREATE TABLE nombre_tabla(var1 TYPE, var2 TYPE, ...)
 unixepoch int to datetime	datetime(10800, 'unixepoch', 'localtime')
 importar csv	
+list tables	.tables
+filas	select * from TABLA;
+info de tabla	.schema TABLA
+ver encabezados / headers	.headers on/off
+delete row	DELETE FROM COMPANY WHERE ID = 7;
+types:	NULL, INTEGER, REAL, TEXT, BLOB
+insert syntax	INSERT INTO <miTabla> (col1, col2, ...) VALUES (val1, val2,...);
