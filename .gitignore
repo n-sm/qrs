@@ -10,3 +10,4 @@ a.out
 .*
 !.gitignore
 *.npush
+*.exe

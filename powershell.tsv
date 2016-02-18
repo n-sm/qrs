@@ -3,3 +3,4 @@ wc	Measure-Object -l -Word -c
 grep	Select-String -CaseSensitive
 grep recursive	ls -r | sls -pattern PATTERN
 enable execution of sripts	set-executionpolicy remotesigned
+get computername	$env:computername

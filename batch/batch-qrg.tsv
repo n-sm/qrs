@@ -8,3 +8,9 @@ list only dirs	dir /a:d
 copiar recursivamente directorio	xcopy SOURCE DEST /e
 compilar c o c++	vcvars32 & cl.exe FILE
 compilar c sharp	csc.exe
+info del usuario	net user USER_NAME /domain
+obtener lista de usuarios	net user
+obtener lista de usuarios 2	WMIC USERACCOUNT LIST BRIEF
+get localhost	ipconfig /all | findstr host
+get ip	ipconfig | findstr IPv4
+set path	
