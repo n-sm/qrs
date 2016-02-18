@@ -1,0 +1,7 @@
+* (Use R! 64) Dirk Eddelbuettel (auth.)-Seamless R and C++ Integration with Rcpp
+[p.81]
+* R Language
+Section 2.1.10
+
+* R Internals
+Section 1.2
