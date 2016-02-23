@@ -7,3 +7,5 @@ http://www.codeproject.com/Questions/452256/Web-based-Development-with-R-Program
 http://www.jenunderwood.com/2015/01/12/part-1-integrating-r/
 http://www.r-statistics.com/2009/12/a-web-application-of-rs-ggplot2/
 http://www.r-statistics.com/2010/02/r-web-application-hello-world-using-rapache-7min-video-tutorial/
+http://rapache.net/manual.html
+https://groups.google.com/forum/?hl=en#!forum/rapache
