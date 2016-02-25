@@ -1,0 +1,7 @@
+library(eRm)
+ll1 <- lltmdat1 # 100 (persons) x 30 (items) matrix
+
+# Estimation of item parameters
+
+
+resrm <- RM(ll1)

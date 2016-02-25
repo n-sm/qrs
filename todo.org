@@ -1,3 +1,16 @@
 * tutorial de mutt
   http://www.andrews-corner.org/mutt.html
  http://superuser.com/questions/384499/how-is-mail-actually-sent-when-i-use-the-linux-mail-command
+
+* R web Development
+http://www.codeproject.com/Questions/452256/Web-based-Development-with-R-Programming-Language
+http://www.jenunderwood.com/2015/01/12/part-1-integrating-r/
+http://www.r-statistics.com/2009/12/a-web-application-of-rs-ggplot2/
+http://www.r-statistics.com/2010/02/r-web-application-hello-world-using-rapache-7min-video-tutorial/
+http://rapache.net/manual.html
+https://groups.google.com/forum/?hl=en#!forum/rapache
+
+* kivy (python module) y games 
+
+https://www.reddit.com/r/gamedev/comments/21r8xa/my_experience_on_using_pythonkivy_for_game/
+https://github.com/oddbitdev/hexTap

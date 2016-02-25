@@ -13,3 +13,6 @@ Click derecho en "Solution '...'"
 Get Last Version (Recursive)
 * Linea de comandos
 Package Manager Console (abajo a la derecha)
+* Conectar con repositorios:
+Desde la pestanea de Team Explorer (a la derecha) conectar con 
+tfs.spf.ar

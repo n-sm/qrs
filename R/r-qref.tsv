@@ -12,3 +12,4 @@ hallar raices de polinomio	polyroot(c(a0, a1, a2, ...))
 reemplazar NAs de vector	x[is.na(x)] <- REEMPL
 ordenar vector	v[order(v)]
 ordenr dataframe por columna 1	d[order(d[,1]),]
+change max width of print output    options(wisth=90)
