@@ -1,0 +1,13 @@
+https://msdn.microsoft.com/es-ar/data/jj193542.aspx
+Cree la base en SQL Server Express, llamada 
+MvcMusicStore.Models.MusicStoreDB
+
+connection string:
+<add 
+   name="MusicStoreDB" 
+   connectionString="Data Source=SH3\SQLEXPRESS; Initial
+Catalog=MvcMusicStore.Models.MusicStoreDB; Integrated Security=True;
+MultipleActiveResultSets=True"
+   providerName="System.Data.SqlClient" 
+/>
+
