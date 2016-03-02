@@ -1,0 +1,9 @@
+# -*- mode:csv -*-
+derivar	x	diff(x)
+del(x)	significa derivada de x, donde x no esta definida (es variable).
+pi	%pi
+e	%e
+ejecutar lisp	:lisp (- 2 3);
+open lisp session	to_lisp();
+return from lisp session	(to-maxima)
+define k as a constant	declare(k, constant);

@@ -13,3 +13,5 @@ reemplazar NAs de vector	x[is.na(x)] <- REEMPL
 ordenar vector	v[order(v)]
 ordenr dataframe por columna 1	d[order(d[,1]),]
 change max width of print output    options(wisth=90)
+unlock binding  unlockBinding("VAR_NAME", ENVIROMEN)
+assign in enviroment e  assign(NAME,VALUE,envir=e)
