@@ -1,0 +1,32 @@
+kill(f);
+df(x) := (f(x + h) - f(x)) / h;
+
+/* defino f(x) */
+
+f(x) := x ** 3;
+
+/* Calculo el limite */
+
+limit( df(x), h, 0 );
+
+
+/* Otra forma */
+
+limit(lambda([foo], (foo(x + h) - foo(x)))(g) / h, h ,0);
+
+
+/* O también */
+
+D(fu) := ( fu(x + h) - fu(x) ) / h;
+
+D(g);
+
+
+/* finalmente :*/
+
+D(fu) := limit(((fu(x + h) - fu(x) ) / h), h, 0);
+
+/* Lo usamos: */
+
+D(g);
+D(lambda([x], log(x)));

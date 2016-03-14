@@ -1,0 +1,4 @@
+* modelo
+** 1. Crear las clases que componen el modelo
+** 2. Crear el contexto, a saber la clase que hereda de DbContext
+Crear la clase en /Models

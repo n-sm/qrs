@@ -1,0 +1,4 @@
+# -*- mode:csv -*-
+get current dir unix	system("pwd");
+get current dir windows	system("echo %cd%");
+read maxima expressions from file	batch("filename");

@@ -1,0 +1,49 @@
+Para hacer un foreign key se crean dos atributos en la clase del View
+Model.
+* ejemplo
+** En ViewModel
+ [Table("Medicamentos")]
+ public class Medicamento
+ {
+     [Key]
+     public int Id { get; set; }
+
+     [Column("Composicion")]
+     public string Composicion { get; set; }
+
+     # tengo dos atributos, uno con el id al que referencia,
+     # otro con un objeto de ese tipo. Luego, para acceder 
+     # puede usar cualquiera de los dos.
+     [ForeignKey("FormaFarmaceutica")]
+     public int FormaFarmaceuticaId { get; set; }
+     public virtual FormaFarmaceutica FormaFarmaceutica { get; set; }
+ }
+** En Controller
+ # Este metodo es llamado en AgregarMedicamento
+ private void Initialize()
+ {
+     ViewBag.ListaFormasFarmaceuticas = db.FormasFarmaceuticas.OrderBy(f=>f.Descripcion).ToList();
+ }
+
+ public ActionResult AgregarMedicamento()
+ {
+     Initialize();
+
+     return View(new Medicamento());
+ }
+
+ [HttpPost]
+ [ValidateAntiForgeryToken]
+ public ActionResult AgregarMedicamento([Bind(Include = "Id,Composicion,FormaFarmaceuticaId")] Medicamento medicamento)
+ {
+     if (ModelState.IsValid)
+     {
+         db.Medicamentos.Add(medicamento);
+         db.SaveChanges();
+         return RedirectToAction("Index");
+     }
+
+     Initialize();
+     return View(medicamento);
+ }
+
