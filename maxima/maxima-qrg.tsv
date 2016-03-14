@@ -2,3 +2,11 @@
 get current dir unix	system("pwd");
 get current dir windows	system("echo %cd%");
 read maxima expressions from file	batch("filename");
+derivar	x	diff(x)
+del(x)	significa derivada de x, donde x no esta definida (es variable).
+pi	%pi
+e	%e
+ejecutar lisp	:lisp (- 2 3);
+open lisp session	to_lisp();
+return from lisp session	(to-maxima)
+define k as a constant	declare(k, constant);

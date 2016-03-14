@@ -1,0 +1,43 @@
+* tabla derivadas
+Sean a y k constantes, x una variable, u y v funciones.
+
+| f(x)     | f'(x)            |
+|----------+------------------|
+| k        | 0                |
+| x        | 1                |
+| x^k      | k * x^(k-1)      |
+| log_a(x) | log_a(e) * (1/x) |
+|          |                  |
+
+* derivada de la función log_a: log_a'(x)
+(usamos la sintaxis de maxima)
+declare(a, constant);
+log_a(x) := log(x) / log(a);
+diff(log_a(x)) == limit((log_a(x+h)-log_a(x)) / h)
+
+sea f(x, h) := (log_a(x+h)-log_a(x)) / h
+
+f(x, h) == (log_a(x+h) - log_a(x)) * (x/h) * (1/x)
+     == log_a( (1+(h/x))^x/h) * (1/x)
+
+limit(f(x, h), h, 0) == log_a(%e) * (1/x)
+ puesto que hacemos h/x == alpha y nos queda:
+
+(1 + alpha)^(1/alpha) --> %e si alpha --> 0
+* regla de la cadena:
+
+(g o f)'(x)   ==   g'(f(x)) * f'(x)
+* derivada de la exponencial: a^x
+
+sea y := a^x
+
+[1] ln y == x ln a
+
+[2] (ln y)' == (1/y) * y'    # regla de la cadena
+
+[3] (x ln a)' == x' ln a     # ln' a == 0
+
+[4] y' == y * x' ln a        # uso [2] y [3]
+
+[5] (a^x)' == a^x  x' ln a   # [1]
+
