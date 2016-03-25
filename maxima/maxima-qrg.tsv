@@ -2,7 +2,7 @@
 get current dir unix	system("pwd");
 get current dir windows	system("echo %cd%");
 read maxima expressions from file	batch("filename");
-derivar	x	diff(x)
+derivar x	diff(x)
 del(x)	significa derivada de x, donde x no esta definida (es variable).
 pi	%pi
 e	%e
@@ -10,3 +10,8 @@ ejecutar lisp	:lisp (- 2 3);
 open lisp session	to_lisp();
 return from lisp session	(to-maxima)
 define k as a constant	declare(k, constant);
+integrar f(x)	integrate(f(x),x,0,4)
+sumar serie ej	sum(1/x^2, x, 1, inf), simpsum=true;
+hacer secuencia de números	makelist(n, n, 0, 9);
+mapear	map(f, [a,b,c]);
+lambda	lambda([par1, par2], par1 - par2);

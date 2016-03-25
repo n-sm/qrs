@@ -23,3 +23,4 @@ crear lista de elementos repetidos	replicate n t --  n number; t times
 creal lista de elementos repetidso 2	take n (repeat t)
 lista intensional	[x*2 | x <- [1..10], x*x < 12]
 interactive shell on emacs	ghci-script-mode-load
+mapear	

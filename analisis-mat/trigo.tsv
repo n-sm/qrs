@@ -1,0 +1,8 @@
+# -*- mode:csv -*-
+seno	socatoa	opuesto / hipotenusa
+coseno	socatoa	adyacente / hipotenusa
+tangente	socatoa	opesto / adyascente
+tangente	seno / coseno
+seno(x)	Taylor	sum((-1)^n* (x^(2*n+1)/(2*n+1)!), x, 0, inf)
+seno(z)	complejos	(%e^(%i*z) - %e^(-%i*z)) / 2*%i
+arcoseno(x)		seno^-1(x)

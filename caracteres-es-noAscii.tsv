@@ -1,0 +1,18 @@
+# -*- mode:csv -*-
+char	ANSI	Unicode	UTF-8	Latin 1	nombre
+¡	161	u'wxa1'	\xc2\xa1	\xa1	inverted exclamation mark
+¿	191	u'\xbf'	\xc2\xbf	\xbf	inverted question mark
+Á	193	u'\xc1'	\xc3\x81	\xc1	Latin capital a with acute
+É	201	u'\xc9'	\xc3\x89	\xc9	Latin capital e with acute
+Í	205	u'\xcd'	\xc3\x8d	\xcd	Latin capital i with acute
+Ñ	209	u'\xd1'	\xc3\x91	\xd1	Latin capital n with tilde
+Ó	191	u'\xbf'	\xc3\x93	\xbf	Latin capital o with acute
+Ú	218	u'\xda'	\xc3\x9a	\xda	Latin capital u with acute
+Ü	220	u'\xdc'	\xc3\x9c	\xdc	Latin capital u with diaeresis
+á	225	u'\xe1'	\xc3\xa1	\xe1	Latin small a with acute
+é	233	u'\xe9'	\xc3\xa9	\xe9	Latin small e with acute
+í	237	u'\xed'	\xc3\xad	\xed	Latin small i with acute
+ñ	241	u'\xf1'	\xc3\xb1	\xf1	Latin small n with tilde
+ó	243	u'\xf3'	\xc3\xb3	\xf3	Latin small o with acute
+ú	250	u'\xfa'	\xc3\xba	\xfa	Latin small u with acute
+ü	252	u'\xfc'	\xc3\xbc	\xfc	Latin small u with diaeresis
