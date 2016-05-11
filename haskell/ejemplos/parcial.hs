@@ -19,7 +19,7 @@ intercalar a b | length a < 2 = a ++ b
 -- Ejercicio 3
 
 quitarlos :: Integer -> [Integer] -> [Integer]
-quitarlos x xs | xs == [] = xs
+quitarlos x xs | length xs == 0 = xs
                | x == head xs = quitarlos x (tail xs)
                | otherwise = head xs : quitarlos x (tail xs)
 
@@ -37,3 +37,21 @@ tailn n l | n == 0 = l
 comprimir :: [Integer] -> [(Integer, Integer)]
 comprimir l | length l == 0 = []
             | otherwise = (head l, freqinit (head l ) l) : comprimir (tailn (freqinit (head l) l) l)
+
+
+-- Algoritmo de Euclides
+mcd :: Integer -> Integer -> Integer
+mcd a b | b > a = mcd b a
+        | b == 0 = a
+        | otherwise = mcd b (restoEnN a b)
+
+-- pattern matching
+first :: (a, b, c) -> a
+first (x, y, z) = x
+
+longitud :: [a] -> Integer
+longitud [] = 0
+longitud (x:[]) = 1
+longitud (x:y:[]) = 2
+longitud (x:y:z:[]) = 3
+longitud (_:_:_:_:xs) =
