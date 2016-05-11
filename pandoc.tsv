@@ -1,0 +1,2 @@
+# -*- mode:csv -*-
+exportar a word	pandoc file.md -o file.docx

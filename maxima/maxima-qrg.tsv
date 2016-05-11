@@ -10,7 +10,8 @@ ejecutar lisp	:lisp (- 2 3);
 open lisp session	to_lisp();
 return from lisp session	(to-maxima)
 define k as a constant	declare(k, constant);
-integrar f(x)	integrate(f(x),x,0,4)
+integral definida f(x)	integrate(f(x),x,0,4)
+integral indefinida f(x)	integrate(f(x),x)
 sumar serie ej	sum(1/x^2, x, 1, inf), simpsum=true;
 hacer secuencia de números	makelist(n, n, 0, 9);
 mapear	map(f, [a,b,c]);
