@@ -1,0 +1,2 @@
+# -*- mode: csv -*-
+get location of data 	SELECT name, physical_name FROM sys.master_files

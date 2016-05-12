@@ -1,0 +1,29 @@
+Cf. p.49 tutorial
+* Create file with sample data.
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Data.Entity;
+
+namespace MvcMusicStore.Models
+{
+    public class SampleData : DropCreateDatabaseIfModelChanges<MusicStoreDB>
+    {
+        protected override void Seed(MusicStoreDB context)
+        {
+            var genres = new List<Genre>
+            {
+                new Genre { Name = "Rock" },
+	    };
+//...
+
+        }
+    }
+}
+
+* Edit Global.asax's Application_Start():
+Add the line:
+
+System.Data.Entity.Database.SetInitializer(new PROYECT_NAME.Models.SampleData());

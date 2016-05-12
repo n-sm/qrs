@@ -1,0 +1,2 @@
+# -*- mode:csv -*-
+hostear localmente	python -m pelican.server

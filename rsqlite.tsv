@@ -1,0 +1,4 @@
+# -*- mode:csv -*-
+get tables on database db	dbListTables(db)
+create table	dbSendQuery(conn=db,"CREATE TABLE tabla (v1 INTEGER, v2 TEXT)")
+check if table exists	dbExistsTable(conn=db, "TABLE_NAME")

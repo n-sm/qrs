@@ -1,0 +1,9 @@
+
+http://a-slide.github.io/blog/github-pelican
+
+* para hostear localmente en
+http://localhost:8000
+make html && make serve
+
+* para subir a github
+make github

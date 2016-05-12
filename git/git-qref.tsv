@@ -29,3 +29,5 @@ revert all local uncommitted changes	git checkout .
 delete remote branch	git push origin --delete <BRANCHNAME>
 delete remote branch 2	git push origin :<BRANCHNAME>
 delete local branch	git branch -d the_local_branch
+git diff respect last commit	git diff HEAD myfile
+modificar remoto change remote url	git remote set-url https://...
