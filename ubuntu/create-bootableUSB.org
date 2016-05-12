@@ -18,3 +18,46 @@ nota: en lugar de rdiskN hay q poner el identificador que surja de diskutil (ver
 ** 5. prepare to remobe USB
 
 * http://askubuntu.com/questions/372607/how-to-create-a-bootable-ubuntu-usb-flash-drive-from-terminal
+
+* mayo 2016 [NO ANDUVO]
+http://askubuntu.com/questions/372607/how-to-create-a-bootable-ubuntu-usb-flash-drive-from-terminal
+
+
+** Place the ubuntu.iso file in any hard disk partition.
+
+** Then mount the ubuntu.iso file with the below commands in terminal:
+
+sudo mkdir /media/iso/
+sudo mount -o loop /path/to/ubuntu.iso /media/iso
+
+** Insert your USB flash drive. My drive is /dev/sdd
+Chequear drive con 
+lsblk
+
+** Copy all files from /media/iso/ to your mounted USB flash drive 
+   by running the below command (make sure to include the dot):
+
+cp -a /media/iso/. /media/xxx/
+
+** Next, you need the ldlinux.sys file in your USB flash drive to make 
+   the USB bootable. My USB partition is /dev/sdd1; enter lsblk to see
+   what's yours. Run the below commands:
+
+sudo apt-get install syslinux mtools
+sudo syslinux -s /dev/sdd1
+
+** Navigate to the /media/xxx mount folder and rename the isolinux
+    directory to syslinux. Then go into the renamed folder and rename 
+    the file isolinux.cfg to syslinux.cfg.
+
+** Reboot your PC and change the boot order in BIOS to allow booting
+   from a USB drive. Now your Ubuntu USB flash drive will boot and you
+   can install it.
+
+* mayo 2016 [NO ANDUVO]
+# como antes, busco donde esta montrado el usb con lsblk
+sudo umount /dev/sdb1
+sudo dd if=/path/to/ubuntu.iso of=/dev/sdb1 bs=1M
+
+* mayo 2016 Startap Disk Creator (app) SI ANDUVO!!!!
+
