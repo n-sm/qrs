@@ -1,5 +1,0 @@
-# -*- mode:csv -*-
-get ubuntu version	lsb_release -a
-crear live usb booteable	dd if=$laiso of=/dev/sdb1
-obtener nombre etiqueta usb(sdf1 es el lugar donde esta)	sudo mlabel -i /dev/sdf1 -s ::
-cambiar nombre etiqueta usb	sudo mlabel -i /dev/sdf1 ::NOMBRE

@@ -1,7 +1,6 @@
 # -*- mode:csv -*-
 load source	:l 'archivo.hs'
 cambiar prompt	:set prompt "ghci> "
-load custom function from file	:l file.hs
 define fucntion in shell	 let foo x = x + 1
 concatenar listas	list1 ++ list2
 cons	'element' : list
@@ -25,3 +24,4 @@ lista intensional	[x*2 | x <- [1..10], x*x < 12]
 interactive shell on emacs	ghci-script-mode-load
 division entera a / b	quot a b
 resto de a / b	mod a b
+compilar script	ghc script.hs

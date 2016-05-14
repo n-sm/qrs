@@ -4,6 +4,7 @@ restoEnN :: Integer -> Integer -> Integer
 restoEnN a b | a < b = a
              | otherwise = restoEnN (a-b) b
 
+
 esMult :: Integer -> Integer -> Bool
 esMult a b | a < 0 = esMult (-a) b
            | b < 0 = esMult a (-b)
