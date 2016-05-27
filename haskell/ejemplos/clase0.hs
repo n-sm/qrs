@@ -1,6 +1,4 @@
---suma x y = x + y
-
-doble x = 2 * x
+--suma x y = x + y x = 2 * x
 
 suma x y = x + y
 
