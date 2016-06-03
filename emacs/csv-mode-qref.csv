@@ -1,0 +1,2 @@
+ACCION	COMANDO	LINK
+set field separator	M-x customize-variable RET csv-separators 

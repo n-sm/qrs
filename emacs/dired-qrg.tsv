@@ -15,3 +15,7 @@ mark files matching regex (== %m)	*%
 delete marked filed	D
 mark files prompting regex	%m
 dont show marked lines	dired-do-kill-lines
+sort by size	C-u s
+sort by tiem	C-u t
+mark by regex	%m
+dired - mostrar menos info	(

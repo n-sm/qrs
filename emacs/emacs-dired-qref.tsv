@@ -1,5 +1,0 @@
-# -*- mode:csv -*-
-sort by size	C-u s
-sort by tiem	C-u t
-mark by regex	%m
-dired - mostrar menos info	(

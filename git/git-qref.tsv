@@ -15,8 +15,8 @@ sacar archivos (remove) de git y de working dir	git rm archivo.txt
 sacar archivos (remove) de git y no de working dir	git rm --cached archivo.txt
 mostrar los remotos	git remote -v
 agregar remotos	git remote add [shortname] [url]
-traer información	git fetch [shortname]
-enviar información	git push origin master
+traer informacion	git fetch [shortname]
+enviar informacion	git push origin master
 crear rama (branch)	git branch nombre
 cambiarse a una rama (branch)	git checkout nombre
 remove local branch	git branch -d the_local_branch
@@ -29,5 +29,8 @@ revert all local uncommitted changes	git checkout .
 delete remote branch	git push origin --delete <BRANCHNAME>
 delete remote branch 2	git push origin :<BRANCHNAME>
 delete local branch	git branch -d the_local_branch
-git diff respect last commit	git diff HEAD myfile
+git diff respect last commit file	git diff HEAD myfile
+git diff respect last commit	git diff HEAD^ HEAD
+diff between HEAD and other commit	git diff commit_id HEAD
+diff (only filenames)	git diff --name-only HEAD~ HEAD
 modificar remoto change remote url	git remote set-url https://...
