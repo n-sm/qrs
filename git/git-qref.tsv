@@ -33,4 +33,5 @@ git diff respect last commit file	git diff HEAD myfile
 git diff respect last commit	git diff HEAD^ HEAD
 diff between HEAD and other commit	git diff commit_id HEAD
 diff (only filenames)	git diff --name-only HEAD~ HEAD
+diff against remote	git diff origin/master
 modificar remoto change remote url	git remote set-url https://...
