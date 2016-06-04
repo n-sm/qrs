@@ -1,6 +1,6 @@
-
 # -*- mode:csv -*-
 instalación	install.packages("rmarkdown")
 generar documento	rmarkdown::render("documento.md")
 generar pdf	render("docu.md", "pdf_document")
 generar word	render("docu.md", "word_document")
+justificar texto	<style> body { text-align:justify } </style>
