@@ -1,2 +1,4 @@
 # -*- mode:csv -*-
-create etags table  find . | grep  ".*\.\(h\|cc\)$" | xargs etags -f TAGS
+create etags table	find . | grep  ".*\.\(h\|cc\)$" | xargs etags -f TAGS
+aspell change dictionary	M-x ispell-change-dictionary
+check spell	M-x ispell

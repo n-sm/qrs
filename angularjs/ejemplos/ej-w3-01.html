@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+  <script
+     src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+  </script>
+  <body>
+
+    <div ng-app="" ng-init="x1='1234.567'">
+      <p>Name: <input type="text" ng-model="name"></p>
+      <p>parrafo: <input type="text" ng-model="x1"></p>
+      <p ng-bind="name"></p>
+
+
+    <p>
+      parrafo: {{ x1 }}
+    </p>
+    </div>    
+
+  </body>
+</html>

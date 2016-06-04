@@ -1,0 +1,3 @@
+* Gradiente, Diferencial y Plano tangente.
+
+El gradiente 

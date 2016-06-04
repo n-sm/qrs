@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ej w3 de AngularJS</title>
+    <script
+       src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+    </script>
+  </head>
+  <body>
+    <div ng-app="myApp" ng-controller="myCtrl"
+	 ng-init="names=[
+		  {name:'Jani',country:'Norway'},
+		  {name:'Hege',country:'Sweden'},
+		  {name:'Kai',country:'Denmark'}]">
+      
+
+      Nombre: <input type="text" ng-model="nombre"><br>
+      Pais: <input type="text" ng-model="pais"><br>
+      <br>
+
+      Nombre: {{nombre}} </br>
+      Pais: {{pais}}
+      <ul>
+	<li ng-repeat="x in names">
+	  {{ x.name + ', ' + x.country }}
+	</li>
+      </ul>
+
+    </div>
+
+    <script>
+      var app = angular.module('myApp', []);
+      app.controller('myCtrl', function($scope) {
+      $scope.nombre= "Juan";
+      $scope.pais= "Arge";
+      });
+    </script>
+
+  </body>
+</html>
+
