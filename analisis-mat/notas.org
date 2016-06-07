@@ -1,0 +1,65 @@
+* Serie de Mc Laurin
+Es un polinomio de Taylor evaluado en 0. Es decir:
+
+T_{n,0,f} = \sum_{k=0}^n f^{(k)}(0)x^k/k!
+
+        n
+        ____
+        \   `   (k)   k  
+T        )     f (0) x 
+ n,0,f= /___,  -------
+       k = 0      k! 
+              
+        
+
+http://mathworld.wolfram.com/MaclaurinSeries.html
+
+* gradiente de f en el punto p
+__      
+\/ f = ( f (p),  f (p),  ...,  f (p) )
+    p     x       x             x
+           1       2             n
+
+    2
+En R :
+
+__                          
+\/ f      =   / f (p)    f (p) \
+    (x,y)     \  x   ,    y    /
+
+* hessiano o matriz heassiana
+
+Es la matriz de las nXn derivadas segundas de una función
+    n
+en R .
+           2
+Ejempl en R :
+
+         _         _
+        |           |
+        | f    f    |
+H(f)  = |  xx   xy  |
+        |           |
+        | f    f    |
+        |_ yx   yy _| 
+
+* Polinomio de Taylor de orden 2 para f(x , x ) en p
+                                         1   2
+
+
+                  __                          T
+T    (x) = f(p) + \/ f (x - p) + (1/2) (x - p)  H(f) (x - p)
+ 2,p,f
+
+O también:                              n
+                  __                   ___
+T    (x) = f(p) + \/ f (x - p) + (1/2) \  ` f   (p) (x - p )(x - p )
+ 2,p,f                                 /__,  x x      i   i  j    j
+                                     i,j = 1  i j  
+
+
+* Resto de Taylor orden 3 para f(x,y)
+
+                1     
+ R (f,a,x) =  ------  ...
+  k           (k+1)!  

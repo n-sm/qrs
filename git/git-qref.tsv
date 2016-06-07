@@ -2,9 +2,9 @@
 DESCRIPCION                     	|     COMANDO    
 setear nombre de usuario	git config --global user.name "El nombre"
 setear mail	git config --global user.email user@mail.com
-setear editor de texto	git config --global core.editor emacs
+setear editor de texto	git config --global core.editor vim
 chequear los settings	git config --list
-chequear un settong	git config user.name
+chequear un setting	git config user.name
 iniciar repositorio en el presente dir	git init
 clonar un repositorio existente	git clone [url]
 ver status de archivos	git status
@@ -35,3 +35,4 @@ diff between HEAD and other commit	git diff commit_id HEAD
 diff (only filenames)	git diff --name-only HEAD~ HEAD
 diff against remote	git diff origin/master
 modificar remoto change remote url	git remote set-url https://...
+diffs between local aand remote branch  git diff master origin/master
