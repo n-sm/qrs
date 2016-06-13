@@ -1,0 +1,9 @@
+# -*- mode:csv -*-
+go to parent article	A r	^
+delete from server buffer	k
+add server (server buffer)	a
+compose new mail	C-x m
+send mail	C-c C-c
+arhive mail	B backspace
+mark articles in region	M P r
+mark articles in buffer	M P a

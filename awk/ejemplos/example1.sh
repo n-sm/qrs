@@ -1,5 +1,6 @@
 #!/bin/sh
 # Linux users have to change $8 to $9
+# Uso: ls -l | . example1.sh
 awk '
 BEGIN 	{ print "File\tOwner" } 
 		{ print $9, "\t", $3}	

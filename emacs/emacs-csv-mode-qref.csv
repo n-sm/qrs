@@ -1,2 +1,0 @@
-ACCION	COMANDO	LINK
-set field separator	M-x customize-variable RET csv-separators 	http://superuser.com/questions/674458/how-to-set-field-seperator-in-emacs-csv-mode

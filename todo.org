@@ -14,3 +14,7 @@ https://groups.google.com/forum/?hl=en#!forum/rapache
 
 https://www.reddit.com/r/gamedev/comments/21r8xa/my_experience_on_using_pythonkivy_for_game/
 https://github.com/oddbitdev/hexTap
+
+* gnus
+http://emacs-primer.branchable.com/posts/Participate_In_Emacs_Mailinglists_Via_Gmane/
+http://comments.gmane.org/gmane.emacs.gnus.user/16953

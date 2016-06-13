@@ -1,5 +1,7 @@
-BEGIN { # Statement that will be executed once at the beginning.
-    FS="[ \t]" # Set space and tab characters to be treated as word separator.
+BEGIN { 
+    ## FS="[ \t]"
+    printf ("En Begin")
+    
 }
 # Code below will execute for each line in file.
 {
