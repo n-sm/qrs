@@ -1,0 +1,12 @@
+* Pequeño teorema de fermat
+Sea p un número primo y a un entero, y sea = el signo que denota congruencia.
+Entonces:
+
+ p
+a = a (mod p)
+
+Si p no divide a a:
+
+ p-1
+a    = 1 (mod p)
+
