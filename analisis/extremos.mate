@@ -1,0 +1,110 @@
+#https://analisis2.wordpress.com/2009/08/05/criterio-del-hessiano/
+
+# Matriz Hessiana
+
+Es la matriz de las n x n derivadas segundas de una función
+    n
+en R .
+            2
+Ejemplo en R :
+
+         _         _
+        |           |
+        | f    f    |
+H(f)  = |  xx   xy  |
+        |           |
+        | f    f    |
+        |_ yx   yy _| 
+
+
+# Teo 3.
+Si:
+          n
+    U ⊆ ℝ   es abierto,
+    f : U → ℝ  es  diferenciable y
+    p ∊ U es un extremo local
+    
+Entonces:
+
+    Df(p) = ∇f(p) = vector nulo, ie: p es punto crítico de f.
+    o sea:
+      ∂f
+      --(p) = f_i(p) = 0   (i = 1, ..., n)
+      ∂x
+        i
+
+
+# definida positiva y negativa
+
+Una función cuadrática f  es definida positiva si
+
+  g(x) ≥ 0, ∀x
+  g(x) = 0 ⇒ x = 0
+
+Una función cuadrática f  es definida negativa si
+
+  g(x) ≤ 0, ∀x
+  g(x) = 0 ⇒ x = 0
+
+# Teo 4.
+Si:
+              n                   3
+    f : U ⊆ ℝ  →  ℝ  es de clase C ,
+    p ∊ U es un punto crítico de f y
+    Hf(p) es definido positivo
+
+Entonces:
+
+    p es un _mínimo relativo_.
+    
+
+Si:
+              n                   3
+    f : U ⊆ ℝ  →  ℝ  es de clase C ,
+    p ∊ U es un punto crítico de f y
+    Hf(p) es definido negativo
+
+Entonces:
+
+    p es un _máximo relativo_.
+
+
+# Método para encontar extremos.
+
+1. Calculamos las derivadas parciales y obtenemos el gradiente.
+2. Buscamos los puntos en que el gradiente se anula.
+3. Buscamos el hessiano de f en p, Hf(p).
+4. Calculamos el determinante de Hf(p).
+5.
+Cuando n = 2 (o sea en R^2), tenemos el siguiente criterio:
+
+Si:
+CASO A
+    1. det(Hf(p)) > 0  y
+    
+    2. ∂f  =  f    >   0
+       --      xx
+       ∂x
+       
+    entonces:
+    
+      Hf(p) es definida positiva y entonces:
+          p es mínimo.
+
+CASO B
+    1. det(Hf(p)) > 0  (idem A) y
+    2. ∂f  =  f    <   0
+       --      xx
+       ∂x
+
+    entonces p es máximo.
+    
+CASO C
+Si det(Hf(p) < 0) entonces:
+    p es punto silla y no extremo
+
+CASO D
+Si det(Hf(p)) = 0 entonces:
+    No me sirve el criterio
+    Puedo buscar alguna curva que me de que sea punto silla
+    por ejemplo.

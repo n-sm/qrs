@@ -29,7 +29,6 @@ salir de insert mode; vuelve a normal; finish abreviation	ESC || C-[
 salir de insert mode; vuelve a normal; do not check abreviation	C-c
 end of line	$ 
 repeat last command	. 
-(zero) start of line	0 
 yank 2 lines	2yy 
 write (save) the file;	:w 
 shift left	< 

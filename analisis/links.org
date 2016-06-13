@@ -1,6 +1,9 @@
 
 * polinomio de taylor rn R^2
 https://www.uam.es/personal_pdi/ciencias/fchamizo/asignaturas/quim1314/resumen01.pdf
+<<<<<<< HEAD
+=======
 
 * completar cuadrados
 https://es.wikipedia.org/wiki/Completar_el_cuadrado
+>>>>>>> e00458f4d7e6c9cd6b860ad0768b288c1738d282

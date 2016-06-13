@@ -1,0 +1,12 @@
+# -*- csv-mode -*-
+info sobre el documento	=
+ir al hiperlink previo	C-u
+ir al centro	Z
+bajar una linea	J
+subir una linea	K
+proximo hiperlink	TAB
+hiperlink anterior	C-u
+volver atras (al buffer anterior)	B
+ver html	v
+delete current buffer	D
+get help	H

@@ -1,0 +1,65 @@
+# Raices enesimas de la unidad
+
+Usando que 
+  z = w sii 
+    arg(z) = arg(w)
+      y
+    |z| = |w|
+
+Tenemos:
+
+  z^n = 1 sii arg(z^n) = 1 y |z^n| = 1
+
+Además,
+
+  z = |z| (cos(z) + i sen(z))
+
+Pero como |z^n| = 1, |z|^n = 1 y |z| = sqrt(1) = 1:
+
+  z = cos(z) + i sen(z) 
+
+Y arg(z^n) = arg(1) = 0, de modo que:
+
+  0 = n arg(z) + 2kpi
+
+  arg(z) = 2kpi/n
+  
+De este  modo:
+
+  z = cos 2kpi/n + i sen 2kpi/n (para k < n)
+
+# DEF. (Conjunto de raíces enésimas)
+
+  G_n := {w in C: w^n = 1}
+
+Ejemplos:
+
+  G_2 = { cos 2kpi/n + i sen 2kpi/n : 0 <= k < n }
+      = { cos 0 + i sen 0, cos pi + i sen pi }
+      = { 1, -1 }
+
+  G_3 = { cos 0 + i sen 0,
+          cos pi2/3 + i sen pi2/3,
+	  cos pi4/3 + i sen pi4/3 }
+
+  G_4 = { cos 0     + i sen 0,
+          cos pi/2  + i sen pi/2,
+          cos pi    + i sen pi,
+          cos pi3/2 + i sen pi3/2 }
+      = { 1, i, -1 -i }
+
+# Prop. Sea z in G_n y m in Z.
+
+  m ≡  r (n) ⇒  z^m = z^r
+  
+  recordar:   m ≡  r (n) significa que n | m - r, o sea que
+              nq = m - r ⇔  m = nq + r
+
+
+# DEF. (Raíz enésima primitiva)
+
+Sea w ∊ ℂ, w ∊ G_n:
+
+  ∀z ∊ G_n ∃r ∊ ℕ : w^r = z  ⇒   w es raíz enésima primitiva de la
+                                 unidad.
+
