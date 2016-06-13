@@ -1,1 +1,7 @@
-Find all active/used IP addr on network	for /l %i in (1,1,254) do ping -n 1 192.168.1.%i | find /i "Reply"
+# -*- mode:csv -*-
+get ips from lan that already talked with your machine	arp -a
+get my ip from lan	ifconfig | grep "inet addr"
+connect via ssh with other computer	ssh USER@192.168.0.105 #ejemplo
+copy from B to A logged in A	scp USER@HOST:FILE-FROM FILE-TO
+copy from A to B logged in A	scp FILE-FROM USER@HOST:FILE-TO
+copy from B to A logged in A	rsync HOST:FILE-FROM DIR-TO

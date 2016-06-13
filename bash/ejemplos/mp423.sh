@@ -12,7 +12,7 @@ then
     echo El mp3 ya existe
 else
     printf "extrayendo:\n%s\n\nde:\n%s\n\n" "$HASTA"  "$DESDE"
-    avconv -i "$DESDE" -vn -ar 44100 -ac 2 -ab 192 -f mp3 "$HASTA" && echo ok ;\
+    ffmpeg -i "$DESDE" -vn -ar 44100 -ac 2 -ab 192 -f mp3 "$HASTA" && echo ok ;\
     printf "Borramos %s?\n(S/n)\n" "$DESDE"
     read INPUT
     if	[[ "$INPUT" == "S" ]] ;

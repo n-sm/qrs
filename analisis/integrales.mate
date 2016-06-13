@@ -1,0 +1,31 @@
+#  /   
+#  |    1
+#  | -------
+#  |     2
+#  |  cos x
+#  /
+
+
+Como:
+          sen x
+  tan x = -----
+          cos x
+
+
+Entonces:
+
+           / sen x \'  sen'x cos x + sen x cos'x
+  tan' x = | ----- | = ------------------------- =
+           \ cos x /                2
+	                         cos x
+
+        2       2
+     cos x + sen x       1
+   = -------------  =  -----
+            2             2
+	 cos x         cos x
+
+#  /
+#  |  dx    
+#  | ---  = ln |x|  
+#  /  x

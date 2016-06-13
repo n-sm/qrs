@@ -1,3 +1,0 @@
-
-* polinomio de taylor rn R^2
-https://www.uam.es/personal_pdi/ciencias/fchamizo/asignaturas/quim1314/resumen01.pdf

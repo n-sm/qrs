@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <script
+     src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+  </script>
+  <body>
+
+    <div ng-app="root" ng-controller="index as indx">
+      n: <input type="number" ng-model="n"><br>
+      d: <input type="number" ng-model="d"><br>
+
+      <p>Suma n + d: {{ n + d }} </p>
+      </br>
+      <p>Resta n - d: {{ n - d }} </p>
+      </br>
+      <p>Foo(n): {{ indx.foo(n) }} </p>
+      </br>
+      <p>mensaje: {{ indx.message }} </p>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
