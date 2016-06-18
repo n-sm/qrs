@@ -1,11 +1,23 @@
 #!/bin/bash
 # Extraer la musica de un video.
-## PARA PODER DE USAR hay que instalar libav-tools:
-# sudo apt-get isntall libav-tools
+	    
+while getopts ":d" opt;
+do
+    case $opt in
+	d)
+	    BORRAR=true
+	    ;;
+	\?)
+	    echo "Invalid option: -$OPTARG" >&2
+	    exit
+	    ;;
+    esac
+done
 
-declare DESDE=$1
+shift "$((OPTIND - 1))"
+
+declare DESDE="$@"
 declare HASTA=${DESDE%.*}".mp3"
-declare INPUT
 
 if [ -f "$HASTA" ] ;
 then
@@ -13,14 +25,11 @@ then
 else
     printf "extrayendo:\n%s\n\nde:\n%s\n\n" "$HASTA"  "$DESDE"
     ffmpeg -i "$DESDE" -vn -ar 44100 -ac 2 -ab 192 -f mp3 "$HASTA" && echo ok ;\
-    printf "Borramos %s?\n(S/n)\n" "$DESDE"
-    read INPUT
-    if	[[ "$INPUT" == "S" ]] ;
+    if	[ $BORRAR ] ;
     then
 	echo Borramos "$DESDE"
 	rm "$DESDE"
     else
 	echo No borramos $DESDE
     fi
-    
 fi
