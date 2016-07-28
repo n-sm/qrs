@@ -17,7 +17,7 @@ $$ \nabla f_p = (\frac{\partial f}{\partial x_1}, \dots,
 
 ### Diferencial
 
-Las diferencial de $f$ en $p$, $Df_p(x)$ es una **_transformaci髇 lineal_** de 
+Las diferencial de $f$ en $p$, $Df_p(x)$ es una **_transformaci贸n lineal_** de 
 $\mathbb{R}^n \to \mathbb{R}$.
 
 En concreto, la diferencial de $f$ en $p$ es el producto entre el
@@ -32,8 +32,8 @@ $$ \frac{\partial f}{\partial x_1}  x_1 + \dots +
 	
 ### (Hiper) plano tangente (si existe, claro)
 
-Si existe el plano (o hiperplano) tangente a la funci髇 $f$ en el
-punto $\bold{p}$, su ecuaci髇 es:
+Si existe el plano (o hiperplano) tangente a la funci贸n $f$ en el
+punto $\bold{p}$, su ecuaci贸n es:
 
 $$ x_{n+1} = f(\bold{p}) + \langle \nabla f, \bold{x-p}\rangle$$
 
@@ -43,7 +43,7 @@ $$ x_{n+1} = f(\bold{p}) + \sum_{i=1}^n
 \frac{\partial f}{\partial x_i}(\bold{p}) (x_i - p_i)
 $$
 
-Y m醩 desarrollado:
+Y m谩s desarrollado:
 
 $$ x_{n+1} = f(\bold{p}) + \frac{\partial f}{\partial
 x_1}(\bold{p}) (x_1 - p_1) + \dots + \frac{\partial f}{\partial
@@ -51,13 +51,13 @@ x_n}(\bold{p}) (x_n - p_n) $$
 
 ### Diferenciabilidad
 
-$f$ es diferenciable en $\bold{p}$ si y s髄o si:
+$f$ es diferenciable en $\bold{p}$ si y s贸lo si:
 
 
 $$ \lim_{\bold{x}\to \bold{p}} \frac{|f(x) - f(p) - \langle \nabla f_p,
 \bold{x}-\bold{p}\rangle|}{||\bold{x}-\bold{p}||}$$
 
-Lo cual tambi閚 puede expresarse:
+Lo cual tambi茅n puede expresarse:
 
 $$ \lim_{\bold{x}\to \bold{p}} \frac{|f(x) - f(p) - Df_p(\bold{x}-\bold{p})|}{||\bold{x}-\bold{p}||}$$
 
@@ -66,6 +66,6 @@ $$ \lim_{\bold{x}\to \bold{p}} \frac{|f(x) - f(p) - Df_p(\bold{x}-\bold{p})|}{||
 > **Teorema** Si: \
 > 1. $A \subset \mathbb{R}^n$ es abierto \
 > 2. todas las derivadas de $f: A \to \mathbb{R}$ existen en $A$ \
-> 3. todas estas derivadas son cont韓uas en $A$, \
+> 3. todas estas derivadas son cont铆nuas en $A$, \
 > <center> **_entonces_** $f$ es diferenciable en $A$.</center>
 

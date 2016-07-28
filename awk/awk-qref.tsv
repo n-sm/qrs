@@ -16,3 +16,7 @@ grep with awk 3	awk ' /PATTERN/ { print bash } ' FILE
 print every line that is longer than 50	awk { length($0) > 50 }' FILE
 print length of largest line	awk '{ if (length($0) > max) max = length($0) } END { print max }' data
 remove breaklines	awk '{printf "%s",$0} END {print ""}' file
+927
+945
+4096
+659

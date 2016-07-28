@@ -10,14 +10,14 @@ suma p [] = p
 suma (x:xs) (y:ys) = x + y : suma xs  ys
 
 
-prodes :: Integer -> Poli -> Poli
-prodes 0 _ = []
-prodes n [] = []
-prodes n (p:ps) = n*p : prodes n ps
+prodEscalar :: Integer -> Poli -> Poli
+prodEscalar 0 _ = []
+prodEscalar n [] = []
+prodEscalar n (p:ps) = n*p : prodEscalar n ps
 
 prod :: Poli -> Poli -> Poli
 prod [] _ = []
-prod (x:xs) p = suma (prodes x p) (0 : prod xs p)
+prod (x:xs) p = suma (prodEscalar x p) (0 : prod xs p)
 
 sumac :: Compl -> Compl -> Compl
 sumac (a, b) (c, d) = (a+b, c+d)
