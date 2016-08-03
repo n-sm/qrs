@@ -11,7 +11,7 @@ def main(argv):
     
     html = ""
     try:
-        opts, args = getopt.getopt(argv, 'f:w:lcn')
+        opts, args = getopt.getopt(argv, 'f:w:cn')
     except getopt.GetoptError:
         print('getlinks [-f <filename> | -w <url> ]')
         sys.exit(2)
@@ -39,17 +39,26 @@ def main(argv):
     href_tags = soup.find_all(href=True)
     
     contador = 1
-    for h in href_tags:
-        if numOn:
-            print("\n{}:".format(contador))
-            contador += 1
+    enumerador = 0
+    print("\n\nla len de href tags", len(href_tags))
+    for i,h in enumerate(href_tags):
+        link = h.get('href')
+        ##if link == "": continue
         if contentOn:
             if len(h.contents) != 0:
                 cont = str(h.contents[0])
-                print(breakLines(cont.strip()))
+                print("\n{}".format(breakLines(cont.strip())))
             else:
-                print("Sin texto")
-        print(h.get('href'))
+                print("\nSin texto")
+        if numOn:
+            print("{}: ".format(contador), end="")
+            contador += 1
+
+        if enumerador == 0 \
+           or link != href_tags[enumerador-1].get('href'):
+            print(link)
+        enumerador += 1
+
 
     
 def breakLines(string, atMost=80):
