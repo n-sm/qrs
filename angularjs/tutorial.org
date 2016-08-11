@@ -1,0 +1,93 @@
+* tutorial
+[[link][https://docs.angularjs.org/tutorial/]]
+
+* step_02
+
+** View and Template
+
+In Angular, the _view_ is a projection of the model through 
+the HTML _template_. This means that whenever the model 
+changes, Angular refreshes the appropriate binding points,
+ which updates the view.
+
+
+** Model and Controller
+
+The data model (a simple array of phones in object literal notation)
+is now instantiated within the PhoneListController controller. The
+controller is simply a constructor function that takes a $scope
+parameter:
+
+-----
+app/app.js:
+
+// Define the `phonecatApp` module
+var phonecatApp = angular.module('phonecatApp', []);
+
+// Define the `PhoneListController` controller on 
+// the `phonecatApp` module
+phonecatApp.controller('PhoneListController',
+                        function PhoneListController($scope) {
+  $scope.phones = [
+    {
+      name: 'Nexus S',
+      snippet: 'Fast just got faster with Nexus S.'
+    }, {
+      name: 'Motorola XOOM™ with Wi-Fi',
+      snippet: 'The Next, Next Generation tablet.'
+    }, {
+      name: 'MOTOROLA XOOM™',
+      snippet: 'The Next, Next Generation tablet.'
+    }
+  ];
+});
+-----
+
+Here we declared a controller called PhoneListController and
+registered it in an Angular module, phonecatApp. Notice that our ngApp
+directive (on the <html> tag) now specifies the phonecatApp module
+name as the module to load when bootstrapping the application.
+
+
+Although the controller is not yet doing very much, it plays a crucial
+role. By providing context for our data model, the controller allows
+us to establish data-binding between the model and the view. We
+connected the dots between the presentation, data, and logic
+components as follows:
+
+*** The ngController directive, located on the <body> tag, references 
+    the name of our controller, PhoneListController (located in the 
+    JavaScript file app.js).
+
+
+*** The PhoneListController controller attaches the phone data to the
+    $scope that was injected into our controller function. This scope
+    is a prototypal descendant of the root scope that was created when
+    the application was defined. This controller scope is available to
+    all bindings located within the 
+    <body ng-controller="PhoneListController"> tag.
+
+** Scope
+The concept of a scope in Angular is crucial. A scope can be seen as
+the glue which allows the template, model, and controller to work
+together. Angular uses scopes, along with the information contained in
+the template, data model, and controller, to keep models and views
+separate, but in sync. Any changes made to the model are reflected in
+the view; any changes that occur in the view are reflected in the
+model.
+
+
+To learn more about Angular scopes, see the angular scope
+documentation.
+
+* step_03
+
+** Components to the rescue!
+Since this combination (template + controller) is such a common and
+recurring pattern, Angular provides an easy and concise way to combine
+them together into reusable and isolated entities, known as
+components. Additionally, Angular will create a so called isolate
+scope for each instance of our component, which means no prototypal
+inheritance and no risk of our component affecting other parts of the
+application or vice versa.
+

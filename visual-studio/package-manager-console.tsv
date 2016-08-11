@@ -1,0 +1,4 @@
+# -*- mode:csv -*-
+hacer migration	Add-Migration -Name UN-NOMBRE -StartUpProjectName Incorporaciones.WebApi
+aplicar migrations	update-database -StartUpProjectName IncorporacionesWebApi
+revertir migrations	update-database -StartUpProjectName IncorproracionesWebApi -TargetMigration 4646464_Bla
