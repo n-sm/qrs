@@ -1,0 +1,40 @@
+<p>Sea <span class="math inline"><em>f</em> : <em>A</em> → ℝ</span>, <span class="math inline"><em>A</em> ∈ ℝ<sup><em>n</em></sup></span> abierto.</p>
+<h3 id="gradiente">Gradiente</h3>
+<p>El gradiente de <span class="math inline"><em>f</em></span> en el punto <span class="math inline"><em>p</em></span>, <span class="math inline">∇<em>f</em><sub><em>p</em></sub></span> es el vector con todas las <em>derivadas parciales</em>, o sea:</p>
+<p><br /><span class="math display">$$ \nabla f_p = (\frac{\partial f}{\partial x_1}, \dots, 
+\frac{\partial f}{\partial x_n}) $$</span><br /></p>
+<h3 id="diferencial">Diferencial</h3>
+<p>Las diferencial de <span class="math inline"><em>f</em></span> en <span class="math inline"><em>p</em></span>, <span class="math inline"><em>D</em><em>f</em><sub><em>p</em></sub>(<em>x</em>)</span> es una <strong><em>transformación lineal</em></strong> de <span class="math inline">ℝ<sup><em>n</em></sup> → ℝ</span>.</p>
+<p>En concreto, la diferencial de <span class="math inline"><em>f</em></span> en <span class="math inline"><em>p</em></span> es el producto entre el gradiente de <span class="math inline"><em>f</em></span> y <span class="math inline"><strong>x</strong></span>, donde <span class="math inline"><strong>x</strong> ∈ <em>A</em></span>. Es decir:</p>
+<p><br /><span class="math display">⟨∇<em>f</em><sub><em>p</em></sub>, <strong>x</strong>⟩</span><br /></p>
+<p>O, de otra forma:</p>
+<p><br /><span class="math display">$$ \frac{\partial f}{\partial x_1}  x_1 + \dots + 
+    \frac{\partial f}{\partial x_n}  x_n$$</span><br /></p>
+<h3 id="hiper-plano-tangente-si-existe-claro">(Hiper) plano tangente (si existe, claro)</h3>
+<p>Si existe el plano (o hiperplano) tangente a la función <span class="math inline"><em>f</em></span> en el punto <span class="math inline">$\bold{p}$</span>, su ecuación es:</p>
+<p><br /><span class="math display">$$ x_{n+1} = f(\bold{p}) + \langle \nabla f, \bold{x-p}\rangle$$</span><br /></p>
+<p>O, lo que es lo mismo,</p>
+<p><br /><span class="math display">$$ x_{n+1} = f(\bold{p}) + \sum_{i=1}^n 
+\frac{\partial f}{\partial x_i}(\bold{p}) (x_i - p_i)
+$$</span><br /></p>
+<p>Y más desarrollado:</p>
+<p><br /><span class="math display">$$ x_{n+1} = f(\bold{p}) + \frac{\partial f}{\partial
+x_1}(\bold{p}) (x_1 - p_1) + \dots + \frac{\partial f}{\partial
+x_n}(\bold{p}) (x_n - p_n) $$</span><br /></p>
+<h3 id="diferenciabilidad">Diferenciabilidad</h3>
+<p><span class="math inline"><em>f</em></span> es diferenciable en <span class="math inline">$\bold{p}$</span> si y sólo si:</p>
+<p><br /><span class="math display">$$ \lim_{\bold{x}\to \bold{p}} \frac{|f(x) - f(p) - \langle \nabla f_p,
+\bold{x}-\bold{p}\rangle|}{||\bold{x}-\bold{p}||}$$</span><br /></p>
+<p>Lo cual también puede expresarse:</p>
+<p><br /><span class="math display">$$ \lim_{\bold{x}\to \bold{p}} \frac{|f(x) - f(p) - Df_p(\bold{x}-\bold{p})|}{||\bold{x}-\bold{p}||}$$</span><br /></p>
+<h4 id="criterio-de-diferenciabilidad">Criterio de diferenciabilidad:</h4>
+<blockquote>
+<strong>Teorema</strong> Si:<br />
+1. <span class="math inline"><em>A</em> ⊂ ℝ<sup><em>n</em></sup></span> es abierto<br />
+2. todas las derivadas de <span class="math inline"><em>f</em> : <em>A</em> → ℝ</span> existen en <span class="math inline"><em>A</em></span><br />
+3. todas estas derivadas son contínuas en <span class="math inline"><em>A</em></span>,<br />
+
+<center>
+<strong><em>entonces</em></strong> <span class="math inline"><em>f</em></span> es diferenciable en <span class="math inline"><em>A</em></span>.
+</center>
+</blockquote>

@@ -1,0 +1,52 @@
+# Propo 1
+
+Sean a, b, c en Z no nulos. Entonces:
+
+  La ecuación diofántica // aX + bY = c // admite soluciones enteras
+
+  si y sólo si
+
+  // (a:b) | c //
+
+
+## Coro
+
+Sean a, b en Z no nulos y corpimos. Entonces:
+
+  La ecuación diofántica // aX + bY = c // tiene soluciones enteras
+  para todo c en Z.
+
+## Observación
+
+  Sean a, b, c en Z tales que (a:b) | c. Entonces
+
+  //aX + bY = c//
+    es equivalente a
+  
+//      aX      bY       c
+//    -----  + ----- = -----
+//    (a:b)    (a:b)   (a:b)
+
+
+## Propo
+
+El conjunto de soluciones enteras de // aX + bY = 0 // es:
+
+// { (x,y) : x = kb/(a:b), y = -ka/(a:b), k en Z }
+
+
+## Resolución de la diofántica // aX + bY = c
+
+1. Si (a:b) | c es falso, no hay soluciones.
+
+2. Como sí ocurre, primero coprimizamos la ecuación.
+
+//      aX      bY       c
+//    -----  + ----- = -----
+//    (a:b)    (a:b)   (a:b)
+
+3. Busco una solución particular (x0, y0) de este sistema (a ojo o con Euclides).
+
+4. Las soluciones son
+
+// { (x,y) : x = x0 + kb/(a:b), y = y0 -a/(a:b), k en Z }
