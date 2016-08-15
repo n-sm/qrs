@@ -1,0 +1,9 @@
+* intro
+http://www.tldp.org/LDP/nag2/x-087-2-intro.tcpip.html
+
+erdos: Linux box (in Mathematics department)
+GMU: Groucho Marx Univerity 
+niels: gateway at the Physics department's LAN
+quark: host at Physics department
+sophus: gateway
+dotted quad notation: dotted decimal notation = IPv4

@@ -1,0 +1,1929 @@
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <meta name="google-site-verification" content="GB8VrFqtNppVwAkFQKNoMrW83HvwXCCxKtHOjEOsYlk" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="cache-control" value="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="expires" content="Tue, 14 Feb 2012 10:48:47 GMT" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--    <meta name="viewport" content="user-scalable=no, width=device-width" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="iprofesional.com" />
+    <meta name="msapplication-starturl" content="http://www.iprofesional.com/" />
+    <meta name="msapplication-tooltip" content="iprofesional.com" />
+    <meta name="robots" content="index, follow"/>
+    <meta name="copyright" content="2012 iprofesional.com"/>
+    <meta name="email" content="iprofesional@iprofesional.com"/>
+    <meta name="distribution" content="global"/>
+    <meta name="rating" content="general"/>
+    <meta name="language" content="es"/>
+    <meta name="DC.title" content="Información Profesional | Marketing | Economía | Tecnología | iProfesional" />
+    <meta name="geo.region" content="AR" />
+    <meta name="geo.position" content="-38.416097;-63.616672" />
+    <meta name="ICBM" content="-38.416097, -63.616672" />
+    
+    <meta name="keywords" content="Profesional, Comercio, Abogados, Contadores, Economía, Finanzas, Comex, Tecnología, Marketing, Management, RRII, Empleos, Trabajo, Laboral, Noticias, Vinos, Bodegas, Autos, Branding, Portal" />
+<meta name="description" content="Portal Profesional con las últimas novedades sobre Comercio, Economía, Finanzas, Tecnología, Marketing y Management para Abogados, Contadores y otros profesionales" />
+<meta http-equiv="Cache-Control" content="no-Cache" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta property='og:title' content='Información Profesional | Marketing | Economía | Tecnología | iProfesional' /><meta property='og:description' content='Portal Profesional con las últimas novedades sobre Comercio, Economía, Finanzas, Tecnología, Marketing y Management para Abogados, Contadores y otros profesionales' /><meta property='og:image' content='http://www.iprofesional.com/images/ipro_logotipo.jpg' /><meta property='og:type' content='article'/><meta property='og:url' content='http://www.iprofesional.com'/><meta property='og:site_name' content='iProfesional'/><meta property='fb:admins' content='100000673714658' />
+    
+    <title>Información Profesional | Marketing | Economía | Tecnología | iProfesional</title>
+    
+    <!-- HOJAS DE ESTILOS -->
+        <!-- globales -->
+        <link type="text/css" rel="stylesheet" href="/css/thickboxC.css" media="all" />
+        <link type="text/css" rel="stylesheet" href="/css/datepicker.css" media="all" />
+        <link type="text/css" rel="stylesheet"  href="/css/banners.css?v4" media="all" />
+        <link type="text/css" rel="stylesheet"  href="/fonts/flaticon/flaticon.css" media="all" />
+        <link type="text/css" rel="stylesheet"  href="/css/account.css" media="all" />
+        <link type="text/css" rel="stylesheet"  href="/css//start/jquery-ui-1.7.3.custom.css" media="all" />
+        <!--[if IE 6]><link href="/css/ie.css" rel="stylesheet" type="text/css" /><![endif]-->
+        <!-- globales -->
+        
+        <link rel="stylesheet" type="text/css" href="/smarty/templates/theme/homeiProfesional/css/iprofesional.css?v=3" />
+<link rel="stylesheet" type="text/css" href="/css/marcadores.css?v=2" />
+<link rel="stylesheet" type="text/css" href="/smarty/templates/theme/homeiProfesional/css/cabezales.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/micrositios/mundial/css/destacadoHome.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/css/chapas.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/smarty/templates/theme/homeiProfesional/css/interior_nota.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/css/galeria_nota.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/smarty/templates/theme/homeiProfesional/css/BreakingNews.css?v=1" />
+<link rel="stylesheet" type="text/css" href="/smarty/templates/theme/homeiProfesional/css/elecciones.css?v=3" />
+<link rel="stylesheet" type="text/css" href="/smarty/templates/theme/homeiProfesional/lib/jquery.bxslider.min.css" />
+
+<link rel="stylesheet" type="text/css" href="/smarty/templates/theme/healthandtech/css/styles.css" />
+<link rel="stylesheet" type="text/css" href="/smarty/templates/theme/healthandtech/css/1024.css" />
+        
+        
+        <script type="text/javascript" src="/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="/smarty/templates/theme/homeiProfesional/js/BreakingNews.js"></script>
+<script type="text/javascript" src="/smarty/templates/theme/homeiProfesional/js/Chart.js"></script>
+<script type="text/javascript" src="/smarty/templates/theme/homeiProfesional/js/jquery.bxslider.min.js"></script>
+        
+        <script type="text/javascript" src="/js/scriptaculous/prototype.js"></script>
+	<script type="text/javascript" src="/js/tiny_mce/plugins/media/js/embed.js"></script>    
+	<script type="text/javascript">var $j = jQuery.noConflict();</script>
+        <script type="text/javascript" src="/js/scriptaculous/scriptaculous.js"></script>
+	<script type="text/javascript" src="/js/ordenar.js"></script>
+	<script type="text/javascript" src="/js/jquery-ui.js"></script>
+        
+        <!-- INTERIOR DE NOTA -->
+        <link href="/css/dragToShare.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="/js/anchopantalla.js"></script>
+        <script type="text/javascript" src="/js/nota.js"></script>
+        <!-- INTERIOR DE NOTA -->
+        
+        <script type="text/javascript">
+    $j(function(){
+        $j('.notagrande').mouseenter(function(){
+            $j(this).find('.bajada').fadeIn('fast');
+        }).mouseleave(function(){
+            $j(this).find('.bajada').fadeOut('slow');
+        });
+    });
+</script>
+        
+        <script type="text/javascript" src="/js/thickbox.js"></script>
+	<script type="text/javascript" src="/js/thickboxC.js"></script>
+	<script type="text/javascript" src="/js/original.thickbox.js"></script>
+	<script type="text/javascript" src="/js/general.js"></script>
+	<script type="text/javascript" src="/js/date.js"></script>
+	<script type="text/javascript" src="/js/datepicker.js"></script>
+	<script type="text/javascript" src="/js/swfobject.js"></script>
+	<script type="text/javascript" src="/js/funciones-ipro.js"></script>
+	<script type="text/javascript" src="/js/jquery.easy-pie-chart.js"></script>
+        <script type="text/javascript" src="/js/banners.js"></script>
+        <!--[if lt IE 9]><script type="text/javascript" src="/js/excanvas.js"></script><![endif]-->
+        
+        <!-- Responsive -->
+        <script src="/js/2014/jquery.responsiveWeb.min.js?v=14022014.15.08"></script>
+        <script src="/js/2014/modernizr.custom.79639.js?v=14022014.15.07"></script>
+        <script src="/js/2014/distribucion.js?v=06.11.2014"></script>
+        <!-- Responsive -->
+        
+        <link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/home.xml" type="application/rss+xml" title="iProfesional.com - Principales Noticias" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/legales.xml" type="application/rss+xml" title="iProfesional.com - Información jurídica" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/impuestos.xml" type="application/rss+xml" title="iProfesional.com - Información impositiva" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/economia.xml" type="application/rss+xml" title="iProfesional.com - Economía" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/finanzas.xml" type="application/rss+xml" title="iProfesional.com - Finanzas" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/comercio.xml" type="application/rss+xml" title="iProfesional.com - Comercio Exterior" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/tecnologia.xml" type="application/rss+xml" title="iProfesional.com - Tecnología" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/marketing.xml" type="application/rss+xml" title="iProfesional.com - Marketing" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/management.xml" type="application/rss+xml" title="iProfesional.com - Management" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/institucionales.xml" type="application/rss+xml" title="iProfesional.com - Relaciones institucionales" />
+	<link rel="alternate" href="http://www.iprofesional.com/adjuntos/html/RSS/vinos.xml" type="application/rss+xml" title="iProfesional.com - Vinos y Bodegas" />
+        
+        <script type="text/javascript" src="/js/iprofesional.facebookAPI.js?v=7" ></script>
+        <script type="text/javascript">
+            var timer;
+
+            function setRefresh(milisegundos) {
+                timer = setInterval("doRefresh()", milisegundos);
+            }
+            
+            /***
+             * Código para refresh de la página
+             */
+            function doRefresh() {
+                if ( window.location.href.indexOf( 'page_y' ) != -1 ) {
+                    //gets the number from end of url
+                    var match = window.location.href.split('?')[1].match( /\d+$/ );
+                    var page_y_old = match[0];
+
+                    var page_y_new = $j( document.body ).scrollTop();
+                    var href = window.location.href;
+                    var new_href = href.replace(page_y_old,page_y_new);
+
+                    window.location.href = new_href;
+                }else{
+                    var page_y = $j( document.body ).scrollTop();
+                    window.location.href = window.location.href.split('?')[0] + '?page_y=' + page_y;
+                }
+            }
+            function stopRefresh() {
+                clearTimeout(timer);
+            }
+        </script>
+        
+        <!-- Nuevos js para la version 2.0 -->
+	<script type="text/javascript">
+            var idTemplate = 53
+	</script>
+        <script type="text/javascript" src="/js/objetos/functions.js"></script>
+        <!-- Nuevos js para la version 2.0 -->
+        
+        
+        <!-- Scripts para google plus -->
+	<script type="text/javascript">
+            window.___gcfg = {lang: 'es'};
+	
+            (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+	</script>
+        
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-461306-5']);
+
+            /*** VARIABLES PERSONALIZADAS ***/
+                /** SECCION **/
+        
+                _gaq.push(['_setCustomVar', 1,'Sección','homefila',3]);
+        
+            /*** VARIABLES PERSONALIZADAS ***/
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        
+        
+        
+        <script type="text/javascript" src="/js/jquery.lazyload.js"></script>
+        <script type="text/javascript">
+            $j(function(){
+                $j("img.lazy").lazyload({
+                    threshold : 800,
+                    effect : "fadeIn",
+                    placeholder: "/img/ajax-loader.gif"
+                });
+            });
+        </script>
+        
+
+        
+        <script type="text/javascript">
+            //Con este script se captura la disposicion de la pantalla del usuario para volver a ella luego del refresh
+            $j(document).ready(function() {
+                if ( window.location.href.indexOf( 'page_y' ) != -1 ) {
+                    //gets the number from end of url
+                    var match = window.location.href.split('?')[1].match( /\d+$/ );
+                    var page_y = match[0];
+
+                    //sets the page offset 
+                    $j( 'body, html' ).scrollTop( page_y );
+                }
+            });
+
+            $j(document).ready(function() {
+                if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1){
+                    var current_css = $j('body').css('font-family'); 
+                    $j('body').css('font-family', current_css); 
+                    setInterval(function() {
+                        var current_css = $j('body').css('font-family'); 
+                        $j('body').css('font-family', current_css); }, 5000);
+                } 
+            });
+        </script>
+        
+        
+        <!-- e-planning v3 - Comienzo espacio iProfesional.com Profesional _ 01 Home Page _ __ Intro ( restricciones ) -->
+<script type="text/javascript" language="JavaScript1.1">
+<!--
+var rnd = (new String(Math.random())).substring(2,8) + (((new Date()).getTime()) & 262143);
+var cs = document.charset || document.characterSet;
+document.write('<scri' + 'pt language="JavaScript1.1" type="text/javascript" src="http://ads.e-planning.net/eb/3/36c7/2e09fdccda2f37b9?o=j&rnd=' + rnd + '&crs=' + cs + '"></scr' + 'ipt>');
+//-->
+</script>
+<noscript><a href="http://ads.e-planning.net/ei/3/36c7/2e09fdccda2f37b9?it=i&rnd=$RANDOM" target="_blank"><img alt="e-planning.net ad" src="http://ads.e-planning.net/eb/3/36c7/2e09fdccda2f37b9?o=i&rnd=$RANDOM" border=0></a></noscript>
+<!-- e-planning v3 - Fin espacio iProfesional.com Profesional _ 01 Home Page _ __ Intro ( restricciones ) -->
+
+
+        <!-- TailTarget Tag Manager TT-10654-2/CT-198 --> <script>
+        (function(i) {
+        var ts = document.createElement('script');
+        ts.type = 'text/javascript';
+        ts.async = true;
+        ts.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'tags.t.tailtarget.com/t3m.js?i=' + i; var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ts, s);
+        })('TT-10654-2/CT-198');
+        </script>
+        <!-- End TailTarget Tag Manager -->
+
+        <!-- Inicio da tag TT de segmentacao -->
+        <script id="tailtarget" type="text/javascript">
+        // <![CDATA[
+            var _ttprofiles = _ttprofiles || [];
+            _ttprofiles.profiles = [];
+            _ttprofiles.push(['_enableServices']);
+            document.write("<scr" + "ipt src='" + ("https:" == document.location.protocol ? "https:" : "http:") + "//d.tailtarget.com/profiles.js'></scr" + "ipt>");
+        // ]]>
+        </script>
+        <!-- Final da tag TT de segmentacao -->
+
+        <!-- UIX -->
+        <link type="text/css" rel="stylesheet" href="/uix/css/uix.iprofesional.css?v=3" media="all" />
+        <script type="text/javascript" src="/uix/js/uix.iprofesional.js?v=2"></script>
+
+        <!-- iProfesional 2015 -->
+        <script type="text/javascript" src="/userApi/js/functions.js?v=2"></script>
+        <script type="text/javascript" src="/userApi/js/socialNetworks.js?v=3"></script>
+        
+        <!-- Inicializa Api de iProfesional -->
+        
+        <script type="text/javascript">
+            function addEvent(element, event, fn) {
+                if (element.addEventListener) {
+                    element.addEventListener(event, fn, false);
+                } else if (element.attachEvent) {
+                    element.attachEvent('on' + event, fn);
+                }
+            }
+
+            function loadScript(src, callback) {
+                var s,
+                r,
+                t;
+                r = false;
+                s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.src = src;
+                s.onload = s.onreadystatechange = function() {
+                    if ( !r && (!this.readyState || this.readyState == 'complete') ){
+                        r = true;
+                        if (callback !== undefined) {
+                            callback();
+                        }
+                    }
+                };
+                t = document.getElementsByTagName('script')[0];
+                t.parentNode.insertBefore(s, t);
+            }
+            
+            addEvent(window, 'load', function(){ loadScript(
+                '/userApi/js/iProfesional.js?v=3',
+                function () {
+                    iProf.loginStatus(function(){
+                        if (iProf.status === 'unlogged' || iProf.status === 'no-status') {
+                            iProf.loadButtons();
+                        } else if (iProf.status === 'logged') {
+                            iProf.loadUserAccount();
+                        }
+                    });
+                });
+                
+                if (windowWidth >= 1300) {
+                    $j('.lateralfijo, .redessociales').css({'position': 'absolute', 'top': $j('.wrappernota').offset().top + 'px'});
+                }
+
+                if (windowWidth < 1300) {
+                    $j('.lateralfijo').css({'position': 'absolute', 'top': $j('.wrappernota').offset().top + 'px'});
+                    $j('.redessociales').css({'position': 'absolute', 'top': $j('.contenidonota').offset().top + 'px'});
+                }
+            });
+        </script>
+        
+        <!-- Fin Api de iProfesional -->
+
+        <!-- iProfesional 2015 -->
+        
+        <style type="text/css">
+            div.volanta:empty,.flaticon-typografic{ display: none !important; }
+.expandible-push, .objeto-cabezal-azul{ padding: 0; }
+.remover-fila{ display: none; }
+.publicar-fila{ display: none; }
+
+/** cabezal azul **/
+#cabezal-home .banner980 {
+margin:0 auto;
+padding-bottom:40px;
+width:100%;
+max-width:1320px;
+min-width:980px;
+text-align: inherit;
+}
+/*.expandible-push{ text-align: inherit; }*/
+@media all and (max-width:1400px){
+ #cabezal-home .banner980{
+  margin-left:-4%;
+ }
+}
+@media (max-width: 1399px){
+#cabezal-home .banner980 {
+   margin-left: 0%;
+}
+}
+
+/*** interior de nota ***/
+.wrapper .sidebarFijo,
+.wrapper .antsig{ display: none; }
+.cajassociales .twitter a{ color:#FFF; font-size: 12px; }
+.objetozoom .sliderzoom .imagennota{ display: none !important; }
+.objetozoom .sliderzoom .titulonota{ width: 100% !important; font-size:14px !important; line-height: 19px !important; }
+.antsig{ overflow: hidden !important; }
+
+/** galeria_nota.css line 2 **/
+.galeriainterna{ margin-left: 0px; }
+
+/** interiordenota.css line 810 **/
+.wrappernotatodo .wrappernota .contenidonota .imagenprincipal img{ width: 100%; }
+
+
+/** ajuste boton publicar ***/
+.publicar-objeto{ float: right !important; }
+.banner-admin .object-controls{
+bottom: -30px;
+}
+
+.bannerpremiumnotas{ float: left; top: 0px; margin-top: 0px;  }
+
+.expandible-push{ background: none !important; width: auto !important; text-align: inherit !important; margin: inherit !important; display: inherit !important; height: auto !important; padding: 0 0 0px 0 !important; min-height: 0px !important; }
+
+.expandible-push > div > div{
+height: inherit; width: 100% !important;
+}
+
+ .cabezalhome{ position:relative;z-index:100}
+.menutop{ z-index: 101; }
+
+#eplAdDivBanner_06_1320x250 div{ display: block !important; }
+
+.wrappernotatodo{ background-color: #FFFFFF; }
+
+.wrappernotatodo .wrappernota .contenidonota .contenido .adsense300x250 {
+    width: 100%;
+height: auto;
+margin-right: auto;
+margin-bottom: auto;
+margin-top: auto;
+float: inherit;
+}
+
+.adsense300x250 > div > div{ margin: 0 auto;  padding-bottom: 5px; }
+
+.wrapperelecciones{ padding-top: 30px; }
+#elecciones .bloqueresultados .barraprincipal .resultadocandidato2{ margin-left: -12px; }
+
+.cabezalnotas072015 {
+    width: 100%;
+    height: 130px;
+    float: left;
+    background-color: #122134;
+    margin-bottom: 50px;
+    margin-top: 43px;
+}
+        </style>
+
+        <script type="text/javascript">
+            $j(function(){
+    setTimeout(function(){
+if(idTemplate != 53){
+        $j('.utilidades .iconossocial,.utilidades .fecha,.utilidades .buscador').css('display','none'); 
+        if($j('#eplAdDivBanner_08_728x90 iframe').length == 2){ 
+            $j('.utilidades .iconossocial,.utilidades .fecha,.utilidades .buscador').css('display','block'); 
+        }
+        
+        if($j('.wrappernota').length > 1) {
+            if (windowWidth >= 1300) {
+                $j('.lateralfijo, .redessociales').css({'position': 'absolute', 'top': $j('.wrappernota').offset().top + 'px'});
+            }
+
+            if (windowWidth < 1300) {
+                $j('.lateralfijo').css({'position': 'absolute', 'top': $j('.wrappernota').offset().top + 'px'});
+                $j('.redessociales').css({'position': 'absolute', 'top': $j('.contenidonota').offset().top + 'px'});
+            }
+        }
+}
+    }, 500);
+});
+
+if(!addEvent) {
+    function addEvent(element, event, fn) {
+        if (element.addEventListener) {
+            element.addEventListener(event, fn, false);
+        } else if (element.attachEvent) {
+            element.attachEvent('on' + event, fn);
+        }
+    }
+}
+
+addEvent(window, 'load', function(){ 
+    $j('.publicar-objeto').die('click').live('click', function(){
+        var idFila = $j(this).attr('fila');
+        var espacio = $j(this).attr('espacio');
+        var idInstancia = $j(this).attr('instancia');
+        var estado = $j(this).attr('estate');
+        
+        var accion = (estado == 1) ? 'despublicar' : 'publicar';
+
+        if (estado == 1) {
+            if (confirm('Esta acción despublicará el objeto. ¿Desea continuar?')) {
+                $j.ajax({
+                    async: false,
+                    type: 'post',
+                    url:    '/admin/filas/functions_noticias.php',
+                    data: 'sAction=publicarObjeto&idFila=' + idFila + '&espacio=' + espacio + '&idInstancia=' + idInstancia + '&estado=' + estado,
+                    success: function(response){
+                        if(response == -1 || response == -2){
+                            alerta('Ocurrio un error al ' + accion + ' el objeto! Puede ser que el objeto no tenga contenido asociado, o que la nota asociada no este publicada. Verifiquelo y vuelva a intentarlo. Gracias.');
+                        }else{
+                            refreshBloque(idFila);
+                        }
+                    }
+                });
+            }
+        } else {
+            $j.ajax({
+                async: false,
+                type: 'post',
+                url:    '/admin/filas/functions_noticias.php',
+                data: 'sAction=publicarObjeto&idFila=' + idFila + '&espacio=' + espacio + '&idInstancia=' + idInstancia + '&estado=' + estado,
+                success: function(response){
+                    if(response == -1 || response == -2){
+                        alerta('Ocurrio un error al ' + accion + ' el objeto! Puede ser que el objeto no tenga contenido asociado, o que la nota asociada no este publicada. Verifiquelo y vuelva a intentarlo. Gracias.');
+                    }else{
+                        refreshBloque(idFila);
+                    }
+                }
+            });
+        }
+    });
+
+    $j('.publicar-fila').die('click').live('click', function(){
+        var idFila = $j(this).attr('fila');
+        var estado = $j(this).attr('estate');
+        
+        var accion = (estado == 1) ? 'despublicar' : 'publicar';
+        
+        if (estado == 1) {
+            if (confirm('Esta acción despublicará la fila. ¿Desea continuar?')) {
+               $j.ajax({
+                    async: false,
+                    type: 'post',
+                    url:    '/action/filas/ajax.bloque.php',
+                    data: 'action=publicarBloque&idFila=' + idFila + '&estado=' + estado + '&accion=' + accion,
+                    success: function(response){
+                        if(response == -1 || response == -2){
+                            alerta('Ocurrio un error al ' + accion + ' el objeto! Puede ser que el objeto no tenga contenido asociado, o que la nota asociada no este publicada. Verifiquelo y vuelva a intentarlo. Gracias.');
+                        }else{
+                            refreshBloque(idFila);
+                        }
+                    }
+                }); 
+            }
+        } else {
+            $j.ajax({
+                async: false,
+                type: 'post',
+                url:    '/action/filas/ajax.bloque.php',
+                data: 'action=publicarBloque&idFila=' + idFila + '&estado=' + estado + '&accion=' + accion,
+                success: function(response){
+                    if(response == -1 || response == -2){
+                        alerta('Ocurrio un error al ' + accion + ' el objeto! Puede ser que el objeto no tenga contenido asociado, o que la nota asociada no este publicada. Verifiquelo y vuelva a intentarlo. Gracias.');
+                    }else{
+                        refreshBloque(idFila);
+                    }
+                }
+            });
+        }
+    });
+});
+
+doRefresh = function() {
+                var noRefresh = ['Intro_restricciones', 'HOME_Objeto_Autos', 'HOME_Objeto_Codigo_Civil', 'HOME_Objeto_Vinos'];
+                console.log('Refresh banners v4...');
+                
+                Object.keys(eplDoc.epl.spaces).each(function(space){
+                    if(noRefresh.indexOf(space) < 0){ 
+                        eval('var obj= eplDoc.epl.spaces.'+space+';');
+                        if(obj.rendered()){
+                            $j('#eplAdDiv'+space).css('min-height', $j('#eplAdDiv'+space).height());
+                            eplDoc.epl.reloadSpace(space);
+                        }
+                    }
+                });
+}
+
+
+
+// <![CDATA[
+  var _ttprofiles = _ttprofiles || [];
+  _ttprofiles.profiles = [];
+  _ttprofiles.push(['_enableServices']);
+  document.write("<scr" + "ipt src='" + ("https:" == document.location.protocol ? "https:" : "http:") + "//d.tailtarget.com/profiles.js'></scr" + "ipt>");
+  // ]]>
+        </script>
+
+        
+        <script type="text/javascript">
+            (function() {
+                function async_load(script_url){
+                    var protocol = ('https:' == document.location.protocol ? 'https://' : 'http://');
+                    var s = document.createElement('script'); s.src = protocol + script_url;
+                    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+                }
+                bm_website_code = '52C7E5E2604D437D';
+                jQuery(document).ready(function(){async_load('asset.pagefair.com/measure.min.js')});
+                jQuery(document).ready(function(){async_load('asset.pagefair.net/ads.min.js')});
+            })();
+        </script>
+        
+
+        <!-- Embi Media -->
+        
+            <script type='text/javascript'>
+                var googletag = googletag || {};
+                googletag.cmd = googletag.cmd || [];
+                (function() {
+                    var gads = document.createElement('script');
+                    gads.async = true;
+                    gads.type = 'text/javascript';
+                    var useSSL = 'https:' == document.location.protocol;
+                    gads.src = (useSSL ? 'https:' : 'http:') +
+                            '//www.googletagservices.com/tag/js/gpt.js';
+                    var node = document.getElementsByTagName('script')[0];
+                    node.parentNode.insertBefore(gads, node);
+                })();
+            </script>
+
+            <script type='text/javascript'>
+                googletag.cmd.push(function() {
+                    googletag.defineSlot('/96449467/iprofesional_video_outstream', [1, 1], 'div-gpt-ad-1468262614547-0').addService(googletag.pubads());
+                    googletag.pubads().enableSingleRequest();
+                    googletag.enableServices();
+                });
+            </script>
+        
+        <!-- Embi Media -->
+</head>    
+    <body>
+        <div id="fb-root"></div>
+        <script type="text/javascript">
+            /*** facebook Setup ***/
+            window.fbAsyncInit = function() {
+                FB.init({
+                    appId      : '390599101136530',
+                    status     : true, 
+                    cookie     : true,
+                    xfbml      : true,
+                    oauth      : true
+                });
+            };
+            (function(d){
+                var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+                js = d.createElement('script'); js.id = id; js.async = true;
+                js.src = "//connect.facebook.net/en_US/all.js";
+                d.getElementsByTagName('head')[0].appendChild(js);
+            }(document));
+        </script>
+        
+        <script language="JavaScript" type="text/javascript"><!--
+function eplCheckStart(){if(document.epl){var e=document.epl;if(e.eplReady())return!0;if(e.eplInit(eplArgs),eplArgs.custom)for(var t in eplArgs.custom)document.epl.setCustomAdShow(t,eplArgs.custom[t]);return e.eplReady()}if(eplLL)return!1;if(!document.body)return!1;var n,o=document.cookie,a=("https"===schemeLocal()?"EPLSERVER_S":"EPLSERVER")+"=",l=o.indexOf(a);if(-1!=l){l+=a.length;var r=o.indexOf(";",l);-1==r&&(r=o.length),n=o.substring(l,r)}var c=document.createElement("IFRAME");c.src="about:blank",c.id="epl4iframe",c.name="epl4iframe",c.width=0,c.height=0,c.style.width="0px",c.style.height="0px",c.style.display="none",document.body.appendChild(c);var _=c.contentDocument?c.contentDocument:c.document;_.open(),_.write("<html><head><title>e-planning</title></head><body></body></html>"),_.close();var t=_.createElement("SCRIPT");if(t.src=schemeLocal()+"://"+(n?n:eS1)+"/layers/epl-41.js",_.body.appendChild(t),!n){var p=_.createElement("SCRIPT");p.src=schemeLocal()+"://ads.e-planning.net/egc/4/40a5",_.body.appendChild(p)}return eplLL=!0,!1}function eplSetAdM(e,t){if(eplCheckStart())t&&document.epl.setCustomAdShow(e,eplArgs.custom[e]),document.epl.showSpace(e);else{var n='eplSetAdM("'+e+'", '+(t?"true":"false")+");";setTimeout(n,250)}}function eplAD4M(e,t){document.write('<div id="eplAdDiv'+e+'"></div>'),t&&(eplArgs.custom||(eplArgs.custom={}),eplArgs.custom[e]=t),eplSetAdM(e,t?!0:!1)}function schemeLocal(){return protocol=document.location.protocol?document.location.protocol:window.top.location.protocol,protocol?-1!==protocol.indexOf("https")?"https":"http":void 0}var eplDoc=document,eplLL=!1,eS1="ak1.img.e-planning.net",eplArgs={iIF:1,sV:schemeLocal()+"://ads.e-planning.net/",vV:"4",sI:"36c7",sec:"01_Home_Page",eIs:["Banner_03_300x300_top","Intro_restricciones","Banner_06_630x300","Banner_01_300x300","Banner_07_300x300","Banner_10_300x120","Banner_00_960x50","Banner_18_960x50","Banner_19_960x50","Banner_20_960x50","Banner_21_960x50","Triple_Impacto","Banner_04_300x630","Cabezal_debajo_de_logoipro","Solapa","Cabezal_encima_de_menu","Banner_22_980x50","Cabezal_centro","Test_980x250","HOME_Objeto_Cabezal_Azul","Banner_23_1320x250","Banner_24_1320x250","HOME_Objeto_Vinos","HOME_Objeto_Autos","HOME_Objeto_Codigo_Civil","HOME_Objeto_Debajo_de_Cabezal_Azul","Banner_08_728x90","HOME_ELECCIONES_Debajo_del_cabezal","HOME_ELECCIONES_Debajo_de_notaprincipal","HOME_ELECCIONES_Entre_notas"]};eplCheckStart();
+//--></script>        
+        	
+		
+	                
+        <!-- comScore DAx STANDARD--> 
+                        <script type="text/javascript"> 
+            // <![CDATA[
+                    function udm_(a){
+                            var b="comScore=",c=document,d=c.cookie,e="",f="indexOf",g="substring",h="length",i=2048,j,k="&ns_",l="&",m,n,o,p,q=window,r=q.encodeURIComponent||escape;if(d[f](b)+1)for(o=0,n=d.split(";"),p=n[h];o<p;o++)m=n[o][f](b),m+1&&(e=l+unescape(n[o][g](m+b[h])));a+=k+"_t="+ +(new Date)+k+"c="+(c.characterSet||c.defaultCharset||"")+"&c8="+r(c.title)+e+"&c7="+r(c.URL)+"&c9="+r(c.referrer),a[h]>i&&a[f](l)>0&&(j=a[g](0,i-8).lastIndexOf(l),a=(a[g](0,j)+k+"cut="+r(a[g](j+1)))[g](0,i)),c.images?(m=new Image,q.ns_p||(ns_p=m),m.src=a):c.write("<","p","><",'img src="',a,'" height="1" width="1" alt="*"',"><","/p",">")
+                    } 
+                    udm_('http'+(document.location.href.charAt(4)=='s'?'s://sb':'://b')+'.scorecardresearch.com/p?c1=2&c2=16597048&ns_site=iprofesional&name=home.index');
+            // ]]>
+            </script>
+            <noscript><p><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=16597048&amp; 
+            ns_site=iprofesional&amp;name=home.index" height="1" width="1" alt="*"></p></noscript> 
+        <!-- End comScore DAx STANDARD -->
+        
+        <script type="text/javascript">
+        setRefresh(420000);        </script>
+
+        <!-- EmbiMedia -->
+        <!-- /96449467/iprofesional_video_outstream -->
+        <div id='div-gpt-ad-1468262614547-0' style='height:1px; width:1px;'>
+            <script type='text/javascript'>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1468262614547-0'); });
+            </script>
+        </div>
+        <!-- EmbiMedia -->
+
+
+<!-- BANNER CON FORMATO -->
+<div class="mega-cortina-fija"><script type="text/javascript">eplAD4M("Cabezal_encima_de_menu");</script></div>
+<!-- BANNER CON FORMATO -->
+
+    <style>
+        .mundialScoreHeader{ width: 30%; height: 90%; float: left; margin: 5px auto 5px 1%; position: relative; }
+        .mundialScoreHeader iframe{  border: none; }
+        .mundialScoreHeader a{ background: red; position: absolute; width: 20%; height: 15%; font-size: 10px; margin-bottom: -20px; left: 0px; margin: 0px 40%; bottom: 0px; text-align: center; font-family: 'WhitneyBoldWhitneyBold', Arial;  color: #FFF; background: #1d3048; padding-top: 10px; -webkit-border-radius: 5px;
+        border-radius: 5px; }
+    </style>
+    <div class="socialalt">
+ 
+    </div>
+    <div class="menutop">
+        <div class="menutopwrap ">
+            <ul>
+                <li><a class="homeon" href="http://www.iprofesional.com/" title="Home">Home</a></li>
+<li><a class="economia" href="http://www.iprofesional.com/economia" title="Economía">Economía</a></li>
+<li><a class="finanzas" href="http://www.iprofesional.com/finanzas" title="Finanzas">Finanzas</a></li>
+<li><a class="contadores" href="http://www.iprofesional.com/impuestos" title="Impuestos">Impuestos</a></li>
+<li><a class="abogados" href="http://www.iprofesional.com/legales" title="Legales">Legales</a></li>
+<li><a class="negocios" href="http://www.iprofesional.com/negocios" title="Negocios">Negocios</a></li>
+<li><a class="tecnologia" href="http://www.iprofesional.com/tecnologia" title="Tecnología">Tecnología</a></li>
+<li><a class="comex" href="http://www.iprofesional.com/comex" title="Comex">Comex</a></li>
+<li><a class="management" href="http://www.iprofesional.com/management" title="Management">Management</a></li>
+<li><a class="marketing" href="http://www.iprofesional.com/marketing" title="Marketing">Marketing</a></li>
+<li class='massecciones'>	 	<a href='#none' id='masSecciones' onclick='javascript:verMasSecciones();return false'>M&aacute;s secciones</a><ul><li><a href="http://autosipro.iprofesional.com">Autos</a></li><li><a href="http://vinosybodegas.iprofesional.com">Vinos</a></li></ul></li>                
+            </ul>
+                    </div>
+    </div>
+
+    <div class="cabezalhome">
+        <div class="cabezal ">
+            <div class="logo">
+                <a href="http://www.iprofesional.com"></a>
+            </div>
+            
+                        
+                        <div class="utilidades">
+                <div class="banner240x90">
+                    <!-- banner -->
+                    <script type="text/javascript">eplAD4M("Cabezal_centro");</script>
+<script type="text/javascript">eplAD4M("Banner_08_728x90");</script>                    <!-- banner -->
+                </div>
+                <div class="iconossocial">
+                    <ul>
+                        <li class="fb"><a href="http://www.facebook.com/iProfesionalcom" target="_blank" title="Facebook"></a></li>
+                        <li class="tw"><a href="https://twitter.com/iProfesional" target="_blank" title="Twitter"></a></li>
+                        <li class="gp"><a href="https://plus.google.com/+iProfesional" target="_blank" title="G+"></a></li>
+                        <li class="in"><a href="http://www.linkedin.com/company/963416?trk=tyah&trkInfo=tas%3Aiprofesional.com" target="_blank" title="Linkedin"></a></li>
+                        <li class="al"><a href="http://www.iprofesional.com/secciones/alertas-de-mail.php" target="_blank" title="Alertas"></a></li>
+                        <li class="rs"><a href="http://www.iprofesional.com/rss.html" target="_blank" title="Rss"></a></li>
+                    </ul>
+                </div>
+                <div class="fecha">
+                    <div class="dia">03.08</div>
+                    <div class="lugar">Buenos Aires, Argentina.</div>
+                    <div class="actualizacion">Última actualización 10.18 hs</div>
+                </div>
+                <div class="buscador">
+                    <div class="buscar">
+                        <form action="" method="post" onsubmit="javascript:buscarIprofesional(); return false;">
+                            <div class="campo">
+                                <input name="searching_word" type="text" id="searching_word" value="" placeholder="Buscar..." />
+                            </div>
+                            <div class="boton"><a href="#none" id="iProfesionalSearchTool" /></a></div>
+                        </form>
+                    </div>
+                    <div class="botones" id="account-area"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="expandible-push"><div class="homeElecciones">
+<script type="text/javascript">eplAD4M("HOME_ELECCIONES_Debajo_del_cabezal");</script>
+</div></div>
+<div class="notaprincipal" id="cabezal-home"><div class="banner980">
+<div class="expandible-push">
+<script type="text/javascript">eplAD4M("Cabezal_debajo_de_logoipro");</script></div>
+
+<div class="objeto-cabezal-azul">
+<script type="text/javascript">eplAD4M("HOME_Objeto_Cabezal_Azul");</script>
+</div>
+
+<style type="text/css">
+.notaswrapper > .bloquenotas:first-child .banner980{ margin: 0;  }
+</style></div><div class="notaprincipal1">
+    <div class="colizq">
+        <div class="chapanaranja">COMEX</div>        <h1>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236414-Las-corridas-por-el-aceite-y-la-manteca-una-combinacion-letal-entre-la-herencia-K-y-la-imprevision-macrista" title="Las "corridas" por el aceite y la manteca: una combinación letal entre la "herencia K" y la imprevisión macrista">
+                    Las "corridas" por el aceite y la manteca: una combinación letal entre la "herencia K" y la imprevisión macrista                </a>
+            </div>
+        </h1>
+        <h2>
+            <div class="bajada">
+                <span class="txtnaranja">03/08/2016</span> 
+                El Gobierno apuesta por una Argentina como "supermercado del mundo" pero debe lidiar con la escasez de alimentos clave de la canasta básica. Mientras los empresarios se tiran la pelota y crece el malhumor social, surgen voces que advierten que los funcionarios están corriendo detrás del problema            </div>
+        </h2>
+        <div class="imagen">
+            <a href="http://www.iprofesional.com/notas/236414-Las-corridas-por-el-aceite-y-la-manteca-una-combinacion-letal-entre-la-herencia-K-y-la-imprevision-macrista" title="Las "corridas" por el aceite y la manteca: una combinación letal entre la "herencia K" y la imprevisión macrista">
+                        <img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/433665.jpg" alt="Las "corridas" por el aceite y la manteca: una combinación letal entre la "herencia K" y la imprevisión macrista" width="700" height="514" />
+                    </a>        </div>
+    </div>
+    <div class="colder">
+        <div class="nota1">
+            <div class="chapanaranja">ECONOMíA</div>            <h2>
+                <div class="titulo">
+                    <a href="http://www.iprofesional.com/notas/236362-El-Gobierno-endulza-la-relacion-con-los-gobernadores-y-les-garantiza-caja-adicional-por-37000-millones" title="El Gobierno endulza la relación con los gobernadores y les garantiza "caja" adicional por $37.000 millones">
+                        El Gobierno endulza la relación con los gobernadores y les garantiza "caja" adicional por $37.000 millones                    </a>
+                </div>
+            </h2>
+            <div class="imagen">
+                <a href="http://www.iprofesional.com/notas/236362-El-Gobierno-endulza-la-relacion-con-los-gobernadores-y-les-garantiza-caja-adicional-por-37000-millones" title="El Gobierno endulza la relación con los gobernadores y les garantiza "caja" adicional por $37.000 millones">
+                        <img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/509x374_433664.jpg" alt="El Gobierno endulza la relación con los gobernadores y les garantiza "caja" adicional por $37.000 millones" width="509" height="374" />
+                    </a>            </div>
+            <h3>
+                <div class="bajada" style="display:none;">
+                    <a href="http://www.iprofesional.com/notas/236362-El-Gobierno-endulza-la-relacion-con-los-gobernadores-y-les-garantiza-caja-adicional-por-37000-millones" title="El Gobierno endulza la relación con los gobernadores y les garantiza "caja" adicional por $37.000 millones">
+                        <span class="txtnaranja">02/08/2016</span> 
+                        Tras el encuentro en la Casa Rosada, los gobernadores lograron un acuerdo por la devolución de la coparticipación. El número se incrementará y llegará en 2020 a $85.922 millones para repartir entre las provincias y un total acumulado en los próximos cinco años de casi $310 mil millones                    </a>
+                </div>
+            </h3>
+        </div>
+        <div class="nota2">
+            <div class="chapanaranja">FINANZAS</div>            <h2>
+                <div class="titulo">
+                    <a href="http://www.iprofesional.com/notas/236415-Al-mercado-le-siguen-gustando-las-Lebacs-aunque-Sturzenegger-bajo-las-tasas-la-demanda-batio-un-nuevo-record" title="Al mercado le siguen gustando las Lebacs: aunque Sturzenegger bajó las tasas, la demanda batió un nuevo récord">
+                        Al mercado le siguen gustando las Lebacs: aunque Sturzenegger bajó las tasas, la demanda batió un nuevo récord                    </a>
+                </div>
+            </h2>
+            <h3>
+                <div class="bajada">
+                    <a href="http://www.iprofesional.com/notas/236415-Al-mercado-le-siguen-gustando-las-Lebacs-aunque-Sturzenegger-bajo-las-tasas-la-demanda-batio-un-nuevo-record" title="Al mercado le siguen gustando las Lebacs: aunque Sturzenegger bajó las tasas, la demanda batió un nuevo récord">
+                        <span class="txtnaranja">03/08/2016</span> 
+                        Luego de cuatro semanas sin modificaciones, el Banco Central redujo apenas 25 puntos básicos el interés de las Letras a 35 días como señal de que aguarda que la inflación retroceda. Lo ayuda un dólar que en los últimos días se encuentra en descenso: el mayorista se ubica por debajo de los $15                    </a>
+                </div>
+            </h3>
+        </div>
+    </div>
+</div></div><div class="notaswrapper"><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("HOME_ELECCIONES_Debajo_de_notaprincipal");</script></div>        </div>
+        <div class="columnatriple">
+                
+                
+                            </div>
+    </div><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("Banner_00_960x50");</script>
+<div style="margin-bottom:40px"></div></div>        </div>
+        <div class="columnatriple">
+                    <div class="bloquenotasgrandes">
+                                    <div class="columnaizq ">
+                        <div class="notagrande notagrandebajada">            
+    <div class="chapaverde">Actualidad</div>                 
+    <div class="imagen">
+        <div class=""></div>
+        <a href="http://www.iprofesional.com/notas/236418-Baldazo-de-agua-fra-para-el-campo-Monsanto-desarma-su-proyecto-de-1500-millones-en-Crdoba" title="Baldazo de agua fría para el campo: Monsanto desarma su proyecto de $1.500 millones en Córdoba">
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/04/470x345_430807.jpg" alt="Baldazo de agua fría para el campo: Monsanto desarma su proyecto de $1.500 millones en Córdoba" width="470px" height="345px"/>
+        </a>
+    </div>
+    <div class="volantanaranja">Actualidad</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236418-Baldazo-de-agua-fra-para-el-campo-Monsanto-desarma-su-proyecto-de-1500-millones-en-Crdoba" title="Baldazo de agua fría para el campo: Monsanto desarma su proyecto de $1.500 millones en Córdoba"  >
+                Baldazo de agua fría para el campo: Monsanto desarma su proyecto de $1.500 millones en Córdoba            </a>
+        </div>
+    </h2>
+    <h3>
+        <a href="http://www.iprofesional.com/notas/236418-Baldazo-de-agua-fra-para-el-campo-Monsanto-desarma-su-proyecto-de-1500-millones-en-Crdoba" title="Baldazo de agua fría para el campo: Monsanto desarma su proyecto de $1.500 millones en Córdoba">
+            Fuentes vinculadas a la multinacional confirmaron a iProfesional que negocian la venta del predio en Malvinas Argentinas. La empresa comenzó a desmontar las estructuras que inició en 2012. Las escasa superficie de maíz y el reclamo ambientalista fueron las causas que precipitaron la decisión        </a>
+    </h3>
+</div>
+                    </div>
+                                                    <div class="columnader ">
+                            <div class="notamedianofoto">            
+        <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236417-Bajo-el-paraguas-del-nuevo-sistema-de-salud-Macri-devolvi-fondos-y-extiende-tregua-con-los-sindicatos" title="Bajo el paraguas del “nuevo sistema de salud”, Macri devolvió fondos y extiende tregua con los sindicatos" style="font-size: 30px">Bajo el paraguas del “nuevo sistema de salud”, Macri devolvió fondos y extiende tregua con los sindicatos</a>
+            </div>
+        </h2>
+        
+        <h3>
+            <div class="bajada">
+                <a href="http://www.iprofesional.com/notas/236417-Bajo-el-paraguas-del-nuevo-sistema-de-salud-Macri-devolvi-fondos-y-extiende-tregua-con-los-sindicatos" title="Bajo el paraguas del “nuevo sistema de salud”, Macri devolvió fondos y extiende tregua con los sindicatos">
+                                        La iniciativa inyectará $2.714 millones a los gremios, mientras que el resto lo entregará en cuotas. Así el Gobierno busca apaciguar a las centrales obreras, en medio de las amenazas de paro y de reapertura de paritarias. La reacción gremial                </a>
+            </div>
+        </h3>
+    </div>
+
+    <div class="notamitadleft notamitadleftbajada">
+        <div class="imagen">
+            <div class=""></div>
+            <a href="http://www.iprofesional.com/notas/236416-El-pesimismo-cunde-entre-economistas-corrigen-al-42-inflacin-prevista" title="El pesimismo cunde entre economistas: corrigen al 42% inflación prevista">
+                <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/06/218x160_432117.jpg" alt="El pesimismo cunde entre economistas: corrigen al 42% inflación prevista"/>
+            </a>
+        </div>
+        
+                    <div class="volantanaranja">Econom&iacute;a</div>
+                
+        <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236416-El-pesimismo-cunde-entre-economistas-corrigen-al-42-inflacin-prevista" title="El pesimismo cunde entre economistas: corrigen al 42% inflación prevista" style="font-size: 20px">
+                    El pesimismo cunde entre economistas: corrigen al 42% inflación prevista                </a>
+            </div>
+        </h2>
+        
+        <h3>
+            <div class="bajada">
+                <a href="http://www.iprofesional.com/notas/236417-Bajo-el-paraguas-del-nuevo-sistema-de-salud-Macri-devolvi-fondos-y-extiende-tregua-con-los-sindicatos" title="Bajo el paraguas del “nuevo sistema de salud”, Macri devolvió fondos y extiende tregua con los sindicatos">
+                    El relevamiento mensual del Banco Central entre los principales analistas refleja un agravamiento respecto de las proyecciones del mes pasado                </a>
+            </div>
+        </h3>
+    </div>
+    <div class="notamitadright notamitadrightbajada">
+        <div class="imagen">
+            <div class=""></div>
+            <a href="http://www.iprofesional.com/notas/236408-Desacelerar-en-dos-ruedas-cay-9-el-patentamiento-de-motos-en-julio" title="Desacelerar en dos ruedas: cayó 9% el patentamiento de motos en julio">
+                <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2015/06/218x160_419488.jpg" alt="Desacelerar en dos ruedas: cayó 9% el patentamiento de motos en julio"/>
+            </a>
+        </div>
+        
+                    <div class="volantanaranja">Negocios</div> 
+                
+        <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236408-Desacelerar-en-dos-ruedas-cay-9-el-patentamiento-de-motos-en-julio" title="Desacelerar en dos ruedas: cayó 9% el patentamiento de motos en julio" style="font-size: 20px">
+                    Desacelerar en dos ruedas: cayó 9% el patentamiento de motos en julio                </a>
+            </div>
+        </h2>
+        
+        <h3>
+            <div class="bajada">
+                <a href="http://www.iprofesional.com/notas/236417-Bajo-el-paraguas-del-nuevo-sistema-de-salud-Macri-devolvi-fondos-y-extiende-tregua-con-los-sindicatos" title="Bajo el paraguas del “nuevo sistema de salud”, Macri devolvió fondos y extiende tregua con los sindicatos">
+                    Según fatos de ACARA, el mes pasado se patentaron 33.747 unidades, lo que significó una suba del 17,5% en la comparación contra junio                 </a>
+            </div>
+        </h3>
+    </div>
+
+                    </div>
+                            </div>
+                
+                
+                    <div class="columna1 ">
+                <div class="notachica">
+    <div class="chapa">Impuestos</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236423-Habr-devolucin-a-los-contribuyentes-por-Bienes-Personales" title="Habrá devolución a los contribuyentes por Bienes Personales" style="font-size: 27px" >
+                Habrá devolución a los contribuyentes por Bienes Personales            </a>
+        </div>
+    </h2>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236423-Habr-devolucin-a-los-contribuyentes-por-Bienes-Personales" title="Habrá devolución a los contribuyentes por Bienes Personales">
+                                Será para los que ya realizaron el primer anticipo y ahora dejarán de abonar el tributo por ser "buenos cumplidores"                         </a>
+        </div>
+    </h3>
+</div>                            </div>
+                            <div class="columna2 ">
+                <div class="banner300x">
+<script type="text/javascript">eplAD4M("Banner_03_300x300_top");</script></div>                            </div>
+                            <div class="columna3 ">
+                <div class="notachica">
+    <div class="chapa">Impuestos</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236422-AFIP-negocia-con-bancos-que-el-impuesto-del-blanqueo-se-pague-en-sus-sedes-afuera" title="AFIP negocia con bancos que el impuesto del blanqueo se pague en sus sedes afuera" style="font-size: 27px" >
+                AFIP negocia con bancos que el impuesto del blanqueo se pague afuera            </a>
+        </div>
+    </h2>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236422-AFIP-negocia-con-bancos-que-el-impuesto-del-blanqueo-se-pague-en-sus-sedes-afuera" title="AFIP negocia con bancos que el impuesto del blanqueo se pague en sus sedes afuera">
+                                Es para que evitar que baje el dólar. La discusión es si se deposita sólo en sucursales del exterior del Nación o también en entidades privadas            </a>
+        </div>
+    </h3>
+</div>                            </div>
+            </div>
+            <div class="columna4 ">
+            <div class="notamedianasimple">
+    <div class="imagen">
+        <div class=""></div>
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/06/300x219_432623.jpg" alt="Blanqueo de capitales: la AFIP dio precisiones del &quot;paso a paso&quot; para declarar los bienes" width="300px" height="219px"/>
+                    <div class="volanta">Impuestos</div>
+            </div>
+    
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236386-Blanqueo-de-capitales-la-AFIP-dio-precisiones-del-paso-a-paso-para-declarar-los-bienes" title="Blanqueo de capitales: la AFIP dio precisiones del &quot;paso a paso&quot; para declarar los bienes" style="font-size: 25px">
+                Blanqueo de capitales: la AFIP dio precisiones para declarar los bienes            </a>
+        </div>
+    </h2>
+</div><div class="banner300x">
+<script type="text/javascript">eplAD4M("Banner_01_300x300");</script></div><div class="notachica">
+    <div class="chapa">Actualidad</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236404-Optimismo-del-gabinete-econmico-por-la-reduccin-de-la-inflacin-" title="Optimismo del gabinete económico por la reducción de la inflación " style="font-size: 27px" >
+                Optimismo del gabinete económico por la reducción de la inflación             </a>
+        </div>
+    </h2>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236404-Optimismo-del-gabinete-econmico-por-la-reduccin-de-la-inflacin-" title="Optimismo del gabinete económico por la reducción de la inflación ">
+                                Luego de reunirse en Casa Rosada, los funcionarios hablaron con la prensa y estimaron que el indicador estará en el orden del 15 o 17% en 2017            </a>
+        </div>
+    </h3>
+</div>        </div>
+    </div><div>
+    <div class="mainwrapper">
+    <div class="inner">
+        <div class="header"><a href="http://healthandtech.iprofesional.com" target="_blank"></a></div>
+        <div class="notas">
+            <div class="colizq">
+                <div class="lanota">
+                    <div class="chapa">
+                        <div class="tema">interés general</div>
+                    </div>
+                    <div class="titulo">
+                        <h1>
+                            <a href="http://healthandtech.iprofesional.com/2016/08/01/el-impacto-del-celular-al-volante-podria-ser-el-mismo-que-el-del-alcohol/" title="El impacto del celular al volante podría ser el mismo que el del alcohol" target="_blank">
+                                El impacto del celular al volante podría ser el mismo que el del alcohol                            </a>
+                        </h1>
+                    </div>
+                    <div class="imagenbajada">
+                        <div class="imagen">
+                            <a href="http://healthandtech.iprofesional.com/2016/08/01/el-impacto-del-celular-al-volante-podria-ser-el-mismo-que-el-del-alcohol/" title="El impacto del celular al volante podría ser el mismo que el del alcohol" target="_blank">
+                                <img src="http://healthandtech.iprofesional.com/wp-content/uploads/sites/15/2016/08/cel-alcohol-3-300x169.jpg" width="1200" height="675" alt="El impacto del celular al volante podría ser el mismo que el del alcohol"/>
+                            </a>
+                        </div>
+                        <div class="bajada">
+                            <h2>
+                                <a href="http://healthandtech.iprofesional.com/2016/08/01/el-impacto-del-celular-al-volante-podria-ser-el-mismo-que-el-del-alcohol/" title="El impacto del celular al volante podría ser el mismo que el del alcohol" target="_blank">
+                                    <span>01/08/2016</span>
+                                    <p>La telefonía móvil una de las casusa que mas incrementa el riesgo de padecer un accidente automovilístico</p>
+                                    <p class="seguirleyendo">Ir a la nota &#8594;</p>
+                                </a>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="colder">
+                <div class="notaderecha">
+                    <div class="imagen">
+                        <a href="http://healthandtech.iprofesional.com/2016/08/01/diabetes-un-sensor-de-glucosa-que-evita-el-pinchazo/" title="Diabetes: un sensor de glucosa que evita el pinchazo" target="_blank">
+                            <img src="http://healthandtech.iprofesional.com/wp-content/uploads/sites/15/2016/08/dia-300x169.jpg" width="1200" height="675" alt="Diabetes: un sensor de glucosa que evita el pinchazo"/>
+                        </a>
+                    </div>
+                    <div class="chapa">
+                        <div class="tema">INNOVACIÓN</div>
+                    </div>
+                    <div class="titulo">
+                        <h2>
+                            <a href="http://healthandtech.iprofesional.com/2016/08/01/diabetes-un-sensor-de-glucosa-que-evita-el-pinchazo/" title="Diabetes: un sensor de glucosa que evita el pinchazo" target="_blank">
+                                Diabetes: un sensor de glucosa que evita el pinchazo                            </a>
+                        </h2>
+                    </div>
+                    <div class="bajada">
+                        <h3>
+                            <a href="http://healthandtech.iprofesional.com/2016/08/01/diabetes-un-sensor-de-glucosa-que-evita-el-pinchazo/" title="Diabetes: un sensor de glucosa que evita el pinchazo" target="_blank">
+                                <span>01/08/2016</span>
+                                <p>Esta nueva tecnología podría revolucionar el monitoreo de una de las enfermedades que mas controles requieren [...]</p>
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+                <div class="notaderecha right">
+                    <div class="imagen">
+                        <a href="http://healthandtech.iprofesional.com/2016/07/29/la-marihuana-un-posible-tratamiento-para-la-epilepsia/" title="La marihuana: Un posible tratamiento para la epilepsia" target="_blank">
+                            <img src="http://healthandtech.iprofesional.com/wp-content/uploads/sites/15/2016/07/marihuana-300x169.jpg" width="1200" height="675" alt="La marihuana: Un posible tratamiento para la epilepsia"/>
+                        </a>
+                    </div>
+                    <div class="chapa">
+                        <div class="tema">interés general</div>
+                    </div>
+                    <div class="titulo">
+                        <h2>
+                            <a href="http://healthandtech.iprofesional.com/2016/07/29/la-marihuana-un-posible-tratamiento-para-la-epilepsia/" target="_blank">
+                                La marihuana: Un posible tratamiento para la epilepsia                            </a>
+                        </h2>
+                    </div>
+                    <div class="bajada">
+                        <h3>
+                            <a href="http://healthandtech.iprofesional.com/2016/07/29/la-marihuana-un-posible-tratamiento-para-la-epilepsia/" target="_blank">
+                                <span>29/07/2016</span>
+                                <p>Afecta a 17 de cada mil habitantes y es una de las enfermedades más difíciles de tratar</p>
+                            </a>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("HOME_ELECCIONES_Entre_notas");</script></div>        </div>
+        <div class="columnatriple">
+                
+                
+                            </div>
+    </div><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("Banner_21_960x50");</script></div>        </div>
+        <div class="columnatriple">
+                
+                
+                            </div>
+    </div><div class="bloquenotas">
+        <div class="columnatriple">
+                
+                
+                    <div class="columna1 ">
+                <div class="notaslidergrande" id="slider273">
+    <div class="imagen">
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/02/300x219_428569.jpg" width="266" height="194" alt="Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores" />
+    </div>
+    
+    <div class="fecha">03/08/2016</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236419-Impuesto-a-las-Ganancias-el-Gobierno-prepara-cambios-y-busca-el-aval-de-los-gobernadores" title="Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores" style="font-size: 23px" >
+                Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores            </a>
+        </div>
+    </h2>
+    
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236419-Impuesto-a-las-Ganancias-el-Gobierno-prepara-cambios-y-busca-el-aval-de-los-gobernadores" title="Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores"  >
+                La Casa Rosada está preparando una ambiciosa reforma que podría llevar el mínimo no imponible del tributo hasta los $40.000 y $50.000 mensuales            </a>
+        </div>
+    </h3>
+    
+    <div class="puntos">
+        <ul>
+            <li class="on"><a href="javascript:return false;"></a></li>
+                        <li><a href="javascript:return false;"></a></li>
+                    </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var notasSlider273= new Array();
+    var notaSlider273= new Array();
+    var maxNoticias273= 2;
+    var notaActual273= 0;
+    var sliderInterval273= 0;
+    var sliderTime273= 5000;
+    
+                notasSlider273[0] = ['236419','03/08/2016','Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores',$j.trim('La Casa Rosada está preparando una ambiciosa reforma que podría llevar el mínimo no imponible del tributo hasta los $40.000 y $50.000 mensuales'),'http://www.iprofesional.com/notas/236419-Impuesto-a-las-Ganancias-el-Gobierno-prepara-cambios-y-busca-el-aval-de-los-gobernadores','Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores',$j('<img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/02/300x219_428569.jpg" width="266" height="194" alt="Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores" />')];
+                    notasSlider273[1] = ['235515','19/07/2016','Llega la comisión impositiva y los especialistas adelantan cuáles son los cambios que no pueden faltar ',$j.trim('Los expertos consultados por iProfesional dieron cuenta de las modificaciones que deberían hacerse en los gravámenes nacionales, provinciales y municipales'),'http://www.iprofesional.com/notas/235515-Llega-la-comisin-impositiva-y-los-especialistas-adelantan-cules-son-los-cambios-que-no-pueden-faltar-','Llega la comisión impositiva y los especialistas adelantan cuáles son los cambios que no pueden faltar ',$j('<img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/05/300x219_431683.jpg" width="266" height="194" alt="Llega la comisión impositiva y los especialistas adelantan cuáles son los cambios que no pueden faltar " />')];
+                
+    var showNoticia273 = function(idx){
+        var id = notasSlider273[idx][0];
+        notaActual273 = idx;
+        
+        var imagen = notasSlider273[idx][6];
+        var fecha = notasSlider273[idx][1];
+        var titulo = $j('<a href="'+notasSlider273[idx][4]+'" style="font-size: 23px" title="'+notasSlider273[idx][5]+'">'+notasSlider273[idx][2]+'</a>');
+        var bajada = $j('<a href="'+notasSlider273[idx][4]+'" title="'+notasSlider273[idx][5]+'">'+notasSlider273[idx][3]+'</a>');
+        
+        $j('#slider273 .imagen').fadeOut('fast', function(){ $j(this).html(imagen).fadeIn('fast'); });
+        $j('#slider273 h2 .titulo').html(titulo);
+        $j('#slider273 h3 .bajada').html(bajada);
+        $j('#slider273 .fecha').html(fecha);
+    }
+    
+    var rotarAutomatico273 = function(){
+        $j($j('#slider273 .puntos ul li')[notaActual273]).click();
+        notaActual273++;
+        if(notaActual273 >= maxNoticias273) notaActual273 = 0;
+    }
+    
+    
+    $j(function(){
+        $j('#slider273 .puntos ul li').click(function(){ 
+            $j('#slider273 .puntos ul li').removeClass('on');
+            $j(this).addClass('on');
+            showNoticia273($j(this).index());
+        });
+        
+        sliderInterval273 = setInterval('rotarAutomatico273()',sliderTime273);
+        
+        $j('#slider273').mouseenter(function(){
+            clearInterval(sliderInterval273);
+        }).mouseleave(function(){
+            sliderInterval273 = setInterval('rotarAutomatico273()',sliderTime273);
+        });
+    });
+</script>                <div class="notamedianasimple">
+    <div class="imagen">
+        <div class=""></div>
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/300x219_433661.jpg" alt="Furia en el PJ con Cristina Kirchner: &quot;Es fácil estar lejos, venir por ratos, decir un montón de cosas y después volverse&quot;" width="300px" height="219px"/>
+                    <div class="volanta">Actualidad</div>
+            </div>
+    
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236376-Furia-en-el-PJ-con-Cristina-Kirchner-Es-fcil-estar-lejos-venir-por-ratos-decir-un-montn-de-cosas-y-despus-volverse" title="Furia en el PJ con Cristina Kirchner: &quot;Es fácil estar lejos, venir por ratos, decir un montón de cosas y después volverse&quot;" style="font-size: 25px">
+                Furia en el PJ con CFK: "Es fácil estar lejos y decir un montón de cosas"            </a>
+        </div>
+    </h2>
+</div>            </div>
+                            <div class="columna2 ">
+                <div class="notaslidergrande" id="slider476">
+    <div class="imagen">
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/300x219_433606.jpg" width="266" height="194" alt="El ministro de Agroindustria confirmó que el Gobierno no va a intervenir por el faltante de manteca" />
+    </div>
+    
+    <div class="fecha">02/08/2016</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236392-El-ministro-de-Agroindustria-confirm-que-el-Gobierno-no-va-a-intervenir-por-el-faltante-de-manteca" title="El ministro de Agroindustria confirmó que el Gobierno no va a intervenir por el faltante de manteca" style="font-size: 23px" >
+                El ministro de Agroindustria confirmó que el Gobierno no va a intervenir por el faltante de manteca            </a>
+        </div>
+    </h2>
+    
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236392-El-ministro-de-Agroindustria-confirm-que-el-Gobierno-no-va-a-intervenir-por-el-faltante-de-manteca" title="El ministro de Agroindustria confirmó que el Gobierno no va a intervenir por el faltante de manteca"  >
+                “Con el invierno las amas de casa consumen más manteca en la cocina”, señaló el subsecretario de Lechería. La próxima semana se normalizaría la producción            </a>
+        </div>
+    </h3>
+    
+    <div class="puntos">
+        <ul>
+            <li class="on"><a href="javascript:return false;"></a></li>
+                        <li><a href="javascript:return false;"></a></li>
+                    </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var notasSlider476= new Array();
+    var notaSlider476= new Array();
+    var maxNoticias476= 2;
+    var notaActual476= 0;
+    var sliderInterval476= 0;
+    var sliderTime476= 5000;
+    
+                notasSlider476[0] = ['236392','02/08/2016','El ministro de Agroindustria confirmó que el Gobierno no va a intervenir por el faltante de manteca',$j.trim('“Con el invierno las amas de casa consumen más manteca en la cocina”, señaló el subsecretario de Lechería. La próxima semana se normalizaría la producción'),'http://www.iprofesional.com/notas/236392-El-ministro-de-Agroindustria-confirm-que-el-Gobierno-no-va-a-intervenir-por-el-faltante-de-manteca','El ministro de Agroindustria confirmó que el Gobierno no va a intervenir por el faltante de manteca',$j('<img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/300x219_433606.jpg" width="266" height="194" alt="El ministro de Agroindustria confirmó que el Gobierno no va a intervenir por el faltante de manteca" />')];
+                    notasSlider476[1] = ['236375','02/08/2016',' Por qué los empresarios de la industria láctea prefieren producir queso antes que manteca',$j.trim('El vicepresidente de CRA, Jorge Chemes, analizó la cadena de producción luego de que el ministro de Agroindustria declarara que el Gobierno no intervendrá'),'http://www.iprofesional.com/notas/236375--Por-qu-los-empresarios-de-la-industria-lctea-prefieren-producir-queso-antes-que-manteca',' Por qué los empresarios de la industria láctea prefieren producir queso antes que manteca',$j('<img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2014/05/300x219_400010.jpg" width="266" height="194" alt=" Por qué los empresarios de la industria láctea prefieren producir queso antes que manteca" />')];
+                
+    var showNoticia476 = function(idx){
+        var id = notasSlider476[idx][0];
+        notaActual476 = idx;
+        
+        var imagen = notasSlider476[idx][6];
+        var fecha = notasSlider476[idx][1];
+        var titulo = $j('<a href="'+notasSlider476[idx][4]+'" style="font-size: 23px" title="'+notasSlider476[idx][5]+'">'+notasSlider476[idx][2]+'</a>');
+        var bajada = $j('<a href="'+notasSlider476[idx][4]+'" title="'+notasSlider476[idx][5]+'">'+notasSlider476[idx][3]+'</a>');
+        
+        $j('#slider476 .imagen').fadeOut('fast', function(){ $j(this).html(imagen).fadeIn('fast'); });
+        $j('#slider476 h2 .titulo').html(titulo);
+        $j('#slider476 h3 .bajada').html(bajada);
+        $j('#slider476 .fecha').html(fecha);
+    }
+    
+    var rotarAutomatico476 = function(){
+        $j($j('#slider476 .puntos ul li')[notaActual476]).click();
+        notaActual476++;
+        if(notaActual476 >= maxNoticias476) notaActual476 = 0;
+    }
+    
+    
+    $j(function(){
+        $j('#slider476 .puntos ul li').click(function(){ 
+            $j('#slider476 .puntos ul li').removeClass('on');
+            $j(this).addClass('on');
+            showNoticia476($j(this).index());
+        });
+        
+        sliderInterval476 = setInterval('rotarAutomatico476()',sliderTime476);
+        
+        $j('#slider476').mouseenter(function(){
+            clearInterval(sliderInterval476);
+        }).mouseleave(function(){
+            sliderInterval476 = setInterval('rotarAutomatico476()',sliderTime476);
+        });
+    });
+</script>                <div class="notamini">
+    <div class="chapa">Econom&iacute;a</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236398-Macri-defendi-los-tarifazos-y-los-calific-de-pequeos-cambios" title="Macri defendió los tarifazos y los calificó de &quot;pequeños cambios&quot;" style="font-size: 25px" >
+                Macri defendió los tarifazos y los calificó de "pequeños cambios"            </a>
+        </div>
+    </h2>
+</div>
+<div class="notamini">
+    <div class="chapa">Actualidad</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236439-Blanqueo-de-capitales-cmo-se-preparan-los-estudios-jurdicos" title="Blanqueo de capitales: cómo se preparan los estudios jurídicos" style="font-size: 25px" >
+                Blanqueo de capitales: cómo se preparan los estudios jurídicos            </a>
+        </div>
+    </h2>
+</div>
+            </div>
+                            <div class="columna3 ">
+                <div class="notachica">
+    <div class="chapa">Legales</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236421-Scioli-niega-extracciones-en-efectivo-de-los-fondos-pblicos-y-reclama-pruebas" title="Scioli niega extracciones en efectivo de los fondos públicos y reclama pruebas" style="font-size: 27px" >
+                Scioli niega haber extraído efectivo de fondos públicos y pide pruebas            </a>
+        </div>
+    </h2>
+    </div>
+<div class="banner300x">
+<script type="text/javascript">eplAD4M("Banner_04_300x630");</script></div>                            </div>
+            </div>
+            <div class="columna4 ">
+            <div class="notachica">
+    <div class="chapa">Actualidad</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236433-Cristina-Kirchner-tild-a-Bullrich-de-inoperante-y-la-acus-de-poner-en-riesgo-su-vida" title="Cristina Kirchner tildó a Bullrich de &quot;inoperante&quot; y la acusó de poner en riesgo su vida" style="font-size: 27px" >
+                Cristina tildó a Bullrich de "inoperante" y la acusó de poner en riesgo su vida            </a>
+        </div>
+    </h2>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236433-Cristina-Kirchner-tild-a-Bullrich-de-inoperante-y-la-acus-de-poner-en-riesgo-su-vida" title="Cristina Kirchner tildó a Bullrich de &quot;inoperante&quot; y la acusó de poner en riesgo su vida">
+                                La ex presidenta publicó una carta abierta en Facebook en donde le reprochó a la ministra haberle informado a los medios acerca del esquema de seguridad            </a>
+        </div>
+    </h3>
+</div><div class="notachica">
+    <div class="video">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="300" height="219">
+	    <param name="movie" value="/media/swf/play-audio.swf?pathAudio=http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/mp3/2016/08/433677.mp3&amp;pathImg=http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/04/300x219_430136.jpg" />
+	    <param name="quality" value="high" />
+	    <param name="allowFullScreen" value="true" />
+	    <param name="wmode" value="transparent" />
+	    <embed wmode="transparent" src="/media/swf/play-audio.swf?pathAudio=http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/mp3/2016/08/433677.mp3&amp;pathImg=http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/04/300x219_430136.jpg" allowFullScreen="true" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="300" height="219"></embed>
+	</object>
+        <div class="contenido-media-audio">
+            <audio preload controls loop>
+                <source src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/mp3/2016/08/433677.mp3" type="audio/mpeg">
+            </audio>
+            <img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/04/300x219_430136.jpg" />
+        </div>
+    </div>
+    
+    <h2>
+        <div class="titulovideo">
+                        <a href="http://www.iprofesional.com/notas/236430-Lzaro-Bez-Todo-el-mundo-me-us-de-forro" title="Lázaro Báez: &quot;Todo el mundo me usó de forro&quot;" style="font-size: 25px">
+                Lázaro Báez: "Todo el mundo me usó de forro"            </a>
+                    </div>
+    </h2>
+</div><div class="notachica">
+    <div class="chapa">Finanzas</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236437-El-Banco-Central-apronta-medidas-para-que-los-bancos-bajen-las-comisiones" title="El Banco Central apronta medidas para que los bancos bajen las comisiones" style="font-size: 27px" >
+                El BCRA apura medidas para que los bancos bajen las comisiones            </a>
+        </div>
+    </h2>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236437-El-Banco-Central-apronta-medidas-para-que-los-bancos-bajen-las-comisiones" title="El Banco Central apronta medidas para que los bancos bajen las comisiones">
+                                Se trata de una serie de iniciativas que buscan promover la competencia entre las entidades, incluyendo algunas ligadas a la portabilidad bancaria            </a>
+        </div>
+    </h3>
+</div>        </div>
+    </div><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("Banner_18_960x50");</script></div>        </div>
+        <div class="columnatriple">
+                
+                
+                            </div>
+    </div><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("HOME_Objeto_Autos");</script></div>        </div>
+        <div class="columnatriple">
+                
+                
+                            </div>
+    </div><div class="bloquenotas">
+        <div class="columnatriple">
+                    <div class="bloquenotasgrandes">
+                                    <div class="columnaizq ">
+                        <div class="notagrande">            
+    <div class="chapaverde">Legales</div>                 
+    <div class="imagen">
+        <div class=""></div>
+        <a href="http://www.iprofesional.com/notas/236399-El-Gobierno-le-present-a-la-Corte-Suprema-el-informe-tcnico-para-destrabar-el-aumento-del-gas" title="El Gobierno le presentó a la Corte Suprema el informe técnico para destrabar el aumento del gas">
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/06/470x345_431975.jpg" alt="El Gobierno le presentó a la Corte Suprema el informe técnico para destrabar el aumento del gas" width="470px" height="345px"/>
+        </a>
+    </div>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236399-El-Gobierno-le-present-a-la-Corte-Suprema-el-informe-tcnico-para-destrabar-el-aumento-del-gas" title="El Gobierno le presentó a la Corte Suprema el informe técnico para destrabar el aumento del gas">
+                <span class="txtnaranja">02/08/2016</span>
+                La suba de tarifas está frenada por la Justicia hasta que el máximo tribunal resuelva la cuestión de fondo. El ministerio de de Juan José Aranguren justificó los incrementos en un documento de 80 páginas donde compara la inflación de los últimos años con los los costos de la energía            </a>
+        </div>
+    </h3>
+            <div class="volantanaranja">Legales</div>
+        <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236399-El-Gobierno-le-present-a-la-Corte-Suprema-el-informe-tcnico-para-destrabar-el-aumento-del-gas" title="El Gobierno le presentó a la Corte Suprema el informe técnico para destrabar el aumento del gas" style="font-size: 27px" >
+                El Gobierno le presentó a la Corte Suprema el informe técnico para destrabar el aumento del gas            </a>
+        </div>
+    </h2>
+</div>                    </div>
+                                                    <div class="columnader ">
+                        <div class="notamedianofoto">            
+	<h2><div class="titulo"><a href="http://www.iprofesional.com/notas/236431-Subieron-las-multas-un-25-en-Capital-y-cruzar-un-semforo-en-rojo-cuesta-hasta-14000" style="font-size: 30px">Subieron las multas un 25% en Capital y cruzar un semáforo en rojo cuesta hasta $14.000</a></div></h2>
+	<h3><div class="bajada"><a href="http://www.iprofesional.com/notas/236431-Subieron-las-multas-un-25-en-Capital-y-cruzar-un-semforo-en-rojo-cuesta-hasta-14000">Es porque se aumentó el valor de las unidades fijas que se actualiza cada 6 meses según el medio litro de nafta premium. El castigo por exceso de velocidad alcanza hasta los $38.600 y por estacionar mal, $1.000. Hablar por celular al manejar o no ponerse cinturón de seguridad se sanciona con $965</a></div></h3>      
+</div>
+
+<div class="notamedianofoto">            
+	<h2><div class="titulo"><a href="http://www.iprofesional.com/notas/236436-Macri-sobre-la-advertencia-del-Papa-por-el-desempleo-Lo-que-te-cambia-la-vida-es-lo-que-conseguiste-trabajando-todo-el-da" style="font-size: 30px">Macri, sobre la advertencia del Papa por el desempleo: "Quien paga el pan con esfuerzo propio tiene otro sabor"</a></div></h2>	
+	<h3><div class="bajada"><a href="http://www.iprofesional.com/notas/236436-Macri-sobre-la-advertencia-del-Papa-por-el-desempleo-Lo-que-te-cambia-la-vida-es-lo-que-conseguiste-trabajando-todo-el-da">"Cuando un sector retacea esfuerzos reduce las posibilidades de desarrollo y crecimiento de todo el resto", dijo el Presidente. En una carta, Francisco apuntó que "los índices de desocupación son significativamente altos en la Argentina"</a></div></h3>      
+</div>  
+                    </div>
+                            </div>
+                
+                
+                    <div class="columna1 ">
+                <div class="notasmasleidas">
+    <div class="titulo">Notas m&aacute;s le&iacute;das</div>
+    <div class="listado">
+        <ul>
+            <li><a href='http://www.iprofesional.com/notas/236386-Blanqueo-de-capitales-la-AFIP-dio-precisiones-del-paso-a-paso-para-declarar-los-bienes' title='Blanqueo de capitales: la AFIP dio precisiones del &quot;paso a paso&quot; para declarar los bienes'>Blanqueo de capitales: la AFIP dio precisiones del &quot;paso a paso&quot; para declarar los bienes</a></li><li><a href='http://www.iprofesional.com/notas/236423-Habr-devolucin-a-los-contribuyentes-por-Bienes-Personales' title='Habrá devolución a los contribuyentes por Bienes Personales'>Habrá devolución a los contribuyentes por Bienes Personales</a></li><li><a href='http://www.iprofesional.com/notas/236418-Baldazo-de-agua-fra-para-el-campo-Monsanto-desarma-su-proyecto-de-1500-millones-en-Crdoba' title='Baldazo de agua fría para el campo: Monsanto desarma su proyecto de $1.500 millones en Córdoba'>Baldazo de agua fría para el campo: Monsanto desarma su proyecto de $1.500 millones en Córdoba</a></li><li><a href='http://www.iprofesional.com/notas/236419-Impuesto-a-las-Ganancias-el-Gobierno-prepara-cambios-y-busca-el-aval-de-los-gobernadores' title='Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores'>Impuesto a las Ganancias: el Gobierno prepara cambios y busca el aval de los gobernadores</a></li><li><a href='http://www.iprofesional.com/notas/236415-Al-mercado-le-siguen-gustando-las-Lebacs-aunque-Sturzenegger-baj-las-tasas-la-demanda-bati-un-nuevo-rcord' title='Al mercado le siguen gustando las Lebacs: aunque Sturzenegger bajó las tasas, la demanda batió un nuevo récord'>Al mercado le siguen gustando las Lebacs: aunque Sturzenegger bajó las tasas, la demanda batió un nuevo récord</a></li><li><a href='http://www.iprofesional.com/notas/236414-Las-corridas-por-el-aceite-y-la-manteca-una-combinacin-letal-entre-la-herencia-K-y-la-imprevisin-macrista' title='Las &quot;corridas&quot; por el aceite y la manteca: una combinación letal entre la &quot;herencia K&quot; y la imprevisión macrista'>Las &quot;corridas&quot; por el aceite y la manteca: una combinación letal entre la &quot;herencia K&quot; y la imprevisión macrista</a></li>        </ul>
+    </div>
+</div>                            </div>
+                            <div class="columna2 ">
+                <div class="notamediana">
+    <div class="imagen">
+        <div class=""></div>
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/300x219_433680.jpg"/>
+                    <div class="volanta">Finanzas</div>
+            </div>
+    
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236405-Los-economistas-de-Goldman-Sachs-pronostican-que-Argentina-ganar-una-sola-medalla-de-oro" title="Los economistas de Goldman Sachs pronostican que Argentina ganará una sola medalla de oro" style="font-size: 24px">
+                Goldman Sachs pronostica que la Argentina ganará una sola medalla de oro en los Juegos Olímpicos            </a>
+        </div>
+    </h2>
+    
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236405-Los-economistas-de-Goldman-Sachs-pronostican-que-Argentina-ganar-una-sola-medalla-de-oro" title="Los economistas de Goldman Sachs pronostican que Argentina ganará una sola medalla de oro">
+                                Como es habitual en la previa del evento deportivo, el banco de inversión estima el número de preseas de oro por país. En Londres lo hicieron con éxito            </a>
+        </div>
+    </h3>
+    
+    <div class="tags">
+        <ul>
+                        <li>
+                <a href="/index.php?p=buscadorProfesional&accion=Buscar&porpaginaN=10&texto=medallas" title="Los economistas de Goldman Sachs pronostican que Argentina ganará una sola medalla de oro">
+                    medallas                </a>
+            </li>
+                        <li>
+                <a href="/index.php?p=buscadorProfesional&accion=Buscar&porpaginaN=10&texto=Brasil" title="Los economistas de Goldman Sachs pronostican que Argentina ganará una sola medalla de oro">
+                    Brasil                </a>
+            </li>
+                        <li>
+                <a href="/index.php?p=buscadorProfesional&accion=Buscar&porpaginaN=10&texto=JJOO" title="Los economistas de Goldman Sachs pronostican que Argentina ganará una sola medalla de oro">
+                    JJOO                </a>
+            </li>
+                    </ul>
+    </div>
+</div>                            </div>
+                            <div class="columna3 ">
+                <div class="notaslidergrande" id="slider574">
+    <div class="imagen">
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/07/300x219_433224.jpg" width="266" height="194" alt="El oro vuelve a brillar: sube 30% en el año y va por más, impulsado por el efecto Brexit, tasas y dólar" />
+    </div>
+    
+    <div class="fecha">19/07/2016</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/235635-El-oro-vuelve-a-brillar-sube-30-en-el-ao-y-va-por-ms-impulsado-por-el-efecto-Brexit-tasas-y-dlar" title="El oro vuelve a brillar: sube 30% en el año y va por más, impulsado por el efecto Brexit, tasas y dólar" style="font-size: 23px" >
+                El oro vuelve a brillar: sube 30% en el año y va por más, impulsado por el efecto Brexit, tasas y dólar            </a>
+        </div>
+    </h2>
+    
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/235635-El-oro-vuelve-a-brillar-sube-30-en-el-ao-y-va-por-ms-impulsado-por-el-efecto-Brexit-tasas-y-dlar" title="El oro vuelve a brillar: sube 30% en el año y va por más, impulsado por el efecto Brexit, tasas y dólar"  >
+                Los analistas internacionales lo recomiendan cada vez más al observar el clima de mayor incertidumbre, como el Brexit y las tasas planchadas            </a>
+        </div>
+    </h3>
+    
+    <div class="puntos">
+        <ul>
+            <li class="on"><a href="javascript:return false;"></a></li>
+                        <li><a href="javascript:return false;"></a></li>
+                    </ul>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var notasSlider574= new Array();
+    var notaSlider574= new Array();
+    var maxNoticias574= 2;
+    var notaActual574= 0;
+    var sliderInterval574= 0;
+    var sliderTime574= 5000;
+    
+                notasSlider574[0] = ['235635','19/07/2016','El oro vuelve a brillar: sube 30% en el año y va por más, impulsado por el efecto Brexit, tasas y dólar',$j.trim('Los analistas internacionales lo recomiendan cada vez más al observar el clima de mayor incertidumbre, como el Brexit y las tasas planchadas'),'http://www.iprofesional.com/notas/235635-El-oro-vuelve-a-brillar-sube-30-en-el-ao-y-va-por-ms-impulsado-por-el-efecto-Brexit-tasas-y-dlar','El oro vuelve a brillar: sube 30% en el año y va por más, impulsado por el efecto Brexit, tasas y dólar',$j('<img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/07/300x219_433224.jpg" width="266" height="194" alt="El oro vuelve a brillar: sube 30% en el año y va por más, impulsado por el efecto Brexit, tasas y dólar" />')];
+                    notasSlider574[1] = ['236448','03/08/2016','Advierten que si gana Trump, el oro podría subir hasta los u$s1.850 la onza',$j.trim('El dorado metal, que es utilizado como refugio de valor en tiempos díficiles podría aumentar en más de 40% ante la eventual presidencia del candidato'),'http://www.iprofesional.com/notas/236448-Advierten-que-si-gana-Trump-el-oro-podra-subir-hasta-los-us1850-la-onza','Advierten que si gana Trump, el oro podría subir hasta los u$s1.850 la onza',$j('<img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/07/300x219_433352.jpg" width="266" height="194" alt="Advierten que si gana Trump, el oro podría subir hasta los u$s1.850 la onza" />')];
+                
+    var showNoticia574 = function(idx){
+        var id = notasSlider574[idx][0];
+        notaActual574 = idx;
+        
+        var imagen = notasSlider574[idx][6];
+        var fecha = notasSlider574[idx][1];
+        var titulo = $j('<a href="'+notasSlider574[idx][4]+'" style="font-size: 23px" title="'+notasSlider574[idx][5]+'">'+notasSlider574[idx][2]+'</a>');
+        var bajada = $j('<a href="'+notasSlider574[idx][4]+'" title="'+notasSlider574[idx][5]+'">'+notasSlider574[idx][3]+'</a>');
+        
+        $j('#slider574 .imagen').fadeOut('fast', function(){ $j(this).html(imagen).fadeIn('fast'); });
+        $j('#slider574 h2 .titulo').html(titulo);
+        $j('#slider574 h3 .bajada').html(bajada);
+        $j('#slider574 .fecha').html(fecha);
+    }
+    
+    var rotarAutomatico574 = function(){
+        $j($j('#slider574 .puntos ul li')[notaActual574]).click();
+        notaActual574++;
+        if(notaActual574 >= maxNoticias574) notaActual574 = 0;
+    }
+    
+    
+    $j(function(){
+        $j('#slider574 .puntos ul li').click(function(){ 
+            $j('#slider574 .puntos ul li').removeClass('on');
+            $j(this).addClass('on');
+            showNoticia574($j(this).index());
+        });
+        
+        sliderInterval574 = setInterval('rotarAutomatico574()',sliderTime574);
+        
+        $j('#slider574').mouseenter(function(){
+            clearInterval(sliderInterval574);
+        }).mouseleave(function(){
+            sliderInterval574 = setInterval('rotarAutomatico574()',sliderTime574);
+        });
+    });
+</script>                            </div>
+            </div>
+            <div class="columna4 ">
+            <div class="notachica">
+    <div class="video">
+        <iframe width="100%" height="100%" src="//www.youtube.com/embed/ts3if_d68cI?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <h2>
+        <div class="titulovideo">
+                        <a href="http://www.iprofesional.com/notas/236409-Cristina-Kirchner-No-tengo-miedo-de-ir-presa" title="Cristina Kirchner: &quot;No tengo miedo de ir presa&quot;" style="font-size: 25px">
+                Cristina Kirchner: "No tengo miedo de ir presa"            </a>
+                    </div>
+    </h2>
+</div>
+<div class="banner300x">
+<script type="text/javascript">eplAD4M("Banner_07_300x300");</script></div><div class="notamedianasimple">
+    <div class="imagen">
+        <div class=""></div>
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2014/11/300x219_410567.jpg" alt="Alarma en los mercados virtuales: el precio del bitcoin cae 20% en solo una semana" width="300px" height="219px"/>
+                    <div class="volanta">Finanzas</div>
+            </div>
+    
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236440-Alarma-en-los-mercados-virtuales-el-precio-del-bitcoin-cae-20-en-solo-una-semana" title="Alarma en los mercados virtuales: el precio del bitcoin cae 20% en solo una semana" style="font-size: 25px">
+                Alarma en los mercados virtuales: el precio del bitcoin cae 20% en solo una semana            </a>
+        </div>
+    </h2>
+</div>        </div>
+    </div><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("Banner_19_960x50");</script></div>        </div>
+        <div class="columnatriple">
+                    <div class="bloquenotasgrandes">
+                                    <div class="columnaizq ">
+                        <div class="notagrande">            
+    <div class="chapaverde">Legales</div>                 
+    <div class="imagen">
+        <div class=""></div>
+        <a href="http://www.iprofesional.com/notas/236076-Primer-freno-para-Macri-la-reforma-para-abaratar-juicios-laborales-ser-freezada-en-el-Congreso" title="¿Primer freno para Macri?: la reforma para abaratar juicios laborales será &quot;freezada&quot; en el Congreso">
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/470x345_433656.jpg" alt="¿Primer freno para Macri?: la reforma para abaratar juicios laborales será &quot;freezada&quot; en el Congreso" width="470px" height="345px"/>
+        </a>
+    </div>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236076-Primer-freno-para-Macri-la-reforma-para-abaratar-juicios-laborales-ser-freezada-en-el-Congreso" title="¿Primer freno para Macri?: la reforma para abaratar juicios laborales será &quot;freezada&quot; en el Congreso">
+                <span class="txtnaranja">02/08/2016</span>
+                El Presidente le pidió a la Justicia que sea más contemplativa con el empresariado, ya que ayudaría a tener inversiones. Los partidos de origen peronista se manifestaron en contra de futuros cambios a la normativa y no lo acompañarían en ninguna de las cámaras            </a>
+        </div>
+    </h3>
+            <div class="volantanaranja">Legales</div>
+        <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236076-Primer-freno-para-Macri-la-reforma-para-abaratar-juicios-laborales-ser-freezada-en-el-Congreso" title="¿Primer freno para Macri?: la reforma para abaratar juicios laborales será &quot;freezada&quot; en el Congreso" style="font-size: 27px" >
+                ¿Primer freno para Macri?: la reforma para abaratar juicios laborales será "freezada" en el Congreso            </a>
+        </div>
+    </h2>
+</div>                    </div>
+                                                    <div class="columnader ">
+                        <div class="notamedianofoto">            
+	<h2><div class="titulo"><a href="http://www.iprofesional.com/notas/236134-Los-resultados-no-aparecen-y-Sturzenegger-se-insina-como-nuevo-hombre-fuerte-del-equipo-macrista" style="font-size: 30px">Los resultados no aparecen y Sturzenegger se insinúa como nuevo "hombre fuerte" del equipo macrista</a></div></h2>
+	<h3><div class="bajada"><a href="http://www.iprofesional.com/notas/236134-Los-resultados-no-aparecen-y-Sturzenegger-se-insina-como-nuevo-hombre-fuerte-del-equipo-macrista">La persistencia de la inflación alta y la lentitud en el repunte de la actividad económica llevó a que la relación entre Macri y Prat Gay se enfriara. Al mismo tiempo, Sturzenegger, antes visto como el "villano" por su aferramiento a una política de altas tasas de interés, fue ganando influencia</a></div></h3>      
+</div>
+
+<div class="notamedianofoto">            
+	<h2><div class="titulo"><a href="http://www.iprofesional.com/notas/236365-El-Gobierno-quiere-reconvertir-sectores-no-competitivos-como-el-electrnico-y-el-textil" style="font-size: 30px">El Gobierno quiere reconvertir sectores "no competitivos" como el electrónico y el textil</a></div></h2>	
+	<h3><div class="bajada"><a href="http://www.iprofesional.com/notas/236365-El-Gobierno-quiere-reconvertir-sectores-no-competitivos-como-el-electrnico-y-el-textil">Avanza un plan oficial cuyo objetivo principal será generar mayor nivel de empleo y de mejor calidad. La industria automotriz recibirá "un fuerte respaldo"</a></div></h3>      
+</div>  
+                    </div>
+                            </div>
+                
+                    <div class="columnafull ">
+                <div class="banner980">
+<script type="text/javascript">eplAD4M("Banner_20_960x50");</script></div>            </div>
+                
+                            </div>
+            <div class="columna4 ">
+            <div class="notamedianasimple">
+    <div class="imagen">
+        <div class=""></div>
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2015/07/300x219_421501.jpg" alt="Estos son los 10 autos 0km más vendidos de julio" width="300px" height="219px"/>
+                    <div class="volanta">Negocios</div>
+            </div>
+    
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236363-Estos-son-los-10-autos-0km-ms-vendidos-de-julio" title="Estos son los 10 autos 0km más vendidos de julio" style="font-size: 25px">
+                Estos son los 10 autos 0km más vendidos de julio            </a>
+        </div>
+    </h2>
+</div><div class="notachica">
+    <div class="chapa">Finanzas</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236443-Para-Moodys-las-perspectivas-de-la-banca-uruguaya-son-negativas" title="Para Moody&#039;s las perspectivas de la banca uruguaya son negativas" style="font-size: 27px" >
+                Para Moody&#39;s las perspectivas de la banca uruguaya son negativas            </a>
+        </div>
+    </h2>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236443-Para-Moodys-las-perspectivas-de-la-banca-uruguaya-son-negativas" title="Para Moody&#039;s las perspectivas de la banca uruguaya son negativas">
+                                La agencia pronostica un aumento de la morosidad de parte de las familias, al tiempo que la inflación es un desafío clave para los bancos             </a>
+        </div>
+    </h3>
+</div><div class="notachica">
+    <div class="video">
+        <iframe width="100%" height="100%" src="//www.youtube.com/embed/fVHIKhBYDho?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <h2>
+        <div class="titulovideo">
+                        <a href="http://www.iprofesional.com/notas/236428-Debut-el-autobs-tnel-que-pasa-por-encima-de-los-embotellamientos" title="Debutó el autobús-túnel que pasa por encima de los embotellamientos" style="font-size: 25px">
+                Debutó el autobús-túnel que pasa por encima de los embotellamientos            </a>
+                    </div>
+    </h2>
+</div>
+        </div>
+    </div><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("HOME_Objeto_Vinos");</script></div>        </div>
+        <div class="columnatriple">
+                
+                
+                            </div>
+    </div><div class="bloquenotas">
+            <div class="banner980 ">
+            <div class="banner980">
+<script type="text/javascript">eplAD4M("Banner_22_980x50");</script></div>        </div>
+        <div class="columnatriple">
+                
+                
+                            </div>
+    </div><div class="bloquenotas">
+        <div class="columnatriple">
+                    <div class="bloquenotasgrandes">
+                                    <div class="columnaizq ">
+                        <div class="notagrande">            
+    <div class="chapaverde">Negocios</div>                 
+    <div class="imagen">
+        <div class=""></div>
+        <a href="http://www.iprofesional.com/notas/236426-Citron-adelant-el-C-Elyse-que-podr-reservarse-desde-septiembre-en-el-pas" title="Citroën adelantó el C-Elysée que podrá reservarse desde septiembre en el país">
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/470x345_433674.jpg" alt="Citroën adelantó el C-Elysée que podrá reservarse desde septiembre en el país" width="470px" height="345px"/>
+        </a>
+    </div>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236426-Citron-adelant-el-C-Elyse-que-podr-reservarse-desde-septiembre-en-el-pas" title="Citroën adelantó el C-Elysée que podrá reservarse desde septiembre en el país">
+                <span class="txtnaranja">03/08/2016</span>
+                Es un sedán compacto para competir con modelos como Ford Fiesta o Renault Logan. Se ubicará por debajo del C4 Lounge, tanto en dimensiones como en precio             </a>
+        </div>
+    </h3>
+            <div class="volantanaranja">Negocios</div>
+        <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236426-Citron-adelant-el-C-Elyse-que-podr-reservarse-desde-septiembre-en-el-pas" title="Citroën adelantó el C-Elysée que podrá reservarse desde septiembre en el país" style="font-size: 27px" >
+                Citroën adelantó el C-Elysée que podrá reservarse desde septiembre en el país            </a>
+        </div>
+    </h2>
+</div>                    </div>
+                                                    <div class="columnader ">
+                        <div class="notamedianofoto">            
+	<h2><div class="titulo"><a href="http://www.iprofesional.com/notas/236432-Probablemente-nunca-podamos-construir-mquinas-con-consciencia-afirm-un-investigador-de-Google" style="font-size: 30px">“Probablemente nunca podamos construir máquinas con consciencia”, afirmó un investigador de Google</a></div></h2>
+	<h3><div class="bajada"><a href="http://www.iprofesional.com/notas/236432-Probablemente-nunca-podamos-construir-mquinas-con-consciencia-afirm-un-investigador-de-Google">La meta de la inteligencia artificial no es replicar a la humana, pese a que se aprovecha los avances de la neurociencia, sino crear sistemas inteligentes</a></div></h3>      
+</div>
+
+<div class="notamedianofoto">            
+	<h2><div class="titulo"><a href="http://www.iprofesional.com/notas/236424-Nintendo-explota-el-mercado-retro-con-el-relanzamiento-de-la-videoconsola-NES" style="font-size: 30px">Nintendo explota el mercado "retro" con el relanzamiento de la videoconsola NES</a></div></h2>	
+	<h3><div class="bajada"><a href="http://www.iprofesional.com/notas/236424-Nintendo-explota-el-mercado-retro-con-el-relanzamiento-de-la-videoconsola-NES">En pleno apogeo del recuerdo con la serie Stranger Things triunfando también en la pequeña pantalla, la empresa recupera varios de sus iconos</a></div></h3>      
+</div>  
+                    </div>
+                            </div>
+                
+                    <div class="columnafull ">
+                <div class="columna1">          
+        <div class="notamedianasimple">
+        <div class="imagen">
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/300x219_433673.jpg" alt="Llega &quot;Instagram Stories&quot;, una nueva función para competir con Snapchat" width="300px" height="219px"/>
+            <div class="volanta">Tecnolog&iacute;a</div>
+        </div>
+
+        <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236425-Llega-Instagram-Stories-una-nueva-funcin-para-competir-con-Snapchat" title="Llega &quot;Instagram Stories&quot;, una nueva función para competir con Snapchat" >
+                    Llega "Instagram Stories", una nueva función para competir con Snapchat                </a>
+            </div>
+        </h2>
+    </div>
+    </div>
+<div class="columnadoble">
+    <div class="banner300x">
+<script type="text/javascript">eplAD4M("Banner_06_630x300");</script></div></div>            </div>
+                
+                    <div class="columna1 ">
+                <div class="banner300x">
+<script type="text/javascript">eplAD4M("Banner_10_300x120");</script></div>                            </div>
+                            <div class="columna2 ">
+                <div class="notamini">
+    <div class="chapa">Management</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236395-Multinacionales-acuerdan-con-el-Gobierno-fomentar-las-prcticas-profesionales" title="Multinacionales acuerdan con el Gobierno fomentar las prácticas profesionales"  >
+                Multinacionales acuerdan con el Gobierno fomentar las prácticas profesionales            </a>
+        </div>
+    </h2>
+</div>
+                            </div>
+                            <div class="columna3 ">
+                <div class="notamini">
+    <div class="chapa">Management</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236378-GlobalLogic-quiere-duplicar-su-plantilla-de-empleados-en-la-Argentina" title="GlobalLogic quiere duplicar su plantilla de empleados en la Argentina"  >
+                GlobalLogic quiere duplicar su plantilla de empleados en la Argentina            </a>
+        </div>
+    </h2>
+</div>
+                            </div>
+            </div>
+            <div class="columna4 ">
+            <div class="notachica">
+    <div class="video">
+        <iframe width="100%" height="100%" src="//www.youtube.com/embed/cUd8GtQvvsw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <h2>
+        <div class="titulovideo">
+                        <a href="http://www.iprofesional.com/notas/236420-El-nuevo-telfono-mvil-de-Samsung-se-desbloquea-con-slo-mirarlo" title="El nuevo teléfono móvil de Samsung se desbloquea con sólo mirarlo" style="font-size: 25px">
+                El nuevo teléfono móvil de Samsung se desbloquea con sólo mirarlo            </a>
+                    </div>
+    </h2>
+</div>
+<div class="notachica">
+    <div class="chapa">Tecnolog&iacute;a</div>
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236338-Tcnicos-argentinos-elaboran-producto-para-rejuvenecer-la-piel" title="Técnicos argentinos elaboran producto para rejuvenecer la piel" style="font-size: 27px" >
+                Técnicos argentinos elaboran producto para rejuvenecer la piel            </a>
+        </div>
+    </h2>
+    <h3>
+        <div class="bajada">
+            <a href="http://www.iprofesional.com/notas/236338-Tcnicos-argentinos-elaboran-producto-para-rejuvenecer-la-piel" title="Técnicos argentinos elaboran producto para rejuvenecer la piel">
+                                Para impulsar su uso en la industria cosmética local, especialistas de FabriQuímica y del INTI trabajaron sobre este compuesto con micro-nanotecnología            </a>
+        </div>
+    </h3>
+</div><div class="notamedianasimple">
+    <div class="imagen">
+        <div class=""></div>
+        <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/07/300x219_433264.jpg" alt="Un medallista olímpico deberá pagar $70.000 por jugar a Pokémon Go" width="300px" height="219px"/>
+                    <div class="volanta">Tecnolog&iacute;a</div>
+            </div>
+    
+    <h2>
+        <div class="titulo">
+            <a href="http://www.iprofesional.com/notas/236427-Un-medallista-olmpico-deber-pagar-70000-por-jugar-a-Pokmon-Go" title="Un medallista olímpico deberá pagar $70.000 por jugar a Pokémon Go" style="font-size: 25px">
+                Un medallista olímpico deberá pagar $70.000 por jugar a Pokémon Go            </a>
+        </div>
+    </h2>
+</div>        </div>
+    </div><div class="recreo" tipo="4">
+    <div class="recreowrap">
+        <div class="titulorecreo" title="Recreo"></div>
+        
+        <div class="notaizq">
+                        <div class="elespecial especialrecreo " espacio="1">
+                                <div class="" id="slider73">
+    <div class="imagen">
+        <a href="http://www.iprofesional.com/notas/236327-Rating-del-domingo-Lanata-le-gan-a-Susana-y-dej-lejos-al-reportaje-de-Cristina-Kirchner" title="Rating del domingo: Lanata le ganó a Susana y dejó lejos al reportaje de Cristina Kirchner"  >
+            <img src="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/02/428551.jpg" alt="Rating del domingo: Lanata le ganó a Susana y dejó lejos al reportaje de Cristina Kirchner" />
+        </a>
+    </div>
+    <div class="info">
+                <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236327-Rating-del-domingo-Lanata-le-gan-a-Susana-y-dej-lejos-al-reportaje-de-Cristina-Kirchner" title="Rating del domingo: Lanata le ganó a Susana y dejó lejos al reportaje de Cristina Kirchner"  >
+                    Rating del domingo: Lanata le ganó a Susana y dejó lejos al reportaje de Cristina Kirchner                </a>
+            </div>
+        </h2>
+
+            </div>
+</div>
+
+            </div>
+                    </div>
+      
+                <div class="notamedio " espacio="2">
+                        <div class="nota">
+    <div class="imagen">
+        <a href="http://www.iprofesional.com/notas/236275-Cmo-ser-el-show-homenaje-de-Cirque-du-Soleil-a-Soda-Stereo" title="Cómo será el show homenaje de Cirque du Soleil a Soda Stereo">
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/07/300x219_433592.jpg" width="266" height="194" />
+        </a>
+    </div>
+    <div class="info">
+        <div class="volanta">Actualidad</div>
+        <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236275-Cmo-ser-el-show-homenaje-de-Cirque-du-Soleil-a-Soda-Stereo" title="Cómo será el show homenaje de Cirque du Soleil a Soda Stereo">
+                    Cómo será el show homenaje de Cirque du Soleil a Soda Stereo                </a>
+            </div>
+        </h2>
+    </div>        
+  </div>
+<div class="nota">
+    <div class="imagen">
+        <a href="http://www.iprofesional.com/notas/236285-Volvi-Harry-Potter-un-nuevo-libro-sali-a-la-venta-despus-de-nueve-aos" title="Volvió Harry Potter: un nuevo libro salió a la venta después de nueve años">
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/07/300x219_433595.jpg" width="266" height="194" />
+        </a>
+    </div>
+    <div class="info">
+        <div class="volanta">Actualidad</div>
+        <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236285-Volvi-Harry-Potter-un-nuevo-libro-sali-a-la-venta-despus-de-nueve-aos" title="Volvió Harry Potter: un nuevo libro salió a la venta después de nueve años">
+                    Volvió Harry Potter: un nuevo libro salió a la venta después de nueve años                </a>
+            </div>
+        </h2>
+    </div>        
+  </div>
+<div class="nota">
+    <div class="imagen">
+        <a href="http://www.iprofesional.com/notas/236228-Cerr-Tarquino-el-restaurante-del-chef-que-le-cocina-a-Mauricio-Macri" title="Cerró Tarquino, el restaurante del chef que le cocina a Mauricio Macri">
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/07/300x219_433568.jpg" width="266" height="194" />
+        </a>
+    </div>
+    <div class="info">
+        <div class="volanta">Actualidad</div>
+        <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236228-Cerr-Tarquino-el-restaurante-del-chef-que-le-cocina-a-Mauricio-Macri" title="Cerró Tarquino, el restaurante del chef que le cocina a Mauricio Macri">
+                    Cerró Tarquino, el restaurante del chef que le cocina a Mauricio Macri                </a>
+            </div>
+        </h2>
+    </div>        
+  </div>
+        </div>
+                
+                <div class="notader " espacio="3" id="recreo1col4">
+                        <div class="nota">
+    <div class="imagen">
+        <a href="http://www.iprofesional.com/notas/236329-Un-bar-napolitano-promete-sus-pizzas-a-1-el-da-que-Higuan-se-lesione" title="Un bar napolitano promete sus pizzas a €1 el día que Higuaín se lesione" >
+            <img class="lazy" src="img/grey.gif" data-original="http://719ec77057a57996613a-9a5081423686babcde0c8e2e3662dda4.r0.cf1.rackcdn.com/adjuntos/jpg/2016/08/300x219_433609.jpg" alt="Un bar napolitano promete sus pizzas a €1 el día que Higuaín se lesione" />
+        </a>
+    </div>
+    <div class="info">
+        <div class="volanta">Actualidad</div>
+        <h2>
+            <div class="titulo">
+                <a href="http://www.iprofesional.com/notas/236329-Un-bar-napolitano-promete-sus-pizzas-a-1-el-da-que-Higuan-se-lesione" title="Un bar napolitano promete sus pizzas a €1 el día que Higuaín se lesione" >
+                    Un bar napolitano promete sus pizzas a €1 el día que Higuaín se lesione                </a>
+            </div>
+        </h2>
+        <h3>
+            <div class="bajada">
+                <a href="http://www.iprofesional.com/notas/236329-Un-bar-napolitano-promete-sus-pizzas-a-1-el-da-que-Higuan-se-lesione" title="Un bar napolitano promete sus pizzas a €1 el día que Higuaín se lesione" >
+                    El multimillonario pase del delantero argentino del Napoli a la Juventus continúa generando bronca entre los simpatizantes de su ex club                </a>
+            </div>
+        </h3>
+    </div>        
+  </div>
+        </div>
+            </div>
+</div></div>                <div class="links">
+            <div class="linkswrap">
+                                <ul>
+                    <li class="titlista">Sobre iProfesional</li>
+                    <li><a href='/auxiliar/pagina_inicio.html?&width=950&height=600&top=0&modal=true' title='P&aacute;gina de inicio' width='800' class='thickboxC'>P&aacute;gina de inicio</a></li><li><a href='#none' title='Recomendar este portal' onclick='openLink("/secciones/recomendar_portal.php", 540, 540);return none;'>Recomendar este portal</a></li><li><a href='http://www.iprofesional.com' title='Home'>Home</a></li><li><a href='/index.php?p=registracion' title='Registrarse'>Registrarse</a></li><li><a href='http://www.iprofesional.com/rss.html' title='RSS'>RSS</a></li><li><a href='#none' title='Contáctenos' onclick='openLink("/secciones/contactenos.php", 540, 540);return none;'>Contáctenos</a></li><li><a href='#none' title='Políticas de privacidad' onclick='openLink("/secciones/politica-privacidad.html", 540, 540);return none;'>Políticas de privacidad</a></li><li><a href='#none' title='Term. y cond. de uso' onclick='openLink("/secciones/terminos-y-condiciones-de-uso.html", 540, 540);return none;'>Term. y cond. de uso</a></li><li><a href='http://publicidad.iprofesional.com' title='Publicidad'>Publicidad</a></li><li><a href='http://www.iprofesional.com/index.php?p=sitemap' title='Sitemap'>Sitemap</a></li>                </ul>
+
+                <ul>
+                    <li class="titlista">Secciones</li>
+                    <li><a class="homeon" href="http://www.iprofesional.com/" title="Home">Home</a></li>
+<li><a class="economia" href="http://www.iprofesional.com/economia" title="Economía">Economía</a></li>
+<li><a class="finanzas" href="http://www.iprofesional.com/finanzas" title="Finanzas">Finanzas</a></li>
+<li><a class="contadores" href="http://www.iprofesional.com/impuestos" title="Impuestos">Impuestos</a></li>
+<li><a class="abogados" href="http://www.iprofesional.com/legales" title="Legales">Legales</a></li>
+<li><a class="negocios" href="http://www.iprofesional.com/negocios" title="Negocios">Negocios</a></li>
+<li><a class="tecnologia" href="http://www.iprofesional.com/tecnologia" title="Tecnología">Tecnología</a></li>
+<li><a class="comex" href="http://www.iprofesional.com/comex" title="Comex">Comex</a></li>
+<li><a class="management" href="http://www.iprofesional.com/management" title="Management">Management</a></li>
+<li><a class="marketing" href="http://www.iprofesional.com/marketing" title="Marketing">Marketing</a></li>
+                </ul>
+
+                <ul>
+                    <li class="titlista">Secciones especiales</li>
+                    <li><a href="http://autosipro.iprofesional.com">Autos</a></li><li><a href="http://vinosybodegas.iprofesional.com">Vinos</a></li>                </ul>
+            </div>
+            <!-- Lightning Bolt Begins -->
+            <script type="text/javascript" id="lightning_bolt" src="//cdn-akamai.mookie1.com/LB/LightningBolt.js"></script>
+            <!-- Lightning Bolt Ends -->
+        </div>
+                
+        <div class="footer">
+            <div class="footerwrap ">
+                <div class="social">
+                    <ul>
+                        <li class="fb"><a href="https://www.facebook.com/iProfesionalcom" target="_blank" title="Siguenos en facebook"></a></li>
+                        <li class="tw"><a href="https://twitter.com/iProfesional" target="_blank" title="Siguenos en twitter"></a></li>
+                        <li class="gp"><a href="https://plus.google.com/+iProfesional" target="_blank" title="Siguenos en Google+"></a></li>
+                        <li class="in"><a href="http://www.linkedin.com/groups/iProfesionalcom-750187?gid=750187&trk=hb_side_g" target="_blank" title="Siguenos en Linkedin"></a></li>
+                        <li class="rs"><a href="http://www.iprofesional.com/rss.html" target="_blank" title="Canal RSS"></a></li>
+                        <li class="al"><a href="http://www.iprofesional.com/secciones/alertas-de-mail.php" target="_blank" title="Aletars de noticias"></a></li>
+                    </ul>
+                    <div class="creditos">Copyright © 2013 Emprendimientos Corporativos S.A. Todos los derechos reservados</div>
+                </div>
+                <div class="codigo">
+                    <img src="/imagenes/datafiscal.png" width="40" height="55" />
+                    <!-- Lightning Bolt Begins -->
+                    <script type="text/javascript" id="lightning_bolt" src="//cdn-akamai.mookie1.com/LB/LightningBolt.js"></script>
+                    <!-- Lightning Bolt Ends -->
+                </div>
+            </div>
+        </div>
+
+
+</body>
+<script type="text/javascript">
+    if(navigator.userAgent.toLowerCase().indexOf("ipad") > -1) {
+        
+    }else{ $j('.contenido-media, .contenido-media-video').remove(); }
+
+</script>
+ 
+</html><!-- HTMLGen PROC01: Wed Aug  3 08:18:18 2016 -->
