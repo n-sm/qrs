@@ -42,3 +42,4 @@ see list of savedconnections	nmcli c
 see the list of available wifi	nmcli d wifi list
 disconnect from network	nmcli d disconnect <WifiInterface>
 connect to network	nmcli d connect  <WifiInterface>
+w3m, yank to clipboard: set browser to	sh -c 'echo "$0" | xsel -b'
