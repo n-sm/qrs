@@ -11,3 +11,4 @@ a.out
 !.gitignore
 *.npush
 *.exe
+tmp*
