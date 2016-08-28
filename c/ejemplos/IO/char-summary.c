@@ -4,7 +4,6 @@
 #include <unistd.h>
 #include <limits.h>
 
-#define D_ 128
 
 void printHelp();
 void dameOrden (long long * desorden, int * ordenada);
@@ -59,6 +58,7 @@ int main( int argc, char *argv[] )
   while ((c = fgetc(stdin)) != EOF) {
       tabla[c - CHAR_MIN] += 1;
   }
+
   mostrarTabla(tabla, sort);
 
 
