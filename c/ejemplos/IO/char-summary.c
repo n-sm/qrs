@@ -141,8 +141,8 @@ void mostrarTablaConOrden(long long * desorden, int * orden) {
   for (int i = 0; i < m; i++) {
     for (int j = 0; j < l; j++) {
       if (orden[j] == i)
-	printf("dec: %d \tchar: %c \tcount: %lld\n",
-	       j + CHAR_MIN, j + CHAR_MIN, desorden[j]);
+	printf("%d \t%lld \t%c\n",
+	       j + CHAR_MIN, desorden[j], j + CHAR_MIN);
     }
   }
   printf("\n");
@@ -152,8 +152,8 @@ void mostrarTablaConOrden(long long * desorden, int * orden) {
 void mostrarTablaSinOrden (long long * tabla) {
  for (int i = 0; i < 256; i++) {
     if (tabla[i] != 0) {
-      printf("dec: %d \tchar: %c \tcount: %lld\n",
-	     i + CHAR_MIN, i + CHAR_MIN, tabla[i]);
+      printf("%d \t%lld  \t%c\n",
+	     i + CHAR_MIN, tabla[i], i + CHAR_MIN);
     }
   }
 }
@@ -161,7 +161,8 @@ void mostrarTablaSinOrden (long long * tabla) {
 void mostrarTabla (long long * tabla, int ordenada) {
 
   int orden[257];
-  
+
+  printf("dec:\tcount:\tchar:\n");
   switch(ordenada) {
   case 0:
     mostrarTablaSinOrden(tabla);
