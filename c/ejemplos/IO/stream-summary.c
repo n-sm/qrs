@@ -10,19 +10,21 @@ void printHelp();
 void dameOrden (long long * desorden, int * ordenada);
 int cantidadNoNulos(long long * arr);
 int nOrden(long long i, long long * a);
-void printInOrder(long long * desorden, int * orden);
-  
+void mostrarTablaConOrden(long long * desorden, int * orden);
+void mostrarTabla (long long * tabla, int ordenada);
+
 int main( int argc, char *argv[] )  
 {
+  int sort = 0;
   int d = 0;
   int changeOrder = 0;
   char c;
   char * strp;
     
-  while ((c = getopt (argc, argv, "d:oh")) != -1)
+  while ((c = getopt (argc, argv, "soh")) != -1)
     switch (c) {
-      case 'd':
-	d += atoi(optarg);
+      case 's':
+	sort = 1;
         break;
       case 'h':
 	printHelp();
@@ -52,31 +54,14 @@ int main( int argc, char *argv[] )
   for (int i = 0; i < 256; i++) {
     tabla[i] = 0;
   }
-
   tabla[256] = -1;
   
   while ((c = fgetc(stdin)) != EOF) {
       tabla[c - CHAR_MIN] += 1;
   }
+  mostrarTabla(tabla, sort);
 
-  int caracteresUsados = 0;
-  for (int i = 0; i < 256; i++) {
-    if (tabla[i] != 0) {
-      printf("%d: dec: %d \tchar: %c \tcount: %lld\n",
-	     ++caracteresUsados, i + CHAR_MIN, i + CHAR_MIN, tabla[i]);
-    }
-  }
 
-  int orde[257];
-  orde[256]=-1;
-  dameOrden(tabla, orde);
-  
-  /* printf("%d\n", cantidadNoNulos(tabla)); */
-  /* for (int i = 0; i < 256; i++) { */
-  /*   if(tabla[i] != 0) printf("deso: %lld, ord: %d\n", tabla[i], orde[i]); */
-  /* } */
-
-  printInOrder(tabla, orde);
   return 0;
 }
 
@@ -132,29 +117,17 @@ void dameOrden(long long * desorden, int * orden) {
     *pord++ = nOrden(*pdes++, desorden);
   }
   *pord = -1;
-  
-  /* printf("en dameOrden"); */
-  /* pord = orden; */
-  /* while(*pord != -1) { */
-  /*   printf("%d\t", *++pord); */
-  /* } */
 }
   
 int max (int * arr) {
-
   if (*arr == -1) abort();
   int c = 0;
   int res = *arr;
   int * p = arr;
   while (*p != -1) {
-    //printf("%d.", *p++);
     if (res < *p) res = *p;
-    /* if (c++ > 9999999) { */
-    /*   printf("\nerror!: int * arr sin -1 final.\n"); */
-    /*   abort(); */
-    /* } */
     p++;
-    if (p - arr > 258) {
+    if (p - arr > 99999999) {
       printf("\nerror!: int * arr sin -1 final.2\n");
       abort();
     }
@@ -162,18 +135,43 @@ int max (int * arr) {
   return res;
 }
 
-void printInOrder(long long * desorden, int * orden) {
-
-
+void mostrarTablaConOrden(long long * desorden, int * orden) {
   int l = len(desorden);
   int m = max(orden);
-  printf("\n---=-=-print in order\n");
   for (int i = 0; i < m; i++) {
     for (int j = 0; j < l; j++) {
       if (orden[j] == i)
-	printf("%c: %lld\n", j+CHAR_MIN, desorden[j]);
+	printf("dec: %d \tchar: %c \tcount: %lld\n",
+	       j + CHAR_MIN, j + CHAR_MIN, desorden[j]);
     }
   }
   printf("\n");
   return;
+}
+
+void mostrarTablaSinOrden (long long * tabla) {
+ for (int i = 0; i < 256; i++) {
+    if (tabla[i] != 0) {
+      printf("dec: %d \tchar: %c \tcount: %lld\n",
+	     i + CHAR_MIN, i + CHAR_MIN, tabla[i]);
+    }
+  }
+}
+
+void mostrarTabla (long long * tabla, int ordenada) {
+
+  int orden[257];
+  
+  switch(ordenada) {
+  case 0:
+    mostrarTablaSinOrden(tabla);
+    break;
+  case 1:
+    orden[256]=-1;
+    dameOrden(tabla, orden);
+    mostrarTablaConOrden(tabla, orden);
+    break;
+
+
+  }
 }
