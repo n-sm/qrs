@@ -8,22 +8,28 @@
 #include <unistd.h>
 #include <limits.h>
 
-unsigned char ch2uch(char c);
-char uch2ch(unsigned char uc);
 char maxCountIndx(std::map <char, long long> mapa);
 int nOrden(long long i, std::map<char, long long> mapa);
 void getOrder(std::map<char, long long> desorden,
 	      std::vector<int>& orden);
 void mostrarTablaSinOrden(std::map<char, long long> desorden);
 void mostrarTablaConOrden(std::map<char, long long> desorden,
-			  std::vector<int> orden);
+			   std::map<char, unsigned int> orden);
+
+void makeOrder(std::map<char, long long> desorden,
+	       std::map<char, unsigned int> &orden);
 
 int main( int argc, char *argv[] )  
 {
+  
+  bool sorted = false;
   char c;
-
-  while ((c = getopt (argc, argv, "abc")) != -1) {
+  
+  while ((c = getopt (argc, argv, "sabc")) != -1) {
     switch (c) {
+    case 's':
+      sorted = true;
+      break;
     case 'a':
       std::cout << "caso a\n";
       return 0;
@@ -51,47 +57,40 @@ int main( int argc, char *argv[] )
   }
   // termina getopt
 
-  std::map<char, long long> chars;
+  // saco cuentas
+  std::map<char, long long> charsCount;
   while (std::cin.get(c))
-    chars[c] += 1;
-  
+    charsCount[c] += 1;
 
-  c = CHAR_MIN;
+  //muestro tabla
   std::cout << "dec: \tcount: \t char:\n";
-  mostrarTablaSinOrden(chars);
-
-  // probando orden
-  std::vector<int> orden(UCHAR_MAX);
-  getOrder(chars, orden);
-  int ii = 0;
-  for( std::vector<int>::iterator it = orden.begin();
-      it != orden.end();
-      it++, ii++) {
-    if (*it > 0)
-      std::cout <<"ii:"<< ii << "*it:"<< *it << std::endl;
+  if (sorted) {
+    std::map<char, unsigned int> orden;
+    makeOrder(charsCount, orden);
+    mostrarTablaConOrden(charsCount, orden);
   }
-
-  std::cout << "==========\n";
-  mostrarTablaConOrden(chars, orden);
-
-
+  else
+    mostrarTablaSinOrden(charsCount);
+  
   return 0;
 }
 
-unsigned char ch2uch(char c) { return c - CHAR_MIN; }
-char uch2ch(unsigned char uc) { return uc + CHAR_MIN; }
-
-
-char maxCountIndx(std::map <char, long long> mapa) {
+char maxCountIndx(std::map <char, unsigned int> mapa) {
   char c = CHAR_MIN, res = CHAR_MIN;
-  long long max = mapa[c];
-  
-  while(++c != CHAR_MIN) 
+  do{
     if(mapa[c] > mapa[res]) res = c;
+  } while(++c != CHAR_MIN) ;
   
   return res;
 }
 
+unsigned char maxVal(std::map <char, unsigned int> mapa) {
+  char c = CHAR_MIN;
+  unsigned char max = mapa[c];
+  while(++c != CHAR_MIN)
+    if (mapa[c] > max) max = mapa[c];
+  return max;
+}
 
 int nOrden(long long i, std::map<char, long long> mapa) {
   int  res = 1;
@@ -106,37 +105,43 @@ int nOrden(long long i, std::map<char, long long> mapa) {
 void getOrder(std::map<char, long long> desorden,
 	      std::vector<int>& orden) {
 
+
   std::map<char, long long>::iterator itdes = desorden.begin();
   std::vector<int>::iterator itord = orden.begin();
   for(; itdes != desorden.end(); itdes++, itord++) {
     *itord = nOrden(itdes->second, desorden);
-    
   }
-}
-
-void mostrarTablaConOrden(std::map<char, long long> desorden,
-			  std::vector<int> orden) {
-
-  int ultimo = *std::max_element(orden.begin(), orden.end());
-
-  for (int i = 1; i < ultimo; i++) {
-    for (int j = 0; j < desorden.size(); j++) {
-      if (orden[j] == i) {
-	printf("orden[j]: %d, i: %d",orden[j], i);
-	// printf("%d \t%lld \t%c\n",
-      	//        j + CHAR_MIN +1, desorden[j + CHAR_MIN+1], j + CHAR_MIN+1);
-	abort();
-      }
-    }
-  }
-  printf("\n");
 }
 
 
 void mostrarTablaSinOrden(std::map<char, long long> desorden) {
   char c = CHAR_MIN;
-  while(++c != CHAR_MIN) {
+  do {
     if (desorden[c] > 0)
       printf("%d \t%lld \t%c\n", c, desorden[c], c);
-  }
+  } while(++c != CHAR_MIN);
 }
+
+void makeOrder(std::map<char, long long> desorden,
+	       std::map<char, unsigned int> &orden)
+{
+  char c = CHAR_MIN;
+  do {
+    orden[c] = nOrden(desorden[c], desorden);
+  } while(++c != CHAR_MIN) ;
+}
+
+void mostrarTablaConOrden(std::map<char, long long> desorden,
+			   std::map<char, unsigned int> orden) {
+  char i = CHAR_MIN, j = CHAR_MIN;
+  unsigned char ordMax = maxVal(orden);
+  
+  do {
+    do {
+      if (orden[j] == i)
+	printf("%d \t%lld \t%c\n", j, desorden[j], j);
+    } while (++j != CHAR_MIN);
+  } while (++i < ordMax);
+  std::cout << std::endl;
+}
+
