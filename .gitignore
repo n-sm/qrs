@@ -11,3 +11,5 @@
 !.gitignore
 *.npush
 *.exe
+tmp*
+*.tmp

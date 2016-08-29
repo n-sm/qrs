@@ -17,3 +17,4 @@ unlock binding  	unlockBinding("VAR_NAME", ENVIROMEN)
 assign in enviroment e  	assign(NAME, VALUE, envir=e)
 add curve to plot	
 subset datya.frame	subset(x.df, Col1 > 1)
+find source of internal or primitive function   grep FUN R/src/main/names.c
