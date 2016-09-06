@@ -6,7 +6,7 @@
 *.blg
 *.log
 *.pyc
-a.out
+*.out
 .*
 !.gitignore
 *.npush
