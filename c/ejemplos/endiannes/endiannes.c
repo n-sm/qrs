@@ -11,9 +11,6 @@ int main(int argc, char *argv[])
    get_endiannes();
    printf("\n");
    get_endiannes2();
-   printf("\n");
-
-   test(atoll(argv[1]));
 }
 
 void get_endiannes()
@@ -47,22 +44,3 @@ void get_endiannes2()
       printf("Big-Endian\n");
    }
 }
-
-void test(long l)
-{
-   union
-   {
-      unsigned long l;
-      char c[8];
-
-   } un;
-
-   un.l = l;
-
-   for (int i = 0; i < 12; i++)
-   {
-      if(i == 8) printf("(me paso)\n");
-      printf("lugar numero %d, ie c[%d]: %d\n", i, i,un.c[i]);
-   }
-}
-    
