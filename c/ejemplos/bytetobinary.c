@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 #define DESDE 0
 #define HASTA 25
+
 // http://stackoverflow.com/questions/111928/is-there-a-printf-converter-to-print-in-binary-format
 #define BYTETOBINPATTERN "%d%d%d%d%d%d%d%d"
 /*
