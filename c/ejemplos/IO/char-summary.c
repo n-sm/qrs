@@ -67,8 +67,8 @@ int main( int argc, char *argv[] )
 
 void printHelp()
 {
-  printf("seco 0.0\n\nusage: seco [options] \n\nOptions:\n");
-  printf("\t-d decimal\n\t-o determina el orden\n");
+  printf("seco 0.0\n\nusage: char-summary [options] \n\nOptions:\n");
+  printf("\t-s sort\n");
 }
 
 
