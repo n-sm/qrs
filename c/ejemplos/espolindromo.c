@@ -11,8 +11,8 @@ int main(int argc, char *argv[]) {
 }
 
 
-int isp(char *string) {
-
+int isp(char *string)
+{
   if (!string) return 1;
   char * p, * q;
   q = p = string;

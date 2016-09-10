@@ -1,17 +1,18 @@
 # -*- mode:csv -*-
-centrar, subir, bajar	M-r	(move-to-window-line-top-bottom)
-copiar text del buffer		(copy-region-as-kill BEG END); (kill-ring-save BEG END)
-end of buffer		(point-max)
-fin de region		(region-end)
-insertar parte de un buffer		(insert-buffer-substring-no-properties myBuffer myStartPos myEndPos)
-insertar texto (en buffer)		(insert "texto")
-mover cursor a lugar		(goto-char n)
-mover cursor tantos lugares		(forward-char n); (backward-char n)
-posicion del cursor actual		(point)
-principio de region		(region-beginning)
+centrar, subir, bajar	M-r # (move-to-window-line-top-bottom)
+copiar text del buffer	# (copy-region-as-kill BEG END); (kill-ring-save BEG END)
+end of buffer	# (point-max)
+fin de region	# (region-end)
+insertar parte de un buffer	# (insert-buffer-substring-no-properties myBuffer myStartPos myEndPos)
+insertar texto (en buffer)	# (insert "texto")
+mover cursor a lugar	# (goto-char n)
+mover cursor tantos lugares	# (forward-char n); (backward-char n)
+posicion del cursor actual	# (point)
+principio de region	# (region-beginning)
 tex formato fomula0		http://piotrkazmierczak.com/2010/05/13/emacs-as-the-ultimate-latex-editor/
-tildes	(require 'iso-transl)
-configurar python interpret	(setq python-shell-interpreter "c:/python34/python.exe")
+tildes	# (require 'iso-transl)
+configurar python interpret	# (setq python-shell-interpreter "c:/python34/python.exe")
 espacios en vez de tabs	M-x set-variable RET indent-tabs-mode (to nil)
 set indentation with	set-variable RET tab-with NUMBER-OF-CHARS
-create etags table	find . | grep  ".*\.\(h\|cc\)$" | xargs etags -f TAGS
+create etags table	#$ find . | grep  ".*\.\(h\|cc\)$" | xargs etags -f TAGS
+menu	<f10> # M-x menu-bar-open

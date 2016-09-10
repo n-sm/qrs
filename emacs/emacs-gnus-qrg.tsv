@@ -3,7 +3,7 @@ mostrar todos los grupos (carpetas)	C-u 5 M-x gnus-group-list-all-groups
 read all messages in group	C-u RET
 read only unread	RET
 mark article as read	d
-setting marks	http://www.gnu.org/software/emacs/manual/html_node/gnus/Setting-Marks.html
+setting marks	## -> http://www.gnu.org/software/emacs/manual/html_node/gnus/Setting-Marks.html
 untick article	d
-multiple gmail accounts	http://www.cataclysmicmutation.com/2010/11/multiple-gmail-accounts-in-gnus
+multiple gmail accounts	## -> http://www.cataclysmicmutation.com/2010/11/multiple-gmail-accounts-in-gnus
 fetch mail 	g
