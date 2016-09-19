@@ -1,0 +1,5 @@
+# puedo usar parametros como -s para obtener menos output
+
+find . -maxdepth 2 -name ".git" 2> /dev/null | sed 's:.git$::'\
+| xargs -I{} git -C {} status $@
+

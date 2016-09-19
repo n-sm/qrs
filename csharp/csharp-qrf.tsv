@@ -1,3 +1,4 @@
 # -*- mode:csv -*-
 compilar win	csc FILE
 comilar mono    mcs FILE
+creat lista int	new List<int> {1, 2, 3};

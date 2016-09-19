@@ -12,11 +12,11 @@ Y el **teorema de taylor**:
 
 $$ f(x) = P_{n,p}(x) + R_{n,p}(x) $$
 
-En campos escalares tenemos la **_fórmula de Taylor de primer orden_**:
+En campos escalares tenemos la **_fÃ³rmula de Taylor de primer orden_**:
 
 $$ f(x) = f(p) +  \langle \nabla f , x-p\rangle + R_{1,p}(x) $$
 
-Y la **_fórmula de Taylor de segudo orden_**:
+Y la **_fÃ³rmula de Taylor de segudo orden_**:
 
 $$ f(x) = f(p) +  \langle \nabla f_p , x-p\rangle
    + (x-p)^T Hf_p (x-p)
@@ -32,7 +32,7 @@ f_{x_2x_1} & \dots & \dots & f_{x_2x_n}\\
 f_{x_nx_1} & f_{x_nx_2} & \dots & f_{x_nx_n}\end{array} \right)
 $$
 
-Con otra notación:
+Con otra notaciÃ³n:
 
 
 $$ Hf_p

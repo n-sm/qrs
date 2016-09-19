@@ -1,0 +1,2 @@
+Esta es foo.txt
+El contenido es para probar.

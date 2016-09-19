@@ -38,3 +38,8 @@ copy from B to A logged in A	scp USER@HOST:FILE-FROM FILE-TO
 copy from A to B logged in A	scp FILE-FROM USER@HOST:FILE-TO
 copy from B to A logged in A	rsync HOST:FILE-FROM DIR-TO
 ssh conf	https://help.ubuntu.com/community/SSH/OpenSSH/Configuring
+see list of savedconnections	nmcli c
+see the list of available wifi	nmcli d wifi list
+disconnect from network	nmcli d disconnect <WifiInterface>
+connect to network	nmcli d connect  <WifiInterface>
+w3m, yank to clipboard: set browser to	sh -c 'echo "$0" | xsel -b'
