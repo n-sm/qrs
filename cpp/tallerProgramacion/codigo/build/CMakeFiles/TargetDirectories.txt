@@ -1,0 +1,4 @@
+/home/nsanmartin/tallerProgramacion/codigo/build/test/CMakeFiles/correrTests.dir
+/home/nsanmartin/tallerProgramacion/codigo/build/test/lib/googletest-release-1.7.0/CMakeFiles/gtest.dir
+/home/nsanmartin/tallerProgramacion/codigo/build/test/lib/googletest-release-1.7.0/CMakeFiles/gtest_main.dir
+/home/nsanmartin/tallerProgramacion/codigo/build/src/CMakeFiles/src.dir
