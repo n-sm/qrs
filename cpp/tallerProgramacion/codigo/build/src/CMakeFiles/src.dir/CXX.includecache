@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/nsanmartin/tallerProgramacion/codigo/src/taller.cpp
+iostream
+-
+math.h
+-
+cmath
+-
+taller.h
+/home/nsanmartin/tallerProgramacion/codigo/src/taller.h
+vector
+-
+
+/home/nsanmartin/tallerProgramacion/codigo/src/taller.h
+
