@@ -15,9 +15,10 @@ SCHAR_MIN %d\n\
 SHRT_MAX %d\n\
 SHRT_MIN %d\n\
 UCHAR_MAX %d\n\
-UINT_MAX %d\n\
-ULONG_MAX %ld\n\
 USHRT_MAX %d\n\
+UINT_MAX %d\n\
+ULONG_MAX %lu\n\
+ULLONG_MAX %llu\n\
 ",
        CHAR_BIT,\
 CHAR_MAX,\
@@ -31,8 +32,9 @@ SCHAR_MIN,\
 SHRT_MAX,\
 SHRT_MIN,\
 UCHAR_MAX,\
-UINT_MAX,\
+USHRT_MAX,\
+INT_MAX,\
 ULONG_MAX,\
-       USHRT_MAX);
+ULLONG_MAX);
   return 0;
 }
