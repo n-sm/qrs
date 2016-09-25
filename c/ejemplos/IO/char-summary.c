@@ -50,7 +50,8 @@ int main( int argc, char *argv[] )
 
 
   long long tabla[257];
-  for (int i = 0; i < 256; i++) {
+  int i = 0;
+  for (; i < 256; i++) {
     tabla[i] = 0;
   }
   tabla[256] = -1;
@@ -67,8 +68,8 @@ int main( int argc, char *argv[] )
 
 void printHelp()
 {
-  printf("seco 0.0\n\nusage: seco [options] \n\nOptions:\n");
-  printf("\t-d decimal\n\t-o determina el orden\n");
+  printf("seco 0.0\n\nusage: char-summary [options] \n\nOptions:\n");
+  printf("\t-s sort\n");
 }
 
 
@@ -138,8 +139,9 @@ int max (int * arr) {
 void mostrarTablaConOrden(long long * desorden, int * orden) {
   int l = len(desorden);
   int m = max(orden);
-  for (int i = 0; i < m; i++) {
-    for (int j = 0; j < l; j++) {
+  int i, j;
+  for (i = 0; i < m; i++) {
+    for (j = 0; j < l; j++) {
       if (orden[j] == i)
 	printf("%d \t%lld \t%c\n",
 	       j + CHAR_MIN, desorden[j], j + CHAR_MIN);
@@ -150,7 +152,8 @@ void mostrarTablaConOrden(long long * desorden, int * orden) {
 }
 
 void mostrarTablaSinOrden (long long * tabla) {
- for (int i = 0; i < 256; i++) {
+  int i;
+ for ( i = 0; i < 256; i++) {
     if (tabla[i] != 0) {
       printf("%d \t%lld  \t%c\n",
 	     i + CHAR_MIN, tabla[i], i + CHAR_MIN);

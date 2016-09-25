@@ -21,9 +21,3 @@ public class WgetCurl
       	}
     }
 }
-
-//evillar 330
-//bloqueada la cuenta
-//trato
-
-// ejecucion de sentencia 397 paso 5to piso impresora //
