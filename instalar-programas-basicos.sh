@@ -1,12 +1,14 @@
 #!/bin/bash
 
 # editores de texto
-sudo apt-get install emacs24 vim 
+apt-get -y install emacs vim 
 # utilidades
-sudo apt-get install git pandoc catdoc mupdf
+apt-get -y install git pandoc catdoc mupdf texlive-full
 # programacion
-sudo apt-get install r-base-core
+apt-get -y install r-base gcc gdb
 # red
-sudo apt-get install arp-scan
+#sudo apt-get install arp-scan
 # internet
-sudo apt-get install w3m elinks lynx
+#apt-get install w3m elinks lynx
+# graficos
+apt-get -y install feh

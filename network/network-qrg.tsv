@@ -1,0 +1,5 @@
+# -*- mode:csv -*-
+network manager nmtui
+list network devices    nmcli d[ev] 
+list wifi disponibles   nmcli d[ev] wifi list 
+list connections    nmcli c[onnection]
