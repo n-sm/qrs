@@ -38,3 +38,4 @@ modificar remoto change remote url	git remote set-url https://...
 diffs between local aand remote branch  git diff master origin/master
 long paths long lines 	git config --system core.longpaths true
 disable SSL certificate for repo	git config http.sslVerify "false"
+disable SSL certificate for command	env GIT_SSL_NO_VERIFY=true git command

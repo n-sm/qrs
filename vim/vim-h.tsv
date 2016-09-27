@@ -1,5 +1,6 @@
 # -*- mode:csv -*-
 DESCRIPCIO´N                           	|     COMANDO
+Flush lines regex	:g/PATTERN/d
 Move to the end of a word.	e
 Move forward to the beginning of a word.	w
 Move forward three words.	3w
