@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Inferencias</title><link href="http://inferencias.github.io/" rel="alternate"></link><link href="http://inferencias.github.io/feeds/analisis-matematico.atom.xml" rel="self"></link><id>http://inferencias.github.io/</id><updated>2016-03-29T00:00:00-03:00</updated><entry><title>Límite de funciones de varias variables</title><link href="http://inferencias.github.io/limite-de-funciones-de-varias-variables.html" rel="alternate"></link><updated>2016-03-29T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-29:limite-de-funciones-de-varias-variables.html</id><summary type="html">&lt;p&gt;En esta entrada repasaremos un poco algunas definiciones y veremos algunos ejemplos.
+Consideraremos funciones de varias variables, es decir \(f: \mathbb{R}^n \to \mathbb{R}\).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Límite)&lt;/strong&gt;
+Una función \(f: \mathbb{R}^n \to \mathbb{R}\) tiende al límite \(l \in \mathbb{R}\) cuando \(X\) tiende a \(P \qquad (X, P \in \mathbb{R}^n)\), si:
+ \[(\forall \epsilon &amp;gt; 0) (\exists \delta &amp;gt;0) : \  0 &amp;lt; ||X-P|| &amp;lt; \delta \ \rightarrow \ |f(P) - l| &amp;lt; \epsilon\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Álgebra de límites&lt;/strong&gt;
+Sean \(f, g: A \to R\text{, } A \subset \mathbb{R}^n\) funciones y sea \(P \in \overline{A}\) (o sea que \(P\) pertenece a la clausura de \(A\). Y supongamos que:&lt;/p&gt;
+&lt;p&gt;\[\lim_{X\to P}f(x) =l_f \in \mathbb{R} \qquad y \qquad \lim_{X\to P}g(x) =l_g \in \mathbb{R}\]&lt;/p&gt;
+&lt;p&gt;Entonces se cumple:&lt;/p&gt;
+&lt;p&gt;\[\text{(1)}\qquad \lim_{X\to P}(f\pm g)(X) = l_f \pm l_g \]
+\[\text{(2)}\qquad \lim_{X\to P}(f \cdot g)(X) = l_f \cdot l_g A\]
+\[\text{(3)} \quad \text{ Si  }l_g \neq 0, \quad \lim_{X\to P}(f\pm g)(X) = \frac{l_f}{l_g} \]&lt;/p&gt;
+&lt;p&gt;Veamos (2).
+Restando y sumando \(f(X)l_g\), obtenemos:
+    \[ |(f \cdot g) (X) - l_f \cdot l_g| = |f(X)g(X) -f(X)l_g+f(X)l_g- l_fl_g|\]&lt;/p&gt;
+&lt;p&gt;Sacando factor común la fórmula:&lt;/p&gt;
+&lt;p&gt;\[ |f(X)g(X) -f(X)l_g+f(X)l_g- l_fl_g| \] 
+equivale a:
+\[(*) \quad |f(X)|\cdot|g(X)-l_g| + |l_g|\cdot|f(X)-l_f| \]&lt;/p&gt;
+&lt;p&gt;Por otra parte, 
+\[|f(X)| \leq |f(X)-l_f|+|l_f|\]&lt;/p&gt;
+&lt;p&gt;O sea que
+\[|f(X)|\cdot|g(X)-l_g| \leq (|f(X)-l_f|+|l_f|)\cdot|g(X)-l_g|\]
+y&lt;/p&gt;
+&lt;p&gt;\[|f(X)|\cdot|g(X)-l_g| \leq |f(X)-l_f|\cdot|g(X)-l_g|  +   |l_f|\cdot|g(X)-l_g|\]&lt;/p&gt;
+&lt;p&gt;De este modo, el primer sumando de \((*)\) está acotado por:
+\[||X-P||^2 + l_f|\cdot|X-P|\]
+y el segundo por
+\[ l_g|\cdot|X-P|\]&lt;/p&gt;
+&lt;p&gt;De este modo, con \(\delta &amp;lt; ||X-P||^2 + l_f|\cdot|X-P| +l_g|\cdot|X-P|\), se cumple
+\[|(F\cdot g)(X) - l_fl_g| &amp;lt; \epsilon\]
+y entonces (2) se cumple.&lt;/p&gt;
+&lt;p&gt;((1) y (3) quedan para el lector).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;
+Si \(f_i: \mathbb{R}^n\to \mathbb{R}\) es la función que asigna a cada vector de \(\mathbb{R}^n\) con su \(i\)-ésima coordenada, es decir:
+\[f_i(x_1, \dots, x_i, \dots, x_n) = x_i\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;entonces, si \(P=(p_1, \dots, p_n)\) se cumple:&lt;/p&gt;
+&lt;p&gt;\[ \lim_{X\to P} x_j = p_j\]&lt;/p&gt;
+&lt;p&gt;lo cual se sigue de que 
+\[ |x_i - p_i| \leq ||X-P||\]&lt;/p&gt;
+&lt;p&gt;Cuando se estudia el límite de una función en \(P\), a veces resulta útil componer con una o más curvas, es decir con una funciones \(\alpha_k: \mathbb{R} \to \mathbb{R}^n\) y ver qué ocurre con \(f\circ\alpha_k\)cuando \(\alpha_k \to P\). Si encontramos distintas curvas para las cuales su composición con \(f\) cuando tienden a \(P\) tienen distintos límites, entonces podemo afirmas que el límite de \(f\) no existe.&lt;/p&gt;
+&lt;p&gt;Otra observación útil es la siguiente. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;
+Si tenemos por ejemplo una función \(f:\mathbb{R}^2\to \mathbb{R}\) y queremos ver su límite cuando \((x,y) \to (a,b)\). Supongamos además que podemos mostrar que:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;\[\lim_{x\to a} \lim_{y\to b} f(x,y) = l_1\]
+y que:
+\[\lim_{y\to b} \lim_{x\to a} f(x,y) = l_2\]&lt;/p&gt;
+&lt;p&gt;Si ocurre que \(l_1 \neq l_2\), entonces &lt;strong&gt;no existe el límite&lt;/strong&gt;. (Ojo que no vale la recíproca).&lt;/p&gt;</summary></entry><entry><title>Sucesiones</title><link href="http://inferencias.github.io/sucesiones.html" rel="alternate"></link><updated>2016-03-25T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-25:sucesiones.html</id><summary type="html">&lt;p&gt;Las sucesiones son funciones cuyo dominio son los números naturales y su imagen está  en los reales. En lugar de usar \( f: \mathbb{N} \to \mathbb{R}\) y \(f(n)\) para referirse a la sucesión y a sus términos, se suele escribir en cambio:&lt;/p&gt;
+&lt;p&gt;\[ \{a_n\}_{n\in\mathbb{N}} \]&lt;/p&gt;
+&lt;p&gt;para denotar una sucesión y&lt;/p&gt;
+&lt;p&gt;\[ a_i \]&lt;/p&gt;
+&lt;p&gt;para los términos de la misma, donde \(i = 1, 2, ... \)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DEFINICIÓN (&lt;strong&gt;sucesión&lt;/strong&gt;)
+Una &lt;em&gt;sucesión&lt;/em&gt; infinita de números reales \(\{a_n\}_{n\in\mathbb{N}} \) es una función de \(\mathbb{N}\) en \(\mathbb{R}\).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Las sucesiones pueden ser convergentes o divergentes. Si converge en un número es porque los términos \(a_i)) se aproximan a ese número a medida que \(n)) es mayor. Si no ocurre esto, entonces diverge.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DEFINICIÓN (&lt;strong&gt;convergencia de una sucesión&lt;/strong&gt;)
+Una sucesión \(\{a_n\}_{n \in \mathbb{N}} \) &lt;strong&gt;converge hacia l&lt;/strong&gt; si se cumple:
+\[(\forall \epsilon &amp;gt; 0) (\exists N \in \mathbb{N}) (\forall n \in \mathbb{N}) : n &amp;gt; N \to |a_n - l| &amp;lt; \epsilon \]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esto suele expresarse de modo abreviado así:&lt;/p&gt;
+&lt;p&gt;\[\lim_{n\to \infty} a_n = l\]&lt;/p&gt;
+&lt;p&gt;o incluso diciendo que \(a_n \to l\) cuando \(n \to \infty\).&lt;/p&gt;
+&lt;p&gt;En palabras sería que una vez elegido un número positivo \(\epsilon\) que sea, tiene que haber algún un número natural \(\mathbb{N}\) tal que todos los términos \(a_n\) con \(n\) mayor que \(\mathbb{N}\) están a una distancia de l menor a \(\epsilon\).&lt;/p&gt;
+&lt;p&gt;Una sucesión que no cumple con esta condición cumplirá con la propiedad contraria, que es decir:&lt;/p&gt;
+&lt;p&gt;\[(\exists \epsilon &amp;gt; 0) (\forall N \in \mathbb{N})
+      (\exists n \in \mathbb{N} ) : \quad n &amp;gt; N \ \wedge |a_n -
+    l | \geq \epsilon \]&lt;/p&gt;
+&lt;p&gt;Como se ve, la expresión se complica por los cuantificadores anidados. Esto significa que existe al menos algún \(\epsilon\) tal que por más grande que sea el \(n \in \mathbb{N}\) que tomemos, el término correspondiente de la sucesión se encuentra a una distancia de \(l\) mayor que \(\epsilon\).&lt;/p&gt;
+&lt;p&gt;Una sucesion puede ser &lt;strong&gt;creciente&lt;/strong&gt;, &lt;strong&gt;decreciente&lt;/strong&gt;, &lt;strong&gt;no creciente&lt;/strong&gt;, &lt;strong&gt;no decreciente&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (sucesión creciente)&lt;/strong&gt;
+Una sucesión \( {a_n}\) es creciente si
+\[ (\forall n \in \mathbb{N}) \quad a_{n+1} &amp;gt; a_n \]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Las definiciones restantes se obtienen facilmente cambiando el signo \( &amp;gt;\) con el que se adecúa al concepto que se defina. Otra definición importante es la de suceción acotada.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (sucesión acotada)&lt;/strong&gt;
+Una sucesión \( {a_n}\) es acotada si:
+\[ (\exists M) (\forall n \in \mathbb{N}) \quad a_n \leq M \]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esto permite que veamos la demostración siguiente:&lt;/p&gt;
+&lt;p&gt;TEOREMA
+Si una sucesión es no decreciente y acotada superiormente, entonces converge.&lt;/p&gt;
+&lt;p&gt;PRUEBA
+Sea \( {a_n}\) una sucesión no decreciente y acotada superiormente.
+Como es acotada superiormente existe algún número que es mayor o igual a todos los términos de la sucesión. Es más, existe un número (real) que además de ser mayor o igual, es el menor de todos los restantes que son también cotas. LLamemos \(c\) a ese número.&lt;/p&gt;
+&lt;p&gt;Consideremos ahora un número positivo cualquiera \(\epsilon\). Preguntamos primero si en el intervalo \(c-\epsilon, c\) hay o no un \(a_n\) para algún \(n\). Rápidamente vemos que es imposible que no haya ningún \(a_n\) en ese intervalo, porque en ese caso habría infinitos puntos en ese intervalo que serían a la vez, mayores que todos los \(a_n\), pero menores que \(c\). Como es la cota &lt;em&gt;mínima&lt;/em&gt; entonces esto es falso. De manera que tiene que haber algún \(a_n\) en ese intervalo. Supongamos que \(a_M \in (c-\epsilon, c]\), es decir, que \(a_M\) es ese término. Entonces, como la sucesión es no decreciente, para todo \(n &amp;gt; M\) se cumple que está en ese intervalo. Y esto es los que dice la definición de convergencia.&lt;/p&gt;
+&lt;p&gt;De una sucesión puede formarse otra sucesión a partir de ella alterándola mediante la omisión de algunos térmimos.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (subsucesión)&lt;/strong&gt;
+Dada una sucesión \(\{a_k\}\) y una función estrictamente creciente \(n: \mathbb{N} \to \mathbb{N}\), se llama subsucesiónde \({a_n}\) a la composición \(a \circ n\).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;En lugar de \(n(k)\) se suele escribir \(n_k\) y a la subsucesión se la escribe:&lt;/p&gt;
+&lt;p&gt;\[\{a_{n_k}\}\]&lt;/p&gt;
+&lt;p&gt;donde el \(k\)-ésimo término de la subsucesión es el mismo que el \(n_k\)-ésimo término de \({a_n}\).&lt;/p&gt;
+&lt;p&gt;Ahora que definimos subsucesiones podemos ver la prueba del siguiente teorema conocido como teorema de Bolzano-weierstrass:&lt;/p&gt;
+&lt;p&gt;TEOREMA (BOLZANO-WEIERSTRASS)
+Toda sucesión acotada (tanto inferior como superiormente) contiene una subsucesión que es convergente.&lt;/p&gt;
+&lt;p&gt;La demostración siguiente es en lo esencial la misma que figura en el libro de Spivak (Calculo Infinitesimal).&lt;/p&gt;
+&lt;p&gt;PRUEBA
+Para esta prueba usaremos el teorema de más arriba que establece que si una sucesión es no decreciente y acotada superiormente converge. Mostraremos que toda sucesión contiene una subsucesión que es o bien no decreciente o bien no creciente. Por ende, si es acotada, será convergente.&lt;/p&gt;
+&lt;p&gt;Comencemos denominando "puntos cumbre" de una sucesión a todos los términos \(a_i\) de la misma para los que se cumple que \((\forall n &amp;gt; i) \quad a_i &amp;gt; a_n\). En decir, un punto cumbre de una sucesión es un término tal que no existen otros términos mayores que él a la derecha.&lt;/p&gt;
+&lt;p&gt;Dada una sucesión cualquiera es inmediato por el principio lógico del tercero excluído que la misma o bien tiene infinitos puntos cumbre o no los tiene. Consideremos los casos por separado.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Caso 1:&lt;/em&gt; la sucesión tiene infinitos puntos cumbre.&lt;/p&gt;
+&lt;p&gt;En este caso basta con tomar los puntos cumbre. Necesariamente forman una sucesión no creciente (por cómo definimos los puntos cumbres).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Caso 2:&lt;/em&gt; la sucesión tiene sólo finitos puntos cumbre.&lt;/p&gt;
+&lt;p&gt;Tomemos un término \(a_{k_1}\) mayor que todos los puntos cumbre (si no hay puntos cumbre, cualquier término sirve). Como \(a_{k_1}\) no es punto cumbre, existe algún otro término \(a_{k_2}\) que es mayor que él. Pero, nuevamente, \(a_{k_2}\) tampoco es un punto cumbre, y por ese motivo debe haber un \(a_{k_3} &amp;gt; a_{k_2}\). Podemos escoger así infinitos número, formando una sucesión infinita que sea subsucesión de la sucesión original.&lt;/p&gt;
+&lt;p&gt;Como en cualquier caso una sucesión contiene alguna subsucesión no creciente o no decreciente, si es acotada, entonces converge (por el teorema anteriormente citado).&lt;/p&gt;
+&lt;p&gt;Para terminar con este post escribiremos la definición de sucesión de Cauchy y un teorema sobre este tipo de sucesiones.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (sucesión de Cauchy)&lt;/strong&gt;
+Una sucesión \({a_n}\) es una sucesión de Cauchy si se cumple:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;\[
+(\forall \epsilon &amp;gt; 0) (\exists N \in \mathbb{N}) (\forall n,m &amp;gt; N) :
+|a_n - a_m | &amp;lt; \epsilon
+\]
+ Lo cual puede escribirse:&lt;/p&gt;
+&lt;p&gt;\[ \lim_{m,n\to\infty} |a_n - a_m| = 0 \]&lt;/p&gt;
+&lt;p&gt;TEOREMA
+Una sucesión es convergente si y sólo si es una sucesión de Cauchy&lt;/p&gt;
+&lt;p&gt;Primero, supongamos que la sucesión  \({a_n}\) converge. Es decir:
+\[ \lim_{n\to\infty} a_n = l\]&lt;/p&gt;
+&lt;p&gt;Por la definición de limíte más arriba (convergencia), para cualequier \(\epsilon &amp;gt; 0\), existe \(N\) tal que&lt;/p&gt;
+&lt;p&gt;\[
+ (\forall n \in \mathbb{N}) : k &amp;gt; N \Rightarrow |a_n - l| &amp;lt; \epsilon/2
+\]&lt;/p&gt;
+&lt;p&gt;y&lt;/p&gt;
+&lt;p&gt;\[
+ (\forall m \in \mathbb{N}) : k &amp;gt; N \Rightarrow |a_m - l| &amp;lt; \epsilon/2
+\]&lt;/p&gt;
+&lt;p&gt;de modo que&lt;/p&gt;
+&lt;p&gt;\[ |a_m - a_n| \leq |a_m-l| + |a_n-l| &amp;lt; \frac{\epsilon}{2}
++\frac{\epsilon}{2} = \epsilon \]
+Es decir que para cualquier \(\epsilon\) se cumple \(|a_m - a_n| &amp;lt; \epsilon\)&lt;/p&gt;
+&lt;p&gt;Tal vez sea más claro decir que si la sucesión converge, entonces para cualquier entorno \((l-\epsilon, l+\epsilon)\) todos los puntos de la sucesión estarán contenidos ahí a partir de cierto \(N \in \mathbb{N}\) y como \(m, n &amp;gt; N\) entonces su distancia será menor a \( l+\epsilon-(l-\epsilon) = 2 \epsilon\), y esta distancia se puede hacer tan pequeña como se quiera.&lt;/p&gt;
+&lt;p&gt;Para terminar, supongamos que \(a_n\) es una sucesión de Cauchy y derivemos que converge.&lt;/p&gt;
+&lt;p&gt;Como es una sucesión de Cauchy, a partir de cierto \(N\) todos sus puntos estan a una distancia menor a una distancia arbitraria. En particular, todos los \(a_n\) con \(n&amp;gt; N\) estarán de \(a_{N+1}\) a una distancia menor a \(\epsilon_0\). Luego, \(a_{N+1}+\epsilon_0\) es una cota para \(\{a_n:n&amp;gt;N\}\) y, como los términos anteriores de la sucesión son finitos, tienen un máximo, y por lo tanto toda la sucesión está acotada. De esta forma, llegamos a que toda sucesión de Cauchy tiene una subsucesión que converge (por el teorema de Bolzano-Weieresstrass). Tomemos entonces alguna subsucesión convergente y tomemos su límite \(l\). Como los términos de la subsucesión pertenecen a \(\{a_n\}\), cuando se acercan a \(l\) también los hacen los otros términos de \(\{a_n\}\) que no están en esta subsucesión, porque es una subsucesión de Cauchy, de modo que se acercan a \(l\) todo lo que se quiera.&lt;/p&gt;</summary></entry></feed>

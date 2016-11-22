@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "DTD/xhtml1-strict.dtd">
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="BowcauXzjgHenpMUQ0n3osgU-6x6pilmY9gCtm1sgIQ" />
+        <title>Límite de funciones de varias variables</title>
+        <link rel="stylesheet" href="http://inferencias.github.io/theme/css/main.css" />
+        <link href="http://inferencias.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Inferencias Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+
+    <script type="text/javascript"
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://inferencias.github.io/">Inferencias </a></h1>
+                <nav><ul>
+                    <li><a href="http://inferencias.github.io/category/analisis.html">analisis</a></li>
+                    <li class="active"><a href="http://inferencias.github.io/category/analisis-matematico.html">Análisis Matemático</a></li>
+                    <li><a href="http://inferencias.github.io/category/logica.html">Lógica</a></li>
+                    <li><a href="http://inferencias.github.io/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://inferencias.github.io/limite-de-funciones-de-varias-variables.html" rel="bookmark"
+           title="Permalink to Límite de funciones de varias variables">Límite de funciones de varias variables</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+  <abbr class="published" title="2016-03-29T00:00:00-03:00">
+    Published:</br> mar 29 marzo 2016
+  </abbr>
+
+  <address class="vcard author">
+    By     <a class="url fn" href="http://inferencias.github.io/author/nsm.html">nsm</a>
+  </address>
+
+  <p>In <a href="http://inferencias.github.io/category/analisis-matematico.html">Análisis Matemático</a>.</p>
+  
+</footer><!-- /.post-info -->      <p>En esta entrada repasaremos un poco algunas definiciones y veremos algunos ejemplos.
+Consideraremos funciones de varias variables, es decir \(f: \mathbb{R}^n \to \mathbb{R}\).</p>
+<blockquote>
+<p><strong>DEFINICIÓN (Límite)</strong>
+Una función \(f: \mathbb{R}^n \to \mathbb{R}\) tiende al límite \(l \in \mathbb{R}\) cuando \(X\) tiende a \(P \qquad (X, P \in \mathbb{R}^n)\), si:
+ \[(\forall \epsilon &gt; 0) (\exists \delta &gt;0) : \  0 &lt; ||X-P|| &lt; \delta \ \rightarrow \ |f(P) - l| &lt; \epsilon\]</p>
+</blockquote>
+<p><strong>Álgebra de límites</strong>
+Sean \(f, g: A \to R\text{, } A \subset \mathbb{R}^n\) funciones y sea \(P \in \overline{A}\) (o sea que \(P\) pertenece a la clausura de \(A\). Y supongamos que:</p>
+<p>\[\lim_{X\to P}f(x) =l_f \in \mathbb{R} \qquad y \qquad \lim_{X\to P}g(x) =l_g \in \mathbb{R}\]</p>
+<p>Entonces se cumple:</p>
+<p>\[\text{(1)}\qquad \lim_{X\to P}(f\pm g)(X) = l_f \pm l_g \]
+\[\text{(2)}\qquad \lim_{X\to P}(f \cdot g)(X) = l_f \cdot l_g A\]
+\[\text{(3)} \quad \text{ Si  }l_g \neq 0, \quad \lim_{X\to P}(f\pm g)(X) = \frac{l_f}{l_g} \]</p>
+<p>Veamos (2).
+Restando y sumando \(f(X)l_g\), obtenemos:
+    \[ |(f \cdot g) (X) - l_f \cdot l_g| = |f(X)g(X) -f(X)l_g+f(X)l_g- l_fl_g|\]</p>
+<p>Sacando factor común la fórmula:</p>
+<p>\[ |f(X)g(X) -f(X)l_g+f(X)l_g- l_fl_g| \] 
+equivale a:
+\[(*) \quad |f(X)|\cdot|g(X)-l_g| + |l_g|\cdot|f(X)-l_f| \]</p>
+<p>Por otra parte, 
+\[|f(X)| \leq |f(X)-l_f|+|l_f|\]</p>
+<p>O sea que
+\[|f(X)|\cdot|g(X)-l_g| \leq (|f(X)-l_f|+|l_f|)\cdot|g(X)-l_g|\]
+y</p>
+<p>\[|f(X)|\cdot|g(X)-l_g| \leq |f(X)-l_f|\cdot|g(X)-l_g|  +   |l_f|\cdot|g(X)-l_g|\]</p>
+<p>De este modo, el primer sumando de \((*)\) está acotado por:
+\[||X-P||^2 + l_f|\cdot|X-P|\]
+y el segundo por
+\[ l_g|\cdot|X-P|\]</p>
+<p>De este modo, con \(\delta &lt; ||X-P||^2 + l_f|\cdot|X-P| +l_g|\cdot|X-P|\), se cumple
+\[|(F\cdot g)(X) - l_fl_g| &lt; \epsilon\]
+y entonces (2) se cumple.</p>
+<p>((1) y (3) quedan para el lector).</p>
+<blockquote>
+<p><strong>Observación</strong>
+Si \(f_i: \mathbb{R}^n\to \mathbb{R}\) es la función que asigna a cada vector de \(\mathbb{R}^n\) con su \(i\)-ésima coordenada, es decir:
+\[f_i(x_1, \dots, x_i, \dots, x_n) = x_i\]</p>
+</blockquote>
+<p>entonces, si \(P=(p_1, \dots, p_n)\) se cumple:</p>
+<p>\[ \lim_{X\to P} x_j = p_j\]</p>
+<p>lo cual se sigue de que 
+\[ |x_i - p_i| \leq ||X-P||\]</p>
+<p>Cuando se estudia el límite de una función en \(P\), a veces resulta útil componer con una o más curvas, es decir con una funciones \(\alpha_k: \mathbb{R} \to \mathbb{R}^n\) y ver qué ocurre con \(f\circ\alpha_k\)cuando \(\alpha_k \to P\). Si encontramos distintas curvas para las cuales su composición con \(f\) cuando tienden a \(P\) tienen distintos límites, entonces podemo afirmas que el límite de \(f\) no existe.</p>
+<p>Otra observación útil es la siguiente. </p>
+<blockquote>
+<p><strong>Observación</strong>
+Si tenemos por ejemplo una función \(f:\mathbb{R}^2\to \mathbb{R}\) y queremos ver su límite cuando \((x,y) \to (a,b)\). Supongamos además que podemos mostrar que:</p>
+</blockquote>
+<p>\[\lim_{x\to a} \lim_{y\to b} f(x,y) = l_1\]
+y que:
+\[\lim_{y\to b} \lim_{x\to a} f(x,y) = l_2\]</p>
+<p>Si ocurre que \(l_1 \neq l_2\), entonces <strong>no existe el límite</strong>. (Ojo que no vale la recíproca).</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://inferencias.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

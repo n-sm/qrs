@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "DTD/xhtml1-strict.dtd">
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="BowcauXzjgHenpMUQ0n3osgU-6x6pilmY9gCtm1sgIQ" />
+        <title>Sucesiones</title>
+        <link rel="stylesheet" href="http://inferencias.github.io/theme/css/main.css" />
+        <link href="http://inferencias.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Inferencias Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+
+    <script type="text/javascript"
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://inferencias.github.io/">Inferencias </a></h1>
+                <nav><ul>
+                    <li><a href="http://inferencias.github.io/category/analisis.html">analisis</a></li>
+                    <li class="active"><a href="http://inferencias.github.io/category/analisis-matematico.html">Análisis Matemático</a></li>
+                    <li><a href="http://inferencias.github.io/category/logica.html">Lógica</a></li>
+                    <li><a href="http://inferencias.github.io/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://inferencias.github.io/sucesiones.html" rel="bookmark"
+           title="Permalink to Sucesiones">Sucesiones</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+  <abbr class="published" title="2016-03-25T00:00:00-03:00">
+    Published:</br> vie 25 marzo 2016
+  </abbr>
+
+  <address class="vcard author">
+    By     <a class="url fn" href="http://inferencias.github.io/author/nsm.html">nsm</a>
+  </address>
+
+  <p>In <a href="http://inferencias.github.io/category/analisis-matematico.html">Análisis matemático</a>.</p>
+  
+</footer><!-- /.post-info -->      <p>Las sucesiones son funciones cuyo dominio son los números naturales y su imagen está  en los reales. En lugar de usar \( f: \mathbb{N} \to \mathbb{R}\) y \(f(n)\) para referirse a la sucesión y a sus términos, se suele escribir en cambio:</p>
+<p>\[ \{a_n\}_{n\in\mathbb{N}} \]</p>
+<p>para denotar una sucesión y</p>
+<p>\[ a_i \]</p>
+<p>para los términos de la misma, donde \(i = 1, 2, ... \)</p>
+<blockquote>
+<p>DEFINICIÓN (<strong>sucesión</strong>)
+Una <em>sucesión</em> infinita de números reales \(\{a_n\}_{n\in\mathbb{N}} \) es una función de \(\mathbb{N}\) en \(\mathbb{R}\).</p>
+</blockquote>
+<p>Las sucesiones pueden ser convergentes o divergentes. Si converge en un número es porque los términos \(a_i)) se aproximan a ese número a medida que \(n)) es mayor. Si no ocurre esto, entonces diverge.</p>
+<blockquote>
+<p>DEFINICIÓN (<strong>convergencia de una sucesión</strong>)
+Una sucesión \(\{a_n\}_{n \in \mathbb{N}} \) <strong>converge hacia l</strong> si se cumple:
+\[(\forall \epsilon &gt; 0) (\exists N \in \mathbb{N}) (\forall n \in \mathbb{N}) : n &gt; N \to |a_n - l| &lt; \epsilon \]</p>
+</blockquote>
+<p>Esto suele expresarse de modo abreviado así:</p>
+<p>\[\lim_{n\to \infty} a_n = l\]</p>
+<p>o incluso diciendo que \(a_n \to l\) cuando \(n \to \infty\).</p>
+<p>En palabras sería que una vez elegido un número positivo \(\epsilon\) que sea, tiene que haber algún un número natural \(\mathbb{N}\) tal que todos los términos \(a_n\) con \(n\) mayor que \(\mathbb{N}\) están a una distancia de l menor a \(\epsilon\).</p>
+<p>Una sucesión que no cumple con esta condición cumplirá con la propiedad contraria, que es decir:</p>
+<p>\[(\exists \epsilon &gt; 0) (\forall N \in \mathbb{N})
+      (\exists n \in \mathbb{N} ) : \quad n &gt; N \ \wedge |a_n -
+    l | \geq \epsilon \]</p>
+<p>Como se ve, la expresión se complica por los cuantificadores anidados. Esto significa que existe al menos algún \(\epsilon\) tal que por más grande que sea el \(n \in \mathbb{N}\) que tomemos, el término correspondiente de la sucesión se encuentra a una distancia de \(l\) mayor que \(\epsilon\).</p>
+<p>Una sucesion puede ser <strong>creciente</strong>, <strong>decreciente</strong>, <strong>no creciente</strong>, <strong>no decreciente</strong>.</p>
+<blockquote>
+<p><strong>DEFINICIÓN (sucesión creciente)</strong>
+Una sucesión \( {a_n}\) es creciente si
+\[ (\forall n \in \mathbb{N}) \quad a_{n+1} &gt; a_n \]</p>
+</blockquote>
+<p>Las definiciones restantes se obtienen facilmente cambiando el signo \( &gt;\) con el que se adecúa al concepto que se defina. Otra definición importante es la de suceción acotada.</p>
+<blockquote>
+<p><strong>DEFINICIÓN (sucesión acotada)</strong>
+Una sucesión \( {a_n}\) es acotada si:
+\[ (\exists M) (\forall n \in \mathbb{N}) \quad a_n \leq M \]</p>
+</blockquote>
+<p>Esto permite que veamos la demostración siguiente:</p>
+<p>TEOREMA
+Si una sucesión es no decreciente y acotada superiormente, entonces converge.</p>
+<p>PRUEBA
+Sea \( {a_n}\) una sucesión no decreciente y acotada superiormente.
+Como es acotada superiormente existe algún número que es mayor o igual a todos los términos de la sucesión. Es más, existe un número (real) que además de ser mayor o igual, es el menor de todos los restantes que son también cotas. LLamemos \(c\) a ese número.</p>
+<p>Consideremos ahora un número positivo cualquiera \(\epsilon\). Preguntamos primero si en el intervalo \(c-\epsilon, c\) hay o no un \(a_n\) para algún \(n\). Rápidamente vemos que es imposible que no haya ningún \(a_n\) en ese intervalo, porque en ese caso habría infinitos puntos en ese intervalo que serían a la vez, mayores que todos los \(a_n\), pero menores que \(c\). Como es la cota <em>mínima</em> entonces esto es falso. De manera que tiene que haber algún \(a_n\) en ese intervalo. Supongamos que \(a_M \in (c-\epsilon, c]\), es decir, que \(a_M\) es ese término. Entonces, como la sucesión es no decreciente, para todo \(n &gt; M\) se cumple que está en ese intervalo. Y esto es los que dice la definición de convergencia.</p>
+<p>De una sucesión puede formarse otra sucesión a partir de ella alterándola mediante la omisión de algunos térmimos.</p>
+<blockquote>
+<p><strong>DEFINICIÓN (subsucesión)</strong>
+Dada una sucesión \(\{a_k\}\) y una función estrictamente creciente \(n: \mathbb{N} \to \mathbb{N}\), se llama subsucesiónde \({a_n}\) a la composición \(a \circ n\).</p>
+</blockquote>
+<p>En lugar de \(n(k)\) se suele escribir \(n_k\) y a la subsucesión se la escribe:</p>
+<p>\[\{a_{n_k}\}\]</p>
+<p>donde el \(k\)-ésimo término de la subsucesión es el mismo que el \(n_k\)-ésimo término de \({a_n}\).</p>
+<p>Ahora que definimos subsucesiones podemos ver la prueba del siguiente teorema conocido como teorema de Bolzano-weierstrass:</p>
+<p>TEOREMA (BOLZANO-WEIERSTRASS)
+Toda sucesión acotada (tanto inferior como superiormente) contiene una subsucesión que es convergente.</p>
+<p>La demostración siguiente es en lo esencial la misma que figura en el libro de Spivak (Calculo Infinitesimal).</p>
+<p>PRUEBA
+Para esta prueba usaremos el teorema de más arriba que establece que si una sucesión es no decreciente y acotada superiormente converge. Mostraremos que toda sucesión contiene una subsucesión que es o bien no decreciente o bien no creciente. Por ende, si es acotada, será convergente.</p>
+<p>Comencemos denominando "puntos cumbre" de una sucesión a todos los términos \(a_i\) de la misma para los que se cumple que \((\forall n &gt; i) \quad a_i &gt; a_n\). En decir, un punto cumbre de una sucesión es un término tal que no existen otros términos mayores que él a la derecha.</p>
+<p>Dada una sucesión cualquiera es inmediato por el principio lógico del tercero excluído que la misma o bien tiene infinitos puntos cumbre o no los tiene. Consideremos los casos por separado.</p>
+<p><em>Caso 1:</em> la sucesión tiene infinitos puntos cumbre.</p>
+<p>En este caso basta con tomar los puntos cumbre. Necesariamente forman una sucesión no creciente (por cómo definimos los puntos cumbres).</p>
+<p><em>Caso 2:</em> la sucesión tiene sólo finitos puntos cumbre.</p>
+<p>Tomemos un término \(a_{k_1}\) mayor que todos los puntos cumbre (si no hay puntos cumbre, cualquier término sirve). Como \(a_{k_1}\) no es punto cumbre, existe algún otro término \(a_{k_2}\) que es mayor que él. Pero, nuevamente, \(a_{k_2}\) tampoco es un punto cumbre, y por ese motivo debe haber un \(a_{k_3} &gt; a_{k_2}\). Podemos escoger así infinitos número, formando una sucesión infinita que sea subsucesión de la sucesión original.</p>
+<p>Como en cualquier caso una sucesión contiene alguna subsucesión no creciente o no decreciente, si es acotada, entonces converge (por el teorema anteriormente citado).</p>
+<p>Para terminar con este post escribiremos la definición de sucesión de Cauchy y un teorema sobre este tipo de sucesiones.</p>
+<blockquote>
+<p><strong>DEFINICIÓN (sucesión de Cauchy)</strong>
+Una sucesión \({a_n}\) es una sucesión de Cauchy si se cumple:</p>
+</blockquote>
+<p>\[
+(\forall \epsilon &gt; 0) (\exists N \in \mathbb{N}) (\forall n,m &gt; N) :
+|a_n - a_m | &lt; \epsilon
+\]
+ Lo cual puede escribirse:</p>
+<p>\[ \lim_{m,n\to\infty} |a_n - a_m| = 0 \]</p>
+<p>TEOREMA
+Una sucesión es convergente si y sólo si es una sucesión de Cauchy</p>
+<p>Primero, supongamos que la sucesión  \({a_n}\) converge. Es decir:
+\[ \lim_{n\to\infty} a_n = l\]</p>
+<p>Por la definición de limíte más arriba (convergencia), para cualequier \(\epsilon &gt; 0\), existe \(N\) tal que</p>
+<p>\[
+ (\forall n \in \mathbb{N}) : k &gt; N \Rightarrow |a_n - l| &lt; \epsilon/2
+\]</p>
+<p>y</p>
+<p>\[
+ (\forall m \in \mathbb{N}) : k &gt; N \Rightarrow |a_m - l| &lt; \epsilon/2
+\]</p>
+<p>de modo que</p>
+<p>\[ |a_m - a_n| \leq |a_m-l| + |a_n-l| &lt; \frac{\epsilon}{2}
++\frac{\epsilon}{2} = \epsilon \]
+Es decir que para cualquier \(\epsilon\) se cumple \(|a_m - a_n| &lt; \epsilon\)</p>
+<p>Tal vez sea más claro decir que si la sucesión converge, entonces para cualquier entorno \((l-\epsilon, l+\epsilon)\) todos los puntos de la sucesión estarán contenidos ahí a partir de cierto \(N \in \mathbb{N}\) y como \(m, n &gt; N\) entonces su distancia será menor a \( l+\epsilon-(l-\epsilon) = 2 \epsilon\), y esta distancia se puede hacer tan pequeña como se quiera.</p>
+<p>Para terminar, supongamos que \(a_n\) es una sucesión de Cauchy y derivemos que converge.</p>
+<p>Como es una sucesión de Cauchy, a partir de cierto \(N\) todos sus puntos estan a una distancia menor a una distancia arbitraria. En particular, todos los \(a_n\) con \(n&gt; N\) estarán de \(a_{N+1}\) a una distancia menor a \(\epsilon_0\). Luego, \(a_{N+1}+\epsilon_0\) es una cota para \(\{a_n:n&gt;N\}\) y, como los términos anteriores de la sucesión son finitos, tienen un máximo, y por lo tanto toda la sucesión está acotada. De esta forma, llegamos a que toda sucesión de Cauchy tiene una subsucesión que converge (por el teorema de Bolzano-Weieresstrass). Tomemos entonces alguna subsucesión convergente y tomemos su límite \(l\). Como los términos de la subsucesión pertenecen a \(\{a_n\}\), cuando se acercan a \(l\) también los hacen los otros términos de \(\{a_n\}\) que no están en esta subsucesión, porque es una subsucesión de Cauchy, de modo que se acercan a \(l\) todo lo que se quiera.</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://inferencias.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

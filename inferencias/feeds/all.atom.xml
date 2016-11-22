@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Inferencias</title><link href="http://inferencias.github.io/" rel="alternate"></link><link href="http://inferencias.github.io/feeds/all.atom.xml" rel="self"></link><id>http://inferencias.github.io/</id><updated>2016-03-29T00:00:00-03:00</updated><entry><title>Conjuntos abiertos y cerrados</title><link href="http://inferencias.github.io/conjuntos-abiertos-y-cerrados.html" rel="alternate"></link><updated>2016-03-29T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-29:conjuntos-abiertos-y-cerrados.html</id><summary type="html">&lt;p&gt;En este post intentaré definir a los conjuntos abiertos y los conjuntos cerrados, para lo cual habrá que definir definir algunos conceptos más.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICION (Bola abierta de radio \(r\) con centro en \(x\))&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Se denomina &lt;em&gt;bola abierta de radio&lt;/em&gt; \(r\) &lt;em&gt;con centro en&lt;/em&gt; \(x\) al conjunto de todos los puntos de \(\mathbb{R}^n\) tales que su distancia a \(x\) es menor a \(r\), es decir:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;\[B_r(x) = \{y \in \mathbb{R}^n :
+|y - x| &amp;lt; r\}\]&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Entorno)&lt;/strong&gt;
+Un entorno del punto \(x\) es una bola abierta centrada en ese punto y de radio \(r\) y lo escribimos \(V_{r}(x)\). Si \(r\) es \(\epsilon\) podemos escribir tanto \(V_\epsilon(x)\) como \(V(x)\).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Conjunto abierto)&lt;/strong&gt;
+Un conjunto \(U \subseteq \mathbb{R}^n\) es abierto si para cada punto \(x \in U\) existe un entorno \(V_{\epsilon}(x)\) tal que \(V_{\epsilon}(x) \subseteq U\), o sea si:
+\[
+(\forall x \in U) (\exists \epsilon &amp;gt; 0) (\forall y
+\in \mathbb{R}^n) :
+|y-x| &amp;lt; \epsilon \quad \rightarrow \quad y \in U
+\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Punto de adherencia)&lt;/strong&gt;
+Un punto \(x\) se llama &lt;em&gt;punto de adherencia&lt;/em&gt; del conjunto \(M\) si todo entorno de \(x\) tiene al menos algún punto de \(M\). Formalmente, \(x_0\) es un punto de adherencia de \(M\) si:
+\[
+(\forall \epsilon &amp;gt; 0) \quad V_\epsilon(x_0) \cap M
+\neq \emptyset
+\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Punto de acumulación)&lt;/strong&gt;
+El punto \(x_0\) se llama &lt;em&gt;punto de acumulación&lt;/em&gt; del conjunto \(M\) si cualquier entorno de \(x_0\) contiene un número infinito de puntos de \(M\).&lt;/p&gt;
+&lt;p&gt;También podemos, de otra forma equivalente, decir que \(x_0\) es un punto de acumulación de \(M\) si existe una sucesión \(\{\alpha_k\}\) de puntos de \(M\) tal que \(\lim_{k\to\infty}\alpha_k=x_0\)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esta equivalencia se deduce facilmente. Primero supongamos que cualquier entono de \(x_0\) contiene infinitos puntos de \(M\) y mostremos que existe una sucesión que tiende a \(x_0\) de puntos de \(M\). Si tomamos \(\epsilon = 1\), evidentemente existe algún punto \(x \in M\) tal que \(|x-x_0| &amp;lt; 1\) dado que cualquier entorno contiene infinitos puntos, y en particular el entorno con \(\epsilon = 1\). Tomamos ese punto como \(\alpha_1\). Ahora tomamos un entorno de \(\epsilon = \frac{1}{2}\) y obtenemos del mismo modo un \(\alpha_2\). Y seguimos del mismo modo, usando \(\frac{1}{n}\) para \(\alpha_n\). Esta sucesión tiene evidentemente límite en \(x_0\) y sus puntos están en \(M\).&lt;/p&gt;
+&lt;p&gt;En segundo lugar, supongamos que existe una sucesión \(a_n\) con límite en \(x_0\). Como una sucesión (por definición) tiene infinitos puntos \(a_i\) con \(i&amp;gt;k\) para cualquier \(k\) fijo, cualquier \(\epsilon\) que elijamos definirá un entorno de \(x_0\) dentro del cual habrá infinitos puntos de \(M\).&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Punto asilado)&lt;/strong&gt;
+El punto \(x_0\) se llama &lt;em&gt;punto asilado&lt;/em&gt; del conjunto \(M\) si tiene algún entorno donde no hayan puntos de \(M\) diferentes de \(x_0\).
+&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Punto interior)&lt;/strong&gt;
+El punto \(x\) se llama &lt;em&gt;punto interior&lt;/em&gt; del conjunto \(M\) si existe un entorno de \(x\) que sea subconjunto de \(M\).
+El conjunto de todos los puntos interiores del conjunto \(M\) se llama &lt;strong&gt;interior de &lt;/strong&gt; \(M\) y los escribimos \(M^\circ\).
+&lt;/br&gt;&lt;/br&gt;
+&lt;strong&gt;DEFINCIÓN (Clausura)&lt;/strong&gt;
+El conjunto de todos los puntos de adherencia de un conjunto \(M\) se llama su &lt;em&gt;clausura&lt;/em&gt;, y se denota \(\overline{M}\).&lt;/p&gt;
+&lt;p&gt;La clausura de \(M\) tambíen podría definirse como la unión de \(M\) con el conjunto de todos sus puntos de acumulación.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;: todo conjunto está contenido en su clausura. Esto es evidente ya que si \(x \in M\)  entonces \(x \in V(x), \forall \epsilon\) de manera que \(V(x) \cap M \neq \emptyset, \forall \epsilon\).&lt;/p&gt;
+&lt;p&gt;Además, cualquier punto de adherencia de \(M\) (es decir de su clausura) es o bien un punto de acumulación, o bien un punto aislado de \(M\). Para ver esto, supongamos que \(x\) es un punto de adherencia de \(M\). Si todo entorno de \(x\) contiene un número infinito de puntos de \(M\) entonces es un punto de acumulación. Supongamos entonces que no, que sólo hay finitos puntos de \(M\). Entonces, va a llegar un momento en que lleguemos al punto más cercano a \(x\) distinto de \(x\) que sea miembro de \(M\). Es decir que \(x\) es un punto aislado.&lt;/p&gt;
+&lt;p&gt;Veamos ahora la equivalencia de las dos definiciones de &lt;em&gt;clausura&lt;/em&gt; dadas. Sea \(\overline{M}\) el conjunto de todos los puntos de adherencia de \(M\). Queremos mostrar que \(\overline{M} \) está incluído en la unión de \(M\) con el conjunto de sus puntos de acumulación. Como dijimos arriba, un punto de adherencia es o un punto de acumulación o un punto aislado, de \(M\). Si es un punto de acumulación, ya está. Si es un punto aislado, entonces necesariamente pertenece a \(M\) porque si no, dado que no es de acumulación podría darse un entorno del mismo sin puntos de \(M\), pero por hipótesis todos sus entornos tienen algún punto de \(M\) (o sea, es punto de adherencia).&lt;/p&gt;
+&lt;p&gt;Ahora sea \(\overline{M}\) la unión de \(M\) con el conjunto de todos sus puntos de acumulación. Necesitamos mostrar que este conjunto está contenido en el de todos los puntos de adherencia de \(M\). Como ya mostramos que \(M \subseteq \overline{M}\) basta mostrar que todo punto de acumulación de \(M\) que no está en \(M\) es un punto de adherencia. Pero, como es de acumulación, en cualquier entorno hay infinitos punto de \(M\) y necesitamos al menos uno para que sea de adherencia.
+&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;De este modo, la clausura de un conjunto \(M\) puede incluir tres tipo de puntos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Puntos aislados de \(M\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Puntos de acumulación de \(M\) que además pertenecen a \(M\),&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Puntos de acumulación de \(M\) que no pertenecen a \(M\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Veamos ahora el siguiente &lt;strong&gt;teorema&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;La clausura de la clausura de un conjunto \(M\) es igual a la clausura de \(M\). Es decir:
+\[\overline{\overline{M}} = \overline{M} , \quad \forall M\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Primero, sea \(x \in \overline{\overline{M}}\). Tenemos que probar que \(x \in \overline{M}\). Usando la definición de clausura, tenemos por hipótesis que
+\( V(x) \cap \overline{M} \neq \emptyset
+\) y sea entonces \(x_1 \in V(x) \cap \overline{M}\).
+Sea además \(\epsilon_1 = \epsilon - |x - x_1|\). Usando la desigualdad triangular, obtenemos que \(V_{\epsilon_1}(x_1) \subseteq V(x)\), pues, sea \(y \in V_{\epsilon_1}(x_1)\), entones:&lt;/p&gt;
+&lt;p&gt;\[|z-x_1| &amp;lt; \epsilon_1\]&lt;/p&gt;
+&lt;p&gt;Además, por como elegimos \(\epsilon_1\) también se cumple:&lt;/p&gt;
+&lt;p&gt;\[|x_1-x| = \epsilon - \epsilon_1\]&lt;/p&gt;
+&lt;p&gt;De este modo, sumando y restando \(x_1\):
+\[|z-x| = |z - x_1 + x_1 - x|\]
+Usando la desigualdad triangular:
+\[|z - x_1 + x_1 - x| \leq |z - x_1| + |x_1 - x| &amp;lt; \epsilon_1 + (\epsilon - \epsilon_1) = \epsilon\]
+De este modo \(|z-x| &amp;lt; \epsilon\) es decir \(V(x)\). Como este era cualquier entorno de \(x\), tenemos \(x \in \overline{M}\).&lt;/p&gt;
+&lt;p&gt;En segundo lugar, dado que todo conjunto es subconjunto de su clausura, hemos probado la igualdad.&lt;/p&gt;
+&lt;p&gt;Ahora nos quedaba la definición de conjunto cerrado, que es como sigue:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Conjunto cerrado)&lt;/strong&gt;
+Un conjunto \(U \subseteq \mathbb{R}^n\) es cerrado si contiene a todos los puntos que son al límite de alguna sucesión convergente de puntos de \(U\). Es decir si para toda sucesión y todo punto P, si todos los términos de la sucesión están en \(U\) y la sucesión converge a \(P\) , entonces \(P \in U\).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Obsérvese que la sucesión de puntos de \(U\) no necesariamente consta de terminos diferentes entre si. Es decir, el conjunto que contiene únicament al punto \(Q\) (es decir \(\{Q\}\)) es cerrado pues la única sucesión de tales puntos es \(\{P_k\}_{k\in \mathbb{N}} \text{, con } P_k = Q, \forall k\), que ciertamente converge a \(Q\), pero evidentemente \(Q \in \{Q\}\).&lt;/p&gt;
+&lt;p&gt;Esto a su vez implica que \(C \subset \overline{C}\) (ya que para cada punto de \(C\) se puede contruir una sucesión constante.&lt;/p&gt;
+&lt;p&gt;Por último, una proposición importante es que un conjunto es cerrado si, y sólo si, su complemento es abierto. La demostración queda para el lector.&lt;/p&gt;</summary></entry><entry><title>Límite de funciones de varias variables</title><link href="http://inferencias.github.io/limite-de-funciones-de-varias-variables.html" rel="alternate"></link><updated>2016-03-29T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-29:limite-de-funciones-de-varias-variables.html</id><summary type="html">&lt;p&gt;En esta entrada repasaremos un poco algunas definiciones y veremos algunos ejemplos.
+Consideraremos funciones de varias variables, es decir \(f: \mathbb{R}^n \to \mathbb{R}\).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Límite)&lt;/strong&gt;
+Una función \(f: \mathbb{R}^n \to \mathbb{R}\) tiende al límite \(l \in \mathbb{R}\) cuando \(X\) tiende a \(P \qquad (X, P \in \mathbb{R}^n)\), si:
+ \[(\forall \epsilon &amp;gt; 0) (\exists \delta &amp;gt;0) : \  0 &amp;lt; ||X-P|| &amp;lt; \delta \ \rightarrow \ |f(P) - l| &amp;lt; \epsilon\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Álgebra de límites&lt;/strong&gt;
+Sean \(f, g: A \to R\text{, } A \subset \mathbb{R}^n\) funciones y sea \(P \in \overline{A}\) (o sea que \(P\) pertenece a la clausura de \(A\). Y supongamos que:&lt;/p&gt;
+&lt;p&gt;\[\lim_{X\to P}f(x) =l_f \in \mathbb{R} \qquad y \qquad \lim_{X\to P}g(x) =l_g \in \mathbb{R}\]&lt;/p&gt;
+&lt;p&gt;Entonces se cumple:&lt;/p&gt;
+&lt;p&gt;\[\text{(1)}\qquad \lim_{X\to P}(f\pm g)(X) = l_f \pm l_g \]
+\[\text{(2)}\qquad \lim_{X\to P}(f \cdot g)(X) = l_f \cdot l_g A\]
+\[\text{(3)} \quad \text{ Si  }l_g \neq 0, \quad \lim_{X\to P}(f\pm g)(X) = \frac{l_f}{l_g} \]&lt;/p&gt;
+&lt;p&gt;Veamos (2).
+Restando y sumando \(f(X)l_g\), obtenemos:
+    \[ |(f \cdot g) (X) - l_f \cdot l_g| = |f(X)g(X) -f(X)l_g+f(X)l_g- l_fl_g|\]&lt;/p&gt;
+&lt;p&gt;Sacando factor común la fórmula:&lt;/p&gt;
+&lt;p&gt;\[ |f(X)g(X) -f(X)l_g+f(X)l_g- l_fl_g| \] 
+equivale a:
+\[(*) \quad |f(X)|\cdot|g(X)-l_g| + |l_g|\cdot|f(X)-l_f| \]&lt;/p&gt;
+&lt;p&gt;Por otra parte, 
+\[|f(X)| \leq |f(X)-l_f|+|l_f|\]&lt;/p&gt;
+&lt;p&gt;O sea que
+\[|f(X)|\cdot|g(X)-l_g| \leq (|f(X)-l_f|+|l_f|)\cdot|g(X)-l_g|\]
+y&lt;/p&gt;
+&lt;p&gt;\[|f(X)|\cdot|g(X)-l_g| \leq |f(X)-l_f|\cdot|g(X)-l_g|  +   |l_f|\cdot|g(X)-l_g|\]&lt;/p&gt;
+&lt;p&gt;De este modo, el primer sumando de \((*)\) está acotado por:
+\[||X-P||^2 + l_f|\cdot|X-P|\]
+y el segundo por
+\[ l_g|\cdot|X-P|\]&lt;/p&gt;
+&lt;p&gt;De este modo, con \(\delta &amp;lt; ||X-P||^2 + l_f|\cdot|X-P| +l_g|\cdot|X-P|\), se cumple
+\[|(F\cdot g)(X) - l_fl_g| &amp;lt; \epsilon\]
+y entonces (2) se cumple.&lt;/p&gt;
+&lt;p&gt;((1) y (3) quedan para el lector).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;
+Si \(f_i: \mathbb{R}^n\to \mathbb{R}\) es la función que asigna a cada vector de \(\mathbb{R}^n\) con su \(i\)-ésima coordenada, es decir:
+\[f_i(x_1, \dots, x_i, \dots, x_n) = x_i\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;entonces, si \(P=(p_1, \dots, p_n)\) se cumple:&lt;/p&gt;
+&lt;p&gt;\[ \lim_{X\to P} x_j = p_j\]&lt;/p&gt;
+&lt;p&gt;lo cual se sigue de que 
+\[ |x_i - p_i| \leq ||X-P||\]&lt;/p&gt;
+&lt;p&gt;Cuando se estudia el límite de una función en \(P\), a veces resulta útil componer con una o más curvas, es decir con una funciones \(\alpha_k: \mathbb{R} \to \mathbb{R}^n\) y ver qué ocurre con \(f\circ\alpha_k\)cuando \(\alpha_k \to P\). Si encontramos distintas curvas para las cuales su composición con \(f\) cuando tienden a \(P\) tienen distintos límites, entonces podemo afirmas que el límite de \(f\) no existe.&lt;/p&gt;
+&lt;p&gt;Otra observación útil es la siguiente. &lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;
+Si tenemos por ejemplo una función \(f:\mathbb{R}^2\to \mathbb{R}\) y queremos ver su límite cuando \((x,y) \to (a,b)\). Supongamos además que podemos mostrar que:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;\[\lim_{x\to a} \lim_{y\to b} f(x,y) = l_1\]
+y que:
+\[\lim_{y\to b} \lim_{x\to a} f(x,y) = l_2\]&lt;/p&gt;
+&lt;p&gt;Si ocurre que \(l_1 \neq l_2\), entonces &lt;strong&gt;no existe el límite&lt;/strong&gt;. (Ojo que no vale la recíproca).&lt;/p&gt;</summary></entry><entry><title>Sucesiones</title><link href="http://inferencias.github.io/sucesiones.html" rel="alternate"></link><updated>2016-03-25T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-25:sucesiones.html</id><summary type="html">&lt;p&gt;Las sucesiones son funciones cuyo dominio son los números naturales y su imagen está  en los reales. En lugar de usar \( f: \mathbb{N} \to \mathbb{R}\) y \(f(n)\) para referirse a la sucesión y a sus términos, se suele escribir en cambio:&lt;/p&gt;
+&lt;p&gt;\[ \{a_n\}_{n\in\mathbb{N}} \]&lt;/p&gt;
+&lt;p&gt;para denotar una sucesión y&lt;/p&gt;
+&lt;p&gt;\[ a_i \]&lt;/p&gt;
+&lt;p&gt;para los términos de la misma, donde \(i = 1, 2, ... \)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DEFINICIÓN (&lt;strong&gt;sucesión&lt;/strong&gt;)
+Una &lt;em&gt;sucesión&lt;/em&gt; infinita de números reales \(\{a_n\}_{n\in\mathbb{N}} \) es una función de \(\mathbb{N}\) en \(\mathbb{R}\).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Las sucesiones pueden ser convergentes o divergentes. Si converge en un número es porque los términos \(a_i)) se aproximan a ese número a medida que \(n)) es mayor. Si no ocurre esto, entonces diverge.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DEFINICIÓN (&lt;strong&gt;convergencia de una sucesión&lt;/strong&gt;)
+Una sucesión \(\{a_n\}_{n \in \mathbb{N}} \) &lt;strong&gt;converge hacia l&lt;/strong&gt; si se cumple:
+\[(\forall \epsilon &amp;gt; 0) (\exists N \in \mathbb{N}) (\forall n \in \mathbb{N}) : n &amp;gt; N \to |a_n - l| &amp;lt; \epsilon \]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esto suele expresarse de modo abreviado así:&lt;/p&gt;
+&lt;p&gt;\[\lim_{n\to \infty} a_n = l\]&lt;/p&gt;
+&lt;p&gt;o incluso diciendo que \(a_n \to l\) cuando \(n \to \infty\).&lt;/p&gt;
+&lt;p&gt;En palabras sería que una vez elegido un número positivo \(\epsilon\) que sea, tiene que haber algún un número natural \(\mathbb{N}\) tal que todos los términos \(a_n\) con \(n\) mayor que \(\mathbb{N}\) están a una distancia de l menor a \(\epsilon\).&lt;/p&gt;
+&lt;p&gt;Una sucesión que no cumple con esta condición cumplirá con la propiedad contraria, que es decir:&lt;/p&gt;
+&lt;p&gt;\[(\exists \epsilon &amp;gt; 0) (\forall N \in \mathbb{N})
+      (\exists n \in \mathbb{N} ) : \quad n &amp;gt; N \ \wedge |a_n -
+    l | \geq \epsilon \]&lt;/p&gt;
+&lt;p&gt;Como se ve, la expresión se complica por los cuantificadores anidados. Esto significa que existe al menos algún \(\epsilon\) tal que por más grande que sea el \(n \in \mathbb{N}\) que tomemos, el término correspondiente de la sucesión se encuentra a una distancia de \(l\) mayor que \(\epsilon\).&lt;/p&gt;
+&lt;p&gt;Una sucesion puede ser &lt;strong&gt;creciente&lt;/strong&gt;, &lt;strong&gt;decreciente&lt;/strong&gt;, &lt;strong&gt;no creciente&lt;/strong&gt;, &lt;strong&gt;no decreciente&lt;/strong&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (sucesión creciente)&lt;/strong&gt;
+Una sucesión \( {a_n}\) es creciente si
+\[ (\forall n \in \mathbb{N}) \quad a_{n+1} &amp;gt; a_n \]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Las definiciones restantes se obtienen facilmente cambiando el signo \( &amp;gt;\) con el que se adecúa al concepto que se defina. Otra definición importante es la de suceción acotada.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (sucesión acotada)&lt;/strong&gt;
+Una sucesión \( {a_n}\) es acotada si:
+\[ (\exists M) (\forall n \in \mathbb{N}) \quad a_n \leq M \]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esto permite que veamos la demostración siguiente:&lt;/p&gt;
+&lt;p&gt;TEOREMA
+Si una sucesión es no decreciente y acotada superiormente, entonces converge.&lt;/p&gt;
+&lt;p&gt;PRUEBA
+Sea \( {a_n}\) una sucesión no decreciente y acotada superiormente.
+Como es acotada superiormente existe algún número que es mayor o igual a todos los términos de la sucesión. Es más, existe un número (real) que además de ser mayor o igual, es el menor de todos los restantes que son también cotas. LLamemos \(c\) a ese número.&lt;/p&gt;
+&lt;p&gt;Consideremos ahora un número positivo cualquiera \(\epsilon\). Preguntamos primero si en el intervalo \(c-\epsilon, c\) hay o no un \(a_n\) para algún \(n\). Rápidamente vemos que es imposible que no haya ningún \(a_n\) en ese intervalo, porque en ese caso habría infinitos puntos en ese intervalo que serían a la vez, mayores que todos los \(a_n\), pero menores que \(c\). Como es la cota &lt;em&gt;mínima&lt;/em&gt; entonces esto es falso. De manera que tiene que haber algún \(a_n\) en ese intervalo. Supongamos que \(a_M \in (c-\epsilon, c]\), es decir, que \(a_M\) es ese término. Entonces, como la sucesión es no decreciente, para todo \(n &amp;gt; M\) se cumple que está en ese intervalo. Y esto es los que dice la definición de convergencia.&lt;/p&gt;
+&lt;p&gt;De una sucesión puede formarse otra sucesión a partir de ella alterándola mediante la omisión de algunos térmimos.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (subsucesión)&lt;/strong&gt;
+Dada una sucesión \(\{a_k\}\) y una función estrictamente creciente \(n: \mathbb{N} \to \mathbb{N}\), se llama subsucesiónde \({a_n}\) a la composición \(a \circ n\).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;En lugar de \(n(k)\) se suele escribir \(n_k\) y a la subsucesión se la escribe:&lt;/p&gt;
+&lt;p&gt;\[\{a_{n_k}\}\]&lt;/p&gt;
+&lt;p&gt;donde el \(k\)-ésimo término de la subsucesión es el mismo que el \(n_k\)-ésimo término de \({a_n}\).&lt;/p&gt;
+&lt;p&gt;Ahora que definimos subsucesiones podemos ver la prueba del siguiente teorema conocido como teorema de Bolzano-weierstrass:&lt;/p&gt;
+&lt;p&gt;TEOREMA (BOLZANO-WEIERSTRASS)
+Toda sucesión acotada (tanto inferior como superiormente) contiene una subsucesión que es convergente.&lt;/p&gt;
+&lt;p&gt;La demostración siguiente es en lo esencial la misma que figura en el libro de Spivak (Calculo Infinitesimal).&lt;/p&gt;
+&lt;p&gt;PRUEBA
+Para esta prueba usaremos el teorema de más arriba que establece que si una sucesión es no decreciente y acotada superiormente converge. Mostraremos que toda sucesión contiene una subsucesión que es o bien no decreciente o bien no creciente. Por ende, si es acotada, será convergente.&lt;/p&gt;
+&lt;p&gt;Comencemos denominando "puntos cumbre" de una sucesión a todos los términos \(a_i\) de la misma para los que se cumple que \((\forall n &amp;gt; i) \quad a_i &amp;gt; a_n\). En decir, un punto cumbre de una sucesión es un término tal que no existen otros términos mayores que él a la derecha.&lt;/p&gt;
+&lt;p&gt;Dada una sucesión cualquiera es inmediato por el principio lógico del tercero excluído que la misma o bien tiene infinitos puntos cumbre o no los tiene. Consideremos los casos por separado.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Caso 1:&lt;/em&gt; la sucesión tiene infinitos puntos cumbre.&lt;/p&gt;
+&lt;p&gt;En este caso basta con tomar los puntos cumbre. Necesariamente forman una sucesión no creciente (por cómo definimos los puntos cumbres).&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Caso 2:&lt;/em&gt; la sucesión tiene sólo finitos puntos cumbre.&lt;/p&gt;
+&lt;p&gt;Tomemos un término \(a_{k_1}\) mayor que todos los puntos cumbre (si no hay puntos cumbre, cualquier término sirve). Como \(a_{k_1}\) no es punto cumbre, existe algún otro término \(a_{k_2}\) que es mayor que él. Pero, nuevamente, \(a_{k_2}\) tampoco es un punto cumbre, y por ese motivo debe haber un \(a_{k_3} &amp;gt; a_{k_2}\). Podemos escoger así infinitos número, formando una sucesión infinita que sea subsucesión de la sucesión original.&lt;/p&gt;
+&lt;p&gt;Como en cualquier caso una sucesión contiene alguna subsucesión no creciente o no decreciente, si es acotada, entonces converge (por el teorema anteriormente citado).&lt;/p&gt;
+&lt;p&gt;Para terminar con este post escribiremos la definición de sucesión de Cauchy y un teorema sobre este tipo de sucesiones.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (sucesión de Cauchy)&lt;/strong&gt;
+Una sucesión \({a_n}\) es una sucesión de Cauchy si se cumple:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;\[
+(\forall \epsilon &amp;gt; 0) (\exists N \in \mathbb{N}) (\forall n,m &amp;gt; N) :
+|a_n - a_m | &amp;lt; \epsilon
+\]
+ Lo cual puede escribirse:&lt;/p&gt;
+&lt;p&gt;\[ \lim_{m,n\to\infty} |a_n - a_m| = 0 \]&lt;/p&gt;
+&lt;p&gt;TEOREMA
+Una sucesión es convergente si y sólo si es una sucesión de Cauchy&lt;/p&gt;
+&lt;p&gt;Primero, supongamos que la sucesión  \({a_n}\) converge. Es decir:
+\[ \lim_{n\to\infty} a_n = l\]&lt;/p&gt;
+&lt;p&gt;Por la definición de limíte más arriba (convergencia), para cualequier \(\epsilon &amp;gt; 0\), existe \(N\) tal que&lt;/p&gt;
+&lt;p&gt;\[
+ (\forall n \in \mathbb{N}) : k &amp;gt; N \Rightarrow |a_n - l| &amp;lt; \epsilon/2
+\]&lt;/p&gt;
+&lt;p&gt;y&lt;/p&gt;
+&lt;p&gt;\[
+ (\forall m \in \mathbb{N}) : k &amp;gt; N \Rightarrow |a_m - l| &amp;lt; \epsilon/2
+\]&lt;/p&gt;
+&lt;p&gt;de modo que&lt;/p&gt;
+&lt;p&gt;\[ |a_m - a_n| \leq |a_m-l| + |a_n-l| &amp;lt; \frac{\epsilon}{2}
++\frac{\epsilon}{2} = \epsilon \]
+Es decir que para cualquier \(\epsilon\) se cumple \(|a_m - a_n| &amp;lt; \epsilon\)&lt;/p&gt;
+&lt;p&gt;Tal vez sea más claro decir que si la sucesión converge, entonces para cualquier entorno \((l-\epsilon, l+\epsilon)\) todos los puntos de la sucesión estarán contenidos ahí a partir de cierto \(N \in \mathbb{N}\) y como \(m, n &amp;gt; N\) entonces su distancia será menor a \( l+\epsilon-(l-\epsilon) = 2 \epsilon\), y esta distancia se puede hacer tan pequeña como se quiera.&lt;/p&gt;
+&lt;p&gt;Para terminar, supongamos que \(a_n\) es una sucesión de Cauchy y derivemos que converge.&lt;/p&gt;
+&lt;p&gt;Como es una sucesión de Cauchy, a partir de cierto \(N\) todos sus puntos estan a una distancia menor a una distancia arbitraria. En particular, todos los \(a_n\) con \(n&amp;gt; N\) estarán de \(a_{N+1}\) a una distancia menor a \(\epsilon_0\). Luego, \(a_{N+1}+\epsilon_0\) es una cota para \(\{a_n:n&amp;gt;N\}\) y, como los términos anteriores de la sucesión son finitos, tienen un máximo, y por lo tanto toda la sucesión está acotada. De esta forma, llegamos a que toda sucesión de Cauchy tiene una subsucesión que converge (por el teorema de Bolzano-Weieresstrass). Tomemos entonces alguna subsucesión convergente y tomemos su límite \(l\). Como los términos de la subsucesión pertenecen a \(\{a_n\}\), cuando se acercan a \(l\) también los hacen los otros términos de \(\{a_n\}\) que no están en esta subsucesión, porque es una subsucesión de Cauchy, de modo que se acercan a \(l\) todo lo que se quiera.&lt;/p&gt;</summary></entry><entry><title>Relaciones</title><link href="http://inferencias.github.io/relaciones.html" rel="alternate"></link><updated>2016-03-23T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-23:relaciones.html</id><summary type="html">&lt;p&gt;Cuando se intenta analizar las construcciones del lenguaje más allá del concepto de proposición y conexión lógica, el de relación, después de los objetos, propiedades y cuantificadores surge con bastante naturalidad. Los cuantificadores nos permiten hablar de objetos sin especificar uno sólo, las propiedades nos permiten especificar estos objetos a través de una condición que pueden o no cumplir.&lt;/p&gt;
+&lt;p&gt;Las relaciones vinculan a los objetos de a pares. Por ejemplo "ser hermano de" es una relación considerada habitualmente. Dentro de la matemática, relaciones como "es mayor que", "es igual que", "pertenece a", "es subconjunto de", etc. también son usadas habitualmente. Para definir este concepto lo primero que necesitamos son aquellos objetos, o individuos, que serán los que mantienen, o no, la relación. Por ejemplo, la relación "es hermano de" se da entre personas. En este caso ambos elementos de la relación pertenecen al mismo conjunto, pero puede no ser así (por ejemplo en la relación "pertenece a"). Nótese que en una relación es importante el orden en que se den los elementos. Vamos a considerar ahora relaciones entre dos objetos que pertenecen a un mismo conjunto, pero primero escribiremos la definición generla de relación:
+&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Relación)&lt;/strong&gt;
+Sean \(A\) y \(B\) conjuntos. Una &lt;em&gt;relación&lt;/em&gt; \(\mathcal{R}\) &lt;em&gt;en&lt;/em&gt; \(A\) &lt;em&gt;por&lt;/em&gt; \(B\) es un subconjunto del producto cartesiano \(A \times B\). Esto por su puesto incluye el caso en que \(A = B\).
+&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Para decir que \(a \in A\) se relaciona con \(b \in A\) podemos decir que \((a,b) \in A \times A\). Sin embargo, es habitual expresar esto mismo con la notación \( a \mathcal{R} b \). Análogamente, \((a,b) \not\in A \times A\) podemos escribir \( a \overline{\mathcal{R}} b \). 
+Algunos tipos de relaciones.&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (relación reflexiva)&lt;/strong&gt;
+Una relación \(\mathcal{R}\) en \(A\) es &lt;em&gt;reflexiva&lt;/em&gt; si se cumple:
+\[ \forall x \in A: x\mathcal{R}x \]
+&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;El ejemplo que quizá primero venga a la mente de un arelación reflexiva es la igualdad. Otros ejemplos son "es mayor o igual que" o "es menor o igual que". Si el tamaño de \(A\) es \(n\), es decir si \(\#A=n\), luego se tiene que el número de relaciones reflexivas en \(A\) es \(2^{n(n-1)}\).&lt;/p&gt;
+&lt;p&gt;Para ver esto, consideremos que para que una relación sea reflexiva es suficiente (y necesario) con que para cada elemento \(a \in A\) se corrobore \(a\mathcal{R}a\), pero no hay restricciones respecto del resto de los pares. Así, habiendo \(n^2\) pares en total, y aplicándose la restricción a sólo \(n\) de ellos, tenemos que estos \(n\) deben estar en la relación para que sea reflexiva, pero por cada combinación de pertenencia o no pertenencia de los restantes tenemos una relación. Así, dado que son dos las posibilidades por par (pertenece o no pertenece), tenemos \(2^{n^2-n} = 2^{n(n -1)}\) combinaciones posibles y por ende relaciones reflexivas distintas.&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (relación simétrica)&lt;/strong&gt;
+Una relación \(\mathcal{R}\) en \(A\) es &lt;em&gt;simétrica&lt;/em&gt; si se cumple:
+\[ \forall x,y \in A: x\mathcal{R}y \Rightarrow  y\mathcal{R}x \]
+&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;En este caso el número de relaciones simétricas posibles es \(2^{n(n+1)/2}\).
+Para ilustrar esto, consideremos una conjunto de cinco elementos y representemos una relación mediante una matriz \(\mathbf{X}\) de ceros y unos donde en el lugar \(x_{i,j}\) tenemos \(1\) si \(a_i\mathcal{R}a_j\) y  \(0\) si \(a_i\overline{\mathcal{R}}a_j\), donde \(a_i\) representa el \(i\)-ésimo elemento del conjunto \(A\) según una numeración de los mismos establecida para tal fin. Por ejemplo:&lt;/p&gt;
+&lt;p&gt;\(\mathcal{R} = \{(a_1,a_2), (a_2,a_3), (a_2,a_4), (a_3,a_4)\}\) puede representarse mediante:&lt;/p&gt;
+&lt;p&gt;\[
+\begin{matrix}
+ &amp;amp; a_1 &amp;amp; a_2 &amp;amp; a_3 &amp;amp; a_4 &amp;amp; a_5 &amp;amp;\\
+ a_1 &amp;amp; 0 &amp;amp; 1 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0\\
+a_2 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 1 &amp;amp; 0\\
+a_3 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 1 &amp;amp; 0\\
+a_4 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0\\
+a_5 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0 &amp;amp; 0
+\end{matrix}
+\]&lt;/p&gt;
+&lt;p&gt;Es evidente que para que una relación sea simétrica no hay restricciones en la diagonal \((a_i,a_i), i = 1, \dots 5 \), ya que si falta alguno de estos pares, no se cumple el antecedente de la definición de simetría correspondiente, mientras que si está presente, tenemos el consecuente. Tenemos ya por lo tanto \(2^n\) casos. En segundo lugar hay que notar que para la parte de la matriz arriba de esta diagonal, no hay restricciones siempre y cuando el correspondiente elemento del triangulo inferior tiene el mismo valor (cero o uno). De este modo tenemos \(n-1 + n - 2 + \dots + 1\) elementos que pueden variar libremente arriba de la diagonal, y además los valore de la diagonal. Esto nos da: \((n-1)n/2 + n=
+n(n+1)/2\). Como la matriz es de ceros y unos, pueden varias sólo entre dos valores, de modo que llegamos a \(2^{n(n+1)/2}\)&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (relación antisimétrica)&lt;/strong&gt;
+Una relación \(\mathcal{R}\) en \(A\) es &lt;em&gt;antisimétrica&lt;/em&gt; si se cumple:
+\[ \forall x,y \in A: x\mathcal{R}y \wedge y\mathcal{R}x \Rightarrow  y=x \]
+&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Es obvio que una relación será antisimétrica independientemente de si un par \(x\mathcal{R}x\) está en \(\mathcal{R}\), de modo que ya tenemos \(2^n\) combinaciones si \(\#A=n\). Además, por cada \(x,y \in A: x \neq y\) hay dos pares en los que se encuentran ambos, y esto representa cuatro posibildades: están los dos, no está ninguno, está sólo \(x,y\), está sólo \(y,x\). De las cuatro, la antisimetría excluye la posibilidad de que estén las dos (pues \(x \neq y\). Esto nos deja tres por cada \(2\) tomadas de n). En fin, tenemos \(2^{n}3^{n(n-1)/2}\) posibles relaciónes antisimétricas definidas en \(A\).&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (relación transitiva)&lt;/strong&gt;
+Una relación \(\mathcal{R}\) en \(A\) es &lt;em&gt;transitiva&lt;/em&gt; si se cumple:
+\[ \forall x,y,z \in A: x\mathcal{R}y \wedge y\mathcal{R}z \Rightarrow
+x\mathcal{R}z\]
+&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Contar el número de relaciones transitivas en función del tamaño de \(A\) es más difícil que los casos precedentes, así que queda como problema, pues no conozco nunguna fórmula general.&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (relación de equivalencia)&lt;/strong&gt;
+Una relación \(\mathcal{R}\) en \(A\) es &lt;em&gt;de equivalencia&lt;/em&gt; si es a la vez &lt;em&gt;reflexiva&lt;/em&gt;, &lt;em&gt;simétrica&lt;/em&gt; y &lt;em&gt;transitiva&lt;/em&gt;.
+&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;El ejemplo probablemente más común de este tipo de relaciones es la igualdad. La igualdad es claramente reflexiva (todas las cosas son iguales a sí mismas), también es simétrica (nada que sea igual a otra cosa es distinta de ella) y transitiva (si dos cosas son iguales, y de ellas una es igual a una tercera, entonces en todos los casos es la misma cosa). Pero la igualdad no es la única relación de equivalencia. Por ejemplo, pensemos en la relación \(a\mathcal{R}b\) sobre \(\mathbb{Z}\) si \(a\) y \(b\) tienen la misma paridad. Es decir, \(a\mathcal{R}b\) se va cumplir siempre que \(a\) y \(b\) sean ambos pares o ambos impares. Evidentemente es reflexiva, porque todos los enteros tienen la misma paridad que sí mismos. También es fácil cerciorarse de que es simétrica y transitiva.&lt;/p&gt;
+&lt;p&gt;El asunto es que una relación de equivalencia agrupa los elementos del conjunto \(A\) en subconjuntos. La relación recién mencionada de la misma paridad define agrupa los enteros en dos subconjuntos, la igualdad lo hace en un subconjunto por cada elemento. Como la relación de equivalencia no 'ordena' los subconjuntos entre sí ni al interior de ellos, entonces el número de relaciones de equivalencia sobre un conjunto de tamaño \(n\) coincide con el número de formas de agrupar ese conjunto en subconjuntos no vacíos. Para encontrar una fórmula que nos permita obtener esta cuenta para un \(n\) dado, primero vamos a introducir la notación de los números de Stirling de la segunda especie, que denotan justamente lo que queremos determinar, es decir, el número de formas de hacer una partición de un conjunto de \(n\) elementos en \(k\) subconjunto. Esto se escribe:&lt;/p&gt;
+&lt;p&gt;\[ {n\brace k} \]&lt;/p&gt;
+&lt;p&gt;Ahora, sean \(n\) el número de elementos a agrupar y \(k\) el número de subconjuntos. Obviamente, si \(n &amp;lt; k\), entonces no habrá forma de agrupar estos elementos en tantos subconjuntos. Por otra parte, si \(n = k\) habrá un única forma de hacerlo. Pero si \(n\) no es cero pero \(k\) sí, entonces tampoco se puede agrupar, pues no puede haber cero subconjuntos con \(n &amp;gt; 0\) elementos. Si \(k = 1\) luego hay una sola forma de disponer los elementos, sean la cantidad que fuere.&lt;/p&gt;
+&lt;p&gt;Ahora bien, consideremos que queremos agrupar en dos subconjuntos \(n\) elementos, donde \(n &amp;gt; 2\). Evidentemente, tendremos el primero de estos \(n\) en uno de los subconjuntos, y los \(n - 1\) restantes pueden ser ubicados libremente tanto junto con aquél como en otro subconjunto. Esto nos da \(2^{n-1}-1\) posibilidades (hay que restar uno para descartar la posibilidad de que todos los \(n-1\) vayan a para al mismo subconjunto donde estaba el primero).&lt;/p&gt;
+&lt;p&gt;Finalmente, consideremos el último caso. Supongamos que queremos ubicar el el último elemento extraído de un conjunto de \(n\) alguna de \(k\) partes en las que se lo agrupó. En este caso tenemos que, o bien se lo pone sólo en un grupo nuevo (lo cual puede ocurrir de \( {n-1 \brace k-1}\) maneras puesto que implica que ya hallamos puesto los primeros \(n-1\) elementos en \(k-1\) subconjuntos), o bien lo ubicamos en alguno de los subconjunto que ya teníamos, lo cual puede hacerse de \( k{n-1 \brace k}\) maneras, dado que existen en tal caso \(k\) subconjuntos de entre los cuales optar, y hubo \({n-1 \brace k}\) maneras en que pudieron haber sido obtenidos. Esto conduce a la siguiente fórmula:&lt;/p&gt;
+&lt;p&gt;\[ {n \brace k} = k {n-1 \brace k} + {n-1 \brace k-1} , \  n,k \in \mathbf{N} \]&lt;/p&gt;
+&lt;p&gt;De la cual se sigue que el número de relaciones de equivalencia definidas sobre un conjunto de \(n\) elementos, es decir el número de maneras de particionar un conjunto de \(n\) elementos en subconjuntos no vacíos, es igual a:&lt;/p&gt;
+&lt;p&gt;\[\sum_{k=1}^{n} {n \brace k} \]&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (relación de orden)&lt;/strong&gt;
+Una relación \(\mathcal{R}\) en \(A\) es &lt;em&gt;de orden&lt;/em&gt; si es a la vez &lt;em&gt;reflexiva&lt;/em&gt;, &lt;em&gt;antisimétrica&lt;/em&gt; y &lt;em&gt;transitiva&lt;/em&gt;.
+&lt;/br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;En la bibliografía este tipo de relación recibe también el nombre de &lt;em&gt;orden parcial&lt;/em&gt;. Como ocurría con las relaciones transitivas, contar éstas tampoco parece fácil. Un ejemplo bastante común de este tipo de relaciones es el de "es menor o igual que", que el lector podrá seguramente sin dificultad cerciorarse de que cumple con las tres condiciones.&lt;/p&gt;
+&lt;p&gt;Por último, dejo acá unos links a distintos artículos para quien busque mayor información sobre este tema. En este artículo &lt;a href="http://schmidt.ucg.ie/~goetz/pub/posetseq.html"&gt;Counting Transitive Relations&lt;/a&gt; de Götz Pfeiffer pueden encontrarse formas de calcular el número de distintos tipos de relaciones, así como dificultades para hacerlo y también en este otro artículo &lt;a href="http://www.people.fas.harvard.edu/~sfinch/csolve/posets.pdfOrders]"&gt;Transitive Relations, Topologies and Partial Orders&lt;/a&gt; de Steven Finch.&lt;/p&gt;</summary></entry><entry><title>Lógica proposicional</title><link href="http://inferencias.github.io/logica-proposicional.html" rel="alternate"></link><updated>2016-03-20T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-20:logica-proposicional.html</id><summary type="html">&lt;p&gt;De todas las afirmaciones que se pueden hacer, algunas valen por que su contenido se refiere a algo que es tal como se lo describe, mientras que otras porque son de tal forma que resultaría absurdo negarlas. Estas últimas son más fundamentales, o básicas, que las primeras. Existe un motivo obvio para esto: ninguna descripción de nada se sostiene si es posible refutarla por sus aspectos meramente formales. Dicho de otr amanera: ninguna afirmación va a ser factible si es en sí misma contradictoria. Y no sólo eso, también podemos decir que no va a servir si no está claro qué sentidos se le puede dar, ni forma parte de algún sistema que permita fundamentarla. Si alguien dice que decir "no llueve, pero está lloviendo" es absurdo es porque ya hay implícito un sistema lógico que permite concluir tal cosa, análogamente a cuando se dice que una fracción de enteros igual a la raíz de dos no es posible.&lt;/p&gt;
+&lt;p&gt;Dado un lenguaje, existe un conjunto de fórmulas que se pueden tomar como absurdas, las también llamadas contradicciones. Por otra parte están las tautologías, que básicamente son la negación de las primeras. Y si niego una tautología obtengo una contradicción. Pero existe un conjunto de afirmaciones que no son ni de un tipo ni del otro respecto de las cuales las ciencias formales no pueden decidir, aunque en ocasiones se las pueda poner a prueba con experiencias reales. En tal caso estaríamos en una aplicación del sistema lógico (y matemático, si incluye proposiciones matemáticas), pues las proposiciones que estarían en cuestión seían aquellas que el sistema permite formular y que, además, no pueden ser refutadas por motivos puramente lógicos o matemáticos.&lt;/p&gt;
+&lt;p&gt;Llegado a este punto podemos notar que hay dos enfoques, que consideramos ahora brevemente. Uno de ellos consiste considerar el uso habitual del lenguaje y encontrar los elementos más generales y fundamentales. Dijimos ya que nos importaban las afirmaciones, así que ellas son los elementos básicos. Y notamos que éstas pueden ser tanto verdaderas como falsas (es cierto que nada impide concebir alguna proposición que no sea ni los uno ni lo otro, y eso daría lugar a una teoría con más de dos valores de verdad. Por el momento nos atendremos a dos, que es lo más común). Podemos entonces llamar proposiciones a estas afirmaciones o aserciones y decir que la lógica se ocupa, en principio, respecto de su significado (o contenido), sólo el hecho de si denota una verdad o no (aunque más adelante podamos hacer sobre tal base un analisis más pormenorizado, pues las proposiciones también pueden descomponerse). Observamos además que las proposiciones pueden combinarse entre sí formando otras proposiciones, las cuales pueden combinar hasta cualquier cantidad de ellas.&lt;/p&gt;
+&lt;p&gt;En resumen, tenemos proposiciones, cuyo significado puede variar entre la verdad y la falsedad, y combinaciones entre ellas que también pueden denotar tanto la verdad como la falsedad. De esta forma obtenemos ciertas funciones que pueden tomas u o más variables y que toman uno de los dos valores verdadero o falso.&lt;/p&gt;
+&lt;p&gt;Habitualmente se llama &lt;em&gt;valores de verdad&lt;/em&gt; al conjunto de la verdad y la falsedad, las cuales se suelen denotar \(V\) y \(F\) respectivamente (aunque pueden usarse como otros como en la lógica trivalente). Así podemos utilizar \(\mathcal{T}\) para denotar el conjunto de los valores de verdad, y el producto cartesiano \(\mathcal{T} \times \dots \times \mathcal{T}\) (donde \(\mathcal{T}\) ocurre \(n\) veces) es representado por \(\mathcal{T}\).&lt;/p&gt;
+&lt;p&gt;Ahora podemos definir las funciones de verdad.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;DEFINICIÓN (Funciones de verdad)&lt;/p&gt;
+&lt;p&gt;Una función \(f: \mathcal{T}^n \to \mathcal{T}\) es una función de verdad.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Ejemplo 1. Sea \(\{V,F\}\) el conjunto con los valores \(V\) y \(F\). Entonnces  \(f_N : \{V,F\} \to \{V,F\}\) tal que
+\[
+f_N(p) =
+\begin{cases}
+V, \text{ si } p = F;\\
+F, \text{ si } p = V.\\
+\end{cases}
+\]&lt;/p&gt;
+&lt;p&gt;es la función que se llama &lt;em&gt;negación&lt;/em&gt; y se suele usar:
+\[f_N(p) = \neg p\]&lt;/p&gt;
+&lt;p&gt;Ejemplo 2. Sea \(f_K: \{V,F\}^2 \to \{F,V\}\) tal que
+\[
+f_K(p,q) =
+\begin{cases}
+V, \text{ si } p = q;\\
+F, \text{ en otro caso.}\\
+\end{cases}
+\]&lt;/p&gt;
+&lt;p&gt;Esta función se llama &lt;em&gt;conjunción&lt;/em&gt; y se suele usar:
+\[f_K(p,q) = p \wedge q\]&lt;/p&gt;
+&lt;p&gt;Usualmente se utilizan las llamadas &lt;em&gt;tablas de verdad&lt;/em&gt; para representar dichas funciones. En estas tablas se muestran tres columnas, una con la primer variable, otra con las segundo (otra con la tercera, etc. ...) y otra con la función, mientras que en las filas los valores de verdad asignados (todas las \(2^n\) combinaciones y el valor que la función asigna a cada combinación). (Las tablas de verdad de las funciones más utilizadas pueden consultarse en &lt;a href="https://es.wikipedia.org/wiki/Conectiva_l%C3%B3gica"&gt;wikipedia&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Ahora es fácil definir, por ejemplo, tautología.&lt;/p&gt;
+&lt;p&gt;DEFINICIÓN (tautología)
+Una tautología (en la lógica bivalente) es una función de verdad \(f:\{V,F\}^n\to\{V,F\}\) tal que para todo valor de \(\mathbf p = (p_1, p_2, \dots, p_n)\), se cumple que
+\(f(\mathbf p) = V\)&lt;/p&gt;
+&lt;p&gt;Ejemplo. La función \(\neg (p \wedge \neg p)\) es una tautología.&lt;/p&gt;
+&lt;p&gt;El otro enfoque consiste en definir una manera de obtener formulas válidas atendiendo sólo a su sintaxis y no a su interpretación. Para esto primero se tiene que definir un lenguaje, que va a consistir en un conjunto de símbolos primitivos (que van a designar las varibales y las funciones o conectivas), símbolos auxiliares (los paréntesis y otros simi8lares) y  reglas de formación de fórmulas que se llamarán "bien formadas". Además se necesita de un conjunto de axiomas, que serán considerados de por sí fórmulas válidas, y reglas de inferencia que permitirán obtener otras fórmulas que también serán considerads válidas y se llamarán teoremas.&lt;/p&gt;
+&lt;p&gt;Existen obviamente muchos sistemas de lógica formal que están compuestos de lenguajes de distinto nivel de expresividad y distinto conjunto de teoremas. Por ejemplo, la lógica proposicional necesariamente será formalizada con un sistema diferente a la lógica de predicados de primer orden (que es una extensión de la otra, que agrega símbolos al lenguaje y axiomas y teoremas) o a la lógica modal. Pero incluso la misma lógica proposicional admite distintos sistemas formales, los cuales deberán por su puesto general los mismos teoremas. Un ejemplo de sistema deductivo encontramos en la deducción natural elaborado por Gentzen.&lt;/p&gt;</summary><category term="lógica proposicional"></category></entry><entry><title>Inferencias</title><link href="http://inferencias.github.io/inferencias.html" rel="alternate"></link><updated>2016-03-19T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-19:inferencias.html</id><summary type="html">&lt;p&gt;Con frecuencia, las oraciones se usan para hacer referencia a otras cosas para describirlas. Si esto fuera lo único que pudiéramos hacer con ellas, las conversaciones serían probablemente muy aburridas, y lo mismo los libros. Pero sea por el motivo que fuere, se han establecido además otros usos. "Filosofando" podría decirse que debido a los desacuerdos que se producían en esa función (aunque dificilmente sea eso más que una conjetura), pero lo cierto es que existen otras y una que es también muy común es la construcción de inferencias. Con ellas, muchas veces, se trata de dirimir entre oraciones distintas que se proponen para describir algo, pero que no son compatibles entre sí.&lt;/p&gt;
+&lt;p&gt;Pero eso que se describía en primer lugar no necesariemente era una 'cosa física'. Bien podría ser, por ejemplo, un criterio para definir si una inferencia es aceptable o no, o cualquier otra cosa todo lo complicada que se quiera.&lt;/p&gt;
+&lt;p&gt;Desde hace mucho que se habla de inferencias que son correctas y otras que no lo son. De las primeras se dicen que son válidas, de las segunda falaces. Si bien este análisis es tema de la lógica, es obvio que es de tal generidad que resulta fundamental para todas las ciencias formales y también de las que no son formales.&lt;/p&gt;
+&lt;p&gt;En los libros de matemática, por ejemplo, el empleo de principios de inferencia es evidente. Una demostración no es más que una caso particular de inferencia donde se procede según reglas y principios bien establecidos. En otros casos parece al menos a primera vista mán dudoso. ¿Las ciencias sociales también aplican estos principios? ¿La filosofía? ¿El derecho?&lt;/p&gt;
+&lt;p&gt;Bueno, evidentemente, no siempre se usn los mismos principios. Pero si nos limitamos a los casos donde se usa una inferencia para "demostrar" algo, es innegable que al menos se pretende que &lt;strong&gt;haya&lt;/strong&gt; algún principio.&lt;/p&gt;
+&lt;p&gt;Para ser más concreto: digamos que una &lt;strong&gt;inferencia&lt;/strong&gt; es un conjunto de una o más oraciones, donde una es la conclusión, y las restantes (si las hay) son las premisas.&lt;/p&gt;
+&lt;p&gt;Digo 'las restantes, si las hay', porque bien podría no haberla, en cuyo caso la inferencia estaría afirmando como conclusión algo que no necesita, según problama, afirmar ninguna premisa.&lt;/p&gt;
+&lt;p&gt;En este punto conviene hacer una observación. Si tomamos la inferencia definida como recién, bien puede pasar que tengamos conclusiones obtenidas sin premisas, pero cuya demostración requiera de algunas afirmaciones previas a la de la conclusión.&lt;/p&gt;
+&lt;p&gt;Lo que ocurre es que en una inferencia podemos condicionar la verdad de una conclusión al hecho de que se corrobore alguna premisa. Pongo un ejemplo:&lt;/p&gt;
+&lt;p&gt;Sea \(x \in \mathbb{R} : x &amp;gt; 0 \), luego \(\sqrt{x} \in \mathbb{R} \).&lt;/p&gt;
+&lt;p&gt;En este caso, si llamamos \( p \equiv x \in \mathbb{R} : x &amp;gt; 0 \) y
+\( q \equiv \sqrt{x} \in \mathbb{R} \), es claro que la premisa es necesaria para sostener la conclusión. Decimo entonces que \(q\) se sigue de \(p\) y lo escribimos: \( p \vdash q\), que no es lo mismo que \( p \to q\).&lt;/p&gt;
+&lt;p&gt;Pero también podemos obtener una conlusión lo suficientemente general sin ninguna premisa. Estas conclusiones se llamam &lt;strong&gt;tautologías&lt;/strong&gt; o &lt;strong&gt;teoremas&lt;/strong&gt;. Un ejemplo trivial podría ser \( (\forall{x} \in \mathbb{x}) \quad x = x \). Esta es una afirmación que no necesita de premisas, si la llamamos \(p\), podemos escribir: \(\vdash p\).&lt;/p&gt;
+&lt;p&gt;Pero las demostraciones suelen hacer algo más que mostrar las premisas, si las hubiere, y luego la conclusión. Siempre es necesario justificar eso, lo cual requiere scribir un poco más. La justificación puede ser más o menos explícita. Por ejemplo, en los libros de matemática suele serlo mucho menos que en los de lógica. Básicamente esto es así porque hay muchos teoremos o lemas intermedios que se consideran suficientemente conocidos y que si hubiera que ponerlos explícitamente las demostraciones más complejas serían demasiado largas y difíles de seguir, supongo. En los libros de lógica los teoremas son más básicos (en el sentido que que no dependen de otras bases y que son el sostén de, por ejemplo, todos los teoremas matemáticos) y sus demostraciones suelen ir más paso a paso.&lt;/p&gt;
+&lt;p&gt;Así tenemos dos conceptos distintos que llamamos inferencia y demostración. Pero no dijimos mucho de lo que es una demostración. Digamos simplemente por el momento que una demostación es una argumentación que justifica decir que dadas cero o más premisas, es necesario aceptar alguna conclusión. Y que existen dos enfoques. Uno de ellos busca demostrar un enunciado diciendo que sólo se lo puede interpretar como algo verdadero. Esto es útil cuando lo que se quiere es demostrar que un enunciado no es cierto. Como muchas veces se usan enunciados con suficiente grado de abstracción, se toma un caso singular que se ajuste a lo que está afirmando y se muestra que es incorrecto, con lo cual la falsedad está asegurada. Por ejemplo, si tomo el enunciado \( x = y \), estoy afirmando que \(x\) es igual a \(y\). Pero \(x\) e \(y\) son acá variables libres, entonces no se restringe interpretarlas como dos números distintos como \(0\) y \(1\), en cuyo caso la falsedad es manifiesta y por lo tanto si falsedad. Cuidado que acá sería incorrecto &lt;strong&gt;concluir&lt;/strong&gt; algo como \(x \ne y\), pues es falso si interpretamos ambas letras como el número uno. Pero no nos ocuparemos de esto en este momento.&lt;/p&gt;
+&lt;p&gt;El otro enfoque es el de contar con reglas que nos permitan elaborar formulas que se puedan tomas como válidas. Quizá el ejemplo más conocido de regla de inferencia sea el &lt;strong&gt;modus ponens&lt;/strong&gt;, que nos dice que si tengo probado un enunciado \(p\) y tengo probado un enunciado \(p \to q\), entonces también tengo probado el enunciado \q\).&lt;/p&gt;
+&lt;p&gt;Se ve que estos enfoque requieren de bastante elaboración. Por ejemplo, para ambos hay que definir primero qué es una fórmula y qué un enunciado. En el primero hay que establecer a qué se llama interpretación. En el segundo es necesario contar con reglas como la mencionada, y dese luego tenemos que exigires a estas reglas algunas cosas como que sean correctas por ejemplo.&lt;/p&gt;
+&lt;p&gt;Habíamos dejado un poco más arriba unas preguntas acerca de las inferencias en las ciencias sociales y el derecho. Como este &lt;strong&gt;post&lt;/strong&gt; es básicamente una presentación y abarca cosas muy generales, es obvio que no sería posible dar respuestas satisfatorias para esas preguntas acá. Pero digamos que cada vez que alguien argumenta en favor de alguna proposición, y para ellos recurre a alguna justificación, está por lo menos asegurando que su conclusión es correcta y eso implica haber aceptado, aunque no necesariemente de forma explícita, algún criterio de corrección o de validez. Ese criterio no viene a ser otra cosa que una regla de inferencia.&lt;/p&gt;
+&lt;p&gt;Es evidente que ser cuidadoso con estos criterios puede traer alguno beneficios. Por ejemplo, se puede ser más consciente de lo que se está afirmando. Después se puede decir que es más fácil lograr la consistencia en lo que se dice y otras cosas similares cuya conveniencia no está para todos establecida pero que se puede argumentar en su favor.&lt;/p&gt;</summary></entry></feed>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "DTD/xhtml1-strict.dtd">
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="BowcauXzjgHenpMUQ0n3osgU-6x6pilmY9gCtm1sgIQ" />
+        <title>Lógica proposicional</title>
+        <link rel="stylesheet" href="http://inferencias.github.io/theme/css/main.css" />
+        <link href="http://inferencias.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Inferencias Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+
+    <script type="text/javascript"
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://inferencias.github.io/">Inferencias </a></h1>
+                <nav><ul>
+                    <li><a href="http://inferencias.github.io/category/analisis.html">analisis</a></li>
+                    <li><a href="http://inferencias.github.io/category/analisis-matematico.html">Análisis Matemático</a></li>
+                    <li class="active"><a href="http://inferencias.github.io/category/logica.html">Lógica</a></li>
+                    <li><a href="http://inferencias.github.io/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://inferencias.github.io/logica-proposicional.html" rel="bookmark"
+           title="Permalink to Lógica proposicional">Lógica proposicional</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+  <abbr class="published" title="2016-03-20T00:00:00-03:00">
+    Published:</br> dom 20 marzo 2016
+  </abbr>
+
+  <address class="vcard author">
+    By     <a class="url fn" href="http://inferencias.github.io/author/nsm.html">nsm</a>
+  </address>
+
+  <p>In <a href="http://inferencias.github.io/category/logica.html">Lógica</a>.</p>
+<p>tags: <a href="http://inferencias.github.io/tag/logica-proposicional.html">lógica proposicional</a> </p>  
+</footer><!-- /.post-info -->      <p>De todas las afirmaciones que se pueden hacer, algunas valen por que su contenido se refiere a algo que es tal como se lo describe, mientras que otras porque son de tal forma que resultaría absurdo negarlas. Estas últimas son más fundamentales, o básicas, que las primeras. Existe un motivo obvio para esto: ninguna descripción de nada se sostiene si es posible refutarla por sus aspectos meramente formales. Dicho de otr amanera: ninguna afirmación va a ser factible si es en sí misma contradictoria. Y no sólo eso, también podemos decir que no va a servir si no está claro qué sentidos se le puede dar, ni forma parte de algún sistema que permita fundamentarla. Si alguien dice que decir "no llueve, pero está lloviendo" es absurdo es porque ya hay implícito un sistema lógico que permite concluir tal cosa, análogamente a cuando se dice que una fracción de enteros igual a la raíz de dos no es posible.</p>
+<p>Dado un lenguaje, existe un conjunto de fórmulas que se pueden tomar como absurdas, las también llamadas contradicciones. Por otra parte están las tautologías, que básicamente son la negación de las primeras. Y si niego una tautología obtengo una contradicción. Pero existe un conjunto de afirmaciones que no son ni de un tipo ni del otro respecto de las cuales las ciencias formales no pueden decidir, aunque en ocasiones se las pueda poner a prueba con experiencias reales. En tal caso estaríamos en una aplicación del sistema lógico (y matemático, si incluye proposiciones matemáticas), pues las proposiciones que estarían en cuestión seían aquellas que el sistema permite formular y que, además, no pueden ser refutadas por motivos puramente lógicos o matemáticos.</p>
+<p>Llegado a este punto podemos notar que hay dos enfoques, que consideramos ahora brevemente. Uno de ellos consiste considerar el uso habitual del lenguaje y encontrar los elementos más generales y fundamentales. Dijimos ya que nos importaban las afirmaciones, así que ellas son los elementos básicos. Y notamos que éstas pueden ser tanto verdaderas como falsas (es cierto que nada impide concebir alguna proposición que no sea ni los uno ni lo otro, y eso daría lugar a una teoría con más de dos valores de verdad. Por el momento nos atendremos a dos, que es lo más común). Podemos entonces llamar proposiciones a estas afirmaciones o aserciones y decir que la lógica se ocupa, en principio, respecto de su significado (o contenido), sólo el hecho de si denota una verdad o no (aunque más adelante podamos hacer sobre tal base un analisis más pormenorizado, pues las proposiciones también pueden descomponerse). Observamos además que las proposiciones pueden combinarse entre sí formando otras proposiciones, las cuales pueden combinar hasta cualquier cantidad de ellas.</p>
+<p>En resumen, tenemos proposiciones, cuyo significado puede variar entre la verdad y la falsedad, y combinaciones entre ellas que también pueden denotar tanto la verdad como la falsedad. De esta forma obtenemos ciertas funciones que pueden tomas u o más variables y que toman uno de los dos valores verdadero o falso.</p>
+<p>Habitualmente se llama <em>valores de verdad</em> al conjunto de la verdad y la falsedad, las cuales se suelen denotar \(V\) y \(F\) respectivamente (aunque pueden usarse como otros como en la lógica trivalente). Así podemos utilizar \(\mathcal{T}\) para denotar el conjunto de los valores de verdad, y el producto cartesiano \(\mathcal{T} \times \dots \times \mathcal{T}\) (donde \(\mathcal{T}\) ocurre \(n\) veces) es representado por \(\mathcal{T}\).</p>
+<p>Ahora podemos definir las funciones de verdad.</p>
+<blockquote>
+<p>DEFINICIÓN (Funciones de verdad)</p>
+<p>Una función \(f: \mathcal{T}^n \to \mathcal{T}\) es una función de verdad.</p>
+</blockquote>
+<p>Ejemplo 1. Sea \(\{V,F\}\) el conjunto con los valores \(V\) y \(F\). Entonnces  \(f_N : \{V,F\} \to \{V,F\}\) tal que
+\[
+f_N(p) =
+\begin{cases}
+V, \text{ si } p = F;\\
+F, \text{ si } p = V.\\
+\end{cases}
+\]</p>
+<p>es la función que se llama <em>negación</em> y se suele usar:
+\[f_N(p) = \neg p\]</p>
+<p>Ejemplo 2. Sea \(f_K: \{V,F\}^2 \to \{F,V\}\) tal que
+\[
+f_K(p,q) =
+\begin{cases}
+V, \text{ si } p = q;\\
+F, \text{ en otro caso.}\\
+\end{cases}
+\]</p>
+<p>Esta función se llama <em>conjunción</em> y se suele usar:
+\[f_K(p,q) = p \wedge q\]</p>
+<p>Usualmente se utilizan las llamadas <em>tablas de verdad</em> para representar dichas funciones. En estas tablas se muestran tres columnas, una con la primer variable, otra con las segundo (otra con la tercera, etc. ...) y otra con la función, mientras que en las filas los valores de verdad asignados (todas las \(2^n\) combinaciones y el valor que la función asigna a cada combinación). (Las tablas de verdad de las funciones más utilizadas pueden consultarse en <a href="https://es.wikipedia.org/wiki/Conectiva_l%C3%B3gica">wikipedia</a>).</p>
+<p>Ahora es fácil definir, por ejemplo, tautología.</p>
+<p>DEFINICIÓN (tautología)
+Una tautología (en la lógica bivalente) es una función de verdad \(f:\{V,F\}^n\to\{V,F\}\) tal que para todo valor de \(\mathbf p = (p_1, p_2, \dots, p_n)\), se cumple que
+\(f(\mathbf p) = V\)</p>
+<p>Ejemplo. La función \(\neg (p \wedge \neg p)\) es una tautología.</p>
+<p>El otro enfoque consiste en definir una manera de obtener formulas válidas atendiendo sólo a su sintaxis y no a su interpretación. Para esto primero se tiene que definir un lenguaje, que va a consistir en un conjunto de símbolos primitivos (que van a designar las varibales y las funciones o conectivas), símbolos auxiliares (los paréntesis y otros simi8lares) y  reglas de formación de fórmulas que se llamarán "bien formadas". Además se necesita de un conjunto de axiomas, que serán considerados de por sí fórmulas válidas, y reglas de inferencia que permitirán obtener otras fórmulas que también serán considerads válidas y se llamarán teoremas.</p>
+<p>Existen obviamente muchos sistemas de lógica formal que están compuestos de lenguajes de distinto nivel de expresividad y distinto conjunto de teoremas. Por ejemplo, la lógica proposicional necesariamente será formalizada con un sistema diferente a la lógica de predicados de primer orden (que es una extensión de la otra, que agrega símbolos al lenguaje y axiomas y teoremas) o a la lógica modal. Pero incluso la misma lógica proposicional admite distintos sistemas formales, los cuales deberán por su puesto general los mismos teoremas. Un ejemplo de sistema deductivo encontramos en la deducción natural elaborado por Gentzen.</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://inferencias.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

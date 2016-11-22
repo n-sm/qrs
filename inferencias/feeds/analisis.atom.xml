@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Inferencias</title><link href="http://inferencias.github.io/" rel="alternate"></link><link href="http://inferencias.github.io/feeds/analisis.atom.xml" rel="self"></link><id>http://inferencias.github.io/</id><updated>2016-03-29T00:00:00-03:00</updated><entry><title>Conjuntos abiertos y cerrados</title><link href="http://inferencias.github.io/conjuntos-abiertos-y-cerrados.html" rel="alternate"></link><updated>2016-03-29T00:00:00-03:00</updated><author><name>nsm</name></author><id>tag:inferencias.github.io,2016-03-29:conjuntos-abiertos-y-cerrados.html</id><summary type="html">&lt;p&gt;En este post intentaré definir a los conjuntos abiertos y los conjuntos cerrados, para lo cual habrá que definir definir algunos conceptos más.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICION (Bola abierta de radio \(r\) con centro en \(x\))&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Se denomina &lt;em&gt;bola abierta de radio&lt;/em&gt; \(r\) &lt;em&gt;con centro en&lt;/em&gt; \(x\) al conjunto de todos los puntos de \(\mathbb{R}^n\) tales que su distancia a \(x\) es menor a \(r\), es decir:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;\[B_r(x) = \{y \in \mathbb{R}^n :
+|y - x| &amp;lt; r\}\]&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Entorno)&lt;/strong&gt;
+Un entorno del punto \(x\) es una bola abierta centrada en ese punto y de radio \(r\) y lo escribimos \(V_{r}(x)\). Si \(r\) es \(\epsilon\) podemos escribir tanto \(V_\epsilon(x)\) como \(V(x)\).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Conjunto abierto)&lt;/strong&gt;
+Un conjunto \(U \subseteq \mathbb{R}^n\) es abierto si para cada punto \(x \in U\) existe un entorno \(V_{\epsilon}(x)\) tal que \(V_{\epsilon}(x) \subseteq U\), o sea si:
+\[
+(\forall x \in U) (\exists \epsilon &amp;gt; 0) (\forall y
+\in \mathbb{R}^n) :
+|y-x| &amp;lt; \epsilon \quad \rightarrow \quad y \in U
+\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Punto de adherencia)&lt;/strong&gt;
+Un punto \(x\) se llama &lt;em&gt;punto de adherencia&lt;/em&gt; del conjunto \(M\) si todo entorno de \(x\) tiene al menos algún punto de \(M\). Formalmente, \(x_0\) es un punto de adherencia de \(M\) si:
+\[
+(\forall \epsilon &amp;gt; 0) \quad V_\epsilon(x_0) \cap M
+\neq \emptyset
+\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Punto de acumulación)&lt;/strong&gt;
+El punto \(x_0\) se llama &lt;em&gt;punto de acumulación&lt;/em&gt; del conjunto \(M\) si cualquier entorno de \(x_0\) contiene un número infinito de puntos de \(M\).&lt;/p&gt;
+&lt;p&gt;También podemos, de otra forma equivalente, decir que \(x_0\) es un punto de acumulación de \(M\) si existe una sucesión \(\{\alpha_k\}\) de puntos de \(M\) tal que \(\lim_{k\to\infty}\alpha_k=x_0\)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Esta equivalencia se deduce facilmente. Primero supongamos que cualquier entono de \(x_0\) contiene infinitos puntos de \(M\) y mostremos que existe una sucesión que tiende a \(x_0\) de puntos de \(M\). Si tomamos \(\epsilon = 1\), evidentemente existe algún punto \(x \in M\) tal que \(|x-x_0| &amp;lt; 1\) dado que cualquier entorno contiene infinitos puntos, y en particular el entorno con \(\epsilon = 1\). Tomamos ese punto como \(\alpha_1\). Ahora tomamos un entorno de \(\epsilon = \frac{1}{2}\) y obtenemos del mismo modo un \(\alpha_2\). Y seguimos del mismo modo, usando \(\frac{1}{n}\) para \(\alpha_n\). Esta sucesión tiene evidentemente límite en \(x_0\) y sus puntos están en \(M\).&lt;/p&gt;
+&lt;p&gt;En segundo lugar, supongamos que existe una sucesión \(a_n\) con límite en \(x_0\). Como una sucesión (por definición) tiene infinitos puntos \(a_i\) con \(i&amp;gt;k\) para cualquier \(k\) fijo, cualquier \(\epsilon\) que elijamos definirá un entorno de \(x_0\) dentro del cual habrá infinitos puntos de \(M\).&lt;/p&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Punto asilado)&lt;/strong&gt;
+El punto \(x_0\) se llama &lt;em&gt;punto asilado&lt;/em&gt; del conjunto \(M\) si tiene algún entorno donde no hayan puntos de \(M\) diferentes de \(x_0\).
+&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Punto interior)&lt;/strong&gt;
+El punto \(x\) se llama &lt;em&gt;punto interior&lt;/em&gt; del conjunto \(M\) si existe un entorno de \(x\) que sea subconjunto de \(M\).
+El conjunto de todos los puntos interiores del conjunto \(M\) se llama &lt;strong&gt;interior de &lt;/strong&gt; \(M\) y los escribimos \(M^\circ\).
+&lt;/br&gt;&lt;/br&gt;
+&lt;strong&gt;DEFINCIÓN (Clausura)&lt;/strong&gt;
+El conjunto de todos los puntos de adherencia de un conjunto \(M\) se llama su &lt;em&gt;clausura&lt;/em&gt;, y se denota \(\overline{M}\).&lt;/p&gt;
+&lt;p&gt;La clausura de \(M\) tambíen podría definirse como la unión de \(M\) con el conjunto de todos sus puntos de acumulación.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Observación&lt;/strong&gt;: todo conjunto está contenido en su clausura. Esto es evidente ya que si \(x \in M\)  entonces \(x \in V(x), \forall \epsilon\) de manera que \(V(x) \cap M \neq \emptyset, \forall \epsilon\).&lt;/p&gt;
+&lt;p&gt;Además, cualquier punto de adherencia de \(M\) (es decir de su clausura) es o bien un punto de acumulación, o bien un punto aislado de \(M\). Para ver esto, supongamos que \(x\) es un punto de adherencia de \(M\). Si todo entorno de \(x\) contiene un número infinito de puntos de \(M\) entonces es un punto de acumulación. Supongamos entonces que no, que sólo hay finitos puntos de \(M\). Entonces, va a llegar un momento en que lleguemos al punto más cercano a \(x\) distinto de \(x\) que sea miembro de \(M\). Es decir que \(x\) es un punto aislado.&lt;/p&gt;
+&lt;p&gt;Veamos ahora la equivalencia de las dos definiciones de &lt;em&gt;clausura&lt;/em&gt; dadas. Sea \(\overline{M}\) el conjunto de todos los puntos de adherencia de \(M\). Queremos mostrar que \(\overline{M} \) está incluído en la unión de \(M\) con el conjunto de sus puntos de acumulación. Como dijimos arriba, un punto de adherencia es o un punto de acumulación o un punto aislado, de \(M\). Si es un punto de acumulación, ya está. Si es un punto aislado, entonces necesariamente pertenece a \(M\) porque si no, dado que no es de acumulación podría darse un entorno del mismo sin puntos de \(M\), pero por hipótesis todos sus entornos tienen algún punto de \(M\) (o sea, es punto de adherencia).&lt;/p&gt;
+&lt;p&gt;Ahora sea \(\overline{M}\) la unión de \(M\) con el conjunto de todos sus puntos de acumulación. Necesitamos mostrar que este conjunto está contenido en el de todos los puntos de adherencia de \(M\). Como ya mostramos que \(M \subseteq \overline{M}\) basta mostrar que todo punto de acumulación de \(M\) que no está en \(M\) es un punto de adherencia. Pero, como es de acumulación, en cualquier entorno hay infinitos punto de \(M\) y necesitamos al menos uno para que sea de adherencia.
+&lt;/br&gt;&lt;/br&gt;&lt;/p&gt;
+&lt;p&gt;De este modo, la clausura de un conjunto \(M\) puede incluir tres tipo de puntos:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Puntos aislados de \(M\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Puntos de acumulación de \(M\) que además pertenecen a \(M\),&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Puntos de acumulación de \(M\) que no pertenecen a \(M\).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Veamos ahora el siguiente &lt;strong&gt;teorema&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;La clausura de la clausura de un conjunto \(M\) es igual a la clausura de \(M\). Es decir:
+\[\overline{\overline{M}} = \overline{M} , \quad \forall M\]&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Primero, sea \(x \in \overline{\overline{M}}\). Tenemos que probar que \(x \in \overline{M}\). Usando la definición de clausura, tenemos por hipótesis que
+\( V(x) \cap \overline{M} \neq \emptyset
+\) y sea entonces \(x_1 \in V(x) \cap \overline{M}\).
+Sea además \(\epsilon_1 = \epsilon - |x - x_1|\). Usando la desigualdad triangular, obtenemos que \(V_{\epsilon_1}(x_1) \subseteq V(x)\), pues, sea \(y \in V_{\epsilon_1}(x_1)\), entones:&lt;/p&gt;
+&lt;p&gt;\[|z-x_1| &amp;lt; \epsilon_1\]&lt;/p&gt;
+&lt;p&gt;Además, por como elegimos \(\epsilon_1\) también se cumple:&lt;/p&gt;
+&lt;p&gt;\[|x_1-x| = \epsilon - \epsilon_1\]&lt;/p&gt;
+&lt;p&gt;De este modo, sumando y restando \(x_1\):
+\[|z-x| = |z - x_1 + x_1 - x|\]
+Usando la desigualdad triangular:
+\[|z - x_1 + x_1 - x| \leq |z - x_1| + |x_1 - x| &amp;lt; \epsilon_1 + (\epsilon - \epsilon_1) = \epsilon\]
+De este modo \(|z-x| &amp;lt; \epsilon\) es decir \(V(x)\). Como este era cualquier entorno de \(x\), tenemos \(x \in \overline{M}\).&lt;/p&gt;
+&lt;p&gt;En segundo lugar, dado que todo conjunto es subconjunto de su clausura, hemos probado la igualdad.&lt;/p&gt;
+&lt;p&gt;Ahora nos quedaba la definición de conjunto cerrado, que es como sigue:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;DEFINICIÓN (Conjunto cerrado)&lt;/strong&gt;
+Un conjunto \(U \subseteq \mathbb{R}^n\) es cerrado si contiene a todos los puntos que son al límite de alguna sucesión convergente de puntos de \(U\). Es decir si para toda sucesión y todo punto P, si todos los términos de la sucesión están en \(U\) y la sucesión converge a \(P\) , entonces \(P \in U\).&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Obsérvese que la sucesión de puntos de \(U\) no necesariamente consta de terminos diferentes entre si. Es decir, el conjunto que contiene únicament al punto \(Q\) (es decir \(\{Q\}\)) es cerrado pues la única sucesión de tales puntos es \(\{P_k\}_{k\in \mathbb{N}} \text{, con } P_k = Q, \forall k\), que ciertamente converge a \(Q\), pero evidentemente \(Q \in \{Q\}\).&lt;/p&gt;
+&lt;p&gt;Esto a su vez implica que \(C \subset \overline{C}\) (ya que para cada punto de \(C\) se puede contruir una sucesión constante.&lt;/p&gt;
+&lt;p&gt;Por último, una proposición importante es que un conjunto es cerrado si, y sólo si, su complemento es abierto. La demostración queda para el lector.&lt;/p&gt;</summary></entry></feed>

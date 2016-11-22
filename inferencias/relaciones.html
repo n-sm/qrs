@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//ES" "DTD/xhtml1-strict.dtd">
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="google-site-verification" content="BowcauXzjgHenpMUQ0n3osgU-6x6pilmY9gCtm1sgIQ" />
+        <title>Relaciones</title>
+        <link rel="stylesheet" href="http://inferencias.github.io/theme/css/main.css" />
+        <link href="http://inferencias.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Inferencias Atom Feed" />
+
+        <!--[if IE]>
+            <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <![endif]-->
+
+    <script type="text/javascript"
+	    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://inferencias.github.io/">Inferencias </a></h1>
+                <nav><ul>
+                    <li><a href="http://inferencias.github.io/category/analisis.html">analisis</a></li>
+                    <li><a href="http://inferencias.github.io/category/analisis-matematico.html">Análisis Matemático</a></li>
+                    <li class="active"><a href="http://inferencias.github.io/category/logica.html">Lógica</a></li>
+                    <li><a href="http://inferencias.github.io/category/misc.html">misc</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="http://inferencias.github.io/relaciones.html" rel="bookmark"
+           title="Permalink to Relaciones">Relaciones</a></h1>
+    </header>
+
+    <div class="entry-content">
+<footer class="post-info">
+  <abbr class="published" title="2016-03-23T00:00:00-03:00">
+    Published:</br> mié 23 marzo 2016
+  </abbr>
+
+  <address class="vcard author">
+    By     <a class="url fn" href="http://inferencias.github.io/author/nsm.html">nsm</a>
+  </address>
+
+  <p>In <a href="http://inferencias.github.io/category/logica.html">Lógica</a>.</p>
+  
+</footer><!-- /.post-info -->      <p>Cuando se intenta analizar las construcciones del lenguaje más allá del concepto de proposición y conexión lógica, el de relación, después de los objetos, propiedades y cuantificadores surge con bastante naturalidad. Los cuantificadores nos permiten hablar de objetos sin especificar uno sólo, las propiedades nos permiten especificar estos objetos a través de una condición que pueden o no cumplir.</p>
+<p>Las relaciones vinculan a los objetos de a pares. Por ejemplo "ser hermano de" es una relación considerada habitualmente. Dentro de la matemática, relaciones como "es mayor que", "es igual que", "pertenece a", "es subconjunto de", etc. también son usadas habitualmente. Para definir este concepto lo primero que necesitamos son aquellos objetos, o individuos, que serán los que mantienen, o no, la relación. Por ejemplo, la relación "es hermano de" se da entre personas. En este caso ambos elementos de la relación pertenecen al mismo conjunto, pero puede no ser así (por ejemplo en la relación "pertenece a"). Nótese que en una relación es importante el orden en que se den los elementos. Vamos a considerar ahora relaciones entre dos objetos que pertenecen a un mismo conjunto, pero primero escribiremos la definición generla de relación:
+</br><br></p>
+<blockquote>
+<p><strong>DEFINICIÓN (Relación)</strong>
+Sean \(A\) y \(B\) conjuntos. Una <em>relación</em> \(\mathcal{R}\) <em>en</em> \(A\) <em>por</em> \(B\) es un subconjunto del producto cartesiano \(A \times B\). Esto por su puesto incluye el caso en que \(A = B\).
+</br><br></p>
+</blockquote>
+<p>Para decir que \(a \in A\) se relaciona con \(b \in A\) podemos decir que \((a,b) \in A \times A\). Sin embargo, es habitual expresar esto mismo con la notación \( a \mathcal{R} b \). Análogamente, \((a,b) \not\in A \times A\) podemos escribir \( a \overline{\mathcal{R}} b \). 
+Algunos tipos de relaciones.</p>
+<p></br><br></p>
+<blockquote>
+<p><strong>DEFINICIÓN (relación reflexiva)</strong>
+Una relación \(\mathcal{R}\) en \(A\) es <em>reflexiva</em> si se cumple:
+\[ \forall x \in A: x\mathcal{R}x \]
+</br><br></p>
+</blockquote>
+<p>El ejemplo que quizá primero venga a la mente de un arelación reflexiva es la igualdad. Otros ejemplos son "es mayor o igual que" o "es menor o igual que". Si el tamaño de \(A\) es \(n\), es decir si \(\#A=n\), luego se tiene que el número de relaciones reflexivas en \(A\) es \(2^{n(n-1)}\).</p>
+<p>Para ver esto, consideremos que para que una relación sea reflexiva es suficiente (y necesario) con que para cada elemento \(a \in A\) se corrobore \(a\mathcal{R}a\), pero no hay restricciones respecto del resto de los pares. Así, habiendo \(n^2\) pares en total, y aplicándose la restricción a sólo \(n\) de ellos, tenemos que estos \(n\) deben estar en la relación para que sea reflexiva, pero por cada combinación de pertenencia o no pertenencia de los restantes tenemos una relación. Así, dado que son dos las posibilidades por par (pertenece o no pertenece), tenemos \(2^{n^2-n} = 2^{n(n -1)}\) combinaciones posibles y por ende relaciones reflexivas distintas.</p>
+<p></br><br></p>
+<blockquote>
+<p><strong>DEFINICIÓN (relación simétrica)</strong>
+Una relación \(\mathcal{R}\) en \(A\) es <em>simétrica</em> si se cumple:
+\[ \forall x,y \in A: x\mathcal{R}y \Rightarrow  y\mathcal{R}x \]
+</br><br></p>
+</blockquote>
+<p>En este caso el número de relaciones simétricas posibles es \(2^{n(n+1)/2}\).
+Para ilustrar esto, consideremos una conjunto de cinco elementos y representemos una relación mediante una matriz \(\mathbf{X}\) de ceros y unos donde en el lugar \(x_{i,j}\) tenemos \(1\) si \(a_i\mathcal{R}a_j\) y  \(0\) si \(a_i\overline{\mathcal{R}}a_j\), donde \(a_i\) representa el \(i\)-ésimo elemento del conjunto \(A\) según una numeración de los mismos establecida para tal fin. Por ejemplo:</p>
+<p>\(\mathcal{R} = \{(a_1,a_2), (a_2,a_3), (a_2,a_4), (a_3,a_4)\}\) puede representarse mediante:</p>
+<p>\[
+\begin{matrix}
+ &amp; a_1 &amp; a_2 &amp; a_3 &amp; a_4 &amp; a_5 &amp;\\
+ a_1 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\
+a_2 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0\\
+a_3 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 0\\
+a_4 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0\\
+a_5 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0
+\end{matrix}
+\]</p>
+<p>Es evidente que para que una relación sea simétrica no hay restricciones en la diagonal \((a_i,a_i), i = 1, \dots 5 \), ya que si falta alguno de estos pares, no se cumple el antecedente de la definición de simetría correspondiente, mientras que si está presente, tenemos el consecuente. Tenemos ya por lo tanto \(2^n\) casos. En segundo lugar hay que notar que para la parte de la matriz arriba de esta diagonal, no hay restricciones siempre y cuando el correspondiente elemento del triangulo inferior tiene el mismo valor (cero o uno). De este modo tenemos \(n-1 + n - 2 + \dots + 1\) elementos que pueden variar libremente arriba de la diagonal, y además los valore de la diagonal. Esto nos da: \((n-1)n/2 + n=
+n(n+1)/2\). Como la matriz es de ceros y unos, pueden varias sólo entre dos valores, de modo que llegamos a \(2^{n(n+1)/2}\)</p>
+<p></br><br></p>
+<blockquote>
+<p><strong>DEFINICIÓN (relación antisimétrica)</strong>
+Una relación \(\mathcal{R}\) en \(A\) es <em>antisimétrica</em> si se cumple:
+\[ \forall x,y \in A: x\mathcal{R}y \wedge y\mathcal{R}x \Rightarrow  y=x \]
+</br><br></p>
+</blockquote>
+<p>Es obvio que una relación será antisimétrica independientemente de si un par \(x\mathcal{R}x\) está en \(\mathcal{R}\), de modo que ya tenemos \(2^n\) combinaciones si \(\#A=n\). Además, por cada \(x,y \in A: x \neq y\) hay dos pares en los que se encuentran ambos, y esto representa cuatro posibildades: están los dos, no está ninguno, está sólo \(x,y\), está sólo \(y,x\). De las cuatro, la antisimetría excluye la posibilidad de que estén las dos (pues \(x \neq y\). Esto nos deja tres por cada \(2\) tomadas de n). En fin, tenemos \(2^{n}3^{n(n-1)/2}\) posibles relaciónes antisimétricas definidas en \(A\).</p>
+<p></br><br></p>
+<blockquote>
+<p><strong>DEFINICIÓN (relación transitiva)</strong>
+Una relación \(\mathcal{R}\) en \(A\) es <em>transitiva</em> si se cumple:
+\[ \forall x,y,z \in A: x\mathcal{R}y \wedge y\mathcal{R}z \Rightarrow
+x\mathcal{R}z\]
+</br><br></p>
+</blockquote>
+<p>Contar el número de relaciones transitivas en función del tamaño de \(A\) es más difícil que los casos precedentes, así que queda como problema, pues no conozco nunguna fórmula general.</p>
+<p></br><br></p>
+<blockquote>
+<p><strong>DEFINICIÓN (relación de equivalencia)</strong>
+Una relación \(\mathcal{R}\) en \(A\) es <em>de equivalencia</em> si es a la vez <em>reflexiva</em>, <em>simétrica</em> y <em>transitiva</em>.
+</br><br></p>
+</blockquote>
+<p>El ejemplo probablemente más común de este tipo de relaciones es la igualdad. La igualdad es claramente reflexiva (todas las cosas son iguales a sí mismas), también es simétrica (nada que sea igual a otra cosa es distinta de ella) y transitiva (si dos cosas son iguales, y de ellas una es igual a una tercera, entonces en todos los casos es la misma cosa). Pero la igualdad no es la única relación de equivalencia. Por ejemplo, pensemos en la relación \(a\mathcal{R}b\) sobre \(\mathbb{Z}\) si \(a\) y \(b\) tienen la misma paridad. Es decir, \(a\mathcal{R}b\) se va cumplir siempre que \(a\) y \(b\) sean ambos pares o ambos impares. Evidentemente es reflexiva, porque todos los enteros tienen la misma paridad que sí mismos. También es fácil cerciorarse de que es simétrica y transitiva.</p>
+<p>El asunto es que una relación de equivalencia agrupa los elementos del conjunto \(A\) en subconjuntos. La relación recién mencionada de la misma paridad define agrupa los enteros en dos subconjuntos, la igualdad lo hace en un subconjunto por cada elemento. Como la relación de equivalencia no 'ordena' los subconjuntos entre sí ni al interior de ellos, entonces el número de relaciones de equivalencia sobre un conjunto de tamaño \(n\) coincide con el número de formas de agrupar ese conjunto en subconjuntos no vacíos. Para encontrar una fórmula que nos permita obtener esta cuenta para un \(n\) dado, primero vamos a introducir la notación de los números de Stirling de la segunda especie, que denotan justamente lo que queremos determinar, es decir, el número de formas de hacer una partición de un conjunto de \(n\) elementos en \(k\) subconjunto. Esto se escribe:</p>
+<p>\[ {n\brace k} \]</p>
+<p>Ahora, sean \(n\) el número de elementos a agrupar y \(k\) el número de subconjuntos. Obviamente, si \(n &lt; k\), entonces no habrá forma de agrupar estos elementos en tantos subconjuntos. Por otra parte, si \(n = k\) habrá un única forma de hacerlo. Pero si \(n\) no es cero pero \(k\) sí, entonces tampoco se puede agrupar, pues no puede haber cero subconjuntos con \(n &gt; 0\) elementos. Si \(k = 1\) luego hay una sola forma de disponer los elementos, sean la cantidad que fuere.</p>
+<p>Ahora bien, consideremos que queremos agrupar en dos subconjuntos \(n\) elementos, donde \(n &gt; 2\). Evidentemente, tendremos el primero de estos \(n\) en uno de los subconjuntos, y los \(n - 1\) restantes pueden ser ubicados libremente tanto junto con aquél como en otro subconjunto. Esto nos da \(2^{n-1}-1\) posibilidades (hay que restar uno para descartar la posibilidad de que todos los \(n-1\) vayan a para al mismo subconjunto donde estaba el primero).</p>
+<p>Finalmente, consideremos el último caso. Supongamos que queremos ubicar el el último elemento extraído de un conjunto de \(n\) alguna de \(k\) partes en las que se lo agrupó. En este caso tenemos que, o bien se lo pone sólo en un grupo nuevo (lo cual puede ocurrir de \( {n-1 \brace k-1}\) maneras puesto que implica que ya hallamos puesto los primeros \(n-1\) elementos en \(k-1\) subconjuntos), o bien lo ubicamos en alguno de los subconjunto que ya teníamos, lo cual puede hacerse de \( k{n-1 \brace k}\) maneras, dado que existen en tal caso \(k\) subconjuntos de entre los cuales optar, y hubo \({n-1 \brace k}\) maneras en que pudieron haber sido obtenidos. Esto conduce a la siguiente fórmula:</p>
+<p>\[ {n \brace k} = k {n-1 \brace k} + {n-1 \brace k-1} , \  n,k \in \mathbf{N} \]</p>
+<p>De la cual se sigue que el número de relaciones de equivalencia definidas sobre un conjunto de \(n\) elementos, es decir el número de maneras de particionar un conjunto de \(n\) elementos en subconjuntos no vacíos, es igual a:</p>
+<p>\[\sum_{k=1}^{n} {n \brace k} \]</p>
+<p></br><br></p>
+<blockquote>
+<p><strong>DEFINICIÓN (relación de orden)</strong>
+Una relación \(\mathcal{R}\) en \(A\) es <em>de orden</em> si es a la vez <em>reflexiva</em>, <em>antisimétrica</em> y <em>transitiva</em>.
+</br><br></p>
+</blockquote>
+<p>En la bibliografía este tipo de relación recibe también el nombre de <em>orden parcial</em>. Como ocurría con las relaciones transitivas, contar éstas tampoco parece fácil. Un ejemplo bastante común de este tipo de relaciones es el de "es menor o igual que", que el lector podrá seguramente sin dificultad cerciorarse de que cumple con las tres condiciones.</p>
+<p>Por último, dejo acá unos links a distintos artículos para quien busque mayor información sobre este tema. En este artículo <a href="http://schmidt.ucg.ie/~goetz/pub/posetseq.html">Counting Transitive Relations</a> de Götz Pfeiffer pueden encontrarse formas de calcular el número de distintos tipos de relaciones, así como dificultades para hacerlo y también en este otro artículo <a href="http://www.people.fas.harvard.edu/~sfinch/csolve/posets.pdfOrders]">Transitive Relations, Topologies and Partial Orders</a> de Steven Finch.</p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://inferencias.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
